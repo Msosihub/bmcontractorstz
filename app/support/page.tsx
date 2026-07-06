@@ -4,23 +4,23 @@
  * Public help center page for BM Contractors customers.
  *
  * Current features:
- * - Lists useful support/help articles.
+ * - Reads support articles from Neon Postgres.
+ * - Falls back to static support articles if database is empty.
  * - Supports English and Swahili.
  * - Mobile-friendly article grid.
- * - Helps customers understand services before contacting BM.
  *
  * Future:
  * - Add article search.
  * - Add category filtering.
- * - Pull articles from Neon database.
- * - Manage articles from admin dashboard.
+ * - Admin-managed article create/edit/delete.
  */
 
 import Link from "next/link";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { SupportArticleCard } from "@/components/site/SupportArticleCard";
-import { supportArticles } from "@/data/support";
+import { supportArticles as staticSupportArticles } from "@/data/support";
+import { prisma } from "@/lib/prisma";
 import { isLanguage, type Language } from "@/lib/i18n/config";
 
 type PageProps = {
@@ -32,6 +32,26 @@ type PageProps = {
 export default async function SupportPage({ searchParams }: PageProps) {
   const params = await searchParams;
   const lang: Language = isLanguage(params.lang) ? params.lang : "en";
+
+  const dbArticles = await prisma.supportArticle.findMany({
+    where: {
+      isPublished: true,
+    },
+    orderBy: {
+      createdAt: "asc",
+    },
+  });
+
+  const articles =
+    dbArticles.length > 0
+      ? dbArticles
+      : staticSupportArticles.map((article) => ({
+          ...article,
+          id: article.slug,
+          isPublished: true,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        }));
 
   const content = {
     en: {
@@ -120,7 +140,7 @@ export default async function SupportPage({ searchParams }: PageProps) {
             </div>
 
             <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-              {supportArticles.map((article) => (
+              {articles.map((article) => (
                 <SupportArticleCard
                   key={article.slug}
                   lang={lang}

@@ -21,11 +21,11 @@ type SupportArticleCardProps = {
   lang: Language;
   slug: string;
   categoryEn: string;
-  categorySw: string;
+  categorySw?: string | null;
   titleEn: string;
-  titleSw: string;
-  summaryEn: string;
-  summarySw: string;
+  titleSw?: string | null;
+  summaryEn?: string | null;
+  summarySw?: string | null;
 };
 
 export function SupportArticleCard({
@@ -38,9 +38,10 @@ export function SupportArticleCard({
   summaryEn,
   summarySw,
 }: SupportArticleCardProps) {
-  const category = lang === "sw" ? categorySw : categoryEn;
-  const title = lang === "sw" ? titleSw : titleEn;
-  const summary = lang === "sw" ? summarySw : summaryEn;
+  const category = lang === "sw" ? categorySw || categoryEn : categoryEn;
+  const title = lang === "sw" ? titleSw || titleEn : titleEn;
+  const summary =
+    lang === "sw" ? summarySw || summaryEn || "" : summaryEn || "";
 
   const cta = lang === "sw" ? "Soma zaidi" : "Read article";
 

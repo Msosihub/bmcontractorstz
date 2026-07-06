@@ -4,13 +4,14 @@
  * Shows one full support/help article.
  *
  * Current features:
- * - Finds article by slug from temporary data file.
+ * - Reads article by slug from Neon Postgres.
+ * - Falls back to static support data if article is not in database.
  * - Supports English and Swahili.
  * - Mobile-friendly article reading layout.
  *
  * Future:
- * - Pull article from Neon database.
  * - Add related articles.
+ * - Add article images.
  * - Add admin-managed publishing.
  */
 
@@ -19,6 +20,7 @@ import { notFound } from "next/navigation";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { getSupportArticleBySlug } from "@/data/support";
+import { prisma } from "@/lib/prisma";
 import { isLanguage, type Language } from "@/lib/i18n/config";
 
 type PageProps = {
@@ -41,16 +43,45 @@ export default async function SupportArticlePage({
     ? resolvedSearchParams.lang
     : "en";
 
-  const article = getSupportArticleBySlug(resolvedParams.slug);
+  const dbArticle = await prisma.supportArticle.findFirst({
+    where: {
+      slug: resolvedParams.slug,
+      isPublished: true,
+    },
+  });
+
+  const staticArticle = getSupportArticleBySlug(resolvedParams.slug);
+
+  const article =
+    dbArticle ||
+    (staticArticle
+      ? {
+          ...staticArticle,
+          id: staticArticle.slug,
+          isPublished: true,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        }
+      : null);
 
   if (!article) {
     notFound();
   }
 
-  const category = lang === "sw" ? article.categorySw : article.categoryEn;
-  const title = lang === "sw" ? article.titleSw : article.titleEn;
-  const summary = lang === "sw" ? article.summarySw : article.summaryEn;
-  const content = lang === "sw" ? article.contentSw : article.contentEn;
+  const category =
+    lang === "sw"
+      ? article.categorySw || article.categoryEn
+      : article.categoryEn;
+  const title =
+    lang === "sw" ? article.titleSw || article.titleEn : article.titleEn;
+  const summary =
+    lang === "sw"
+      ? article.summarySw || article.summaryEn || ""
+      : article.summaryEn || "";
+  const content =
+    lang === "sw"
+      ? article.contentSw || article.contentEn || ""
+      : article.contentEn || "";
 
   const labels = {
     en: {
@@ -93,7 +124,9 @@ export default async function SupportArticlePage({
           <p className="mt-5 text-lg leading-8 text-slate-600">{summary}</p>
 
           <div className="mt-8 border-t border-slate-200 pt-8">
-            <p className="text-base leading-8 text-slate-700">{content}</p>
+            <p className="whitespace-pre-line text-base leading-8 text-slate-700">
+              {content}
+            </p>
           </div>
 
           <div className="mt-10 rounded-[2rem] bg-slate-950 p-6 text-white">

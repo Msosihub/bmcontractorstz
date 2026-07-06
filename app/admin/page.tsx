@@ -16,11 +16,19 @@
  */
 
 import Link from "next/link";
-import { prisma } from "@/lib/prisma";
 import { AdminShell } from "@/components/admin/AdminShell";
 import { AdminStatCard } from "@/components/admin/AdminStatCard";
+import { prisma } from "@/lib/prisma";
 
 export default async function AdminPage() {
+  const supportArticleCount = await prisma.supportArticle.count();
+
+  const publishedSupportArticleCount = await prisma.supportArticle.count({
+    where: {
+      isPublished: true,
+    },
+  });
+
   const siteSurveyCount = await prisma.siteSurveyRequest.count();
 
   const newSurveyCount = await prisma.siteSurveyRequest.count({
@@ -60,6 +68,11 @@ export default async function AdminPage() {
       href: "/admin/packages",
     },
     {
+      title: "Support Articles",
+      description: "Manage website help center articles and customer guides.",
+      href: "/admin/support",
+    },
+    {
       title: "Settings",
       description: "Manage contacts, office numbers and website settings.",
       href: "/admin/settings",
@@ -71,7 +84,7 @@ export default async function AdminPage() {
       title="Admin Dashboard"
       subtitle="Backend foundation for managing BM Contractors website data, requests, products and content."
     >
-      <div className="grid gap-4 sm:grid-cols-4">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
         <AdminStatCard
           label="Site Surveys"
           value={siteSurveyCount}
@@ -94,6 +107,18 @@ export default async function AdminPage() {
           label="New Messages"
           value={newMessageCount}
           hint="Need follow-up"
+        />
+
+        <AdminStatCard
+          label="Help Articles"
+          value={supportArticleCount}
+          hint="Total support guides"
+        />
+
+        <AdminStatCard
+          label="Published Help"
+          value={publishedSupportArticleCount}
+          hint="Visible articles"
         />
       </div>
 

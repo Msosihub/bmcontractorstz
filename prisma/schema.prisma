@@ -89,21 +89,24 @@ model Product {
   updatedAt   DateTime         @updatedAt
 }
 
+/**
+ * CCTV packages shown on public website and managed from admin.
+ * Examples: 4 Camera Package, 8 Camera Package, 16 Camera Package.
+ */
 model CctvPackage {
-  id            String            @id @default(cuid())
-  slug          String            @unique
-  titleEn       String
-  titleSw       String?
-  cameraCount   Int
-  descriptionEn String?
-  descriptionSw String?
-  priceFrom     Int?
-  imageUrl      String?
-  isPopular     Boolean           @default(false)
-  isPublished   Boolean           @default(true)
-  items         CctvPackageItem[]
-  createdAt     DateTime          @default(now())
-  updatedAt     DateTime          @updatedAt
+  id               String            @id @default(cuid())
+  slug             String            @unique
+  titleEn          String
+  titleSw          String?
+  cameras          Int
+  descriptionEn    String?
+  descriptionSw    String?
+  priceFrom        Int?
+  includedItems    Json?
+  isPublished      Boolean           @default(true)
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+  cctvPackageItems CctvPackageItem[]
 }
 
 model CctvPackageItem {
@@ -143,14 +146,21 @@ model BrandPartner {
   updatedAt   DateTime @updatedAt
 }
 
+/**
+ * Customer help center / support article.
+ * Used for FAQs, installation guidance and service education.
+ */
 model SupportArticle {
   id          String   @id @default(cuid())
   slug        String   @unique
+  categoryEn  String
+  categorySw  String?
   titleEn     String
   titleSw     String?
-  contentEn   String
+  summaryEn   String?
+  summarySw   String?
+  contentEn   String?
   contentSw   String?
-  category    String?
   isPublished Boolean  @default(true)
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt

@@ -4,23 +4,24 @@
  * Public page showing popular CCTV packages for BM Contractors.
  *
  * Current features:
+ * - Reads CCTV packages from Neon Postgres.
+ * - Falls back to static package data if database is empty.
  * - English and Swahili language support.
  * - Mobile-friendly package cards.
- * - 4, 8, 10, 16, 24 and 32 camera packages.
  * - Strong call-to-action for site survey.
  *
- * Future improvements:
- * - Pull package data from database/admin.
- * - Add starting prices.
+ * Future:
  * - Add package detail pages.
  * - Add package image uploads.
+ * - Add package comparison.
  */
 
 import Link from "next/link";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { CctvPackageCard } from "@/components/site/CctvPackageCard";
-import { cctvPackages } from "@/data/packages";
+import { cctvPackages as staticPackages } from "@/data/packages";
+import { prisma } from "@/lib/prisma";
 import { isLanguage, type Language } from "@/lib/i18n/config";
 
 type PageProps = {
@@ -29,9 +30,50 @@ type PageProps = {
   }>;
 };
 
+function asStringArray(value: unknown) {
+  /**
+   * Safely converts Prisma Json includedItems into string[].
+   */
+  if (!Array.isArray(value)) return [];
+
+  return value.filter((item): item is string => typeof item === "string");
+}
+
 export default async function CctvPackagesPage({ searchParams }: PageProps) {
   const params = await searchParams;
   const lang: Language = isLanguage(params.lang) ? params.lang : "en";
+
+  const dbPackages = await prisma.cctvPackage.findMany({
+    where: {
+      isPublished: true,
+    },
+    orderBy: {
+      cameras: "asc",
+    },
+  });
+
+  const packages =
+    dbPackages.length > 0
+      ? dbPackages.map((pkg) => ({
+          slug: pkg.slug,
+          titleEn: pkg.titleEn,
+          titleSw: pkg.titleSw,
+          cameras: pkg.cameras,
+          descriptionEn: pkg.descriptionEn,
+          descriptionSw: pkg.descriptionSw,
+          priceFrom: pkg.priceFrom,
+          includedItems: asStringArray(pkg.includedItems),
+        }))
+      : staticPackages.map((pkg) => ({
+          slug: pkg.slug,
+          titleEn: pkg.titleEn,
+          titleSw: pkg.titleSw,
+          cameras: pkg.cameras,
+          descriptionEn: pkg.descriptionEn,
+          descriptionSw: pkg.descriptionSw,
+          priceFrom: null,
+          includedItems: [],
+        }));
 
   const content = {
     en: {
@@ -76,7 +118,6 @@ export default async function CctvPackagesPage({ searchParams }: PageProps) {
 
       <main className="min-h-screen bg-white text-slate-950">
         <section className="relative overflow-hidden bg-slate-950 px-4 py-16 text-white sm:px-6 sm:py-20">
-          {/* Soft background accents for premium look. */}
           <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-red-600/20 blur-3xl" />
           <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
 
@@ -151,7 +192,7 @@ export default async function CctvPackagesPage({ searchParams }: PageProps) {
             </div>
 
             <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-              {cctvPackages.map((pkg) => (
+              {packages.map((pkg) => (
                 <CctvPackageCard
                   key={pkg.slug}
                   lang={lang}
@@ -161,6 +202,8 @@ export default async function CctvPackagesPage({ searchParams }: PageProps) {
                   cameras={pkg.cameras}
                   descriptionEn={pkg.descriptionEn}
                   descriptionSw={pkg.descriptionSw}
+                  priceFrom={pkg.priceFrom}
+                  includedItems={pkg.includedItems}
                 />
               ))}
             </div>

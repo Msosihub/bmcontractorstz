@@ -4,14 +4,9 @@
  * Reusable package card for CCTV package listings.
  *
  * Purpose:
- * - Shows package name, camera count, description and common included items.
+ * - Shows package name, camera count, description, included items and price guide.
  * - Supports English and Swahili.
  * - Gives each package a direct CTA to request site survey/quotation.
- *
- * Design direction:
- * - Clean premium card.
- * - Mobile-friendly.
- * - Professional BM Contractors style.
  */
 
 import Link from "next/link";
@@ -21,10 +16,12 @@ type CctvPackageCardProps = {
   lang: Language;
   slug: string;
   titleEn: string;
-  titleSw: string;
+  titleSw?: string | null;
   cameras: number;
-  descriptionEn: string;
-  descriptionSw: string;
+  descriptionEn?: string | null;
+  descriptionSw?: string | null;
+  priceFrom?: number | null;
+  includedItems?: string[];
 };
 
 export function CctvPackageCard({
@@ -35,15 +32,18 @@ export function CctvPackageCard({
   cameras,
   descriptionEn,
   descriptionSw,
+  priceFrom,
+  includedItems,
 }: CctvPackageCardProps) {
-  const title = lang === "sw" ? titleSw : titleEn;
-  const description = lang === "sw" ? descriptionSw : descriptionEn;
+  const title = lang === "sw" ? titleSw || titleEn : titleEn;
+  const description =
+    lang === "sw" ? descriptionSw || descriptionEn || "" : descriptionEn || "";
 
   const labels = {
     en: {
       cameras: "Cameras",
       included: "Commonly includes",
-      items: [
+      defaultItems: [
         "DVR/NVR",
         "HDD storage",
         "Cables & materials",
@@ -51,11 +51,13 @@ export function CctvPackageCard({
       ],
       cta: "Request this package",
       note: "Final quotation depends on site survey.",
+      priceAfterSurvey: "Price after survey",
+      from: "From",
     },
     sw: {
       cameras: "Camera",
       included: "Mara nyingi inajumuisha",
-      items: [
+      defaultItems: [
         "DVR/NVR",
         "HDD ya kuhifadhi",
         "Cables na materials",
@@ -63,14 +65,22 @@ export function CctvPackageCard({
       ],
       cta: "Omba package hii",
       note: "Quotation kamili hutegemea ukaguzi wa site.",
+      priceAfterSurvey: "Bei baada ya survey",
+      from: "Kuanzia",
     },
   };
 
   const t = labels[lang];
 
+  const items =
+    includedItems && includedItems.length > 0 ? includedItems : t.defaultItems;
+
+  const priceLabel = priceFrom
+    ? `${t.from} TZS ${priceFrom.toLocaleString("en-US")}`
+    : t.priceAfterSurvey;
+
   return (
     <article className="group relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
-      {/* Small visual accent for premium feel without cluttering the card. */}
       <div className="absolute right-0 top-0 h-24 w-24 rounded-bl-[3rem] bg-red-50 transition group-hover:bg-red-100" />
 
       <div className="relative">
@@ -90,6 +100,8 @@ export function CctvPackageCard({
           </div>
         </div>
 
+        <p className="mt-4 text-sm font-black text-red-600">{priceLabel}</p>
+
         <p className="mt-4 min-h-14 text-sm leading-7 text-slate-600">
           {description}
         </p>
@@ -100,7 +112,7 @@ export function CctvPackageCard({
           </p>
 
           <div className="mt-4 grid gap-2">
-            {t.items.map((item) => (
+            {items.slice(0, 7).map((item) => (
               <div
                 key={item}
                 className="flex items-center gap-2 text-sm text-slate-700"
