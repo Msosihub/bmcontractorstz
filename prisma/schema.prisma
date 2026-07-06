@@ -1,0 +1,197 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model AdminUser {
+  id           String   @id @default(cuid())
+  name         String
+  email        String   @unique
+  passwordHash String
+  role         String   @default("ADMIN")
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model SiteSetting {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  value     String?
+  valueJson Json?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Page {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  titleEn     String
+  titleSw     String?
+  contentEn   String?
+  contentSw   String?
+  imageUrl    String?
+  isPublished Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Service {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  titleEn     String
+  titleSw     String?
+  summaryEn   String?
+  summarySw   String?
+  contentEn   String?
+  contentSw   String?
+  imageUrl    String?
+  iconName    String?
+  sortOrder   Int      @default(0)
+  isFeatured  Boolean  @default(false)
+  isPublished Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model ProductCategory {
+  id          String    @id @default(cuid())
+  slug        String    @unique
+  nameEn      String
+  nameSw      String?
+  description String?
+  products    Product[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Product {
+  id          String           @id @default(cuid())
+  slug        String           @unique
+  name        String
+  brand       String?
+  categoryId  String?
+  category    ProductCategory? @relation(fields: [categoryId], references: [id])
+  description String?
+  price       Int?
+  imageUrl    String?
+  isFeatured  Boolean          @default(false)
+  isPublished Boolean          @default(true)
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+}
+
+model CctvPackage {
+  id            String            @id @default(cuid())
+  slug          String            @unique
+  titleEn       String
+  titleSw       String?
+  cameraCount   Int
+  descriptionEn String?
+  descriptionSw String?
+  priceFrom     Int?
+  imageUrl      String?
+  isPopular     Boolean           @default(false)
+  isPublished   Boolean           @default(true)
+  items         CctvPackageItem[]
+  createdAt     DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
+}
+
+model CctvPackageItem {
+  id          String      @id @default(cuid())
+  packageId   String
+  package     CctvPackage @relation(fields: [packageId], references: [id], onDelete: Cascade)
+  name        String
+  quantity    Int?
+  description String?
+  createdAt   DateTime    @default(now())
+}
+
+model Project {
+  id            String   @id @default(cuid())
+  titleEn       String
+  titleSw       String?
+  location      String?
+  serviceType   String?
+  descriptionEn String?
+  descriptionSw String?
+  imageUrl      String?
+  isFeatured    Boolean  @default(false)
+  isPublished   Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model BrandPartner {
+  id          String   @id @default(cuid())
+  name        String
+  logoUrl     String?
+  websiteUrl  String?
+  description String?
+  isPublished Boolean  @default(true)
+  sortOrder   Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model SupportArticle {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  titleEn     String
+  titleSw     String?
+  contentEn   String
+  contentSw   String?
+  category    String?
+  isPublished Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model SiteSurveyRequest {
+  id            String    @id @default(cuid())
+  fullName      String
+  phone         String
+  email         String?
+  location      String?
+  serviceType   String?
+  propertyType  String?
+  preferredDate DateTime?
+  message       String?
+  status        String    @default("NEW")
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model AppointmentRequest {
+  id            String    @id @default(cuid())
+  fullName      String
+  phone         String
+  email         String?
+  serviceType   String?
+  location      String?
+  preferredDate DateTime?
+  message       String?
+  status        String    @default("NEW")
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  fullName  String
+  phone     String?
+  email     String?
+  subject   String?
+  message   String
+  status    String   @default("NEW")
+  createdAt DateTime @default(now())
+}

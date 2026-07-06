@@ -1,0 +1,104 @@
+/**
+ * Admin Product Actions
+ * ---------------------
+ * Server actions for managing BM Contractors products.
+ *
+ * Current features:
+ * - Create product category if it does not exist.
+ * - Create product with name, brand, category, description and price.
+ * - Revalidate admin products page after saving.
+ *
+ * Future features:
+ * - Edit product.
+ * - Delete product.
+ * - Upload product images.
+ * - Publish/unpublish products.
+ * - Manage Swahili/English descriptions separately.
+ */
+
+"use server";
+
+import { revalidatePath } from "next/cache";
+import { prisma } from "@/lib/prisma";
+
+function slugify(value: string) {
+  /**
+   * Converts product/category names into safe URL slugs.
+   * Example: "Hikvision 2MP Camera" -> "hikvision-2mp-camera"
+   */
+  return value
+    .toLowerCase()
+    .trim()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)+/g, "");
+}
+
+function parsePrice(value: FormDataEntryValue | null) {
+  /**
+   * Converts price input to number.
+   * Empty price becomes null so product can show "Request price".
+   */
+  const raw = String(value || "")
+    .replace(/,/g, "")
+    .trim();
+
+  if (!raw) return null;
+
+  const price = Number(raw);
+
+  if (Number.isNaN(price) || price < 0) return null;
+
+  return Math.round(price);
+}
+
+export async function createProduct(formData: FormData) {
+  const name = String(formData.get("name") || "").trim();
+  const brand = String(formData.get("brand") || "").trim();
+  const categoryName = String(formData.get("categoryName") || "").trim();
+  const description = String(formData.get("description") || "").trim();
+  const price = parsePrice(formData.get("price"));
+
+  if (!name) {
+    throw new Error("Product name is required.");
+  }
+
+  if (!categoryName) {
+    throw new Error("Category name is required.");
+  }
+
+  /**
+   * Find or create the selected category.
+   * For now, Swahili name can be added later from edit screen.
+   */
+  const category = await prisma.productCategory.upsert({
+    where: {
+      slug: slugify(categoryName),
+    },
+    update: {},
+    create: {
+      slug: slugify(categoryName),
+      nameEn: categoryName,
+    },
+  });
+
+  /**
+   * Product slug includes name and timestamp to reduce duplicate slug conflicts.
+   */
+  const productSlug = `${slugify(name)}-${Date.now().toString().slice(-6)}`;
+
+  await prisma.product.create({
+    data: {
+      slug: productSlug,
+      name,
+      brand: brand || null,
+      categoryId: category.id,
+      description: description || null,
+      price,
+      isPublished: true,
+    },
+  });
+
+  revalidatePath("/admin/products");
+  revalidatePath("/products");
+}
