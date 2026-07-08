@@ -370,6 +370,21 @@ export default async function HomePage({ searchParams }: PageProps) {
           href: "/contact",
         },
       ],
+      brandSupportLabel: "Trusted product categories",
+      brandSupportTitle: "Systems and brands our customers commonly request",
+      brandSupportText:
+        "BM Contractors works with common security and networking products used in Tanzania. Brand availability depends on stock, project requirement and customer preference.",
+      brandSupportItems: [
+        "Hikvision CCTV",
+        "Tiandy CCTV",
+        "ZKTeco Access Control",
+        "MikroTik Networking",
+        "TP-Link Networking",
+        "Centurion Gate Motors",
+        "Nemtek Energizers",
+        "SparkX Energizers",
+        "UPS & Power Backup",
+      ],
     },
     sw: {
       heroLabel: "Security • Safety • Smart Systems",
@@ -479,6 +494,21 @@ export default async function HomePage({ searchParams }: PageProps) {
           text: "Tumia WhatsApp au contact form kupata ushauri wa haraka kutoka timu yetu.",
           href: "/contact",
         },
+      ],
+      brandSupportLabel: "Bidhaa zinazoombwa mara nyingi",
+      brandSupportTitle: "Mifumo na brands ambazo wateja wetu huulizia",
+      brandSupportText:
+        "BM Contractors tunafanya kazi na bidhaa za security na networking zinazotumika sana Tanzania. Upatikanaji wa brand hutegemea stock, mahitaji ya project na preference ya mteja.",
+      brandSupportItems: [
+        "Hikvision CCTV",
+        "Tiandy CCTV",
+        "ZKTeco Access Control",
+        "MikroTik Networking",
+        "TP-Link Networking",
+        "Centurion Gate Motors",
+        "Nemtek Energizers",
+        "SparkX Energizers",
+        "UPS & Power Backup",
       ],
     },
   };
@@ -622,6 +652,44 @@ export default async function HomePage({ searchParams }: PageProps) {
                   >
                     {name}
                   </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Brand / Product Trust */}
+        <section className="bg-slate-950 px-4 py-14 text-white sm:px-6 sm:py-16">
+          <div className="mx-auto max-w-7xl">
+            <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+              <div>
+                <p className="text-sm font-black text-red-300">
+                  {t.brandSupportLabel}
+                </p>
+
+                <h2 className="mt-2 text-3xl font-black tracking-tight sm:text-5xl">
+                  {t.brandSupportTitle}
+                </h2>
+
+                <p className="mt-5 max-w-2xl leading-7 text-slate-300">
+                  {t.brandSupportText}
+                </p>
+              </div>
+
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {t.brandSupportItems.map((item) => (
+                  <div
+                    key={item}
+                    className="rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-5 shadow-sm transition hover:-translate-y-1 hover:bg-white/[0.1]"
+                  >
+                    <p className="text-lg font-black">{item}</p>
+
+                    <p className="mt-2 text-sm leading-6 text-slate-400">
+                      {lang === "sw"
+                        ? "Kwa quotation na ushauri wa matumizi sahihi."
+                        : "For quotation and guidance on the right usage."}
+                    </p>
+                  </div>
                 ))}
               </div>
             </div>

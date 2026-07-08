@@ -31,38 +31,56 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bmcontractorstz.com"),
+
   title: {
-    default: "BM Contractors Tanzania | Security, CCTV & Safety Systems",
+    default:
+      "BM Contractors Tanzania | CCTV, Electric Fence & Security Systems",
     template: "%s | BM Contractors Tanzania",
   },
+
   description:
     "BM Contractors Tanzania provides CCTV installation, electric fence, gate motors, access control, networking and power backup solutions for homes, businesses and institutions.",
 
   keywords: [
     "BM Contractors Tanzania",
     "BM Engineering Contractors LTD",
-    "CCTV Tanzania",
     "CCTV installation Tanzania",
+    "CCTV cameras Tanzania",
+    "CCTV packages Tanzania",
     "Electric fence Tanzania",
     "Gate motors Tanzania",
     "Access control Tanzania",
-    "Security systems Tanzania",
+    "ZKTeco Tanzania",
+    "Hikvision Tanzania",
+    "Tiandy Tanzania",
+    "MikroTik Tanzania",
     "Networking Tanzania",
-    "Power backup Tanzania",
+    "UPS backup Tanzania",
+    "Security systems Tanzania",
+    "Site survey Tanzania",
   ],
 
   authors: [{ name: "BM Engineering Contractors LTD" }],
   creator: "BM Engineering Contractors LTD",
   publisher: "BM Engineering Contractors LTD",
 
+  alternates: {
+    canonical: "https://bmcontractorstz.com",
+    languages: {
+      en: "https://bmcontractorstz.com?lang=en",
+      sw: "https://bmcontractorstz.com?lang=sw",
+    },
+  },
+
   openGraph: {
     type: "website",
     locale: "en_TZ",
+    alternateLocale: ["sw_TZ"],
     url: "https://bmcontractorstz.com",
     siteName: "BM Contractors Tanzania",
-    title: "BM Contractors Tanzania | Security, CCTV & Safety Systems",
+    title: "BM Contractors Tanzania | CCTV, Electric Fence & Security Systems",
     description:
-      "Professional CCTV, electric fence, gate motors, access control, networking and power backup solutions for homes, businesses and institutions in Tanzania.",
+      "Professional CCTV, electric fence, gate motors, access control, networking and power backup solutions in Tanzania.",
     images: [
       {
         url: "/og/bm-contractors-og.jpg",
@@ -75,19 +93,27 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "BM Contractors Tanzania | Security, CCTV & Safety Systems",
+    title: "BM Contractors Tanzania | CCTV, Electric Fence & Security Systems",
     description:
       "CCTV, electric fence, gate motors, access control, networking and power backup solutions in Tanzania.",
     images: ["/og/bm-contractors-og.jpg"],
   },
 
   icons: {
-    icon: "/favicon.ico",
+    icon: [{ url: "/favicon.ico" }, { url: "/icon.png", type: "image/png" }],
     apple: "/apple-touch-icon.png",
   },
 
-  alternates: {
-    canonical: "https://bmcontractorstz.com",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
 };
 
