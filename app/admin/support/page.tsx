@@ -129,6 +129,13 @@ export default async function AdminSupportPage() {
                         View
                       </Link>
 
+                      <Link
+                        href={`/admin/support/${article.id}/edit`}
+                        className="rounded-full border border-slate-300 px-4 py-2 text-center text-xs font-black text-slate-700 transition hover:bg-slate-50"
+                      >
+                        Edit
+                      </Link>
+
                       <form action={toggleSupportArticlePublished}>
                         <input
                           type="hidden"

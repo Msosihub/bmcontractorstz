@@ -106,3 +106,53 @@ export async function toggleProjectPublished(formData: FormData) {
   revalidatePath("/admin/projects");
   revalidatePath("/projects");
 }
+
+export async function updateProject(formData: FormData) {
+  /**
+   * Updates an existing project/gallery record.
+   *
+   * Used by:
+   * - /admin/projects/[id]/edit
+   */
+  const projectId = String(formData.get("projectId") || "").trim();
+
+  const titleEn = String(formData.get("titleEn") || "").trim();
+  const titleSw = String(formData.get("titleSw") || "").trim();
+
+  const category = String(formData.get("category") || "").trim();
+  const location = String(formData.get("location") || "").trim();
+  const imageUrl = String(formData.get("imageUrl") || "").trim();
+
+  const descriptionEn = String(formData.get("descriptionEn") || "").trim();
+  const descriptionSw = String(formData.get("descriptionSw") || "").trim();
+
+  if (!projectId) {
+    throw new Error("Missing project ID.");
+  }
+
+  if (!titleEn) {
+    throw new Error("English project title is required.");
+  }
+
+  if (!category) {
+    throw new Error("Project category is required.");
+  }
+
+  await prisma.project.update({
+    where: {
+      id: projectId,
+    },
+    data: {
+      titleEn,
+      titleSw: titleSw || null,
+      category,
+      location: location || null,
+      imageUrl: imageUrl || null,
+      descriptionEn: descriptionEn || null,
+      descriptionSw: descriptionSw || null,
+    },
+  });
+
+  revalidatePath("/admin/projects");
+  revalidatePath("/projects");
+}

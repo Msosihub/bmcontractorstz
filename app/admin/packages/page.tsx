@@ -21,6 +21,7 @@ import { AdminStatCard } from "@/components/admin/AdminStatCard";
 import { AdminCctvPackageForm } from "@/components/admin/AdminCctvPackageForm";
 import { AdminToggleButton } from "@/components/admin/AdminToggleButton";
 import { toggleCctvPackagePublished } from "./actions";
+import Link from "next/link";
 
 function formatMoney(value: number | null) {
   /**
@@ -141,20 +142,29 @@ export default async function AdminPackagesPage() {
                           {formatMoney(pkg.priceFrom)}
                         </p>
 
-                        <form action={toggleCctvPackagePublished}>
-                          <input
-                            type="hidden"
-                            name="packageId"
-                            value={pkg.id}
-                          />
-                          <input
-                            type="hidden"
-                            name="nextValue"
-                            value={String(!pkg.isPublished)}
-                          />
+                        <div className="flex flex-wrap gap-2 sm:justify-end">
+                          <Link
+                            href={`/admin/packages/${pkg.id}/edit`}
+                            className="rounded-full border border-slate-300 px-4 py-2 text-center text-xs font-black text-slate-700 transition hover:bg-slate-50"
+                          >
+                            Edit
+                          </Link>
 
-                          <AdminToggleButton isPublished={pkg.isPublished} />
-                        </form>
+                          <form action={toggleCctvPackagePublished}>
+                            <input
+                              type="hidden"
+                              name="packageId"
+                              value={pkg.id}
+                            />
+                            <input
+                              type="hidden"
+                              name="nextValue"
+                              value={String(!pkg.isPublished)}
+                            />
+
+                            <AdminToggleButton isPublished={pkg.isPublished} />
+                          </form>
+                        </div>
                       </div>
                     </div>
 

@@ -123,3 +123,61 @@ export async function toggleSupportArticlePublished(formData: FormData) {
   revalidatePath("/support");
   revalidatePath(`/support/${article.slug}`);
 }
+
+export async function updateSupportArticle(formData: FormData) {
+  /**
+   * Updates an existing support/help center article.
+   *
+   * Used by:
+   * - /admin/support/[id]/edit
+   */
+  const articleId = String(formData.get("articleId") || "").trim();
+
+  const categoryEn = String(formData.get("categoryEn") || "").trim();
+  const categorySw = String(formData.get("categorySw") || "").trim();
+
+  const titleEn = String(formData.get("titleEn") || "").trim();
+  const titleSw = String(formData.get("titleSw") || "").trim();
+
+  const summaryEn = String(formData.get("summaryEn") || "").trim();
+  const summarySw = String(formData.get("summarySw") || "").trim();
+
+  const contentEn = String(formData.get("contentEn") || "").trim();
+  const contentSw = String(formData.get("contentSw") || "").trim();
+
+  if (!articleId) {
+    throw new Error("Missing support article ID.");
+  }
+
+  if (!categoryEn) {
+    throw new Error("English category is required.");
+  }
+
+  if (!titleEn) {
+    throw new Error("English title is required.");
+  }
+
+  if (!contentEn) {
+    throw new Error("English article content is required.");
+  }
+
+  const article = await prisma.supportArticle.update({
+    where: {
+      id: articleId,
+    },
+    data: {
+      categoryEn,
+      categorySw: categorySw || null,
+      titleEn,
+      titleSw: titleSw || null,
+      summaryEn: summaryEn || null,
+      summarySw: summarySw || null,
+      contentEn,
+      contentSw: contentSw || null,
+    },
+  });
+
+  revalidatePath("/admin/support");
+  revalidatePath("/support");
+  revalidatePath(`/support/${article.slug}`);
+}

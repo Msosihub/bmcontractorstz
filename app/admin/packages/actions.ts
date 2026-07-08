@@ -130,3 +130,55 @@ export async function toggleCctvPackagePublished(formData: FormData) {
   revalidatePath("/admin/packages");
   revalidatePath("/cctv-packages");
 }
+
+export async function updateCctvPackage(formData: FormData) {
+  /**
+   * Updates an existing CCTV package record.
+   *
+   * Used by:
+   * - /admin/packages/[id]/edit
+   */
+  const packageId = String(formData.get("packageId") || "").trim();
+
+  const titleEn = String(formData.get("titleEn") || "").trim();
+  const titleSw = String(formData.get("titleSw") || "").trim();
+
+  const cameras = parseNumber(formData.get("cameras"));
+  const priceFrom = parseNumber(formData.get("priceFrom"));
+
+  const descriptionEn = String(formData.get("descriptionEn") || "").trim();
+  const descriptionSw = String(formData.get("descriptionSw") || "").trim();
+
+  const includedItemsRaw = String(formData.get("includedItems") || "").trim();
+
+  if (!packageId) {
+    throw new Error("Missing CCTV package ID.");
+  }
+
+  if (!titleEn) {
+    throw new Error("English package title is required.");
+  }
+
+  if (!cameras) {
+    throw new Error("Camera count is required.");
+  }
+
+  const pkg = await prisma.cctvPackage.update({
+    where: {
+      id: packageId,
+    },
+    data: {
+      titleEn,
+      titleSw: titleSw || null,
+      cameras,
+      priceFrom,
+      descriptionEn: descriptionEn || null,
+      descriptionSw: descriptionSw || null,
+      includedItems: parseIncludedItems(includedItemsRaw),
+    },
+  });
+
+  revalidatePath("/admin/packages");
+  revalidatePath("/cctv-packages");
+  revalidatePath(`/request-site-survey`);
+}
