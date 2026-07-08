@@ -34,6 +34,7 @@ import { projects as staticProjects } from "@/data/projects";
 import { supportArticles as staticSupportArticles } from "@/data/support";
 import { prisma } from "@/lib/prisma";
 import { isLanguage, type Language } from "@/lib/i18n/config";
+import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
 
 type PageProps = {
   searchParams: Promise<{
@@ -154,6 +155,7 @@ export default async function HomePage({ searchParams }: PageProps) {
       slug: "hikvision-2mp-camera",
       name: "Hikvision 2MP Camera",
       brand: "Hikvision",
+      imageUrl: null,
       description:
         "Reliable CCTV camera option for homes, shops, offices and small business installations.",
       categorySlug: "cctv-cameras",
@@ -164,6 +166,7 @@ export default async function HomePage({ searchParams }: PageProps) {
       slug: "tiandy-2mp-camera",
       name: "Tiandy 2MP Camera",
       brand: "Tiandy",
+      imageUrl: null,
       description:
         "Affordable CCTV camera option for residential and small business installations.",
       categorySlug: "cctv-cameras",
@@ -174,6 +177,7 @@ export default async function HomePage({ searchParams }: PageProps) {
       slug: "electric-fence-energizer",
       name: "Electric Fence Energizer",
       brand: "Electric Fence",
+      imageUrl: null,
       description:
         "Core power unit for electric fence installations in homes, compounds and businesses.",
       categorySlug: "electric-fence",
@@ -184,6 +188,7 @@ export default async function HomePage({ searchParams }: PageProps) {
       slug: "gate-motor-kit",
       name: "Gate Motor Kit",
       brand: "Gate Automation",
+      imageUrl: null,
       description:
         "Automatic gate motor solution for homes, apartments and business premises.",
       categorySlug: "gate-motors",
@@ -194,6 +199,7 @@ export default async function HomePage({ searchParams }: PageProps) {
       slug: "mikrotik-router",
       name: "MikroTik Router",
       brand: "MikroTik",
+      imageUrl: null,
       description:
         "Business router for office networks, CCTV remote viewing and internet sharing.",
       categorySlug: "networking",
@@ -204,6 +210,7 @@ export default async function HomePage({ searchParams }: PageProps) {
       slug: "ups-650va",
       name: "UPS 650VA",
       brand: "UPS",
+      imageUrl: null,
       description:
         "Backup power for CCTV systems, routers, NVRs and small office devices.",
       categorySlug: "power-backup",
@@ -221,6 +228,7 @@ export default async function HomePage({ searchParams }: PageProps) {
           name: product.name,
           brand: product.brand,
           description: product.description,
+          imageUrl: product?.imageUrl,
           price: null,
           isPublished: true,
           createdAt: new Date(),
@@ -376,14 +384,42 @@ export default async function HomePage({ searchParams }: PageProps) {
         "BM Contractors works with common security and networking products used in Tanzania. Brand availability depends on stock, project requirement and customer preference.",
       brandSupportItems: [
         "Hikvision CCTV",
-        "Tiandy CCTV",
         "ZKTeco Access Control",
-        "MikroTik Networking",
-        "TP-Link Networking",
+        "MikroTik & TP-Link Networking",
         "Centurion Gate Motors",
         "Nemtek Energizers",
-        "SparkX Energizers",
         "UPS & Power Backup",
+      ],
+      surveyShortcutLabel: "Start here",
+      surveyShortcutTitle: "Tell us what you want to secure",
+      surveyShortcutText:
+        "Choose the service you need and continue to the full site survey form. This helps BM Contractors guide you faster.",
+      surveyShortcutServices: [
+        { label: "CCTV Installation", value: "cctv" },
+        { label: "Electric Fence", value: "electric-fence" },
+        { label: "Gate Motor", value: "gate-motors" },
+        { label: "Access Control", value: "access-control" },
+        { label: "Networking", value: "networking" },
+        { label: "Power Backup", value: "power-backup" },
+      ],
+      faqLabel: "Common questions",
+      faqTitle: "Before requesting security installation",
+      faqItems: [
+        {
+          question: "Do I need a site survey before CCTV installation?",
+          answer:
+            "Yes. A site survey helps decide camera positions, cable routes, DVR/NVR size, HDD storage and installation materials.",
+        },
+        {
+          question: "Can BM Contractors help me choose the right CCTV package?",
+          answer:
+            "Yes. You can start with 4, 8, 16, 24 or 32 camera package ideas, then BM Contractors can guide you based on your actual site.",
+        },
+        {
+          question: "Do you support electric fence and gate motors?",
+          answer:
+            "Yes. BM Contractors supports electric fence, gate motors, access control, networking and power backup solutions.",
+        },
       ],
     },
     sw: {
@@ -510,6 +546,38 @@ export default async function HomePage({ searchParams }: PageProps) {
         "SparkX Energizers",
         "UPS & Power Backup",
       ],
+      surveyShortcutLabel: "Anzia hapa",
+      surveyShortcutTitle: "Tuambie unataka kulinda nini",
+      surveyShortcutText:
+        "Chagua huduma unayohitaji kisha endelea kwenye form ya site survey. Hii inasaidia BM Contractors kukuongoza haraka.",
+      surveyShortcutServices: [
+        { label: "CCTV Installation", value: "cctv" },
+        { label: "Electric Fence", value: "electric-fence" },
+        { label: "Gate Motor", value: "gate-motors" },
+        { label: "Access Control", value: "access-control" },
+        { label: "Networking", value: "networking" },
+        { label: "Power Backup", value: "power-backup" },
+      ],
+      faqLabel: "Maswali ya kawaida",
+      faqTitle: "Kabla ya kuomba installation ya security",
+      faqItems: [
+        {
+          question: "Je, nahitaji site survey kabla ya kufunga CCTV?",
+          answer:
+            "Ndiyo. Site survey husaidia kupanga sehemu za camera, njia za cable, ukubwa wa DVR/NVR, HDD na materials za installation.",
+        },
+        {
+          question:
+            "BM Contractors wanaweza kunisaidia kuchagua package ya CCTV?",
+          answer:
+            "Ndiyo. Unaweza kuanzia na package za camera 4, 8, 16, 24 au 32, kisha BM Contractors tutakuongoza kulingana na site yako.",
+        },
+        {
+          question: "Mnasupport electric fence na gate motors?",
+          answer:
+            "Ndiyo. BM Contractors tunasupport electric fence, gate motors, access control, networking na power backup.",
+        },
+      ],
     },
   };
 
@@ -517,6 +585,7 @@ export default async function HomePage({ searchParams }: PageProps) {
 
   return (
     <>
+      <FaqJsonLd items={t.faqItems} />
       <Header lang={lang} />
 
       <main className="min-h-screen bg-white text-slate-950">
@@ -761,6 +830,65 @@ export default async function HomePage({ searchParams }: PageProps) {
           </div>
         </section>
 
+        {/* Site Survey Shortcut */}
+        <section className="bg-white px-4 py-14 sm:px-6 sm:py-16">
+          <div className="mx-auto max-w-7xl">
+            <div className="overflow-hidden rounded-[2.25rem] border border-slate-200 bg-slate-50 shadow-sm">
+              <div className="grid gap-0 lg:grid-cols-[0.9fr_1.1fr]">
+                <div className="bg-slate-950 p-8 text-white sm:p-10">
+                  <p className="text-sm font-black text-red-300">
+                    {t.surveyShortcutLabel}
+                  </p>
+
+                  <h2 className="mt-3 text-3xl font-black tracking-tight sm:text-5xl">
+                    {t.surveyShortcutTitle}
+                  </h2>
+
+                  <p className="mt-5 leading-7 text-slate-300">
+                    {t.surveyShortcutText}
+                  </p>
+
+                  <div className="mt-8 rounded-[1.5rem] bg-white/10 p-5 ring-1 ring-white/10">
+                    <p className="text-sm font-black text-white">
+                      {lang === "sw"
+                        ? "Tip: Site survey husaidia kupata quotation sahihi."
+                        : "Tip: A site survey helps you get a more accurate quotation."}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="grid gap-3 p-6 sm:grid-cols-2 sm:p-8">
+                  {t.surveyShortcutServices.map((service) => (
+                    <LoadingLink
+                      key={service.value}
+                      href={`/request-site-survey?lang=${lang}&service=${service.value}`}
+                      className="group rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-red-200 hover:shadow-xl"
+                    >
+                      <div className="flex items-center justify-between gap-4">
+                        <div>
+                          <p className="text-lg font-black text-slate-950">
+                            {service.label}
+                          </p>
+
+                          <p className="mt-2 text-sm leading-6 text-slate-500">
+                            {lang === "sw"
+                              ? "Endelea kuomba survey"
+                              : "Continue to survey request"}
+                          </p>
+                        </div>
+
+                        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-slate-950 text-lg font-black leading-none text-white transition group-hover:bg-red-600">
+                          →
+                        </span>
+                      </div>
+                    </LoadingLink>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Services */}
         <section className="bg-slate-50 px-4 py-14 sm:px-6 sm:py-16">
           <div className="mx-auto max-w-7xl">
@@ -932,6 +1060,7 @@ export default async function HomePage({ searchParams }: PageProps) {
                   slug={product.slug}
                   name={product.name}
                   brand={product.brand}
+                  imageUrl={product.imageUrl}
                   categoryName={
                     lang === "sw"
                       ? product?.category?.nameSw ||
@@ -1067,6 +1196,36 @@ export default async function HomePage({ searchParams }: PageProps) {
 
                   <p className="mt-5 text-sm leading-7 text-slate-600">
                     “{item.text}”
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-slate-50 px-4 py-14 sm:px-6 sm:py-16">
+          <div className="mx-auto max-w-4xl">
+            <div className="text-center">
+              <p className="text-sm font-black text-red-600">{t.faqLabel}</p>
+
+              <h2 className="mt-2 text-3xl font-black tracking-tight sm:text-5xl">
+                {t.faqTitle}
+              </h2>
+            </div>
+
+            <div className="mt-8 grid gap-4">
+              {t.faqItems.map((item) => (
+                <article
+                  key={item.question}
+                  className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm"
+                >
+                  <h3 className="text-lg font-black text-slate-950">
+                    {item.question}
+                  </h3>
+
+                  <p className="mt-3 text-sm leading-7 text-slate-600">
+                    {item.answer}
                   </p>
                 </article>
               ))}

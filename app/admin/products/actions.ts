@@ -58,6 +58,7 @@ export async function createProduct(formData: FormData) {
   const categoryName = String(formData.get("categoryName") || "").trim();
   const description = String(formData.get("description") || "").trim();
   const price = parsePrice(formData.get("price"));
+  const imageUrl = String(formData.get("imageUrl") || "").trim();
 
   if (!name) {
     throw new Error("Product name is required.");
@@ -94,6 +95,7 @@ export async function createProduct(formData: FormData) {
       brand: brand || null,
       categoryId: category.id,
       description: description || null,
+      imageUrl: imageUrl || null,
       price,
       isPublished: true,
     },
@@ -141,6 +143,7 @@ export async function updateProduct(formData: FormData) {
   const categoryName = String(formData.get("categoryName") || "").trim();
   const description = String(formData.get("description") || "").trim();
   const price = parsePrice(formData.get("price"));
+  const imageUrl = String(formData.get("imageUrl") || "").trim();
 
   if (!productId) {
     throw new Error("Missing product ID.");
@@ -181,6 +184,7 @@ export async function updateProduct(formData: FormData) {
       categoryId: category.id,
       description: description || null,
       price,
+      imageUrl: imageUrl || null,
     },
   });
 

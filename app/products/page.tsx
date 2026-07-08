@@ -300,6 +300,7 @@ export default async function ProductsPage({ searchParams }: PageProps) {
                     slug={product.slug}
                     name={product.name}
                     brand={product.brand || undefined}
+                    imageUrl={product.imageUrl}
                     categoryName={
                       product.category
                         ? lang === "sw"

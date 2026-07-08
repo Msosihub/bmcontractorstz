@@ -66,6 +66,12 @@ export function AdminProductForm() {
         />
       </div>
 
+      <input
+        name="imageUrl"
+        placeholder="Image path e.g. /images/products/cctv-products.jpg"
+        className="rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-red-500 focus:ring-4 focus:ring-red-50"
+      />
+
       <textarea
         name="description"
         placeholder="Short product description"

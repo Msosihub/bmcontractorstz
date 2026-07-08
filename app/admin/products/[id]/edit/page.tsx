@@ -103,6 +103,13 @@ export default async function AdminProductEditPage({ params }: PageProps) {
             />
           </div>
 
+          <input
+            name="imageUrl"
+            defaultValue={product.imageUrl || ""}
+            placeholder="Image path e.g. /images/products/cctv-products.jpg"
+            className="rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-red-500 focus:ring-4 focus:ring-red-50"
+          />
+
           <textarea
             name="description"
             defaultValue={product.description || ""}
@@ -154,6 +161,20 @@ export default async function AdminProductEditPage({ params }: PageProps) {
               {product.isPublished ? "Published" : "Hidden"}
             </p>
           </div>
+
+          <p>
+            <span className="font-black text-slate-950">Image:</span>{" "}
+            {product.imageUrl || "No image yet"}
+          </p>
+          {product.imageUrl ? (
+            <div className="mt-5 overflow-hidden rounded-[1.5rem] bg-slate-950">
+              <img
+                src={product.imageUrl}
+                alt={product.name}
+                className="aspect-video w-full object-cover"
+              />
+            </div>
+          ) : null}
 
           {product.description ? (
             <p className="mt-5 rounded-2xl bg-slate-50 p-4 text-sm leading-7 text-slate-600">

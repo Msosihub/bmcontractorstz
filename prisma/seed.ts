@@ -131,6 +131,7 @@ async function seedProducts() {
         categoryId: category.id,
         description: product.description,
         price: product.price,
+        imageUrl: product.imageUrl || null,
         isPublished: true,
       },
       create: {
@@ -140,6 +141,7 @@ async function seedProducts() {
         categoryId: category.id,
         description: product.description,
         price: product.price,
+        imageUrl: product.imageUrl || null,
         isPublished: true,
       },
     });

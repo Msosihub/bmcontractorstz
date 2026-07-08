@@ -23,6 +23,7 @@ import { getSupportArticleBySlug } from "@/data/support";
 import { prisma } from "@/lib/prisma";
 import { isLanguage, type Language } from "@/lib/i18n/config";
 import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
+import { Metadata } from "next";
 
 type PageProps = {
   params: Promise<{
@@ -32,6 +33,46 @@ type PageProps = {
     lang?: string;
   }>;
 };
+
+/**
+ * Dynamic metadata for support articles.
+ * This gives every support article its own SEO title and description.
+ */
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{
+    slug: string;
+  }>;
+}): Promise<Metadata> {
+  const resolvedParams = await params;
+
+  const article = await prisma.supportArticle.findFirst({
+    where: {
+      slug: resolvedParams.slug,
+      isPublished: true,
+    },
+  });
+
+  const staticArticle = getSupportArticleBySlug(resolvedParams.slug);
+
+  const title = article?.titleEn || staticArticle?.titleEn || "Support Article";
+
+  const description =
+    article?.summaryEn ||
+    staticArticle?.summaryEn ||
+    "Helpful security and safety support article from BM Contractors Tanzania.";
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title: `${title} | BM Contractors Tanzania`,
+      description,
+      images: ["/og/bm-contractors-og.jpg"],
+    },
+  };
+}
 
 export default async function SupportArticlePage({
   params,

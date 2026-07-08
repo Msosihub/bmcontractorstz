@@ -28,6 +28,7 @@ const geistMono = Geist_Mono({
  */
 
 import "./globals.css";
+import { LocalBusinessJsonLd } from "@/components/seo/LocalBusinessJsonLd";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bmcontractorstz.com"),
@@ -127,7 +128,10 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <LocalBusinessJsonLd />
+        {children}
+      </body>
     </html>
   );
 }
