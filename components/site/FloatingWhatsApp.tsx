@@ -28,7 +28,7 @@ export function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
       href={siteConfig.whatsapp.url}
       target="_blank"
       rel="noreferrer"
-      className="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-green-600 px-5 py-3 text-sm font-black text-white shadow-2xl shadow-green-900/30 ring-1 ring-white/20 transition hover:-translate-y-1 hover:bg-green-700"
+      className="fixed bottom-4 right-4 z-50 inline-flex items-center gap-2 rounded-full bg-green-600 px-4 py-3 text-xs font-black text-white shadow-2xl shadow-green-900/30 ring-1 ring-white/20 transition hover:-translate-y-1 hover:bg-green-700 sm:bottom-5 sm:right-5 sm:px-5 sm:text-sm"
     >
       <span className="relative flex h-3 w-3">
         <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-60" />

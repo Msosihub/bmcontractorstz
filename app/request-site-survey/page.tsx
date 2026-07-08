@@ -17,6 +17,19 @@ import { getDictionary } from "@/lib/i18n/dictionary";
 import { isLanguage, type Language } from "@/lib/i18n/config";
 import { createSiteSurveyRequest } from "./actions";
 import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Request Site Survey",
+  description:
+    "Request a BM Contractors site survey for CCTV, electric fence, gate motors, access control, networking or power backup.",
+  openGraph: {
+    title: "Request Site Survey | BM Contractors Tanzania",
+    description:
+      "Send your site details and get guidance for the right security and safety system.",
+    images: ["/og/bm-contractors-og.jpg"],
+  },
+};
 
 type PageProps = {
   searchParams: Promise<{

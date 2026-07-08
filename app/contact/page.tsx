@@ -23,6 +23,19 @@ import { isLanguage, type Language } from "@/lib/i18n/config";
 import { createContactMessage } from "./actions";
 import { siteConfig } from "@/data/site";
 import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact BM Contractors",
+  description:
+    "Contact BM Contractors Tanzania for CCTV, electric fence, gate motors, access control, networking and power backup solutions.",
+  openGraph: {
+    title: "Contact BM Contractors Tanzania",
+    description:
+      "Reach BM Contractors for security and safety system guidance, quotations and site survey requests.",
+    images: ["/og/bm-contractors-og.jpg"],
+  },
+};
 
 type PageProps = {
   searchParams: Promise<{

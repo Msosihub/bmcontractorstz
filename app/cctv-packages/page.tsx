@@ -24,6 +24,19 @@ import { cctvPackages as staticPackages } from "@/data/packages";
 import { prisma } from "@/lib/prisma";
 import { isLanguage, type Language } from "@/lib/i18n/config";
 import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "CCTV Packages",
+  description:
+    "Popular CCTV camera packages for homes, shops, offices, institutions and business premises in Tanzania.",
+  openGraph: {
+    title: "BM Contractors CCTV Packages",
+    description:
+      "Choose CCTV package options and request a site survey for a clear quotation.",
+    images: ["/og/bm-contractors-og.jpg"],
+  },
+};
 
 type PageProps = {
   searchParams: Promise<{

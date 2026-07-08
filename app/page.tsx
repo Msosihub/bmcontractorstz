@@ -341,6 +341,35 @@ export default async function HomePage({ searchParams }: PageProps) {
           text: "The best part is having one team that can handle security, networking and support together.",
         },
       ],
+      brandStripLabel: "Solutions we support",
+      brandStripTitle: "From planning to installation and support",
+      brandNames: [
+        "CCTV Systems",
+        "Electric Fence",
+        "Gate Motors",
+        "Access Control",
+        "Networking",
+        "Power Backup",
+      ],
+      quickActionsLabel: "Quick actions",
+      quickActionsTitle: "What do you need today?",
+      quickActions: [
+        {
+          title: "Request Site Survey",
+          text: "Best for new CCTV, electric fence, gate motor or access control installation.",
+          href: "/request-site-survey",
+        },
+        {
+          title: "Ask for Product Price",
+          text: "Need cameras, DVR/NVR, HDD, UPS, routers, cables or installation accessories?",
+          href: "/products",
+        },
+        {
+          title: "Talk to BM Team",
+          text: "Use WhatsApp or contact form for quick guidance from our team.",
+          href: "/contact",
+        },
+      ],
     },
     sw: {
       heroLabel: "Security • Safety • Smart Systems",
@@ -422,6 +451,35 @@ export default async function HomePage({ searchParams }: PageProps) {
           text: "Kitu kizuri ni kupata timu moja inayoweza kushughulikia security, networking na support kwa pamoja.",
         },
       ],
+      brandStripLabel: "Solutions tunazosupport",
+      brandStripTitle: "Kuanzia planning mpaka installation na support",
+      brandNames: [
+        "CCTV Systems",
+        "Electric Fence",
+        "Gate Motors",
+        "Access Control",
+        "Networking",
+        "Power Backup",
+      ],
+      quickActionsLabel: "Hatua za haraka",
+      quickActionsTitle: "Unahitaji nini leo?",
+      quickActions: [
+        {
+          title: "Omba Ukaguzi wa Site",
+          text: "Inafaa kwa installation mpya ya CCTV, electric fence, gate motor au access control.",
+          href: "/request-site-survey",
+        },
+        {
+          title: "Uliza Bei ya Bidhaa",
+          text: "Unahitaji camera, DVR/NVR, HDD, UPS, routers, cables au accessories za installation?",
+          href: "/products",
+        },
+        {
+          title: "Ongea na Timu ya BM",
+          text: "Tumia WhatsApp au contact form kupata ushauri wa haraka kutoka timu yetu.",
+          href: "/contact",
+        },
+      ],
     },
   };
 
@@ -443,7 +501,7 @@ export default async function HomePage({ searchParams }: PageProps) {
                 {t.heroLabel}
               </p>
 
-              <h1 className="mt-6 max-w-4xl text-4xl font-black tracking-tight sm:text-6xl lg:text-7xl">
+              <h1 className="mt-6 max-w-4xl text-4xl font-black leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
                 {t.heroTitle}
               </h1>
 
@@ -454,7 +512,7 @@ export default async function HomePage({ searchParams }: PageProps) {
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <LoadingLink
                   href={`/request-site-survey?lang=${lang}`}
-                  className="rounded-full bg-red-600 px-6 py-3 text-center text-sm font-black text-white shadow-lg shadow-red-950/30 transition hover:-translate-y-0.5 hover:bg-red-700"
+                  className="w-full sm:w-auto rounded-full bg-red-600 px-6 py-3 text-center text-sm font-black text-white shadow-lg shadow-red-950/30 transition hover:-translate-y-0.5 hover:bg-red-700"
                 >
                   {t.requestSurvey}
                 </LoadingLink>
@@ -463,14 +521,14 @@ export default async function HomePage({ searchParams }: PageProps) {
                   href={siteConfig.whatsapp.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-full bg-green-600 px-6 py-3 text-center text-sm font-black text-white shadow-lg shadow-green-950/20 transition hover:-translate-y-0.5 hover:bg-green-700"
+                  className="w-full sm:w-auto rounded-full bg-green-600 px-6 py-3 text-center text-sm font-black text-white shadow-lg shadow-green-950/20 transition hover:-translate-y-0.5 hover:bg-green-700"
                 >
                   {t.whatsapp}
                 </a>
 
                 <LoadingLink
                   href={`/services?lang=${lang}`}
-                  className="rounded-full bg-white px-6 py-3 text-center text-sm font-black text-slate-950 transition hover:-translate-y-0.5 hover:bg-slate-100"
+                  className="w-full sm:w-auto rounded-full bg-white px-6 py-3 text-center text-sm font-black text-slate-950 transition hover:-translate-y-0.5 hover:bg-slate-100"
                 >
                   {t.viewServices}
                 </LoadingLink>
@@ -497,44 +555,140 @@ export default async function HomePage({ searchParams }: PageProps) {
               </div>
             </div>
 
-            <div className="bm-fade-up rounded-[2.25rem] border border-white/10 bg-white/[0.06] p-5 shadow-2xl shadow-black/30 backdrop-blur">
-              <div className="rounded-[1.75rem] bg-white p-6 text-slate-950">
-                <div className="flex items-center justify-between gap-4">
-                  <div>
-                    <p className="text-xs font-black uppercase tracking-[0.18em] text-red-600">
-                      BM Contractors
-                    </p>
-                    <h2 className="mt-2 text-2xl font-black">
-                      Site Survey First
-                    </h2>
-                  </div>
+            <div className="bm-fade-up rounded-[2.25rem] border border-white/10 bg-white/[0.06] p-4 shadow-2xl shadow-black/30 backdrop-blur">
+              <div className="overflow-hidden rounded-[1.75rem] bg-white text-slate-950">
+                <div className="relative aspect-[16/11] bg-slate-900">
+                  <img
+                    src="/images/hero/bm-security-hero.jpg"
+                    alt="BM Contractors security systems"
+                    className="h-full w-full object-cover opacity-90"
+                  />
 
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-950 text-sm font-black text-white">
-                    BM
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent" />
+
+                  <div className="absolute bottom-5 left-5 right-5">
+                    <p className="inline-flex rounded-full bg-white/15 px-3 py-1 text-xs font-black text-white ring-1 ring-white/20 backdrop-blur">
+                      Site Survey • Installation • Support
+                    </p>
+
+                    <h2 className="mt-3 max-w-md text-2xl font-black text-white">
+                      {lang === "sw"
+                        ? "Mfumo sahihi huanza na kuelewa site yako."
+                        : "The right system starts with understanding your site."}
+                    </h2>
                   </div>
                 </div>
 
-                <div className="mt-6 grid gap-3">
-                  {t.whyItems.map((item) => (
-                    <div
-                      key={item}
-                      className="flex items-start gap-3 rounded-2xl bg-slate-50 p-4"
-                    >
-                      <span className="mt-1 h-2 w-2 rounded-full bg-red-600" />
-                      <p className="text-sm font-semibold leading-6 text-slate-700">
+                <div className="grid gap-3 p-5 sm:grid-cols-3">
+                  {[
+                    lang === "sw" ? "Ukaguzi wa site" : "Site survey",
+                    lang === "sw" ? "Quotation safi" : "Clear quotation",
+                    lang === "sw"
+                      ? "Support baada ya kazi"
+                      : "After-sales support",
+                  ].map((item) => (
+                    <div key={item} className="rounded-2xl bg-slate-50 p-4">
+                      <span className="block h-2 w-8 rounded-full bg-red-600" />
+                      <p className="mt-3 text-sm font-black text-slate-800">
                         {item}
                       </p>
                     </div>
                   ))}
                 </div>
-
-                <LoadingLink
-                  href={`/request-site-survey?lang=${lang}`}
-                  className="mt-6 inline-flex w-full justify-center rounded-full bg-slate-950 px-5 py-3 text-sm font-black text-white transition hover:bg-red-600"
-                >
-                  {t.requestSurvey}
-                </LoadingLink>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Solution Strip */}
+        <section className="border-b border-slate-200 bg-white px-4 py-8 sm:px-6">
+          <div className="mx-auto max-w-7xl">
+            <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.18em] text-red-600">
+                  {t.brandStripLabel}
+                </p>
+
+                <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">
+                  {t.brandStripTitle}
+                </h2>
+              </div>
+
+              <div className="flex flex-wrap gap-2">
+                {t.brandNames.map((name) => (
+                  <span
+                    key={name}
+                    className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-xs font-black text-slate-700"
+                  >
+                    {name}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Quick Actions */}
+        <section className="bg-white px-4 py-14 sm:px-6 sm:py-16">
+          <div className="mx-auto max-w-7xl">
+            <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+              <div>
+                <p className="text-sm font-black text-red-600">
+                  {t.quickActionsLabel}
+                </p>
+
+                <h2 className="mt-2 text-3xl font-black tracking-tight sm:text-5xl">
+                  {t.quickActionsTitle}
+                </h2>
+              </div>
+            </div>
+
+            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {t.quickActions.map((action, index) => (
+                <LoadingLink
+                  key={action.title}
+                  href={`${action.href}?lang=${lang}`}
+                  className={`group rounded-[2rem] p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl ${
+                    index === 0
+                      ? "bg-red-600 text-white"
+                      : "border border-slate-200 bg-white text-slate-950"
+                  }`}
+                >
+                  <div className="flex items-center justify-between gap-4">
+                    <div>
+                      <p
+                        className={`text-xs font-black uppercase tracking-[0.18em] ${
+                          index === 0 ? "text-red-100" : "text-red-600"
+                        }`}
+                      >
+                        0{index + 1}
+                      </p>
+
+                      <h3 className="mt-3 text-2xl font-black">
+                        {action.title}
+                      </h3>
+                    </div>
+
+                    <span
+                      className={`flex h-11 w-11 shrink-0 items-center justify-center self-center rounded-2xl text-lg font-black leading-none ${
+                        index === 0
+                          ? "bg-white text-red-600"
+                          : "bg-slate-950 text-white"
+                      }`}
+                    >
+                      →
+                    </span>
+                  </div>
+
+                  <p
+                    className={`mt-4 text-sm leading-7 ${
+                      index === 0 ? "text-red-50" : "text-slate-600"
+                    }`}
+                  >
+                    {action.text}
+                  </p>
+                </LoadingLink>
+              ))}
             </div>
           </div>
         </section>
@@ -563,7 +717,7 @@ export default async function HomePage({ searchParams }: PageProps) {
               </LoadingLink>
             </div>
 
-            <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            <div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
               {services.map((service) => (
                 <ServiceCard
                   key={service.slug}
@@ -597,6 +751,18 @@ export default async function HomePage({ searchParams }: PageProps) {
                     ? "Tunapendelea kuelewa site kabla ya kutoa ushauri wa mwisho, ili mteja apate mfumo unaofaa na quotation inayoeleweka."
                     : "We prefer understanding the site before final recommendation, so the customer gets the right system and a quotation that makes sense."}
                 </p>
+
+                <div className="mt-6 rounded-[2rem] bg-slate-950 p-5 text-white">
+                  <p className="text-sm font-black text-red-300">
+                    {lang === "sw" ? "Kanuni yetu" : "Our principle"}
+                  </p>
+
+                  <p className="mt-3 text-xl font-black leading-8">
+                    {lang === "sw"
+                      ? "Usinunue mfumo wa usalama kwa kubahatisha. Anza na site survey."
+                      : "Do not buy a security system by guesswork. Start with a site survey."}
+                  </p>
+                </div>
 
                 <LoadingLink
                   href={`/request-site-survey?lang=${lang}`}
@@ -647,7 +813,7 @@ export default async function HomePage({ searchParams }: PageProps) {
               </LoadingLink>
             </div>
 
-            <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            <div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
               {packages.map((pkg) => (
                 <CctvPackageCard
                   key={pkg.slug}
@@ -690,7 +856,7 @@ export default async function HomePage({ searchParams }: PageProps) {
               </LoadingLink>
             </div>
 
-            <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            <div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
               {products.map((product) => (
                 <ProductCard
                   key={product.slug}
@@ -736,7 +902,7 @@ export default async function HomePage({ searchParams }: PageProps) {
               </LoadingLink>
             </div>
 
-            <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            <div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
               {projects.map((project) => (
                 <ProjectCard
                   key={project.slug}
@@ -775,7 +941,7 @@ export default async function HomePage({ searchParams }: PageProps) {
               </LoadingLink>
             </div>
 
-            <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            <div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
               {supportArticles.map((article) => (
                 <SupportArticleCard
                   key={article.slug}
@@ -812,7 +978,7 @@ export default async function HomePage({ searchParams }: PageProps) {
               </p>
             </div>
 
-            <div className="mt-8 grid gap-5 md:grid-cols-3">
+            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {t.testimonials.map((item) => (
                 <article
                   key={item.name}

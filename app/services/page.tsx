@@ -24,6 +24,19 @@ import { LoadingLink } from "@/components/ui/LoadingLink";
 import { services as staticServices } from "@/data/services";
 import { prisma } from "@/lib/prisma";
 import { isLanguage, type Language } from "@/lib/i18n/config";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Security & Safety Services",
+  description:
+    "Explore BM Contractors Tanzania services including CCTV, electric fence, gate motors, access control, networking and power backup.",
+  openGraph: {
+    title: "BM Contractors Tanzania Services",
+    description:
+      "CCTV, electric fence, gate motors, access control, networking and power backup services in Tanzania.",
+    images: ["/og/bm-contractors-og.jpg"],
+  },
+};
 
 type PageProps = {
   searchParams: Promise<{
