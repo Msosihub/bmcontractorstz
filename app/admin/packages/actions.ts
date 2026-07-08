@@ -106,3 +106,27 @@ export async function createCctvPackage(formData: FormData) {
   revalidatePath("/admin/packages");
   revalidatePath("/cctv-packages");
 }
+
+export async function toggleCctvPackagePublished(formData: FormData) {
+  /**
+   * Publish or hide a CCTV package without deleting it.
+   */
+  const packageId = String(formData.get("packageId") || "").trim();
+  const nextValue = String(formData.get("nextValue") || "") === "true";
+
+  if (!packageId) {
+    throw new Error("Missing CCTV package ID.");
+  }
+
+  await prisma.cctvPackage.update({
+    where: {
+      id: packageId,
+    },
+    data: {
+      isPublished: nextValue,
+    },
+  });
+
+  revalidatePath("/admin/packages");
+  revalidatePath("/cctv-packages");
+}

@@ -19,6 +19,7 @@ import Link from "next/link";
 import { AdminShell } from "@/components/admin/AdminShell";
 import { AdminStatCard } from "@/components/admin/AdminStatCard";
 import { prisma } from "@/lib/prisma";
+import { LoadingLink } from "@/components/ui/LoadingLink";
 
 export default async function AdminPage() {
   const supportArticleCount = await prisma.supportArticle.count();
@@ -45,6 +46,22 @@ export default async function AdminPage() {
     },
   });
 
+  const projectCount = await prisma.project.count();
+
+  const publishedProjectCount = await prisma.project.count({
+    where: {
+      isPublished: true,
+    },
+  });
+
+  const serviceCount = await prisma.service.count();
+
+  const publishedServiceCount = await prisma.service.count({
+    where: {
+      isPublished: true,
+    },
+  });
+
   const windows = [
     {
       title: "Site Surveys",
@@ -67,6 +84,19 @@ export default async function AdminPage() {
       description: "Manage 4, 8, 10, 16, 24 and 32 camera packages.",
       href: "/admin/packages",
     },
+
+    {
+      title: "Projects & Gallery",
+      description:
+        "Manage completed work, installation photos and project examples.",
+      href: "/admin/projects",
+    },
+    {
+      title: "Services",
+      description:
+        "Manage website service pages and customer-facing service content.",
+      href: "/admin/services",
+    },
     {
       title: "Support Articles",
       description: "Manage website help center articles and customer guides.",
@@ -84,7 +114,7 @@ export default async function AdminPage() {
       title="Admin Dashboard"
       subtitle="Backend foundation for managing BM Contractors website data, requests, products and content."
     >
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
         <AdminStatCard
           label="Site Surveys"
           value={siteSurveyCount}
@@ -110,6 +140,30 @@ export default async function AdminPage() {
         />
 
         <AdminStatCard
+          label="Projects"
+          value={projectCount}
+          hint="Gallery records"
+        />
+
+        <AdminStatCard
+          label="Published Projects"
+          value={publishedProjectCount}
+          hint="Visible gallery"
+        />
+
+        <AdminStatCard
+          label="Services"
+          value={serviceCount}
+          hint="Service pages"
+        />
+
+        <AdminStatCard
+          label="Published Services"
+          value={publishedServiceCount}
+          hint="Visible services"
+        />
+
+        <AdminStatCard
           label="Help Articles"
           value={supportArticleCount}
           hint="Total support guides"
@@ -124,7 +178,7 @@ export default async function AdminPage() {
 
       <div className="mt-6 grid gap-4 md:grid-cols-2">
         {windows.map((window) => (
-          <Link
+          <LoadingLink
             key={window.href}
             href={window.href}
             className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 transition hover:-translate-y-1 hover:bg-white/[0.1]"
@@ -133,7 +187,7 @@ export default async function AdminPage() {
             <p className="mt-3 leading-7 text-slate-300">
               {window.description}
             </p>
-          </Link>
+          </LoadingLink>
         ))}
       </div>
     </AdminShell>

@@ -19,12 +19,12 @@ import type { Language } from "@/lib/i18n/config";
 type ProjectCardProps = {
   lang: Language;
   titleEn: string;
-  titleSw: string;
+  titleSw?: string | null;
   category: string;
-  location: string;
-  imageUrl?: string;
-  descriptionEn: string;
-  descriptionSw: string;
+  location?: string | null;
+  imageUrl?: string | null;
+  descriptionEn?: string | null;
+  descriptionSw?: string | null;
 };
 
 export function ProjectCard({
@@ -37,17 +37,15 @@ export function ProjectCard({
   descriptionEn,
   descriptionSw,
 }: ProjectCardProps) {
-  const title = lang === "sw" ? titleSw : titleEn;
-  const description = lang === "sw" ? descriptionSw : descriptionEn;
+  const title = lang === "sw" ? titleSw || titleEn : titleEn;
+
+  const description =
+    lang === "sw" ? descriptionSw || descriptionEn || "" : descriptionEn || "";
 
   return (
     <article className="group overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
       <div className="relative h-56 overflow-hidden bg-slate-950">
         {imageUrl ? (
-          /**
-           * We use normal img for now.
-           * Later we can switch to next/image when real optimized images are ready.
-           */
           <img
             src={imageUrl}
             alt={title}
@@ -69,9 +67,11 @@ export function ProjectCard({
       </div>
 
       <div className="p-6">
-        <p className="text-xs font-black uppercase tracking-[0.16em] text-red-600">
-          {location}
-        </p>
+        {location ? (
+          <p className="text-xs font-black uppercase tracking-[0.16em] text-red-600">
+            {location}
+          </p>
+        ) : null}
 
         <p className="mt-3 text-sm leading-7 text-slate-600">{description}</p>
       </div>

@@ -19,6 +19,8 @@ import { prisma } from "@/lib/prisma";
 import { AdminShell } from "@/components/admin/AdminShell";
 import { AdminStatCard } from "@/components/admin/AdminStatCard";
 import { AdminCctvPackageForm } from "@/components/admin/AdminCctvPackageForm";
+import { AdminToggleButton } from "@/components/admin/AdminToggleButton";
+import { toggleCctvPackagePublished } from "./actions";
 
 function formatMoney(value: number | null) {
   /**
@@ -78,7 +80,7 @@ export default async function AdminPackagesPage() {
         />
       </div>
 
-      <div className="mt-6 grid gap-6 xl:grid-cols-[0.9fr_1.1fr]">
+      <div className="mt-6 grid items-start gap-6 xl:grid-cols-[0.9fr_1.1fr]">
         <AdminCctvPackageForm />
 
         <section className="overflow-hidden rounded-[2rem] bg-white text-slate-950 shadow-2xl shadow-black/20">
@@ -134,9 +136,26 @@ export default async function AdminPackagesPage() {
                         </div>
                       </div>
 
-                      <p className="text-sm font-black">
-                        {formatMoney(pkg.priceFrom)}
-                      </p>
+                      <div className="flex flex-col gap-3 sm:items-end">
+                        <p className="text-sm font-black">
+                          {formatMoney(pkg.priceFrom)}
+                        </p>
+
+                        <form action={toggleCctvPackagePublished}>
+                          <input
+                            type="hidden"
+                            name="packageId"
+                            value={pkg.id}
+                          />
+                          <input
+                            type="hidden"
+                            name="nextValue"
+                            value={String(!pkg.isPublished)}
+                          />
+
+                          <AdminToggleButton isPublished={pkg.isPublished} />
+                        </form>
+                      </div>
                     </div>
 
                     {pkg.descriptionEn ? (

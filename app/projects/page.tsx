@@ -4,15 +4,15 @@
  * Public project gallery / portfolio page for BM Contractors.
  *
  * Current features:
- * - Shows project/gallery cards for common BM service scenarios.
+ * - Reads project/gallery records from Neon Postgres.
+ * - Falls back to static project data if database is empty.
  * - Supports English and Swahili.
  * - Mobile-friendly grid.
  * - Ready for real project images.
  *
  * Future:
- * - Pull projects from Neon database.
- * - Add admin project upload/edit/delete.
  * - Add project detail pages.
+ * - Add image uploads from admin.
  * - Add before/after gallery.
  */
 
@@ -20,8 +20,10 @@ import Link from "next/link";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { ProjectCard } from "@/components/site/ProjectCard";
-import { projects } from "@/data/projects";
+import { projects as staticProjects } from "@/data/projects";
+import { prisma } from "@/lib/prisma";
 import { isLanguage, type Language } from "@/lib/i18n/config";
+import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
 
 type PageProps = {
   searchParams: Promise<{
@@ -32,6 +34,26 @@ type PageProps = {
 export default async function ProjectsPage({ searchParams }: PageProps) {
   const params = await searchParams;
   const lang: Language = isLanguage(params.lang) ? params.lang : "en";
+
+  const dbProjects = await prisma.project.findMany({
+    where: {
+      isPublished: true,
+    },
+    orderBy: {
+      createdAt: "desc",
+    },
+  });
+
+  const projects =
+    dbProjects.length > 0
+      ? dbProjects
+      : staticProjects.map((project) => ({
+          ...project,
+          id: project.slug,
+          isPublished: true,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        }));
 
   const content = {
     en: {
@@ -191,6 +213,7 @@ export default async function ProjectsPage({ searchParams }: PageProps) {
       </main>
 
       <Footer lang={lang} />
+      <FloatingWhatsApp lang={lang} />
     </>
   );
 }

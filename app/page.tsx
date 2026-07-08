@@ -5,6 +5,7 @@ import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { getDictionary } from "@/lib/i18n/dictionary";
 import { isLanguage, type Language } from "@/lib/i18n/config";
+import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
 
 type PageProps = {
   searchParams: Promise<{
@@ -190,6 +191,7 @@ export default async function Home({ searchParams }: PageProps) {
       </main>
 
       <Footer lang={lang} />
+      <FloatingWhatsApp lang={lang} />
     </>
   );
 }

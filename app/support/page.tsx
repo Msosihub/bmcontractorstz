@@ -22,6 +22,7 @@ import { SupportArticleCard } from "@/components/site/SupportArticleCard";
 import { supportArticles as staticSupportArticles } from "@/data/support";
 import { prisma } from "@/lib/prisma";
 import { isLanguage, type Language } from "@/lib/i18n/config";
+import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
 
 type PageProps = {
   searchParams: Promise<{
@@ -179,6 +180,7 @@ export default async function SupportPage({ searchParams }: PageProps) {
       </main>
 
       <Footer lang={lang} />
+      <FloatingWhatsApp lang={lang} />
     </>
   );
 }

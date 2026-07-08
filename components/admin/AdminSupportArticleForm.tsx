@@ -22,7 +22,7 @@ export function AdminSupportArticleForm() {
   return (
     <form
       action={createSupportArticle}
-      className="grid gap-4 rounded-[2rem] bg-white p-6 text-slate-950 shadow-2xl shadow-black/20"
+      className="grid h-fit gap-4 rounded-[2rem] bg-white p-6 text-slate-950 shadow-2xl shadow-black/20"
     >
       <div>
         <p className="text-xs font-black uppercase tracking-[0.18em] text-red-600">

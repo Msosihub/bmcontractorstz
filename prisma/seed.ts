@@ -22,6 +22,8 @@ import { Pool } from "pg";
 import { cctvPackageSeeds } from "./seed/cctv-packages";
 import { productCategorySeeds, productSeeds } from "./seed/products";
 import { supportArticleSeeds } from "./seed/support";
+import { projectSeeds } from "./seed/projects";
+import { serviceSeeds } from "./seed/services";
 
 const connectionString = process.env.DATABASE_URL;
 
@@ -184,11 +186,93 @@ async function seedSupportArticles() {
   console.log(`Seeded ${supportArticleSeeds.length} support articles.`);
 }
 
+async function seedProjects() {
+  /**
+   * Creates/updates project gallery records.
+   */
+  for (const project of projectSeeds) {
+    await prisma.project.upsert({
+      where: {
+        slug: project.slug,
+      },
+      update: {
+        titleEn: project.titleEn,
+        titleSw: project.titleSw,
+        category: project.category,
+        location: project.location,
+        imageUrl: project.imageUrl,
+        descriptionEn: project.descriptionEn,
+        descriptionSw: project.descriptionSw,
+        isPublished: true,
+      },
+      create: {
+        slug: project.slug,
+        titleEn: project.titleEn,
+        titleSw: project.titleSw,
+        category: project.category,
+        location: project.location,
+        imageUrl: project.imageUrl,
+        descriptionEn: project.descriptionEn,
+        descriptionSw: project.descriptionSw,
+        isPublished: true,
+      },
+    });
+  }
+
+  console.log(`Seeded ${projectSeeds.length} projects.`);
+}
+
+async function seedServices() {
+  /**
+   * Creates/updates service pages for BM Contractors.
+   */
+  for (const service of serviceSeeds) {
+    await prisma.service.upsert({
+      where: {
+        slug: service.slug,
+      },
+      update: {
+        titleEn: service.titleEn,
+        titleSw: service.titleSw,
+        eyebrowEn: service.eyebrowEn,
+        eyebrowSw: service.eyebrowSw,
+        descriptionEn: service.descriptionEn,
+        descriptionSw: service.descriptionSw,
+        contentEn: service.contentEn,
+        contentSw: service.contentSw,
+        imageUrl: service.imageUrl,
+        featuresEn: service.featuresEn,
+        featuresSw: service.featuresSw,
+        isPublished: true,
+      },
+      create: {
+        slug: service.slug,
+        titleEn: service.titleEn,
+        titleSw: service.titleSw,
+        eyebrowEn: service.eyebrowEn,
+        eyebrowSw: service.eyebrowSw,
+        descriptionEn: service.descriptionEn,
+        descriptionSw: service.descriptionSw,
+        contentEn: service.contentEn,
+        contentSw: service.contentSw,
+        imageUrl: service.imageUrl,
+        featuresEn: service.featuresEn,
+        featuresSw: service.featuresSw,
+        isPublished: true,
+      },
+    });
+  }
+
+  console.log(`Seeded ${serviceSeeds.length} services.`);
+}
+
 async function main() {
   await seedCctvPackages();
   await seedProductCategories();
   await seedProducts();
   await seedSupportArticles();
+  await seedProjects();
+  await seedServices();
 }
 
 main()

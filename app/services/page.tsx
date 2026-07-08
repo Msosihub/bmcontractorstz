@@ -4,22 +4,25 @@
  * Public services overview page for BM Contractors.
  *
  * Current features:
- * - Lists all major security and safety services.
+ * - Reads service records from Neon Postgres.
+ * - Falls back to static services if database is empty.
  * - Supports English and Swahili.
  * - Mobile-friendly cards.
  * - Strong request site survey CTA.
  *
  * Future:
- * - Pull services from Neon database.
- * - Add real service images and icons.
- * - Add admin-managed service content.
+ * - Add service images and icons.
+ * - Add filtering.
+ * - Add richer service sections.
  */
 
-import Link from "next/link";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
+import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
 import { ServiceCard } from "@/components/site/ServiceCard";
-import { services } from "@/data/services";
+import { LoadingLink } from "@/components/ui/LoadingLink";
+import { services as staticServices } from "@/data/services";
+import { prisma } from "@/lib/prisma";
 import { isLanguage, type Language } from "@/lib/i18n/config";
 
 type PageProps = {
@@ -31,6 +34,26 @@ type PageProps = {
 export default async function ServicesPage({ searchParams }: PageProps) {
   const params = await searchParams;
   const lang: Language = isLanguage(params.lang) ? params.lang : "en";
+
+  const dbServices = await prisma.service.findMany({
+    where: {
+      isPublished: true,
+    },
+    orderBy: {
+      createdAt: "asc",
+    },
+  });
+
+  const services =
+    dbServices.length > 0
+      ? dbServices
+      : staticServices.map((service) => ({
+          ...service,
+          id: service.slug,
+          isPublished: true,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        }));
 
   const content = {
     en: {
@@ -87,19 +110,19 @@ export default async function ServicesPage({ searchParams }: PageProps) {
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <Link
+                <LoadingLink
                   href={`/request-site-survey?lang=${lang}`}
                   className="rounded-full bg-red-600 px-6 py-3 text-center text-sm font-black text-white transition hover:bg-red-700"
                 >
                   {t.survey}
-                </Link>
+                </LoadingLink>
 
-                <Link
+                <LoadingLink
                   href={`/contact?lang=${lang}`}
                   className="rounded-full bg-white px-6 py-3 text-center text-sm font-black text-slate-950 transition hover:bg-slate-100"
                 >
                   {t.contact}
-                </Link>
+                </LoadingLink>
               </div>
             </div>
           </div>
@@ -144,18 +167,19 @@ export default async function ServicesPage({ searchParams }: PageProps) {
                 </p>
               </div>
 
-              <Link
+              <LoadingLink
                 href={`/request-site-survey?lang=${lang}`}
                 className="rounded-full bg-white px-6 py-3 text-center text-sm font-black text-red-700 transition hover:bg-red-50"
               >
                 {t.ctaButton}
-              </Link>
+              </LoadingLink>
             </div>
           </div>
         </section>
       </main>
 
       <Footer lang={lang} />
+      <FloatingWhatsApp lang={lang} />
     </>
   );
 }

@@ -23,8 +23,8 @@ export const siteConfig = {
 
   whatsapp: {
     label: "+255 735 111 881",
-    url: "https://wa.me/255735111881",
-    raw: "+255735111881",
+    url: "https://wa.me/255745778821",
+    raw: "+255745778821",
   },
 
   phones: [

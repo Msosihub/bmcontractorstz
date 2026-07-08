@@ -44,22 +44,27 @@ model Page {
   updatedAt   DateTime @updatedAt
 }
 
+/**
+ * BM Contractors service page content.
+ * Used for public /services and individual service pages.
+ */
 model Service {
-  id          String   @id @default(cuid())
-  slug        String   @unique
-  titleEn     String
-  titleSw     String?
-  summaryEn   String?
-  summarySw   String?
-  contentEn   String?
-  contentSw   String?
-  imageUrl    String?
-  iconName    String?
-  sortOrder   Int      @default(0)
-  isFeatured  Boolean  @default(false)
-  isPublished Boolean  @default(true)
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id            String   @id @default(cuid())
+  slug          String   @unique
+  titleEn       String
+  titleSw       String?
+  eyebrowEn     String?
+  eyebrowSw     String?
+  descriptionEn String?
+  descriptionSw String?
+  contentEn     String?
+  contentSw     String?
+  imageUrl      String?
+  featuresEn    Json?
+  featuresSw    Json?
+  isPublished   Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 }
 
 model ProductCategory {
@@ -121,14 +126,14 @@ model CctvPackageItem {
 
 model Project {
   id            String   @id @default(cuid())
+  slug          String   @unique
   titleEn       String
   titleSw       String?
+  category      String
   location      String?
-  serviceType   String?
+  imageUrl      String?
   descriptionEn String?
   descriptionSw String?
-  imageUrl      String?
-  isFeatured    Boolean  @default(false)
   isPublished   Boolean  @default(true)
   createdAt     DateTime @default(now())
   updatedAt     DateTime @updatedAt

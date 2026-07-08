@@ -102,3 +102,88 @@ export async function createProduct(formData: FormData) {
   revalidatePath("/admin/products");
   revalidatePath("/products");
 }
+
+export async function toggleProductPublished(formData: FormData) {
+  /**
+   * Publish or hide a product without deleting it.
+   */
+  const productId = String(formData.get("productId") || "").trim();
+  const nextValue = String(formData.get("nextValue") || "") === "true";
+
+  if (!productId) {
+    throw new Error("Missing product ID.");
+  }
+
+  await prisma.product.update({
+    where: {
+      id: productId,
+    },
+    data: {
+      isPublished: nextValue,
+    },
+  });
+
+  revalidatePath("/admin/products");
+  revalidatePath("/products");
+}
+
+export async function updateProduct(formData: FormData) {
+  /**
+   * Updates an existing product record.
+   *
+   * Used by:
+   * - /admin/products/[id]/edit
+   */
+  const productId = String(formData.get("productId") || "").trim();
+
+  const name = String(formData.get("name") || "").trim();
+  const brand = String(formData.get("brand") || "").trim();
+  const categoryName = String(formData.get("categoryName") || "").trim();
+  const description = String(formData.get("description") || "").trim();
+  const price = parsePrice(formData.get("price"));
+
+  if (!productId) {
+    throw new Error("Missing product ID.");
+  }
+
+  if (!name) {
+    throw new Error("Product name is required.");
+  }
+
+  if (!categoryName) {
+    throw new Error("Category name is required.");
+  }
+
+  /**
+   * Find or create category during edit.
+   * This keeps editing fast even if the category does not exist yet.
+   */
+  const category = await prisma.productCategory.upsert({
+    where: {
+      slug: slugify(categoryName),
+    },
+    update: {
+      nameEn: categoryName,
+    },
+    create: {
+      slug: slugify(categoryName),
+      nameEn: categoryName,
+    },
+  });
+
+  await prisma.product.update({
+    where: {
+      id: productId,
+    },
+    data: {
+      name,
+      brand: brand || null,
+      categoryId: category.id,
+      description: description || null,
+      price,
+    },
+  });
+
+  revalidatePath("/admin/products");
+  revalidatePath("/products");
+}

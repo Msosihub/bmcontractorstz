@@ -20,6 +20,9 @@ import { prisma } from "@/lib/prisma";
 import { AdminShell } from "@/components/admin/AdminShell";
 import { AdminStatCard } from "@/components/admin/AdminStatCard";
 import { AdminProductForm } from "@/components/admin/AdminProductForm";
+import { AdminToggleButton } from "@/components/admin/AdminToggleButton";
+import { toggleProductPublished } from "./actions";
+import Link from "next/link";
 
 function formatMoney(value: number | null) {
   /**
@@ -75,7 +78,7 @@ export default async function AdminProductsPage() {
         />
       </div>
 
-      <div className="mt-6 grid gap-6 xl:grid-cols-[0.9fr_1.1fr]">
+      <div className="mt-6 grid items-start gap-6 xl:grid-cols-[0.9fr_1.1fr]">
         <AdminProductForm />
 
         <section className="overflow-hidden rounded-[2rem] bg-white text-slate-950 shadow-2xl shadow-black/20">
@@ -136,9 +139,35 @@ export default async function AdminProductsPage() {
                     <p className="text-sm font-black text-slate-950">
                       {formatMoney(product.price)}
                     </p>
+
                     <p className="mt-1 text-xs text-slate-400">
                       {product.createdAt.toLocaleDateString("en-GB")}
                     </p>
+
+                    <Link
+                      href={`/admin/products/${product.id}/edit`}
+                      className="mt-3 inline-flex rounded-full border border-slate-300 px-4 py-2 text-xs font-black text-slate-700 transition hover:bg-slate-50"
+                    >
+                      Edit
+                    </Link>
+
+                    <form
+                      action={toggleProductPublished}
+                      className="mt-3 sm:mt-4"
+                    >
+                      <input
+                        type="hidden"
+                        name="productId"
+                        value={product.id}
+                      />
+                      <input
+                        type="hidden"
+                        name="nextValue"
+                        value={String(!product.isPublished)}
+                      />
+
+                      <AdminToggleButton isPublished={product.isPublished} />
+                    </form>
                   </div>
                 </article>
               ))}

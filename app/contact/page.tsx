@@ -22,6 +22,7 @@ import { SubmitButton } from "@/components/ui/SubmitButton";
 import { isLanguage, type Language } from "@/lib/i18n/config";
 import { createContactMessage } from "./actions";
 import { siteConfig } from "@/data/site";
+import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
 
 type PageProps = {
   searchParams: Promise<{
@@ -192,6 +193,7 @@ export default async function ContactPage({ searchParams }: PageProps) {
       </main>
 
       <Footer lang={lang} />
+      <FloatingWhatsApp lang={lang} />
     </>
   );
 }

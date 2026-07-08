@@ -98,3 +98,28 @@ export async function createSupportArticle(formData: FormData) {
   revalidatePath("/support");
   revalidatePath(`/support/${slug}`);
 }
+
+export async function toggleSupportArticlePublished(formData: FormData) {
+  /**
+   * Publish or hide a support article without deleting it.
+   */
+  const articleId = String(formData.get("articleId") || "").trim();
+  const nextValue = String(formData.get("nextValue") || "") === "true";
+
+  if (!articleId) {
+    throw new Error("Missing support article ID.");
+  }
+
+  const article = await prisma.supportArticle.update({
+    where: {
+      id: articleId,
+    },
+    data: {
+      isPublished: nextValue,
+    },
+  });
+
+  revalidatePath("/admin/support");
+  revalidatePath("/support");
+  revalidatePath(`/support/${article.slug}`);
+}

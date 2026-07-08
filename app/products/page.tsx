@@ -24,6 +24,7 @@ import { ProductCard } from "@/components/site/ProductCard";
 import { productCategories } from "@/data/products";
 import { prisma } from "@/lib/prisma";
 import { isLanguage, type Language } from "@/lib/i18n/config";
+import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
 
 type PageProps = {
   searchParams: Promise<{
@@ -345,6 +346,7 @@ export default async function ProductsPage({ searchParams }: PageProps) {
       </main>
 
       <Footer lang={lang} />
+      <FloatingWhatsApp lang={lang} />
     </>
   );
 }

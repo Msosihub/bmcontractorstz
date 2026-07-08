@@ -6,23 +6,23 @@
  * Purpose:
  * - Shows service title, summary and call-to-action.
  * - Supports English and Swahili.
- * - Keeps a clean professional card style.
+ * - Works with both static and database service records.
  *
  * Future:
  * - Add real service image thumbnails.
  * - Add icons per service.
  */
 
-import Link from "next/link";
+import { LoadingLink } from "@/components/ui/LoadingLink";
 import type { Language } from "@/lib/i18n/config";
 
 type ServiceCardProps = {
   lang: Language;
   slug: string;
   titleEn: string;
-  titleSw: string;
-  descriptionEn: string;
-  descriptionSw: string;
+  titleSw?: string | null;
+  descriptionEn?: string | null;
+  descriptionSw?: string | null;
 };
 
 export function ServiceCard({
@@ -33,14 +33,15 @@ export function ServiceCard({
   descriptionEn,
   descriptionSw,
 }: ServiceCardProps) {
-  const title = lang === "sw" ? titleSw : titleEn;
-  const description = lang === "sw" ? descriptionSw : descriptionEn;
+  const title = lang === "sw" ? titleSw || titleEn : titleEn;
+
+  const description =
+    lang === "sw" ? descriptionSw || descriptionEn || "" : descriptionEn || "";
 
   const cta = lang === "sw" ? "Angalia huduma" : "View service";
 
   return (
     <article className="group overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
-      {/* Visual placeholder. Later we can replace this with real project/service images. */}
       <div className="relative h-40 bg-slate-950">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(220,38,38,0.45),transparent_35%),linear-gradient(135deg,rgba(15,23,42,1),rgba(30,41,59,1))]" />
         <div className="relative flex h-full items-end p-5">
@@ -57,12 +58,12 @@ export function ServiceCard({
           {description}
         </p>
 
-        <Link
+        <LoadingLink
           href={`/services/${slug}?lang=${lang}`}
           className="mt-6 inline-flex rounded-full bg-slate-950 px-5 py-2.5 text-sm font-black text-white transition hover:bg-red-600"
         >
           {cta}
-        </Link>
+        </LoadingLink>
       </div>
     </article>
   );

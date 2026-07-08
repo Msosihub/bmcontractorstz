@@ -6,13 +6,14 @@
  * Purpose:
  * - Shows quick links and contact details.
  * - Uses centralized siteConfig for phone/email details.
+ * - Uses LoadingLink for navigation feedback.
  * - Supports language-aware links.
  */
 
-import Link from "next/link";
 import type { Language } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionary";
 import { siteConfig } from "@/data/site";
+import { LoadingLink } from "@/components/ui/LoadingLink";
 
 type FooterProps = {
   lang: Language;
@@ -53,16 +54,47 @@ export function Footer({ lang }: FooterProps) {
           <h3 className="text-sm font-bold">Quick Links</h3>
 
           <div className="mt-4 grid gap-2 text-sm text-slate-300">
-            <Link href={`/services?lang=${lang}`}>{t.nav.services}</Link>
-            <Link href={`/cctv-packages?lang=${lang}`}>
+            <LoadingLink
+              href={`/services?lang=${lang}`}
+              className="hover:text-white"
+            >
+              {t.nav.services}
+            </LoadingLink>
+
+            <LoadingLink
+              href={`/cctv-packages?lang=${lang}`}
+              className="hover:text-white"
+            >
               {t.nav.cctvPackages}
-            </Link>
-            <Link href={`/products?lang=${lang}`}>{t.nav.products}</Link>
-            <Link href={`/support?lang=${lang}`}>{t.nav.support}</Link>
-            <Link href={`/request-site-survey?lang=${lang}`}>
+            </LoadingLink>
+
+            <LoadingLink
+              href={`/products?lang=${lang}`}
+              className="hover:text-white"
+            >
+              {t.nav.products}
+            </LoadingLink>
+
+            <LoadingLink
+              href={`/support?lang=${lang}`}
+              className="hover:text-white"
+            >
+              {t.nav.support}
+            </LoadingLink>
+
+            <LoadingLink
+              href={`/request-site-survey?lang=${lang}`}
+              className="hover:text-white"
+            >
               {t.nav.requestSurvey}
-            </Link>
-            <Link href={`/contact?lang=${lang}`}>{t.nav.contact}</Link>
+            </LoadingLink>
+
+            <LoadingLink
+              href={`/contact?lang=${lang}`}
+              className="hover:text-white"
+            >
+              {t.nav.contact}
+            </LoadingLink>
           </div>
         </div>
 
@@ -82,12 +114,14 @@ export function Footer({ lang }: FooterProps) {
             <p>{siteConfig.location.country}</p>
           </div>
 
-          <Link
+          <a
             href={siteConfig.whatsapp.url}
-            className="mt-5 inline-flex rounded-full bg-green-600 px-4 py-2 text-xs font-black text-white hover:bg-green-700"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-5 inline-flex rounded-full bg-green-600 px-4 py-2 text-xs font-black text-white transition hover:bg-green-700"
           >
             Chat WhatsApp
-          </Link>
+          </a>
         </div>
       </div>
 

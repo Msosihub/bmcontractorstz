@@ -22,6 +22,7 @@ import { Footer } from "@/components/site/Footer";
 import { getSupportArticleBySlug } from "@/data/support";
 import { prisma } from "@/lib/prisma";
 import { isLanguage, type Language } from "@/lib/i18n/config";
+import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
 
 type PageProps = {
   params: Promise<{
@@ -152,6 +153,7 @@ export default async function SupportArticlePage({
       </main>
 
       <Footer lang={lang} />
+      <FloatingWhatsApp lang={lang} />
     </>
   );
 }

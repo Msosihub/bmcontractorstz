@@ -16,6 +16,7 @@ import { SubmitButton } from "@/components/ui/SubmitButton";
 import { getDictionary } from "@/lib/i18n/dictionary";
 import { isLanguage, type Language } from "@/lib/i18n/config";
 import { createSiteSurveyRequest } from "./actions";
+import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
 
 type PageProps = {
   searchParams: Promise<{
@@ -295,6 +296,7 @@ export default async function RequestSiteSurveyPage({
       </main>
 
       <Footer lang={lang} />
+      <FloatingWhatsApp lang={lang} />
     </>
   );
 }

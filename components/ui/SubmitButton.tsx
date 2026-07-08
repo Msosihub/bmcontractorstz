@@ -1,13 +1,12 @@
 /**
- * Reusable Submit Button
+ * SubmitButton Component
  * ----------------------
- * Shows loading animation automatically when a form is submitting.
+ * Reusable form submit button with loading state.
  *
- * Used for:
- * - Site survey request
- * - Contact form
- * - Appointment form
- * - Future product inquiry forms
+ * Purpose:
+ * - Shows spinner while server action is processing.
+ * - Prevents double submit.
+ * - Gives users clear action feedback.
  */
 
 "use client";
@@ -31,7 +30,7 @@ export function SubmitButton({
     <button
       type="submit"
       disabled={pending}
-      className={`inline-flex items-center justify-center gap-2 rounded-full bg-red-600 px-6 py-3 text-sm font-black text-white transition hover:bg-red-700 disabled:cursor-not-allowed disabled:opacity-70 ${className}`}
+      className={`inline-flex items-center justify-center gap-2 rounded-full bg-red-600 px-6 py-3 text-sm font-black text-white shadow-sm transition hover:bg-red-700 disabled:cursor-not-allowed disabled:opacity-70 ${className}`}
     >
       {pending ? (
         <>

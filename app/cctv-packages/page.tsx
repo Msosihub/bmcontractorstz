@@ -23,6 +23,7 @@ import { CctvPackageCard } from "@/components/site/CctvPackageCard";
 import { cctvPackages as staticPackages } from "@/data/packages";
 import { prisma } from "@/lib/prisma";
 import { isLanguage, type Language } from "@/lib/i18n/config";
+import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
 
 type PageProps = {
   searchParams: Promise<{
@@ -232,6 +233,7 @@ export default async function CctvPackagesPage({ searchParams }: PageProps) {
       </main>
 
       <Footer lang={lang} />
+      <FloatingWhatsApp lang={lang} />
     </>
   );
 }
