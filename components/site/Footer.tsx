@@ -125,6 +125,29 @@ export function Footer({ lang }: FooterProps) {
         </div>
       </div>
 
+      <div className="mt-6 flex flex-wrap px-6 py-4 gap-4 text-sm font-semibold text-slate-500">
+        <LoadingLink
+          href={`/about?lang=${lang}`}
+          className="hover:text-red-600"
+        >
+          {lang === "sw" ? "Kuhusu" : "About"}
+        </LoadingLink>
+
+        <LoadingLink
+          href={`/privacy-policy?lang=${lang}`}
+          className="hover:text-red-600"
+        >
+          Privacy Policy
+        </LoadingLink>
+
+        <LoadingLink
+          href={`/terms?lang=${lang}`}
+          className="hover:text-red-600"
+        >
+          {lang === "sw" ? "Masharti" : "Terms"}
+        </LoadingLink>
+      </div>
+
       <div className="border-t border-slate-800 px-6 py-4 text-center text-xs text-slate-400">
         © {new Date().getFullYear()} {siteConfig.shortName}. All rights
         reserved.

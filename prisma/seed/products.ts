@@ -81,6 +81,11 @@ export const productSeeds = [
     brand: "Hikvision",
     categorySlug: "cctv-cameras",
     imageUrl: "/images/products/cctv-products.jpg",
+    specifications: [
+      { label: "Resolution", value: "2MP" },
+      { label: "Use", value: "Indoor / Outdoor depending on model" },
+      { label: "Best for", value: "Homes, shops and offices" },
+    ],
     description:
       "Reliable 2MP CCTV camera option for homes, shops, offices and small business installations.",
     price: null,
@@ -91,6 +96,11 @@ export const productSeeds = [
     brand: "Hikvision",
     categorySlug: "cctv-cameras",
     imageUrl: "/images/products/cctv-products.jpg",
+    specifications: [
+      { label: "Resolution", value: "2MP" },
+      { label: "Use", value: "Indoor / Outdoor depending on model" },
+      { label: "Best for", value: "Homes, shops and offices" },
+    ],
     description:
       "Higher resolution CCTV camera suitable for customers who need clearer image quality.",
     price: null,
@@ -101,6 +111,11 @@ export const productSeeds = [
     brand: "Tiandy",
     categorySlug: "cctv-cameras",
     imageUrl: "/images/products/cctv-products.jpg",
+    specifications: [
+      { label: "Resolution", value: "2MP" },
+      { label: "Use", value: "Indoor / Outdoor depending on model" },
+      { label: "Best for", value: "Homes, shops and offices" },
+    ],
     description:
       "Affordable CCTV camera option for residential and small business installations.",
     price: null,
@@ -111,6 +126,11 @@ export const productSeeds = [
     brand: "Hikvision / Tiandy",
     categorySlug: "cctv-cameras",
     imageUrl: "/images/products/cctv-products.jpg",
+    specifications: [
+      { label: "Channels", value: "8CH" },
+      { label: "Storage", value: "Supports CCTV hard disk" },
+      { label: "Use", value: "CCTV recording and remote viewing" },
+    ],
     description:
       "DVR for small and medium CCTV systems with up to 8 analog cameras.",
     price: null,
@@ -121,6 +141,11 @@ export const productSeeds = [
     brand: "Hikvision / Tiandy",
     categorySlug: "cctv-cameras",
     imageUrl: "/images/products/cctv-products.jpg",
+    specifications: [
+      { label: "Channels", value: "8CH" },
+      { label: "Storage", value: "Supports CCTV hard disk" },
+      { label: "Use", value: "CCTV recording and remote viewing" },
+    ],
     description: "DVR for medium CCTV systems with up to 16 analog cameras.",
     price: null,
   },
@@ -268,6 +293,11 @@ export const productSeeds = [
     brand: "UPS",
     categorySlug: "power-backup",
     imageUrl: "/images/products/cctv-products.jpg",
+    specifications: [
+      { label: "Capacity", value: "650VA" },
+      { label: "Use", value: "Router, DVR/NVR and small CCTV backup" },
+      { label: "Best for", value: "Small security systems" },
+    ],
     description:
       "Backup power for CCTV systems, routers, NVRs and small office devices.",
     price: null,
@@ -278,6 +308,11 @@ export const productSeeds = [
     brand: "UPS",
     categorySlug: "power-backup",
     imageUrl: "/images/products/cctv-products.jpg",
+    specifications: [
+      { label: "Capacity", value: "650VA" },
+      { label: "Use", value: "Router, DVR/NVR and small CCTV backup" },
+      { label: "Best for", value: "Small security systems" },
+    ],
     description: "Larger UPS backup option for CCTV and office equipment.",
     price: null,
   },

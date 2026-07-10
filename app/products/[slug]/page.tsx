@@ -147,6 +147,8 @@ export default async function ProductDetailPage({
       ? product?.category?.nameSw || product?.category?.nameEn
       : product.category?.nameEn;
 
+  const specifications = parseSpecifications(product.specifications);
+
   const labels = {
     en: {
       back: "Back to Products",
@@ -326,6 +328,48 @@ export default async function ProductDetailPage({
           </div>
         </section>
 
+        {specifications.length > 0 ? (
+          <section className="bg-white px-4 py-14 sm:px-6 sm:py-16">
+            <div className="mx-auto max-w-7xl">
+              <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+                <div>
+                  <p className="text-sm font-black text-red-600">
+                    {lang === "sw" ? "Specifications" : "Specifications"}
+                  </p>
+
+                  <h2 className="mt-2 text-3xl font-black tracking-tight sm:text-5xl">
+                    {lang === "sw" ? "Taarifa za bidhaa" : "Product details"}
+                  </h2>
+                </div>
+
+                <LoadingLink
+                  href={`/request-site-survey?lang=${lang}&product=${product.slug}`}
+                  className="inline-flex rounded-full bg-slate-950 px-5 py-3 text-sm font-black text-white transition hover:bg-red-600"
+                >
+                  {t.request}
+                </LoadingLink>
+              </div>
+
+              <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {specifications.map((spec) => (
+                  <div
+                    key={`${spec.label}-${spec.value}`}
+                    className="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-5"
+                  >
+                    <p className="text-xs font-black uppercase tracking-[0.16em] text-slate-500">
+                      {spec.label}
+                    </p>
+
+                    <p className="mt-2 text-xl font-black text-slate-950">
+                      {spec.value}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        ) : null}
+
         {relatedProducts.length > 0 ? (
           <section className="bg-slate-50 px-4 py-14 sm:px-6 sm:py-16">
             <div className="mx-auto max-w-7xl">
@@ -400,4 +444,37 @@ export default async function ProductDetailPage({
       <FloatingWhatsApp lang={lang} />
     </>
   );
+}
+
+function parseSpecifications(value: unknown) {
+  /**
+   * Converts Prisma Json specifications into clean label/value pairs.
+   *
+   * Supported format:
+   * [
+   *   { "label": "Resolution", "value": "2MP" },
+   *   { "label": "Technology", "value": "Analog / IP" }
+   * ]
+   */
+  if (!Array.isArray(value)) return [];
+
+  return value
+    .map((item) => {
+      if (
+        typeof item === "object" &&
+        item !== null &&
+        "label" in item &&
+        "value" in item
+      ) {
+        return {
+          label: String(item.label || "").trim(),
+          value: String(item.value || "").trim(),
+        };
+      }
+
+      return null;
+    })
+    .filter((item): item is { label: string; value: string } =>
+      Boolean(item?.label && item?.value),
+    );
 }

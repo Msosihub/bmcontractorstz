@@ -16,6 +16,7 @@
  */
 
 import Link from "next/link";
+import { AdminShell } from "@/components/admin/AdminShell";
 import { AdminStatCard } from "@/components/admin/AdminStatCard";
 import { prisma } from "@/lib/prisma";
 import { LoadingLink } from "@/components/ui/LoadingLink";

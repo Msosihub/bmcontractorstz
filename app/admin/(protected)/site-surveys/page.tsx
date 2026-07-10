@@ -137,6 +137,47 @@ export default async function AdminSiteSurveysPage() {
                 </div>
 
                 <div>
+                  <p>
+                    <span className="text-sm font-black text-slate-900">
+                      Budget:
+                    </span>{" "}
+                    {request.budgetRange || "Not provided"}
+                  </p>
+
+                  <p>
+                    <span className="text-sm font-black text-slate-900">
+                      Urgency:
+                    </span>{" "}
+                    {request.urgency || "Not provided"}
+                  </p>
+
+                  <p>
+                    <span className="text-sm font-black text-slate-900">
+                      Preferred Contact:
+                    </span>{" "}
+                    {request.preferredContactMethod || "Not provided"}
+                  </p>
+
+                  {request.selectedPackage ? (
+                    <p>
+                      <span className="font-black text-slate-950">
+                        Selected Package:
+                      </span>{" "}
+                      {request.selectedPackage}
+                    </p>
+                  ) : null}
+
+                  {request.selectedProduct ? (
+                    <p>
+                      <span className="font-black text-slate-950">
+                        Selected Product:
+                      </span>{" "}
+                      {request.selectedProduct}
+                    </p>
+                  ) : null}
+                </div>
+
+                <div>
                   <p className="text-sm font-black text-slate-900">
                     {request.serviceType || "No service selected"}
                   </p>

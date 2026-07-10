@@ -52,6 +52,36 @@ function parsePrice(value: FormDataEntryValue | null) {
   return Math.round(price);
 }
 
+function parseSpecificationsText(value: FormDataEntryValue | null) {
+  /**
+   * Converts admin textarea lines into JSON specs.
+   *
+   * Input:
+   * Resolution: 2MP
+   * Technology: IP
+   *
+   * Output:
+   * [{ label: "Resolution", value: "2MP" }, ...]
+   */
+  const text = String(value || "").trim();
+
+  if (!text) return [];
+
+  return text
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .map((line) => {
+      const [label, ...rest] = line.split(":");
+
+      return {
+        label: label.trim(),
+        value: rest.join(":").trim(),
+      };
+    })
+    .filter((item) => item.label && item.value);
+}
+
 export async function createProduct(formData: FormData) {
   const name = String(formData.get("name") || "").trim();
   const brand = String(formData.get("brand") || "").trim();
@@ -59,6 +89,9 @@ export async function createProduct(formData: FormData) {
   const description = String(formData.get("description") || "").trim();
   const price = parsePrice(formData.get("price"));
   const imageUrl = String(formData.get("imageUrl") || "").trim();
+  const specifications = parseSpecificationsText(
+    formData.get("specificationsText"),
+  );
 
   if (!name) {
     throw new Error("Product name is required.");
@@ -98,6 +131,7 @@ export async function createProduct(formData: FormData) {
       imageUrl: imageUrl || null,
       price,
       isPublished: true,
+      specifications,
     },
   });
 
@@ -144,6 +178,9 @@ export async function updateProduct(formData: FormData) {
   const description = String(formData.get("description") || "").trim();
   const price = parsePrice(formData.get("price"));
   const imageUrl = String(formData.get("imageUrl") || "").trim();
+  const specifications = parseSpecificationsText(
+    formData.get("specificationsText"),
+  );
 
   if (!productId) {
     throw new Error("Missing product ID.");
@@ -185,6 +222,7 @@ export async function updateProduct(formData: FormData) {
       description: description || null,
       price,
       imageUrl: imageUrl || null,
+      specifications,
     },
   });
 

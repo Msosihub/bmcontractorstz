@@ -49,7 +49,7 @@ export function CctvPackageCard({
         "Cables & materials",
         "Installation option",
       ],
-      cta: "Request this package",
+      cta: "View package",
       note: "Final quotation depends on site survey.",
       priceAfterSurvey: "Price after survey",
       from: "From",
@@ -63,7 +63,7 @@ export function CctvPackageCard({
         "Cables na materials",
         "Installation option",
       ],
-      cta: "Omba package hii",
+      cta: "Angalia package",
       note: "Quotation kamili hutegemea ukaguzi wa site.",
       priceAfterSurvey: "Bei baada ya survey",
       from: "Kuanzia",
@@ -127,7 +127,7 @@ export function CctvPackageCard({
         <p className="mt-4 text-xs font-semibold text-slate-500">{t.note}</p>
 
         <Link
-          href={`/request-site-survey?lang=${lang}&package=${slug}`}
+          href={`/cctv-packages/${slug}?lang=${lang}`}
           className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-red-600 px-5 py-3 text-sm font-black text-white transition hover:bg-red-700"
         >
           {t.cta}

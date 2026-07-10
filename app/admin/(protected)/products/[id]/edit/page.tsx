@@ -27,6 +27,29 @@ type PageProps = {
   }>;
 };
 
+function specificationsToText(value: unknown) {
+  /**
+   * Converts stored product specifications back into admin-editable text.
+   */
+  if (!Array.isArray(value)) return "";
+
+  return value
+    .map((item) => {
+      if (
+        typeof item === "object" &&
+        item !== null &&
+        "label" in item &&
+        "value" in item
+      ) {
+        return `${String(item.label)}: ${String(item.value)}`;
+      }
+
+      return "";
+    })
+    .filter(Boolean)
+    .join("\n");
+}
+
 export default async function AdminProductEditPage({ params }: PageProps) {
   const resolvedParams = await params;
 
@@ -107,6 +130,18 @@ export default async function AdminProductEditPage({ params }: PageProps) {
             name="imageUrl"
             defaultValue={product.imageUrl || ""}
             placeholder="Image path e.g. /images/products/cctv-products.jpg"
+            className="rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-red-500 focus:ring-4 focus:ring-red-50"
+          />
+
+          <textarea
+            name="specificationsText"
+            defaultValue={specificationsToText(product.specifications)}
+            placeholder={`Specifications, one per line:
+Resolution: 2MP
+Technology: IP
+Lens: 2.8mm
+Warranty: 12 months`}
+            rows={6}
             className="rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-red-500 focus:ring-4 focus:ring-red-50"
           />
 

@@ -6,6 +6,8 @@
  * Includes:
  * - Static public pages.
  * - Published products from Neon.
+ * - Published CCTV packages from Neon.
+ * - Published support articles from Neon.
  */
 
 import type { MetadataRoute } from "next";
@@ -29,24 +31,47 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/support",
     "/contact",
     "/request-site-survey",
+    "/about",
+    "/privacy-policy",
+    "/terms",
   ];
 
-  const products = await prisma.product.findMany({
-    where: {
-      isPublished: true,
-    },
-    select: {
-      slug: true,
-      updatedAt: true,
-    },
-  });
+  const [products, packages, supportArticles] = await Promise.all([
+    prisma.product.findMany({
+      where: {
+        isPublished: true,
+      },
+      select: {
+        slug: true,
+        updatedAt: true,
+      },
+    }),
+
+    prisma.cctvPackage.findMany({
+      where: {
+        isPublished: true,
+      },
+      select: {
+        slug: true,
+        updatedAt: true,
+      },
+    }),
+
+    prisma.supportArticle.findMany({
+      where: {
+        isPublished: true,
+      },
+      select: {
+        slug: true,
+        updatedAt: true,
+      },
+    }),
+  ]);
 
   const staticEntries = staticPages.map((page) => ({
     url: `${baseUrl}${page}`,
     lastModified: new Date(),
-    changeFrequency: (page === "" ? "weekly" : "monthly") as
-      | "weekly"
-      | "monthly",
+    changeFrequency: page === "" ? ("weekly" as const) : ("monthly" as const),
     priority: page === "" ? 1 : 0.8,
   }));
 
@@ -57,5 +82,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.65,
   }));
 
-  return [...staticEntries, ...productEntries];
+  const packageEntries = packages.map((pkg) => ({
+    url: `${baseUrl}/cctv-packages/${pkg.slug}`,
+    lastModified: pkg.updatedAt,
+    changeFrequency: "monthly" as const,
+    priority: 0.75,
+  }));
+
+  const supportEntries = supportArticles.map((article) => ({
+    url: `${baseUrl}/support/${article.slug}`,
+    lastModified: article.updatedAt,
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  return [
+    ...staticEntries,
+    ...packageEntries,
+    ...productEntries,
+    ...supportEntries,
+  ];
 }

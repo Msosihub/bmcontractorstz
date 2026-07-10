@@ -79,19 +79,20 @@ model ProductCategory {
 }
 
 model Product {
-  id          String           @id @default(cuid())
-  slug        String           @unique
-  name        String
-  brand       String?
-  categoryId  String?
-  category    ProductCategory? @relation(fields: [categoryId], references: [id])
-  description String?
-  price       Int?
-  imageUrl    String?
-  isFeatured  Boolean          @default(false)
-  isPublished Boolean          @default(true)
-  createdAt   DateTime         @default(now())
-  updatedAt   DateTime         @updatedAt
+  id             String           @id @default(cuid())
+  slug           String           @unique
+  name           String
+  brand          String?
+  categoryId     String?
+  category       ProductCategory? @relation(fields: [categoryId], references: [id])
+  description    String?
+  price          Int?
+  specifications Json?
+  imageUrl       String?
+  isFeatured     Boolean          @default(false)
+  isPublished    Boolean          @default(true)
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
 }
 
 /**
@@ -172,18 +173,55 @@ model SupportArticle {
 }
 
 model SiteSurveyRequest {
-  id            String    @id @default(cuid())
-  fullName      String
-  phone         String
-  email         String?
-  location      String?
-  serviceType   String?
-  propertyType  String?
-  preferredDate DateTime?
-  message       String?
-  status        String    @default("NEW")
-  createdAt     DateTime  @default(now())
-  updatedAt     DateTime  @updatedAt
+  id                     String    @id @default(cuid())
+  fullName               String
+  phone                  String
+  email                  String?
+  location               String?
+  serviceType            String?
+  propertyType           String?
+  preferredDate          DateTime?
+  budgetRange            String?
+  urgency                String?
+  preferredContactMethod String?
+  selectedPackage        String?
+  selectedProduct        String?
+  message                String?
+  status                 String    @default("NEW")
+  createdAt              DateTime  @default(now())
+  updatedAt              DateTime  @updatedAt
+}
+
+/**
+ * Admin OTP login attempts.
+ * OTP is stored as a hash, never plain text.
+ */
+model AdminOtp {
+  id        String    @id @default(cuid())
+  phone     String
+  otpHash   String
+  expiresAt DateTime
+  usedAt    DateTime?
+  attempts  Int       @default(0)
+  createdAt DateTime  @default(now())
+
+  @@index([phone])
+  @@index([expiresAt])
+}
+
+/**
+ * Admin login sessions.
+ * Session token is stored as a hash.
+ */
+model AdminSession {
+  id          String   @id @default(cuid())
+  phone       String
+  sessionHash String   @unique
+  expiresAt   DateTime
+  createdAt   DateTime @default(now())
+
+  @@index([phone])
+  @@index([expiresAt])
 }
 
 model AppointmentRequest {

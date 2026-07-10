@@ -73,6 +73,17 @@ export function AdminProductForm() {
       />
 
       <textarea
+        name="specificationsText"
+        placeholder={`Specifications, one per line:
+Resolution: 2MP
+Technology: IP
+Lens: 2.8mm
+Warranty: 12 months`}
+        rows={6}
+        className="rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-red-500 focus:ring-4 focus:ring-red-50"
+      />
+
+      <textarea
         name="description"
         placeholder="Short product description"
         className="min-h-28 rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-red-500 focus:ring-4 focus:ring-red-50"

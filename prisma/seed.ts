@@ -132,6 +132,7 @@ async function seedProducts() {
         description: product.description,
         price: product.price,
         imageUrl: product.imageUrl || null,
+        specifications: product.specifications || [],
         isPublished: true,
       },
       create: {
@@ -142,6 +143,7 @@ async function seedProducts() {
         description: product.description,
         price: product.price,
         imageUrl: product.imageUrl || null,
+        specifications: product.specifications || [],
         isPublished: true,
       },
     });
