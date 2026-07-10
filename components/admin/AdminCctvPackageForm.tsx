@@ -15,7 +15,7 @@
  */
 
 import { SubmitButton } from "@/components/ui/SubmitButton";
-import { createCctvPackage } from "@/app/admin/packages/actions";
+import { createCctvPackage } from "@/app/admin/(protected)/packages/actions";
 
 export function AdminCctvPackageForm() {
   return (

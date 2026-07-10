@@ -16,7 +16,7 @@
  */
 
 import { SubmitButton } from "@/components/ui/SubmitButton";
-import { createProduct } from "@/app/admin/products/actions";
+import { createProduct } from "@/app/admin/(protected)/products/actions";
 
 export function AdminProductForm() {
   return (

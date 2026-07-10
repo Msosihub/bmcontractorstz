@@ -15,7 +15,7 @@
  */
 
 import { SubmitButton } from "@/components/ui/SubmitButton";
-import { createService } from "@/app/admin/services/actions";
+import { createService } from "@/app/admin/(protected)/services/actions";
 
 export function AdminServiceForm() {
   return (

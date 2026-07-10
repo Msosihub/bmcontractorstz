@@ -15,7 +15,7 @@
  */
 
 import { SubmitButton } from "@/components/ui/SubmitButton";
-import { createProject } from "@/app/admin/projects/actions";
+import { createProject } from "@/app/admin/(protected)/projects/actions";
 
 export function AdminProjectForm() {
   return (

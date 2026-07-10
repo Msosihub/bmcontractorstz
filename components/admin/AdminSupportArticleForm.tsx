@@ -16,7 +16,7 @@
  */
 
 import { SubmitButton } from "@/components/ui/SubmitButton";
-import { createSupportArticle } from "@/app/admin/support/actions";
+import { createSupportArticle } from "@/app/admin/(protected)/support/actions";
 
 export function AdminSupportArticleForm() {
   return (
