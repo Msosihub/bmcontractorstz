@@ -35,6 +35,17 @@ import { supportArticles as staticSupportArticles } from "@/data/support";
 import { prisma } from "@/lib/prisma";
 import { isLanguage, type Language } from "@/lib/i18n/config";
 import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
+import { BmAssistantPopup } from "@/components/site/BmAssistantPopup";
+import WhyChooseBM from "@/components/sections/WhyChooseBM";
+import HeroSection from "@/components/sections/HeroSection";
+import BrandMarquee from "@/components/sections/BrandMarquee";
+import SecuritySolutionsSection from "@/components/sections/SecuritySolutionsSection";
+import CatalogSection from "@/components/sections/CatalogSection";
+import BrandTrustSection from "@/components/sections/BrandTrustSection";
+import SelectedProjectsSection from "@/components/sections/SelectedProjectsSection";
+import TestimonialsSection from "@/components/sections/TestimonialsSection";
+import FaqSection from "@/components/sections/FaqSection";
+import FinalCtaSection from "@/components/sections/FinalCtaSection";
 
 type PageProps = {
   searchParams: Promise<{
@@ -585,681 +596,66 @@ export default async function HomePage({ searchParams }: PageProps) {
       <FaqJsonLd items={t.faqItems} />
       <Header lang={lang} />
 
-      <main className="min-h-screen bg-white text-slate-950">
+      <main className="min-h-screen bg-slate-950 text-white antialiased">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-slate-950 px-4 py-16 text-white sm:px-6 sm:py-20 lg:py-24">
-          <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-red-600/25 blur-3xl" />
-          <div className="absolute -bottom-32 left-0 h-96 w-96 rounded-full bg-white/10 blur-3xl" />
+        <HeroSection
+          lang={lang}
+          t={t}
+          siteConfig={siteConfig}
+          LoadingLink={LoadingLink}
+        />
 
-          <div className="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-            <div className="bm-fade-up">
-              <p className="inline-flex rounded-full bg-white/10 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-red-200 ring-1 ring-white/10">
-                {t.heroLabel}
-              </p>
-
-              <h1 className="mt-6 max-w-4xl text-4xl font-black leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
-                {t.heroTitle}
-              </h1>
-
-              <p className="mt-6 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
-                {t.heroDescription}
-              </p>
-
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <LoadingLink
-                  href={`/request-site-survey?lang=${lang}`}
-                  className="w-full sm:w-auto rounded-full bg-red-600 px-6 py-3 text-center text-sm font-black text-white shadow-lg shadow-red-950/30 transition hover:-translate-y-0.5 hover:bg-red-700"
-                >
-                  {t.requestSurvey}
-                </LoadingLink>
-
-                <a
-                  href={siteConfig.whatsapp.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="w-full sm:w-auto rounded-full bg-green-600 px-6 py-3 text-center text-sm font-black text-white shadow-lg shadow-green-950/20 transition hover:-translate-y-0.5 hover:bg-green-700"
-                >
-                  {t.whatsapp}
-                </a>
-
-                <LoadingLink
-                  href={`/services?lang=${lang}`}
-                  className="w-full sm:w-auto rounded-full bg-white px-6 py-3 text-center text-sm font-black text-slate-950 transition hover:-translate-y-0.5 hover:bg-slate-100"
-                >
-                  {t.viewServices}
-                </LoadingLink>
-              </div>
-
-              <p className="mt-6 text-sm font-semibold text-slate-400">
-                {t.trustedText}
-              </p>
-
-              <div className="mt-8 grid max-w-xl grid-cols-3 gap-3">
-                {t.stats.map((stat) => (
-                  <div
-                    key={stat.label}
-                    className="rounded-3xl border border-white/10 bg-white/[0.06] p-4"
-                  >
-                    <p className="text-2xl font-black text-white">
-                      {stat.value}
-                    </p>
-                    <p className="mt-1 text-xs font-semibold text-slate-400">
-                      {stat.label}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="bm-fade-up rounded-[2.25rem] border border-white/10 bg-white/[0.06] p-4 shadow-2xl shadow-black/30 backdrop-blur">
-              <div className="overflow-hidden rounded-[1.75rem] bg-white text-slate-950">
-                <div className="relative aspect-[16/11] bg-slate-900">
-                  <img
-                    src="/images/hero/bm-security-hero.jpg"
-                    alt="BM Contractors security systems"
-                    className="h-full w-full object-cover opacity-90"
-                  />
-
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent" />
-
-                  <div className="absolute bottom-5 left-5 right-5">
-                    <p className="inline-flex rounded-full bg-white/15 px-3 py-1 text-xs font-black text-white ring-1 ring-white/20 backdrop-blur">
-                      Site Survey • Installation • Support
-                    </p>
-
-                    <h2 className="mt-3 max-w-md text-2xl font-black text-white">
-                      {lang === "sw"
-                        ? "Mfumo sahihi huanza na kuelewa site yako."
-                        : "The right system starts with understanding your site."}
-                    </h2>
-                  </div>
-                </div>
-
-                <div className="grid gap-3 p-5 sm:grid-cols-3">
-                  {[
-                    lang === "sw" ? "Ukaguzi wa site" : "Site survey",
-                    lang === "sw" ? "Quotation safi" : "Clear quotation",
-                    lang === "sw"
-                      ? "Support baada ya kazi"
-                      : "After-sales support",
-                  ].map((item) => (
-                    <div key={item} className="rounded-2xl bg-slate-50 p-4">
-                      <span className="block h-2 w-8 rounded-full bg-red-600" />
-                      <p className="mt-3 text-sm font-black text-slate-800">
-                        {item}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Solution Strip */}
-        <section className="border-b border-slate-200 bg-white px-4 py-8 sm:px-6">
-          <div className="mx-auto max-w-7xl">
-            <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
-              <div>
-                <p className="text-xs font-black uppercase tracking-[0.18em] text-red-600">
-                  {t.brandStripLabel}
-                </p>
-
-                <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">
-                  {t.brandStripTitle}
-                </h2>
-              </div>
-
-              <div className="flex flex-wrap gap-2">
-                {t.brandNames.map((name) => (
-                  <span
-                    key={name}
-                    className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-xs font-black text-slate-700"
-                  >
-                    {name}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Brand / Product Trust */}
-        <section className="bg-slate-950 px-4 py-14 text-white sm:px-6 sm:py-16">
-          <div className="mx-auto max-w-7xl">
-            <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-              <div>
-                <p className="text-sm font-black text-red-300">
-                  {t.brandSupportLabel}
-                </p>
-
-                <h2 className="mt-2 text-3xl font-black tracking-tight sm:text-5xl">
-                  {t.brandSupportTitle}
-                </h2>
-
-                <p className="mt-5 max-w-2xl leading-7 text-slate-300">
-                  {t.brandSupportText}
-                </p>
-              </div>
-
-              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {t.brandSupportItems.map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-5 shadow-sm transition hover:-translate-y-1 hover:bg-white/[0.1]"
-                  >
-                    <p className="text-lg font-black">{item}</p>
-
-                    <p className="mt-2 text-sm leading-6 text-slate-400">
-                      {lang === "sw"
-                        ? "Kwa quotation na ushauri wa matumizi sahihi."
-                        : "For quotation and guidance on the right usage."}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Quick Actions */}
-        <section className="bg-white px-4 py-14 sm:px-6 sm:py-16">
-          <div className="mx-auto max-w-7xl">
-            <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-              <div>
-                <p className="text-sm font-black text-red-600">
-                  {t.quickActionsLabel}
-                </p>
-
-                <h2 className="mt-2 text-3xl font-black tracking-tight sm:text-5xl">
-                  {t.quickActionsTitle}
-                </h2>
-              </div>
-            </div>
-
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {t.quickActions.map((action, index) => (
-                <LoadingLink
-                  key={action.title}
-                  href={`${action.href}?lang=${lang}`}
-                  className={`group rounded-[2rem] p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl ${
-                    index === 0
-                      ? "bg-red-600 text-white"
-                      : "border border-slate-200 bg-white text-slate-950"
-                  }`}
-                >
-                  <div className="flex items-center justify-between gap-4">
-                    <div>
-                      <p
-                        className={`text-xs font-black uppercase tracking-[0.18em] ${
-                          index === 0 ? "text-red-100" : "text-red-600"
-                        }`}
-                      >
-                        0{index + 1}
-                      </p>
-
-                      <h3 className="mt-3 text-2xl font-black">
-                        {action.title}
-                      </h3>
-                    </div>
-
-                    <span
-                      className={`flex h-11 w-11 shrink-0 items-center justify-center self-center rounded-2xl text-lg font-black leading-none ${
-                        index === 0
-                          ? "bg-white text-red-600"
-                          : "bg-slate-950 text-white"
-                      }`}
-                    >
-                      →
-                    </span>
-                  </div>
-
-                  <p
-                    className={`mt-4 text-sm leading-7 ${
-                      index === 0 ? "text-red-50" : "text-slate-600"
-                    }`}
-                  >
-                    {action.text}
-                  </p>
-                </LoadingLink>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Site Survey Shortcut */}
-        <section className="bg-white px-4 py-14 sm:px-6 sm:py-16">
-          <div className="mx-auto max-w-7xl">
-            <div className="overflow-hidden rounded-[2.25rem] border border-slate-200 bg-slate-50 shadow-sm">
-              <div className="grid gap-0 lg:grid-cols-[0.9fr_1.1fr]">
-                <div className="bg-slate-950 p-8 text-white sm:p-10">
-                  <p className="text-sm font-black text-red-300">
-                    {t.surveyShortcutLabel}
-                  </p>
-
-                  <h2 className="mt-3 text-3xl font-black tracking-tight sm:text-5xl">
-                    {t.surveyShortcutTitle}
-                  </h2>
-
-                  <p className="mt-5 leading-7 text-slate-300">
-                    {t.surveyShortcutText}
-                  </p>
-
-                  <div className="mt-8 rounded-[1.5rem] bg-white/10 p-5 ring-1 ring-white/10">
-                    <p className="text-sm font-black text-white">
-                      {lang === "sw"
-                        ? "Tip: Site survey husaidia kupata quotation sahihi."
-                        : "Tip: A site survey helps you get a more accurate quotation."}
-                    </p>
-                  </div>
-                </div>
-
-                <div className="grid gap-3 p-6 sm:grid-cols-2 sm:p-8">
-                  {t.surveyShortcutServices.map((service) => (
-                    <LoadingLink
-                      key={service.value}
-                      href={`/request-site-survey?lang=${lang}&service=${service.value}`}
-                      className="group rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-red-200 hover:shadow-xl"
-                    >
-                      <div className="flex items-center justify-between gap-4">
-                        <div>
-                          <p className="text-lg font-black text-slate-950">
-                            {service.label}
-                          </p>
-
-                          <p className="mt-2 text-sm leading-6 text-slate-500">
-                            {lang === "sw"
-                              ? "Endelea kuomba survey"
-                              : "Continue to survey request"}
-                          </p>
-                        </div>
-
-                        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-slate-950 text-lg font-black leading-none text-white transition group-hover:bg-red-600">
-                          →
-                        </span>
-                      </div>
-                    </LoadingLink>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Moving Solutions Marquee */}
+        {/* <BrandMarquee lang={lang} t={t} /> */}
 
         {/* Services */}
-        <section className="bg-slate-50 px-4 py-14 sm:px-6 sm:py-16">
-          <div className="mx-auto max-w-7xl">
-            <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-              <div>
-                <p className="text-sm font-black text-red-600">
-                  {t.servicesLabel}
-                </p>
-                <h2 className="mt-2 text-3xl font-black tracking-tight sm:text-5xl">
-                  {t.servicesTitle}
-                </h2>
-                <p className="mt-4 max-w-2xl leading-7 text-slate-600">
-                  {t.servicesText}
-                </p>
-              </div>
+        <SecuritySolutionsSection
+          lang={lang}
+          t={t}
+          services={services}
+          ServiceCard={ServiceCard}
+          LoadingLink={LoadingLink}
+        />
 
-              <LoadingLink
-                href={`/services?lang=${lang}`}
-                className="inline-flex rounded-full bg-slate-950 px-5 py-3 text-sm font-black text-white transition hover:bg-red-600"
-              >
-                {t.viewAll}
-              </LoadingLink>
-            </div>
+        {/* Why Choose BM */}
+        <WhyChooseBM lang={lang} />
 
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-              {services.map((service) => (
-                <ServiceCard
-                  key={service.slug}
-                  lang={lang}
-                  slug={service.slug}
-                  titleEn={service.titleEn}
-                  titleSw={service.titleSw}
-                  descriptionEn={service.descriptionEn}
-                  descriptionSw={service.descriptionSw}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
+        <CatalogSection
+          lang={lang}
+          t={t}
+          packages={packages}
+          products={packages}
+          CctvPackageCard={CctvPackageCard}
+          ProductCard={ProductCard}
+          LoadingLink={LoadingLink}
+          formatPriceLabel={formatPriceLabel}
+        />
 
-        {/* Process */}
-        <section className="px-4 py-14 sm:px-6 sm:py-16">
-          <div className="mx-auto max-w-7xl">
-            <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
-              <div>
-                <p className="text-sm font-black text-red-600">
-                  {t.processLabel}
-                </p>
-
-                <h2 className="mt-2 text-3xl font-black tracking-tight sm:text-5xl">
-                  {t.processTitle}
-                </h2>
-
-                <p className="mt-5 leading-7 text-slate-600">
-                  {lang === "sw"
-                    ? "Tunapendelea kuelewa site kabla ya kutoa ushauri wa mwisho, ili mteja apate mfumo unaofaa na quotation inayoeleweka."
-                    : "We prefer understanding the site before final recommendation, so the customer gets the right system and a quotation that makes sense."}
-                </p>
-
-                <div className="mt-6 rounded-[2rem] bg-slate-950 p-5 text-white">
-                  <p className="text-sm font-black text-red-300">
-                    {lang === "sw" ? "Kanuni yetu" : "Our principle"}
-                  </p>
-
-                  <p className="mt-3 text-xl font-black leading-8">
-                    {lang === "sw"
-                      ? "Usinunue mfumo wa usalama kwa kubahatisha. Anza na site survey."
-                      : "Do not buy a security system by guesswork. Start with a site survey."}
-                  </p>
-                </div>
-
-                <LoadingLink
-                  href={`/request-site-survey?lang=${lang}`}
-                  className="mt-6 inline-flex rounded-full bg-red-600 px-6 py-3 text-sm font-black text-white transition hover:bg-red-700"
-                >
-                  {t.requestSurvey}
-                </LoadingLink>
-              </div>
-
-              <div className="grid gap-4 sm:grid-cols-2">
-                {t.processSteps.map((step) => (
-                  <div
-                    key={step.title}
-                    className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
-                  >
-                    <p className="text-lg font-black text-slate-950">
-                      {step.title}
-                    </p>
-
-                    <p className="mt-3 text-sm leading-7 text-slate-600">
-                      {step.text}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CCTV Packages */}
-        <section className="px-4 py-14 sm:px-6 sm:py-16">
-          <div className="mx-auto max-w-7xl">
-            <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-              <div>
-                <p className="text-sm font-black text-red-600">
-                  {t.packagesLabel}
-                </p>
-                <h2 className="mt-2 max-w-3xl text-3xl font-black tracking-tight sm:text-5xl">
-                  {t.packagesTitle}
-                </h2>
-              </div>
-
-              <LoadingLink
-                href={`/cctv-packages?lang=${lang}`}
-                className="inline-flex rounded-full bg-slate-950 px-5 py-3 text-sm font-black text-white transition hover:bg-red-600"
-              >
-                {t.viewAll}
-              </LoadingLink>
-            </div>
-
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-              {packages.map((pkg) => (
-                <CctvPackageCard
-                  key={pkg.slug}
-                  lang={lang}
-                  slug={pkg.slug}
-                  titleEn={pkg.titleEn}
-                  titleSw={pkg.titleSw}
-                  cameras={pkg.cameras}
-                  descriptionEn={pkg.descriptionEn}
-                  descriptionSw={pkg.descriptionSw}
-                  priceFrom={pkg.priceFrom}
-                  includedItems={pkg.includedItems}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Products */}
-        <section className="bg-slate-50 px-4 py-14 sm:px-6 sm:py-16">
-          <div className="mx-auto max-w-7xl">
-            <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-              <div>
-                <p className="text-sm font-black text-red-600">
-                  {t.productsLabel}
-                </p>
-                <h2 className="mt-2 text-3xl font-black tracking-tight sm:text-5xl">
-                  {t.productsTitle}
-                </h2>
-                <p className="mt-4 max-w-2xl leading-7 text-slate-600">
-                  {t.productsText}
-                </p>
-              </div>
-
-              <LoadingLink
-                href={`/products?lang=${lang}`}
-                className="inline-flex rounded-full bg-slate-950 px-5 py-3 text-sm font-black text-white transition hover:bg-red-600"
-              >
-                {t.viewAll}
-              </LoadingLink>
-            </div>
-
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-              {products.map((product) => (
-                <ProductCard
-                  key={product.slug}
-                  lang={lang}
-                  slug={product.slug}
-                  name={product.name}
-                  brand={product.brand}
-                  imageUrl={product.imageUrl}
-                  categoryName={
-                    lang === "sw"
-                      ? product?.category?.nameSw ||
-                        product?.category?.nameEn ||
-                        ""
-                      : product?.category?.nameEn || ""
-                  }
-                  summaryEn={product.description || ""}
-                  summarySw={product.description || ""}
-                  priceLabelEn={formatPriceLabel(product.price, "en")}
-                  priceLabelSw={formatPriceLabel(product.price, "sw")}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* Brand / Product Trust */}
+        <BrandTrustSection lang={lang} t={t} />
 
         {/* Projects */}
-        <section className="px-4 py-14 sm:px-6 sm:py-16">
-          <div className="mx-auto max-w-7xl">
-            <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-              <div>
-                <p className="text-sm font-black text-red-600">
-                  {t.projectsLabel}
-                </p>
-                <h2 className="mt-2 text-3xl font-black tracking-tight sm:text-5xl">
-                  {t.projectsTitle}
-                </h2>
-              </div>
-
-              <LoadingLink
-                href={`/projects?lang=${lang}`}
-                className="inline-flex rounded-full bg-slate-950 px-5 py-3 text-sm font-black text-white transition hover:bg-red-600"
-              >
-                {t.viewAll}
-              </LoadingLink>
-            </div>
-
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-              {projects.map((project) => (
-                <ProjectCard
-                  key={project.slug}
-                  lang={lang}
-                  titleEn={project.titleEn}
-                  titleSw={project.titleSw}
-                  category={project.category}
-                  location={project.location}
-                  imageUrl={project.imageUrl}
-                  descriptionEn={project.descriptionEn}
-                  descriptionSw={project.descriptionSw}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Support */}
-        <section className="bg-slate-50 px-4 py-14 sm:px-6 sm:py-16">
-          <div className="mx-auto max-w-7xl">
-            <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-              <div>
-                <p className="text-sm font-black text-red-600">
-                  {t.supportLabel}
-                </p>
-                <h2 className="mt-2 text-3xl font-black tracking-tight sm:text-5xl">
-                  {t.supportTitle}
-                </h2>
-              </div>
-
-              <LoadingLink
-                href={`/support?lang=${lang}`}
-                className="inline-flex rounded-full bg-slate-950 px-5 py-3 text-sm font-black text-white transition hover:bg-red-600"
-              >
-                {t.viewAll}
-              </LoadingLink>
-            </div>
-
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-              {supportArticles.map((article) => (
-                <SupportArticleCard
-                  key={article.slug}
-                  lang={lang}
-                  slug={article.slug}
-                  categoryEn={article.categoryEn}
-                  categorySw={article.categorySw}
-                  titleEn={article.titleEn}
-                  titleSw={article.titleSw}
-                  summaryEn={article.summaryEn}
-                  summarySw={article.summarySw}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
+        <SelectedProjectsSection
+          lang={lang}
+          t={t}
+          projects={projects}
+          ProjectCard={ProjectCard}
+          LoadingLink={LoadingLink}
+        />
 
         {/* Testimonials */}
-        <section className="px-4 py-14 sm:px-6 sm:py-16">
-          <div className="mx-auto max-w-7xl">
-            <div className="max-w-3xl">
-              <p className="text-sm font-black text-red-600">
-                {t.testimonialsLabel}
-              </p>
-
-              <h2 className="mt-2 text-3xl font-black tracking-tight sm:text-5xl">
-                {t.testimonialsTitle}
-              </h2>
-
-              <p className="mt-4 leading-7 text-slate-600">
-                {lang === "sw"
-                  ? "Hizi ni aina za maoni na mahitaji ambayo wateja wengi huwa nayo wanapotafuta contractor wa mifumo ya usalama."
-                  : "These represent the kinds of needs and expectations customers usually have when choosing a security systems contractor."}
-              </p>
-            </div>
-
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {t.testimonials.map((item) => (
-                <article
-                  key={item.name}
-                  className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
-                >
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-950 text-sm font-black text-white">
-                      BM
-                    </div>
-
-                    <div>
-                      <p className="font-black text-slate-950">{item.name}</p>
-                      <p className="text-xs font-bold text-red-600">
-                        {item.role}
-                      </p>
-                    </div>
-                  </div>
-
-                  <p className="mt-5 text-sm leading-7 text-slate-600">
-                    “{item.text}”
-                  </p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
+        <TestimonialsSection lang={lang} t={t} />
 
         {/* FAQ */}
-        <section className="bg-slate-50 px-4 py-14 sm:px-6 sm:py-16">
-          <div className="mx-auto max-w-4xl">
-            <div className="text-center">
-              <p className="text-sm font-black text-red-600">{t.faqLabel}</p>
-
-              <h2 className="mt-2 text-3xl font-black tracking-tight sm:text-5xl">
-                {t.faqTitle}
-              </h2>
-            </div>
-
-            <div className="mt-8 grid gap-4">
-              {t.faqItems.map((item) => (
-                <article
-                  key={item.question}
-                  className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm"
-                >
-                  <h3 className="text-lg font-black text-slate-950">
-                    {item.question}
-                  </h3>
-
-                  <p className="mt-3 text-sm leading-7 text-slate-600">
-                    {item.answer}
-                  </p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
+        <FaqSection lang={lang} t={t} />
 
         {/* Final CTA */}
-        <section className="px-4 py-14 sm:px-6 sm:py-16">
-          <div className="mx-auto max-w-7xl overflow-hidden rounded-[2.25rem] bg-slate-950 p-8 text-white shadow-2xl shadow-slate-300 sm:p-10">
-            <div className="relative">
-              <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-red-600/25 blur-3xl" />
-
-              <div className="relative grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
-                <div>
-                  <h2 className="text-3xl font-black tracking-tight sm:text-5xl">
-                    {t.finalTitle}
-                  </h2>
-                  <p className="mt-4 max-w-2xl leading-7 text-slate-300">
-                    {t.finalText}
-                  </p>
-                </div>
-
-                <LoadingLink
-                  href={`/request-site-survey?lang=${lang}`}
-                  className="rounded-full bg-red-600 px-6 py-3 text-center text-sm font-black text-white transition hover:bg-red-700"
-                >
-                  {t.finalButton}
-                </LoadingLink>
-              </div>
-            </div>
-          </div>
-        </section>
+        <FinalCtaSection lang={lang} t={t} LoadingLink={LoadingLink} />
       </main>
 
       <Footer lang={lang} />
       <FloatingWhatsApp lang={lang} />
+      <BmAssistantPopup lang={lang} />
     </>
   );
 }

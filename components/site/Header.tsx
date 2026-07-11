@@ -43,10 +43,6 @@ export function Header({ lang }: HeaderProps) {
       href: `/services?lang=${lang}`,
     },
     {
-      label: lang === "sw" ? "Kuhusu" : "About",
-      href: `/about?lang=${lang}`,
-    },
-    {
       label: t.nav.cctvPackages,
       href: `/cctv-packages?lang=${lang}`,
     },

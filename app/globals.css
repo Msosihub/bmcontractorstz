@@ -57,3 +57,60 @@ body {
 .bm-card-hover:hover {
   transform: translateY(-4px);
 }
+
+/**
+ * BM Premium Visual Effects
+ * -------------------------
+ * Reusable effects for the BM Contractors public website.
+ */
+
+.bm-red-glow {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 24px 80px rgba(220, 38, 38, 0.24);
+}
+
+.bm-glass-dark {
+  background: rgba(255, 255, 255, 0.075);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(18px);
+}
+
+.bm-glass-light {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.bm-hero-bg {
+  background:
+    radial-gradient(
+      circle at 82% 12%,
+      rgba(220, 38, 38, 0.34),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 10% 90%,
+      rgba(153, 27, 27, 0.26),
+      transparent 35%
+    ),
+    linear-gradient(135deg, rgba(3, 7, 18, 0.96), rgba(15, 23, 42, 0.92));
+}
+
+@keyframes bmMarquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.bm-marquee-track {
+  animation: bmMarquee 24s linear infinite;
+}
+
+.bm-marquee-track:hover {
+  animation-play-state: paused;
+}

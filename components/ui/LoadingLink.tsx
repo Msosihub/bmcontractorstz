@@ -29,6 +29,7 @@ type LoadingLinkProps = {
   inactiveClassName?: string;
   showSpinner?: boolean;
   target?: string;
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 };
 
 function cleanPath(href: string) {
@@ -45,6 +46,7 @@ export function LoadingLink({
   activeClassName = "",
   inactiveClassName = "",
   showSpinner = true,
+  onClick,
   target,
 }: LoadingLinkProps) {
   const pathname = usePathname();
