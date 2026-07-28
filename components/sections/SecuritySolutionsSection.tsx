@@ -9,6 +9,8 @@ import {
   Activity,
 } from "lucide-react";
 
+import Image from "next/image";
+
 export default function SecuritySolutionsSection({
   lang,
   t,
@@ -112,39 +114,60 @@ export default function SecuritySolutionsSection({
             </div>
           </div>
 
-          {/* Upgraded Native Structural Grid Wrapper */}
+          {/* Upgraded Split Interactive Grid Wrapper */}
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:mt-16">
             {services.map((service: any) => (
               <div
                 key={service.slug}
-                className="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-slate-200/60 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-red-200 hover:shadow-md"
+                className="group relative flex flex-col overflow-hidden rounded-3xl border border-slate-200/70 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-red-200 hover:shadow-md"
               >
-                <div>
-                  {/* Service Icon Display Badge */}
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-50 text-slate-700 transition-all duration-300 group-hover:bg-red-50 group-hover:text-red-600">
-                    {getServiceIcon(service.slug)}
+                {/* Top Half: Dedicated Image Container (100% visible product details) */}
+                <div className="relative w-full aspect-[16/10] overflow-hidden bg-slate-100">
+                  <Image
+                    src={service.imageUrl || "/images/services/acctr.jpg"}
+                    alt={
+                      lang === "sw"
+                        ? service.titleSw || ""
+                        : service.titleEn || ""
+                    }
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-103"
+                    loading="lazy"
+                  />
+
+                  {/* Floating Structural Badge Layer */}
+                  <div className="absolute bottom-3 left-4 z-10">
+                    <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/90 backdrop-blur-md text-slate-800 shadow-sm transition-all duration-300 group-hover:bg-red-600 group-hover:text-white group-hover:scale-105">
+                      {getServiceIcon(service.slug)}
+                    </div>
                   </div>
-
-                  <h3 className="mt-5 text-xl font-bold tracking-tight text-slate-950 transition-colors duration-200 group-hover:text-red-600">
-                    {lang === "sw" ? service.titleSw : service.titleEn}
-                  </h3>
-
-                  <p className="mt-2 text-sm leading-relaxed text-slate-600 line-clamp-3">
-                    {lang === "sw"
-                      ? service.descriptionSw
-                      : service.descriptionEn}
-                  </p>
                 </div>
 
-                {/* Bottom link block to specific service profile detail safely forwarding current language context */}
-                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-                  <LoadingLink
-                    href={`/services/${service.slug}?lang=${lang}`}
-                    className="inline-flex items-center gap-1 text-xs font-black uppercase tracking-wider text-slate-900 group-hover:text-red-600 transition-colors duration-200"
-                  >
-                    {lang === "sw" ? "Soma Zaidi" : "Explore Solution"}
-                    <ArrowRight className="h-3 w-3 transition-transform duration-200 group-hover:translate-x-0.5" />
-                  </LoadingLink>
+                {/* Bottom Half: High-Contrast Content Block */}
+                <div className="flex flex-1 flex-col justify-between p-6">
+                  <div>
+                    <h3 className="text-xl font-bold tracking-tight text-slate-950 transition-colors duration-200 group-hover:text-red-600">
+                      {lang === "sw" ? service.titleSw : service.titleEn}
+                    </h3>
+
+                    <p className="mt-2 text-sm leading-relaxed text-slate-600 line-clamp-3">
+                      {lang === "sw"
+                        ? service.descriptionSw
+                        : service.descriptionEn}
+                    </p>
+                  </div>
+
+                  {/* Bottom link block safely forwarding current language context */}
+                  <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                    <LoadingLink
+                      href={`/services/${service.slug}?lang=${lang}`}
+                      className="inline-flex items-center gap-1 text-xs font-black uppercase tracking-wider text-slate-900 group-hover:text-red-600 transition-colors duration-200"
+                    >
+                      {lang === "sw" ? "Soma Zaidi" : "Explore Solution"}
+                      <ArrowRight className="h-3 w-3 transition-transform duration-200 group-hover:translate-x-0.5" />
+                    </LoadingLink>
+                  </div>
                 </div>
               </div>
             ))}
