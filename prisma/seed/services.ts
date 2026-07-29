@@ -303,4 +303,100 @@ export const serviceSeeds = [
       "Ushauri wa maintenance na follow-up",
     ],
   },
+  {
+    slug: "solar-street-lights",
+    titleEn: "Solar Street Lights",
+    titleSw: "Solar Street Lights",
+    eyebrowEn: "Outdoor Solar Lighting",
+    eyebrowSw: "Taa za Solar za Nje",
+    descriptionEn:
+      "Solar street lights for homes, compounds, gates, parking areas, walkways, schools, lodges and business premises.",
+    descriptionSw:
+      "Solar street lights kwa nyumba, compounds, mageti, parking, njia za kupita, shule, lodges na maeneo ya biashara.",
+    contentEn:
+      "Solar street lights are a practical way to improve outdoor safety without depending fully on grid power. They are useful for home compounds, gates, parking areas, paths, schools, lodges, guest houses and business premises. BM Contractors helps with choosing suitable light capacity, pole position, lighting coverage and installation planning so the area becomes safer and easier to use at night.",
+    contentSw:
+      "Solar street lights ni njia nzuri ya kuongeza mwanga na usalama wa nje bila kutegemea umeme wa grid muda wote. Zinafaa kwa compounds za nyumba, mageti, parking, njia za kupita, shule, lodges, guest houses na maeneo ya biashara. BM Contractors tunasaidia kuchagua ukubwa sahihi wa taa, sehemu za kusimika pole, coverage ya mwanga na mpangilio wa installation ili eneo liwe salama na rahisi kutumika usiku.",
+    imageUrl: "/images/services/solar-street-lights.jpg",
+    featuresEn: [
+      "Home compound lighting",
+      "Gate and parking area lighting",
+      "Walkway and garden lighting",
+      "Solar light capacity selection",
+      "Pole positioning and installation",
+      "Maintenance and replacement guidance",
+    ],
+    featuresSw: [
+      "Mwanga wa compound ya nyumba",
+      "Mwanga wa gate na parking",
+      "Mwanga wa njia na garden",
+      "Uchaguzi wa ukubwa wa solar light",
+      "Kupanga pole na installation",
+      "Maintenance na ushauri wa replacement",
+    ],
+  },
+  {
+    slug: "solar-panel-systems",
+    titleEn: "Solar Panel Systems",
+    titleSw: "Mifumo ya Solar Panels",
+    eyebrowEn: "Solar Power Solutions",
+    eyebrowSw: "Suluhisho la Umeme wa Solar",
+    descriptionEn:
+      "Solar panel systems for homes, offices, shops, lodges, guest houses and business premises.",
+    descriptionSw:
+      "Mifumo ya solar panels kwa nyumba, ofisi, maduka, lodges, guest houses na maeneo ya biashara.",
+    contentEn:
+      "Solar panel systems help reduce dependence on grid power and keep important equipment running more reliably. Depending on the site, solar can support lighting, security systems, routers, office equipment and selected home or business loads. BM Contractors helps customers think through panel size, battery backup, inverter capacity, load needs and installation arrangement before choosing the right system.",
+    contentSw:
+      "Mifumo ya solar panels husaidia kupunguza utegemezi wa umeme wa grid na kuweka vifaa muhimu vikiendelea kufanya kazi kwa uhakika zaidi. Kulingana na site, solar inaweza kusaidia taa, mifumo ya usalama, routers, vifaa vya ofisi na baadhi ya matumizi ya nyumbani au biashara. BM Contractors tunamsaidia mteja kufikiria ukubwa wa panels, battery backup, inverter, matumizi ya umeme na mpangilio wa installation kabla ya kuchagua mfumo sahihi.",
+    imageUrl: "/images/services/solar-panel-systems.jpg",
+    featuresEn: [
+      "Solar panel system planning",
+      "Battery backup guidance",
+      "Inverter capacity guidance",
+      "Home and office solar solutions",
+      "Security system solar backup",
+      "Installation and support",
+    ],
+    featuresSw: [
+      "Kupanga mfumo wa solar panels",
+      "Ushauri wa battery backup",
+      "Ushauri wa ukubwa wa inverter",
+      "Solar kwa nyumba na ofisi",
+      "Solar backup kwa mifumo ya usalama",
+      "Installation na support",
+    ],
+  },
+  {
+    slug: "air-conditioners",
+    titleEn: "Air Conditioners",
+    titleSw: "Air Conditioners",
+    eyebrowEn: "Cooling and Comfort",
+    eyebrowSw: "Ubaridi na Comfort",
+    descriptionEn:
+      "Air conditioner supply, installation and support for homes, offices, shops, hotels, lodges, guest houses and business spaces.",
+    descriptionSw:
+      "Supply, installation na support ya air conditioners kwa nyumba, ofisi, maduka, hotels, lodges, guest houses na maeneo ya biashara.",
+    contentEn:
+      "A good air conditioner installation is not only about placing the unit on the wall. Room size, usage, sunlight, ceiling height, drainage, outdoor unit position and power supply all affect performance. BM Contractors helps customers choose suitable AC capacity and install it neatly for homes, offices, shops, hotels, lodges, guest houses and other business spaces.",
+    contentSw:
+      "Installation nzuri ya air conditioner siyo kufunga unit ukutani tu. Ukubwa wa chumba, matumizi ya eneo, jua, urefu wa dari, drainage, sehemu ya outdoor unit na umeme vyote vinaathiri performance. BM Contractors tunasaidia kuchagua ukubwa sahihi wa AC na kufunga kwa mpangilio mzuri kwa nyumba, ofisi, maduka, hotels, lodges, guest houses na maeneo mengine ya biashara.",
+    imageUrl: "/images/services/air-conditioners.jpg",
+    featuresEn: [
+      "Home AC installation",
+      "Office and shop cooling",
+      "Hotel, lodge and guest house AC",
+      "AC capacity guidance",
+      "Indoor and outdoor unit placement",
+      "Servicing and troubleshooting support",
+    ],
+    featuresSw: [
+      "Installation ya AC za nyumbani",
+      "Cooling kwa ofisi na maduka",
+      "AC kwa hotels, lodges na guest houses",
+      "Ushauri wa ukubwa wa AC",
+      "Kupanga indoor na outdoor unit",
+      "Service na troubleshooting support",
+    ],
+  },
 ];

@@ -184,7 +184,10 @@ export default async function ServicesPage({ searchParams }: PageProps) {
                   {/* Top Half: Dedicated Image Container (No overlays, no text collisions) */}
                   <div className="relative w-full aspect-[16/10] overflow-hidden bg-slate-100">
                     <Image
-                      src={service.imageUrl || "/images/services/acctr.jpg"}
+                      src={
+                        service.imageUrl ||
+                        "/images/services/default-service.png"
+                      }
                       alt={
                         lang === "sw"
                           ? service.titleSw || ""

@@ -83,7 +83,7 @@ export default function WhyChooseBM({ lang }: { lang: string }) {
           {/* Visual Showcase Card using absolute root directory routing */}
           <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-slate-950 p-8 shadow-2xl lg:col-span-4 lg:flex lg:flex-col lg:justify-between min-h-[320px] lg:min-h-full">
             {/* CORRECTED URL ROUTE PATH REFERENCE */}
-            <div className="absolute inset-0 z-0 opacity-30 mix-blend-luminosity bg-[url('/images/whyus.jpg')] bg-cover bg-center" />
+            <div className="absolute inset-0 z-0 opacity-40 mix-blend-luminosity bg-[url('/images/whyus.jpg')] bg-cover bg-center" />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent z-10" />
 
             <div className="relative z-20">
