@@ -14,6 +14,11 @@ const nextConfig = {
         destination: "https://wa.me/255760111880",
         permanent: true,
       },
+      {
+        source: "/huduma",
+        destination: "/services?lang=sw",
+        permanent: true,
+      },
     ];
   },
 };
