@@ -5,11 +5,6 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/services",
-        destination: "/services?lang=sw",
-        permanent: true,
-      },
-      {
         source: "/whatsapp",
         destination: "https://wa.me/255760111880",
         permanent: true,
