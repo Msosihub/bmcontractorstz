@@ -1,3 +1,5 @@
+import { pageMetadata } from "@/lib/seo";
+import { TranslationNotice } from "@/components/site/TranslationNotice";
 /**
  * Support Article Detail Page
  * ---------------------------
@@ -38,40 +40,15 @@ type PageProps = {
  * Dynamic metadata for support articles.
  * This gives every support article its own SEO title and description.
  */
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{
-    slug: string;
-  }>;
-}): Promise<Metadata> {
-  const resolvedParams = await params;
-
-  const article = await prisma.supportArticle.findFirst({
-    where: {
-      slug: resolvedParams.slug,
-      isPublished: true,
-    },
-  });
-
-  const staticArticle = getSupportArticleBySlug(resolvedParams.slug);
-
-  const title = article?.titleEn || staticArticle?.titleEn || "Support Article";
-
-  const description =
-    article?.summaryEn ||
-    staticArticle?.summaryEn ||
-    "Helpful security and safety support article from BM Contractors Tanzania.";
-
-  return {
-    title,
-    description,
-    openGraph: {
-      title: `${title} | BM Contractors Tanzania`,
-      description,
-      images: ["/og/bm-contractors-og.jpg"],
-    },
-  };
+export async function generateMetadata({ params, searchParams }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const lang = (await searchParams).lang === "sw" ? "sw" : "en";
+  const dbArticle = await prisma.supportArticle.findFirst({ where: { slug, isPublished: true } });
+  const article = dbArticle || getSupportArticleBySlug(slug);
+  const translated = Boolean(article?.titleSw && article?.summarySw && article?.contentSw);
+  const title = (lang === "sw" ? article?.titleSw : article?.titleEn) || article?.titleEn || "BM Support";
+  const description = (lang === "sw" ? article?.summarySw : article?.summaryEn) || (lang === "sw" ? "Mwongozo wa mifumo ya usalama kutoka BM Contractors." : "Security system guidance from BM Contractors.");
+  return pageMetadata("/support/" + slug, lang, [title, description], translated);
 }
 
 export default async function SupportArticlePage({
@@ -145,6 +122,7 @@ export default async function SupportArticlePage({
   return (
     <>
       <Header lang={lang} />
+      {lang === "sw" && !(article.titleSw && article.summarySw && article.contentSw) ? <TranslationNotice /> : null}
 
       <main className="min-h-screen bg-slate-50 px-4 py-12 text-slate-950 sm:px-6 sm:py-16">
         <article className="mx-auto max-w-3xl rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-10">

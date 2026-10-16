@@ -22,9 +22,9 @@ export const siteConfig = {
   email: "sales@bmcontractorstz.com",
 
   whatsapp: {
-    label: "+255 760 111 880",
+    label: "+255 745 778 821",
     url: "https://wa.me/255745778821",
-    raw: "+255745 77 88 21",
+    raw: "+255745778821",
   },
 
   phones: [

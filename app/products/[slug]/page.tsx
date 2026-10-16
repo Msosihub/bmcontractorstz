@@ -1,3 +1,5 @@
+import { pageMetadata } from "@/lib/seo";
+import { TranslationNotice } from "@/components/site/TranslationNotice";
 /**
  * Product Detail Page
  * -------------------
@@ -49,55 +51,17 @@ function formatPrice(value: number | null, lang: Language) {
   return `TZS ${value.toLocaleString("en-US")}`;
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{
-    slug: string;
-  }>;
-}): Promise<Metadata> {
-  const resolvedParams = await params;
-
-  const product = await prisma.product.findFirst({
-    where: {
-      slug: resolvedParams.slug,
-      isPublished: true,
-    },
-    include: {
-      category: true,
-    },
-  });
-
-  if (!product) {
-    return {
-      title: "Product",
-      description: "Security and safety product from BM Contractors Tanzania.",
-    };
-  }
-
-  const title = `${product.name}${product.brand ? ` | ${product.brand}` : ""}`;
-
-  const previewImage = product.imageUrl || "/og/bm-contractors-og.jpg";
-
-  const description =
-    product.description ||
-    `${product.name} available through BM Contractors Tanzania. Request price, product guidance or site survey.`;
-
-  return {
-    title,
-    description,
-    openGraph: {
-      title: `${title} | BM Contractors Tanzania`,
-      description,
-      images: [previewImage],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: `${title} | BM Contractors Tanzania`,
-      description,
-      images: [previewImage],
-    },
-  };
+export async function generateMetadata({ params, searchParams }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const lang = (await searchParams).lang === "sw" ? "sw" : "en";
+  const product = await prisma.product.findFirst({ where: { slug, isPublished: true } });
+  const title = product?.name || (lang === "sw" ? "Bidhaa" : "Product");
+  const description = lang === "sw"
+    ? "Ulizia bei, upatikanaji na maelezo ya " + title + " kutoka BM Contractors."
+    : product?.description || "Ask BM Contractors for product prices and availability.";
+  // Product model has no translated description field yet. Keep SW accessible and self-canonical,
+  // but do not advertise an incomplete translation in hreflang or index it.
+  return pageMetadata("/products/" + slug, lang, [title, description], false);
 }
 
 export default async function ProductDetailPage({
@@ -195,6 +159,7 @@ export default async function ProductDetailPage({
       <Header lang={lang} />
 
       <main className="min-h-screen bg-white text-slate-950">
+        {lang === "sw" ? <TranslationNotice /> : null}
         <section className="relative overflow-hidden bg-slate-950 px-4 py-14 text-white sm:px-6 sm:py-16">
           <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-red-600/25 blur-3xl" />
 

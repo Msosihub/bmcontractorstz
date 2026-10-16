@@ -4,17 +4,11 @@
  * Basic privacy policy for BM Contractors website.
  */
 
-import type { Metadata } from "next";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
 import { isLanguage, type Language } from "@/lib/i18n/config";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description:
-    "Privacy Policy for BM Contractors Tanzania website, contact forms and site survey requests.",
-};
 
 type PageProps = {
   searchParams: Promise<{

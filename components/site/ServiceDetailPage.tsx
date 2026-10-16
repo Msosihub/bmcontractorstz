@@ -1,3 +1,5 @@
+import { getPublicService } from "@/lib/services";
+import { TranslationNotice } from "@/components/site/TranslationNotice";
 /**
  * ServiceDetailPage Component
  * ---------------------------
@@ -20,8 +22,6 @@ import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
 import { LoadingLink } from "@/components/ui/LoadingLink";
-import { getServiceBySlug } from "@/data/services";
-import { prisma } from "@/lib/prisma";
 import type { Language } from "@/lib/i18n/config";
 
 type ServiceDetailPageProps = {
@@ -42,26 +42,7 @@ export async function ServiceDetailPage({
   lang,
   slug,
 }: ServiceDetailPageProps) {
-  const dbService = await prisma.service.findFirst({
-    where: {
-      slug,
-      isPublished: true,
-    },
-  });
-
-  const staticService = getServiceBySlug(slug);
-
-  const service =
-    dbService ||
-    (staticService
-      ? {
-          ...staticService,
-          id: staticService.slug,
-          isPublished: true,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        }
-      : null);
+  const service = await getPublicService(slug);
 
   if (!service) {
     notFound();
@@ -118,6 +99,7 @@ export async function ServiceDetailPage({
       <Header lang={lang} />
 
       <main className="min-h-screen bg-white text-slate-950">
+        {lang === "sw" && !(service.titleSw && service.descriptionSw && service.contentSw) ? <TranslationNotice /> : null}
         <section className="relative overflow-hidden bg-slate-950 px-4 py-16 text-white sm:px-6 sm:py-20">
           <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-red-600/25 blur-3xl" />
 

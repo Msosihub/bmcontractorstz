@@ -22,23 +22,17 @@ import { Footer } from "@/components/site/Footer";
 import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
 import { LoadingLink } from "@/components/ui/LoadingLink";
 import { ServiceCard } from "@/components/site/ServiceCard";
-import { CctvPackageCard } from "@/components/site/CctvPackageCard";
-import { ProductCard } from "@/components/site/ProductCard";
 import { ProjectCard } from "@/components/site/ProjectCard";
-import { SupportArticleCard } from "@/components/site/SupportArticleCard";
 import { siteConfig } from "@/data/site";
 import { services as staticServices } from "@/data/services";
 import { cctvPackages as staticPackages } from "@/data/packages";
-import { productCategories as staticProductCategories } from "@/data/products";
 import { projects as staticProjects } from "@/data/projects";
-import { supportArticles as staticSupportArticles } from "@/data/support";
 import { prisma } from "@/lib/prisma";
 import { isLanguage, type Language } from "@/lib/i18n/config";
 import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
 import { BmAssistantPopup } from "@/components/site/BmAssistantPopup";
 import WhyChooseBM from "@/components/sections/WhyChooseBM";
 import HeroSection from "@/components/sections/HeroSection";
-import BrandMarquee from "@/components/sections/BrandMarquee";
 import SecuritySolutionsSection from "@/components/sections/SecuritySolutionsSection";
 import CatalogSection from "@/components/sections/CatalogSection";
 import BrandTrustSection from "@/components/sections/BrandTrustSection";
@@ -62,23 +56,12 @@ function asStringArray(value: unknown) {
   return value.filter((item): item is string => typeof item === "string");
 }
 
-function formatPriceLabel(value: number | null, lang: Language) {
-  /**
-   * Formats product price for homepage cards.
-   */
-  if (!value) {
-    return lang === "sw" ? "Uliza bei" : "Request price";
-  }
-
-  const prefix = lang === "sw" ? "TZS" : "TZS";
-  return `${prefix} ${value.toLocaleString("en-US")}`;
-}
 
 export default async function HomePage({ searchParams }: PageProps) {
   const params = await searchParams;
   const lang: Language = isLanguage(params.lang) ? params.lang : "en";
 
-  const [dbServices, dbPackages, dbProducts, dbProjects, dbSupportArticles] =
+  const [dbServices, dbPackages, dbProducts, dbProjects] =
     await Promise.all([
       prisma.service.findMany({
         where: {
@@ -123,15 +106,6 @@ export default async function HomePage({ searchParams }: PageProps) {
         take: 3,
       }),
 
-      prisma.supportArticle.findMany({
-        where: {
-          isPublished: true,
-        },
-        orderBy: {
-          createdAt: "desc",
-        },
-        take: 3,
-      }),
     ]);
 
   const services =
@@ -161,100 +135,7 @@ export default async function HomePage({ searchParams }: PageProps) {
           updatedAt: new Date(),
         }));
 
-  const fallbackProducts = [
-    {
-      slug: "hikvision-2mp-camera",
-      name: "Hikvision 2MP Camera",
-      brand: "Hikvision",
-      imageUrl: null,
-      description:
-        "Reliable CCTV camera option for homes, shops, offices and small business installations.",
-      categorySlug: "cctv-cameras",
-      categoryNameEn: "CCTV Cameras",
-      categoryNameSw: "Camera za CCTV",
-    },
-    {
-      slug: "tiandy-2mp-camera",
-      name: "Tiandy 2MP Camera",
-      brand: "Tiandy",
-      imageUrl: null,
-      description:
-        "Affordable CCTV camera option for residential and small business installations.",
-      categorySlug: "cctv-cameras",
-      categoryNameEn: "CCTV Cameras",
-      categoryNameSw: "Camera za CCTV",
-    },
-    {
-      slug: "electric-fence-energizer",
-      name: "Electric Fence Energizer",
-      brand: "Electric Fence",
-      imageUrl: null,
-      description:
-        "Core power unit for electric fence installations in homes, compounds and businesses.",
-      categorySlug: "electric-fence",
-      categoryNameEn: "Electric Fence",
-      categoryNameSw: "Uzio wa Umeme",
-    },
-    {
-      slug: "gate-motor-kit",
-      name: "Gate Motor Kit",
-      brand: "Gate Automation",
-      imageUrl: null,
-      description:
-        "Automatic gate motor solution for homes, apartments and business premises.",
-      categorySlug: "gate-motors",
-      categoryNameEn: "Gate Motors",
-      categoryNameSw: "Gate Motors",
-    },
-    {
-      slug: "mikrotik-router",
-      name: "MikroTik Router",
-      brand: "MikroTik",
-      imageUrl: null,
-      description:
-        "Business router for office networks, CCTV remote viewing and internet sharing.",
-      categorySlug: "networking",
-      categoryNameEn: "Networking",
-      categoryNameSw: "Networking",
-    },
-    {
-      slug: "ups-650va",
-      name: "UPS 650VA",
-      brand: "UPS",
-      imageUrl: null,
-      description:
-        "Backup power for CCTV systems, routers, NVRs and small office devices.",
-      categorySlug: "power-backup",
-      categoryNameEn: "Power Backup",
-      categoryNameSw: "Power Backup",
-    },
-  ];
-
-  const products =
-    dbProducts.length > 0
-      ? dbProducts
-      : fallbackProducts.map((product) => ({
-          id: product.slug,
-          slug: product.slug,
-          name: product.name,
-          brand: product.brand,
-          description: product.description,
-          imageUrl: product?.imageUrl,
-          price: null,
-          isPublished: true,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-          categoryId: product.categorySlug,
-          category: {
-            id: product.categorySlug,
-            slug: product.categorySlug,
-            nameEn: product.categoryNameEn,
-            nameSw: product.categoryNameSw,
-            description: null,
-            createdAt: new Date(),
-            updatedAt: new Date(),
-          },
-        }));
+  const products = dbProducts;
 
   const projects =
     dbProjects.length > 0
@@ -262,17 +143,6 @@ export default async function HomePage({ searchParams }: PageProps) {
       : staticProjects.slice(0, 3).map((project) => ({
           ...project,
           id: project.slug,
-          isPublished: true,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        }));
-
-  const supportArticles =
-    dbSupportArticles.length > 0
-      ? dbSupportArticles
-      : staticSupportArticles.slice(0, 3).map((article) => ({
-          ...article,
-          id: article.slug,
           isPublished: true,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -339,25 +209,6 @@ export default async function HomePage({ searchParams }: PageProps) {
         {
           title: "4. Installation & support",
           text: "BM Contractors handles installation, setup, testing and after-sales support.",
-        },
-      ],
-      testimonialsLabel: "Customer confidence",
-      testimonialsTitle: "What customers need from a contractor",
-      testimonials: [
-        {
-          name: "Home Customer",
-          role: "Residential Security",
-          text: "I wanted someone who could explain the right CCTV setup before buying equipment. The site survey approach made the quotation easier to understand.",
-        },
-        {
-          name: "Business Owner",
-          role: "Shop Security",
-          text: "For a shop, camera position and storage matter. A proper recommendation helps avoid buying the wrong system.",
-        },
-        {
-          name: "Office Client",
-          role: "Access & Networking",
-          text: "The best part is having one team that can handle security, networking and support together.",
         },
       ],
       brandStripLabel: "Solutions we support",
@@ -494,25 +345,6 @@ export default async function HomePage({ searchParams }: PageProps) {
           text: "BM Contractors tunashughulikia installation, setup, testing na support baada ya kazi.",
         },
       ],
-      testimonialsLabel: "Imani ya mteja",
-      testimonialsTitle: "Kile ambacho wateja huhitaji kwa contractor",
-      testimonials: [
-        {
-          name: "Mteja wa Nyumbani",
-          role: "Usalama wa Nyumba",
-          text: "Nilihitaji mtu anielekeze CCTV sahihi kabla ya kununua vifaa. Njia ya site survey hufanya quotation ieleweke vizuri.",
-        },
-        {
-          name: "Mfanyabiashara",
-          role: "Usalama wa Duka",
-          text: "Kwa duka, sehemu za camera na storage ni muhimu. Ushauri sahihi husaidia kuepuka kununua mfumo usiofaa.",
-        },
-        {
-          name: "Mteja wa Ofisi",
-          role: "Access na Networking",
-          text: "Kitu kizuri ni kupata timu moja inayoweza kushughulikia security, networking na support kwa pamoja.",
-        },
-      ],
       brandStripLabel: "Solutions tunazosupport",
       brandStripTitle: "Kuanzia planning mpaka installation na support",
       brandNames: [
@@ -624,11 +456,7 @@ export default async function HomePage({ searchParams }: PageProps) {
           lang={lang}
           t={t}
           packages={packages}
-          products={packages}
-          CctvPackageCard={CctvPackageCard}
-          ProductCard={ProductCard}
-          LoadingLink={LoadingLink}
-          formatPriceLabel={formatPriceLabel}
+          products={products}
         />
 
         {/* Brand / Product Trust */}
@@ -644,7 +472,7 @@ export default async function HomePage({ searchParams }: PageProps) {
         />
 
         {/* Testimonials */}
-        <TestimonialsSection lang={lang} t={t} />
+        <TestimonialsSection lang={lang} />
 
         {/* FAQ */}
         <FaqSection lang={lang} t={t} />

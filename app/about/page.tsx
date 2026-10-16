@@ -9,7 +9,6 @@
  * - Supports SEO for security/safety services in Tanzania.
  */
 
-import type { Metadata } from "next";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
@@ -17,17 +16,6 @@ import { LoadingLink } from "@/components/ui/LoadingLink";
 import { siteConfig } from "@/data/site";
 import { isLanguage, type Language } from "@/lib/i18n/config";
 
-export const metadata: Metadata = {
-  title: "About BM Contractors Tanzania",
-  description:
-    "Learn about BM Engineering Contractors LTD, a Tanzania-based security and safety systems company offering CCTV, electric fence, gate motors, access control, networking and power backup solutions.",
-  openGraph: {
-    title: "About BM Contractors Tanzania",
-    description:
-      "Security and safety systems company in Tanzania providing CCTV, electric fence, gate motors, access control, networking and power backup solutions.",
-    images: ["/og/bm-contractors-og.jpg"],
-  },
-};
 
 type PageProps = {
   searchParams: Promise<{

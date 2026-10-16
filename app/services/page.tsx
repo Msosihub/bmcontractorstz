@@ -14,7 +14,6 @@ import { isLanguage, type Language } from "@/lib/i18n/config";
 // Correct import for Next.js
 import Image from "next/image";
 
-import type { Metadata } from "next";
 import {
   ArrowRight,
   Shield,
@@ -25,17 +24,6 @@ import {
   Activity,
 } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Security & Safety Services | BM Contractors",
-  description:
-    "Explore BM Contractors Tanzania services including CCTV, electric fence, gate motors, access control, networking and power backup.",
-  openGraph: {
-    title: "BM Contractors Tanzania Services",
-    description:
-      "CCTV, electric fence, gate motors, access control, networking and power backup services in Tanzania.",
-    images: ["/og/bm-contractors-og.jpg"],
-  },
-};
 
 type PageProps = {
   searchParams: Promise<{

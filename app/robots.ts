@@ -13,6 +13,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/admin"],
     },
-    sitemap: "https://bmcontractorstz.com/sitemap.xml",
+    sitemap: "https://www.bmcontractorstz.com/sitemap.xml",
   };
 }

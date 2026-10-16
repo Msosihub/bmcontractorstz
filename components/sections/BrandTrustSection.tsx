@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { CheckCircle2, ShieldCheck, Cpu } from "lucide-react";
+import { Cpu } from "lucide-react";
 
 export default function BrandTrustSection({
   lang,
@@ -35,7 +35,7 @@ export default function BrandTrustSection({
           {/* Right Cards Cluster - Upgraded into premium frosted bento items */}
           <div className="grid gap-4 sm:grid-cols-2 lg:col-span-7">
             {t.brandSupportItems &&
-              t.brandSupportItems.map((item: any, index: any) => (
+              t.brandSupportItems.map((item: any) => (
                 <article
                   key={item}
                   className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.02] p-6 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.05]"
@@ -45,7 +45,7 @@ export default function BrandTrustSection({
                       <Cpu className="h-5 w-5 stroke-[1.5]" />
                     </div>
                     <span className="text-[10px] font-mono tracking-widest text-slate-500">
-                      PARTNER_0{index + 1}
+                      {lang === "sw" ? "Vifaa" : "Equipment"}
                     </span>
                   </div>
 
@@ -55,8 +55,8 @@ export default function BrandTrustSection({
 
                   <p className="mt-2 text-xs leading-relaxed text-slate-400">
                     {lang === "sw"
-                      ? "Mifumo iliyoidhinishwa kwa quotation na ushauri wa kitaalamu."
-                      : "Verified components backed by manufacturer warranty channels."}
+                      ? "Thibitisha upatikanaji wa modeli na masharti ya dhamana na timu yetu."
+                      : "Confirm model availability and warranty terms with our team."}
                   </p>
 
                   {/* Micro accent marker */}

@@ -1,12 +1,12 @@
 import type { NextConfig } from "next";
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
         source: "/whatsapp",
-        destination: "https://wa.me/255760111880",
+        destination: "https://wa.me/255745778821",
         permanent: true,
       },
       {
@@ -18,6 +18,6 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+
 
 export default nextConfig;

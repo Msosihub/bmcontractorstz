@@ -11,7 +11,6 @@
  * - Supports English and Swahili.
  */
 
-import type { Metadata } from "next";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
@@ -19,15 +18,6 @@ import { LoadingLink } from "@/components/ui/LoadingLink";
 import { siteConfig } from "@/data/site";
 import { isLanguage, type Language } from "@/lib/i18n/config";
 
-export const metadata: Metadata = {
-  title: "Site Survey Request Received",
-  description:
-    "Your BM Contractors Tanzania site survey request has been received.",
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
 
 type PageProps = {
   searchParams: Promise<{

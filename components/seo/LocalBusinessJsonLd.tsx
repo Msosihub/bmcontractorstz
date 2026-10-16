@@ -17,7 +17,7 @@ export function LocalBusinessJsonLd() {
     "@type": "LocalBusiness",
     name: "BM Engineering Contractors LTD",
     alternateName: "BM Contractors Tanzania",
-    url: "https://bmcontractorstz.com",
+    url: "https://www.bmcontractorstz.com",
     email: siteConfig.email,
     telephone: siteConfig.phones[0]?.raw || "+255745778821",
     areaServed: {

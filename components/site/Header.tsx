@@ -119,7 +119,7 @@ export function Header({ lang }: HeaderProps) {
               type="button"
               onClick={() => setIsOpen((value) => !value)}
               className="inline-flex h-10 w-10 items-center justify-center rounded-2xl border border-slate-200 bg-white text-slate-950 shadow-sm transition hover:bg-slate-50"
-              aria-label="Toggle menu"
+              aria-label={lang === "sw" ? "Fungua au funga menyu" : "Toggle menu"}
               aria-expanded={isOpen}
             >
               <span className="text-xl font-black">{isOpen ? "×" : "☰"}</span>
@@ -133,6 +133,7 @@ export function Header({ lang }: HeaderProps) {
               {navItems.map((item) => (
                 <LoadingLink
                   key={item.href}
+                  onClick={() => setIsOpen(false)}
                   href={item.href}
                   className="rounded-2xl px-4 py-3 text-sm font-black transition"
                   activeClassName="bg-red-50 text-red-700"

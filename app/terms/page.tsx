@@ -4,17 +4,11 @@
  * Basic website terms for BM Contractors Tanzania.
  */
 
-import type { Metadata } from "next";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
 import { isLanguage, type Language } from "@/lib/i18n/config";
 
-export const metadata: Metadata = {
-  title: "Terms of Service",
-  description:
-    "Terms of Service for using the BM Contractors Tanzania website and submitting inquiries or site survey requests.",
-};
 
 type PageProps = {
   searchParams: Promise<{

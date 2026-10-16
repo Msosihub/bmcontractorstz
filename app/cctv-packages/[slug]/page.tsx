@@ -1,3 +1,5 @@
+import { pageMetadata } from "@/lib/seo";
+import { TranslationNotice } from "@/components/site/TranslationNotice";
 /**
  * CCTV Package Detail Page
  * ------------------------
@@ -58,50 +60,15 @@ function formatPrice(value: number | null, lang: Language) {
   return `TZS ${value.toLocaleString("en-US")}`;
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{
-    slug: string;
-  }>;
-}): Promise<Metadata> {
-  const resolvedParams = await params;
-
-  const pkg = await prisma.cctvPackage.findFirst({
-    where: {
-      slug: resolvedParams.slug,
-      isPublished: true,
-    },
-  });
-
-  if (!pkg) {
-    return {
-      title: "CCTV Package",
-      description: "CCTV package from BM Contractors Tanzania.",
-    };
-  }
-
-  const title = `${pkg.titleEn} in Tanzania`;
-
-  const description =
-    pkg.descriptionEn ||
-    `${pkg.cameras} camera CCTV package for homes, shops, offices and businesses. Request BM Contractors site survey for accurate quotation.`;
-
-  return {
-    title,
-    description,
-    openGraph: {
-      title: `${title} | BM Contractors Tanzania`,
-      description,
-      images: ["/og/bm-contractors-og.jpg"],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: `${title} | BM Contractors Tanzania`,
-      description,
-      images: ["/og/bm-contractors-og.jpg"],
-    },
-  };
+export async function generateMetadata({ params, searchParams }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const lang = (await searchParams).lang === "sw" ? "sw" : "en";
+  const pkg = await prisma.cctvPackage.findFirst({ where: { slug, isPublished: true } });
+  const title = (lang === "sw" ? pkg?.titleSw : pkg?.titleEn) || pkg?.titleEn || (lang === "sw" ? "Kifurushi cha CCTV" : "CCTV Package");
+  const description = (lang === "sw" ? pkg?.descriptionSw : pkg?.descriptionEn) || (lang === "sw" ? "Omba ukaguzi wa eneo kwa makadirio ya mfumo wa CCTV." : "Request a site survey for a CCTV quotation.");
+  // includedItems currently has one shared language; bilingual package descriptions alone
+  // do not make the complete detail content translated.
+  return pageMetadata("/cctv-packages/" + slug, lang, [title, description], false);
 }
 
 export default async function CctvPackageDetailPage({
@@ -196,6 +163,7 @@ export default async function CctvPackageDetailPage({
       <Header lang={lang} />
 
       <main className="min-h-screen bg-white text-slate-950">
+        {lang === "sw" ? <TranslationNotice /> : null}
         <section className="relative overflow-hidden bg-slate-950 px-4 py-14 text-white sm:px-6 sm:py-16">
           <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-red-600/25 blur-3xl" />
           <div className="absolute -bottom-28 left-0 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
