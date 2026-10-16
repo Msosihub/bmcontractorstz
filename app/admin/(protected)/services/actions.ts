@@ -20,6 +20,8 @@
 
 import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/prisma";
+import { requireAdmin } from "@/lib/auth/admin-auth";
+import { validateAdminForm } from "@/lib/admin-validation";
 
 function slugify(value: string) {
   /**
@@ -44,6 +46,8 @@ function parseLines(value: string) {
 }
 
 export async function createService(formData: FormData) {
+  await requireAdmin();
+  validateAdminForm(formData);
   const titleEn = String(formData.get("titleEn") || "").trim();
   const titleSw = String(formData.get("titleSw") || "").trim();
 
@@ -112,6 +116,8 @@ export async function createService(formData: FormData) {
 }
 
 export async function toggleServicePublished(formData: FormData) {
+  await requireAdmin();
+  validateAdminForm(formData);
   /**
    * Publish or hide a service page without deleting it.
    */
@@ -136,6 +142,8 @@ export async function toggleServicePublished(formData: FormData) {
 }
 
 export async function updateService(formData: FormData) {
+  await requireAdmin();
+  validateAdminForm(formData);
   /**
    * Updates an existing service record.
    *

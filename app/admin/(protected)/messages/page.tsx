@@ -1,3 +1,4 @@
+import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Messages Page
  * -------------------
@@ -44,6 +45,7 @@ function statusClass(status: string) {
 const statuses = ["NEW", "CONTACTED", "CLOSED"];
 
 export default async function AdminMessagesPage() {
+  await requireAdminPage();
   const messages = await prisma.contactMessage.findMany({
     orderBy: {
       createdAt: "desc",

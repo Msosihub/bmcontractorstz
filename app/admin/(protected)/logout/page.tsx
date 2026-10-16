@@ -1,3 +1,4 @@
+import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Logout Page
  * -----------------
@@ -7,7 +8,8 @@
 import { logoutAdmin } from "./actions";
 import { SubmitButton } from "@/components/ui/SubmitButton";
 
-export default function AdminLogoutPage() {
+export default async function AdminLogoutPage() {
+  await requireAdminPage();
   return (
     <main className="grid gap-4">
       <h1 className="text-3xl font-black text-white">Logout</h1>

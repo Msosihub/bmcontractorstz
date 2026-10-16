@@ -1,3 +1,4 @@
+import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin CCTV Package Edit Page
  * ----------------------------
@@ -47,6 +48,7 @@ function formatMoney(value: number | null) {
 }
 
 export default async function AdminCctvPackageEditPage({ params }: PageProps) {
+  await requireAdminPage();
   const resolvedParams = await params;
 
   const pkg = await prisma.cctvPackage.findUnique({

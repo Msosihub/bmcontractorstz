@@ -1,3 +1,4 @@
+import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Products Page
  * -------------------
@@ -34,6 +35,7 @@ function formatMoney(value: number | null) {
 }
 
 export default async function AdminProductsPage() {
+  await requireAdminPage();
   const products = await prisma.product.findMany({
     include: {
       category: true,

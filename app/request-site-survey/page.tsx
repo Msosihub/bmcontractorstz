@@ -1,3 +1,4 @@
+import { EnquiryForm } from "@/components/site/EnquiryForm";
 /**
  * Request Site Survey Page
  * ------------------------
@@ -10,7 +11,6 @@
  * - Sends data to server action.
  */
 
-import type { Metadata } from "next";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
@@ -19,17 +19,6 @@ import { createSiteSurveyRequest } from "./actions";
 import { isLanguage, type Language } from "@/lib/i18n/config";
 import { siteConfig } from "@/data/site";
 
-export const metadata: Metadata = {
-  title: "Request Security Site Survey",
-  description:
-    "Request a BM Contractors site survey for CCTV, electric fence, gate motors, access control, networking or power backup in Tanzania.",
-  openGraph: {
-    title: "Request Site Survey | BM Contractors Tanzania",
-    description:
-      "Send your site details and get guidance for the right security and safety system.",
-    images: ["/og/bm-contractors-og.jpg"],
-  },
-};
 
 type PageProps = {
   searchParams: Promise<{
@@ -208,7 +197,8 @@ export default async function RequestSiteSurveyPage({
 
         <section className="px-4 py-14 sm:px-6 sm:py-16">
           <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
-            <form
+            <EnquiryForm
+              lang={lang}
               action={createSiteSurveyRequest}
               className="grid gap-4 rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm sm:p-8"
             >
@@ -225,14 +215,14 @@ export default async function RequestSiteSurveyPage({
 
               <div className="grid gap-4 sm:grid-cols-2">
                 <input
-                  name="fullName"
+                  name="fullName" aria-label={t.fullName} maxLength={120}
                   required
                   placeholder={t.fullName}
                   className="rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-red-500 focus:ring-4 focus:ring-red-50"
                 />
 
                 <input
-                  name="phone"
+                  name="phone" aria-label={t.phone} maxLength={30}
                   required
                   placeholder={t.phone}
                   className="rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-red-500 focus:ring-4 focus:ring-red-50"
@@ -241,14 +231,14 @@ export default async function RequestSiteSurveyPage({
 
               <div className="grid gap-4 sm:grid-cols-2">
                 <input
-                  name="email"
+                  name="email" aria-label={t.email} maxLength={254}
                   type="email"
                   placeholder={t.email}
                   className="rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-red-500 focus:ring-4 focus:ring-red-50"
                 />
 
                 <input
-                  name="location"
+                  name="location" aria-label={t.location} maxLength={200}
                   required
                   placeholder={t.location}
                   className="rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-red-500 focus:ring-4 focus:ring-red-50"
@@ -321,7 +311,7 @@ export default async function RequestSiteSurveyPage({
               </div>
 
               <textarea
-                name="message"
+                name="message" aria-label={t.message} maxLength={3000}
                 rows={6}
                 placeholder={t.message}
                 className="rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-red-500 focus:ring-4 focus:ring-red-50"
@@ -340,7 +330,7 @@ export default async function RequestSiteSurveyPage({
               >
                 {t.whatsappButton}
               </a>
-            </form>
+            </EnquiryForm>
 
             <aside className="grid gap-5">
               {selectedService || selectedPackage || selectedProduct ? (

@@ -49,6 +49,11 @@ model Page {
  * Used for public /services and individual service pages.
  */
 model Service {
+  summaryEn String? @ignore
+  summarySw String? @ignore
+  iconName String? @ignore
+  sortOrder Int @default(0) @ignore
+  isFeatured Boolean @default(false) @ignore
   id            String   @id @default(cuid())
   slug          String   @unique
   titleEn       String
@@ -100,6 +105,9 @@ model Product {
  * Examples: 4 Camera Package, 8 Camera Package, 16 Camera Package.
  */
 model CctvPackage {
+  cameraCount Int? @ignore
+  imageUrl String? @ignore
+  isPopular Boolean @default(false) @ignore
   id               String            @id @default(cuid())
   slug             String            @unique
   titleEn          String
@@ -126,6 +134,8 @@ model CctvPackageItem {
 }
 
 model Project {
+  serviceType String? @ignore
+  isFeatured Boolean @default(false) @ignore
   id            String   @id @default(cuid())
   slug          String   @unique
   titleEn       String
@@ -157,6 +167,7 @@ model BrandPartner {
  * Used for FAQs, installation guidance and service education.
  */
 model SupportArticle {
+  category String? @ignore
   id          String   @id @default(cuid())
   slug        String   @unique
   categoryEn  String
@@ -247,4 +258,16 @@ model ContactMessage {
   message   String
   status    String   @default("NEW")
   createdAt DateTime @default(now())
+}
+
+/** Persistent intake receipts: hashed contacts only; clean up after a documented retention period. */
+model EnquirySubmission {
+  id String @id @default(cuid())
+  fingerprint String
+  senderHash String
+  kind String
+  recordId String
+  createdAt DateTime @default(now())
+  @@index([fingerprint, createdAt])
+  @@index([senderHash, createdAt])
 }

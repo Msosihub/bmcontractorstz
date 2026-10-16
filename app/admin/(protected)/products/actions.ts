@@ -20,6 +20,8 @@
 
 import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/prisma";
+import { requireAdmin } from "@/lib/auth/admin-auth";
+import { validateAdminForm } from "@/lib/admin-validation";
 
 function slugify(value: string) {
   /**
@@ -83,6 +85,8 @@ function parseSpecificationsText(value: FormDataEntryValue | null) {
 }
 
 export async function createProduct(formData: FormData) {
+  await requireAdmin();
+  validateAdminForm(formData);
   const name = String(formData.get("name") || "").trim();
   const brand = String(formData.get("brand") || "").trim();
   const categoryName = String(formData.get("categoryName") || "").trim();
@@ -140,6 +144,8 @@ export async function createProduct(formData: FormData) {
 }
 
 export async function toggleProductPublished(formData: FormData) {
+  await requireAdmin();
+  validateAdminForm(formData);
   /**
    * Publish or hide a product without deleting it.
    */
@@ -164,6 +170,8 @@ export async function toggleProductPublished(formData: FormData) {
 }
 
 export async function updateProduct(formData: FormData) {
+  await requireAdmin();
+  validateAdminForm(formData);
   /**
    * Updates an existing product record.
    *

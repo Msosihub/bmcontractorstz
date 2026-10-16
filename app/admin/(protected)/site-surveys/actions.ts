@@ -17,6 +17,8 @@
 
 import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/prisma";
+import { requireAdmin } from "@/lib/auth/admin-auth";
+import { validateAdminForm } from "@/lib/admin-validation";
 
 const allowedStatuses = [
   "NEW",
@@ -33,6 +35,8 @@ function isAllowedStatus(value: string): value is SurveyStatus {
 }
 
 export async function updateSiteSurveyStatus(formData: FormData) {
+  await requireAdmin();
+  validateAdminForm(formData);
   /**
    * Extract request ID and new status from submitted form.
    */

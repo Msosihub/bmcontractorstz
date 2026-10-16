@@ -1,3 +1,4 @@
+import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Projects Page
  * -------------------
@@ -24,6 +25,7 @@ import { AdminToggleButton } from "@/components/admin/AdminToggleButton";
 import { toggleProjectPublished } from "./actions";
 
 export default async function AdminProjectsPage() {
+  await requireAdminPage();
   const projects = await prisma.project.findMany({
     orderBy: {
       createdAt: "desc",

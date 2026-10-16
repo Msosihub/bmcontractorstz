@@ -16,6 +16,8 @@
 
 import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/prisma";
+import { requireAdmin } from "@/lib/auth/admin-auth";
+import { validateAdminForm } from "@/lib/admin-validation";
 
 const allowedStatuses = ["NEW", "CONTACTED", "CLOSED"] as const;
 
@@ -26,6 +28,8 @@ function isAllowedStatus(value: string): value is MessageStatus {
 }
 
 export async function updateContactMessageStatus(formData: FormData) {
+  await requireAdmin();
+  validateAdminForm(formData);
   const messageId = String(formData.get("messageId") || "").trim();
   const status = String(formData.get("status") || "").trim();
 

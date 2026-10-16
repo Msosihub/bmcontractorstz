@@ -1,3 +1,4 @@
+import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Support Article Edit Page
  * -------------------------------
@@ -31,6 +32,7 @@ type PageProps = {
 export default async function AdminSupportArticleEditPage({
   params,
 }: PageProps) {
+  await requireAdminPage();
   const resolvedParams = await params;
 
   const article = await prisma.supportArticle.findUnique({

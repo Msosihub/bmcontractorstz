@@ -1,3 +1,4 @@
+import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Service Edit Page
  * -----------------------
@@ -39,6 +40,7 @@ function asTextLines(value: unknown) {
 }
 
 export default async function AdminServiceEditPage({ params }: PageProps) {
+  await requireAdminPage();
   const resolvedParams = await params;
 
   const service = await prisma.service.findUnique({

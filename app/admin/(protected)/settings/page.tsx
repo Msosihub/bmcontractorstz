@@ -1,3 +1,4 @@
+import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Settings Page
  * -------------------
@@ -15,7 +16,8 @@
 import { AdminShell } from "@/components/admin/AdminShell";
 import { siteConfig } from "@/data/site";
 
-export default function AdminSettingsPage() {
+export default async function AdminSettingsPage() {
+  await requireAdminPage();
   return (
     <AdminShell
       title="Website Settings"

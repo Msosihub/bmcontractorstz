@@ -1,3 +1,4 @@
+import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Dashboard Page
  * --------------------
@@ -22,6 +23,7 @@ import { prisma } from "@/lib/prisma";
 import { LoadingLink } from "@/components/ui/LoadingLink";
 
 export default async function AdminPage() {
+  await requireAdminPage();
   const supportArticleCount = await prisma.supportArticle.count();
 
   const publishedSupportArticleCount = await prisma.supportArticle.count({

@@ -1,3 +1,4 @@
+import { EnquiryForm } from "@/components/site/EnquiryForm";
 /**
  * Contact Page
  * ------------
@@ -23,19 +24,7 @@ import { isLanguage, type Language } from "@/lib/i18n/config";
 import { createContactMessage } from "./actions";
 import { siteConfig } from "@/data/site";
 import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Contact BM Contractors",
-  description:
-    "Contact BM Contractors Tanzania for CCTV, electric fence, gate motors, access control, networking and power backup solutions.",
-  openGraph: {
-    title: "Contact BM Contractors Tanzania",
-    description:
-      "Reach BM Contractors for security and safety system guidance, quotations and site survey requests.",
-    images: ["/og/bm-contractors-og.jpg"],
-  },
-};
 
 type PageProps = {
   searchParams: Promise<{
@@ -157,7 +146,8 @@ export default async function ContactPage({ searchParams }: PageProps) {
               </div>
             </div>
 
-            <form
+            <EnquiryForm
+              lang={lang}
               action={createContactMessage}
               className="grid gap-4 rounded-[2rem] border border-slate-200 bg-white p-5 shadow-sm sm:p-8"
             >
@@ -166,41 +156,41 @@ export default async function ContactPage({ searchParams }: PageProps) {
 
               <div className="grid gap-4 sm:grid-cols-2">
                 <input
-                  name="fullName"
+                  name="fullName" aria-label={t.fullName} maxLength={120}
                   required
                   className="rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-red-500 focus:ring-4 focus:ring-red-50"
                   placeholder={t.fullName}
                 />
 
                 <input
-                  name="phone"
+                  name="phone" aria-label={t.phone} maxLength={30}
                   className="rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-red-500 focus:ring-4 focus:ring-red-50"
                   placeholder={t.phone}
                 />
               </div>
 
               <input
-                name="email"
+                name="email" aria-label={t.email} maxLength={254}
                 type="email"
                 className="rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-red-500 focus:ring-4 focus:ring-red-50"
                 placeholder={t.email}
               />
 
               <input
-                name="subject"
+                name="subject" aria-label={t.subject} maxLength={200}
                 className="rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-red-500 focus:ring-4 focus:ring-red-50"
                 placeholder={t.subject}
               />
 
               <textarea
-                name="message"
+                name="message" aria-label={t.message} maxLength={3000}
                 required
                 className="min-h-40 rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-red-500 focus:ring-4 focus:ring-red-50"
                 placeholder={t.message}
               />
 
               <SubmitButton loadingText={t.submitting}>{t.submit}</SubmitButton>
-            </form>
+            </EnquiryForm>
           </div>
         </section>
       </main>

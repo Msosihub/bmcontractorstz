@@ -1,3 +1,4 @@
+import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Project Edit Page
  * -----------------------
@@ -29,6 +30,7 @@ type PageProps = {
 };
 
 export default async function AdminProjectEditPage({ params }: PageProps) {
+  await requireAdminPage();
   const resolvedParams = await params;
 
   const project = await prisma.project.findUnique({

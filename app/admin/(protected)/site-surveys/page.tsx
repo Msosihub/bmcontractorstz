@@ -1,3 +1,4 @@
+import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Site Surveys Page
  * -----------------------
@@ -51,6 +52,7 @@ function statusClass(status: string) {
 const statuses = ["NEW", "CONTACTED", "QUOTED", "COMPLETED", "CANCELLED"];
 
 export default async function AdminSiteSurveysPage() {
+  await requireAdminPage();
   const requests = await prisma.siteSurveyRequest.findMany({
     orderBy: {
       createdAt: "desc",
