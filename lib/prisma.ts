@@ -1,3 +1,4 @@
+import { assertPreviewEnvironment } from "./preview-safety.mjs";
 /**
  * Prisma Client Setup
  * -------------------
@@ -20,6 +21,7 @@ const globalForPrisma = globalThis as unknown as {
  * Prisma 7 uses a database adapter.
  * We pass the Neon DATABASE_URL here.
  */
+assertPreviewEnvironment();
 const adapter = new PrismaPg({
   connectionString: process.env.DATABASE_URL!,
   ...(process.env.BM_ISOLATED_PREVIEW === "1" ? { max: 1 } : {}),

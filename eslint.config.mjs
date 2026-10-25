@@ -8,6 +8,8 @@ const eslintConfig = defineConfig([
   // Override default ignores of eslint-config-next.
   globalIgnores([
     ".test-cache/**",
+    "design-preview/**/.next/**",
+    "design-preview/**/next-env.d.ts",
     // Default ignores of eslint-config-next:
     ".next/**",
     "out/**",

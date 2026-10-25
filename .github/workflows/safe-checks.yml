@@ -1,0 +1,53 @@
+name: Safe checks
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: safe-checks-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    services:
+      postgres:
+        image: postgres:18
+        env:
+          POSTGRES_PASSWORD: ci-fixture-only
+          POSTGRES_DB: bm_preview_ci
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      DATABASE_URL: postgresql://bm_preview_runtime_ci:ci-fixture-only@127.0.0.1:5432/bm_preview_ci
+      VERCEL_ENV: preview
+      BM_ISOLATED_PREVIEW: '1'
+      BM_DISABLE_NOTIFICATIONS: '1'
+      BM_PREVIEW_DB_HOST: 127.0.0.1
+      BM_PREVIEW_DB_NAME: bm_preview_ci
+      BM_PREVIEW_DB_ROLE: bm_preview_runtime_ci
+      ADMIN_ALLOWED_PHONES: '+255700000001'
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: node scripts/ci-preview-database.mjs
+      - run: npx --no-install prisma generate
+      - run: npx --no-install tsc --noEmit --incremental false
+      - run: npm run lint
+      - run: npm test
+      # Known advisories must be resolved/triaged before this becomes a required green check.
+      - run: npm audit --omit=dev --audit-level=high
+      - run: npm run build

@@ -1,8 +1,10 @@
+import {isPreview} from "@/lib/preview-safety.mjs";
 import type { MetadataRoute } from "next";
 import { prisma } from "@/lib/prisma";
 import { getServiceBySlug } from "@/data/services";
 import { publicPages, languageUrl } from "@/lib/seo";
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+ if(isPreview())return [];
  const [products, packages, articles, services] = await Promise.all([
   prisma.product.findMany({ where:{isPublished:true}, select:{slug:true,updatedAt:true} }),
   prisma.cctvPackage.findMany({ where:{isPublished:true}, select:{slug:true,updatedAt:true} }),

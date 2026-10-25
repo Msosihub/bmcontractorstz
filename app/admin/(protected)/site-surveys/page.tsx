@@ -1,3 +1,4 @@
+import {AdminActionForm} from "@/components/admin/AdminActionForm";
 import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Site Surveys Page
@@ -208,7 +209,7 @@ export default async function AdminSiteSurveysPage() {
 
                   <div className="mt-4 flex flex-wrap gap-2">
                     {statuses.map((status) => (
-                      <form key={status} action={updateSiteSurveyStatus}>
+                      <AdminActionForm key={status} action={updateSiteSurveyStatus}>
                         {/* Hidden values tell the server action which record to update. */}
                         <input
                           type="hidden"
@@ -218,7 +219,7 @@ export default async function AdminSiteSurveysPage() {
                         <input type="hidden" name="status" value={status} />
 
                         <AdminStatusButton>{status}</AdminStatusButton>
-                      </form>
+                      </AdminActionForm>
                     ))}
                   </div>
                 </div>

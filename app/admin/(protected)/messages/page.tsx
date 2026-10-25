@@ -1,3 +1,4 @@
+import {AdminActionForm} from "@/components/admin/AdminActionForm";
 import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Messages Page
@@ -158,7 +159,7 @@ export default async function AdminMessagesPage() {
 
                   <div className="mt-4 flex flex-wrap gap-2">
                     {statuses.map((status) => (
-                      <form key={status} action={updateContactMessageStatus}>
+                      <AdminActionForm key={status} action={updateContactMessageStatus}>
                         {/* Hidden values tell the server action which message to update. */}
                         <input
                           type="hidden"
@@ -168,7 +169,7 @@ export default async function AdminMessagesPage() {
                         <input type="hidden" name="status" value={status} />
 
                         <AdminStatusButton>{status}</AdminStatusButton>
-                      </form>
+                      </AdminActionForm>
                     ))}
                   </div>
                 </div>

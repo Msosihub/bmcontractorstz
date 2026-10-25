@@ -165,8 +165,6 @@ export async function toggleProductPublished(formData: FormData) {
     },
   });
 
-  revalidatePath("/admin/products");
-  revalidatePath("/products");
 }
 
 export async function updateProduct(formData: FormData) {

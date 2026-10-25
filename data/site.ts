@@ -23,7 +23,7 @@ export const siteConfig = {
 
   whatsapp: {
     label: "+255 745 778 821",
-    url: "https://wa.me/255745778821",
+    url: process.env.NEXT_PUBLIC_BM_PREVIEW === "1" ? "/preview-notifications-disabled" : "https://wa.me/255745778821",
     raw: "+255745778821",
   },
 

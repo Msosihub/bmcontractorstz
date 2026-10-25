@@ -14,7 +14,6 @@
 
 "use server";
 
-import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/prisma";
 import { requireAdmin } from "@/lib/auth/admin-auth";
 import { validateAdminForm } from "@/lib/admin-validation";
@@ -50,6 +49,5 @@ export async function updateContactMessageStatus(formData: FormData) {
     },
   });
 
-  revalidatePath("/admin/messages");
-  revalidatePath("/admin");
+  // AdminActionForm explicitly refreshes after the write has completed.
 }

@@ -1424,3 +1424,8 @@ Our objective is not to build the most technically complicated website.
 **Our objective is to make BM Contractors easier to find, easier to trust, easier to buy from, and more attractive to homeowners, businesses, institutions and procurement organizations throughout Tanzania — while protecting and growing our established CCTV, electric fence and security business.**
 
 ## BEGIN WITH THE REPOSITORY AUDIT NOW.
+
+
+## Owner supplement — 25 October 2026
+
+Apply [Premium Page Content, Admin UX & SEO Enrichment](PREMIUM-CONTENT-ADMIN-SEO-SUPPLEMENT.md). Preserve Phase 1A safety/release gates first; then one content-rich bilingual CCTV pilot, with existing service URLs preserved. Admin usability changes remain a separate reviewable set using existing auth/models/Server Actions. The approved graphite/ivory/bronze identity, official logo and illustrative-image disclosures remain authoritative. No production deployment without explicit approval.

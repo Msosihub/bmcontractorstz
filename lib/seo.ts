@@ -1,3 +1,4 @@
+import {isPreview} from "./preview-safety.mjs";
 import type { Metadata } from "next";
 import type { Language } from "@/lib/i18n/config";
 
@@ -48,7 +49,7 @@ export function pageMetadata(path: string, lang: Language, copy?: [string, strin
       canonical: languageUrl(path, lang),
       languages: translated && !privatePage ? { en: languageUrl(path, "en"), sw: languageUrl(path, "sw"), "x-default": languageUrl(path, "en") } : {},
     },
-    robots: { index: !privatePage && (lang === "en" || translated), follow: !path.startsWith("/admin") },
+    robots: { index: !isPreview() && !privatePage && (lang === "en" || translated), follow: !isPreview() && !path.startsWith("/admin") },
     openGraph: { title, description, url: languageUrl(path, lang), locale: lang === "sw" ? "sw_TZ" : "en_TZ", alternateLocale: [lang === "sw" ? "en_TZ" : "sw_TZ"], images: ["/og/bm-contractors-og.jpg"] },
     twitter: { card: "summary_large_image", title, description, images: ["/og/bm-contractors-og.jpg"] },
   };

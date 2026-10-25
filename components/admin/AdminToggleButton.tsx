@@ -11,13 +11,16 @@
 "use client";
 
 import { useFormStatus } from "react-dom";
+import {useAdminActionPending} from "./AdminActionForm";
 
 type AdminToggleButtonProps = {
   isPublished: boolean;
 };
 
 export function AdminToggleButton({ isPublished }: AdminToggleButtonProps) {
-  const { pending } = useFormStatus();
+  const { pending: nativePending } = useFormStatus();
+  const actionPending=useAdminActionPending();
+  const pending=actionPending??nativePending;
 
   return (
     <button

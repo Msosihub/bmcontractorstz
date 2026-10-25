@@ -1055,3 +1055,8 @@ Avoid unnecessary ERP, marketplace, accounting or microservices development.
 At the end, provide the implementation report, test evidence, design proposal, next recommended milestone and release/rollback plan.
 
 **Our goal is not maximum software complexity. Our goal is a secure, professional, discoverable and commercially effective BM Contractors website that grows the business across Tanzania.**
+
+
+## Owner supplement — 25 October 2026
+
+Apply [Premium Page Content, Admin UX & SEO Enrichment](PREMIUM-CONTENT-ADMIN-SEO-SUPPLEMENT.md). Preserve Phase 1A safety/release gates first; then one content-rich bilingual CCTV pilot, with existing service URLs preserved. Admin usability changes remain a separate reviewable set using existing auth/models/Server Actions. The approved graphite/ivory/bronze identity, official logo and illustrative-image disclosures remain authoritative. No production deployment without explicit approval.

@@ -1,4 +1,5 @@
 # Release and rollback plan — no deployment authorized
+Follow-up: see 26-release-readiness-review.md for the current decision and completed native PostgreSQL engine evidence. This earlier gate list is retained as audit history.
 ## Release status
 Locally implemented and reviewable; NOT approved for production. Phase 1B concept implementation also awaits review.
 

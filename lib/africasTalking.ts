@@ -46,7 +46,7 @@ export async function sendSms(
   to: string,
   message: string,
 ): Promise<SendSmsResult> {
-  if (process.env.BM_DISABLE_NOTIFICATIONS === "1") return { ok: true, status: 204, data: null };
+  if (process.env.VERCEL_ENV === "preview" || process.env.BM_ISOLATED_PREVIEW === "1" || process.env.BM_DISABLE_NOTIFICATIONS === "1") return { ok: true, status: 204, data: null };
   const username = process.env.AT_USERNAME;
   const apiKey = process.env.AT_API_KEY;
   const senderId = process.env.AT_SENDER_ID || "BM SECURITY";
@@ -90,6 +90,7 @@ export async function sendSms(
 }
 
 export async function notifyBmOffice(message: string) {
+  if (process.env.VERCEL_ENV === "preview" || process.env.BM_ISOLATED_PREVIEW === "1" || process.env.BM_DISABLE_NOTIFICATIONS === "1") return [];
   /**
    * Send one notification message to all BM office numbers.
    * Priority:

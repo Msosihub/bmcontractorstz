@@ -1,0 +1,407 @@
+[
+  {
+    "key": "hero",
+    "source": "/Users/imacslim2015/.codex/generated_images/01a1427a-b2c4-7363-8dae-fe16c077ef1a/exec-3f6aa19d-7891-4480-b604-1e53b2fc3ad4.png",
+    "prompt": "Use case: photorealistic-natural. Asset: wide premium corporate engineering homepage hero, landscape 3:2. An exceptionally elegant contemporary low-rise commercial building in coastal Tanzania, warm pale limestone, deep charcoal metal, broad glass, restrained tropical landscaping and architectural entrance, discreet professionally mounted CCTV at an eave and an automated sliding entrance gate. No people, no writing or logos. Architectural editorial photography, believable construction, late-afternoon soft warm light, natural muted colors, precise materials, calm established corporate atmosphere, camera at human height, building occupies center and right, generous architectural space around subject, no dramatic sci-fi effects, no invented client identity. This is a generic conceptual building, never evidence of a real BM project. High photographic realism, premium luxury architectural magazine quality, no watermark, no baked-in text.",
+    "sourceType": "Built-in image_gen generated asset",
+    "generatedAt": "2026-10-17",
+    "status": "Selected for design review; owner publication approval pending",
+    "usage": "Generic conceptual illustration only. Not project evidence, exact model, inventory, client or employee. No third-party stock license acquired. Use subject to applicable OpenAI terms; no exclusivity warranty.",
+    "variants": [
+      {
+        "file": "hero-640.webp",
+        "width": 640,
+        "bytes": 51094,
+        "targetWidth": 640,
+        "height": 427,
+        "sha256": "cea5101f4de3cc1fca58d79bf0fce44de4830421df7cab34a9f8c3f836e616a5"
+      },
+      {
+        "file": "hero-960.webp",
+        "width": 960,
+        "bytes": 103010,
+        "targetWidth": 960,
+        "height": 640,
+        "sha256": "b23bdafdd1285cfaad251bc757db60afaab75010b862107cc966b7647169e060"
+      },
+      {
+        "file": "hero-1440.webp",
+        "width": 1440,
+        "bytes": 197720,
+        "targetWidth": 1440,
+        "height": 960,
+        "sha256": "4508354f70e55baa2552da188c63d6ec364628e8404836a0c2b19f61003446a7"
+      },
+      {
+        "file": "hero-1920.webp",
+        "width": 1536,
+        "bytes": 223640,
+        "targetWidth": 1920,
+        "height": 1024,
+        "sha256": "a1e812a1855ddbd4f5192e631f19113fe68ff01e2737046b73c801870b50a5cf"
+      }
+    ],
+    "originalSha256": "bbb148184a8ed06403af88a753e5844ff365a8d941bc44ba40a9b20a01c2d889",
+    "termsUrl": "https://openai.com/policies/row-terms-of-use/"
+  },
+  {
+    "key": "cctv",
+    "source": "/Users/imacslim2015/.codex/generated_images/01a1427a-b2c4-7363-8dae-fe16c077ef1a/exec-704ba947-f19f-4501-9bfd-cb200cd904f1.png",
+    "prompt": "Use case: photorealistic-natural. Asset: premium engineering website service illustration, landscape 3:2. A discreet white professional bullet CCTV camera precisely mounted beneath a warm limestone architectural eave at an elegant contemporary building, concealed cabling, close architectural detail, shallow depth of field, muted tropical greenery beyond. Coordinated architectural editorial photography with warm pale limestone, graphite metal and restrained tropical green, soft natural late-afternoon light, realistic materials, calm timeless luxury, high photographic realism. Conceptual generic installation only, not evidence of BM projects or exact product models. No text, labels, logos, branding, uniforms, people, watermarks or invented client identity. No unsafe or implausible installations. Do not create a collage.",
+    "sourceType": "Built-in image_gen generated asset",
+    "generatedAt": "2026-10-17",
+    "status": "Selected for design review; owner publication approval pending",
+    "usage": "Generic conceptual illustration only. Not project evidence, exact model, inventory, client or employee. No third-party stock license acquired. Use subject to applicable OpenAI terms; no exclusivity warranty.",
+    "variants": [
+      {
+        "file": "cctv-640.webp",
+        "width": 640,
+        "bytes": 36334,
+        "targetWidth": 640,
+        "height": 427,
+        "sha256": "772394cab56a6280d69f3d214d7aea271bebf6d1a320433bc6f9b7ee87f296d2"
+      },
+      {
+        "file": "cctv-960.webp",
+        "width": 960,
+        "bytes": 64658,
+        "targetWidth": 960,
+        "height": 640,
+        "sha256": "8a914e24e7ee98254a9d99858ae0d4708ffeb612a9a64a991666eec824fe384a"
+      },
+      {
+        "file": "cctv-1440.webp",
+        "width": 1440,
+        "bytes": 111208,
+        "targetWidth": 1440,
+        "height": 960,
+        "sha256": "b358a0e7422ca949c235adee4b125ac41240d84485862db27f4cf5920170deef"
+      },
+      {
+        "file": "cctv-1920.webp",
+        "width": 1536,
+        "bytes": 121014,
+        "targetWidth": 1920,
+        "height": 1024,
+        "sha256": "5eccdf1accdc445cb4d9a4d94f3003983d186d007fee3a3d966e594a635004bb"
+      }
+    ],
+    "originalSha256": "b4959ba7349bdaedaee97ce01297b88f4221fd21e3298e07281b66d1e4f3d897",
+    "termsUrl": "https://openai.com/policies/row-terms-of-use/"
+  },
+  {
+    "key": "gate",
+    "source": "/Users/imacslim2015/.codex/generated_images/01a1427a-b2c4-7363-8dae-fe16c077ef1a/exec-70c1304f-ad20-49cd-8c0b-787f161a49dc.png",
+    "prompt": "Use case: photorealistic-natural. Asset: premium engineering website service illustration, landscape 3:2. An elegant charcoal sliding automatic gate at a contemporary Tanzanian estate entrance, correctly aligned ground track and enclosed motor, neatly installed six-strand electric fence above the boundary wall with plausible insulated brackets, safe entrance clearance, no people. Coordinated architectural editorial photography with warm pale limestone, graphite metal and restrained tropical green, soft natural late-afternoon light, realistic materials, calm timeless luxury, high photographic realism. Conceptual generic installation only, not evidence of BM projects or exact product models. No text, labels, logos, branding, uniforms, people, watermarks or invented client identity. No unsafe or implausible installations. Do not create a collage.",
+    "sourceType": "Built-in image_gen generated asset",
+    "generatedAt": "2026-10-17",
+    "status": "Selected for design review; owner publication approval pending",
+    "usage": "Generic conceptual illustration only. Not project evidence, exact model, inventory, client or employee. No third-party stock license acquired. Use subject to applicable OpenAI terms; no exclusivity warranty.",
+    "variants": [
+      {
+        "file": "gate-640.webp",
+        "width": 640,
+        "bytes": 47862,
+        "targetWidth": 640,
+        "height": 427,
+        "sha256": "b51207da9084a4d5c1b89c9e7b6812d39064c23e5bcda7691aa8d4e800654731"
+      },
+      {
+        "file": "gate-960.webp",
+        "width": 960,
+        "bytes": 98218,
+        "targetWidth": 960,
+        "height": 640,
+        "sha256": "c7c06064a30c5b9d81754eed673bd12c01b3f396920593e5f9795e87212c81df"
+      },
+      {
+        "file": "gate-1440.webp",
+        "width": 1440,
+        "bytes": 184352,
+        "targetWidth": 1440,
+        "height": 960,
+        "sha256": "496d1eed401d1768546a69ff2b058f94303c6c1fd1efdb02f4f46e7b70e5574d"
+      },
+      {
+        "file": "gate-1920.webp",
+        "width": 1536,
+        "bytes": 209636,
+        "targetWidth": 1920,
+        "height": 1024,
+        "sha256": "faef133657e93502eaa076cabeda6840f8abfc6cd5a448d222138889915f787a"
+      }
+    ],
+    "originalSha256": "cc0ed94705a023ec64908e7f51891aed84240fb3ac86e0807a483d96454d8ced",
+    "termsUrl": "https://openai.com/policies/row-terms-of-use/"
+  },
+  {
+    "key": "electrical",
+    "source": "/Users/imacslim2015/.codex/generated_images/01a1427a-b2c4-7363-8dae-fe16c077ef1a/exec-8235c594-c961-4b51-975f-34be363cb938.png",
+    "prompt": "Use case: photorealistic-natural. Asset: premium engineering website service illustration, landscape 3:2. A pristine commercial electrical service room, enclosed graphite distribution switchboard and orderly metal cable trays with insulated conduits, all covers closed, no exposed live copper, no unsafe connections, warm clean architectural lighting. Coordinated architectural editorial photography with warm pale limestone, graphite metal and restrained tropical green, soft natural late-afternoon light, realistic materials, calm timeless luxury, high photographic realism. Conceptual generic installation only, not evidence of BM projects or exact product models. No text, labels, logos, branding, uniforms, people, watermarks or invented client identity. No unsafe or implausible installations. Do not create a collage.",
+    "sourceType": "Built-in image_gen generated asset",
+    "generatedAt": "2026-10-17",
+    "status": "Selected for design review; owner publication approval pending",
+    "usage": "Generic conceptual illustration only. Not project evidence, exact model, inventory, client or employee. No third-party stock license acquired. Use subject to applicable OpenAI terms; no exclusivity warranty.",
+    "variants": [
+      {
+        "file": "electrical-640.webp",
+        "width": 640,
+        "bytes": 33882,
+        "targetWidth": 640,
+        "height": 427,
+        "sha256": "2d0b68f02440e7af1a7282989628d67e972622a7b260552f0e1078691fba17cc"
+      },
+      {
+        "file": "electrical-960.webp",
+        "width": 960,
+        "bytes": 67038,
+        "targetWidth": 960,
+        "height": 640,
+        "sha256": "00fcd3f6acb17e491446b931d1510967a1763f3b3b5686aec011f94abc1022dc"
+      },
+      {
+        "file": "electrical-1440.webp",
+        "width": 1440,
+        "bytes": 126334,
+        "targetWidth": 1440,
+        "height": 960,
+        "sha256": "a8e4dcf13f8bf7546dcf36184395d09493fc5cfd7882526fd01ea8d3a47206ce"
+      },
+      {
+        "file": "electrical-1920.webp",
+        "width": 1536,
+        "bytes": 139344,
+        "targetWidth": 1920,
+        "height": 1024,
+        "sha256": "785492a9004bb8f27af9cbe61a3714b2de74ee35d1a952c4ae87de2692477fe8"
+      }
+    ],
+    "originalSha256": "3558b3a8f9aa4051bbe968c9e14900c7defcb560af7243d8e3d28d030cbc9a35",
+    "termsUrl": "https://openai.com/policies/row-terms-of-use/"
+  },
+  {
+    "key": "solar",
+    "source": "/Users/imacslim2015/.codex/generated_images/01a1427a-b2c4-7363-8dae-fe16c077ef1a/exec-4a0ad096-f890-473b-be90-d7541dba1b44.png",
+    "prompt": "Use case: photorealistic-natural. Asset: premium engineering website service illustration, landscape 3:2. A professional solar backup installation beside a contemporary commercial building, neatly aligned roof solar panels visible outside and a sheltered clean utility room with generic enclosed hybrid inverter and modular battery cabinets, protected cabling in conduits, realistic ventilation and clear service access. Coordinated architectural editorial photography with warm pale limestone, graphite metal and restrained tropical green, soft natural late-afternoon light, realistic materials, calm timeless luxury, high photographic realism. Conceptual generic installation only, not evidence of BM projects or exact product models. No text, labels, logos, branding, uniforms, people, watermarks or invented client identity. No unsafe or implausible installations. Do not create a collage.",
+    "sourceType": "Built-in image_gen generated asset",
+    "generatedAt": "2026-10-17",
+    "status": "Selected for design review; owner publication approval pending",
+    "usage": "Generic conceptual illustration only. Not project evidence, exact model, inventory, client or employee. No third-party stock license acquired. Use subject to applicable OpenAI terms; no exclusivity warranty.",
+    "variants": [
+      {
+        "file": "solar-640.webp",
+        "width": 640,
+        "bytes": 57804,
+        "targetWidth": 640,
+        "height": 427,
+        "sha256": "8a3bdf88dfa9bd585d2e68cc8569088de63250f8886c6dc4fb7544d5d8a6f44c"
+      },
+      {
+        "file": "solar-960.webp",
+        "width": 960,
+        "bytes": 108250,
+        "targetWidth": 960,
+        "height": 640,
+        "sha256": "394d07585932412c49f8999a6e9f9efb507cb8581410dc06e6be686004cf76ba"
+      },
+      {
+        "file": "solar-1440.webp",
+        "width": 1440,
+        "bytes": 195104,
+        "targetWidth": 1440,
+        "height": 960,
+        "sha256": "0e0e6b860baf0f43ad41bd953595b92c822430f11b2a2c720711e92eebd89073"
+      },
+      {
+        "file": "solar-1920.webp",
+        "width": 1536,
+        "bytes": 217284,
+        "targetWidth": 1920,
+        "height": 1024,
+        "sha256": "1d676579b01b3d4e5ae3fb460961c4620288b17bfb33df70acc1856078a957ec"
+      }
+    ],
+    "originalSha256": "bd3d6e7a822bdbfd436d5e92fb81b7707bb0924728d21e40edaa3276a5239409",
+    "termsUrl": "https://openai.com/policies/row-terms-of-use/"
+  },
+  {
+    "key": "generator",
+    "source": "/Users/imacslim2015/.codex/generated_images/01a1427a-b2c4-7363-8dae-fe16c077ef1a/exec-68a0d8d2-22ca-4e71-b3eb-c52073a9bf1a.png",
+    "prompt": "Use case: photorealistic-natural. Asset: premium engineering website service illustration, landscape 3:2. An unbranded commercial enclosed standby generator in a dedicated outdoor service yard, concrete plinth, generous clear maintenance space, protected cabling, credible ventilation and exhaust directed away from the building, no adjacent windows, restrained olive-grey housing, elegant limestone service walls. Coordinated architectural editorial photography with warm pale limestone, graphite metal and restrained tropical green, soft natural late-afternoon light, realistic materials, calm timeless luxury, high photographic realism. Conceptual generic installation only, not evidence of BM projects or exact product models. No text, labels, logos, branding, uniforms, people, watermarks or invented client identity. No unsafe or implausible installations. Do not create a collage.",
+    "sourceType": "Built-in image_gen generated asset",
+    "generatedAt": "2026-10-17",
+    "status": "Selected for design review; owner publication approval pending",
+    "usage": "Generic conceptual illustration only. Not project evidence, exact model, inventory, client or employee. No third-party stock license acquired. Use subject to applicable OpenAI terms; no exclusivity warranty.",
+    "variants": [
+      {
+        "file": "generator-640.webp",
+        "width": 640,
+        "bytes": 60610,
+        "targetWidth": 640,
+        "height": 427,
+        "sha256": "c8a7c7fcd18f49322b13022f9676878453fd34db9ec9fcc777ee1295f22cc38b"
+      },
+      {
+        "file": "generator-960.webp",
+        "width": 960,
+        "bytes": 119744,
+        "targetWidth": 960,
+        "height": 640,
+        "sha256": "0fe209b5c6f546251df51d44995cb382b514da49f6d740cf91c538d8c5019b08"
+      },
+      {
+        "file": "generator-1440.webp",
+        "width": 1440,
+        "bytes": 221150,
+        "targetWidth": 1440,
+        "height": 960,
+        "sha256": "797b3fe68b91304be997eeb42ba6918f0d0b83ae8265e7be181a28486fe9c192"
+      },
+      {
+        "file": "generator-1920.webp",
+        "width": 1536,
+        "bytes": 247836,
+        "targetWidth": 1920,
+        "height": 1024,
+        "sha256": "510b5b67b79ece7178342d94e306bf8745d8dbf230d63d296757dbee9177752b"
+      }
+    ],
+    "originalSha256": "f37ced7118f4919f2851f0df3bff102fb223ca4089032379d9c9d018acd056e3",
+    "termsUrl": "https://openai.com/policies/row-terms-of-use/"
+  },
+  {
+    "key": "network",
+    "source": "/Users/imacslim2015/.codex/generated_images/01a1427a-b2c4-7363-8dae-fe16c077ef1a/exec-99cc873f-58ec-4338-ab1e-0636301fb184.png",
+    "prompt": "Use case: photorealistic-natural. Asset: premium engineering website service illustration, landscape 3:2. A beautifully organized office network cabinet, neatly dressed patch cables and patch panels, switches with restrained indicator lights, properly supported cable management, immaculate practical rack room, realistic hardware, no glowing science-fiction effects. Coordinated architectural editorial photography with warm pale limestone, graphite metal and restrained tropical green, soft natural late-afternoon light, realistic materials, calm timeless luxury, high photographic realism. Conceptual generic installation only, not evidence of BM projects or exact product models. No text, labels, logos, branding, uniforms, people, watermarks or invented client identity. No unsafe or implausible installations. Do not create a collage.",
+    "sourceType": "Built-in image_gen generated asset",
+    "generatedAt": "2026-10-17",
+    "status": "Selected for design review; owner publication approval pending",
+    "usage": "Generic conceptual illustration only. Not project evidence, exact model, inventory, client or employee. No third-party stock license acquired. Use subject to applicable OpenAI terms; no exclusivity warranty.",
+    "variants": [
+      {
+        "file": "network-640.webp",
+        "width": 640,
+        "bytes": 48374,
+        "targetWidth": 640,
+        "height": 427,
+        "sha256": "1416dc9a3abf94349a37e7f6aa32c2932798d2c081d7f320705d3d7fad99219b"
+      },
+      {
+        "file": "network-960.webp",
+        "width": 960,
+        "bytes": 94738,
+        "targetWidth": 960,
+        "height": 640,
+        "sha256": "a0f286be060e8d81f425ed7f1fd637e874d1513716dede3e2a73b908acc2711c"
+      },
+      {
+        "file": "network-1440.webp",
+        "width": 1440,
+        "bytes": 168676,
+        "targetWidth": 1440,
+        "height": 960,
+        "sha256": "3a89e2b404fc826d9dd95d5832c171780a8d4ba681826f143d0bc313aeb0086a"
+      },
+      {
+        "file": "network-1920.webp",
+        "width": 1536,
+        "bytes": 185490,
+        "targetWidth": 1920,
+        "height": 1024,
+        "sha256": "1e0031ff86820c6f31e4759e00f060c944ba90b1d38412a3bdcf7ba134cee228"
+      }
+    ],
+    "originalSha256": "43fb7b1c8ce39f27f817eda4e40622d598031b27db99c3424616c4520155f08d",
+    "termsUrl": "https://openai.com/policies/row-terms-of-use/"
+  },
+  {
+    "key": "telephone",
+    "source": "/Users/imacslim2015/.codex/generated_images/01a1427a-b2c4-7363-8dae-fe16c077ef1a/exec-c3cd5cab-e286-432e-a3a5-5cacd8f907b6.png",
+    "prompt": "Use case: photorealistic-natural. Asset: premium engineering website service illustration, landscape 3:2. An elegant contemporary hotel reception desk with one generic unbranded business IP desk telephone, realistic handset and small dark screen, warm timber and pale stone, architectural interior photography, no readable interface, no hotel identity or logos. Coordinated architectural editorial photography with warm pale limestone, graphite metal and restrained tropical green, soft natural late-afternoon light, realistic materials, calm timeless luxury, high photographic realism. Conceptual generic installation only, not evidence of BM projects or exact product models. No text, labels, logos, branding, uniforms, people, watermarks or invented client identity. No unsafe or implausible installations. Do not create a collage.",
+    "sourceType": "Built-in image_gen generated asset",
+    "generatedAt": "2026-10-17",
+    "status": "Selected for design review; owner publication approval pending",
+    "usage": "Generic conceptual illustration only. Not project evidence, exact model, inventory, client or employee. No third-party stock license acquired. Use subject to applicable OpenAI terms; no exclusivity warranty.",
+    "variants": [
+      {
+        "file": "telephone-640.webp",
+        "width": 640,
+        "bytes": 38188,
+        "targetWidth": 640,
+        "height": 427,
+        "sha256": "af74f579e4d212eecfe09bc6568eda5e8ddebdaa0754f4fe8576f746bcbbfa46"
+      },
+      {
+        "file": "telephone-960.webp",
+        "width": 960,
+        "bytes": 68640,
+        "targetWidth": 960,
+        "height": 640,
+        "sha256": "2fbcc9921919e14997feec5b4b3c067e0c4354aba84dc4982002fb6a274079b6"
+      },
+      {
+        "file": "telephone-1440.webp",
+        "width": 1440,
+        "bytes": 121104,
+        "targetWidth": 1440,
+        "height": 960,
+        "sha256": "36981817b5aa93b95094c1400533890f787a71d6be226a6a6443bba8e7a99b21"
+      },
+      {
+        "file": "telephone-1920.webp",
+        "width": 1536,
+        "bytes": 132888,
+        "targetWidth": 1920,
+        "height": 1024,
+        "sha256": "d07bc512078834496e8275c6d7cb8d76d2cc19d6b549ca64d1688dee3ba26d7d"
+      }
+    ],
+    "originalSha256": "20aaf07ad2961ed5103e21d283c14382f3b846d514c337323925ad9051b27f92",
+    "termsUrl": "https://openai.com/policies/row-terms-of-use/"
+  },
+  {
+    "key": "engineering",
+    "source": "/Users/imacslim2015/.codex/generated_images/01a1427a-b2c4-7363-8dae-fe16c077ef1a/exec-147fea51-02fb-44b8-b9cc-722448ff53c1.png",
+    "prompt": "Use case: photorealistic-natural. Asset: premium engineering website service illustration, landscape 3:2. An elegant contemporary commercial atrium in Tanzania, warm stone, deep graphite structural details and refined concealed architectural lighting, subtle building-services integration, no people, no recognizable site, architectural editorial detail. Coordinated architectural editorial photography with warm pale limestone, graphite metal and restrained tropical green, soft natural late-afternoon light, realistic materials, calm timeless luxury, high photographic realism. Conceptual generic installation only, not evidence of BM projects or exact product models. No text, labels, logos, branding, uniforms, people, watermarks or invented client identity. No unsafe or implausible installations. Do not create a collage.",
+    "sourceType": "Built-in image_gen generated asset",
+    "generatedAt": "2026-10-17",
+    "status": "Selected for design review; owner publication approval pending",
+    "usage": "Generic conceptual illustration only. Not project evidence, exact model, inventory, client or employee. No third-party stock license acquired. Use subject to applicable OpenAI terms; no exclusivity warranty.",
+    "variants": [
+      {
+        "file": "engineering-640.webp",
+        "width": 640,
+        "bytes": 50820,
+        "targetWidth": 640,
+        "height": 427,
+        "sha256": "e9bcbfea9cc326348f457226a4619a1f78845e10e53c53fe8a61d02f53a62ba8"
+      },
+      {
+        "file": "engineering-960.webp",
+        "width": 960,
+        "bytes": 100922,
+        "targetWidth": 960,
+        "height": 640,
+        "sha256": "df0a971ba60763716e7d982536a75400cc2c3b6f3d86ae8962cbf59d9285a656"
+      },
+      {
+        "file": "engineering-1440.webp",
+        "width": 1440,
+        "bytes": 191000,
+        "targetWidth": 1440,
+        "height": 960,
+        "sha256": "6e232c205ae9ca39760a19ae305ea4bde697cef647ed46bce01179ed2ae6b62e"
+      },
+      {
+        "file": "engineering-1920.webp",
+        "width": 1536,
+        "bytes": 212596,
+        "targetWidth": 1920,
+        "height": 1024,
+        "sha256": "78e0685fe9b028d4adaf2ac15b0661128eb20fec205b7bb18c254d8dfe911c33"
+      }
+    ],
+    "originalSha256": "26a69d1540ea763ffc1548d68da4336064c1c3f3f44fdd190d3b6f8ee9082de6",
+    "termsUrl": "https://openai.com/policies/row-terms-of-use/"
+  }
+]

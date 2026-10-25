@@ -1,6 +1,7 @@
 import crypto from "node:crypto";
 import { prisma } from "@/lib/prisma";
 import type { EnquiryInput } from "./validation";
+import { receiptExpiry, RECEIPT_CLEANUP_BATCH } from "./retention";
 
 export class EnquiryRateError extends Error {}
 const hash = (value: string) => crypto.createHash("sha256").update(value).digest("hex");
@@ -15,6 +16,15 @@ export async function persistEnquiry(kind: "contact" | "survey", input: EnquiryI
   if (existing) return { id: existing.recordId, isNew: false };
   const recent = await tx.enquirySubmission.count({ where: { senderHash: sender, createdAt: { gt: since } } });
   if (recent >= 3) throw new EnquiryRateError("rate");
+  // Bounded opportunistic expiry; never deletes ContactMessage or SiteSurveyRequest.
+  // Concurrent workers may select the same expired IDs; deleteMany is idempotent.
+  const expired = await tx.enquirySubmission.findMany({
+   where: { createdAt: { lt: receiptExpiry() } },
+   orderBy: { createdAt: "asc" }, take: RECEIPT_CLEANUP_BATCH, select: { id: true },
+  });
+  if (expired.length) await tx.enquirySubmission.deleteMany({
+   where: { id: { in: expired.map(row => row.id) }, createdAt: { lt: receiptExpiry() } },
+  });
   const record = kind === "contact" ? await tx.contactMessage.create({ data: {
    fullName: input.fullName, phone: input.phone || null, email: input.email || null,
    subject: input.subject || null, message: input.message, status: "NEW",

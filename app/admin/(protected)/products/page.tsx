@@ -1,3 +1,4 @@
+import {AdminActionForm} from "@/components/admin/AdminActionForm";
 import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Products Page
@@ -153,7 +154,7 @@ export default async function AdminProductsPage() {
                       Edit
                     </Link>
 
-                    <form
+                    <AdminActionForm
                       action={toggleProductPublished}
                       className="mt-3 sm:mt-4"
                     >
@@ -169,7 +170,7 @@ export default async function AdminProductsPage() {
                       />
 
                       <AdminToggleButton isPublished={product.isPublished} />
-                    </form>
+                    </AdminActionForm>
                   </div>
                 </article>
               ))}
