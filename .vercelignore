@@ -10,6 +10,7 @@ node_modules
 **/.test-cache
 *.tsbuildinfo
 design-preview
+public/images/luxury-concepts/originals
 docs
 tests
 .github
