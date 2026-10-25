@@ -1,3 +1,6 @@
+import premiumServices from "@/data/premium-services.json";
+import { PremiumService } from "@/components/premium/Service";
+import { getServiceRecord } from "@/lib/services";
 import { getPublicService } from "@/lib/services";
 import { TranslationNotice } from "@/components/site/TranslationNotice";
 /**
@@ -42,6 +45,11 @@ export async function ServiceDetailPage({
   lang,
   slug,
 }: ServiceDetailPageProps) {
+  if (premiumServices.some((x) => x.slug === slug)) {
+    const record = await getServiceRecord(slug);
+    if (record && !record.isPublished) notFound();
+    return <PremiumService slug={slug} lang={lang} record={record} />;
+  }
   const service = await getPublicService(slug);
 
   if (!service) {
@@ -99,7 +107,10 @@ export async function ServiceDetailPage({
       <Header lang={lang} />
 
       <main className="min-h-screen bg-white text-slate-950">
-        {lang === "sw" && !(service.titleSw && service.descriptionSw && service.contentSw) ? <TranslationNotice /> : null}
+        {lang === "sw" &&
+        !(service.titleSw && service.descriptionSw && service.contentSw) ? (
+          <TranslationNotice />
+        ) : null}
         <section className="relative overflow-hidden bg-slate-950 px-4 py-16 text-white sm:px-6 sm:py-20">
           <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-red-600/25 blur-3xl" />
 

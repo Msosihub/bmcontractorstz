@@ -1,156 +1,46 @@
-/**
- * Footer Component
- * ----------------
- * Shared public website footer for BM Contractors.
- *
- * Purpose:
- * - Shows quick links and contact details.
- * - Uses centralized siteConfig for phone/email details.
- * - Uses LoadingLink for navigation feedback.
- * - Supports language-aware links.
- */
-
+import Image from "next/image";
 import type { Language } from "@/lib/i18n/config";
-import { getDictionary } from "@/lib/i18n/dictionary";
-import { siteConfig } from "@/data/site";
-import { LoadingLink } from "@/components/ui/LoadingLink";
-
-type FooterProps = {
-  lang: Language;
-};
-
-export function Footer({ lang }: FooterProps) {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const t = getDictionary(lang) as any;
-
-  const footerText =
-    lang === "sw"
-      ? "Huduma za security, safety, networking na smart systems kwa nyumba, biashara na taasisi Tanzania."
-      : "Security, safety, networking and smart system solutions for homes, businesses and institutions across Tanzania.";
-
+export function Footer({ lang }: { lang: Language }) {
   return (
-    <footer className="border-t border-slate-200 bg-slate-950 text-white">
-      <div className="mx-auto grid max-w-7xl gap-8 px-6 py-12 md:grid-cols-4">
-        <div className="md:col-span-2">
-          <h2 className="text-xl font-black">{siteConfig.shortName}</h2>
-
-          <p className="mt-4 max-w-md text-sm leading-6 text-slate-300">
-            {footerText}
-          </p>
-
-          <div className="mt-5 flex flex-wrap gap-2">
-            {siteConfig.services.slice(0, 4).map((service) => (
-              <span
-                key={service}
-                className="rounded-full bg-white/10 px-3 py-1 text-xs font-bold text-slate-200 ring-1 ring-white/10"
-              >
-                {service}
-              </span>
-            ))}
-          </div>
-        </div>
-
+    <footer>
+      <div className="footer-top">
+        <a className="brand" href={"/?lang=" + lang}>
+          <Image
+            src="/assets/official-logo.png"
+            width={38}
+            height={42}
+            alt="BM Contractors"
+          />
+          <span>
+            BM CONTRACTORS
+            <small>
+              {lang === "sw"
+                ? "Usalama. Uhandisi. Teknolojia."
+                : "Security. Engineering. Technology."}
+            </small>
+          </span>
+        </a>
+        <p>BM Engineering Contractors Limited</p>
+        <a href={"/contact?lang=" + lang}>
+          {lang === "sw" ? "Mawasiliano" : "Contact"} ↗
+        </a>
+      </div>
+      <p className="disclosure">
+        {lang === "sw"
+          ? "Picha zilizoainishwa kuwa za AI ni mifano ya kueleza huduma. Hazionyeshi miradi, wafanyakazi au wateja wa BM. Modeli, bei, upatikanaji na sifa za kiufundi huthibitishwa kwenye nukuu ya bei."
+          : "Images labeled AI are service illustrations, not BM projects, staff or clients. Models, prices, availability and technical requirements are confirmed in the quotation."}
+      </p>
+      <div className="footer-bottom">
+        <span>© 2026 BM Engineering Contractors Limited</span>
         <div>
-          <h3 className="text-sm font-bold">Quick Links</h3>
-
-          <div className="mt-4 grid gap-2 text-sm text-slate-300">
-            <LoadingLink
-              href={`/services?lang=${lang}`}
-              className="hover:text-white"
-            >
-              {t.nav.services}
-            </LoadingLink>
-
-            <LoadingLink
-              href={`/cctv-packages?lang=${lang}`}
-              className="hover:text-white"
-            >
-              {t.nav.cctvPackages}
-            </LoadingLink>
-
-            <LoadingLink
-              href={`/products?lang=${lang}`}
-              className="hover:text-white"
-            >
-              {t.nav.products}
-            </LoadingLink>
-
-            <LoadingLink
-              href={`/support?lang=${lang}`}
-              className="hover:text-white"
-            >
-              {t.nav.support}
-            </LoadingLink>
-
-            <LoadingLink
-              href={`/request-site-survey?lang=${lang}`}
-              className="hover:text-white"
-            >
-              {t.nav.requestSurvey}
-            </LoadingLink>
-
-            <LoadingLink
-              href={`/contact?lang=${lang}`}
-              className="hover:text-white"
-            >
-              {t.nav.contact}
-            </LoadingLink>
-          </div>
-        </div>
-
-        <div>
-          <h3 className="text-sm font-bold">Contact</h3>
-
-          <div className="mt-4 grid gap-2 text-sm text-slate-300">
-            <p>WhatsApp: {siteConfig.whatsapp.label}</p>
-
-            {siteConfig.phones.map((phone) => (
-              <p key={phone.raw}>
-                {phone.type}: {phone.label}
-              </p>
-            ))}
-
-            <p>Email: {siteConfig.email}</p>
-            <p>{siteConfig.location.country}</p>
-          </div>
-
-          <a
-            href={siteConfig.whatsapp.url}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-5 inline-flex rounded-full bg-green-600 px-4 py-2 text-xs font-black text-white transition hover:bg-green-700"
-          >
-            Chat WhatsApp
+          <a href={"/privacy-policy?lang=" + lang}>
+            {lang === "sw" ? "Faragha" : "Privacy"}
+          </a>{" "}
+          ·{" "}
+          <a href={"/terms?lang=" + lang}>
+            {lang === "sw" ? "Masharti" : "Terms"}
           </a>
         </div>
-      </div>
-
-      <div className="mt-6 flex flex-wrap px-6 py-4 gap-4 text-sm font-semibold text-slate-500">
-        <LoadingLink
-          href={`/about?lang=${lang}`}
-          className="hover:text-red-600"
-        >
-          {lang === "sw" ? "Kuhusu" : "About"}
-        </LoadingLink>
-
-        <LoadingLink
-          href={`/privacy-policy?lang=${lang}`}
-          className="hover:text-red-600"
-        >
-          Privacy Policy
-        </LoadingLink>
-
-        <LoadingLink
-          href={`/terms?lang=${lang}`}
-          className="hover:text-red-600"
-        >
-          {lang === "sw" ? "Masharti" : "Terms"}
-        </LoadingLink>
-      </div>
-
-      <div className="border-t border-slate-800 px-6 py-4 text-center text-xs text-slate-400">
-        © {new Date().getFullYear()} {siteConfig.shortName}. All rights
-        reserved.
       </div>
     </footer>
   );
