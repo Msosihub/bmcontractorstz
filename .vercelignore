@@ -23,4 +23,5 @@ scripts/validate-approved-neon.mjs
 scripts/ci-preview-database.mjs
 scripts/cleanup-enquiry-receipts.mjs
 prisma/seed.ts
+prisma/seed
 prisma/migrations
