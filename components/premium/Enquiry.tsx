@@ -184,9 +184,11 @@ export function PremiumEnquiry({
                     {sw ? "Namna ya kuwasiliana" : "Preferred contact method"}
                     <select name="preferredContactMethod">
                       <option value="">{sw ? "Chagua" : "Select"}</option>
-                      <option>Phone</option>
-                      <option>Email</option>
-                      <option>WhatsApp</option>
+                      <option value="Phone">{sw ? "Simu" : "Phone"}</option>
+                      <option value="Email">
+                        {sw ? "Barua pepe" : "Email"}
+                      </option>
+                      <option value="WhatsApp">WhatsApp</option>
                     </select>
                   </label>
                 </>

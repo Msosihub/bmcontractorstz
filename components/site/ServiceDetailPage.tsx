@@ -1,4 +1,5 @@
 import guidance from "@/data/secondary-services.json";
+import { SpecialistDetail } from "@/components/premium/SpecialistDetail";
 import relations from "@/data/service-relations.json";
 import { PremiumArticle } from "@/components/premium/Article";
 import premiumServices from "@/data/premium-services.json";
@@ -130,6 +131,7 @@ export async function ServiceDetailPage({
           </section>
         </>
       )}
+      <SpecialistDetail slug={slug} lang={lang} />
       <nav
         className="article-links"
         aria-label={sw ? "Huduma zinazohusiana" : "Related services"}

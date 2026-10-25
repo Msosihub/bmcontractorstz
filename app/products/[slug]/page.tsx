@@ -1,5 +1,6 @@
 import { EnquiryLink } from "@/components/premium/Frame";
 import { pageMetadata } from "@/lib/seo";
+import { specificationEntries } from "@/lib/product-specifications.mjs";
 
 /**
  * Product Detail Page
@@ -85,11 +86,7 @@ export default async function ProductDetailPage({
     notFound();
   }
   const sw = lang === "sw";
-  const specs = product.specifications;
-  const entries =
-    specs && typeof specs === "object" && !Array.isArray(specs)
-      ? Object.entries(specs)
-      : [];
+  const entries = specificationEntries(product.specifications);
   return (
     <>
       <Header lang={lang} />
@@ -147,14 +144,10 @@ export default async function ProductDetailPage({
                   {product.brand || (sw ? "Ithibitishwe" : "To be confirmed")}
                 </dd>
               </div>
-              {entries.map(([key, value]) => (
-                <div key={key}>
+              {entries.map(([key, value], index) => (
+                <div key={key + index}>
                   <dt>{key}</dt>
-                  <dd>
-                    {typeof value === "object"
-                      ? JSON.stringify(value)
-                      : String(value)}
-                  </dd>
+                  <dd>{value}</dd>
                 </div>
               ))}
             </dl>

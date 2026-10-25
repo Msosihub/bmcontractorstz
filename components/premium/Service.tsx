@@ -1,4 +1,5 @@
 import relations from "@/data/service-relations.json";
+import { SpecialistDetail } from "./SpecialistDetail";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { Photo, EnquiryLink } from "./Frame";
@@ -140,6 +141,7 @@ export function PremiumService({
             </article>
           </div>
         </section>
+        <SpecialistDetail slug={slug} lang={lang} />
         <section className="section service-faq">
           <div>
             <p className="eyebrow">

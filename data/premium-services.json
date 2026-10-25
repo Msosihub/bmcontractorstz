@@ -79,7 +79,7 @@
     "en": {
       "name": "Electric fencing",
       "headline": "A stronger perimeter. Planned responsibly.",
-      "intro": "BM assesses and installs electric fencing for perimeter security, including the fence layout, energizer, earthing, warning signs and alarm requirements. It should be planned as part of the wider boundary protection.",
+      "intro": "BM assesses and installs electric fencing for residential and commercial security, including energizers, earthing, warning signs and alarms. Farm, livestock and wildlife briefs need a separate assessment of the application, land and specialist delivery scope.",
       "sections": [
         {
           "title": "Fence line & energizer",
@@ -96,7 +96,7 @@
         "Existing alarms and backup needs"
       ],
       "scopeHeadline": "A considered perimeter.",
-      "applications": "Residential compounds, warehouses and business premises with a suitable boundary wall and a clearly defined perimeter.",
+      "applications": "Residential compounds, warehouses and business premises needing a planned security perimeter. Agricultural and wildlife enquiries require an application-specific land and delivery assessment; a wall-mounted security design is not a farm-fence specification.",
       "equipment": "Energizer matched to the layout; fence wires and supports; insulators; earthing components; warning signage; battery backup and alarm interfaces where specified.",
       "delivery": "Measure the boundary, inspect wall condition, vegetation, gates and nearby public access. Agree zoning and alarm response, install the specified components and test the fence and alarm functions before handover.",
       "maintenance": "Keep vegetation clear and arrange checks after storms or wall works. Report repeated alarms, broken wires or damaged insulators; servicing and fault testing should be undertaken by a competent technician.",
@@ -114,7 +114,7 @@
     "sw": {
       "name": "Uzio wa umeme",
       "headline": "Ulinzi wa mipaka uliopangwa kwa makini.",
-      "intro": "BM hukagua na kufunga uzio wa umeme kwa ulinzi wa mipaka ya eneo, ikiwemo mpangilio wa uzio, energizer, mfumo wa kutuliza umeme ardhini, alama za tahadhari na mahitaji ya kengele.",
+      "intro": "BM hutathmini na kufunga uzio wa umeme kwa usalama wa makazi na biashara, pamoja na energizer, earth, alama za tahadhari na alarm. Maombi ya mashamba, mifugo na maeneo ya wanyamapori yanahitaji tathmini tofauti ya matumizi, ardhi na uwezo maalumu wa utekelezaji.",
       "sections": [
         {
           "title": "Uzio na energizer",
@@ -131,7 +131,7 @@
         "Kengele zilizopo na mahitaji ya umeme wa akiba"
       ],
       "scopeHeadline": "Ulinzi wa mipaka wenye mpangilio.",
-      "applications": "Makazi, maghala na maeneo ya biashara yenye ukuta unaofaa na mipaka iliyo wazi.",
+      "applications": "Makazi, maghala na maeneo ya biashara yanayohitaji mpango wa usalama wa mpaka. Maombi ya mashamba na wanyamapori yanahitaji tathmini ya ardhi na namna ya utekelezaji; uzio wa usalama juu ya ukuta si usanifu wa uzio wa shamba.",
       "equipment": "Energizer inayolingana na mpangilio; nyaya na nguzo; vihami; vifaa vya kutuliza umeme ardhini; alama za tahadhari; betri ya akiba na viunganishi vya kengele vinapohitajika.",
       "delivery": "Pima mpaka na kagua hali ya ukuta, mimea, mageti na njia zinazotumiwa na watu. Kubaliana maeneo ya mfumo na hatua za kuchukua kengele ikilia; funga vifaa na jaribu uzio pamoja na kengele kabla ya kukabidhi.",
       "maintenance": "Ondoa mimea inayogusa uzio na panga ukaguzi baada ya dhoruba au kazi kwenye ukuta. Toa taarifa kuhusu kengele za mara kwa mara, nyaya zilizokatika au vihami vilivyoharibika; hitilafu zikaguliwe na fundi mwenye uwezo.",

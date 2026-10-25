@@ -54,16 +54,22 @@ test("premium product detail shows stored specifications and a translation gap",
     price: null,
     specifications: { "Fixture attribute": "Synthetic value" },
   };
-  const html = renderToStaticMarkup(
-    await detail.default({
-      params: Promise.resolve({ slug: product.slug }),
-      searchParams: Promise.resolve({ lang: "sw" }),
-    }),
-  );
-  assert.match(html, /Fixture attribute/);
-  assert.match(html, /Synthetic value/);
-  assert.match(html, /bado yako kwa Kiingereza/);
-  assert.doesNotMatch(html, /TZS 0/);
+  for (const specifications of [
+    { "Fixture attribute": "Synthetic value" },
+    [{ label: "Fixture attribute", value: "Synthetic value" }],
+  ]) {
+    product.specifications = specifications;
+    const html = renderToStaticMarkup(
+      await detail.default({
+        params: Promise.resolve({ slug: product.slug }),
+        searchParams: Promise.resolve({ lang: "sw" }),
+      }),
+    );
+    assert.match(html, /Fixture attribute/);
+    assert.match(html, /Synthetic value/);
+    assert.match(html, /bado yako kwa Kiingereza/);
+    assert.doesNotMatch(html, /TZS 0/);
+  }
 });
 const service = await bundle("components/site/ServiceDetailPage.tsx", {
   ...shell,

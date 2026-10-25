@@ -51,7 +51,9 @@ test("bilingual service rendering exposes assessment, maintenance and usable FAQ
     for (const lang of ["en", "sw"]) {
       const html = renderToStaticMarkup(service.PremiumService({ slug, lang }));
       assert.equal((html.match(/<h1/g) || []).length, 1);
-      assert.equal((html.match(/<summary>/g) || []).length, 2);
+      // Existing FAQs plus the deeper technical question remain native, usable disclosures.
+      assert.ok((html.match(/<summary>/g) || []).length >= 3);
+      assert.match(html, /<table class="specialist-comparison"/);
       assert.match(
         html,
         lang === "sw"

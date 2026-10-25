@@ -2036,3 +2036,97 @@ body.premium-site:has(dialog[open]) {
     font-size: 22px;
   }
 }
+
+/* Technical comparisons use the established editorial rhythm, without extra cards. */
+.premium-site .specialist-detail {
+  border-top: 1px solid var(--line);
+}
+.premium-site .specialist-intro {
+  max-width: 850px;
+  margin-bottom: 2.5rem;
+}
+.premium-site .specialist-intro h2 {
+  max-width: 780px;
+}
+.premium-site .specialist-comparison {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 3rem;
+  text-align: left;
+}
+.premium-site .specialist-comparison th,
+.premium-site .specialist-comparison td {
+  border-bottom: 1px solid var(--line);
+  padding: 1.4rem 1.5rem 1.4rem 0;
+  vertical-align: top;
+  line-height: 1.7;
+}
+.premium-site .specialist-comparison thead th {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.premium-site .specialist-comparison tbody th {
+  width: 31%;
+  font-weight: 500;
+}
+.premium-site .specialist-comparison td {
+  color: var(--muted);
+}
+.premium-site .specialist-notes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem 4rem;
+}
+.premium-site .specialist-notes h3 {
+  font-size: 1.35rem;
+}
+.premium-site .specialist-question,
+.premium-site .manufacturer-references {
+  border-top: 1px solid var(--line);
+  padding: 1.4rem 0;
+}
+.premium-site .specialist-question summary,
+.premium-site .manufacturer-references summary {
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.premium-site .manufacturer-references ul {
+  padding-left: 1.2rem;
+}
+.premium-site .manufacturer-references li {
+  padding: 0.5rem 0;
+}
+.premium-site .manufacturer-references li span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.premium-site .article-body .specialist-detail {
+  padding: 3rem 0;
+}
+@media (max-width: 640px) {
+  .premium-site .specialist-intro {
+    margin-bottom: 1.5rem;
+  }
+  .premium-site .specialist-comparison {
+    font-size: 0.86rem;
+  }
+  .premium-site .specialist-comparison th,
+  .premium-site .specialist-comparison td {
+    padding: 1rem 0.6rem 1rem 0;
+    overflow-wrap: anywhere;
+  }
+  .premium-site .specialist-comparison tbody th {
+    width: 34%;
+  }
+  .premium-site .specialist-comparison thead th {
+    letter-spacing: 0.04em;
+    font-size: 0.65rem;
+  }
+  .premium-site .specialist-notes {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.5rem;
+  }
+}
