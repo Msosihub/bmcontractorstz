@@ -14,17 +14,8 @@ export function PremiumService({
   record?: Service | null;
 }) {
   const s = services.find((x) => x.slug === slug)!;
-  const base = s[lang];
-  const t = record
-    ? {
-        ...base,
-        name: lang === "sw" ? record.titleSw || record.titleEn : record.titleEn,
-        intro:
-          lang === "sw"
-            ? record.descriptionSw || record.descriptionEn || base.intro
-            : record.descriptionEn || base.intro,
-      }
-    : base;
+  // Reviewed bilingual editorial guidance; CMS publication and supplemental content remain authoritative.
+  const t = s[lang];
   return (
     <>
       <Header lang={lang} />
@@ -34,16 +25,18 @@ export function PremiumService({
             <p className="eyebrow">
               <a href={"/services?lang=" + lang}>
                 {lang === "sw" ? "HUDUMA ZETU" : "OUR EXPERTISE"}
-              </a>{" "}
-              / {t.name}
+              </a>
             </p>
+            <p className="service-identity">{t.name}</p>
             <h1>{t.headline}</h1>
             <p className="lead">{t.intro}</p>
             {record &&
               lang === "sw" &&
-              (!record.titleSw || !record.descriptionSw) && (
+              Boolean(record.contentEn) &&
+              !record.contentSw && (
                 <p className="scope-note">
-                  Baadhi ya maelezo ya huduma hii bado yako kwa Kiingereza.
+                  Maelezo ya ziada kutoka rekodi ya huduma bado yako kwa
+                  Kiingereza.
                 </p>
               )}
             <EnquiryLink lang={lang} subject={t.name} />
@@ -56,10 +49,12 @@ export function PremiumService({
               {lang === "sw" ? "KAZI INAVYOPANGWA" : "A CONSIDERED SCOPE"}
             </p>
             <h2>{t.scopeHeadline}</h2>
+            <h3>{lang === "sw" ? "Inafaa kwa nani?" : "Who is it for?"}</h3>
+            <p>{t.applications}</p>
             <p className="scope-note">
               {lang === "sw"
-                ? "Kazi, vifaa, nyaraka na masharti ya utekelezaji hukubaliwa baada ya tathmini. Huu ni mwongozo wa maombi, si cheti cha kiufundi au ahadi ya upatikanaji."
-                : "Equipment, documentation and delivery scope are agreed after assessment. This is an enquiry guide, not certification or a stock commitment."}
+                ? "Kazi, vifaa, nyaraka na masharti ya utekelezaji hukubaliwa baada ya tathmini. "
+                : "Your quotation should set out the assessed equipment, installation, documentation and agreed delivery terms."}
             </p>
           </div>
           <div className="technical-sections">
@@ -85,6 +80,63 @@ export function PremiumService({
                 <h3>{x.title}</h3>
                 <p>{x.body}</p>
               </article>
+            ))}
+          </div>
+        </section>
+        <section className="section service-method">
+          <article>
+            <p className="eyebrow">
+              {lang === "sw" ? "VIFAA NA MPANGILIO" : "EQUIPMENT & APPROACH"}
+            </p>
+            <h2>
+              {lang === "sw"
+                ? "Chaguo linaloongozwa na mahitaji."
+                : "Selection follows the requirement."}
+            </h2>
+            <p>{t.equipment}</p>
+            <a href={"/products?lang=" + lang}>
+              {lang === "sw"
+                ? "Angalia vifaa na mwongozo wa vipimo"
+                : "Explore equipment & specification guidance"}{" "}
+              ↗
+            </a>
+          </article>
+          <div>
+            <article>
+              <h3>
+                {lang === "sw"
+                  ? "Tathmini, ufungaji na makabidhiano"
+                  : "Assessment, installation & handover"}
+              </h3>
+              <p>{t.delivery}</p>
+            </article>
+            <article>
+              <h3>
+                {lang === "sw"
+                  ? "Matengenezo na huduma baada ya ufungaji"
+                  : "Maintenance & ongoing care"}
+              </h3>
+              <p>{t.maintenance}</p>
+            </article>
+          </div>
+        </section>
+        <section className="section service-faq">
+          <div>
+            <p className="eyebrow">
+              {lang === "sw" ? "KABLA YA KUAMUA" : "BEFORE YOU DECIDE"}
+            </p>
+            <h2>
+              {lang === "sw"
+                ? "Maswali yanayosaidia kupanga."
+                : "Questions worth asking."}
+            </h2>
+          </div>
+          <div>
+            {t.faqs.map((f) => (
+              <details key={f.question}>
+                <summary>{f.question}</summary>
+                <p>{f.answer}</p>
+              </details>
             ))}
           </div>
         </section>
@@ -138,7 +190,7 @@ export function PremiumService({
                         "institutional-procurement",
                       ]
                     : ["cctv", "electric-fence", "gate-motors"]
-                ).includes(x.slug) && x.slug !== slug,
+                ).includes(x.slug) && x.slug !== slug && x.slug !== "institutional-procurement",
             )
             .map((x) => (
               <a key={x.slug} href={"/services/" + x.slug + "?lang=" + lang}>
@@ -146,6 +198,20 @@ export function PremiumService({
                 <span>↗</span>
               </a>
             ))}
+          {slug !== "institutional-procurement" && (
+            <a href={"/services/institutional-procurement?lang=" + lang}>
+              {lang === "sw"
+                ? "Ununuzi wa taasisi na orodha za vifaa"
+                : "Institutional procurement & equipment schedules"}
+              <span>↗</span>
+            </a>
+          )}
+          {slug === "cctv" && (
+            <a href={"/cctv-packages?lang=" + lang}>
+              {lang === "sw" ? "Vifurushi vya CCTV" : "CCTV packages"}
+              <span>↗</span>
+            </a>
+          )}
         </section>
       </main>
       <Footer lang={lang} />

@@ -12,6 +12,7 @@ let products = [];
 let product = null;
 globalThis.__bmTest = {
   prisma: {
+    productCategory: { findMany: async () => [] },
     product: { findMany: async () => products, findFirst: async () => product },
     service: { findUnique: async () => ({ isPublished: false }) },
   },
@@ -40,7 +41,8 @@ test("premium catalogue renders supplied model without inventing prices or stock
 });
 const detail = await bundle("app/products/[slug]/page.tsx", {
   ...shell,
-  "next/navigation": "export function notFound(){throw Error('NOT_FOUND')} export function usePathname(){return '/fixture'}",
+  "next/navigation":
+    "export function notFound(){throw Error('NOT_FOUND')} export function usePathname(){return '/fixture'}",
 });
 test("premium product detail shows stored specifications and a translation gap", async () => {
   product = {
@@ -65,7 +67,8 @@ test("premium product detail shows stored specifications and a translation gap",
 });
 const service = await bundle("components/site/ServiceDetailPage.tsx", {
   ...shell,
-  "next/navigation": "export function notFound(){throw Error('NOT_FOUND')} export function usePathname(){return '/fixture'}",
+  "next/navigation":
+    "export function notFound(){throw Error('NOT_FOUND')} export function usePathname(){return '/fixture'}",
 });
 test("unpublished CMS service cannot reappear through premium editorial fallback", async () => {
   await assert.rejects(

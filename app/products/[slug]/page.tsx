@@ -121,7 +121,11 @@ export default async function ProductDetailPage({
                   ? "Omba bei na upatikanaji"
                   : "Request price & availability"}
             </div>
-            <EnquiryLink lang={lang} subject={product.name} />
+            <EnquiryLink
+              lang={lang}
+              subject={product.name}
+              product={product.slug}
+            />
           </div>
           <aside className="spec-sheet">
             <p className="eyebrow">
@@ -182,7 +186,12 @@ export default async function ProductDetailPage({
                 ? "Ongeza idadi, BOQ na mahitaji ya uwasilishaji."
                 : "Include quantities, BOQ and delivery requirements."}
             </p>
-            <EnquiryLink lang={lang} subject={product.name} trade />
+            <EnquiryLink
+              lang={lang}
+              subject={product.name}
+              product={product.slug}
+              trade
+            />
           </div>
         </section>
       </main>

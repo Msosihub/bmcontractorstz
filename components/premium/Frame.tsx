@@ -35,10 +35,14 @@ export function EnquiryLink({
   lang,
   subject,
   trade = false,
+  product,
+  packageSlug,
 }: {
   lang: Language;
   subject: string;
   trade?: boolean;
+  product?: string;
+  packageSlug?: string;
 }) {
   return (
     <a
@@ -47,7 +51,14 @@ export function EnquiryLink({
         "/request-site-survey?lang=" +
         lang +
         "&service=" +
-        encodeURIComponent((trade ? "Wholesale / Jumla — " : "") + subject)
+        encodeURIComponent(
+          (
+            (trade ? (lang === "sw" ? "Jumla — " : "Wholesale — ") : "") +
+            subject
+          ).slice(0, 100),
+        ) +
+        (product ? "&product=" + encodeURIComponent(product) : "") +
+        (packageSlug ? "&package=" + encodeURIComponent(packageSlug) : "")
       }
     >
       {trade

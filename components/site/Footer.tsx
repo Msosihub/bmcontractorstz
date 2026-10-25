@@ -25,6 +25,23 @@ export function Footer({ lang }: { lang: Language }) {
           {lang === "sw" ? "Mawasiliano" : "Contact"} ↗
         </a>
       </div>
+      <nav
+        className="footer-links"
+        aria-label={lang === "sw" ? "Viungo vya tovuti" : "Website resources"}
+      >
+        <a href={"/about?lang=" + lang}>
+          {lang === "sw" ? "Kuhusu BM" : "About BM"}
+        </a>
+        <a href={"/cctv-packages?lang=" + lang}>
+          {lang === "sw" ? "Vifurushi vya CCTV" : "CCTV packages"}
+        </a>
+        <a href={"/support?lang=" + lang}>
+          {lang === "sw" ? "Miongozo na msaada" : "Guides & support"}
+        </a>
+        <a href={"/services/institutional-procurement?lang=" + lang}>
+          {lang === "sw" ? "Ununuzi wa taasisi" : "Institutional procurement"}
+        </a>
+      </nav>
       <p className="disclosure">
         {lang === "sw"
           ? "Picha zilizoainishwa kuwa za AI ni mifano ya kueleza huduma. Hazionyeshi miradi, wafanyakazi au wateja wa BM. Modeli, bei, upatikanaji na sifa za kiufundi huthibitishwa kwenye nukuu ya bei."

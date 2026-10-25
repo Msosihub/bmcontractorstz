@@ -5,15 +5,30 @@ import { prisma } from "@/lib/prisma";
 export default async function Page({
   searchParams,
 }: {
-  searchParams: Promise<{ lang?: string; q?: string }>;
+  searchParams: Promise<{
+    lang?: string;
+    q?: string;
+    category?: string;
+    page?: string;
+  }>;
 }) {
   const p = await searchParams;
   const lang = p.lang === "sw" ? "sw" : "en";
   const sw = lang === "sw";
   const q = (p.q || "").trim().slice(0, 100);
-  const products = await prisma.product.findMany({
+  const category = (p.category || "").slice(0, 100);
+  const page = Math.max(
+    1,
+    Math.min(1000, Number.parseInt(p.page || "1", 10) || 1),
+  );
+  const categories = await prisma.productCategory.findMany({
+    where: { products: { some: { isPublished: true } } },
+    orderBy: { nameEn: "asc" },
+  });
+  const records = await prisma.product.findMany({
     where: {
       isPublished: true,
+      ...(category ? { category: { slug: category } } : {}),
       ...(q
         ? {
             OR: [
@@ -25,24 +40,29 @@ export default async function Page({
     },
     include: { category: true },
     orderBy: { createdAt: "desc" },
-    take: 50,
+    take: 51,
+    skip: (page - 1) * 50,
   });
+  const products = records.slice(0, 50);
+  const pageLink = (n: number) =>
+    "/products?" +
+    new URLSearchParams({ lang, q, category, page: String(n) }).toString();
   const guides = sw
     ? [
         [
           "CCTV na ulinzi",
           "cctv",
-          "Modeli halisi, resolution, lens, IP/analog, PoE, uwezo wa DVR/NVR na muda wa kurekodi.",
+          "Modeli halisi, ubora wa picha, lenzi, IP/analogi, PoE, uwezo wa DVR/NVR na muda wa kuhifadhi rekodi.",
         ],
         [
           "Umeme na nishati",
           "generator",
-          "kW/kVA, voltage, phase, uwezo wa betri, uoanifu wa inverter na vifaa vya kinga.",
+          "kW/kVA, volti, awamu, uwezo wa betri, uoanifu wa inverter na vifaa vya kinga.",
         ],
         [
           "Mitandao na simu",
           "network",
-          "Ports, PoE budget, Wi-Fi, SIP, extensions, codecs na uoanifu wa mfumo uliopo.",
+          "Idadi ya sehemu za kuunganisha, uwezo wa PoE, Wi-Fi, SIP, namba za ndani na uoanifu wa mfumo uliopo.",
         ],
       ]
     : [
@@ -98,13 +118,38 @@ export default async function Page({
                 {sw ? "Tafuta" : "Search"} ↗
               </button>
             </div>
+            <div className="catalogue-filters">
+              <label htmlFor="equipment-category">
+                {sw ? "Kundi la vifaa" : "Equipment category"}
+              </label>
+              <select
+                id="equipment-category"
+                name="category"
+                defaultValue={category}
+              >
+                <option value="">
+                  {sw ? "Makundi yote" : "All categories"}
+                </option>
+                {categories.map((c) => (
+                  <option key={c.slug} value={c.slug}>
+                    {sw ? c.nameSw || c.nameEn : c.nameEn}
+                  </option>
+                ))}
+              </select>
+              {(q || category) && (
+                <a href={"/products?lang=" + lang}>
+                  {sw ? "Ondoa vichujio" : "Clear filters"}
+                </a>
+              )}
+            </div>
           </form>
         </section>
         <section className="section catalogue-records">
           <div className="section-heading">
             <h2>{sw ? "Bidhaa zilizochapishwa" : "Published equipment"}</h2>
             <p>
-              {products.length} {sw ? "matokeo" : "results"}
+              {sw ? "Ukurasa" : "Page"} {page} · {products.length}
+              {records.length > 50 ? "+" : ""} {sw ? "matokeo" : "results"}
             </p>
           </div>
           {products.length ? (
@@ -131,6 +176,23 @@ export default async function Page({
                     </p>
                   )}
                   <p>{x.description}</p>
+                  {x.specifications &&
+                    typeof x.specifications === "object" &&
+                    !Array.isArray(x.specifications) && (
+                      <ul className="record-specs">
+                        {Object.entries(x.specifications)
+                          .filter(
+                            ([, v]) =>
+                              typeof v === "string" || typeof v === "number",
+                          )
+                          .slice(0, 3)
+                          .map(([k, v]) => (
+                            <li key={k}>
+                              {k}: {String(v)}
+                            </li>
+                          ))}
+                      </ul>
+                    )}
                   <div className="record-bottom">
                     <strong>
                       {x.price !== null
@@ -165,6 +227,21 @@ export default async function Page({
             </div>
           )}
         </section>
+        {(page > 1 || records.length > 50) && (
+          <nav
+            className="section catalogue-pagination"
+            aria-label={sw ? "Kurasa za bidhaa" : "Catalogue pages"}
+          >
+            {page > 1 && (
+              <a href={pageLink(page - 1)}>
+                ← {sw ? "Uliotangulia" : "Previous"}
+              </a>
+            )}
+            {records.length > 50 && (
+              <a href={pageLink(page + 1)}>{sw ? "Unaofuata" : "Next"} →</a>
+            )}
+          </nav>
+        )}
         <section className="section equipment">
           <div className="section-heading">
             <div>

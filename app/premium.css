@@ -1661,3 +1661,186 @@ body.premium-site:has(dialog[open]) {
     align-items: flex-start;
   }
 }
+
+/* Editorial reading layouts retain the approved palette and typography. */
+.premium-site .service-identity {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 26px 0 16px;
+}
+.premium-site .service-method,
+.premium-site .service-faq {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9%;
+  border-top: 1px solid var(--line);
+}
+.premium-site .service-method h2,
+.premium-site .service-faq h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(32px, 3vw, 46px);
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 20px 0;
+}
+.premium-site .service-method h3,
+.premium-site .technical h3 {
+  font-size: 20px;
+  margin: 18px 0;
+}
+.premium-site .service-method p,
+.premium-site .service-faq p {
+  line-height: 1.85;
+  color: var(--muted);
+  margin-bottom: 25px;
+}
+.premium-site .service-method a,
+.premium-site .article-links a {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  line-height: 1.7;
+}
+.premium-site .service-method article + article {
+  margin-top: 35px;
+}
+.premium-site .service-faq details {
+  border-top: 1px solid var(--line);
+  padding: 22px 0;
+}
+.premium-site .service-faq summary {
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 5px 0;
+}
+.premium-site .service-faq details p {
+  margin: 18px 0 0;
+}
+.premium-site .editorial-article {
+  max-width: 1060px;
+  margin: auto;
+  min-height: 60vh;
+}
+.premium-site .editorial-article h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(40px, 5.5vw, 76px);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  margin: 28px 0;
+}
+.premium-site .editorial-article .lead {
+  font-size: 20px;
+  line-height: 1.7;
+  max-width: 780px;
+}
+.premium-site .article-body {
+  margin: 55px 0 40px;
+}
+.premium-site .article-body section {
+  border-top: 1px solid var(--line);
+  padding: 30px 0;
+}
+.premium-site .article-body h2 {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+.premium-site .article-body p,
+.premium-site .article-body li {
+  line-height: 1.85;
+  color: var(--muted);
+}
+.premium-site .article-body ul {
+  padding-left: 22px;
+  list-style: disc;
+}
+.premium-site .article-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+.premium-site .preserve-lines {
+  white-space: pre-line;
+}
+.premium-site .directory small {
+  display: block;
+  font:
+    13px Arial,
+    sans-serif;
+  margin-top: 10px;
+  color: var(--muted);
+}
+.premium-site .footer-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  margin: 30px 0;
+}
+.premium-site .catalogue-search select {
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 12px;
+  min-height: 48px;
+  max-width: 100%;
+  font-size: 16px;
+}
+.premium-site .catalogue-filters {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+.premium-site .catalogue-pagination {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin-top: 32px;
+}
+.premium-site .record-specs {
+  font-size: 13px;
+  padding-left: 16px;
+  list-style: disc;
+  margin: 15px 0;
+  line-height: 1.7;
+}
+.premium-site .secondary-directory-title {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 65px 0 20px;
+}
+@media (max-width: 760px) {
+  .premium-site .service-method,
+  .premium-site .service-faq {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .premium-site .editorial-article .lead {
+    font-size: 18px;
+  }
+  .premium-site .article-body {
+    margin-top: 35px;
+  }
+  .premium-site .service-identity {
+    font-size: 17px;
+  }
+  .premium-site .footer-links {
+    gap: 18px;
+  }
+  .premium-site .catalogue-search > div {
+    flex-wrap: wrap;
+  }
+}
+
+.premium-site select:focus-visible,
+.premium-site summary:focus-visible {
+  outline: 2px solid #9b704c;
+  outline-offset: 5px;
+}

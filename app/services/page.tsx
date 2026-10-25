@@ -1,6 +1,7 @@
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { Photo } from "@/components/premium/Frame";
+import legacyServices from "@/data/secondary-services.json";
 import services from "@/data/premium-services.json";
 import { prisma } from "@/lib/prisma";
 export default async function Page({
@@ -46,6 +47,27 @@ export default async function Page({
                   </span>
                   <span>{s[lang].name}</span>
                   <span>↗</span>
+                </a>
+              ))}
+          </div>
+          <h2 className="secondary-directory-title">
+            {lang === "sw"
+              ? "Huduma nyingine za mifumo na matengenezo"
+              : "Further systems & maintenance"}
+          </h2>
+          <div className="directory">
+            {legacyServices
+              .filter(
+                (s) =>
+                  !services.some((x) => x.slug === s.slug) &&
+                  !unpublished.some((x) => x.slug === s.slug),
+              )
+              .map((s) => (
+                <a key={s.slug} href={"/services/" + s.slug + "?lang=" + lang}>
+                  <span>
+                    {lang === "sw" ? s.titleSw || s.titleEn : s.titleEn}
+                  </span>
+                  <span aria-hidden="true">↗</span>
                 </a>
               ))}
           </div>

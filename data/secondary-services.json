@@ -1,0 +1,116 @@
+[
+  {
+    "slug": "access-control",
+    "titleEn": "Access control & attendance",
+    "titleSw": "Udhibiti wa kuingia na mahudhurio",
+    "descriptionEn": "Control entry by door, user and schedule. Assess access control and attendance requirements separately so permissions, door hardware and reporting needs are clear.",
+    "descriptionSw": "Dhibiti kuingia kulingana na mlango, mtumiaji na muda. Mahitaji ya kuingia na mahudhurio yatathminiwe tofauti ili ruhusa, vifaa vya mlango na taarifa zinazohitajika viwe wazi.",
+    "contentEn": "Door locks, readers, exit devices, controllers and backup power must be selected as a coordinated system. Agree user enrolment, access permissions and reporting, then test normal entry, exit and failure behaviour before handover.",
+    "contentSw": "Kufuli, visomaji, vifaa vya kutoka, vidhibiti na umeme wa akiba vichaguliwe kama mfumo mmoja. Kubaliana usajili wa watumiaji, ruhusa na taarifa; jaribu kuingia, kutoka na mwitikio wa hitilafu kabla ya makabidhiano.",
+    "featuresEn": [
+      "Door and user assessment",
+      "Reader and lock compatibility",
+      "Access permissions and handover"
+    ],
+    "featuresSw": [
+      "Tathmini ya milango na watumiaji",
+      "Uoanifu wa visomaji na kufuli",
+      "Ruhusa na makabidhiano"
+    ]
+  },
+  {
+    "slug": "air-conditioners",
+    "titleEn": "Air conditioning installation & support",
+    "titleSw": "Ufungaji na matengenezo ya viyoyozi",
+    "descriptionEn": "Discuss air conditioning for homes, offices, shops and hospitality spaces, with capacity and installation assessed for the room and its use.",
+    "descriptionSw": "Jadili mahitaji ya viyoyozi kwa nyumba, ofisi, maduka na maeneo ya wageni, uwezo na ufungaji vikilinganishwa na chumba na matumizi yake.",
+    "contentEn": "Provide room dimensions, occupancy, heat sources and intended operating hours. Assessment should address indoor/outdoor unit positions, drainage, electrical supply and service access. Confirm exact models, installation inclusions and maintenance needs in the quotation.",
+    "contentSw": "Toa vipimo vya chumba, idadi ya watu, vyanzo vya joto na saa za matumizi. Tathmini ihusishe mahali pa vifaa vya ndani na nje, njia ya maji, umeme na ufikivu wa matengenezo. Modeli, wigo wa ufungaji na mahitaji ya huduma vithibitishwe kwenye nukuu.",
+    "featuresEn": [
+      "Room and location assessment",
+      "Installation scope and drainage",
+      "Cleaning and service requirements"
+    ],
+    "featuresSw": [
+      "Tathmini ya chumba na eneo",
+      "Wigo wa ufungaji na njia ya maji",
+      "Mahitaji ya usafishaji na huduma"
+    ]
+  },
+  {
+    "slug": "fire-alarm-systems",
+    "titleEn": "Fire detection & alarm systems",
+    "titleSw": "Mifumo ya kugundua moto na kutoa tahadhari",
+    "descriptionEn": "Discuss fire detection and alarm requirements for the building, its occupancy and its emergency arrangements. Final scope and any compliance requirements need site-specific review.",
+    "descriptionSw": "Jadili mahitaji ya kugundua moto na kutoa tahadhari kulingana na jengo, watumiaji na taratibu za dharura. Wigo na masharti ya kufuata viwango yanahitaji tathmini ya eneo husika.",
+    "contentEn": "Assessment considers detector locations, manual call points, sounders, control equipment, cable routes and backup power. Agree required drawings, tests and handover records. Maintenance responsibilities and response procedures must be clear; a website description is not a compliance certificate.",
+    "contentSw": "Tathmini huzingatia maeneo ya vigunduzi, sehemu za kuanzisha tahadhari kwa mkono, vingora, kidhibiti, njia za nyaya na umeme wa akiba. Kubaliana michoro, majaribio na kumbukumbu za makabidhiano. Majukumu ya matengenezo na hatua za dharura yawe wazi; maelezo ya tovuti si cheti cha kufuata viwango.",
+    "featuresEn": [
+      "Site and system assessment",
+      "Detection and alarm equipment requirements",
+      "Testing and maintenance scope"
+    ],
+    "featuresSw": [
+      "Tathmini ya eneo na mfumo",
+      "Mahitaji ya vifaa vya kugundua na kutoa tahadhari",
+      "Wigo wa majaribio na matengenezo"
+    ]
+  },
+  {
+    "slug": "maintenance-support",
+    "titleEn": "System maintenance & technical support",
+    "titleSw": "Matengenezo na msaada wa kiufundi",
+    "descriptionEn": "Request assessment of faults in CCTV, electric fencing, automated gates and related systems. A clear fault history helps separate equipment, power, cabling and configuration issues.",
+    "descriptionSw": "Omba ukaguzi wa hitilafu za CCTV, uzio wa umeme, mageti ya kiotomatiki na mifumo inayohusiana. Historia ya tatizo husaidia kutofautisha hitilafu za kifaa, umeme, nyaya na mipangilio.",
+    "contentEn": "Share the model, installation location, symptoms and recent changes. Agree diagnostic scope before replacement parts are ordered. After corrective work, test the affected functions and record recommendations; service response times and warranties must be confirmed for the specific job.",
+    "contentSw": "Tuma modeli, eneo la mfumo, dalili na mabadiliko ya karibuni. Kubaliana wigo wa uchunguzi kabla ya kuagiza vipuri. Baada ya marekebisho, jaribu sehemu zilizoathirika na rekodi mapendekezo; muda wa huduma na dhamana vithibitishwe kwa kazi husika.",
+    "featuresEn": [
+      "Fault assessment",
+      "Model-specific replacement enquiries",
+      "Functional checks and service planning"
+    ],
+    "featuresSw": [
+      "Uchunguzi wa hitilafu",
+      "Maombi ya vipuri vya modeli husika",
+      "Majaribio na mpango wa matengenezo"
+    ]
+  },
+  {
+    "slug": "solar-street-lights",
+    "titleEn": "Solar outdoor & street lighting",
+    "titleSw": "Taa za nje na barabarani zinazotumia jua",
+    "descriptionEn": "Plan solar lighting for compounds, parking areas and outdoor routes around actual lighting needs and available sunlight.",
+    "descriptionSw": "Panga taa za jua kwa viwanja, maegesho na njia za nje kulingana na mwanga unaohitajika na upatikanaji wa jua.",
+    "contentEn": "Assess spacing, mounting height, shading, operating hours, battery requirements and access for maintenance. Compare complete system information rather than a lamp wattage alone. Foundations, mounting and installation responsibilities should be specified before ordering.",
+    "contentSw": "Tathmini nafasi kati ya taa, urefu wa ufungaji, kivuli, saa za matumizi, mahitaji ya betri na ufikivu wa matengenezo. Linganisha taarifa za mfumo mzima badala ya nguvu ya taa pekee. Msingi, nguzo na majukumu ya ufungaji yaainishwe kabla ya kuagiza.",
+    "featuresEn": [
+      "Lighting layout assessment",
+      "Panel, battery and luminaire requirements",
+      "Mounting and service access"
+    ],
+    "featuresSw": [
+      "Tathmini ya mpangilio wa mwanga",
+      "Mahitaji ya paneli, betri na taa",
+      "Ufungaji na ufikivu wa huduma"
+    ]
+  },
+  {
+    "slug": "video-intercom",
+    "titleEn": "Video intercom & visitor entry",
+    "titleSw": "Intercom ya video na mawasiliano ya wageni",
+    "descriptionEn": "Plan communication between the entrance and reception or occupants, with visitor identification and controlled gate or door release where specified.",
+    "descriptionSw": "Panga mawasiliano kati ya lango na mapokezi au wakazi, kwa utambuzi wa mgeni na kufungua geti au mlango kwa udhibiti inapohitajika.",
+    "contentEn": "Confirm entrance stations, indoor answering points, cable routes, power and compatibility with existing locks or gate controllers. Test audio, image, answering and release functions, and agree who can change access settings.",
+    "contentSw": "Thibitisha vifaa vya langoni, sehemu za kupokea simu ndani, njia za nyaya, umeme na uoanifu wa kufuli au kidhibiti cha geti. Jaribu sauti, picha, upokeaji na ufunguaji; kubaliana nani anaweza kubadili mipangilio ya ruhusa.",
+    "featuresEn": [
+      "Entrance and answering-point assessment",
+      "Gate or door interface requirements",
+      "User guidance and functional testing"
+    ],
+    "featuresSw": [
+      "Tathmini ya lango na sehemu za kupokea",
+      "Mahitaji ya kuunganisha geti au mlango",
+      "Maelekezo na majaribio ya mfumo"
+    ]
+  }
+]

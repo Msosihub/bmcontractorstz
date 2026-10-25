@@ -5,7 +5,7 @@
     "en": {
       "name": "CCTV installation & surveillance",
       "headline": "A clear view. A considered system.",
-      "intro": "Plan coverage around entrances, movement and the areas that matter. Camera count alone does not define a useful surveillance system.",
+      "intro": "BM plans and installs CCTV camera systems for homes, shops, offices and institutional premises. The assessment starts with what you need to see, record and retrieve—not simply the number of cameras.",
       "sections": [
         {
           "title": "Coverage before camera count",
@@ -21,12 +21,26 @@
         "Day/night conditions and recording period",
         "Existing equipment and internet connection"
       ],
-      "scopeHeadline": "Coverage. Recording. Control."
+      "scopeHeadline": "Coverage. Recording. Control.",
+      "applications": "Entrances, tills, stores, parking areas and shared circulation routes; each needs a different view and lighting assessment.",
+      "equipment": "IP or compatible analogue cameras; fixed or variable lenses; DVR/NVR recorders; surveillance storage; PoE switches, cabling and backup power.",
+      "delivery": "Walk the site and agree camera views, privacy boundaries and required recording period. Confirm cable routes, recorder location and power. Install, test daytime/night-time views, then demonstrate playback and controlled user access.",
+      "maintenance": "Schedule lens cleaning, recorder time checks, sample playback and storage-health checks. Review remote-access users when staff change; a live image alone does not prove recording is working.",
+      "faqs": [
+        {
+          "question": "Can existing cameras be reused?",
+          "answer": "Possibly. Share camera and recorder model numbers; compatibility, image quality and cable condition must be assessed before reuse is included in a quotation."
+        },
+        {
+          "question": "How much recording storage is needed?",
+          "answer": "It depends on camera count, resolution, recording settings and retention period. State how many days you need; storage must be calculated for the chosen configuration."
+        }
+      ]
     },
     "sw": {
       "name": "Ufungaji wa CCTV",
       "headline": "Ulinzi unaoanza kwa kuona vizuri.",
-      "intro": "Panga kamera kulingana na milango, mienendo ya watu na maeneo muhimu. Idadi ya kamera pekee haitoshi kuamua ufanisi wa mfumo.",
+      "intro": "BM hutoa huduma za kupanga na kufunga kamera za CCTV kwa nyumba, maduka, ofisi na taasisi. Tathmini huanza kwa kubaini maeneo ya kuangaliwa, taarifa zinazohitajika kwenye picha na namna ya kutafuta rekodi.",
       "sections": [
         {
           "title": "Mpangilio wa kamera kwanza",
@@ -42,7 +56,21 @@
         "Hali ya mchana/usiku na muda wa kuhifadhi video",
         "Vifaa vilivyopo na intaneti"
       ],
-      "scopeHeadline": "Ufuatiliaji. Uhifadhi. Udhibiti."
+      "scopeHeadline": "Ufuatiliaji. Uhifadhi. Udhibiti.",
+      "applications": "Milango ya kuingia, sehemu za malipo, maghala, maegesho na njia za kupita; kila eneo linahitaji tathmini ya mwonekano na mwanga.",
+      "equipment": "Kamera za IP au analogi zinazooana na mfumo; lenzi zinazofaa eneo; DVR/NVR; hifadhi ya rekodi; swichi za PoE, nyaya na umeme wa akiba.",
+      "delivery": "Kagua eneo na kubaliana sehemu za kufunika, faragha na muda wa kuhifadhi rekodi. Thibitisha njia za nyaya, mahali pa kifaa cha kurekodi na umeme. Baada ya ufungaji, jaribu picha za mchana na usiku, utafutaji wa rekodi na ruhusa za watumiaji.",
+      "maintenance": "Panga usafishaji wa lenzi, ukaguzi wa saa ya kifaa, majaribio ya kucheza rekodi na hali ya hifadhi. Wafanyakazi wanapobadilika, pitia ruhusa za kuingia; kuona picha moja kwa moja hakuthibitishi kuwa rekodi zinahifadhiwa.",
+      "faqs": [
+        {
+          "question": "Je, kamera zilizopo zinaweza kuendelea kutumika?",
+          "answer": "Inawezekana. Tuma modeli za kamera na kifaa cha kurekodi. Uoanifu, ubora wa picha na hali ya nyaya vikaguliwe kabla ya kuingiza vifaa vilivyopo kwenye makadirio."
+        },
+        {
+          "question": "Hifadhi ya rekodi inapaswa kuwa kiasi gani?",
+          "answer": "Inategemea idadi ya kamera, ubora wa picha, mipangilio ya kurekodi na siku unazohitaji kuhifadhi. Taja muda unaohitaji ili uwezo wa hifadhi ukadiriwe kwa mfumo husika."
+        }
+      ]
     }
   },
   {
@@ -51,7 +79,7 @@
     "en": {
       "name": "Electric fencing",
       "headline": "A stronger perimeter. Planned responsibly.",
-      "intro": "Assess the wall, fence line, earthing conditions and public access before selecting equipment. Perimeter work needs a site-specific plan.",
+      "intro": "BM assesses and installs electric fencing for perimeter security, including the fence layout, energizer, earthing, warning signs and alarm requirements. It should be planned as part of the wider boundary protection.",
       "sections": [
         {
           "title": "Fence line & energizer",
@@ -67,20 +95,34 @@
         "Nearby public paths and vegetation",
         "Existing alarms and backup needs"
       ],
-      "scopeHeadline": "A considered perimeter."
+      "scopeHeadline": "A considered perimeter.",
+      "applications": "Residential compounds, warehouses and business premises with a suitable boundary wall and a clearly defined perimeter.",
+      "equipment": "Energizer matched to the layout; fence wires and supports; insulators; earthing components; warning signage; battery backup and alarm interfaces where specified.",
+      "delivery": "Measure the boundary, inspect wall condition, vegetation, gates and nearby public access. Agree zoning and alarm response, install the specified components and test the fence and alarm functions before handover.",
+      "maintenance": "Keep vegetation clear and arrange checks after storms or wall works. Report repeated alarms, broken wires or damaged insulators; servicing and fault testing should be undertaken by a competent technician.",
+      "faqs": [
+        {
+          "question": "Can the fence cover the gate too?",
+          "answer": "Gate movement and access must be assessed separately. The quotation should identify how the gate area is protected and how isolation and maintenance are handled."
+        },
+        {
+          "question": "Does it replace CCTV or guards?",
+          "answer": "It is one layer of protection. Cameras, lighting, controlled entry and a clear alarm-response procedure address different security needs."
+        }
+      ]
     },
     "sw": {
       "name": "Uzio wa umeme",
       "headline": "Ulinzi wa mipaka uliopangwa kwa makini.",
-      "intro": "Tathmini ukuta, njia ya uzio, hali ya ardhi na sehemu zinazofikiwa na watu kabla ya kuchagua vifaa. Kila eneo linahitaji mpango wake.",
+      "intro": "BM hukagua na kufunga uzio wa umeme kwa ulinzi wa mipaka ya eneo, ikiwemo mpangilio wa uzio, energizer, mfumo wa kutuliza umeme ardhini, alama za tahadhari na mahitaji ya kengele.",
       "sections": [
         {
           "title": "Uzio na energizer",
           "body": "Thibitisha urefu wa eneo, kanda, mimea na sehemu za kufunga vifaa. Energizer ichaguliwe kulingana na kazi na masharti ya usalama."
         },
         {
-          "title": "Earth, tahadhari na majaribio",
-          "body": "Jadili earth electrodes, kinga ya msukumo wa umeme, alama za tahadhari na kengele. Kubalianeni majaribio na makabidhiano kwenye nukuu ya bei."
+          "title": "Kutuliza umeme ardhini, tahadhari na majaribio",
+          "body": "Jadili elektrodi za kutuliza umeme ardhini, kinga ya msukumo wa umeme, alama za tahadhari na kengele. Kubalianeni majaribio na makabidhiano kwenye nukuu ya bei."
         }
       ],
       "requirements": [
@@ -88,7 +130,21 @@
         "Njia za watu na mimea iliyo karibu",
         "Kengele zilizopo na mahitaji ya umeme wa akiba"
       ],
-      "scopeHeadline": "Ulinzi wa mipaka wenye mpangilio."
+      "scopeHeadline": "Ulinzi wa mipaka wenye mpangilio.",
+      "applications": "Makazi, maghala na maeneo ya biashara yenye ukuta unaofaa na mipaka iliyo wazi.",
+      "equipment": "Energizer inayolingana na mpangilio; nyaya na nguzo; vihami; vifaa vya kutuliza umeme ardhini; alama za tahadhari; betri ya akiba na viunganishi vya kengele vinapohitajika.",
+      "delivery": "Pima mpaka na kagua hali ya ukuta, mimea, mageti na njia zinazotumiwa na watu. Kubaliana maeneo ya mfumo na hatua za kuchukua kengele ikilia; funga vifaa na jaribu uzio pamoja na kengele kabla ya kukabidhi.",
+      "maintenance": "Ondoa mimea inayogusa uzio na panga ukaguzi baada ya dhoruba au kazi kwenye ukuta. Toa taarifa kuhusu kengele za mara kwa mara, nyaya zilizokatika au vihami vilivyoharibika; hitilafu zikaguliwe na fundi mwenye uwezo.",
+      "faqs": [
+        {
+          "question": "Je, uzio unaweza kuhusisha geti pia?",
+          "answer": "Mwendo wa geti na namna watu wanavyopita vikaguliwe tofauti. Makadirio yaeleze ulinzi wa eneo la geti na namna mfumo unavyotengwa wakati wa matengenezo."
+        },
+        {
+          "question": "Je, unachukua nafasi ya CCTV au walinzi?",
+          "answer": "Ni sehemu moja ya ulinzi. Kamera, taa, udhibiti wa kuingia na utaratibu wa kushughulikia kengele husaidia mahitaji tofauti ya usalama."
+        }
+      ]
     }
   },
   {
@@ -97,7 +153,7 @@
     "en": {
       "name": "Gate automation",
       "headline": "A smooth arrival. A secure entrance.",
-      "intro": "Choose automation around the gate itself: movement, weight, travel and daily use. A motor cannot correct an unsuitable mechanical installation.",
+      "intro": "BM supplies installation planning and gate automation for suitable sliding and swing gates. Mechanical condition and safe movement come before motor selection.",
       "sections": [
         {
           "title": "Sliding or swing",
@@ -113,20 +169,34 @@
         "Photographs of rails or hinges",
         "Daily use and access control needs"
       ],
-      "scopeHeadline": "Movement, safety and daily use."
+      "scopeHeadline": "Movement, safety and daily use.",
+      "applications": "Homes, shared compounds and business entrances where controlled vehicle access and reliable manual release are needed.",
+      "equipment": "Motor and controller; rack or gate arms as applicable; safety sensors; access remotes or intercom interfaces; limit controls and backup battery where supported.",
+      "delivery": "Inspect gate weight, travel, hinges or track, usage frequency and power supply. Agree safety devices and entry controls, install, test obstruction response and demonstrate manual release to the nominated users.",
+      "maintenance": "Keep the track clear, monitor unusual noise and test safety devices as instructed. Do not increase force settings to overcome a mechanically sticking gate.",
+      "faqs": [
+        {
+          "question": "Can any existing gate be automated?",
+          "answer": "Not without assessment. A bent gate, worn track or weak hinges may need mechanical correction before automation can be quoted responsibly."
+        },
+        {
+          "question": "What happens during a power cut?",
+          "answer": "The answer depends on the selected model and battery arrangement. Confirm backup operation and manual release in the agreed scope."
+        }
+      ]
     },
     "sw": {
-      "name": "Milango ya kiotomatiki",
+      "name": "Mageti ya kiotomatiki",
       "headline": "Kuingia kwa urahisi. Usalama mlangoni.",
-      "intro": "Chagua mfumo kulingana na lango: mwendo, uzito, umbali na matumizi ya kila siku. Motor haiwezi kurekebisha hitilafu za msingi za lango.",
+      "intro": "BM hutoa huduma za kutathmini na kufunga mifumo ya kufungua na kufunga mageti kiotomatiki, kwa mageti ya kuteleza au yenye mabawa. Hali ya geti na usalama wa mwendo hukaguliwa kabla ya kuchagua mota.",
       "sections": [
         {
           "title": "Lango la kuteleza au bawaba",
-          "body": "Tathmini reli, bawaba, vizuizi na upana wa kufunguka. Thibitisha marudio ya matumizi, umeme na namna ya kufungua bila motor."
+          "body": "Tathmini reli, bawaba, vizuizi na upana wa kufunguka. Thibitisha marudio ya matumizi, umeme na namna ya kufungua kwa mkono."
         },
         {
           "title": "Usalama na udhibiti wa kuingia",
-          "body": "Jadili safety beams, kugundua kizuizi, njia ya watembea kwa miguu na remote. Uoanifu wa intercom uthibitishwe kwa motor iliyochaguliwa."
+          "body": "Jadili vihisi vya usalama, kugundua kizuizi, njia ya watembea kwa miguu na rimoti. Uoanifu wa intercom uthibitishwe kwa mota iliyochaguliwa."
         }
       ],
       "requirements": [
@@ -134,7 +204,21 @@
         "Picha za reli au bawaba",
         "Matumizi ya kila siku na udhibiti wa kuingia"
       ],
-      "scopeHeadline": "Mwendo, usalama na matumizi ya kila siku."
+      "scopeHeadline": "Mwendo, usalama na matumizi ya kila siku.",
+      "applications": "Nyumba, makazi ya pamoja na milango ya biashara inayohitaji udhibiti wa magari na njia ya kufungua geti kwa mkono inapobidi.",
+      "equipment": "Mota na kidhibiti; reli yenye meno au mikono ya geti kulingana na aina; vihisi vya usalama; rimoti au kiunganishi cha intercom; udhibiti wa mwisho wa mwendo na betri ya akiba inapooana.",
+      "delivery": "Kagua uzito, mwendo, bawaba au reli, matumizi ya kila siku na umeme. Kubaliana vifaa vya usalama na udhibiti wa kuingia; baada ya kufunga, jaribu mwitikio wa kizuizi na fundisha watumiaji namna ya kufungua kwa mkono.",
+      "maintenance": "Safisha reli, fuatilia sauti zisizo za kawaida na jaribu vifaa vya usalama kwa maelekezo ya mfumo. Usiongeze nguvu ya mota ili kulazimisha geti linalokwama.",
+      "faqs": [
+        {
+          "question": "Je, kila geti lililopo linaweza kufungwa mota?",
+          "answer": "Si bila ukaguzi. Geti lililopinda, reli iliyochakaa au bawaba dhaifu vinaweza kuhitaji kurekebishwa kabla ya kukadiriwa gharama za mfumo."
+        },
+        {
+          "question": "Umeme ukikatika inakuwaje?",
+          "answer": "Inategemea modeli na mpangilio wa betri. Uendeshaji wa akiba na ufunguaji kwa mkono vithibitishwe kwenye kazi iliyokubaliwa."
+        }
+      ]
     }
   },
   {
@@ -143,7 +227,7 @@
     "en": {
       "name": "Electrical contracting",
       "headline": "The infrastructure behind every system.",
-      "intro": "From electrical materials to installation and maintenance enquiries, define the circuits, loads and interfaces before deciding the equipment.",
+      "intro": "BM provides electrical installation and contracting enquiries for buildings and facilities: distribution, circuits, lighting, protective devices and integration with backup power. Work scope is defined after assessment.",
       "sections": [
         {
           "title": "Distribution & protection",
@@ -159,16 +243,30 @@
         "Supply details and equipment loads",
         "New installation, alteration or maintenance scope"
       ],
-      "scopeHeadline": "From the board to the final circuit."
+      "scopeHeadline": "From the board to the final circuit.",
+      "applications": "New premises, renovations, offices, shops and facilities adding equipment or separating essential loads from general circuits.",
+      "equipment": "Distribution boards, protective and switching devices, correctly selected cables and containment, lighting, earthing and labelled circuit schedules.",
+      "delivery": "Review supply details, load schedules, drawings and existing installation condition. Agree circuit allocation and shutdown arrangements. Installation is followed by the agreed inspection, testing, labelling and handover documentation.",
+      "maintenance": "Keep circuit schedules current and report overheating, repeated tripping or damaged fittings. Changes in equipment demand should prompt a capacity review rather than repeated protective-device replacement.",
+      "faqs": [
+        {
+          "question": "Can you quote from drawings or a BOQ?",
+          "answer": "They help define quantities and scope. Existing-site conditions, exclusions and testing requirements still need confirmation before a final quotation."
+        },
+        {
+          "question": "Can backup power feed every circuit?",
+          "answer": "Only if the source and installation are designed for the assessed demand. Identify essential loads first, then agree capacity and safe changeover arrangements."
+        }
+      ]
     },
     "sw": {
-      "name": "Kazi za umeme",
+      "name": "Ufungaji na kazi za umeme",
       "headline": "Miundombinu inayowezesha kila mfumo.",
-      "intro": "Kuanzia vifaa hadi ufungaji na matengenezo, bainisha saketi, mizigo ya umeme na uunganishaji kabla ya kuamua vifaa.",
+      "intro": "BM hupokea mahitaji ya ufungaji na kazi za umeme kwenye majengo na maeneo ya kazi: usambazaji, saketi, taa, vifaa vya kinga na uunganishaji wa umeme wa akiba. Wigo wa kazi huandaliwa baada ya tathmini.",
       "sections": [
         {
           "title": "Usambazaji na kinga",
-          "body": "Jadili distribution boards, mgawanyo wa saketi, vifaa vya kinga, earth na surge protection. Ukubwa wa nyaya na vifaa uamuliwe baada ya tathmini."
+          "body": "Jadili bodi za usambazaji, mgawanyo wa saketi, vifaa vya kinga, kutuliza umeme ardhini na kinga ya misukumo ya umeme. Ukubwa wa nyaya na vifaa uamuliwe baada ya tathmini."
         },
         {
           "title": "Ufungaji ulioratibiwa",
@@ -180,7 +278,21 @@
         "Taarifa za umeme na mizigo ya vifaa",
         "Ufungaji mpya, mabadiliko au matengenezo"
       ],
-      "scopeHeadline": "Kuanzia distribution board hadi saketi ya mwisho."
+      "scopeHeadline": "Kuanzia bodi ya usambazaji hadi saketi ya mwisho.",
+      "applications": "Majengo mapya, ukarabati, ofisi, maduka na taasisi zinazoongeza vifaa au kutenganisha mizigo muhimu na saketi za matumizi ya kawaida.",
+      "equipment": "Bodi za usambazaji, vifaa vya kinga na kubadili umeme, nyaya na njia zake zilizochaguliwa kwa mahitaji, taa, mfumo wa kutuliza umeme ardhini na orodha ya saketi yenye lebo.",
+      "delivery": "Pitia taarifa za umeme unaoingia, orodha ya mizigo, michoro na hali ya mfumo uliopo. Kubaliana mgawanyo wa saketi na muda wa kuzima umeme. Ufungaji ufuatiwe na ukaguzi, vipimo, lebo na nyaraka za makabidhiano zilizokubaliwa.",
+      "maintenance": "Sasisha orodha ya saketi na ripoti joto kupita kiasi, kinga kukata mara kwa mara au vifaa kuharibika. Vifaa vinapoongezeka, uwezo wa mfumo upitiwe badala ya kubadilisha kinga mara kwa mara bila kubaini chanzo.",
+      "faqs": [
+        {
+          "question": "Je, mnaweza kukadiria kwa michoro au BOQ?",
+          "answer": "Michoro na BOQ husaidia kufafanua idadi na wigo. Hali halisi ya eneo, mambo yasiyojumuishwa na vipimo vinavyohitajika vithibitishwe kabla ya nukuu ya mwisho."
+        },
+        {
+          "question": "Je, umeme wa akiba unaweza kulisha saketi zote?",
+          "answer": "Ni pale chanzo na mfumo vinapopangwa kwa mzigo uliotathminiwa. Anza kwa kutaja vifaa muhimu, kisha kubaliana uwezo na namna salama ya kubadili vyanzo vya umeme."
+        }
+      ]
     }
   },
   {
@@ -189,7 +301,7 @@
     "en": {
       "name": "Solar & battery systems",
       "headline": "Power shaped around your day.",
-      "intro": "Begin with consumption and the hours you need power. Solar output, inverter capacity and usable battery energy answer different questions.",
+      "intro": "BM helps assess and install solar power systems around actual consumption, roof or ground space and the intended role of batteries and grid supply. System sizing follows the load assessment.",
       "sections": [
         {
           "title": "Load & energy planning",
@@ -205,12 +317,26 @@
         "Required backup hours and priority circuits",
         "Roof/ground space and shading"
       ],
-      "scopeHeadline": "Energy in. Useful power out."
+      "scopeHeadline": "Energy in. Useful power out.",
+      "applications": "Homes, offices and facilities seeking daytime solar supply or a planned combination of solar, battery storage and other power sources.",
+      "equipment": "Solar modules, mounting system, compatible inverter and battery where specified, DC/AC isolation and protection, cabling and monitoring.",
+      "delivery": "Record appliance power and operating hours, inspect shading and mounting space, then agree usable energy and backup priorities. Installation includes agreed protection, functional checks and user guidance.",
+      "maintenance": "Monitor output and alarms, keep access safe and follow manufacturer cleaning and battery guidance. Investigate persistent performance changes rather than assuming more panels will solve them.",
+      "faqs": [
+        {
+          "question": "Do I need batteries?",
+          "answer": "That depends on when power is needed and whether backup is part of the requirement. Daytime consumption and power-cut needs should be assessed separately."
+        },
+        {
+          "question": "Can an existing inverter be retained?",
+          "answer": "Share its exact model and battery details. Electrical compatibility and manufacturer requirements must be checked before integration is proposed."
+        }
+      ]
     },
     "sw": {
       "name": "Sola na mifumo ya betri",
       "headline": "Nishati inayolingana na matumizi yako.",
-      "intro": "Anza na matumizi na saa unazohitaji umeme. Uzalishaji wa sola, uwezo wa inverter na nishati ya betri ni vipimo tofauti.",
+      "intro": "BM husaidia kutathmini na kufunga mifumo ya umeme wa jua kulingana na matumizi halisi, nafasi ya paneli na kazi inayotarajiwa ya betri na umeme wa gridi. Ukubwa wa mfumo huamuliwa baada ya tathmini ya mizigo.",
       "sections": [
         {
           "title": "Kupanga mahitaji ya nishati",
@@ -226,7 +352,21 @@
         "Saa za akiba na saketi za kipaumbele",
         "Nafasi ya paa/ardhi na vivuli"
       ],
-      "scopeHeadline": "Nishati inayopatikana. Umeme unaohitajika."
+      "scopeHeadline": "Nishati inayopatikana. Umeme unaohitajika.",
+      "applications": "Nyumba, ofisi na taasisi zinazohitaji umeme wa jua mchana au mpangilio wa jua, betri na vyanzo vingine vya umeme.",
+      "equipment": "Paneli, mfumo wa kuzishikilia, inverter na betri zinazooana inapohitajika, vifaa vya kutenga na kulinda upande wa DC/AC, nyaya na ufuatiliaji.",
+      "delivery": "Orodhesha nguvu za vifaa na saa za matumizi, kagua kivuli na nafasi ya kufunga paneli, kisha kubaliana nishati inayohitajika na vifaa vya kupewa kipaumbele. Ufungaji ujumuishe kinga, majaribio na maelekezo yaliyokubaliwa.",
+      "maintenance": "Fuatilia uzalishaji na tahadhari, hakikisha ufikivu salama na fuata maelekezo ya mtengenezaji kuhusu usafishaji na betri. Mabadiliko ya muda mrefu ya utendaji yakaguliwe kabla ya kuamua kuongeza paneli.",
+      "faqs": [
+        {
+          "question": "Je, lazima niwe na betri?",
+          "answer": "Inategemea muda unaohitaji umeme na kama unahitaji akiba umeme ukikatika. Matumizi ya mchana na mahitaji wakati wa kukatika yatathminiwe tofauti."
+        },
+        {
+          "question": "Je, inverter iliyopo inaweza kubaki?",
+          "answer": "Tuma modeli halisi na taarifa za betri. Uoanifu wa umeme na masharti ya mtengenezaji vikaguliwe kabla ya kupendekeza kuunganisha mfumo."
+        }
+      ]
     }
   },
   {
@@ -235,7 +375,7 @@
     "en": {
       "name": "UPS & backup power",
       "headline": "Continuity for the equipment that matters.",
-      "intro": "Protect critical equipment by distinguishing short interruptions from long outages. UPS, battery and generator systems have different roles.",
+      "intro": "BM plans UPS, inverter and battery backup arrangements for essential electrical loads. The requirement is both capacity and operating time, with a clear plan for transfer and battery replacement.",
       "sections": [
         {
           "title": "Critical loads first",
@@ -251,12 +391,26 @@
         "Required continuity and outage duration",
         "Existing UPS, batteries or generator"
       ],
-      "scopeHeadline": "The right load. The right runtime."
+      "scopeHeadline": "The right load. The right runtime.",
+      "applications": "Office computers, networking, CCTV, telephone systems and selected essential circuits, subject to their actual load and continuity needs.",
+      "equipment": "UPS or inverter, compatible battery bank, protective devices, changeover or bypass arrangements where specified, and monitoring.",
+      "delivery": "List critical equipment and required runtime, review starting demand and acceptable interruption, then assess installation space and existing circuits. Test the agreed transfer behaviour and demonstrate alarms and shutdown procedures.",
+      "maintenance": "Track battery age, alarms and load changes. Arrange periodic condition and runtime checks under a controlled plan; replacement batteries must be compatible with the system.",
+      "faqs": [
+        {
+          "question": "Is kVA enough to choose a UPS?",
+          "answer": "No. Actual load, power characteristics, required runtime and equipment compatibility all affect selection. Share the equipment list rather than only a preferred UPS size."
+        },
+        {
+          "question": "Can it work with a generator?",
+          "answer": "Potentially, but source characteristics, charging demand and transfer arrangements need assessment for the exact equipment."
+        }
+      ]
     },
     "sw": {
       "name": "UPS na umeme wa akiba",
       "headline": "Mwendelezo kwa vifaa muhimu.",
-      "intro": "Linda vifaa muhimu kwa kutofautisha kukatika kwa muda mfupi na muda mrefu. UPS, betri na jenereta zina majukumu tofauti.",
+      "intro": "BM hupanga mifumo ya UPS, inverter na betri za akiba kwa vifaa muhimu. Mahitaji yanahusu uwezo wa kubeba mzigo na muda wa kuendesha vifaa, pamoja na mpangilio wa kubadili chanzo na kubadilisha betri.",
       "sections": [
         {
           "title": "Vifaa muhimu kwanza",
@@ -272,7 +426,21 @@
         "Mwendelezo na muda wa kukatika",
         "UPS, betri au jenereta zilizopo"
       ],
-      "scopeHeadline": "Mzigo unaofaa. Muda unaohitajika."
+      "scopeHeadline": "Mzigo unaofaa. Muda unaohitajika.",
+      "applications": "Kompyuta za ofisi, mitandao, CCTV, mifumo ya simu na saketi muhimu zilizochaguliwa, kulingana na mzigo na hitaji la kuendelea kufanya kazi.",
+      "equipment": "UPS au inverter, betri zinazooana, vifaa vya kinga, mfumo wa kubadili chanzo au njia mbadala ya matengenezo inapohitajika, na ufuatiliaji.",
+      "delivery": "Orodhesha vifaa muhimu na muda wa akiba, pitia mzigo wa kuanzia na kama kukatika kwa muda mfupi kunakubalika, kisha kagua nafasi na saketi. Jaribu ubadilishaji wa chanzo na eleza tahadhari pamoja na utaratibu wa kuzima.",
+      "maintenance": "Fuatilia umri wa betri, tahadhari na mabadiliko ya mizigo. Panga ukaguzi wa hali na muda wa akiba kwa utaratibu; betri mbadala lazima zioane na mfumo.",
+      "faqs": [
+        {
+          "question": "Je, thamani ya kVA pekee inatosha kuchagua UPS?",
+          "answer": "Hapana. Mzigo halisi, tabia ya matumizi ya umeme, muda wa akiba na uoanifu huathiri uchaguzi. Tuma orodha ya vifaa badala ya kutaja ukubwa wa UPS pekee."
+        },
+        {
+          "question": "Je, inaweza kufanya kazi na jenereta?",
+          "answer": "Inawezekana, lakini sifa za chanzo, mahitaji ya kuchaji na namna ya kubadili umeme lazima vitathminiwe kwa vifaa husika."
+        }
+      ]
     }
   },
   {
@@ -281,7 +449,7 @@
     "en": {
       "name": "Generator systems & integration",
       "headline": "Standby power. Considered as a whole.",
-      "intro": "Generator enquiries need more than a kVA figure. Match the load, location, changeover, distribution and service requirements as one system.",
+      "intro": "BM handles generator system enquiries, installation integration and service-parts sourcing requirements. Generator capacity, transfer equipment and the building installation must be considered together.",
       "sections": [
         {
           "title": "Sizing & installation interfaces",
@@ -297,28 +465,56 @@
         "Site layout, access and operating hours",
         "Model/serial identifiers for service or parts"
       ],
-      "scopeHeadline": "Generation, transfer and distribution."
+      "scopeHeadline": "Generation, transfer and distribution.",
+      "applications": "Businesses and institutions needing standby power, with essential loads, operating hours and a suitable installation location clearly identified.",
+      "equipment": "Generator set and controller; manual or automatic transfer equipment; suitable protection and cabling; starting battery; model-specific filters, belts and service consumables.",
+      "delivery": "Review running and starting loads, phase and supply details, access, ventilation, exhaust routing and fuel arrangements. Agree the transfer design and installation responsibilities, then perform documented functional checks within the approved scope.",
+      "maintenance": "Follow the specific manufacturer service schedule and operating-hour record. Log faults, fluid checks and battery condition. Provide the engine and alternator model/serial details when requesting parts; appearance alone is insufficient.",
+      "faqs": [
+        {
+          "question": "Can you select a generator from my electricity bill?",
+          "answer": "A bill gives consumption context, not the complete peak or starting demand. An equipment schedule and load assessment are needed."
+        },
+        {
+          "question": "Are service parts interchangeable?",
+          "answer": "Do not assume so. Confirm engine model, serial number and the required part reference before ordering; availability and suitability require a quotation."
+        }
+      ]
     },
     "sw": {
       "name": "Jenereta na uunganishaji wa umeme",
       "headline": "Umeme wa akiba. Mfumo mzima uzingatiwe.",
-      "intro": "Mahitaji ya jenereta ni zaidi ya kVA. Oanisha mzigo, eneo, changeover, usambazaji na matengenezo kama mfumo mmoja.",
+      "intro": "BM hushughulikia mahitaji ya mifumo ya jenereta, uunganishaji wake kwenye majengo na utafutaji wa vipuri vya huduma. Uwezo wa jenereta, vifaa vya kubadili chanzo na mfumo wa jengo vitathminiwe kwa pamoja.",
       "sections": [
         {
           "title": "Ukubwa na mahitaji ya ufungaji",
-          "body": "Eleza umeme wa kuwasha vifaa, single/three phase na mpangilio wa kuwasha. Hewa, moshi, kelele, mafuta na ufikiaji vinahitaji tathmini."
+          "body": "Eleza umeme wa kuwasha vifaa, awamu moja au tatu na mpangilio wa kuwasha. Hewa, moshi, kelele, mafuta na ufikiaji vinahitaji tathmini."
         },
         {
           "title": "ATS, matengenezo na vipuri",
-          "body": "Jadili kubadilisha chanzo, kinga na uunganishaji na sola au UPS. Kwa vipuri, leta modeli na serial number za jenereta, engine na alternator; uoanifu uhakikiwe kwanza."
+          "body": "Jadili kubadili chanzo cha umeme, kinga na uunganishaji na sola au UPS. Kwa vipuri, tuma modeli na namba za utambulisho za jenereta, injini na alternator; uoanifu uhakikiwe kwanza."
         }
       ],
       "requirements": [
-        "Orodha ya mizigo, phase na umeme wa kuwasha",
+        "Orodha ya mizigo, awamu na umeme wa kuwasha",
         "Mpangilio wa eneo na saa za matumizi",
-        "Modeli/serial number kwa matengenezo au vipuri"
+        "Modeli/namba za utambulisho kwa matengenezo au vipuri"
       ],
-      "scopeHeadline": "Uzalishaji, ubadilishaji na usambazaji."
+      "scopeHeadline": "Uzalishaji, ubadilishaji na usambazaji.",
+      "applications": "Biashara na taasisi zinazohitaji umeme wa akiba, zikiwa zimebainisha vifaa muhimu, saa za matumizi na eneo linalofaa kwa jenereta.",
+      "equipment": "Jenereta na kidhibiti chake; vifaa vya kubadili chanzo kwa mkono au kiotomatiki; kinga na nyaya zinazofaa; betri ya kuanzisha; vichujio, mikanda na vifaa vya huduma vya modeli husika.",
+      "delivery": "Pitia mizigo ya kawaida na ya kuanzia, awamu na taarifa za umeme, ufikivu, hewa, njia ya moshi na mafuta. Kubaliana mpangilio wa kubadili chanzo na majukumu ya ufungaji, kisha fanya majaribio yenye kumbukumbu kwa wigo uliokubaliwa.",
+      "maintenance": "Fuata ratiba ya mtengenezaji na kumbukumbu ya saa za kazi. Rekodi hitilafu, ukaguzi wa vimiminika na hali ya betri. Unapoomba vipuri, toa modeli na namba za injini na alternator; mwonekano pekee hautoshi.",
+      "faqs": [
+        {
+          "question": "Je, bili ya umeme inatosha kuchagua jenereta?",
+          "answer": "Bili hutoa picha ya matumizi, lakini haionyeshi mzigo wote wa juu au wa kuanzisha vifaa. Orodha ya vifaa na tathmini ya mizigo vinahitajika."
+        },
+        {
+          "question": "Je, vipuri vya huduma vinaweza kubadilishana?",
+          "answer": "Usidhani vinafanana. Thibitisha modeli, namba ya injini na rejea ya kipuri kabla ya kuagiza; upatikanaji na ufasaha vithibitishwe kwenye nukuu."
+        }
+      ]
     }
   },
   {
@@ -327,7 +523,7 @@
     "en": {
       "name": "ICT & structured networking",
       "headline": "Connections you can build on.",
-      "intro": "A maintainable network starts with organized cabling, clear device roles and realistic coverage requirements.",
+      "intro": "BM plans and installs structured network cabling, switching and Wi-Fi around the way a building is used. The aim is clear coverage, manageable equipment and traceable connections.",
       "sections": [
         {
           "title": "Cabling & cabinets",
@@ -343,28 +539,56 @@
         "Expected users, PoE devices and Wi-Fi areas",
         "Existing internet/router and security systems"
       ],
-      "scopeHeadline": "An organized network foundation."
+      "scopeHeadline": "An organized network foundation.",
+      "applications": "Offices, shops, hotels and institutions connecting workstations, wireless users, IP cameras and telephone systems.",
+      "equipment": "Data cable and outlets; patch panels and cabinets; managed switches and PoE where needed; access points; router/firewall and backup power as specified.",
+      "delivery": "Map users, devices, rooms and expected traffic. Inspect cable routes and wireless obstacles, agree port and power requirements, then install, label and test links and coverage against the agreed brief.",
+      "maintenance": "Maintain a port schedule and configuration backups, control administrator access and review updates under an agreed plan. Reassess coverage when partitions, user numbers or device locations change.",
+      "faqs": [
+        {
+          "question": "Will more access points solve slow Wi-Fi?",
+          "answer": "Not always. Internet service, interference, placement, cabling and user demand should be checked before equipment is added."
+        },
+        {
+          "question": "Can guests and office equipment be separated?",
+          "answer": "This can be included in the network design where the selected equipment supports it. Define access rules and management responsibilities in the brief."
+        }
+      ]
     },
     "sw": {
       "name": "TEHAMA na mitandao",
       "headline": "Mawasiliano yenye miundombinu imara.",
-      "intro": "Mtandao unaotunzwa kwa urahisi huanza na nyaya zilizopangwa, majukumu ya vifaa na mahitaji halisi ya coverage.",
+      "intro": "BM hupanga na kufunga nyaya za mtandao, swichi na Wi-Fi kulingana na matumizi ya jengo. Lengo ni mawasiliano yanayofika maeneo yanayohitajika, vifaa vinavyosimamiwa vizuri na miunganisho yenye utambulisho.",
       "sections": [
         {
           "title": "Nyaya na makabati",
-          "body": "Panga data points, patch panels, racks, hewa na alama za nyaya. Aina ya cable na majaribio vithibitishwe kulingana na mahitaji."
+          "body": "Panga sehemu za kuunganisha data, patch panel, makabati, hewa na lebo za nyaya. Aina ya nyaya na majaribio vithibitishwe kulingana na mahitaji."
         },
         {
           "title": "Wi-Fi na usimamizi wa mtandao",
-          "body": "Zingatia sehemu za access points, PoE, uplinks na kutenganisha wageni, ofisi na mifumo ya usalama. Huduma ya intaneti ikubaliwe kando."
+          "body": "Zingatia mahali pa vifaa vya Wi-Fi, umeme wa PoE, miunganisho ya juu ya mtandao na kutenganisha wageni, ofisi na mifumo ya usalama. Huduma ya intaneti ikubaliwe kando."
         }
       ],
       "requirements": [
-        "Michoro na idadi ya data points",
+        "Michoro na idadi ya sehemu za kuunganisha data",
         "Watumiaji, vifaa vya PoE na maeneo ya Wi-Fi",
         "Intaneti/router na mifumo ya usalama iliyopo"
       ],
-      "scopeHeadline": "Msingi wa mtandao uliopangwa vizuri."
+      "scopeHeadline": "Msingi wa mtandao uliopangwa vizuri.",
+      "applications": "Ofisi, maduka, hoteli na taasisi zinazounganisha kompyuta, watumiaji wa Wi-Fi, kamera za IP na mifumo ya simu.",
+      "equipment": "Nyaya na soketi za data; patch panel na kabati; swichi zinazoweza kusimamiwa na PoE inapohitajika; access point za Wi-Fi; router/firewall na umeme wa akiba kulingana na mahitaji.",
+      "delivery": "Bainisha watumiaji, vifaa, vyumba na matumizi ya data. Kagua njia za nyaya na vizuizi vya Wi-Fi, kubaliana idadi ya sehemu za kuunganisha na mahitaji ya umeme, kisha funga, weka lebo na jaribu miunganisho na maeneo ya kufikiwa.",
+      "maintenance": "Tunza orodha ya miunganisho na nakala za mipangilio, dhibiti ruhusa za msimamizi na panga masasisho. Pitia upya Wi-Fi sehemu za ndani, idadi ya watu au mahali pa vifaa vinapobadilika.",
+      "faqs": [
+        {
+          "question": "Je, kuongeza access point kutatatua Wi-Fi kuwa polepole?",
+          "answer": "Si kila wakati. Huduma ya intaneti, mwingiliano wa mawimbi, mahali pa vifaa, nyaya na matumizi vikaguliwe kabla ya kuongeza vifaa."
+        },
+        {
+          "question": "Je, wageni na vifaa vya ofisi vinaweza kutenganishwa?",
+          "answer": "Inaweza kujumuishwa kwenye mpangilio ikiwa vifaa vilivyochaguliwa vinaruhusu. Eleza ruhusa za kuingia na majukumu ya usimamizi kwenye mahitaji."
+        }
+      ]
     }
   },
   {
@@ -373,7 +597,7 @@
     "en": {
       "name": "Office & hotel telephone systems",
       "headline": "Every extension. Part of the conversation.",
-      "intro": "Plan internal calling, reception and external lines around how your organization communicates. IP-PBX depends on the network as well as the phones.",
+      "intro": "BM plans office and hotel telephone systems, including PBX and IP-PBX enquiries, extensions, reception call routing and integration with suitable network infrastructure. External line services are agreed separately with the relevant provider.",
       "sections": [
         {
           "title": "Extensions & call flow",
@@ -389,28 +613,56 @@
         "Existing PBX, handsets and external lines",
         "Reception, call routing and network needs"
       ],
-      "scopeHeadline": "From reception to every extension."
+      "scopeHeadline": "From reception to every extension.",
+      "applications": "Offices with shared external lines, hotels connecting reception and rooms, and institutions needing organised internal calling.",
+      "equipment": "PBX/IP-PBX platform; compatible desk phones; analogue gateways where required; SIP/provider connection; PoE switches, network cabling and UPS.",
+      "delivery": "Count extensions and simultaneous calls, map reception and after-hours routing, and assess existing phones, lines and data cabling. Configure permissions and call handling, test internal/external routes and train the nominated administrator.",
+      "maintenance": "Keep extension lists and configuration backups current. Review departed staff access, call permissions, system updates and backup power; recurring call-quality faults need both voice and network checks.",
+      "faqs": [
+        {
+          "question": "Can existing analogue phones be kept?",
+          "answer": "Sometimes, using compatible interfaces or gateways. The existing PBX and phone models must be checked; retention is not automatic."
+        },
+        {
+          "question": "Does IP-PBX include internet and call charges?",
+          "answer": "Not by default. Equipment, installation, provider subscriptions and ongoing call charges should be identified separately in the quotation."
+        }
+      ]
     },
     "sw": {
-      "name": "Simu za ofisi na hoteli",
-      "headline": "Kila extension ina nafasi yake.",
-      "intro": "Panga simu za ndani, mapokezi na laini za nje kulingana na mawasiliano ya taasisi. IP-PBX hutegemea mtandao pamoja na simu.",
+      "name": "Simu za ofisi na hoteli / PBX na IP-PBX",
+      "headline": "Mawasiliano ya ndani yaliyopangwa.",
+      "intro": "BM hupanga mifumo ya simu za ofisi na hoteli, ikiwemo PBX na IP-PBX, namba za ndani, upokeaji na uelekezaji wa simu mapokezi na mtandao unaofaa. Huduma za laini za nje hukubaliwa tofauti na mtoa huduma husika.",
       "sections": [
         {
-          "title": "Extensions na mpangilio wa simu",
-          "body": "Jadili idara, vyumba, mapokezi, ring groups na kuhamisha simu. Mahitaji ya hoteli yabainishwe kabla ya kuchagua vifaa."
+          "title": "Namba za ndani na mpangilio wa simu",
+          "body": "Jadili idara, vyumba, mapokezi, vikundi vya simu zinazolia pamoja na kuhamisha simu. Mahitaji ya hoteli yabainishwe kabla ya kuchagua vifaa."
         },
         {
           "title": "IP-PBX na uoanifu",
-          "body": "Thibitisha SIP accounts, analog gateways, PoE, umeme wa akiba na simu. Uunganishaji wa PMS au vipengele maalumu uhakikiwe kando."
+          "body": "Thibitisha akaunti za SIP, gateway za analogi, PoE, umeme wa akiba na simu zinazooana. Uunganishaji wa mfumo wa usimamizi wa hoteli (PMS) au vipengele maalumu uhakikiwe kando."
         }
       ],
       "requirements": [
-        "Idadi ya extensions na vyumba/idara",
+        "Idadi ya namba za ndani na vyumba/idara",
         "PBX, simu na laini za nje zilizopo",
         "Mahitaji ya mapokezi, kupitisha simu na mtandao"
       ],
-      "scopeHeadline": "Kuanzia mapokezi hadi kila extension."
+      "scopeHeadline": "Kuanzia mapokezi hadi kila namba ya ndani.",
+      "applications": "Ofisi zinazoshirikiana laini za nje, hoteli zinazounganisha mapokezi na vyumba, na taasisi zinazohitaji mawasiliano ya ndani yaliyopangwa.",
+      "equipment": "Mfumo wa PBX/IP-PBX; simu za mezani zinazooana; gateway za analogi inapohitajika; muunganisho wa SIP au mtoa huduma; swichi za PoE, nyaya za mtandao na UPS.",
+      "delivery": "Bainisha namba za ndani na simu zinazotarajiwa kwa wakati mmoja, panga mapokezi na uelekezaji baada ya saa za kazi, kisha kagua simu, laini na nyaya zilizopo. Weka ruhusa, jaribu simu za ndani na nje, na mfundishe msimamizi aliyeteuliwa.",
+      "maintenance": "Sasisha orodha ya namba za ndani na nakala za mipangilio. Pitia ruhusa za walioondoka, ruhusa za kupiga simu, masasisho na umeme wa akiba; matatizo ya sauti yakijirudia, kagua mfumo wa simu pamoja na mtandao.",
+      "faqs": [
+        {
+          "question": "Je, simu za analogi zilizopo zinaweza kubaki?",
+          "answer": "Wakati mwingine, kwa viunganishi au gateway zinazooana. Modeli za PBX na simu zilizopo lazima zikaguliwe; matumizi yake hayawezi kuahidiwa kabla ya tathmini."
+        },
+        {
+          "question": "Je, IP-PBX inajumuisha intaneti na gharama za simu?",
+          "answer": "Si moja kwa moja. Vifaa, ufungaji, usajili wa mtoa huduma na gharama endelevu za simu zionyeshwe tofauti kwenye nukuu."
+        }
+      ]
     }
   },
   {
@@ -419,7 +671,7 @@
     "en": {
       "name": "Institutional procurement",
       "headline": "From specification to a clear proposal.",
-      "intro": "Bring a BOQ, equipment schedule or technical brief. A useful proposal makes the supplied scope, substitutions and delivery assumptions visible.",
+      "intro": "BM receives institutional enquiries for electrical, security, power and ICT equipment, with requirements organised around the specification, quantities and delivery scope. Manufacturer status and tender eligibility must be verified for each requirement.",
       "sections": [
         {
           "title": "Specification-led sourcing",
@@ -435,16 +687,30 @@
         "Delivery location and required schedule",
         "Required documents and acceptable alternatives"
       ],
-      "scopeHeadline": "Specifications without silent substitutions."
+      "scopeHeadline": "Specifications without silent substitutions.",
+      "applications": "Procurement teams, facilities managers and project teams comparing equipment schedules or requesting a supply-and-install quotation.",
+      "equipment": "Itemised BOQ or equipment schedule, exact model references or performance requirements, accessories, delivery terms and installation/testing requirements.",
+      "delivery": "Review the brief and identify missing information, proposed equivalents and exclusions. Confirm technical compliance evidence, lead times and quotation validity before a purchase decision; agree acceptance and handover requirements in writing.",
+      "maintenance": "Specify warranty responsibilities, service contacts and required spare parts before ordering. Keep approved model schedules, delivery records and any agreed test documents together for future support.",
+      "faqs": [
+        {
+          "question": "Can alternatives be quoted?",
+          "answer": "Where permitted by the request, alternatives should be clearly identified and compared against required specifications. No substitution should be presented as the specified model."
+        },
+        {
+          "question": "What documents should we send?",
+          "answer": "Send the BOQ/specification, quantities, delivery location, deadline and required supporting documents. Avoid sending confidential access credentials through the public form."
+        }
+      ]
     },
     "sw": {
       "name": "Ugavi wa vifaa kwa taasisi",
       "headline": "Kutoka mahitaji hadi nukuu iliyo wazi.",
-      "intro": "Leta BOQ, orodha ya vifaa au maelezo ya kiufundi. Nukuu nzuri inaonyesha vifaa, mbadala na masharti ya uwasilishaji kwa uwazi.",
+      "intro": "BM hupokea maombi ya taasisi ya vifaa vya umeme, ulinzi, nishati na TEHAMA, yakipangwa kwa vipimo, idadi na wigo wa uwasilishaji. Uhusiano na watengenezaji pamoja na vigezo vya zabuni vithibitishwe kwa kila ombi.",
       "sections": [
         {
           "title": "Ugavi kwa kuzingatia vipimo",
-          "body": "Thibitisha idadi, ratings, chapa zinazokubalika, nyaraka na eneo la kufikisha. Mbadala uonyeshwe kwa mapitio yako, usibadilishwe kimya kimya."
+          "body": "Thibitisha idadi, viwango vya uwezo, chapa zinazokubalika, nyaraka na eneo la kufikisha. Mbadala uonyeshwe kwa mapitio yako, usibadilishwe kimya kimya."
         },
         {
           "title": "Uwazi wa masharti",
@@ -456,7 +722,21 @@
         "Eneo na ratiba ya uwasilishaji",
         "Nyaraka zinazohitajika na mbadala unaokubalika"
       ],
-      "scopeHeadline": "Vipimo vifuatwe. Mbadala ujulikane."
+      "scopeHeadline": "Vipimo vifuatwe. Mbadala ujulikane.",
+      "applications": "Vitengo vya ununuzi, wasimamizi wa majengo na timu za miradi zinazolinganisha orodha za vifaa au kuomba nukuu ya vifaa pamoja na ufungaji.",
+      "equipment": "BOQ au orodha yenye vipengele, rejea sahihi za modeli au mahitaji ya utendaji, vifaa vya nyongeza, masharti ya uwasilishaji na mahitaji ya ufungaji na majaribio.",
+      "delivery": "Pitia mahitaji na bainisha taarifa zinazokosekana, mbadala unaopendekezwa na mambo yasiyojumuishwa. Thibitisha ushahidi wa kukidhi vipimo, muda wa kupata vifaa na uhalali wa nukuu; kubaliana kwa maandishi namna ya kupokea na kukabidhi.",
+      "maintenance": "Eleza majukumu ya dhamana, mawasiliano ya huduma na vipuri vinavyohitajika kabla ya kuagiza. Hifadhi pamoja orodha ya modeli zilizoidhinishwa, nyaraka za uwasilishaji na taarifa za majaribio kwa huduma za baadaye.",
+      "faqs": [
+        {
+          "question": "Je, vifaa mbadala vinaweza kutolewa kwenye nukuu?",
+          "answer": "Maombi yakiruhusu, mbadala ubainishwe wazi na kulinganishwa na vipimo vinavyohitajika. Kifaa mbadala kisiwasilishwe kana kwamba ndicho modeli iliyoombwa."
+        },
+        {
+          "question": "Tutume nyaraka gani?",
+          "answer": "Tuma BOQ au vipimo, idadi, eneo la uwasilishaji, muda wa mwisho na nyaraka zinazohitajika. Usitume nywila au taarifa za siri za kuingia kwenye mifumo kupitia fomu ya umma."
+        }
+      ]
     }
   }
 ]

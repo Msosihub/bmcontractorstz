@@ -18,91 +18,91 @@ export const supportArticles = [
   {
     slug: "how-to-request-site-survey",
     categoryEn: "Site Survey",
-    categorySw: "Ukaguzi wa Site",
+    categorySw: "Ukaguzi wa eneo",
     titleEn: "How to request a site survey",
-    titleSw: "Jinsi ya kuomba ukaguzi wa site",
+    titleSw: "Jinsi ya kuomba ukaguzi wa eneo",
     summaryEn:
       "Learn what information to provide when requesting a site survey for CCTV, electric fence, gate motors or access control.",
     summarySw:
-      "Jifunze taarifa za kutoa unapoomba ukaguzi wa site kwa CCTV, electric fence, gate motors au access control.",
+      "Taarifa za kuandaa unapoomba ukaguzi wa CCTV, uzio wa umeme, geti la kiotomatiki au udhibiti wa kuingia.",
     contentEn:
       "To request a site survey, provide your name, phone number, location, type of property and the service you need. If possible, describe the number of rooms, entrances, gates, compound size or areas you want covered. BM Contractors will contact you and guide you on the best solution.",
     contentSw:
-      "Kuomba ukaguzi wa site, jaza jina, namba ya simu, location, aina ya eneo na huduma unayohitaji. Ikiwezekana, elezea idadi ya vyumba, milango, gate, ukubwa wa compound au maeneo unayotaka yawe covered. BM Contractors tutakutafuta na kukupa ushauri wa solution sahihi.",
+      "Jaza jina, simu, eneo, aina ya jengo na huduma unayohitaji. Eleza idadi ya vyumba, milango, mageti na sehemu zinazohitaji ulinzi. Timu itawasiliana nawe kufafanua mahitaji na kupanga hatua inayofuata; kutuma ombi si uthibitisho wa miadi.",
   },
   {
     slug: "what-is-included-in-cctv-package",
     categoryEn: "CCTV",
     categorySw: "CCTV",
     titleEn: "What is included in a CCTV package?",
-    titleSw: "Nini huwa ndani ya package ya CCTV?",
+    titleSw: "Kifurushi cha CCTV kinajumuisha nini?",
     summaryEn:
       "Understand common items included in CCTV packages such as cameras, DVR/NVR, HDD, cables and installation materials.",
     summarySw:
-      "Fahamu vitu vinavyopatikana kwenye package ya CCTV kama cameras, DVR/NVR, HDD, cables na materials za installation.",
+      "Fahamu vifaa vinavyoweza kuhitajika: kamera, DVR/NVR, hifadhi ya rekodi, nyaya na vifaa vya ufungaji.",
     contentEn:
       "A CCTV package commonly includes cameras, DVR or NVR, HDD storage, power supply, connectors, cables and installation materials. The exact items depend on the site, cable distance, camera type and recording requirements.",
     contentSw:
-      "Package ya CCTV mara nyingi hujumuisha cameras, DVR au NVR, HDD, power supply, connectors, cables na materials za installation. Vifaa halisi hutegemea site, umbali wa cable, aina ya camera na mahitaji ya recording.",
+      "Orodha inaweza kuhusisha kamera, DVR au NVR, hifadhi ya rekodi, chanzo cha umeme, viunganishi na nyaya. Vifaa halisi hutegemea eneo, umbali wa nyaya, aina ya kamera na muda wa kuhifadhi rekodi. Omba orodha yenye modeli na idadi; usidhani kila kifurushi kinajumuisha vifaa na kazi zote.",
   },
   {
     slug: "ip-vs-analog-cctv",
     categoryEn: "CCTV",
     categorySw: "CCTV",
     titleEn: "IP cameras vs analog cameras",
-    titleSw: "Tofauti ya IP cameras na analog cameras",
+    titleSw: "Kamera za IP na kamera za analogi",
     summaryEn:
       "A simple explanation of the difference between IP and analog CCTV systems.",
-    summarySw: "Maelezo rahisi ya tofauti kati ya mifumo ya IP na analog CCTV.",
+    summarySw:
+      "Maelezo ya tofauti za miunganisho na namna ya kuchagua mfumo unaofaa.",
     contentEn:
       "IP cameras use network cables and connect through NVR or network systems. Analog cameras commonly use coaxial cable and connect to DVR. The best choice depends on budget, image quality needs, distance and future expansion plans.",
     contentSw:
-      "IP cameras hutumia network cables na huunganishwa kupitia NVR au network system. Analog cameras mara nyingi hutumia coaxial cable na huunganishwa kwenye DVR. Chaguo sahihi hutegemea budget, ubora wa picha unaohitajika, umbali na mpango wa kuongeza camera baadae.",
+      "Kamera za IP huunganishwa kwenye mtandao na zinaweza kutumia NVR kurekodi. Kamera za analogi kwa kawaida hutumia nyaya za coaxial na DVR inayooana. Uchaguzi hutegemea ubora wa picha, miundombinu iliyopo, umbali na mpango wa kupanua. Modeli za kamera na kifaa cha kurekodi lazima zilinganishwe kabla ya kuchanganya vifaa.",
   },
   {
     slug: "electric-fence-basics",
     categoryEn: "Electric Fence",
-    categorySw: "Electric Fence",
+    categorySw: "Uzio wa umeme",
     titleEn: "Electric fence basics",
-    titleSw: "Mambo ya msingi kuhusu electric fence",
+    titleSw: "Mambo ya msingi kuhusu uzio wa umeme",
     summaryEn:
       "Learn the main parts of an electric fence system and why site planning is important.",
-    summarySw:
-      "Fahamu sehemu muhimu za electric fence na kwa nini kupanga site ni muhimu.",
+    summarySw: "Sehemu kuu za mfumo na umuhimu wa tathmini ya mpaka wa eneo.",
     contentEn:
       "An electric fence system can include an energizer, HT wire, insulators, brackets, earth rods, warning signs and alarm options. Proper installation and testing are important for safety and performance.",
     contentSw:
-      "Mfumo wa electric fence unaweza kuwa na energizer, HT wire, insulators, brackets, earth rods, warning signs na alarm options. Installation nzuri na testing ni muhimu kwa usalama na performance.",
+      "Mfumo unaweza kuhusisha energizer, nyaya za uzio, vihami, nguzo, mfumo wa kutuliza umeme ardhini, alama za tahadhari na kengele. Hali ya ukuta, mageti, mimea na maeneo yanayofikiwa na watu vikaguliwe kabla ya ufungaji. Ufungaji na majaribio yafanywe na fundi mwenye uwezo; usiguse nyaya ili kujaribu kama mfumo unafanya kazi.",
   },
   {
     slug: "gate-motor-service-guide",
     categoryEn: "Gate Motors",
-    categorySw: "Gate Motors",
+    categorySw: "Mageti ya kiotomatiki",
     titleEn: "Gate motor service guide",
-    titleSw: "Mwongozo wa service ya gate motor",
+    titleSw: "Wakati wa kuomba matengenezo ya mota ya geti",
     summaryEn:
       "Know when your gate motor may need service, repair or adjustment.",
     summarySw:
-      "Fahamu lini gate motor inaweza kuhitaji service, repair au adjustment.",
+      "Dalili zinazohitaji ukaguzi wa geti, mota na vifaa vya usalama.",
     contentEn:
       "A gate motor may need service if it moves slowly, makes unusual noise, fails to open, stops halfway or has remote control issues. Regular service helps reduce breakdowns and improves safety.",
     contentSw:
-      "Gate motor inaweza kuhitaji service kama inatembea taratibu, inatoa sauti isiyo ya kawaida, haifunguki, inasimama njiani au remote haifanyi kazi vizuri. Service ya mara kwa mara husaidia kupunguza breakdown na kuongeza usalama.",
+      "Omba ukaguzi geti likipungua mwendo, kutoa sauti isiyo ya kawaida, kusimama njiani au kutopokea rimoti vizuri. Tatizo linaweza kuwa la umeme, mota au sehemu za geti. Usilazimishe mwendo au kuongeza nguvu ya mota ili kuficha kukwama; kagua pia vihisi vya usalama na njia ya kufungua kwa mkono kwa maelekezo ya mfumo.",
   },
   {
     slug: "how-to-contact-bm-support",
     categoryEn: "Support",
-    categorySw: "Support",
+    categorySw: "Msaada",
     titleEn: "How to contact BM support",
-    titleSw: "Jinsi ya kuwasiliana na BM support",
+    titleSw: "Jinsi ya kuwasiliana na BM",
     summaryEn:
       "Contact BM Contractors through WhatsApp, phone, email or website forms.",
     summarySw:
-      "Wasiliana na BM Contractors kupitia WhatsApp, simu, email au form za website.",
+      "Tumia ukurasa wa mawasiliano au fomu ya kuomba ukaguzi wa eneo.",
     contentEn:
-      "You can contact BM Contractors through WhatsApp +255 735 111 881, phone 0745 77 88 21 / 0760 111 880, email sales@bmcontractorstz.com or by using the contact and site survey forms on this website.",
+      "You can contact BM Contractors through WhatsApp +255 745 778 821, phone 0745 77 88 21 / 0760 111 880, email sales@bmcontractorstz.com or by using the contact and site survey forms on this website.",
     contentSw:
-      "Unaweza kuwasiliana na BM Contractors kupitia WhatsApp +255 735 111 881, simu 0745 77 88 21 / 0760 111 880, email sales@bmcontractorstz.com au kutumia contact na site survey forms kwenye website hii.",
+      "Kwa WhatsApp tumia +255 745 778 821. Unaweza pia kutumia fomu ya mawasiliano au ukaguzi wa eneo kwenye tovuti. Kwa hitilafu, taja modeli na dalili bila kutuma nywila au misimbo ya kuingia.",
   },
 ];
 
