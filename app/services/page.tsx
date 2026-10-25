@@ -3,6 +3,7 @@ import { Footer } from "@/components/site/Footer";
 import { Photo } from "@/components/premium/Frame";
 import legacyServices from "@/data/secondary-services.json";
 import services from "@/data/premium-services.json";
+import divisions from "@/data/service-divisions.json";
 import { prisma } from "@/lib/prisma";
 export default async function Page({
   searchParams,
@@ -36,41 +37,56 @@ export default async function Page({
           </div>
           <Photo asset="engineering" lang={lang} />
         </section>
-        <section className="section">
-          <div className="directory">
-            {services
-              .filter((s) => !unpublished.some((x) => x.slug === s.slug))
-              .map((s, i) => (
-                <a href={"/services/" + s.slug + "?lang=" + lang} key={s.slug}>
-                  <span className="index">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <span>{s[lang].name}</span>
-                  <span>↗</span>
-                </a>
-              ))}
-          </div>
-          <h2 className="secondary-directory-title">
-            {lang === "sw"
-              ? "Huduma nyingine za mifumo na matengenezo"
-              : "Further systems & maintenance"}
-          </h2>
-          <div className="directory">
-            {legacyServices
-              .filter(
-                (s) =>
-                  !services.some((x) => x.slug === s.slug) &&
-                  !unpublished.some((x) => x.slug === s.slug),
-              )
-              .map((s) => (
-                <a key={s.slug} href={"/services/" + s.slug + "?lang=" + lang}>
-                  <span>
-                    {lang === "sw" ? s.titleSw || s.titleEn : s.titleEn}
-                  </span>
-                  <span aria-hidden="true">↗</span>
-                </a>
-              ))}
-          </div>
+        <section className="section division-index">
+          <nav
+            className="division-shortcuts"
+            aria-label={lang === "sw" ? "Idara za huduma" : "Service divisions"}
+          >
+            {divisions.map((d) => (
+              <a key={d.id} href={"#" + d.id}>
+                {d[lang]} ↘
+              </a>
+            ))}
+          </nav>
+          {divisions.map((d, i) => (
+            <section
+              className="division-group"
+              id={d.id}
+              key={d.id}
+              aria-labelledby={d.id + "-title"}
+            >
+              <div className="division-heading">
+                <p className="eyebrow">0{i + 1} / BM CONTRACTORS</p>
+                <h2 id={d.id + "-title"}>{d[lang]}</h2>
+                <p>{lang === "sw" ? d.descriptionSw : d.descriptionEn}</p>
+              </div>
+              <div className="directory">
+                {d.slugs
+                  .filter((slug) => !unpublished.some((x) => x.slug === slug))
+                  .map((slug) => {
+                    const core = services.find((x) => x.slug === slug);
+                    const secondary = legacyServices.find(
+                      (x) => x.slug === slug,
+                    );
+                    return (
+                      <a
+                        key={slug}
+                        href={"/services/" + slug + "?lang=" + lang}
+                      >
+                        <span>
+                          {core
+                            ? core[lang].name
+                            : lang === "sw"
+                              ? secondary?.titleSw
+                              : secondary?.titleEn}
+                        </span>
+                        <span aria-hidden="true">↗</span>
+                      </a>
+                    );
+                  })}
+              </div>
+            </section>
+          ))}
         </section>
       </main>
       <Footer lang={lang} />

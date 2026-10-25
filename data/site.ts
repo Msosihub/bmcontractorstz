@@ -40,8 +40,14 @@ export const siteConfig = {
       region: "Kilimanjaro",
       country: "TZ",
     },
-    // Public street address and hours are not yet confirmed.
-    arusha: { phone: { label: "+255 799 660 068", raw: "+255799660068" } },
+    // Owner-confirmed locality only; no street number, building, coordinates or hours.
+    arusha: {
+      address: "Mianzini, Arusha, Tanzania",
+      locality: "Mianzini",
+      city: "Arusha",
+      country: "TZ",
+      phone: { label: "+255 799 660 068", raw: "+255799660068" },
+    },
   },
 
   phones: [

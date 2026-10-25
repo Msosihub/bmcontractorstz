@@ -100,9 +100,9 @@ export const supportArticles = [
     summarySw:
       "Tumia ukurasa wa mawasiliano au fomu ya kuomba ukaguzi wa eneo.",
     contentEn:
-      "For national quotations and institutional enquiries, call +255 760 111 880 or email sales@bmcontractorstz.com. Moshi office: +255 745 778 821 (also WhatsApp), 55 Market Road, Vijana Street, Moshi, Kilimanjaro, Tanzania. Arusha office: +255 799 660 068 for enquiries and site visit coordination; call to arrange a visit. The public street address will be supplied separately. You can also use the contact and site survey forms.",
+      "For national quotations and institutional enquiries, call +255 760 111 880 or email sales@bmcontractorstz.com. Moshi office: +255 745 778 821 (also WhatsApp), 55 Market Road, Vijana Street, Moshi, Kilimanjaro, Tanzania. Arusha office: Mianzini, Arusha, Tanzania; +255 799 660 068 for enquiries and site visit coordination. Call to arrange a visit. You can also use the contact and site survey forms.",
     contentSw:
-      "Kwa nukuu na maombi ya taasisi nchi nzima, piga +255 760 111 880 au tuma barua pepe sales@bmcontractorstz.com. Ofisi ya Moshi: +255 745 778 821 (pia WhatsApp), 55 Market Road, Vijana Street, Moshi, Kilimanjaro, Tanzania. Ofisi ya Arusha: +255 799 660 068 kwa maombi na mipango ya ziara; piga simu kupanga ziara. Anwani kamili itatolewa baadaye. Unaweza pia kutumia fomu za mawasiliano na ukaguzi wa eneo. Usitume nywila au misimbo ya kuingia.",
+      "Kwa nukuu na maombi ya taasisi nchi nzima, piga +255 760 111 880 au tuma barua pepe sales@bmcontractorstz.com. Ofisi ya Moshi: +255 745 778 821 (pia WhatsApp), 55 Market Road, Vijana Street, Moshi, Kilimanjaro, Tanzania. Ofisi ya Arusha: Mianzini, Arusha, Tanzania; +255 799 660 068 kwa maombi na mipango ya ziara. Piga simu kupanga ziara. Unaweza pia kutumia fomu za mawasiliano na ukaguzi wa eneo. Usitume nywila au misimbo ya kuingia.",
   },
 ];
 

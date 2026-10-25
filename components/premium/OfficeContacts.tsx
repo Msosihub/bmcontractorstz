@@ -36,10 +36,11 @@ export function OfficeLocations({ lang }: { lang: Language }) {
         </article>
         <article>
           <h3>{sw ? "Ofisi ya Arusha" : "Arusha office"}</h3>
+          <address>{arusha.address}</address>
           <p>
             {sw
-              ? "Ofisi ya Arusha hupokea na kuratibu maombi ya wateja, ziara za kutathmini maeneo na huduma zinazohusiana. Wasiliana nasi kupanga ziara; anwani kamili itatolewa baadaye."
-              : "Our Arusha office receives and coordinates customer enquiries, site visits and related services. Contact us to arrange a visit; the full public address will be supplied separately."}
+              ? "Ofisi ya Arusha hupokea na kuratibu maombi ya wateja, ziara za kutathmini maeneo na huduma zinazohusiana. Wasiliana nasi kupanga ziara katika ofisi yetu ya Mianzini."
+              : "Our Arusha office receives and coordinates customer enquiries, site visits and related services. Contact us to arrange a visit to our Mianzini office."}
           </p>
           <a className="office-phone" href={"tel:" + arusha.phone.raw}>
             {arusha.phone.label}
@@ -71,6 +72,7 @@ export function FooterContacts({ lang }: { lang: Language }) {
       </div>
       <div>
         <p>{sw ? "Ofisi ya Arusha" : "Arusha office"}</p>
+        <address>{offices.arusha.address}</address>
         <a href={"tel:" + offices.arusha.phone.raw}>
           {offices.arusha.phone.label}
         </a>

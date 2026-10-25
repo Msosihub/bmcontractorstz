@@ -2,6 +2,10 @@
 
 import { siteConfig } from "@/data/site";
 import { FooterContacts } from "./OfficeContacts";
+import {
+  SecurityNavigation,
+  SecurityLinks,
+} from "@/components/site/SecurityNavigation";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -405,6 +409,7 @@ export default function Homepage({ lang }: { lang: Lang }) {
           className="desktop-nav"
           aria-label={lang === "en" ? "Main navigation" : "Menyu kuu"}
         >
+          <SecurityNavigation lang={lang} />
           {t.nav.map((x, i) => (
             <a href={"#" + anchors[i]} key={x}>
               {x}
@@ -448,6 +453,7 @@ export default function Homepage({ lang }: { lang: Lang }) {
       </header>
       {menu ? (
         <nav className="mobile-menu" id="mobile-menu" aria-label={t.menu}>
+          <SecurityLinks lang={lang} />
           {t.nav.map((x, i) => (
             <a href={"#" + anchors[i]} key={x} onClick={() => setMenu(false)}>
               {x}

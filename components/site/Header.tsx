@@ -1,4 +1,5 @@
 "use client";
+import { SecurityNavigation, SecurityLinks } from "./SecurityNavigation";
 import Image from "next/image";
 import { useState } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
@@ -13,7 +14,7 @@ export function Header({ lang }: { lang: Language }) {
     return path + "?" + q.toString();
   };
   const nav = [
-    ["/services", lang === "sw" ? "Huduma" : "Expertise"],
+    ["/services", lang === "sw" ? "Huduma zote" : "All services"],
     ["/products", lang === "sw" ? "Vifaa" : "Equipment"],
     ["/projects", lang === "sw" ? "Miradi" : "Projects"],
     ["/contact", lang === "sw" ? "Mawasiliano" : "Contact"],
@@ -47,6 +48,7 @@ export function Header({ lang }: { lang: Language }) {
           className="desktop-nav"
           aria-label={lang === "sw" ? "Menyu kuu" : "Main navigation"}
         >
+          <SecurityNavigation lang={lang} />
           {nav.map(([url, name]) => (
             <a
               aria-current={path === url ? "page" : undefined}
@@ -100,6 +102,7 @@ export function Header({ lang }: { lang: Language }) {
       </header>
       {open && (
         <nav id="premium-menu" className="mobile-menu">
+          <SecurityLinks lang={lang} />
           {nav.map(([url, name]) => (
             <a key={url} href={url + "?lang=" + lang}>
               {name} ↗

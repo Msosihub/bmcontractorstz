@@ -30,6 +30,8 @@ test("office and footer contacts match confirmed numbers in both languages", () 
       assert.match(html, /255799660068/);
       assert.match(html, /255745778821/);
       assert.ok(html.includes(address));
+      assert.match(html, /Mianzini, Arusha, Tanzania/);
+      assert.doesNotMatch(html, /supplied separately|itatolewa baadaye/);
       assert.doesNotMatch(
         html,
         /wa.me\/255799660068|wa.me\/255760111880|Dar es Salaam|Dodoma|openingHours|maps.google/,
@@ -48,9 +50,14 @@ test("business structured data uses the confirmed Moshi address and distinct Aru
   assert.equal(json.address.addressLocality, "Moshi");
   assert.equal(json.address.addressRegion, "Kilimanjaro");
   assert.equal(json.address.addressCountry, "TZ");
-  const arusha = json.contactPoint.find((x) => x.name === "Arusha office");
+  const arusha = json.contactPoint.find(
+    (x) => x.name === "Arusha office — Mianzini",
+  );
   assert.equal(arusha.telephone, "+255799660068");
-  assert.equal(arusha.address, undefined);
+  assert.equal(arusha.address.addressLocality, "Mianzini");
+  assert.equal(arusha.address.addressRegion, "Arusha");
+  assert.equal(arusha.address.addressCountry, "TZ");
+  assert.equal(arusha.address.streetAddress, undefined);
   assert.equal(arusha.hoursAvailable, undefined);
   assert.equal(json.openingHours, undefined);
   assert.equal(json.sameAs, undefined);

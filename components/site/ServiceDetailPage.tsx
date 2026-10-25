@@ -1,3 +1,5 @@
+import guidance from "@/data/secondary-services.json";
+import relations from "@/data/service-relations.json";
 import { PremiumArticle } from "@/components/premium/Article";
 import premiumServices from "@/data/premium-services.json";
 import { PremiumService } from "@/components/premium/Service";
@@ -75,6 +77,8 @@ export async function ServiceDetailPage({
       : asStringArray(service.featuresEn);
 
   const sw = lang === "sw";
+  const detail = guidance.find((x) => x.slug === slug);
+  const relation = relations[slug as keyof typeof relations];
   return (
     <PremiumArticle
       lang={lang}
@@ -105,14 +109,60 @@ export async function ServiceDetailPage({
             : "Share the building type, location, existing equipment and the problem or outcome required. Assessment helps define equipment, installation, testing and maintenance requirements before price and scheduling are agreed."}
         </p>
       </section>
+      {detail && (
+        <>
+          <section>
+            <h2>
+              {sw ? "Vifaa na chaguo za mfumo" : "Equipment & system options"}
+            </h2>
+            <p>{sw ? detail.equipmentSw : detail.equipmentEn}</p>
+          </section>
+          <section>
+            <h2>{sw ? "Matengenezo na huduma" : "Maintenance & support"}</h2>
+            <p>{sw ? detail.maintenanceSw : detail.maintenanceEn}</p>
+          </section>
+          <section className="service-faq-inline">
+            <h2>{sw ? "Maswali ya kupanga kazi" : "Planning questions"}</h2>
+            <details>
+              <summary>{(sw ? detail.faqSw : detail.faqEn).question}</summary>
+              <p>{(sw ? detail.faqSw : detail.faqEn).answer}</p>
+            </details>
+          </section>
+        </>
+      )}
       <nav
         className="article-links"
         aria-label={sw ? "Huduma zinazohusiana" : "Related services"}
       >
+        {relation?.related
+          .filter((x) => x !== "institutional-procurement")
+          .map((related) => {
+            const core = premiumServices.find((x) => x.slug === related);
+            const secondary = guidance.find((x) => x.slug === related);
+            return (
+              <a key={related} href={"/services/" + related + "?lang=" + lang}>
+                {core
+                  ? core[lang].name
+                  : sw
+                    ? secondary?.titleSw
+                    : secondary?.titleEn}{" "}
+                ↗
+              </a>
+            );
+          })}
         <a href={"/services?lang=" + lang}>
           {sw ? "Huduma zote" : "All services"} ↗
         </a>
-        <a href={"/products?lang=" + lang}>{sw ? "Vifaa" : "Equipment"} ↗</a>
+        <a
+          href={
+            "/products?lang=" +
+            lang +
+            "&q=" +
+            encodeURIComponent(relation?.equipmentQuery || "")
+          }
+        >
+          {sw ? "Vifaa" : "Equipment"} ↗
+        </a>
         <a href={"/services/institutional-procurement?lang=" + lang}>
           {sw ? "Ununuzi wa taasisi" : "Institutional procurement"} ↗
         </a>

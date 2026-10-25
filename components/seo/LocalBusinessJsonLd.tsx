@@ -33,7 +33,7 @@ export function LocalBusinessJsonLd() {
       addressCountry: siteConfig.offices.moshi.country,
     },
     description:
-      "BM Contractors provides CCTV installation, electric fencing, gate automation, networking and backup power, with a Moshi office in Kilimanjaro and an Arusha office coordinating enquiries and site visits. National sales handles quotations and institutional RFQs across Tanzania.",
+      "BM Contractors provides CCTV installation, electric fencing, gate automation, networking and backup power, with a Moshi office in Kilimanjaro and an office in Mianzini, Arusha coordinating enquiries and site visits. National sales handles quotations and institutional RFQs across Tanzania.",
     knowsAbout: [
       "CCTV installation",
       "Electric fence installation",
@@ -64,7 +64,13 @@ export function LocalBusinessJsonLd() {
       },
       {
         "@type": "ContactPoint",
-        name: "Arusha office",
+        name: "Arusha office — Mianzini",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: siteConfig.offices.arusha.locality,
+          addressRegion: siteConfig.offices.arusha.city,
+          addressCountry: siteConfig.offices.arusha.country,
+        },
         telephone: siteConfig.offices.arusha.phone.raw,
         contactType: "Arusha office enquiries and site visit coordination",
         areaServed: { "@type": "City", name: "Arusha" },

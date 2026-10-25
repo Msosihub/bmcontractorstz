@@ -1,3 +1,4 @@
+import secondaryServices from "@/data/secondary-services.json";
 import premiumServices from "@/data/premium-services.json";
 import { isPreview } from "./preview-safety.mjs";
 import type { Metadata } from "next";
@@ -81,11 +82,11 @@ export const publicPages: Record<
   "/contact": {
     en: [
       "Contact BM Contractors — Moshi & Arusha offices",
-      "Visit BM Contractors at 55 Market Road, Vijana Street, Moshi, Kilimanjaro. Contact our Arusha office or national sales for quotations and institutional RFQs.",
+      "Visit BM Contractors at 55 Market Road, Vijana Street, Moshi, Kilimanjaro. Contact our Mianzini, Arusha office or national sales for quotations and institutional RFQs.",
     ],
     sw: [
       "Wasiliana na BM Contractors — Ofisi za Moshi na Arusha",
-      "Ofisi ya Moshi: 55 Market Road, Vijana Street, Moshi, Kilimanjaro. Wasiliana na ofisi ya Arusha au mauzo kwa nukuu na maombi ya taasisi nchi nzima.",
+      "Ofisi ya Moshi: 55 Market Road, Vijana Street, Moshi, Kilimanjaro. Wasiliana na ofisi ya Mianzini, Arusha au mauzo kwa nukuu na maombi ya taasisi nchi nzima.",
     ],
   },
   "/request-site-survey": {
@@ -159,6 +160,12 @@ for (const s of premiumServices) {
   publicPages["/services/" + s.slug] = {
     en: [s.en.name + " | Tanzania", s.en.intro],
     sw: [s.sw.name + " | Tanzania", s.sw.intro],
+  };
+}
+for (const s of secondaryServices) {
+  publicPages["/services/" + s.slug] = {
+    en: [s.titleEn, s.descriptionEn],
+    sw: [s.titleSw, s.descriptionSw],
   };
 }
 export function languageUrl(path: string, lang: Language) {

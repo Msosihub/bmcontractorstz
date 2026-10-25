@@ -1,3 +1,4 @@
+import relations from "@/data/service-relations.json";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { Photo, EnquiryLink } from "./Frame";
@@ -16,6 +17,7 @@ export function PremiumService({
   const s = services.find((x) => x.slug === slug)!;
   // Reviewed bilingual editorial guidance; CMS publication and supplemental content remain authoritative.
   const t = s[lang];
+  const relation = relations[slug as keyof typeof relations];
   return (
     <>
       <Header lang={lang} />
@@ -40,6 +42,17 @@ export function PremiumService({
                 </p>
               )}
             <EnquiryLink lang={lang} subject={t.name} />
+            {slug !== "institutional-procurement" && (
+              <a
+                className="institutional-brief"
+                href={"/services/institutional-procurement?lang=" + lang}
+              >
+                {lang === "sw"
+                  ? "Una BOQ au ombi la taasisi?"
+                  : "Have a BOQ or institutional RFQ?"}{" "}
+                ↗
+              </a>
+            )}
           </div>
           <Photo asset={s.asset} lang={lang} />
         </section>
@@ -94,7 +107,14 @@ export function PremiumService({
                 : "Selection follows the requirement."}
             </h2>
             <p>{t.equipment}</p>
-            <a href={"/products?lang=" + lang}>
+            <a
+              href={
+                "/products?lang=" +
+                lang +
+                "&q=" +
+                encodeURIComponent(relation?.equipmentQuery || "")
+              }
+            >
               {lang === "sw"
                 ? "Angalia vifaa na mwongozo wa vipimo"
                 : "Explore equipment & specification guidance"}{" "}
@@ -167,30 +187,8 @@ export function PremiumService({
           {services
             .filter(
               (x) =>
-                ([
-                  "generators",
-                  "solar-panel-systems",
-                  "power-backup",
-                  "electrical-contracting",
-                ].includes(slug)
-                  ? [
-                      "generators",
-                      "solar-panel-systems",
-                      "power-backup",
-                      "electrical-contracting",
-                    ]
-                  : [
-                        "networking",
-                        "telephone-systems",
-                        "institutional-procurement",
-                      ].includes(slug)
-                    ? [
-                        "networking",
-                        "telephone-systems",
-                        "institutional-procurement",
-                      ]
-                    : ["cctv", "electric-fence", "gate-motors"]
-                ).includes(x.slug) && x.slug !== slug && x.slug !== "institutional-procurement",
+                relation?.related.includes(x.slug) &&
+                x.slug !== "institutional-procurement",
             )
             .map((x) => (
               <a key={x.slug} href={"/services/" + x.slug + "?lang=" + lang}>

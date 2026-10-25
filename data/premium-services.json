@@ -447,7 +447,7 @@
     "slug": "generators",
     "asset": "generator",
     "en": {
-      "name": "Generator systems & integration",
+      "name": "Generators, ATS & power integration",
       "headline": "Standby power. Considered as a whole.",
       "intro": "BM handles generator system enquiries, installation integration and service-parts sourcing requirements. Generator capacity, transfer equipment and the building installation must be considered together.",
       "sections": [
@@ -482,7 +482,7 @@
       ]
     },
     "sw": {
-      "name": "Jenereta na uunganishaji wa umeme",
+      "name": "Jenereta, ATS na uunganishaji wa umeme",
       "headline": "Umeme wa akiba. Mfumo mzima uzingatiwe.",
       "intro": "BM hushughulikia mahitaji ya mifumo ya jenereta, uunganishaji wake kwenye majengo na utafutaji wa vipuri vya huduma. Uwezo wa jenereta, vifaa vya kubadili chanzo na mfumo wa jengo vitathminiwe kwa pamoja.",
       "sections": [
