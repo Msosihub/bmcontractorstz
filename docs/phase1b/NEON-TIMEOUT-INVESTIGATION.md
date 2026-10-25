@@ -45,3 +45,7 @@ No Neon configuration change is justified now. If correlated evidence later impl
 5. Recheck auth/publication, EN/SW, contact/survey and 24-hour receipt cleanup; define a sustained observation sample and latency budget before clearance.
 
 Evidence directory: `../../outputs/deep-content-timeouts-20261025/`. See connection-measurements, prisma-readonly, effective-pool, compute-metadata, hosted-readonly, hosted-logs and log-summary JSON files. No credentials or customer records included.
+
+## 26 October bounded read-only follow-up
+
+For the media milestone, six fresh restricted connections (three concurrent) and four queued `SELECT 1` reads passed. DNS: 10ms; identity/privilege reads: 1,649–2,270ms; max:1 queue: 2,349ms total. Actual TLS secure events were captured. Evidence: `../../outputs/media-readiness-20261026/connection-measurements.json` from worktree root. No observed-idle experiment or hosted comparison was repeated, so this does not resolve the prior intermittent failures. Guarded build and local public reads also succeeded. No settings/credentials, driver/pool configuration, write retry, Production or accepted hosted Preview changes.

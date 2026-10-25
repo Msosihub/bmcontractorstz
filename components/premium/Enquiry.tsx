@@ -165,6 +165,12 @@ export function PremiumEnquiry({
                       </select>
                     </label>
                     <label>
+                      {sw
+                        ? "Bajeti uliyopanga (si lazima)"
+                        : "Planned budget (optional)"}
+                      <input name="budgetRange" maxLength={100} />
+                    </label>
+                    <label>
                       {sw ? "Ratiba" : "Timeframe"}
                       <select name="urgency">
                         <option value="">{sw ? "Chagua" : "Select"}</option>

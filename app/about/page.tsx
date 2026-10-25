@@ -1,3 +1,4 @@
+import { Photo } from "@/components/premium/Frame";
 import { PremiumArticle } from "@/components/premium/Article";
 export default async function Page({
   searchParams,
@@ -21,6 +22,39 @@ export default async function Page({
           : "BM Engineering Contractors Limited works with security, electrical and technology requirements for homes, businesses and institutions."
       }
     >
+      <Photo
+        asset="team"
+        lang={lang}
+        className="people-photo"
+        alt={
+          sw
+            ? "Watu wa kubuni wakijadili mpango wa eneo; picha ya AI"
+            : "Fictional technical professionals discussing a site plan; AI illustration"
+        }
+        caption={
+          sw
+            ? "Picha ya mfano ya AI · Watu hawa si wafanyakazi wala wateja halisi wa BM"
+            : "AI illustration · These are fictional people, not BM employees or clients"
+        }
+        sizes="(max-width:760px) 100vw, 75vw"
+      />
+      <section>
+        <p className="eyebrow">
+          {sw
+            ? "MAZUNGUMZO. TATHMINI. MPANGO."
+            : "CONVERSATION. ASSESSMENT. A PLAN."}
+        </p>
+        <h2>
+          {sw
+            ? "Mahitaji yako yanaongoza kazi."
+            : "Your requirements guide the work."}
+        </h2>
+        <p>
+          {sw
+            ? "Nyumba, biashara na taasisi zina mahitaji tofauti. Eleza changamoto, matumizi ya eneo na mifumo iliyopo ili kupanga tathmini na wigo wa kazi. Picha hii inaonyesha mazungumzo ya kiufundi kwa mfano tu; si picha ya timu au mradi halisi wa BM."
+            : "Homes, businesses and institutions need different systems. Share the problem, how the site is used and what is already installed so that assessment and scope can be planned. This image illustrates a technical discussion; it is not a photograph of the BM team or a completed project."}
+        </p>
+      </section>
       <section>
         <h2>
           {sw

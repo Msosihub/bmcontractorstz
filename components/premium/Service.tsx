@@ -1,3 +1,5 @@
+import { approvedRecordMedia } from "@/lib/approved-record-media";
+import { RecordImage } from "./RecordImage";
 import relations from "@/data/service-relations.json";
 import { SpecialistDetail } from "./SpecialistDetail";
 import { Header } from "@/components/site/Header";
@@ -55,7 +57,11 @@ export function PremiumService({
               </a>
             )}
           </div>
-          <Photo asset={s.asset} lang={lang} />
+          {record && approvedRecordMedia("service", record) ? (
+            <RecordImage kind="service" record={record} lang={lang} />
+          ) : (
+            <Photo asset={s.asset} lang={lang} />
+          )}
         </section>
         <section className="section technical">
           <div>

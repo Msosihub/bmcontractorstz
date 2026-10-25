@@ -1,3 +1,4 @@
+import { servicePresentation } from "@/lib/service-presentation";
 import { getPublicService } from "@/lib/services";
 import type { Metadata } from "next";
 import { headers } from "next/headers";
@@ -5,7 +6,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import "./premium.css";
 import { LocalBusinessJsonLd } from "@/components/seo/LocalBusinessJsonLd";
-import { pageMetadata, SITE_URL, publicPages } from "@/lib/seo";
+import { pageMetadata, SITE_URL } from "@/lib/seo";
 
 const geistSans = localFont({
   src: "../public/fonts/geist-latin.woff2",
@@ -26,20 +27,16 @@ export async function generateMetadata(): Promise<Metadata> {
   if (path.startsWith("/services/")) {
     const service = await getPublicService(path.split("/").pop() || "");
     if (service) {
-      const title =
-        publicPages[path]?.[lang][0] ||
-        (lang === "sw" ? service.titleSw : service.titleEn) ||
-        service.titleEn;
-      const description =
-        (lang === "sw" ? service.descriptionSw : service.descriptionEn) ||
-        (lang === "sw"
-          ? "Omba ushauri na ukaguzi wa eneo kutoka BM Contractors."
-          : "Request guidance and a site survey from BM Contractors.");
+      const presentation = servicePresentation(
+        path.split("/").pop() || "",
+        lang,
+        service,
+      );
       localized = pageMetadata(
         path,
         lang,
-        [title, description],
-        Boolean(service.titleSw && service.descriptionSw && service.contentSw),
+        [presentation.title, presentation.description],
+        presentation.translated,
       );
     }
   }

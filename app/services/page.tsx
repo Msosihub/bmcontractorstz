@@ -3,6 +3,7 @@ import { Footer } from "@/components/site/Footer";
 import { Photo } from "@/components/premium/Frame";
 import legacyServices from "@/data/secondary-services.json";
 import services from "@/data/premium-services.json";
+import imagery from "@/data/service-imagery.json";
 import divisions from "@/data/service-divisions.json";
 import { prisma } from "@/lib/prisma";
 export default async function Page({
@@ -60,7 +61,7 @@ export default async function Page({
                 <h2 id={d.id + "-title"}>{d[lang]}</h2>
                 <p>{lang === "sw" ? d.descriptionSw : d.descriptionEn}</p>
               </div>
-              <div className="directory">
+              <div className="visual-directory">
                 {d.slugs
                   .filter((slug) => !unpublished.some((x) => x.slug === slug))
                   .map((slug) => {
@@ -68,20 +69,39 @@ export default async function Page({
                     const secondary = legacyServices.find(
                       (x) => x.slug === slug,
                     );
+                    const visual = imagery[slug as keyof typeof imagery];
+                    const intro = core
+                      ? core[lang].intro
+                      : lang === "sw"
+                        ? secondary?.descriptionSw
+                        : secondary?.descriptionEn;
                     return (
-                      <a
+                      <article
+                        className={
+                          visual ? "directory-feature" : "directory-note"
+                        }
                         key={slug}
-                        href={"/services/" + slug + "?lang=" + lang}
                       >
-                        <span>
-                          {core
-                            ? core[lang].name
-                            : lang === "sw"
-                              ? secondary?.titleSw
-                              : secondary?.titleEn}
-                        </span>
-                        <span aria-hidden="true">↗</span>
-                      </a>
+                        {visual && (
+                          <Photo
+                            asset={visual.asset}
+                            lang={lang}
+                            alt={visual[lang]}
+                            sizes="(max-width:760px) 100vw, (max-width:1100px) 45vw, 30vw"
+                          />
+                        )}
+                        <a href={"/services/" + slug + "?lang=" + lang}>
+                          <h3>
+                            {core
+                              ? core[lang].name
+                              : lang === "sw"
+                                ? secondary?.titleSw
+                                : secondary?.titleEn}
+                          </h3>
+                          <span aria-hidden="true">↗</span>
+                        </a>
+                        <p>{intro}</p>
+                      </article>
                     );
                   })}
               </div>

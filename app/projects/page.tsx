@@ -1,3 +1,4 @@
+import { RecordImage } from "@/components/premium/RecordImage";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { Photo, EnquiryLink } from "@/components/premium/Frame";
@@ -45,6 +46,18 @@ export default async function Page({
             <div className="record-grid">
               {records.map((x) => (
                 <article key={x.id}>
+                  <RecordImage kind="project" record={x} lang={lang} />
+                  <p className="eyebrow">{x.category}</p>
+                  {x.location && (
+                    <p>
+                      {sw ? "Eneo" : "Location"}: {x.location}
+                    </p>
+                  )}
+                  {sw && (!x.titleSw || !x.descriptionSw) && (
+                    <p className="scope-note">
+                      Baadhi ya maelezo ya mradi huu bado yako kwa Kiingereza.
+                    </p>
+                  )}
                   <h3>{sw ? x.titleSw || x.titleEn : x.titleEn}</h3>
                   <p>
                     {sw ? x.descriptionSw || x.descriptionEn : x.descriptionEn}

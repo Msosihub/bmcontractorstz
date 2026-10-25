@@ -5,28 +5,36 @@ export function Photo({
   asset,
   lang,
   className = "",
+  alt,
+  caption,
+  sizes = "(max-width:760px) 100vw, 60vw",
 }: {
   asset: string;
   lang: Language;
   className?: string;
+  alt?: string;
+  caption?: string;
+  sizes?: string;
 }) {
   return (
     <figure className={"photo " + className}>
       <Image
         src={"/assets/" + asset + "-1440.webp"}
         alt={
-          lang === "sw"
+          alt ||
+          (lang === "sw"
             ? "Picha ya mfano iliyozalishwa kwa AI; si mradi wa BM"
-            : "AI-generated service illustration; not a BM installation"
+            : "AI-generated service illustration; not a BM installation")
         }
         fill
-        sizes="(max-width:760px) 100vw, 60vw"
+        sizes={sizes}
         style={{ objectFit: "cover" }}
       />
       <figcaption>
-        {lang === "sw"
-          ? "Picha ya mfano ya AI · Si mradi wa BM"
-          : "AI illustration · Not a BM project"}
+        {caption ||
+          (lang === "sw"
+            ? "Picha ya mfano ya AI · Si mradi wa BM"
+            : "AI illustration · Not a BM project")}
       </figcaption>
     </figure>
   );

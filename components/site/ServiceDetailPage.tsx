@@ -1,3 +1,7 @@
+import { RecordImage } from "@/components/premium/RecordImage";
+import { Photo } from "@/components/premium/Frame";
+import { approvedRecordMedia } from "@/lib/approved-record-media";
+import imagery from "@/data/service-imagery.json";
 import guidance from "@/data/secondary-services.json";
 import { SpecialistDetail } from "@/components/premium/SpecialistDetail";
 import relations from "@/data/service-relations.json";
@@ -79,6 +83,8 @@ export async function ServiceDetailPage({
 
   const sw = lang === "sw";
   const detail = guidance.find((x) => x.slug === slug);
+  const record = await getServiceRecord(slug);
+  const visual = imagery[slug as keyof typeof imagery];
   const relation = relations[slug as keyof typeof relations];
   return (
     <PremiumArticle
@@ -87,6 +93,16 @@ export async function ServiceDetailPage({
       intro={description}
       label={sw ? "HUDUMA / BM CONTRACTORS" : "SERVICES / BM CONTRACTORS"}
     >
+      {record && approvedRecordMedia("service", record) ? (
+        <RecordImage kind="service" record={record} lang={lang} />
+      ) : visual ? (
+        <Photo
+          asset={visual.asset}
+          lang={lang}
+          alt={visual[lang]}
+          className="article-service-photo"
+        />
+      ) : null}
       {sw &&
         !(service.titleSw && service.descriptionSw && service.contentSw) && (
           <TranslationNotice />

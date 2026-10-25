@@ -1,3 +1,5 @@
+import { RecordImage } from "@/components/premium/RecordImage";
+import { specificationEntries } from "@/lib/product-specifications.mjs";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { Photo, EnquiryLink } from "@/components/premium/Frame";
@@ -156,6 +158,7 @@ export default async function Page({
             <div className="record-grid">
               {products.map((x) => (
                 <article key={x.id}>
+                  <RecordImage kind="product" record={x} lang={lang} />
                   <p className="eyebrow">
                     {(sw
                       ? x.category?.nameSw || x.category?.nameEn
@@ -176,23 +179,17 @@ export default async function Page({
                     </p>
                   )}
                   <p>{x.description}</p>
-                  {x.specifications &&
-                    typeof x.specifications === "object" &&
-                    !Array.isArray(x.specifications) && (
-                      <ul className="record-specs">
-                        {Object.entries(x.specifications)
-                          .filter(
-                            ([, v]) =>
-                              typeof v === "string" || typeof v === "number",
-                          )
-                          .slice(0, 3)
-                          .map(([k, v]) => (
-                            <li key={k}>
-                              {k}: {String(v)}
-                            </li>
-                          ))}
-                      </ul>
-                    )}
+                  {specificationEntries(x.specifications).length > 0 && (
+                    <ul className="record-specs">
+                      {specificationEntries(x.specifications)
+                        .slice(0, 3)
+                        .map(([k, v], i) => (
+                          <li key={k + i}>
+                            {k}: {v}
+                          </li>
+                        ))}
+                    </ul>
+                  )}
                   <div className="record-bottom">
                     <strong>
                       {x.price !== null

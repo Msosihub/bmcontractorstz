@@ -1,0 +1,98 @@
+[
+  {
+    "name": "team",
+    "original": "design-preview/media-originals/team.png",
+    "originalSha256": "8cddb2f4acf8b8a96a157f93ff4b81b42a163352823cd9291e41b7a671a1b24f",
+    "source": "OpenAI built-in image_gen, 2026-10-26",
+    "usage": "Generated illustrative asset; no real BM staff, product model or completed project depicted. Owner review pending. No competitor or stock image copied.",
+    "outputs": [
+      {
+        "path": "public/assets/team-640.webp",
+        "bytes": 47464,
+        "sha256": "b88b859e6e232dddd6a7c5082f89c443bf00125a61a87614d99e86ab30bb00d2"
+      },
+      {
+        "path": "public/assets/team-960.webp",
+        "bytes": 86914,
+        "sha256": "8a131e04b9093f865f60fefc15e7ec5cc78556142a1843d5c6a6d2c0bce75cfe"
+      },
+      {
+        "path": "public/assets/team-1440.webp",
+        "bytes": 151950,
+        "sha256": "b82576f369e97840bc88719c8255d23dc08a49811bb804541ae06b0ddefcdd64"
+      }
+    ]
+  },
+  {
+    "name": "agricultural-fence",
+    "original": "design-preview/media-originals/agricultural-fence.png",
+    "originalSha256": "c13c7168037c043c576f2098fafdd1e3c083c06adcffb9e322bb0413836453f9",
+    "source": "OpenAI built-in image_gen, 2026-10-26",
+    "usage": "Generated illustrative asset; no real BM staff, product model or completed project depicted. Owner review pending. No competitor or stock image copied.",
+    "outputs": [
+      {
+        "path": "public/assets/agricultural-fence-640.webp",
+        "bytes": 56596,
+        "sha256": "8d69a51b581cedc326a5a7fa537d2a033db239eba80185c0584feefe0c97474a"
+      },
+      {
+        "path": "public/assets/agricultural-fence-960.webp",
+        "bytes": 103462,
+        "sha256": "25433bcd41a1d63351397be2bd5741104e5e2d959f1ae626d04a08ec841b0eb7"
+      },
+      {
+        "path": "public/assets/agricultural-fence-1440.webp",
+        "bytes": 173244,
+        "sha256": "522b8b9c3251acaae6b5a17a7a7024436aabccde674a6c8997e61a56d29d0b37"
+      }
+    ]
+  },
+  {
+    "name": "access",
+    "original": "design-preview/media-originals/access.png",
+    "originalSha256": "86d1a1d6827dd19f94e32be482a320c2cb396e776e2dd6d0c2d97d1f7610bd93",
+    "source": "OpenAI built-in image_gen, 2026-10-26",
+    "usage": "Generated illustrative asset; no real BM staff, product model or completed project depicted. Owner review pending. No competitor or stock image copied.",
+    "outputs": [
+      {
+        "path": "public/assets/access-640.webp",
+        "bytes": 22416,
+        "sha256": "6573764a4aba717e4d0942df1fecfb5a8d783fcb036fa2196793dbd4549cfead"
+      },
+      {
+        "path": "public/assets/access-960.webp",
+        "bytes": 41612,
+        "sha256": "21ad47bd3b15adbe40acf478d95b8bdba1f5994f08b6a68c98795187a56936c3"
+      },
+      {
+        "path": "public/assets/access-1440.webp",
+        "bytes": 74162,
+        "sha256": "a046ff0df7fce2d87108da5ac0c26e7f38bae370b958e34ca6385d572d17de7b"
+      }
+    ]
+  },
+  {
+    "name": "hvac",
+    "original": "design-preview/media-originals/hvac.png",
+    "originalSha256": "2464f543aefadc9541fb6055afa23a985d2e8a372e272008a1c7f5d79a6931ee",
+    "source": "OpenAI built-in image_gen, 2026-10-26",
+    "usage": "Generated illustrative asset; no real BM staff, product model or completed project depicted. Owner review pending. No competitor or stock image copied.",
+    "outputs": [
+      {
+        "path": "public/assets/hvac-640.webp",
+        "bytes": 26890,
+        "sha256": "ae92008d02ce2100cef0add5cb32a7b9a7167e650522cb233a2a7b5f6414d1eb"
+      },
+      {
+        "path": "public/assets/hvac-960.webp",
+        "bytes": 47470,
+        "sha256": "5d4830e51b410821ac0f7e8b8836f8bd7eefabbb2cc0c229cfb66c8c2a3a920b"
+      },
+      {
+        "path": "public/assets/hvac-1440.webp",
+        "bytes": 84504,
+        "sha256": "9f7705d67bfc40ca7c66575b1c274c66a57ad66ffd0031ac71f2b5daf7a0d191"
+      }
+    ]
+  }
+]

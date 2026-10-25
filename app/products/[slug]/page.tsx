@@ -1,26 +1,7 @@
+import { RecordImage } from "@/components/premium/RecordImage";
 import { EnquiryLink } from "@/components/premium/Frame";
 import { pageMetadata } from "@/lib/seo";
 import { specificationEntries } from "@/lib/product-specifications.mjs";
-
-/**
- * Product Detail Page
- * -------------------
- * Public product detail page for BM Contractors product catalog.
- *
- * Current features:
- * - Reads product by slug from Neon.
- * - Shows product name, brand, category, price and description.
- * - Shows request price/site survey CTA.
- * - Shows WhatsApp CTA.
- * - Shows related products from the same category.
- * - Generates product-specific SEO metadata.
- *
- * Future:
- * - Product images.
- * - Product specifications.
- * - Related CCTV packages.
- * - WhatsApp direct product inquiry message.
- */
 
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -85,6 +66,17 @@ export default async function ProductDetailPage({
   if (!product) {
     notFound();
   }
+  const related = product.categoryId
+    ? await prisma.product.findMany({
+        where: {
+          isPublished: true,
+          categoryId: product.categoryId,
+          id: { not: product.id },
+        },
+        orderBy: { createdAt: "desc" },
+        take: 3,
+      })
+    : [];
   const sw = lang === "sw";
   const entries = specificationEntries(product.specifications);
   return (
@@ -102,6 +94,7 @@ export default async function ProductDetailPage({
                 ? product.category?.nameSw || product.category?.nameEn
                 : product.category?.nameEn}
             </p>
+            <RecordImage kind="product" record={product} lang={lang} />
             <h1>{product.name}</h1>
             <p className="lead">{product.brand}</p>
             {sw && product.description && (
@@ -165,6 +158,26 @@ export default async function ProductDetailPage({
             </p>
           </aside>
         </section>
+        {related.length > 0 && (
+          <section className="section">
+            <p className="eyebrow">
+              {sw ? "VIFAA VINAVYOHUSIANA" : "RELATED EQUIPMENT"}
+            </p>
+            <h2>{sw ? "Kutoka kundi hili" : "In the same category"}</h2>
+            <div className="record-grid">
+              {related.map((x) => (
+                <article key={x.id}>
+                  <RecordImage kind="product" record={x} lang={lang} />
+                  <h3>
+                    <a href={"/products/" + x.slug + "?lang=" + lang}>
+                      {x.name} ↗
+                    </a>
+                  </h3>
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
         <section className="brief-band">
           <div>
             <h2>
