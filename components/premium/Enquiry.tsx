@@ -1,3 +1,5 @@
+import { siteConfig } from "@/data/site";
+import { OfficeLocations } from "./OfficeContacts";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { EnquiryForm } from "@/components/site/EnquiryForm";
@@ -47,12 +49,21 @@ export function PremiumEnquiry({
                   : "Equipment, installation or trade supply? Share the details that will help us prepare a useful response."}
             </p>
             <div className="direct-details">
-              <p>{sw ? "Simu" : "Telephone"}</p>
-              <a href="tel:+255745778821">+255 745 778 821</a>
-              <p>{sw ? "Barua pepe" : "Email"}</p>
-              <a href="mailto:sales@bmcontractorstz.com">
-                sales@bmcontractorstz.com
+              <p>
+                {sw
+                  ? "Mauzo na maombi nchi nzima"
+                  : "Sales & national enquiries"}
+              </p>
+              <a href={"tel:" + siteConfig.sales.raw}>
+                {siteConfig.sales.label}
               </a>
+              <p>{sw ? "Barua pepe" : "Email"}</p>
+              <a href={"mailto:" + siteConfig.email}>{siteConfig.email}</a>
+              {!survey && (
+                <a className="office-jump" href="#offices">
+                  {sw ? "Ofisi za Moshi na Arusha" : "Moshi & Arusha offices"} ↓
+                </a>
+              )}
             </div>
             <Photo asset="engineering" lang={lang} />
           </aside>
@@ -216,6 +227,7 @@ export function PremiumEnquiry({
             </EnquiryForm>
           </div>
         </section>
+        {!survey && <OfficeLocations lang={lang} />}
       </main>
       <Footer lang={lang} />
     </>

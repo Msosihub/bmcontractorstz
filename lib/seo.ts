@@ -80,12 +80,12 @@ export const publicPages: Record<
   },
   "/contact": {
     en: [
-      "Contact BM Contractors",
-      "Contact BM Contractors for equipment enquiries, technical services and quotations.",
+      "Contact BM Contractors — Moshi & Arusha offices",
+      "Visit BM Contractors at 55 Market Road, Vijana Street, Moshi, Kilimanjaro. Contact our Arusha office or national sales for quotations and institutional RFQs.",
     ],
     sw: [
-      "Wasiliana na BM Contractors",
-      "Wasiliana na BM Contractors kuhusu vifaa, huduma za ufundi na makadirio ya gharama.",
+      "Wasiliana na BM Contractors — Ofisi za Moshi na Arusha",
+      "Ofisi ya Moshi: 55 Market Road, Vijana Street, Moshi, Kilimanjaro. Wasiliana na ofisi ya Arusha au mauzo kwa nukuu na maombi ya taasisi nchi nzima.",
     ],
   },
   "/request-site-survey": {

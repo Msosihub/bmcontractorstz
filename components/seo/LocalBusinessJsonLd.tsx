@@ -15,22 +15,25 @@ export function LocalBusinessJsonLd() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "https://www.bmcontractorstz.com/#business",
     name: "BM Engineering Contractors LTD",
     alternateName: "BM Contractors Tanzania",
     url: "https://www.bmcontractorstz.com",
     email: siteConfig.email,
-    telephone: siteConfig.phones[0]?.raw || "+255745778821",
+    telephone: siteConfig.sales.raw,
     areaServed: {
       "@type": "Country",
       name: "Tanzania",
     },
     address: {
       "@type": "PostalAddress",
-      addressCountry: "TZ",
-      addressLocality: "Tanzania",
+      streetAddress: siteConfig.offices.moshi.streetAddress,
+      addressLocality: siteConfig.offices.moshi.city,
+      addressRegion: siteConfig.offices.moshi.region,
+      addressCountry: siteConfig.offices.moshi.country,
     },
     description:
-      "BM Contractors Tanzania provides CCTV installation, electric fence, gate motors, access control, networking and power backup solutions for homes, businesses and institutions.",
+      "BM Contractors provides CCTV installation, electric fencing, gate automation, networking and backup power, with a Moshi office in Kilimanjaro and an Arusha office coordinating enquiries and site visits. National sales handles quotations and institutional RFQs across Tanzania.",
     knowsAbout: [
       "CCTV installation",
       "Electric fence installation",
@@ -41,28 +44,38 @@ export function LocalBusinessJsonLd() {
       "Security systems",
       "Site survey",
     ],
-    serviceType: [
-      "CCTV Systems",
-      "Electric Fence",
-      "Gate Motors",
-      "Access Control",
-      "Networking",
-      "Power Backup",
-    ],
     contactPoint: [
       {
         "@type": "ContactPoint",
-        telephone: siteConfig.whatsapp.raw,
-        contactType: "WhatsApp",
+        name: "Main sales / national enquiries",
+        telephone: siteConfig.sales.raw,
+        email: siteConfig.email,
+        contactType: "Sales and institutional RFQs",
         areaServed: "TZ",
-        availableLanguage: ["English", "Swahili"],
+        availableLanguage: ["en", "sw"],
       },
       {
         "@type": "ContactPoint",
-        telephone: siteConfig.phones[0]?.raw || "+255745778821",
-        contactType: "Customer Service",
-        areaServed: "TZ",
-        availableLanguage: ["English", "Swahili"],
+        name: "Moshi office",
+        telephone: siteConfig.offices.moshi.phone.raw,
+        contactType: "Moshi office customer enquiries",
+        areaServed: { "@type": "AdministrativeArea", name: "Kilimanjaro" },
+        availableLanguage: ["en", "sw"],
+      },
+      {
+        "@type": "ContactPoint",
+        name: "Arusha office",
+        telephone: siteConfig.offices.arusha.phone.raw,
+        contactType: "Arusha office enquiries and site visit coordination",
+        areaServed: { "@type": "City", name: "Arusha" },
+        availableLanguage: ["en", "sw"],
+      },
+      {
+        "@type": "ContactPoint",
+        name: "Moshi WhatsApp",
+        telephone: siteConfig.whatsapp.raw,
+        contactType: "WhatsApp",
+        availableLanguage: ["en", "sw"],
       },
     ],
   };
@@ -71,7 +84,7 @@ export function LocalBusinessJsonLd() {
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
-        __html: JSON.stringify(jsonLd),
+        __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
       }}
     />
   );

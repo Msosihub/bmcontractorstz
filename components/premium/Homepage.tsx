@@ -1,4 +1,7 @@
 "use client";
+
+import { siteConfig } from "@/data/site";
+import { FooterContacts } from "./OfficeContacts";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -699,8 +702,14 @@ export default function Homepage({ lang }: { lang: Lang }) {
           </div>
           <div className="contact-details">
             <div>
-              <p>{t.telephone}</p>
-              <a href="tel:+255745778821">+255 745 778 821</a>
+              <p>
+                {lang === "sw"
+                  ? "Mauzo na maombi nchi nzima"
+                  : "Sales & national enquiries"}
+              </p>
+              <a href={"tel:" + siteConfig.sales.raw}>
+                {siteConfig.sales.label}
+              </a>
             </div>
             <div>
               <p>{t.email}</p>
@@ -713,6 +722,7 @@ export default function Homepage({ lang }: { lang: Lang }) {
         </section>
       </main>
       <footer>
+        <FooterContacts lang={lang} />
         <div className="footer-top">
           <a className="brand" href={"/?lang=" + lang}>
             <Image

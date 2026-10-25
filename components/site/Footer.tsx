@@ -1,3 +1,4 @@
+import { FooterContacts } from "@/components/premium/OfficeContacts";
 import Image from "next/image";
 import type { Language } from "@/lib/i18n/config";
 export function Footer({ lang }: { lang: Language }) {
@@ -25,6 +26,7 @@ export function Footer({ lang }: { lang: Language }) {
           {lang === "sw" ? "Mawasiliano" : "Contact"} ↗
         </a>
       </div>
+      <FooterContacts lang={lang} />
       <nav
         className="footer-links"
         aria-label={lang === "sw" ? "Viungo vya tovuti" : "Website resources"}
