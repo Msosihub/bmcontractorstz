@@ -2215,3 +2215,385 @@ body.premium-site:has(dialog[open]) {
     margin-bottom: 32px;
   }
 }
+
+/* Reviewed context/system belts. No customer or manufacturer endorsement claims. */
+.premium-site .trust-belt {
+  padding: 64px 0 30px;
+  border-block: 1px solid var(--line);
+  overflow: hidden;
+}
+.premium-site .belt-heading {
+  padding: 0 7%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 24px;
+}
+.premium-site .belt-heading h2 {
+  font-size: clamp(30px, 3.2vw, 46px);
+  max-width: 620px;
+  margin-top: 16px;
+}
+.premium-site .belt-heading > p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+  max-width: 360px;
+}
+.premium-site .belt-pause-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.premium-site .belt-pause-control {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  min-height: 44px;
+  margin: 0 7% 20px auto;
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  cursor: pointer;
+}
+.premium-site .belt-pause-input:focus-visible + .belt-pause-control {
+  outline: 3px solid #786038;
+  outline-offset: 4px;
+}
+.premium-site .belt-resume-label {
+  display: none;
+}
+.premium-site .belt-pause-input:checked + label .belt-pause-label {
+  display: none;
+}
+.premium-site .belt-pause-input:checked + label .belt-resume-label {
+  display: inline;
+}
+.premium-site .belt-window {
+  overflow: hidden;
+}
+.premium-site .belt-track {
+  display: flex;
+  width: max-content;
+  animation: bmContextBelt 90s linear infinite;
+  will-change: transform;
+}
+.premium-site .system-belt .belt-track {
+  animation-duration: 100s;
+  animation-direction: reverse;
+}
+.premium-site .belt-list {
+  display: flex;
+  align-items: stretch;
+  gap: 18px;
+  padding: 0 18px 0 0;
+  margin: 0;
+  list-style: none;
+}
+.premium-site .sector-token {
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  gap: 18px;
+  padding: 0 24px 0 0;
+  border-block: 1px solid var(--line);
+  font-size: 19px;
+}
+.premium-site .sector-token img {
+  width: 112px;
+  height: 84px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.premium-site .belt-item-index {
+  font-size: 11px;
+  color: var(--bronze, #786038);
+  padding-left: 20px;
+}
+.premium-site .sector-token img + .belt-item-index {
+  display: none;
+}
+.premium-site .system-belt {
+  background: var(--ivory);
+}
+.premium-site .system-belt .belt-list a {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  min-height: 64px;
+  padding: 0 24px;
+  border: 1px solid var(--line);
+  font-size: 16px;
+}
+.premium-site .system-belt .belt-list a span {
+  color: #786038;
+}
+.premium-site .belt-caption {
+  padding: 0 7%;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+.premium-site .trust-belt:hover .belt-track,
+.premium-site .trust-belt:focus-within .belt-track,
+.premium-site .belt-pause-input:checked ~ .belt-window .belt-track {
+  animation-play-state: paused;
+}
+/* Keyboard discovery exposes every original system link without moving focus targets. */
+.premium-site .system-belt:focus-within .belt-track {
+  animation: none;
+  transform: none;
+  width: 100%;
+}
+.premium-site .system-belt:focus-within .belt-list {
+  flex-wrap: wrap;
+  padding: 0 7%;
+}
+.premium-site .system-belt:focus-within .belt-list[aria-hidden] {
+  display: none;
+}
+@keyframes bmContextBelt {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.premium-site .working-approach .working-photo {
+  aspect-ratio: 16/9;
+  margin: 32px 0;
+}
+.premium-site .working-approach ol {
+  list-style: none;
+  margin: 0 0 28px;
+  padding: 0;
+}
+.premium-site .working-approach li {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 20px;
+  padding: 26px 0;
+  border-top: 1px solid var(--line);
+}
+.premium-site .work-step-index {
+  color: #786038;
+  font-family: var(--serif);
+  font-size: 24px;
+}
+.premium-site .working-approach li h3 {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+.premium-site .working-approach li p {
+  margin: 0;
+}
+
+/* One shared footer for homepage and public inner pages. */
+.premium-site footer.premium-footer {
+  background: var(--ink);
+  color: var(--ivory);
+  padding: 65px 7% 28px;
+}
+.premium-site .footer-introduction {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 10%;
+  padding-bottom: 42px;
+  border-bottom: 1px solid #596056;
+}
+.premium-site .footer-introduction .brand {
+  width: fit-content;
+}
+.premium-site .footer-introduction .brand img {
+  object-fit: contain;
+  background: #fff;
+  padding: 4px;
+  border-radius: 2px;
+}
+.premium-site .footer-introduction p {
+  font-size: 13px;
+  line-height: 1.85;
+  color: #cbd0c5;
+  max-width: 500px;
+  margin-top: 22px;
+}
+.premium-site .footer-enquiry {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  font-family: var(--serif);
+  font-size: clamp(25px, 2.7vw, 38px);
+  line-height: 1.2;
+  min-height: 60px;
+  border-bottom: 1px solid #b4a17f;
+  padding-bottom: 15px;
+}
+.premium-site .footer-directory {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 35px;
+  padding: 40px 0;
+}
+.premium-site .footer-directory h2 {
+  font-family: var(--sans);
+  color: #d8c8a7;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  margin-bottom: 15px;
+}
+.premium-site .footer-directory ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.premium-site .footer-directory a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 8px 0;
+}
+.premium-site .premium-footer a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.premium-site .premium-footer a:focus-visible {
+  outline-color: #e1cc9f;
+}
+.premium-site .premium-footer .footer-contacts {
+  border-block: 1px solid #596056;
+  padding: 30px 0;
+  margin: 0;
+}
+.premium-site .premium-footer .footer-contacts p {
+  color: #d8c8a7;
+}
+.premium-site .premium-footer .footer-contacts address {
+  color: #cbd0c5;
+}
+.premium-site .footer-shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px 30px;
+  padding-top: 20px;
+}
+.premium-site .footer-shortcuts a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 12px;
+}
+.premium-site .premium-footer .disclosure {
+  color: #cbd0c5;
+  font-size: 11px;
+  max-width: 920px;
+  margin: 22px 0;
+}
+.premium-site .premium-footer .footer-bottom {
+  border-color: #596056;
+  color: #cbd0c5;
+  font-size: 11px;
+}
+.premium-site .premium-footer .footer-bottom div {
+  display: flex;
+  gap: 24px;
+}
+.premium-site .premium-footer .footer-bottom a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  .premium-site .footer-directory {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 760px) {
+  .premium-site .trust-belt {
+    padding-top: 40px;
+  }
+  .premium-site .belt-heading {
+    display: block;
+    padding: 0 6%;
+  }
+  .premium-site .belt-heading > p {
+    margin-top: 18px;
+  }
+  .premium-site .belt-pause-control {
+    margin-right: 6%;
+  }
+  .premium-site .sector-token {
+    min-height: 90px;
+    font-size: 17px;
+  }
+  .premium-site .footer-introduction {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .premium-site .footer-directory {
+    gap: 30px 22px;
+  }
+  .premium-site .footer-directory a {
+    font-size: 12px;
+  }
+  .premium-site footer.premium-footer {
+    padding: 44px 6% 85px;
+  }
+  .premium-site .premium-footer .footer-contacts {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+  .premium-site .footer-shortcuts {
+    flex-direction: column;
+    gap: 0;
+  }
+  .premium-site .premium-footer .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .premium-site .trust-belt .belt-track {
+    animation: none;
+    transform: none;
+    width: 100%;
+    will-change: auto;
+  }
+  .premium-site .trust-belt .belt-list {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0 6%;
+  }
+  .premium-site .trust-belt .belt-list[aria-hidden] {
+    display: none;
+  }
+  .premium-site .belt-pause-input,
+  .premium-site .belt-pause-control {
+    display: none;
+  }
+  .premium-site .sector-token {
+    font-size: 15px;
+    min-height: 60px;
+  }
+  .premium-site .sector-token img {
+    width: 80px;
+    height: 60px;
+  }
+  .premium-site .system-belt .belt-list a {
+    font-size: 14px;
+    min-height: 48px;
+    padding: 0 15px;
+  }
+}

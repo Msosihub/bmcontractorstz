@@ -1,3 +1,4 @@
+import { WorkingApproach } from "@/components/premium/WorkingApproach";
 import { Photo } from "@/components/premium/Frame";
 import { PremiumArticle } from "@/components/premium/Article";
 export default async function Page({
@@ -67,18 +68,7 @@ export default async function Page({
             : "CCTV, electric fencing and gate automation remain central to our services. Electrical contracting, generators, solar, backup power, networking and office telephones are planned around site conditions and use."}
         </p>
       </section>
-      <section>
-        <h2>
-          {sw
-            ? "Kuanzia mahitaji hadi wigo ulio wazi"
-            : "From a brief to a clear scope"}
-        </h2>
-        <p>
-          {sw
-            ? "Anza kwa kueleza eneo, matumizi na tatizo unalotaka kutatua. Tathmini husaidia kuandaa vifaa, kazi, majaribio na makabidhiano. Nukuu inapaswa kuweka wazi mambo yanayojumuishwa, masharti na huduma zinazohitajika baadaye."
-            : "Start with the location, intended use and problem to solve. Assessment helps define equipment, installation, testing and handover. The quotation should make inclusions, terms and future support requirements clear."}
-        </p>
-      </section>
+      <WorkingApproach lang={lang} />
       <nav className="article-links">
         <a href={"/services?lang=" + lang}>
           {sw ? "Huduma zetu" : "Our services"} ↗

@@ -1,0 +1,113 @@
+{
+  "sectors": [
+    {
+      "id": "homes",
+      "en": "Homes",
+      "sw": "Makazi",
+      "asset": "hero"
+    },
+    {
+      "id": "offices",
+      "en": "Offices",
+      "sw": "Ofisi",
+      "asset": "network"
+    },
+    {
+      "id": "hospitality",
+      "en": "Hotels & lodges",
+      "sw": "Hoteli na sehemu za malazi",
+      "asset": "hvac"
+    },
+    {
+      "id": "education",
+      "en": "Schools",
+      "sw": "Shule"
+    },
+    {
+      "id": "health",
+      "en": "Hospitals & clinics",
+      "sw": "Hospitali na kliniki"
+    },
+    {
+      "id": "warehouses",
+      "en": "Warehouses",
+      "sw": "Maghala",
+      "asset": "generator"
+    },
+    {
+      "id": "agriculture",
+      "en": "Farms",
+      "sw": "Mashamba",
+      "asset": "agricultural-fence"
+    },
+    {
+      "id": "retail",
+      "en": "Shops & supermarkets",
+      "sw": "Maduka na maduka makubwa"
+    },
+    {
+      "id": "institutions",
+      "en": "Institutions",
+      "sw": "Taasisi",
+      "asset": "engineering"
+    },
+    {
+      "id": "compounds",
+      "en": "Compounds & gated properties",
+      "sw": "Viwanja na makazi yenye mageti",
+      "asset": "gate"
+    }
+  ],
+  "systems": [
+    {
+      "slug": "cctv",
+      "en": "CCTV systems",
+      "sw": "Mifumo ya CCTV"
+    },
+    {
+      "slug": "electric-fence",
+      "en": "Electric fencing",
+      "sw": "Uzio wa umeme"
+    },
+    {
+      "slug": "gate-motors",
+      "en": "Gate automation",
+      "sw": "Mageti ya kiotomatiki"
+    },
+    {
+      "slug": "access-control",
+      "en": "Access & attendance",
+      "sw": "Udhibiti wa milango na mahudhurio"
+    },
+    {
+      "slug": "electrical-contracting",
+      "en": "Electrical installation",
+      "sw": "Ufungaji wa umeme"
+    },
+    {
+      "slug": "solar-panel-systems",
+      "en": "Solar & backup power",
+      "sw": "Sola na umeme wa akiba"
+    },
+    {
+      "slug": "generators",
+      "en": "Generators & ATS",
+      "sw": "Jenereta na ATS"
+    },
+    {
+      "slug": "networking",
+      "en": "Networking & Wi-Fi",
+      "sw": "Mitandao na Wi-Fi"
+    },
+    {
+      "slug": "telephone-systems",
+      "en": "Office & hotel telephony",
+      "sw": "Simu za ofisi na hoteli"
+    },
+    {
+      "slug": "air-conditioners",
+      "en": "Air conditioning",
+      "sw": "Viyoyozi"
+    }
+  ]
+}

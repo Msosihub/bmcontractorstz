@@ -1,3 +1,4 @@
+import { TrustBelt } from "@/components/premium/TrustBelt";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { Photo } from "@/components/premium/Frame";
@@ -38,6 +39,11 @@ export default async function Page({
           </div>
           <Photo asset="engineering" lang={lang} />
         </section>
+        <TrustBelt
+          kind="systems"
+          lang={lang}
+          excludedSlugs={unpublished.map((record) => record.slug)}
+        />
         <section className="section division-index">
           <nav
             className="division-shortcuts"
@@ -108,6 +114,7 @@ export default async function Page({
             </section>
           ))}
         </section>
+        <TrustBelt kind="sectors" lang={lang} />
       </main>
       <Footer lang={lang} />
     </>

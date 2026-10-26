@@ -1,7 +1,8 @@
 "use client";
 
 import { siteConfig } from "@/data/site";
-import { FooterContacts } from "./OfficeContacts";
+import { Footer } from "@/components/site/Footer";
+import { TrustBelt } from "./TrustBelt";
 import {
   SecurityNavigation,
   SecurityLinks,
@@ -510,6 +511,7 @@ export default function Homepage({ lang }: { lang: Lang }) {
             ↓
           </a>
         </div>
+        <TrustBelt kind="systems" lang={lang} />
         <section className="section expertise" id="services">
           <div className="section-heading">
             <div>
@@ -679,6 +681,7 @@ export default function Homepage({ lang }: { lang: Lang }) {
             </button>
           </div>
         </section>
+        <TrustBelt kind="sectors" lang={lang} />
         <section className="approach section" id="approach">
           <div>
             <p className="eyebrow">{t.approachLabel}</p>
@@ -727,35 +730,7 @@ export default function Homepage({ lang }: { lang: Lang }) {
           </div>
         </section>
       </main>
-      <footer>
-        <FooterContacts lang={lang} />
-        <div className="footer-top">
-          <a className="brand" href={"/?lang=" + lang}>
-            <Image
-              src="/assets/official-logo.png"
-              width={38}
-              height={42}
-              alt="BM Contractors official shield"
-            />
-            <span>
-              BM CONTRACTORS<small>{t.footer}</small>
-            </span>
-          </a>
-          <p>{t.rights}</p>
-          <a href="#main">{lang === "en" ? "Back to top" : "Rudi juu"} ↑</a>
-        </div>
-        <p className="disclosure">
-          {t.footerNote} {t.noProjects}
-        </p>
-        <div className="footer-bottom">
-          <span>© 2026 BM Engineering Contractors Limited</span>
-          <span>
-            {lang === "en"
-              ? "Phase 1B private review · Not a production release"
-              : "Mapitio ya Phase 1B · Haujachapishwa rasmi"}
-          </span>
-        </div>
-      </footer>
+      <Footer lang={lang} />
       <div className="mobile-cta">
         <button onClick={() => enquire("")}>
           {t.quote}

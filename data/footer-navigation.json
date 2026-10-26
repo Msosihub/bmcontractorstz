@@ -1,0 +1,165 @@
+[
+  {
+    "id": "core",
+    "en": "Core services",
+    "sw": "Huduma kuu",
+    "links": [
+      {
+        "href": "/services/cctv",
+        "en": "CCTV installation",
+        "sw": "Ufungaji wa CCTV"
+      },
+      {
+        "href": "/services/electric-fence",
+        "en": "Electric fencing",
+        "sw": "Uzio wa umeme"
+      },
+      {
+        "href": "/services/gate-motors",
+        "en": "Gate automation",
+        "sw": "Mageti ya kiotomatiki"
+      },
+      {
+        "href": "/services/access-control",
+        "en": "Access & attendance",
+        "sw": "Udhibiti wa milango na mahudhurio"
+      },
+      {
+        "href": "/services/fire-alarm-systems",
+        "en": "Fire & intruder alarms",
+        "sw": "Kengele za moto na uvamizi"
+      },
+      {
+        "href": "/services/electrical-contracting",
+        "en": "Electrical contracting",
+        "sw": "Kazi za umeme"
+      }
+    ]
+  },
+  {
+    "id": "specialist",
+    "en": "Specialist services",
+    "sw": "Huduma maalumu",
+    "links": [
+      {
+        "href": "/services/solar-panel-systems",
+        "en": "Solar & backup power",
+        "sw": "Sola na umeme wa akiba"
+      },
+      {
+        "href": "/services/generators",
+        "en": "Generators & ATS",
+        "sw": "Jenereta na ATS"
+      },
+      {
+        "href": "/services/networking",
+        "en": "Structured networking",
+        "sw": "Mitandao na mpangilio wa nyaya"
+      },
+      {
+        "href": "/services/telephone-systems",
+        "en": "Office & hotel telephones",
+        "sw": "Simu za ofisi na hoteli"
+      },
+      {
+        "href": "/services/air-conditioners",
+        "en": "Air conditioning",
+        "sw": "Viyoyozi"
+      },
+      {
+        "href": "/services/maintenance-support",
+        "en": "Technical maintenance",
+        "sw": "Matengenezo ya mifumo"
+      }
+    ]
+  },
+  {
+    "id": "equipment",
+    "en": "Equipment enquiries",
+    "sw": "Maombi ya vifaa",
+    "links": [
+      {
+        "query": "CCTV",
+        "en": "Cameras & recorders",
+        "sw": "Kamera na vinasa picha"
+      },
+      {
+        "query": "gate",
+        "en": "Gate motors",
+        "sw": "Mota za mageti"
+      },
+      {
+        "query": "fence",
+        "en": "Electric fence equipment",
+        "sw": "Vifaa vya uzio wa umeme"
+      },
+      {
+        "query": "access",
+        "en": "Access control devices",
+        "sw": "Vifaa vya udhibiti wa milango"
+      },
+      {
+        "query": "network",
+        "en": "Networking equipment",
+        "sw": "Vifaa vya mitandao"
+      },
+      {
+        "query": "power",
+        "en": "Power & backup equipment",
+        "sw": "Vifaa vya umeme na nishati ya akiba"
+      }
+    ]
+  },
+  {
+    "id": "resources",
+    "en": "Explore BM",
+    "sw": "Fahamu BM",
+    "links": [
+      {
+        "href": "/about",
+        "en": "About & our approach",
+        "sw": "Kuhusu BM na utendaji wetu"
+      },
+      {
+        "href": "/services",
+        "en": "All services",
+        "sw": "Huduma zote"
+      },
+      {
+        "href": "/products",
+        "en": "Product catalogue",
+        "sw": "Orodha ya vifaa"
+      },
+      {
+        "href": "/projects",
+        "en": "Published projects",
+        "sw": "Miradi iliyochapishwa"
+      },
+      {
+        "href": "/contact",
+        "en": "Contact & offices",
+        "sw": "Mawasiliano na ofisi"
+      },
+      {
+        "href": "/request-site-survey",
+        "en": "Request a site survey",
+        "sw": "Omba ukaguzi wa eneo"
+      },
+      {
+        "href": "/services/institutional-procurement",
+        "en": "Institutional procurement",
+        "sw": "Ununuzi wa taasisi"
+      },
+      {
+        "href": "/cctv-packages",
+        "en": "CCTV packages",
+        "sw": "Vifurushi vya CCTV"
+      },
+      {
+        "href": "/support",
+        "en": "Guides & support",
+        "sw": "Miongozo na msaada"
+      }
+    ]
+  }
+]
