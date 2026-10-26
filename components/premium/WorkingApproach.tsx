@@ -16,25 +16,25 @@ const steps = {
     ],
     [
       "Plan maintenance and support",
-      "Confirm the support scope, inspection needs and fault-reporting route. Record model details and symptoms when requesting help; service arrangements are agreed for the specific system.",
+      "Confirm the support scope, inspection needs and fault-reporting route. Record model details, symptoms and recent changes when requesting help; service arrangements are agreed for the specific system.",
     ],
   ],
   sw: [
     [
-      "Kuelewa mahitaji",
-      "Taja eneo, matumizi, vifaa vilivyopo na tatizo unalotaka kutatua. Michoro, BOQ au historia ya hitilafu husaidia kubaini mambo yanayohitaji tathmini.",
+      "Kuelewa mahitaji yako",
+      "Taja eneo, matumizi, vifaa vilivyopo na tatizo unalotaka kutatua. Michoro, orodha ya kazi na vifaa (BOQ) au historia ya hitilafu husaidia kubaini mambo yanayohitaji tathmini.",
     ],
     [
-      "Kutathmini na kupanga wigo wa kazi",
-      "Kubalianeni kuhusu ukaguzi wa eneo na vipimo vinavyohitajika. Uoanifu wa vifaa, njia za nyaya, umeme, usalama wa kufikia eneo na mipaka ya kazi hupangwa kabla ya kukamilisha nukuu.",
+      "Tathmini na mpango wa kazi",
+      "Ukaguzi wa eneo na vipimo vinavyohitajika hukubaliwa kulingana na kazi. Njia za nyaya, upatikanaji wa umeme, uoanifu wa vifaa, ufikaji salama na mipaka ya kazi huainishwa kabla ya kukamilisha nukuu ya bei.",
     ],
     [
-      "Kufunga, kujaribu na kukabidhi",
-      "Wigo uliokubaliwa ueleze ufungaji, usanidi, majaribio ya utendaji na taarifa za makabidhiano. Jadili namna watumiaji watakavyoendesha mfumo na nyaraka wanazohitaji.",
+      "Ufungaji, majaribio na makabidhiano",
+      "Wigo uliokubaliwa ueleze ufungaji na usanidi wa vifaa. Majaribio ya utendaji na makabidhiano yaweke wazi namna ya kutumia mfumo na nyaraka zinazotolewa.",
     ],
     [
-      "Kupanga matengenezo na msaada",
-      "Thibitisha huduma za msaada, mahitaji ya ukaguzi na namna ya kuripoti hitilafu. Unapoomba msaada, taja modeli na dalili za tatizo; masharti ya huduma hukubaliwa kwa mfumo husika.",
+      "Matengenezo na msaada wa kiufundi",
+      "Mahitaji ya ukaguzi, matengenezo na utaratibu wa kuripoti hitilafu huwekwa wazi kwa mfumo husika. Unapoomba msaada, taja modeli ya kifaa, dalili za tatizo na mabadiliko yaliyofanyika karibuni.",
     ],
   ],
 };

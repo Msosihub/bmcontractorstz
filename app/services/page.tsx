@@ -47,11 +47,15 @@ export default async function Page({
         <section className="section division-index">
           <nav
             className="division-shortcuts"
+            id="division-navigation"
             aria-label={lang === "sw" ? "Idara za huduma" : "Service divisions"}
           >
             {divisions.map((d) => (
               <a key={d.id} href={"#" + d.id}>
-                {d[lang]} ↘
+                <span aria-hidden="true">
+                  {String(divisions.indexOf(d) + 1).padStart(2, "0")}
+                </span>{" "}
+                {lang === "sw" ? d.shortSw : d.shortEn} ↘
               </a>
             ))}
           </nav>
@@ -111,6 +115,12 @@ export default async function Page({
                     );
                   })}
               </div>
+              <a className="division-return" href="#division-navigation">
+                {lang === "sw"
+                  ? "Rudi kwenye makundi ya huduma"
+                  : "Back to service divisions"}{" "}
+                ↑
+              </a>
             </section>
           ))}
         </section>

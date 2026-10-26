@@ -1,3 +1,4 @@
+import { previewPgOptions } from "./preview-pg-options.mjs";
 import { assertPreviewEnvironment } from "./preview-safety.mjs";
 /**
  * Prisma Client Setup
@@ -24,7 +25,7 @@ const globalForPrisma = globalThis as unknown as {
 assertPreviewEnvironment();
 const adapter = new PrismaPg({
   connectionString: process.env.DATABASE_URL!,
-  ...(process.env.BM_ISOLATED_PREVIEW === "1" ? { max: 1 } : {}),
+  ...previewPgOptions(),
 });
 
 export const prisma =

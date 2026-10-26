@@ -55,3 +55,35 @@ For the media milestone, six fresh restricted connections (three concurrent) and
 The guarded build now fails at the read-only identity preflight with masked category `connection-timeout`, before Next build starts. A separate credential-free probe to the approved validation endpoint resolved DNS (12ms, IPv4 and IPv6 answers), but TCP connection establishment failed with `ETIMEDOUT` at 765ms across the default address-selection path. An earlier bounded probe in this milestone also failed at TCP. No TLS completion, authentication or SQL timing can be claimed for these failures. Evidence: `../../outputs/trust-sections-20261026/build.log` and `transport-check.json` from worktree root.
 
 This contrasts with the preceding successful 1.6–2.3s fresh connections. The current observation locates a failure before Prisma query execution; it does not distinguish the Mac/network route, endpoint reachability, compute/resume or intermediary behavior. DNS success does not prove TCP/TLS reachability. Do not conclude this is a form-save logic defect or clear the existing application reliability risk. Next safe checks remain correlated endpoint/compute state and transport measurements from an independent authorized runtime. No driver, network, connection limit, pool, compute, credential or retry change was made. No writes were retried and the build/start guard remained fail-closed. A labelled offline static layout harness allows editorial review without asserting database-backed functionality.
+
+## 26 October real-application verification: reproduced cause and local correction
+
+This supersedes the earlier recommendation to leave pool configuration unchanged. The evidence now justifies a small **Preview-only source correction**, without changing Neon settings or Production behavior.
+
+### Reproducible transport observations
+
+On this Mac / Node 24, DNS resolved in 11 ms. Alternating warm-compute trials with the process default `autoSelectFamilyAttemptTimeout=250ms` failed 3/3 at 756–762 ms with `ETIMEDOUT`, before TCP connected, TLS or authentication. The same endpoint and credentials with a 1,000 ms per-address attempt window passed 3/3 in 2,120–2,205 ms: TCP connected at 354–426 ms, TLS completed at 923–985 ms, authentication completed at 1,838–1,914 ms. Initial separate 1,000/2,000 ms probes also passed. This identifies an address-attempt timing failure on the observed local route; it does not prove every historical timeout has that cause.
+
+Neon read-only metadata was available: validation compute changed from idle to active; London, fixed 0.25 CU, pooler disabled, reported suspend timeout 0. No forced suspend/resume or configuration change. The warm alternating failures show that idle/resume alone cannot explain this sample. CPU/memory saturation, proxy traces and a controlled cold-start experiment remain unavailable. Earlier incorrect MCP argument calls are not evidence of a permissions failure.
+
+### Applied correction and finite budget
+
+`lib/preview-pg-options.mjs` supplies a pg socket with an explicit **1,000 ms address-attempt window**, retaining dual-stack selection, existing TLS verification and pool max 1. It sets a **15,000 ms connection/acquisition budget**. The shared startup/build identity check and actual PrismaPg adapter use these same options. Outside Preview the helper returns `{}`. There is no global Node/network change, IPv4 forcing, larger pool, retry, credential change or Neon spending increase.
+
+The 1,000 ms window exceeds the measured 354–426 ms TCP establishment while remaining bounded; 15 seconds allows several connection-stage round trips and a short queue without indefinite waiting. It is a local verification budget, not a guaranteed public-response SLA. A held max-1 pool connection caused a queued checkout to fail at **15,002 ms**, then the next read succeeded. Four queued reads completed in 975 ms. A fresh connection after 12 seconds of pool idle succeeded in 2,449 ms. Actual shared-config identity verification passed in 2,599 ms while the process-global attempt default remained 250 ms before and after.
+
+A budget bounds connection/acquisition only; it does not impose a universal SQL/transaction deadline. Startup retains its 10-second query timeout. No blind retries were added to enquiries or other writes. Existing transaction/receipt deduplication remains limited to identical input within its existing ten-minute window; lost commit acknowledgements still require reconciliation rather than automatic resubmission.
+
+### Application evidence and limits
+
+The complete guarded npm production-mode build passed, including identity preflight, Prisma client generation and Next compilation. The actual local React/Next app passed synthetic EN/SW enquiry, duplicate, authentication, product save/publication and dynamic-service publication checks. See `REAL-APP-VERIFICATION.md` for evidence and limitations.
+
+The accepted hosted Phase 1A Preview was neither changed nor retested in this milestone. Its earlier iad1/London region difference remains a latency hypothesis; this correction has not been validated from that hosted runtime. Small finite samples do not establish sustained availability or p95/p99. Local provider transport auditing recorded zero attempts, but no independent provider-account telemetry was obtained.
+
+A separate least-privilege gap was discovered by a catalog-only query from the synthetic database: `has_database_privilege(current_user,'neondb','CONNECT') = true`. This refers to the **inherited copy**, not the live Production endpoint. No connection to it or customer-table query was made; table-level access remains unknown. Database CONNECT can come from PUBLIC and does not establish table privileges. Obtain owner-approved ACL review/remediation before claiming that the role cannot access the inherited copy. Do not remove privileges blindly or change Production. Current URL/server-identity guards still permit only the approved synthetic database and role.
+
+Before release: repeat staged samples across sessions and idle intervals; compare an explicitly approved hosted candidate; review inherited-copy ACLs; retain identity rejection and notification-suppression tests; rehearse connection/transaction/commit-ack failure handling without automatic write retries. No Neon setting change is currently justified.
+
+Evidence from worktree root: `../../outputs/real-app-verification-20261026/{stages,warm-comparison,pool,neon-monitoring,verification-summary}.json`, build/test logs and real-app screenshots. No credentials included.
+
+Primary references: [Node net connection options](https://nodejs.org/download/release/v24.19.0/docs/api/net.html), [pg Pool configuration](https://node-postgres.com/apis/pool), [pg Client configuration](https://node-postgres.com/apis/client).
