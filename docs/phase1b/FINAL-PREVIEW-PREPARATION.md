@@ -6,7 +6,7 @@
 
 Approved logo, graphite/ivory/bronze palette, architectural hero, five divisions, security-first routes/navigation, bilingual content, two belts, working approach, structured footer, Services imagery and catalogue/quotation journeys remain.
 
-Both public headers now use one build-scoped `PreviewNotice`. Preview shows an explicit EN/SW testing notice. Production's compiled flag is 0 and renders no staging notice. Obsolete unused design-review/demo form strings were removed. This does not alter independent URL/identity guards, suppression, noindex, robots or sitemap logic.
+Both public headers now use one build-scoped `PreviewNotice`. Preview shows an explicit EN/SW testing notice. Production's compiled flag is 0 and renders no staging notice. Obsolete unused design-review/demo form strings were removed. The internal notification-disabled route now returns not-found outside Preview. This does not alter independent URL/identity guards, suppression, noindex, robots or sitemap logic.
 
 AI image disclosures no longer have black rectangular backgrounds; small legible text remains on illustrative installations. About's fictional-people disclosure is plain text below its image. Alt text, nearby About explanation, belt context and footer disclosure remain. No fictional person is identified as BM staff/client; no installation is claimed as a completed BM project. No new assets, credentials, testimonials, stock/prices or qualifications.
 
@@ -14,7 +14,7 @@ AI image disclosures no longer have black rectangular backgrounds; small legible
 
 - Complete guarded npm build passed after cleanup: Preview identity → Prisma generation → Next production build.
 - TypeScript passed. ESLint: zero errors, 15 existing warnings.
-- **130 automated tests passed**, including Production/Preview notice separation and retained safety regressions.
+- **131 automated tests passed**, including Production/Preview notice separation and retained safety regressions.
 - **13 actual-app test groups passed** across public and corrected admin-focused runs: real React motion and pause/resume, keyboard/reduced-motion, division anchors, mobile navigation/no overflow, footer contacts, EN/SW metadata, forms/deduplication, synthetic OTP/session, product Saving completion and publication, dynamic service withdrawal/restoration, admin messages/surveys, zero provider requests/JS errors.
 - The first combined run applied a public-header assertion to admin pages, which intentionally do not use the public header. That harness assertion was scoped correctly; the repeated admin groups passed. No application/security assertion was removed.
 - Four repeated EN/SW forms produced exactly two contact + two survey records and four receipts. Run-specific fixtures/receipts/sessions/OTPs removed; temporary service fixture removed. Preview fixtures are never a source for Production content.

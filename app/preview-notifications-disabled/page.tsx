@@ -1,9 +1,12 @@
 import { PremiumArticle } from "@/components/premium/Article";
+import { isPreview } from "@/lib/preview-safety.mjs";
+import { notFound } from "next/navigation";
 export default async function Page({
   searchParams,
 }: {
   searchParams: Promise<{ lang?: string }>;
 }) {
+  if (!isPreview()) notFound();
   const lang = (await searchParams).lang === "sw" ? "sw" : "en";
   return (
     <PremiumArticle

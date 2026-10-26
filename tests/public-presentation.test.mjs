@@ -33,3 +33,35 @@ test("both headers share the environment-scoped notice and image disclosures rem
   const css = await readFile("app/premium.css", "utf8");
   assert.match(css, /\.premium-site \.people-photo figcaption \{\s*top: 100%/);
 });
+const disabledPage = await bundle(
+  "app/preview-notifications-disabled/page.tsx",
+  {
+    "@/lib/preview-safety.mjs":
+      "export const isPreview=()=>globalThis.__bmPresentationPreview;",
+    "next/navigation": 'export function notFound(){throw Error("NOT_FOUND");}',
+    "@/components/premium/Article":
+      'import React from "react";export function PremiumArticle({title,intro,children}){return React.createElement("main",null,title,intro,children)}',
+  },
+);
+test("internal notification-disabled notice cannot render in Production but remains bilingual in Preview", async () => {
+  try {
+    globalThis.__bmPresentationPreview = false;
+    await assert.rejects(
+      () =>
+        disabledPage.default({ searchParams: Promise.resolve({ lang: "en" }) }),
+      /NOT_FOUND/,
+    );
+    globalThis.__bmPresentationPreview = true;
+    for (const lang of ["en", "sw"]) {
+      const html = renderToStaticMarkup(
+        await disabledPage.default({ searchParams: Promise.resolve({ lang }) }),
+      );
+      assert.match(
+        html,
+        /notifications are disabled|Arifa za SMS na WhatsApp zimezimwa/,
+      );
+    }
+  } finally {
+    delete globalThis.__bmPresentationPreview;
+  }
+});
