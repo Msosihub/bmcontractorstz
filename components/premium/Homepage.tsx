@@ -1,5 +1,6 @@
 "use client";
 
+import { PreviewNotice } from "@/components/site/PreviewNotice";
 import { siteConfig } from "@/data/site";
 import { Footer } from "@/components/site/Footer";
 import { TrustBelt } from "./TrustBelt";
@@ -23,8 +24,6 @@ const assets = [
 ];
 const copy = {
   en: {
-    preview: "PRIVATE DESIGN REVIEW",
-    concept: "AI-generated concept imagery · No completed projects depicted",
     nav: ["Expertise", "Equipment", "Our approach", "Contact"],
     quote: "Discuss your project",
     menu: "Menu",
@@ -157,26 +156,16 @@ const copy = {
     telephone: "Telephone",
     email: "Email",
     footer: "Security. Engineering. Technology.",
-    footerNote:
-      "All photographs on this review page are AI-generated illustrations. They do not represent completed BM projects, clients, employees or specific product models.",
     rights: "BM Engineering Contractors Limited",
     language: "Language",
-    modalTitle: "Tell us about your requirements",
-    modalNote:
-      "Design preview: this form prepares an enquiry on screen. It does not send messages or save customer data.",
     name: "Your name or organization",
     contact: "Phone or email",
     requirement: "Project requirements",
-    submit: "Preview enquiry",
-    prepared: "Your preview enquiry is prepared. No message was sent.",
-    back: "Continue exploring",
     equipmentTag: "EQUIPMENT CATEGORY",
     noProjects:
       "Genuine project photography and verified case studies will be added separately.",
   },
   sw: {
-    preview: "MAPITIO YA MUUNDO",
-    concept: "Picha zimezalishwa kwa AI · Si miradi iliyotekelezwa",
     nav: ["Huduma", "Vifaa", "Namna tunavyofanya kazi", "Mawasiliano"],
     quote: "Tuzungumzie mradi wako",
     menu: "Menyu",
@@ -309,19 +298,11 @@ const copy = {
     telephone: "Simu",
     email: "Barua pepe",
     footer: "Usalama. Uhandisi. Teknolojia.",
-    footerNote:
-      "Picha zote kwenye ukurasa huu wa mapitio zimezalishwa kwa AI. Hazionyeshi miradi ya BM iliyokamilika, wateja, wafanyakazi au modeli maalumu za bidhaa.",
     rights: "BM Engineering Contractors Limited",
     language: "Lugha",
-    modalTitle: "Tueleze mahitaji yako",
-    modalNote:
-      "Muundo wa majaribio: fomu hii inaandaa ombi kwenye skrini pekee. Haitumi ujumbe wala kuhifadhi taarifa za mteja.",
     name: "Jina lako au la taasisi",
     contact: "Simu au barua pepe",
     requirement: "Mahitaji ya mradi",
-    submit: "Angalia ombi la mfano",
-    prepared: "Ombi lako la mfano limeandaliwa. Hakuna ujumbe uliotumwa.",
-    back: "Endelea kutazama",
     equipmentTag: "KUNDI LA VIFAA",
     noProjects:
       "Picha halisi na maelezo ya miradi vitaongezwa baada ya kuthibitishwa.",
@@ -386,10 +367,7 @@ export default function Homepage({ lang }: { lang: Lang }) {
       <a className="skip" href="#main">
         {lang === "en" ? "Skip to content" : "Nenda kwenye maudhui"}
       </a>
-      <div className="review-bar">
-        <span>{t.preview}</span>
-        <span>{t.concept}</span>
-      </div>
+      <PreviewNotice lang={lang} />
       <header className="site-header">
         <a
           className="brand"

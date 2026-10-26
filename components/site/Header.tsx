@@ -1,4 +1,5 @@
 "use client";
+import { PreviewNotice } from "./PreviewNotice";
 import { SecurityNavigation, SecurityLinks } from "./SecurityNavigation";
 import Image from "next/image";
 import { useState } from "react";
@@ -24,14 +25,7 @@ export function Header({ lang }: { lang: Language }) {
       <a className="skip" href="#main">
         {lang === "sw" ? "Nenda kwenye maudhui" : "Skip to content"}
       </a>
-      <div className="review-bar">
-        <span>PHASE 1B / PRIVATE REVIEW</span>
-        <span>
-          {lang === "sw"
-            ? "Picha za AI zimeainishwa; si miradi ya BM"
-            : "AI illustrations identified; not BM project evidence"}
-        </span>
-      </div>
+      <PreviewNotice lang={lang} />
       <header className="site-header">
         <a className="brand" href={"/?lang=" + lang}>
           <Image

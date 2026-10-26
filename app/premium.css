@@ -2645,3 +2645,31 @@ body.premium-site:has(dialog[open]) {
     scroll-margin-top: 25px;
   }
 }
+
+/* Final presentation: image disclosures remain readable without black caption boxes. */
+.premium-site .photo figcaption {
+  background: transparent;
+  padding: 0;
+  font-size: 10px;
+  letter-spacing: 0.025em;
+  text-shadow: 0 1px 3px #18201b, 0 0 5px #18201b;
+}
+.premium-site .hero > .photo figcaption {
+  font-size: 10px;
+}
+.premium-site .people-photo {
+  overflow: visible;
+  margin-bottom: 78px;
+}
+.premium-site .people-photo figcaption {
+  top: 100%;
+  bottom: auto;
+  left: 0;
+  right: auto;
+  max-width: 100%;
+  padding-top: 10px;
+  color: var(--muted);
+  text-shadow: none;
+  font-size: 12px;
+  line-height: 1.6;
+}
