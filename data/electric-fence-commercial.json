@@ -1,0 +1,442 @@
+{
+  "en": {
+    "metaTitle": "Electric Fence Installation, Repairs & Farm Fencing in Tanzania",
+    "metaDescription": "Electric fence installation and repairs for homes and businesses in Moshi, Arusha and Tanzania. Discuss Nemtek equipment, farm fencing and specialist perimeter assessments.",
+    "service": "Electric fence installation in Tanzania",
+    "title": "A better boundary.",
+    "emphasis": "A considered solution.",
+    "intro": "For homes, businesses and farms. We assess your boundary, select suitable equipment and plan a neat installation.",
+    "heroAction": "Find your fencing solution",
+    "whatsapp": "Discuss my fence",
+    "territory": "Moshi · Arusha · Nationwide enquiries",
+    "jump": [
+      "Your application",
+      "Equipment & price",
+      "Questions"
+    ],
+    "applicationLabel": "START WITH YOUR SITE",
+    "applicationTitle": "What is your fence for?",
+    "applicationIntro": "Three different briefs. A system selected for the job.",
+    "applications": [
+      {
+        "id": "security",
+        "name": "Homes & businesses",
+        "short": "Security around the places that matter.",
+        "title": "A stronger security perimeter.",
+        "body": "Wall-top or free-standing security fencing for homes, offices, apartment compounds, schools, hotels, warehouses and industrial premises.",
+        "points": [
+          "Assess wall condition, gates, public paths and access for maintenance.",
+          "Match the energizer, wire layout and alarm zones to the perimeter.",
+          "Plan warning signs, backup and what happens when an alarm sounds."
+        ],
+        "note": "CCTV, lighting and gate control complement the fence; they do not replace a clear alarm-response plan.",
+        "action": "Request my installation quotation",
+        "context": "Electric fence — home or business",
+        "image": "/assets/electric-fence-commercial/security-1440.webp",
+        "alt": "Illustrative wall-top security fence with insulators and warning signage"
+      },
+      {
+        "id": "agriculture",
+        "name": "Farms & livestock",
+        "short": "Boundaries that work with your land.",
+        "title": "Plan around your animals and land.",
+        "body": "Livestock containment, paddock divisions and crop-protection enquiries need an agricultural design, not a wall-top security-fence package.",
+        "points": [
+          "Tell us the animal species, boundary purpose and permanent or movable layout.",
+          "Assess soil, seasonal vegetation, gates, terrain and water crossings.",
+          "Size the agricultural energizer and power supply for actual fence conditions."
+        ],
+        "note": "Crop protection depends on the animals involved. We confirm the practical delivery scope after assessing your land.",
+        "action": "Request a farm perimeter assessment",
+        "context": "Agricultural electric fence assessment",
+        "image": "/assets/agricultural-fence-1440.webp",
+        "alt": "Illustrative livestock paddock with electric fence wires and insulators"
+      },
+      {
+        "id": "specialist",
+        "name": "Large & wildlife perimeters",
+        "short": "Specialist assessment comes first.",
+        "title": "More perimeter. More planning.",
+        "body": "Large commercial boundaries and wildlife-related briefs require distinct assessments. A commercial security design is not automatically suitable for animal management.",
+        "points": [
+          "Map the boundary, zones, patrol access and monitoring requirements.",
+          "For wildlife, assess species, movement, people and environmental constraints with the relevant specialists.",
+          "Confirm equipment, safety planning and delivery capability before committing to installation."
+        ],
+        "note": "Request a scoped assessment or BOQ discussion. No wildlife-containment result or one-size-fits-all specification is promised.",
+        "action": "Discuss a specialist perimeter",
+        "context": "Large perimeter or wildlife fence assessment",
+        "image": "/assets/electric-fence-commercial/perimeter-1440.webp",
+        "alt": "Illustrative commercial perimeter with fence supports, insulators and warning signage; not a wildlife specification"
+      }
+    ],
+    "briefLabel": "MAKE YOUR ENQUIRY MORE USEFUL",
+    "mountLabel": "What is already on site?",
+    "mountOptions": [
+      "Not sure yet",
+      "An existing wall",
+      "An open boundary / posts",
+      "An existing electric fence"
+    ],
+    "lengthLabel": "Approximate perimeter",
+    "lengthPlaceholder": "e.g. 120",
+    "metres": "metres · optional",
+    "quote": "Request Current Price",
+    "survey": "Request Site Survey",
+    "briefNote": "No measurements yet? Leave this blank. A site survey confirms the specification and price.",
+    "briefPrefix": "Electric fence",
+    "priceLabel": "ONE CLEAR, ITEMISED QUOTATION",
+    "priceTitle": "Your perimeter shapes the price.",
+    "priceIntro": "Equipment, installation, testing and handover—priced for your site. We confirm the scope before you commit.",
+    "priceFactors": [
+      [
+        "The boundary",
+        "Perimeter length, wall-top or free-standing installation, corners, gates and terrain."
+      ],
+      [
+        "The fence system",
+        "Wire lines, brackets or posts, energizer capacity and monitoring zones."
+      ],
+      [
+        "Power & protection",
+        "Mains availability, battery or solar sizing, earthing and lightning/surge protection."
+      ],
+      [
+        "Work & upkeep",
+        "Vegetation, access, labour, maintenance needs and agreed after-sales support."
+      ]
+    ],
+    "priceNote": "No fixed per-metre price without a specification. Supply availability and any warranty terms are confirmed in your quotation.",
+    "equipmentLabel": "THE RIGHT PARTS. WORKING TOGETHER.",
+    "equipmentTitle": "A complete system, not just an energizer.",
+    "equipmentIntro": "Choose the application first. We then assess the equipment, power and protection it needs.",
+    "equipment": [
+      [
+        "Energizer & power supply",
+        "A security energizer can monitor fence faults and alarms; an agricultural energizer is selected for animal management. Capacity and zone planning depend on the layout and conditions—not the biggest number on a box."
+      ],
+      [
+        "Wire, supports & insulators",
+        "HT fence wire, brackets or posts, insulators and tensioning accessories are selected together. High-voltage insulated lead-out cable is different from the bare fence conductor. Materials, wire lines and mounting details are specified after assessment."
+      ],
+      [
+        "Earthing & lightning protection",
+        "Soil moisture and dry-season conditions affect the earth system. We assess earthing, lead-out routing and suitable lightning/surge protection using the selected manufacturer’s instructions. Protection reduces risk; it is not a guarantee against storm damage."
+      ],
+      [
+        "Warning signs, monitoring & alarms",
+        "Plan visible warning signs, public access, gates, isolation and maintenance access. Where specified, compatible monitoring, sirens or alarm interfaces help identify faults; the customer still needs an agreed response procedure."
+      ],
+      [
+        "Battery or solar backup",
+        "Assess power availability, battery condition, required autonomy and solar exposure. Battery capacity, charger and panel sizing must suit the chosen energizer and site. Backup duration is confirmed for the specified system."
+      ],
+      [
+        "CCTV & security integration",
+        "Compatible alarm contacts or supported interfaces can be considered alongside CCTV and access control. We verify the exact equipment and interface first; phone alerts, apps and automatic camera actions are not included by default."
+      ]
+    ],
+    "brandsTitle": "Recognisable equipment. Clear selection.",
+    "brandsIntro": "Nemtek equipment references. Final models and availability are confirmed in your quotation.",
+    "modelDescriptions": [
+      "Single-zone security energizer; a reference for assessed residential/security briefs.",
+      "Dual-zone security energizer; a reference for separately planned security zones.",
+      "Agricultural mains/battery energizer; a different application from security fencing."
+    ],
+    "official": "Manufacturer details",
+    "brandNote": "“10km” is a model label, not a promise of coverage on your land. Models, current supply, price, accessories and suitability are confirmed before quotation.",
+    "maintenanceLabel": "ALREADY HAVE AN ELECTRIC FENCE?",
+    "maintenanceTitle": "Restore confidence in your perimeter.",
+    "maintenanceBody": "Repeated alarms, broken wires, damaged insulators or weak backup? Ask for fault diagnosis and a maintenance plan. We check the system before recommending repairs or a replacement energizer.",
+    "repairAction": "Arrange fence repairs",
+    "replacementAction": "Ask about a replacement energizer",
+    "repairContext": "Electric fence repairs and maintenance",
+    "replacementContext": "Electric fence replacement energizer",
+    "maintenanceNote": "Keep people clear of damaged sections. Do not touch or attempt repairs on an energised fence; use a competent technician.",
+    "processLabel": "FROM BOUNDARY TO HANDOVER",
+    "processTitle": "A clear route to a working fence.",
+    "process": [
+      [
+        "Assess",
+        "Measure the perimeter, inspect the site and clarify the application and risks."
+      ],
+      [
+        "Specify & install",
+        "Agree equipment, wire layout, power, protection, installation and testing scope."
+      ],
+      [
+        "Test & hand over",
+        "Check operation and alarms; explain isolation, routine care and agreed support."
+      ]
+    ],
+    "faqLabel": "BEFORE YOU DECIDE",
+    "faqTitle": "Useful answers. Without the jargon.",
+    "faqs": [
+      [
+        "Can I use a security energizer on my farm?",
+        "Do not assume the same unit or layout suits both jobs. Nemtek separates security and animal-management ranges. Tell us the species, boundary purpose and land conditions so the appropriate system can be assessed."
+      ],
+      [
+        "Can you quote from the length of my wall?",
+        "Length is a useful start. We also need wall condition, wire lines, brackets, gates, zones, vegetation, power and earthing requirements. A site survey confirms the specification; we do not invent a universal price per metre."
+      ],
+      [
+        "Will it work during a power cut?",
+        "A suitable battery or solar arrangement may be specified. Actual runtime depends on the energizer, battery health and capacity, charging and fence condition. We confirm the proposed backup scope rather than promising a fixed number of hours."
+      ],
+      [
+        "Why does my fence alarm when it rains?",
+        "Vegetation, damaged insulators, loose connections, poor tension or earthing problems can contribute to faults. A technician should inspect and test the system; do not bypass alarms or simply increase output to hide a problem."
+      ],
+      [
+        "Is an electric fence suitable near children or public paths?",
+        "Public access, signs, separation, gate use and safe maintenance must be assessed. It is not harmless to touch. Installation must follow the selected manufacturer’s current instructions and applicable local requirements. Never connect fence wires directly to mains power or electrify barbed/razor wire."
+      ],
+      [
+        "Can it connect to my CCTV or alarm?",
+        "Possibly, through compatible supported interfaces. Share the make and model of your existing equipment. We assess integration separately; an alarm signal is not the same as a guaranteed phone notification or a monitored response service."
+      ],
+      [
+        "Do you take on large or wildlife-related boundaries?",
+        "Start with a scoped assessment. Commercial security and wildlife management require different designs. Species, land use, access, environmental constraints and specialist delivery capability must be established before an installation commitment."
+      ],
+      [
+        "What should I send with my enquiry?",
+        "Your location, application, approximate perimeter, wall or boundary photographs, power availability and any existing energizer model. Do not touch live wires to obtain photographs. We will advise whether a site visit is needed."
+      ]
+    ],
+    "finalLabel": "LET’S PLAN YOUR PERIMETER",
+    "finalTitle": "Show us the boundary. We’ll help with the next step.",
+    "finalBody": "Send your location and tell us whether you need a new installation, repairs or an application-specific assessment.",
+    "finalAction": "Request an electric-fence quotation",
+    "callLabel": "Call national sales",
+    "relatedTitle": "Build a coordinated security system",
+    "related": [
+      "CCTV installation",
+      "Gate automation",
+      "Backup power",
+      "Institutional equipment & BOQs"
+    ],
+    "disclosure": "Service imagery is illustrative, including AI-generated scenes; it does not show completed BM projects or exact product configurations."
+  },
+  "sw": {
+    "metaTitle": "Ufungaji na Matengenezo ya Uzio wa Umeme Tanzania",
+    "metaDescription": "Ufungaji na matengenezo ya uzio wa umeme kwa makazi na biashara Moshi, Arusha na Tanzania. Jadili vifaa vya Nemtek na tathmini ya uzio wa mashamba na maeneo makubwa.",
+    "service": "Ufungaji wa uzio wa umeme Tanzania",
+    "title": "Linda mpaka wako.",
+    "emphasis": "Kwa mfumo unaofaa.",
+    "intro": "Kwa nyumba, biashara au shamba lako, anza na uzio uliopangwa kulingana na eneo na matumizi yako.",
+    "heroAction": "Chagua uzio unaohitaji",
+    "whatsapp": "Jadili uzio wako",
+    "territory": "Moshi · Arusha · Maombi kutoka Tanzania nzima",
+    "jump": [
+      "Aina ya matumizi",
+      "Vifaa na bei",
+      "Maswali"
+    ],
+    "applicationLabel": "ANZA NA MAHITAJI YA ENEO LAKO",
+    "applicationTitle": "Uzio wako ni kwa matumizi gani?",
+    "applicationIntro": "Mahitaji matatu tofauti. Kila moja linahitaji mfumo unaofaa.",
+    "applications": [
+      {
+        "id": "security",
+        "name": "Makazi na biashara",
+        "short": "Ulinzi wa maeneo muhimu kwako.",
+        "title": "Imarisha ulinzi wa eneo lako.",
+        "body": "Uzio wa usalama juu ya ukuta au kwenye nguzo kwa nyumba, ofisi, makazi ya pamoja, shule, hoteli, maghala na maeneo ya viwanda.",
+        "points": [
+          "Kagua ukuta, mageti, njia za watu na nafasi ya kufanya matengenezo.",
+          "Chagua energizer, mpangilio wa waya na kanda za kengele kulingana na eneo.",
+          "Panga alama za tahadhari, umeme wa akiba na hatua za kuchukua kengele ikilia."
+        ],
+        "note": "CCTV, taa na udhibiti wa geti huongeza ulinzi. Bado unahitaji utaratibu wa kushughulikia kengele.",
+        "action": "Omba makadirio ya ufungaji",
+        "context": "Uzio wa umeme — makazi au biashara",
+        "image": "/assets/electric-fence-commercial/security-1440.webp",
+        "alt": "Picha ya mfano ya uzio wa usalama juu ya ukuta wenye vihami na alama ya tahadhari"
+      },
+      {
+        "id": "agriculture",
+        "name": "Mashamba na mifugo",
+        "short": "Uzio unaozingatia hali ya ardhi.",
+        "title": "Panga kwa mifugo na ardhi yako.",
+        "body": "Kudhibiti mifugo, kugawa maeneo ya malisho na kulinda mazao kunahitaji usanifu wa kilimo. Uzio wa usalama juu ya ukuta hauhamishwi tu kwenda shambani.",
+        "points": [
+          "Tueleze aina ya wanyama, lengo la uzio na kama utakuwa wa kudumu au wa kuhamishwa.",
+          "Kagua udongo, uoto wa misimu, mageti, miinuko na njia za maji.",
+          "Chagua energizer ya kilimo na chanzo cha umeme kulingana na hali halisi ya uzio."
+        ],
+        "note": "Ulinzi wa mazao hutegemea wanyama wanaohusika. Uwezo na mpango wa utekelezaji huthibitishwa baada ya tathmini ya shamba.",
+        "action": "Omba tathmini ya uzio wa shamba",
+        "context": "Tathmini ya uzio wa umeme wa shamba",
+        "image": "/assets/agricultural-fence-1440.webp",
+        "alt": "Picha ya mfano ya eneo la malisho lenye waya na vihami vya uzio wa umeme"
+      },
+      {
+        "id": "specialist",
+        "name": "Maeneo makubwa na wanyamapori",
+        "short": "Tathmini maalumu ndiyo hatua ya kwanza.",
+        "title": "Eneo kubwa linahitaji mpango makini.",
+        "body": "Mipaka mikubwa ya biashara na maeneo yanayohusisha wanyamapori huhitaji tathmini tofauti. Usanifu wa usalama wa biashara si lazima ufaae kudhibiti wanyama.",
+        "points": [
+          "Tambua mpaka, kanda, njia za ukaguzi na mahitaji ya ufuatiliaji.",
+          "Kwa wanyamapori, tathmini aina na mienendo yao, watu na mazingira kwa kushirikisha wataalamu husika.",
+          "Thibitisha vifaa, mpango wa usalama na uwezo wa utekelezaji kabla ya kukubaliana ufungaji."
+        ],
+        "note": "Anza kwa tathmini au mjadala wa BOQ. Hakuna ahadi ya kudhibiti kila mnyama au mfumo mmoja unaofaa kila eneo.",
+        "action": "Jadili uzio wa eneo maalumu",
+        "context": "Tathmini ya uzio wa eneo kubwa au wanyamapori",
+        "image": "/assets/electric-fence-commercial/perimeter-1440.webp",
+        "alt": "Mfano wa mpaka wa biashara wenye nguzo, vihami na alama za tahadhari; si usanifu wa uzio wa wanyamapori"
+      }
+    ],
+    "briefLabel": "TUSAIDIE KUELEWA ENEO LAKO",
+    "mountLabel": "Nini kipo kwenye eneo?",
+    "mountOptions": [
+      "Bado sina uhakika",
+      "Ukuta uliopo",
+      "Eneo la wazi / nguzo",
+      "Uzio wa umeme uliopo"
+    ],
+    "lengthLabel": "Urefu wa mpaka kwa makadirio",
+    "lengthPlaceholder": "mfano 120",
+    "metres": "mita · si lazima",
+    "quote": "Ulizia Bei ya Sasa",
+    "survey": "Omba Ukaguzi wa Eneo",
+    "briefNote": "Huna vipimo bado? Acha wazi. Ukaguzi wa eneo utasaidia kuthibitisha vifaa na bei.",
+    "briefPrefix": "Uzio wa umeme",
+    "priceLabel": "MAKADIRIO YALIYO WAZI",
+    "priceTitle": "Bei hutegemea eneo na kazi.",
+    "priceIntro": "Vifaa, ufungaji, majaribio na makabidhiano hukadiriwa kwa eneo lako. Tunakubaliana wigo wa kazi kabla ya kuendelea.",
+    "priceFactors": [
+      [
+        "Mpaka wa eneo",
+        "Urefu, ukuta au nguzo, kona, mageti na hali ya ardhi."
+      ],
+      [
+        "Mfumo wa uzio",
+        "Mistari ya waya, brackets au nguzo, uwezo wa energizer na kanda za ufuatiliaji."
+      ],
+      [
+        "Umeme na kinga",
+        "Upatikanaji wa umeme, betri au sola, earthing na kinga ya radi na msukumo wa umeme."
+      ],
+      [
+        "Kazi na matunzo",
+        "Uoto, upatikanaji wa eneo, ufundi, matengenezo na msaada mliokubaliana baada ya ufungaji."
+      ]
+    ],
+    "priceNote": "Bei ya mita haiwezi kuthibitishwa bila kujua mfumo. Upatikanaji wa vifaa na masharti yoyote ya dhamana huthibitishwa kwenye makadirio.",
+    "equipmentLabel": "VIFAA VINAVYOFANYA KAZI PAMOJA",
+    "equipmentTitle": "Mfumo kamili, si energizer pekee.",
+    "equipmentIntro": "Anza na matumizi. Kisha tathmini vifaa, chanzo cha umeme na kinga vinavyohitajika.",
+    "equipment": [
+      [
+        "Energizer na chanzo cha umeme",
+        "Energizer ni kifaa cha kutoa mipigo ya umeme kwenye uzio. Ya usalama inaweza kufuatilia hitilafu na kengele; ya kilimo huchaguliwa kwa udhibiti wa wanyama. Uwezo na kanda hutegemea mpangilio na hali ya eneo, si namba kubwa kwenye boksi."
+      ],
+      [
+        "Waya, nguzo na vihami",
+        "Waya wa uzio wa HT, brackets au nguzo, vihami (insulators) na vifaa vya kukaza waya huchaguliwa kwa pamoja. Kebo yenye kihami ya kuunganisha energizer na uzio ni tofauti na waya wazi wa uzio. Idadi ya mistari na namna ya kufunga hutokana na tathmini."
+      ],
+      [
+        "Earthing na kinga ya radi",
+        "Mfumo wa kuunganisha uzio ardhini (earthing) huathiriwa na unyevu wa udongo na ukame. Tunatathmini earthing, njia za kebo na kinga ya radi na msukumo wa umeme kulingana na maelekezo ya mtengenezaji. Kinga hupunguza hatari; haihakikishi kutopata uharibifu wa radi."
+      ],
+      [
+        "Alama, ufuatiliaji na kengele",
+        "Panga alama zinazoonekana, njia za watu, matumizi ya mageti na namna ya kuzima na kutenga mfumo kwa matengenezo. Vifaa vinavyolingana vya ufuatiliaji na kengele vinaweza kusaidia kutambua hitilafu; bado unahitaji utaratibu wa kuchukua hatua."
+      ],
+      [
+        "Betri au sola ya akiba",
+        "Kagua upatikanaji wa umeme, hali ya betri, muda wa akiba unaohitajika na mwanga wa jua. Betri, chaja na paneli zilingane na energizer na eneo. Muda wa akiba huthibitishwa kwa mfumo uliopendekezwa."
+      ],
+      [
+        "Kuunganisha na CCTV au kengele",
+        "Viunganishi vya kengele au interfaces zinazokubaliwa na vifaa vinaweza kutathminiwa pamoja na CCTV na udhibiti wa kuingia. Aina na modeli hukaguliwa kwanza; taarifa za simu, apps na kuwashwa kwa kamera kiotomatiki havijumuishwi moja kwa moja."
+      ]
+    ],
+    "brandsTitle": "Vifaa vinavyofahamika. Chaguo lililo wazi.",
+    "brandsIntro": "Mifano ya vifaa vya Nemtek. Modeli na upatikanaji huthibitishwa kwenye makadirio.",
+    "modelDescriptions": [
+      "Energizer ya usalama ya kanda moja; mfano wa kujadili baada ya tathmini ya makazi au biashara.",
+      "Energizer ya usalama ya kanda mbili; kwa mfumo wenye kanda zilizopangwa tofauti.",
+      "Energizer ya kilimo inayotumia umeme wa kawaida au betri; matumizi yake ni tofauti na uzio wa usalama."
+    ],
+    "official": "Maelezo ya mtengenezaji",
+    "brandNote": "“10km” ni jina la modeli, si ahadi ya eneo itakalohudumia shambani kwako. Modeli, upatikanaji, bei, vifaa vya ziada na kufaa kwake huthibitishwa kabla ya makadirio.",
+    "maintenanceLabel": "TAYARI UNA UZIO WA UMEME?",
+    "maintenanceTitle": "Rudisha ufanisi wa uzio wako.",
+    "maintenanceBody": "Kengele za mara kwa mara, waya zilizokatika, vihami vilivyoharibika au betri dhaifu? Omba uchunguzi wa hitilafu na mpango wa matengenezo. Tunakagua mfumo kabla ya kupendekeza ukarabati au kubadili energizer.",
+    "repairAction": "Panga matengenezo ya uzio",
+    "replacementAction": "Ulizia energizer ya kubadilisha",
+    "repairContext": "Matengenezo na ukarabati wa uzio wa umeme",
+    "replacementContext": "Energizer ya kubadilisha ya uzio wa umeme",
+    "maintenanceNote": "Watu wakae mbali na sehemu zilizoharibika. Usiguse wala kutengeneza uzio ukiwa na umeme; tumia fundi mwenye uwezo.",
+    "processLabel": "KUANZIA TATHMINI HADI MAKABIDHIANO",
+    "processTitle": "Hatua zilizo wazi za kupata uzio unaofaa.",
+    "process": [
+      [
+        "Tathmini",
+        "Pima mpaka, kagua eneo na fafanua matumizi pamoja na hatari zinazohusika."
+      ],
+      [
+        "Chagua na funga",
+        "Kubalianeni vifaa, mpangilio wa waya, umeme, kinga, ufungaji na majaribio."
+      ],
+      [
+        "Jaribu na kabidhi",
+        "Kagua utendaji na kengele; eleza kuzima na kutenga mfumo, matunzo na msaada mliokubaliana."
+      ]
+    ],
+    "faqLabel": "KABLA HUJAAMUA",
+    "faqTitle": "Majibu ya maswali ya kawaida.",
+    "faqs": [
+      [
+        "Je, energizer ya usalama inafaa shambani?",
+        "Usidhani kifaa na mpangilio mmoja unafaa matumizi yote. Nemtek hutofautisha vifaa vya usalama na vya kudhibiti wanyama. Tueleze aina ya wanyama, lengo la uzio na hali ya ardhi ili mfumo unaofaa utathminiwe."
+      ],
+      [
+        "Mnaweza kukadiria bei kwa urefu wa ukuta?",
+        "Urefu ni mwanzo mzuri. Pia tunahitaji hali ya ukuta, mistari ya waya, brackets, mageti, kanda, mimea, umeme na earthing. Ukaguzi unathibitisha mfumo; hatubuni bei moja ya kila mita kwa maeneo yote."
+      ],
+      [
+        "Je, uzio utafanya kazi umeme ukikatika?",
+        "Betri au sola inayofaa inaweza kupangwa. Muda halisi hutegemea energizer, hali na uwezo wa betri, chaji na hali ya uzio. Tunathibitisha mpango wa akiba badala ya kuahidi saa zisizo na msingi."
+      ],
+      [
+        "Kwa nini kengele inalia mvua ikinyesha?",
+        "Mimea, vihami vilivyoharibika, viunganishi vilivyolegea, waya au earthing vinaweza kuchangia hitilafu. Fundi akague na kupima mfumo; usipuuze kengele wala kuongeza nguvu ili kuficha tatizo."
+      ],
+      [
+        "Vipi kuhusu watoto na njia zinazotumiwa na watu?",
+        "Njia za watu, alama za tahadhari, utenganisho, mageti na matengenezo lazima vitathminiwe. Uzio si salama kuugusa. Ufungaji ufuate maelekezo ya sasa ya mtengenezaji na masharti husika ya eneo. Usiunganishe waya wa uzio moja kwa moja na umeme wa mains wala kuweka umeme kwenye waya wa miiba au wembe."
+      ],
+      [
+        "Unaweza kuunganishwa na CCTV au kengele yangu?",
+        "Inawezekana ikiwa vifaa vina viunganishi vinavyolingana. Tueleze chapa na modeli zilizopo. Muunganiko hutathminiwa tofauti; ishara ya kengele si ahadi ya ujumbe wa simu wala huduma ya ulinzi inayofuatiliwa."
+      ],
+      [
+        "Mnapokea maombi ya maeneo makubwa au wanyamapori?",
+        "Anza na tathmini yenye wigo ulio wazi. Usalama wa biashara na udhibiti wa wanyamapori huhitaji usanifu tofauti. Aina ya wanyama, matumizi ya ardhi, njia, mazingira na uwezo wa wataalamu lazima vithibitishwe kabla ya kukubaliana ufungaji."
+      ],
+      [
+        "Nitume nini ninapoomba makadirio?",
+        "Eneo lako, matumizi, urefu wa mpaka kwa makadirio, picha za ukuta au mpaka, upatikanaji wa umeme na modeli ya energizer iliyopo. Usiguse waya wenye umeme ili kupiga picha. Tutashauri kama ziara ya eneo inahitajika."
+      ]
+    ],
+    "finalLabel": "TUPANGE ULINZI WA MPAKA WAKO",
+    "finalTitle": "Tuonyeshe eneo. Tushauriane hatua inayofuata.",
+    "finalBody": "Tuma eneo lako na utuambie kama unahitaji ufungaji mpya, matengenezo au tathmini ya matumizi maalumu.",
+    "finalAction": "Omba makadirio ya uzio wa umeme",
+    "callLabel": "Piga simu mauzo",
+    "relatedTitle": "Unganisha mifumo ya ulinzi kwa mpango",
+    "related": [
+      "Ufungaji wa CCTV",
+      "Mageti ya kiotomatiki",
+      "Umeme wa akiba",
+      "Vifaa na BOQ za taasisi"
+    ],
+    "disclosure": "Picha ni mifano ya huduma, ikiwemo iliyozalishwa kwa AI; hazionyeshi miradi iliyokamilishwa na BM wala mpangilio halisi wa bidhaa."
+  }
+}

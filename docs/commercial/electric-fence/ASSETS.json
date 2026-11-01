@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-01",
+  "assets": [
+    {
+      "path": "public/assets/electric-fence-commercial/perimeter-1440.webp",
+      "bytes": 349014,
+      "sha256": "a37f8b0e74259e635f5ab4f792f445d111923d20047c25e37b50eabd65c4aa8b",
+      "source": "design-preview/media-originals/electric-fence-commercial/perimeter.png",
+      "origin": "Generated using built-in image generation for this BM page on 2026-11-01",
+      "usage": "Website service illustration; not product photography or BM project evidence"
+    },
+    {
+      "path": "public/assets/electric-fence-commercial/perimeter-640.webp",
+      "bytes": 79212,
+      "sha256": "a6f7d7cf7b8b3636eb9ffcebb5994fe82ffaa9dbe260b27ffc702c0e00066ed7",
+      "source": "design-preview/media-originals/electric-fence-commercial/perimeter.png",
+      "origin": "Generated using built-in image generation for this BM page on 2026-11-01",
+      "usage": "Website service illustration; not product photography or BM project evidence"
+    },
+    {
+      "path": "public/assets/electric-fence-commercial/perimeter-960.webp",
+      "bytes": 171330,
+      "sha256": "1682f1e642a78c6f656335e5b7d70d0ca2ca63070ce3a789d3c24740263f9907",
+      "source": "design-preview/media-originals/electric-fence-commercial/perimeter.png",
+      "origin": "Generated using built-in image generation for this BM page on 2026-11-01",
+      "usage": "Website service illustration; not product photography or BM project evidence"
+    },
+    {
+      "path": "public/assets/electric-fence-commercial/security-1440.webp",
+      "bytes": 229788,
+      "sha256": "20889f8ba709f5b8781e16ff6aeef785503e2f97f03af13d3476648557cf298d",
+      "source": "design-preview/media-originals/electric-fence-commercial/security.png",
+      "origin": "Generated using built-in image generation for this BM page on 2026-11-01",
+      "usage": "Website service illustration; not product photography or BM project evidence"
+    },
+    {
+      "path": "public/assets/electric-fence-commercial/security-640.webp",
+      "bytes": 65744,
+      "sha256": "25659d4fdb15737e05a3fa1f45035ab4db855c5d7ad9196a7e287e2c2bb66cfc",
+      "source": "design-preview/media-originals/electric-fence-commercial/security.png",
+      "origin": "Generated using built-in image generation for this BM page on 2026-11-01",
+      "usage": "Website service illustration; not product photography or BM project evidence"
+    },
+    {
+      "path": "public/assets/electric-fence-commercial/security-960.webp",
+      "bytes": 126324,
+      "sha256": "3b15b8163203e1a0ea1a7f5c963f66bc99e7baab2692e5f80b8758d1b72becc1",
+      "source": "design-preview/media-originals/electric-fence-commercial/security.png",
+      "origin": "Generated using built-in image generation for this BM page on 2026-11-01",
+      "usage": "Website service illustration; not product photography or BM project evidence"
+    }
+  ],
+  "reusedAsset": "public/assets/agricultural-fence-1440.webp (approved existing generated illustration; original design-preview/media-originals/agricultural-fence.png)",
+  "manufacturerImages": "None copied. Reproduction rights not established; official pages linked instead.",
+  "depictedIdentities": "No BM clients, real projects, staff or official manufacturer branding represented.",
+  "generatedAssetRights": "Generated for the project using the available image-generation tool, subject to applicable service terms. No third-party licence or manufacturer authorization is asserted.",
+  "optimization": "640/960/1440 WebP variants; next/image with responsive sizes; hero eager/preloaded, other scenes lazy. Originals preserved outside public runtime assets."
+}

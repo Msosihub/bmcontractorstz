@@ -1,27 +1,26 @@
-/**
- * Electric Fence Service Page
- * ---------------------------
- * Public service page for electric fence installation.
- *
- * SEO:
- * - Strong title and description for electric fence services in Tanzania.
- */
-
-import { ServiceDetailPage } from "@/components/site/ServiceDetailPage";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { ElectricFenceCommercialPage } from "@/components/premium/electric-fence/Page";
+import copy from "@/data/electric-fence-commercial.json";
+import { getServiceRecord } from "@/lib/services";
 import { isLanguage, type Language } from "@/lib/i18n/config";
-
-
+import { pageMetadata } from "@/lib/seo";
 type PageProps = {
-  searchParams: Promise<{
-    lang?: string;
-  }>;
+    searchParams: Promise<{
+        lang?: string;
+    }>;
 };
-
-export default async function ElectricFenceServicePage({
-  searchParams,
-}: PageProps) {
-  const params = await searchParams;
-  const lang: Language = isLanguage(params.lang) ? params.lang : "en";
-
-  return <ServiceDetailPage lang={lang} slug="electric-fence" />;
+export async function generateMetadata({ searchParams }: PageProps): Promise<Metadata> {
+    const p = await searchParams, lang: Language = isLanguage(p.lang) ? p.lang : "en";
+    const record = await getServiceRecord("electric-fence");
+    if (record && !record.isPublished)
+        return { robots: { index: false, follow: false } };
+    return pageMetadata("/services/electric-fence", lang, [copy[lang].metaTitle, copy[lang].metaDescription]);
+}
+export default async function ElectricFenceServicePage({ searchParams }: PageProps) {
+    const p = await searchParams, lang: Language = isLanguage(p.lang) ? p.lang : "en";
+    const record = await getServiceRecord("electric-fence");
+    if (record && !record.isPublished)
+        notFound();
+    return <ElectricFenceCommercialPage lang={lang} record={record}/>;
 }

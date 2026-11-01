@@ -1,0 +1,16 @@
+{
+  "checkedOn": "2026-11-01",
+  "scope": "Manufacturer information only; no verified BM model inventory, retail prices, warranty or authorized-dealer status.",
+  "models": [
+    {"name":"Nemtek Druid 13LCD","application":"security-single-zone","url":"https://www.nemtek.co.za/product/druid-13lcd-energizer/","verifiedFact":"Single-zone security energizer with LCD and alarm monitoring; model-specific accessories and backup must be confirmed."},
+    {"name":"Nemtek Druid 28LCD","application":"security-dual-zone","url":"https://www.nemtek.co.za/product/druid-28lcd-energizer/","verifiedFact":"Dual-zone security energizer with LCD; not a universal perimeter-size recommendation."},
+    {"name":"Nemtek Agri 10km","application":"agricultural","url":"https://www.nemtek.co.za/product/agri-10km-energizer/","verifiedFact":"Mains/battery agricultural energizer; the model label is not a coverage guarantee."}
+  ],
+  "guidance": [
+    {"url":"https://www.nemtek.co.za/product-category/game-wildlife/game-energizers/","purpose":"Separate wildlife/animal-management equipment category; does not establish BM wildlife delivery capability."},
+    {"url":"https://www.nemtek.co.za/documents/","purpose":"Current product-specific user/installer manuals and lightning-protection documentation; actual installation follows the selected manual and applicable local requirements."},
+    {"url":"https://nemtek.co.za/wp-content/uploads/2021/09/instruction-manual-pet.pdf","purpose":"Manufacturer earthing principles: output, soil and moisture affect earthing; no universal electrode specification copied to public copy."}
+  ],
+  "bmPriceEvidence": "No approved current price record supplied; legacy seed examples are not verified inventory or pricing and were not used.",
+  "manufacturerImageRights": "Unverified; no manufacturer photography downloaded or reproduced. Official product pages linked instead."
+}
