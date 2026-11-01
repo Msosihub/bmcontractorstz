@@ -44,6 +44,5 @@ next-env.d.ts
 
 /.test-cache/
 
-# Official product photos: local review only until reuse permissions are documented.
-/public/assets/electric-fence-products/
+# Unoptimised source photos retained locally; owner-approved web variants are tracked.
 /design-preview/media-originals/electric-fence-products/

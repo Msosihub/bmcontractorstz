@@ -194,7 +194,7 @@
     }
   ],
   "bmPriceEvidence": "No approved current price record supplied; legacy seed examples are not verified inventory or pricing and were not used.",
-  "manufacturerImageRights": "Actual official-source photographs used for local review only; all commercial reuse clearances pending. See data/electric-fence-product-images.json. Images excluded from Git until cleared; hosted/Production builds blocked by media policy.",
+  "manufacturerImageRights": "Publication authorized by BM owner on 2026-11-02 following telephone confirmation from BM equipment suppliers. Supplier names and rights-holder authority not independently verified. Sources, hashes and confirmation recorded in data/electric-fence-product-images.json.",
   "pendingBrands": [
     {
       "ownerSpelling": "Lanster",

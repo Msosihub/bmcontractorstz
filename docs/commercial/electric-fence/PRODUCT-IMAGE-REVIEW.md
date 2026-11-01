@@ -40,3 +40,9 @@ All work remains on the local electric-fencing branch; no push, merge, deploymen
 - The user's existing local browser tab was refreshed and confirmed to contain eight product photos and no visible “Pause movement” wording.
 
 Evidence is retained outside the source tree in `outputs/electric-fence-images-20261102/`: `browser-results.json`, `tests.log`, `build.log`, `types.log`, `lint.log`, `publication-block.json`, and `after-{en,sw}-{desktop,mobile}-{catalogue,customers}.png`.
+
+## Owner publication confirmation — 2 November 2026
+
+The owner explicitly confirmed that BM's equipment suppliers were contacted by telephone and advised proceeding with publication of the eight product photographs. Publication is authorized on that owner-reported supplier confirmation. Supplier names and written rights-holder permission were not supplied or independently verified; this record does not assert a public-domain licence or official manufacturer endorsement. The prior local-only status above describes the earlier review. Optimised WebP variants are now tracked for release; originals remain locally preserved.
+
+The existing publication validator remains in place. All eight records now contain the actual owner-reported evidence; tests continue to reject missing approval or evidence. No product labels or device geometry have been altered.

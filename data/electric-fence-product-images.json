@@ -1,6 +1,6 @@
 {
   "checkedOn": "2026-11-02",
-  "publicationStatus": "BLOCKED: local review only until image permissions are recorded",
+  "publicationStatus": "Approved by BM owner on 2026-11-02 following supplier telephone confirmation; supplier identity and written rights-holder confirmation not independently verified",
   "assets": [
     {
       "id": "nemtek-druid-13lcd",
@@ -26,10 +26,10 @@
           "sha256": "601d17cdd9e60a1fea67bf48c56b4ddf30344ffce17d7f08f3cbefada74a1752"
         }
       ],
-      "usage": "Local design review only",
-      "productionApproved": false,
-      "permissionEvidence": "",
-      "rightsStatus": "Explicit reproduction restriction; written permission required",
+      "usage": "BM commercial equipment guide, owner-authorized publication",
+      "productionApproved": true,
+      "permissionEvidence": "BM owner confirmation in this conversation on 2026-11-02: called BM equipment suppliers, who advised proceeding with publication of these eight photographs. Oral supplier confirmation; names not provided; rights-holder authority not independently verified.",
+      "rightsStatus": "Owner-reported supplier permission; not a public-domain or manufacturer licence assertion",
       "changes": "Orientation metadata normalized; proportion-preserving resize and WebP compression only. No generative enhancement, label alteration, watermark removal or product reconstruction."
     },
     {
@@ -56,10 +56,10 @@
           "sha256": "eaa3b71f5e920094cc158d3ec7d9408cf28e50d6df20fcc859e5f5c48ecfcb69"
         }
       ],
-      "usage": "Local design review only",
-      "productionApproved": false,
-      "permissionEvidence": "",
-      "rightsStatus": "Explicit reproduction restriction; written permission required",
+      "usage": "BM commercial equipment guide, owner-authorized publication",
+      "productionApproved": true,
+      "permissionEvidence": "BM owner confirmation in this conversation on 2026-11-02: called BM equipment suppliers, who advised proceeding with publication of these eight photographs. Oral supplier confirmation; names not provided; rights-holder authority not independently verified.",
+      "rightsStatus": "Owner-reported supplier permission; not a public-domain or manufacturer licence assertion",
       "changes": "Orientation metadata normalized; proportion-preserving resize and WebP compression only. No generative enhancement, label alteration, watermark removal or product reconstruction."
     },
     {
@@ -86,10 +86,10 @@
           "sha256": "164456e1093253a0cb6e6ab15f3963d6dba5eb7f282664b9858630f6e23256f1"
         }
       ],
-      "usage": "Local design review only",
-      "productionApproved": false,
-      "permissionEvidence": "",
-      "rightsStatus": "Explicit reproduction restriction; written permission required",
+      "usage": "BM commercial equipment guide, owner-authorized publication",
+      "productionApproved": true,
+      "permissionEvidence": "BM owner confirmation in this conversation on 2026-11-02: called BM equipment suppliers, who advised proceeding with publication of these eight photographs. Oral supplier confirmation; names not provided; rights-holder authority not independently verified.",
+      "rightsStatus": "Owner-reported supplier permission; not a public-domain or manufacturer licence assertion",
       "changes": "Orientation metadata normalized; proportion-preserving resize and WebP compression only. No generative enhancement, label alteration, watermark removal or product reconstruction."
     },
     {
@@ -116,10 +116,10 @@
           "sha256": "48237fea6b3724485f0f0dc8abb6331b0a1d42e061b6d8e5a6e06306270db3e9"
         }
       ],
-      "usage": "Local design review only",
-      "productionApproved": false,
-      "permissionEvidence": "",
-      "rightsStatus": "Commercial reuse permission unconfirmed",
+      "usage": "BM commercial equipment guide, owner-authorized publication",
+      "productionApproved": true,
+      "permissionEvidence": "BM owner confirmation in this conversation on 2026-11-02: called BM equipment suppliers, who advised proceeding with publication of these eight photographs. Oral supplier confirmation; names not provided; rights-holder authority not independently verified.",
+      "rightsStatus": "Owner-reported supplier permission; not a public-domain or manufacturer licence assertion",
       "changes": "Orientation metadata normalized; proportion-preserving resize and WebP compression only. No generative enhancement, label alteration, watermark removal or product reconstruction."
     },
     {
@@ -146,10 +146,10 @@
           "sha256": "1bd72dbcf138a741a1dcb3b7fc25995590bf54c42212cd53406a2bdf18b12b03"
         }
       ],
-      "usage": "Local design review only",
-      "productionApproved": false,
-      "permissionEvidence": "",
-      "rightsStatus": "Commercial reuse permission unconfirmed",
+      "usage": "BM commercial equipment guide, owner-authorized publication",
+      "productionApproved": true,
+      "permissionEvidence": "BM owner confirmation in this conversation on 2026-11-02: called BM equipment suppliers, who advised proceeding with publication of these eight photographs. Oral supplier confirmation; names not provided; rights-holder authority not independently verified.",
+      "rightsStatus": "Owner-reported supplier permission; not a public-domain or manufacturer licence assertion",
       "changes": "Orientation metadata normalized; proportion-preserving resize and WebP compression only. No generative enhancement, label alteration, watermark removal or product reconstruction."
     },
     {
@@ -176,10 +176,10 @@
           "sha256": "7497353e173561b04f5134f8ed0ab648b7d5c6e34bd4d6c0650197ff99691c7f"
         }
       ],
-      "usage": "Local design review only",
-      "productionApproved": false,
-      "permissionEvidence": "",
-      "rightsStatus": "Commercial reuse permission unconfirmed",
+      "usage": "BM commercial equipment guide, owner-authorized publication",
+      "productionApproved": true,
+      "permissionEvidence": "BM owner confirmation in this conversation on 2026-11-02: called BM equipment suppliers, who advised proceeding with publication of these eight photographs. Oral supplier confirmation; names not provided; rights-holder authority not independently verified.",
+      "rightsStatus": "Owner-reported supplier permission; not a public-domain or manufacturer licence assertion",
       "changes": "Orientation metadata normalized; proportion-preserving resize and WebP compression only. No generative enhancement, label alteration, watermark removal or product reconstruction."
     },
     {
@@ -206,10 +206,10 @@
           "sha256": "589f02dcde18c72e89162306965fbc585bda6b3eeb339105d95f3e6c80a2a861"
         }
       ],
-      "usage": "Local design review only",
-      "productionApproved": false,
-      "permissionEvidence": "",
-      "rightsStatus": "Commercial reuse permission unconfirmed",
+      "usage": "BM commercial equipment guide, owner-authorized publication",
+      "productionApproved": true,
+      "permissionEvidence": "BM owner confirmation in this conversation on 2026-11-02: called BM equipment suppliers, who advised proceeding with publication of these eight photographs. Oral supplier confirmation; names not provided; rights-holder authority not independently verified.",
+      "rightsStatus": "Owner-reported supplier permission; not a public-domain or manufacturer licence assertion",
       "changes": "Orientation metadata normalized; proportion-preserving resize and WebP compression only. No generative enhancement, label alteration, watermark removal or product reconstruction."
     },
     {
@@ -236,11 +236,18 @@
           "sha256": "3c25485bcfb3328bffebee92f7d1a87ed22d035f200614e545397913164895c1"
         }
       ],
-      "usage": "Local design review only",
-      "productionApproved": false,
-      "permissionEvidence": "",
-      "rightsStatus": "Commercial reuse permission unconfirmed",
+      "usage": "BM commercial equipment guide, owner-authorized publication",
+      "productionApproved": true,
+      "permissionEvidence": "BM owner confirmation in this conversation on 2026-11-02: called BM equipment suppliers, who advised proceeding with publication of these eight photographs. Oral supplier confirmation; names not provided; rights-holder authority not independently verified.",
+      "rightsStatus": "Owner-reported supplier permission; not a public-domain or manufacturer licence assertion",
       "changes": "Orientation metadata normalized; proportion-preserving resize and WebP compression only. No generative enhancement, label alteration, watermark removal or product reconstruction."
     }
-  ]
+  ],
+  "ownerConfirmation": {
+    "date": "2026-11-02",
+    "method": "Owner-reported telephone conversations with BM equipment suppliers",
+    "statement": "BM owner confirms suppliers advised BM to proceed with commercial publication of all eight product photographs.",
+    "supplierNamesProvided": false,
+    "independentlyVerified": false
+  }
 }
