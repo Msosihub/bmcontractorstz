@@ -74,6 +74,7 @@ test("qualified CCTV brief survives established contact, survey and safe WhatsAp
 
 const { renderToStaticMarkup } = await import("react-dom/server");
 const planner = await bundle("components/premium/cctv/Planner.tsx", {
+  "next/image": "import React from 'react'; export default function Image({fill,sizes,...props}){return React.createElement('img',props)}",
   "lucide-react":
     "import React from 'react'; const Icon=props=>React.createElement('svg',props); export {Icon as House,Icon as Store,Icon as Briefcase,Icon as Hotel,Icon as School,Icon as Warehouse,Icon as Landmark};",
 });
@@ -90,4 +91,20 @@ test("CCTV offers four complete-installation enquiries rather than single-camera
     assert.doesNotMatch(html, /TZS\s*\d|Add to cart|Buy now|DS-2CD|TC-C34/);
     assert.match(html, lang === "sw" ? /HDD na nyaya/ : /HDD &amp; cabling/);
   }
+});
+
+test('CCTV premises panels preserve seven specific applications and contextual installed-solution enquiries', async()=>{
+ const copy=JSON.parse(await (await import('node:fs/promises')).readFile('data/cctv-commercial.json','utf8'));
+ for(const lang of ['en','sw']){
+  const t=copy[lang],html=renderToStaticMarkup(createElement(planner.CctvPlanner,{lang}));
+  assert.equal(t.cases.length,7);assert.equal((html.match(/class="cctv-application-panel"/g)||[]).length,7);
+  assert.equal((html.match(/class="cctv-application-panel" hidden=""/g)||[]).length,6);
+  for(const item of t.cases){
+   assert(item.panelTitle&&item.short&&item.imageAlt&&item.points.length===2);
+   assert.match(html,new RegExp('aria-controls="cctv-place-'+item.id+'"'));
+   const link=new URL(cctvLinks(lang,`CCTV installation — ${item.name}`).quote,'http://local');assert.equal(link.searchParams.get('lang'),lang);assert.equal(link.searchParams.get('subject'),`CCTV installation — ${item.name}`);
+   await (await import('node:fs/promises')).access('public'+item.image);
+  }
+  assert.match(t.cases.find(x=>x.id==='hotel').points.join(' '),lang==='en'?/Exclude guest bedrooms/:/vyumba vya kulala/);
+ }
 });

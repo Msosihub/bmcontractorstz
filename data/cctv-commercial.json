@@ -31,43 +31,99 @@
         "id": "home",
         "name": "Home & compound",
         "coverage": "Start with the gate, entrances and parking, then cover the important gaps around your compound.",
-        "approach": "Consider a 4MP IP/PoE system for a new installation, or assess a compatible HD upgrade where sound coaxial cabling already exists."
+        "approach": "Consider a 4MP IP/PoE system for a new installation, or assess a compatible HD upgrade where sound coaxial cabling already exists.",
+        "panelTitle": "Everyday confidence, around your home.",
+        "short": "Entrances, parking & boundaries",
+        "points": [
+          "Plan night lighting, recording time and power backup.",
+          "Keep neighbours’ homes and private rooms outside the view."
+        ],
+        "image": "/assets/cctv-960.webp",
+        "imageAlt": "CCTV camera overlooking a building entrance"
       },
       {
         "id": "shop",
         "name": "Shop",
         "coverage": "Cover the entrance, till and stock areas, with closer views where transaction detail matters.",
-        "approach": "Balance overview cameras with closer views at important points. Check backlighting, lighting after closing and safe recorder placement."
+        "approach": "Balance overview cameras with closer views at important points. Check backlighting, lighting after closing and safe recorder placement.",
+        "panelTitle": "See the important moments in your shop.",
+        "short": "Entrance, counter & stock",
+        "points": [
+          "Choose views for transaction detail as well as an overview.",
+          "Discuss authorised phone viewing and recording retention."
+        ],
+        "image": "/assets/cctv-applications/shop-960.webp",
+        "imageAlt": "Shop entrance and sales counter with a discreet wall-mounted camera"
       },
       {
         "id": "office",
         "name": "Tour office & business",
         "coverage": "Keep reception, access points and shared office areas in view, with tidy cabling and controlled viewing access.",
-        "approach": "Plan tidy cable containment, staff viewing permissions and remote checks by an authorised manager."
+        "approach": "Plan tidy cable containment, staff viewing permissions and remote checks by an authorised manager.",
+        "panelTitle": "A tidy system for a busy office.",
+        "short": "Reception, access & shared areas",
+        "points": [
+          "Assess 4MP IP/PoE, network access and recording requirements.",
+          "Agree who can view, export and manage recordings."
+        ],
+        "image": "/assets/cctv-applications/office-960.webp",
+        "imageAlt": "Tour-office reception with a discreet camera and neat installation"
       },
       {
         "id": "hotel",
         "name": "Hotel & lodge",
         "coverage": "Plan discreet views of reception, public corridors, parking and service entrances.",
-        "approach": "Use discreet, appropriate housings and concealed or contained cabling. Keep guest bedrooms, bathrooms and changing spaces outside the camera plan."
+        "approach": "Use discreet, appropriate housings and concealed or contained cabling. Keep guest bedrooms, bathrooms and changing spaces outside the camera plan.",
+        "panelTitle": "Discreet security for welcoming spaces.",
+        "short": "Reception, parking & public routes",
+        "points": [
+          "Coordinate camera positions and neat cable routes with the interior.",
+          "Exclude guest bedrooms, bathrooms and changing spaces."
+        ],
+        "image": "/assets/cctv-commercial/hotel-960.webp",
+        "imageAlt": "Lodge reception with a discreet camera in a public area"
       },
       {
         "id": "school",
         "name": "School",
         "coverage": "Focus on gates, reception and shared routes, with agreed viewing permissions and attention to children’s privacy.",
-        "approach": "Agree who may view/export footage, the retention period and appropriate notice before selecting cameras and recording permissions."
+        "approach": "Agree who may view/export footage, the retention period and appropriate notice before selecting cameras and recording permissions.",
+        "panelTitle": "Focus on the areas that need oversight.",
+        "short": "Gates, reception & shared routes",
+        "points": [
+          "Agree camera positions, notices and authorised viewers.",
+          "Assess recording time and backup for the agreed coverage."
+        ],
+        "image": "/assets/cctv-applications/school-960.webp",
+        "imageAlt": "School administration entrance and public walkway with a camera"
       },
       {
         "id": "warehouse",
         "name": "Warehouse",
         "coverage": "See loading points, stock aisles, doors and yard activity; assess distance and lighting before choosing lenses.",
-        "approach": "Assess low light, dust, outdoor exposure, network distances and cable protection. Larger premises may need more than one PoE switch."
+        "approach": "Assess low light, dust, outdoor exposure, network distances and cable protection. Larger premises may need more than one PoE switch.",
+        "panelTitle": "Follow movement through your site.",
+        "short": "Loading points, aisles & yard",
+        "points": [
+          "Choose lenses and placement for distance, lighting and exposure.",
+          "Assess PoE/network distances, storage and protected cable routes."
+        ],
+        "image": "/assets/cctv-applications/warehouse-960.webp",
+        "imageAlt": "Warehouse loading area and stock racks with a high-mounted camera"
       },
       {
         "id": "institution",
         "name": "Institution",
         "coverage": "Coordinate entrances and shared areas across buildings, with a site plan and room for expansion.",
-        "approach": "Specify channels, network design, recording retention, UPS needs, access roles and handover documentation. Discuss phased expansion."
+        "approach": "Specify channels, network design, recording retention, UPS needs, access roles and handover documentation. Discuss phased expansion.",
+        "panelTitle": "A coordinated system across buildings.",
+        "short": "Access points & shared facilities",
+        "points": [
+          "Plan recording, UPS backup and permissions from the site layout.",
+          "Include handover documentation and provision for agreed expansion."
+        ],
+        "image": "/assets/cctv-applications/institution-960.webp",
+        "imageAlt": "Institutional reception entrance and shared courtyard with a camera"
       }
     ],
     "sizes": [
@@ -282,7 +338,9 @@
     "propertyQuestion": "Where do you need CCTV?",
     "coverageLabel": "Coverage to consider",
     "optionsAction": "Help me choose my CCTV system",
-    "optionsContext": "CCTV — help choosing the right system"
+    "optionsContext": "CCTV — help choosing the right system",
+    "applicationLabel": "START WITH YOUR PREMISES",
+    "applicationIntro": "Choose your setting. See what we would plan, then explore an installed-system package."
   },
   "sw": {
     "service": "Ufungaji wa CCTV Tanzania",
@@ -316,43 +374,99 @@
         "id": "home",
         "name": "Nyumba na kiwanja",
         "coverage": "Anza na geti, milango na maegesho, kisha panga mwonekano wa maeneo mengine muhimu ndani ya kiwanja.",
-        "approach": "Kwa mfumo mpya, jadili kamera za 4MP IP/PoE. Ikiwa kuna nyaya nzuri za coaxial, tathmini kama zinafaa kubaki kwenye mfumo wa HD unaoendana na rekoda."
+        "approach": "Kwa mfumo mpya, jadili kamera za 4MP IP/PoE. Ikiwa kuna nyaya nzuri za coaxial, tathmini kama zinafaa kubaki kwenye mfumo wa HD unaoendana na rekoda.",
+        "panelTitle": "Uangalizi unaoendana na nyumba yako.",
+        "short": "Milango, maegesho na mipaka",
+        "points": [
+          "Panga mwanga wa usiku, muda wa kuhifadhi rekodi na umeme wa akiba.",
+          "Epuka kuelekeza kamera kwenye nyumba za jirani na vyumba vya faragha."
+        ],
+        "image": "/assets/cctv-960.webp",
+        "imageAlt": "Kamera ya CCTV inayoangalia mlango wa jengo"
       },
       {
         "id": "shop",
         "name": "Duka",
         "coverage": "Angalia mlango, kaunta ya malipo na sehemu ya bidhaa; ongeza mwonekano wa karibu pale maelezo ya tukio yanapohitajika.",
-        "approach": "Changanya mwonekano wa jumla na kamera za maeneo muhimu. Angalia mwanga unaotokea nyuma ya mtu, hali ya usiku na sehemu salama ya kuweka rekoda."
+        "approach": "Changanya mwonekano wa jumla na kamera za maeneo muhimu. Angalia mwanga unaotokea nyuma ya mtu, hali ya usiku na sehemu salama ya kuweka rekoda.",
+        "panelTitle": "Fuatilia sehemu muhimu za biashara yako.",
+        "short": "Mlangoni, kaunta na stoo",
+        "points": [
+          "Panga kamera za kuona shughuli za kaunta pamoja na mwonekano wa duka.",
+          "Jadili kuangalia kwa simu na muda wa kuhifadhi rekodi."
+        ],
+        "image": "/assets/cctv-applications/shop-960.webp",
+        "imageAlt": "Mlango na kaunta ya duka yenye kamera iliyofungwa kwa unadhifu"
       },
       {
         "id": "office",
         "name": "Ofisi za utalii na biashara",
         "coverage": "Weka mapokezi, milango na maeneo ya kazi ya pamoja kwenye mwonekano, kwa nyaya nadhifu na ruhusa za kutazama zilizopangwa.",
-        "approach": "Panga nyaya kwa unadhifu, ruhusa za kutazama na namna meneja aliyeidhinishwa atakavyoangalia akiwa mbali."
+        "approach": "Panga nyaya kwa unadhifu, ruhusa za kutazama na namna meneja aliyeidhinishwa atakavyoangalia akiwa mbali.",
+        "panelTitle": "CCTV nadhifu kwa shughuli za ofisi.",
+        "short": "Mapokezi, milango na maeneo ya pamoja",
+        "points": [
+          "Tathmini mfumo wa 4MP IP/PoE, mtandao na mahitaji ya kurekodi.",
+          "Kubalianeni nani ataruhusiwa kuona, kutoa nakala na kusimamia rekodi."
+        ],
+        "image": "/assets/cctv-applications/office-960.webp",
+        "imageAlt": "Mapokezi ya ofisi ya utalii yenye kamera iliyofungwa kwa unadhifu"
       },
       {
         "id": "hotel",
         "name": "Hoteli na lodge",
         "coverage": "Panga kamera zinazokaa vizuri kwenye mapokezi, korido za pamoja, maegesho na milango ya huduma.",
-        "approach": "Chagua kamera zinazokaa vizuri kwenye jengo na nyaya zilizofichwa au kupitishwa kwa unadhifu. Vyumba vya wageni, bafu na sehemu za kubadilishia nguo visiwe kwenye mpango wa kamera."
+        "approach": "Chagua kamera zinazokaa vizuri kwenye jengo na nyaya zilizofichwa au kupitishwa kwa unadhifu. Vyumba vya wageni, bafu na sehemu za kubadilishia nguo visiwe kwenye mpango wa kamera.",
+        "panelTitle": "Usalama unaoheshimu faragha ya wageni.",
+        "short": "Mapokezi, maegesho na njia za umma",
+        "points": [
+          "Panga kamera na njia nadhifu za nyaya ziendane na muonekano wa jengo.",
+          "Usijumuishe vyumba vya kulala, bafu, vyoo na sehemu za kubadilishia nguo."
+        ],
+        "image": "/assets/cctv-commercial/hotel-960.webp",
+        "imageAlt": "Mapokezi ya lodge yenye kamera katika eneo la umma"
       },
       {
         "id": "school",
         "name": "Shule",
         "coverage": "Anza na geti, mapokezi na njia za pamoja, kwa ruhusa zilizokubaliwa na kuzingatia faragha ya watoto.",
-        "approach": "Kubalianeni nani atatazama au kutoa nakala za video, muda wa kuhifadhi rekodi na taarifa zinazofaa kwa wanaotumia eneo kabla ya kuchagua mfumo."
+        "approach": "Kubalianeni nani atatazama au kutoa nakala za video, muda wa kuhifadhi rekodi na taarifa zinazofaa kwa wanaotumia eneo kabla ya kuchagua mfumo.",
+        "panelTitle": "Uangalizi kwenye maeneo yanayohitaji.",
+        "short": "Getini, mapokezi na njia za pamoja",
+        "points": [
+          "Kubalianeni maeneo ya kamera, taarifa za uwepo wake na wenye ruhusa.",
+          "Tathmini muda wa kurekodi na umeme wa akiba kwa maeneo yaliyokubaliwa."
+        ],
+        "image": "/assets/cctv-applications/school-960.webp",
+        "imageAlt": "Mlango wa ofisi ya shule na njia ya pamoja yenye kamera"
       },
       {
         "id": "warehouse",
         "name": "Ghala",
         "coverage": "Angalia sehemu za kupakia, njia kati ya bidhaa, milango na uwanja; tathmini umbali na mwanga kabla ya kuchagua lenzi.",
-        "approach": "Tathmini mwanga hafifu, vumbi, mvua, umbali wa mtandao na ulinzi wa nyaya. Jengo kubwa linaweza kuhitaji switch zaidi ya moja ya PoE."
+        "approach": "Tathmini mwanga hafifu, vumbi, mvua, umbali wa mtandao na ulinzi wa nyaya. Jengo kubwa linaweza kuhitaji switch zaidi ya moja ya PoE.",
+        "panelTitle": "Fuatilia shughuli ndani na nje ya ghala.",
+        "short": "Sehemu za kupakia, stoo na uwanja",
+        "points": [
+          "Chagua lenzi na nafasi za kamera kwa kuzingatia umbali, mwanga na mazingira.",
+          "Tathmini umbali wa mtandao/PoE, hifadhi na ulinzi wa nyaya."
+        ],
+        "image": "/assets/cctv-applications/warehouse-960.webp",
+        "imageAlt": "Sehemu ya kupakia mizigo na rafu za ghala zenye kamera"
       },
       {
         "id": "institution",
         "name": "Taasisi",
         "coverage": "Panga milango na maeneo ya pamoja katika majengo tofauti, kwa kufuata ramani na nafasi ya kuongeza mfumo.",
-        "approach": "Bainisha chaneli, mtandao, muda wa kuhifadhi video, UPS, ruhusa za watumiaji na nyaraka za makabidhiano. Jadili pia kuongeza mfumo kwa awamu."
+        "approach": "Bainisha chaneli, mtandao, muda wa kuhifadhi video, UPS, ruhusa za watumiaji na nyaraka za makabidhiano. Jadili pia kuongeza mfumo kwa awamu.",
+        "panelTitle": "Mfumo ulioratibiwa kwa majengo yako.",
+        "short": "Milango na maeneo ya matumizi ya pamoja",
+        "points": [
+          "Panga kurekodi, UPS na ruhusa za watumiaji kwa mpangilio wa eneo.",
+          "Jumuisha maelekezo ya makabidhiano na nafasi ya upanuzi uliokubaliwa."
+        ],
+        "image": "/assets/cctv-applications/institution-960.webp",
+        "imageAlt": "Mlango wa mapokezi na uwanja wa pamoja wa taasisi wenye kamera"
       }
     ],
     "sizes": [
@@ -567,6 +681,8 @@
     "propertyQuestion": "Unahitaji CCTV kwenye eneo la aina gani?",
     "coverageLabel": "Maeneo ya kuangalia",
     "optionsAction": "Nisaidie kuchagua mfumo wa CCTV",
-    "optionsContext": "CCTV — ushauri wa kuchagua mfumo unaofaa"
+    "optionsContext": "CCTV — ushauri wa kuchagua mfumo unaofaa",
+    "applicationLabel": "ANZA NA MAHITAJI YA ENEO LAKO",
+    "applicationIntro": "Chagua aina ya eneo lako. Angalia tunachopanga, kisha linganisha vifurushi vya ufungaji."
   }
 }
