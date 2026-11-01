@@ -1,0 +1,253 @@
+{
+  "checkedOn": "2026-11-02",
+  "publicationStatus": "Approved by BM owner on 2026-11-02 following supplier telephone confirmation; supplier identity and written rights-holder confirmation not independently verified",
+  "assets": [
+    {
+      "id": "nemtek-druid-13lcd",
+      "page": "https://www.nemtek.co.za/product/druid-13lcd-energizer/",
+      "image": "https://www.nemtek.co.za/wp-content/uploads/2021/10/Druid-13.jpg",
+      "original": "design-preview/media-originals/electric-fence-products/nemtek-druid-13lcd.jpg",
+      "sourceWidth": 800,
+      "sourceHeight": 800,
+      "originalSHA256": "a3958c512d798b2f024cf8b0088cdc9469fc35f81268990a66cb0a5c1ad4c79b",
+      "variants": [
+        {
+          "path": "public/assets/electric-fence-products/nemtek-druid-13lcd-320.webp",
+          "width": 320,
+          "height": 320,
+          "bytes": 11472,
+          "sha256": "ce998c1bd484e233a6241000876befaf545cf52a79ceff86cf690777423c2d8b"
+        },
+        {
+          "path": "public/assets/electric-fence-products/nemtek-druid-13lcd-640.webp",
+          "width": 640,
+          "height": 640,
+          "bytes": 42774,
+          "sha256": "601d17cdd9e60a1fea67bf48c56b4ddf30344ffce17d7f08f3cbefada74a1752"
+        }
+      ],
+      "usage": "BM commercial equipment guide, owner-authorized publication",
+      "productionApproved": true,
+      "permissionEvidence": "BM owner confirmation in this conversation on 2026-11-02: called BM equipment suppliers, who advised proceeding with publication of these eight photographs. Oral supplier confirmation; names not provided; rights-holder authority not independently verified.",
+      "rightsStatus": "Owner-reported supplier permission; not a public-domain or manufacturer licence assertion",
+      "changes": "Orientation metadata normalized; proportion-preserving resize and WebP compression only. No generative enhancement, label alteration, watermark removal or product reconstruction."
+    },
+    {
+      "id": "nemtek-druid-28lcd",
+      "page": "https://www.nemtek.co.za/product/druid-28lcd-energizer/",
+      "image": "https://www.nemtek.co.za/wp-content/uploads/2021/10/Druid-28.jpg",
+      "original": "design-preview/media-originals/electric-fence-products/nemtek-druid-28lcd.jpg",
+      "sourceWidth": 800,
+      "sourceHeight": 800,
+      "originalSHA256": "da3b7c99715f3ce9cf27e06b4bb1a08d0d2feee1d190a3fb8668079cb7f45d06",
+      "variants": [
+        {
+          "path": "public/assets/electric-fence-products/nemtek-druid-28lcd-320.webp",
+          "width": 320,
+          "height": 320,
+          "bytes": 13096,
+          "sha256": "4a80ef1c2bf2a1fda824698d93f6471984336d0a4434612965de68aeb8cf26aa"
+        },
+        {
+          "path": "public/assets/electric-fence-products/nemtek-druid-28lcd-640.webp",
+          "width": 640,
+          "height": 640,
+          "bytes": 40160,
+          "sha256": "eaa3b71f5e920094cc158d3ec7d9408cf28e50d6df20fcc859e5f5c48ecfcb69"
+        }
+      ],
+      "usage": "BM commercial equipment guide, owner-authorized publication",
+      "productionApproved": true,
+      "permissionEvidence": "BM owner confirmation in this conversation on 2026-11-02: called BM equipment suppliers, who advised proceeding with publication of these eight photographs. Oral supplier confirmation; names not provided; rights-holder authority not independently verified.",
+      "rightsStatus": "Owner-reported supplier permission; not a public-domain or manufacturer licence assertion",
+      "changes": "Orientation metadata normalized; proportion-preserving resize and WebP compression only. No generative enhancement, label alteration, watermark removal or product reconstruction."
+    },
+    {
+      "id": "nemtek-agri-10km",
+      "page": "https://www.nemtek.co.za/product/agri-10km-energizer/",
+      "image": "https://www.nemtek.co.za/wp-content/uploads/2021/10/Agri-10-2.jpg",
+      "original": "design-preview/media-originals/electric-fence-products/nemtek-agri-10km.jpg",
+      "sourceWidth": 800,
+      "sourceHeight": 800,
+      "originalSHA256": "68f147a7729dd26640181b5112dd0f62fa9575fbc515a66e47f732297ef7076c",
+      "variants": [
+        {
+          "path": "public/assets/electric-fence-products/nemtek-agri-10km-320.webp",
+          "width": 320,
+          "height": 320,
+          "bytes": 11608,
+          "sha256": "80bf3678bfe240d065788154c05fa7d85eadae4847847106f34a422bbbe2dcad"
+        },
+        {
+          "path": "public/assets/electric-fence-products/nemtek-agri-10km-640.webp",
+          "width": 640,
+          "height": 640,
+          "bytes": 39902,
+          "sha256": "164456e1093253a0cb6e6ab15f3963d6dba5eb7f282664b9858630f6e23256f1"
+        }
+      ],
+      "usage": "BM commercial equipment guide, owner-authorized publication",
+      "productionApproved": true,
+      "permissionEvidence": "BM owner confirmation in this conversation on 2026-11-02: called BM equipment suppliers, who advised proceeding with publication of these eight photographs. Oral supplier confirmation; names not provided; rights-holder authority not independently verified.",
+      "rightsStatus": "Owner-reported supplier permission; not a public-domain or manufacturer licence assertion",
+      "changes": "Orientation metadata normalized; proportion-preserving resize and WebP compression only. No generative enhancement, label alteration, watermark removal or product reconstruction."
+    },
+    {
+      "id": "jva-z28",
+      "page": "https://store.jva-fence.com.au/products/jva-z28",
+      "image": "https://store.jva-fence.com.au/cdn/shop/products/Z28_1000px_grande.png?v=1571609172",
+      "original": "design-preview/media-originals/electric-fence-products/jva-z28.png",
+      "sourceWidth": 600,
+      "sourceHeight": 600,
+      "originalSHA256": "ce4a7887fb6ac8d28caab678a1d7e1c8299c3cab8027404bbcbc61e9f6c600fd",
+      "variants": [
+        {
+          "path": "public/assets/electric-fence-products/jva-z28-320.webp",
+          "width": 320,
+          "height": 320,
+          "bytes": 13712,
+          "sha256": "d49f2373058fb9838ae75331be0335a354885eeb90615dbe79726c976a948295"
+        },
+        {
+          "path": "public/assets/electric-fence-products/jva-z28-640.webp",
+          "width": 600,
+          "height": 600,
+          "bytes": 29730,
+          "sha256": "48237fea6b3724485f0f0dc8abb6331b0a1d42e061b6d8e5a6e06306270db3e9"
+        }
+      ],
+      "usage": "BM commercial equipment guide, owner-authorized publication",
+      "productionApproved": true,
+      "permissionEvidence": "BM owner confirmation in this conversation on 2026-11-02: called BM equipment suppliers, who advised proceeding with publication of these eight photographs. Oral supplier confirmation; names not provided; rights-holder authority not independently verified.",
+      "rightsStatus": "Owner-reported supplier permission; not a public-domain or manufacturer licence assertion",
+      "changes": "Orientation metadata normalized; proportion-preserving resize and WebP compression only. No generative enhancement, label alteration, watermark removal or product reconstruction."
+    },
+    {
+      "id": "gallagher-mbs200",
+      "page": "https://shop.am.gallagher.com/au/en_AU/animal-management/electric-fencing/power/multi-powered-energizers/mbs200-multi-powered-fence-energizer/p/G38911",
+      "image": "https://shop.am.gallagher.com/medias/515Wx515H-webp-G389-MBS200-Multi-Powered-Fence-Energizer-30-Deg?context=bWFzdGVyfGltYWdlc3wxNTE2OHxpbWFnZS93ZWJwfGFHUTRMMmhpTlM4eE5EVTRPVGc0T0RreU1UWXpNQzgxTVRWWGVEVXhOVWd0ZDJWaWNGOUhNemc1SUUxQ1V6SXdNQ0JOZFd4MGFTQlFiM2RsY21Wa0lFWmxibU5sSUVWdVpYSm5hWHBsY2l3Z016QWdSR1ZufDY2YTQ1ZjMyNTM3ZDBlMWE4NDZkOWEwNDM1NTI4YzcwNDAwMmI0ZjJmYzNmNmQ3N2Q3YjBiMzY4NzA0MDljZDg",
+      "original": "design-preview/media-originals/electric-fence-products/gallagher-mbs200.webp",
+      "sourceWidth": 515,
+      "sourceHeight": 515,
+      "originalSHA256": "fff1eebfecd17a3fb9913c76685d4bfdfd7d33c5eb512c8b9200757ba9ad80a8",
+      "variants": [
+        {
+          "path": "public/assets/electric-fence-products/gallagher-mbs200-320.webp",
+          "width": 320,
+          "height": 320,
+          "bytes": 10834,
+          "sha256": "df07ccb55c23ae128f9bb4720703cef7e4fc649931b1f551fb789beb6847412b"
+        },
+        {
+          "path": "public/assets/electric-fence-products/gallagher-mbs200-640.webp",
+          "width": 515,
+          "height": 515,
+          "bytes": 14106,
+          "sha256": "1bd72dbcf138a741a1dcb3b7fc25995590bf54c42212cd53406a2bdf18b12b03"
+        }
+      ],
+      "usage": "BM commercial equipment guide, owner-authorized publication",
+      "productionApproved": true,
+      "permissionEvidence": "BM owner confirmation in this conversation on 2026-11-02: called BM equipment suppliers, who advised proceeding with publication of these eight photographs. Oral supplier confirmation; names not provided; rights-holder authority not independently verified.",
+      "rightsStatus": "Owner-reported supplier permission; not a public-domain or manufacturer licence assertion",
+      "changes": "Orientation metadata normalized; proportion-preserving resize and WebP compression only. No generative enhancement, label alteration, watermark removal or product reconstruction."
+    },
+    {
+      "id": "jva-z14",
+      "page": "https://store.jva-fence.com.au/products/jva-z14",
+      "image": "https://cdn.shopify.com/s/files/1/2205/3075/products/Jva_Z14.png?v=1654052721",
+      "original": "design-preview/media-originals/electric-fence-products/jva-z14.png",
+      "sourceWidth": 1214,
+      "sourceHeight": 1668,
+      "originalSHA256": "7eb025ab1c19c323e9089a9f0747c72c5ac5f009587a702adb66e6b2b1062e41",
+      "variants": [
+        {
+          "path": "public/assets/electric-fence-products/jva-z14-320.webp",
+          "width": 233,
+          "height": 320,
+          "bytes": 14254,
+          "sha256": "029bc54864bfab94bbab2eb1540b8636c3143b2facfed9a59dae188841ed1f4d"
+        },
+        {
+          "path": "public/assets/electric-fence-products/jva-z14-640.webp",
+          "width": 466,
+          "height": 640,
+          "bytes": 31996,
+          "sha256": "7497353e173561b04f5134f8ed0ab648b7d5c6e34bd4d6c0650197ff99691c7f"
+        }
+      ],
+      "usage": "BM commercial equipment guide, owner-authorized publication",
+      "productionApproved": true,
+      "permissionEvidence": "BM owner confirmation in this conversation on 2026-11-02: called BM equipment suppliers, who advised proceeding with publication of these eight photographs. Oral supplier confirmation; names not provided; rights-holder authority not independently verified.",
+      "rightsStatus": "Owner-reported supplier permission; not a public-domain or manufacturer licence assertion",
+      "changes": "Orientation metadata normalized; proportion-preserving resize and WebP compression only. No generative enhancement, label alteration, watermark removal or product reconstruction."
+    },
+    {
+      "id": "stafix-x3",
+      "page": "https://au.stafix.com/products/energizers/x3-unigizertm",
+      "image": "https://au.stafix.com/sites/default/files/X3%20Unigizer.png",
+      "original": "design-preview/media-originals/electric-fence-products/stafix-x3.png",
+      "sourceWidth": 3107,
+      "sourceHeight": 3238,
+      "originalSHA256": "7ab0bd2f4cc552dcaedcf3065ac6de164a34940c391462abca07342fbce594a7",
+      "variants": [
+        {
+          "path": "public/assets/electric-fence-products/stafix-x3-320.webp",
+          "width": 307,
+          "height": 320,
+          "bytes": 15674,
+          "sha256": "cd41f6b3d5891d99e75724aae84aff251ed65b51b54d00dbb516877709df3f9d"
+        },
+        {
+          "path": "public/assets/electric-fence-products/stafix-x3-640.webp",
+          "width": 614,
+          "height": 640,
+          "bytes": 39302,
+          "sha256": "589f02dcde18c72e89162306965fbc585bda6b3eeb339105d95f3e6c80a2a861"
+        }
+      ],
+      "usage": "BM commercial equipment guide, owner-authorized publication",
+      "productionApproved": true,
+      "permissionEvidence": "BM owner confirmation in this conversation on 2026-11-02: called BM equipment suppliers, who advised proceeding with publication of these eight photographs. Oral supplier confirmation; names not provided; rights-holder authority not independently verified.",
+      "rightsStatus": "Owner-reported supplier permission; not a public-domain or manufacturer licence assertion",
+      "changes": "Orientation metadata normalized; proportion-preserving resize and WebP compression only. No generative enhancement, label alteration, watermark removal or product reconstruction."
+    },
+    {
+      "id": "stafix-x6i",
+      "page": "https://nz.stafix.com/products/energizers/x6i-unigizertm",
+      "image": "https://nz.stafix.com/sites/default/files/X6i%20Unigizer.jpg",
+      "original": "design-preview/media-originals/electric-fence-products/stafix-x6i.jpg",
+      "sourceWidth": 378,
+      "sourceHeight": 378,
+      "originalSHA256": "fa02dadd7ea8525a483cbf2e8b17d00a06dbc4cd58679fd6dff5243f14dd6b84",
+      "variants": [
+        {
+          "path": "public/assets/electric-fence-products/stafix-x6i-320.webp",
+          "width": 320,
+          "height": 320,
+          "bytes": 10148,
+          "sha256": "8ad5a8fa91d6b1ca023a3e6eaad0ee314d8b6d0967006b4f7caadad10377d381"
+        },
+        {
+          "path": "public/assets/electric-fence-products/stafix-x6i-640.webp",
+          "width": 378,
+          "height": 378,
+          "bytes": 13220,
+          "sha256": "3c25485bcfb3328bffebee92f7d1a87ed22d035f200614e545397913164895c1"
+        }
+      ],
+      "usage": "BM commercial equipment guide, owner-authorized publication",
+      "productionApproved": true,
+      "permissionEvidence": "BM owner confirmation in this conversation on 2026-11-02: called BM equipment suppliers, who advised proceeding with publication of these eight photographs. Oral supplier confirmation; names not provided; rights-holder authority not independently verified.",
+      "rightsStatus": "Owner-reported supplier permission; not a public-domain or manufacturer licence assertion",
+      "changes": "Orientation metadata normalized; proportion-preserving resize and WebP compression only. No generative enhancement, label alteration, watermark removal or product reconstruction."
+    }
+  ],
+  "ownerConfirmation": {
+    "date": "2026-11-02",
+    "method": "Owner-reported telephone conversations with BM equipment suppliers",
+    "statement": "BM owner confirms suppliers advised BM to proceed with commercial publication of all eight product photographs.",
+    "supplierNamesProvided": false,
+    "independentlyVerified": false
+  }
+}

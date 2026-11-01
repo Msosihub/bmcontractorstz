@@ -43,3 +43,6 @@ next-env.d.ts
 /app/generated/prisma
 
 /.test-cache/
+
+# Unoptimised source photos retained locally; owner-approved web variants are tracked.
+/design-preview/media-originals/electric-fence-products/
