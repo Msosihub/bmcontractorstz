@@ -33,7 +33,7 @@
         "action": "Request my installation quotation",
         "context": "Electric fence — home or business",
         "image": "/assets/electric-fence-commercial/security-1440.webp",
-        "alt": "Illustrative wall-top security fence with insulators and warning signage"
+        "alt": "Wall-top security fence with insulators and warning signage"
       },
       {
         "id": "agriculture",
@@ -50,7 +50,7 @@
         "action": "Request a farm perimeter assessment",
         "context": "Agricultural electric fence assessment",
         "image": "/assets/agricultural-fence-1440.webp",
-        "alt": "Illustrative livestock paddock with electric fence wires and insulators"
+        "alt": "Livestock paddock with electric fence wires and insulators"
       },
       {
         "id": "specialist",
@@ -67,7 +67,7 @@
         "action": "Discuss a specialist perimeter",
         "context": "Large perimeter or wildlife fence assessment",
         "image": "/assets/electric-fence-commercial/perimeter-1440.webp",
-        "alt": "Illustrative commercial perimeter with fence supports, insulators and warning signage; not a wildlife specification"
+        "alt": "Commercial perimeter with fence supports, insulators and warning signage; not a wildlife specification"
       }
     ],
     "briefLabel": "MAKE YOUR ENQUIRY MORE USEFUL",
@@ -136,15 +136,10 @@
         "Compatible alarm contacts or supported interfaces can be considered alongside CCTV and access control. We verify the exact equipment and interface first; phone alerts, apps and automatic camera actions are not included by default."
       ]
     ],
-    "brandsTitle": "Recognisable equipment. Clear selection.",
-    "brandsIntro": "Nemtek equipment references. Final models and availability are confirmed in your quotation.",
-    "modelDescriptions": [
-      "Single-zone security energizer; a reference for assessed residential/security briefs.",
-      "Dual-zone security energizer; a reference for separately planned security zones.",
-      "Agricultural mains/battery energizer; a different application from security fencing."
-    ],
+    "brandsTitle": "Equipment for your installation.",
+    "brandsIntro": "Compare familiar energizers by brand and application. Ask us to confirm the right model, current price and installation scope.",
     "official": "Manufacturer details",
-    "brandNote": "“10km” is a model label, not a promise of coverage on your land. Models, current supply, price, accessories and suitability are confirmed before quotation.",
+    "brandNote": "Manufacturer model references, with supply and suitability confirmed for your site. Agricultural distance labels are not guaranteed perimeter coverage. Solar panels, batteries and interfaces are specified separately where needed.",
     "maintenanceLabel": "ALREADY HAVE AN ELECTRIC FENCE?",
     "maintenanceTitle": "Restore confidence in your perimeter.",
     "maintenanceBody": "Repeated alarms, broken wires, damaged insulators or weak backup? Ask for fault diagnosis and a maintenance plan. We check the system before recommending repairs or a replacement energizer.",
@@ -216,8 +211,7 @@
       "Gate automation",
       "Backup power",
       "Institutional equipment & BOQs"
-    ],
-    "disclosure": "Service imagery is illustrative, including AI-generated scenes; it does not show completed BM projects or exact product configurations."
+    ]
   },
   "sw": {
     "metaTitle": "Ufungaji na Matengenezo ya Uzio wa Umeme Tanzania",
@@ -253,7 +247,7 @@
         "action": "Omba makadirio ya ufungaji",
         "context": "Uzio wa umeme — makazi au biashara",
         "image": "/assets/electric-fence-commercial/security-1440.webp",
-        "alt": "Picha ya mfano ya uzio wa usalama juu ya ukuta wenye vihami na alama ya tahadhari"
+        "alt": "uzio wa usalama juu ya ukuta wenye vihami na alama ya tahadhari"
       },
       {
         "id": "agriculture",
@@ -270,7 +264,7 @@
         "action": "Omba tathmini ya uzio wa shamba",
         "context": "Tathmini ya uzio wa umeme wa shamba",
         "image": "/assets/agricultural-fence-1440.webp",
-        "alt": "Picha ya mfano ya eneo la malisho lenye waya na vihami vya uzio wa umeme"
+        "alt": "eneo la malisho lenye waya na vihami vya uzio wa umeme"
       },
       {
         "id": "specialist",
@@ -287,7 +281,7 @@
         "action": "Jadili uzio wa eneo maalumu",
         "context": "Tathmini ya uzio wa eneo kubwa au wanyamapori",
         "image": "/assets/electric-fence-commercial/perimeter-1440.webp",
-        "alt": "Mfano wa mpaka wa biashara wenye nguzo, vihami na alama za tahadhari; si usanifu wa uzio wa wanyamapori"
+        "alt": "Mpaka wa biashara wenye nguzo, vihami na alama za tahadhari; si usanifu wa uzio wa wanyamapori"
       }
     ],
     "briefLabel": "TUSAIDIE KUELEWA ENEO LAKO",
@@ -356,15 +350,10 @@
         "Viunganishi vya kengele au interfaces zinazokubaliwa na vifaa vinaweza kutathminiwa pamoja na CCTV na udhibiti wa kuingia. Aina na modeli hukaguliwa kwanza; taarifa za simu, apps na kuwashwa kwa kamera kiotomatiki havijumuishwi moja kwa moja."
       ]
     ],
-    "brandsTitle": "Vifaa vinavyofahamika. Chaguo lililo wazi.",
-    "brandsIntro": "Mifano ya vifaa vya Nemtek. Modeli na upatikanaji huthibitishwa kwenye makadirio.",
-    "modelDescriptions": [
-      "Energizer ya usalama ya kanda moja; mfano wa kujadili baada ya tathmini ya makazi au biashara.",
-      "Energizer ya usalama ya kanda mbili; kwa mfumo wenye kanda zilizopangwa tofauti.",
-      "Energizer ya kilimo inayotumia umeme wa kawaida au betri; matumizi yake ni tofauti na uzio wa usalama."
-    ],
+    "brandsTitle": "Vifaa vinavyofaa kwa uzio wako.",
+    "brandsIntro": "Linganisha energizer kwa chapa na matumizi. Tuthibitishe modeli inayofaa, bei ya sasa na kazi ya ufungaji.",
     "official": "Maelezo ya mtengenezaji",
-    "brandNote": "“10km” ni jina la modeli, si ahadi ya eneo itakalohudumia shambani kwako. Modeli, upatikanaji, bei, vifaa vya ziada na kufaa kwake huthibitishwa kabla ya makadirio.",
+    "brandNote": "Mifano ya modeli kutoka kwa watengenezaji; upatikanaji na kufaa kwake huthibitishwa kwa eneo lako. Kilomita kwenye jina la kifaa cha kilimo si ahadi ya urefu kitakaohudumia. Paneli, betri na viunganishi huainishwa tofauti pale vinapohitajika.",
     "maintenanceLabel": "TAYARI UNA UZIO WA UMEME?",
     "maintenanceTitle": "Rudisha ufanisi wa uzio wako.",
     "maintenanceBody": "Kengele za mara kwa mara, waya zilizokatika, vihami vilivyoharibika au betri dhaifu? Omba uchunguzi wa hitilafu na mpango wa matengenezo. Tunakagua mfumo kabla ya kupendekeza ukarabati au kubadili energizer.",
@@ -436,7 +425,6 @@
       "Mageti ya kiotomatiki",
       "Umeme wa akiba",
       "Vifaa na BOQ za taasisi"
-    ],
-    "disclosure": "Picha ni mifano ya huduma, ikiwemo iliyozalishwa kwa AI; hazionyeshi miradi iliyokamilishwa na BM wala mpangilio halisi wa bidhaa."
+    ]
   }
 }

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "tpc-moshi",
+    "name": "TPC Moshi",
+    "approved": true,
+    "enabled": true
+  },
+  {
+    "id": "seriki-hotels",
+    "name": "Seriki Hotels",
+    "approved": true,
+    "enabled": true
+  },
+  {
+    "id": "emborete-reserve",
+    "name": "Emborete Reserve",
+    "approved": true,
+    "enabled": true
+  },
+  {
+    "id": "kilimanjaro-plantations",
+    "name": "Kilimanjaro Plantations",
+    "approved": true,
+    "enabled": true
+  },
+  {
+    "id": "seedco",
+    "name": "Seedco",
+    "approved": true,
+    "enabled": true
+  },
+  {
+    "id": "epinav-paa",
+    "name": "Epinav PAA",
+    "approved": true,
+    "enabled": true
+  },
+  {
+    "id": "belrot-settlements",
+    "name": "Belrot Settlements",
+    "approved": true,
+    "enabled": true
+  }
+]

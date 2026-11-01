@@ -4,7 +4,7 @@ import navigation from "@/data/footer-navigation.json";
 import Image from "next/image";
 import type { Language } from "@/lib/i18n/config";
 
-export function Footer({ lang }: { lang: Language }) {
+export function Footer({ lang, imageNotice = true }: { lang: Language; imageNotice?: boolean }) {
   const sw = lang === "sw";
   return (
     <footer
@@ -80,9 +80,9 @@ export function Footer({ lang }: { lang: Language }) {
         <a href="#main">{sw ? "Rudi juu" : "Back to top"} ↑</a>
       </nav>
       <p className="disclosure">
-        {sw
+        {imageNotice ? (sw
           ? "Picha zilizoainishwa kuwa za AI ni mifano ya kueleza huduma. Hazionyeshi miradi, wafanyakazi au wateja wa BM. Modeli, bei, upatikanaji na mahitaji ya kiufundi huthibitishwa kwenye nukuu ya bei."
-          : "Images labelled AI illustrate services; they do not show actual BM projects, employees or clients. Models, prices, availability and technical requirements are confirmed in the quotation."}
+          : "Images labelled AI illustrate services; they do not show actual BM projects, employees or clients. Models, prices, availability and technical requirements are confirmed in the quotation.") : (sw ? "Modeli, bei, upatikanaji na mahitaji ya kiufundi huthibitishwa kwenye makadirio." : "Models, prices, availability and technical requirements are confirmed in your quotation.")}
       </p>
       <div className="footer-bottom">
         <span>© 2026 BM Engineering Contractors Limited</span>

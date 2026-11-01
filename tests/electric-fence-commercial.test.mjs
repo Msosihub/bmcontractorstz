@@ -30,3 +30,15 @@ test('electric fence route respects publication, metadata and original URL',asyn
   }
   delete globalThis.__fenceRecord;
 });
+
+test('fence-only footer copy removes image labels without changing other pages',async()=>{
+  const React=await import('react'),{renderToStaticMarkup}=await import('react-dom/server');
+  const {Footer}=await bundle('components/site/Footer.tsx',{'next/image':"import React from 'react';export default function Image(props){return React.createElement('img',props)}"});
+  for(const lang of ['en','sw']){
+    const normal=renderToStaticMarkup(React.createElement(Footer,{lang}));
+    const fence=renderToStaticMarkup(React.createElement(Footer,{lang,imageNotice:false}));
+    assert(normal.includes(lang==='en'?'Images labelled AI':'Picha zilizoainishwa'));
+    assert(!fence.includes(lang==='en'?'Images labelled AI':'Picha zilizoainishwa'));
+    for(const text of ['+255 760 111 880','Mianzini','Moshi'])assert(fence.includes(text));
+  }
+});

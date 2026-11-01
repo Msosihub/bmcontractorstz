@@ -2,15 +2,184 @@
   "checkedOn": "2026-11-01",
   "scope": "Manufacturer information only; no verified BM model inventory, retail prices, warranty or authorized-dealer status.",
   "models": [
-    {"name":"Nemtek Druid 13LCD","application":"security-single-zone","url":"https://www.nemtek.co.za/product/druid-13lcd-energizer/","verifiedFact":"Single-zone security energizer with LCD and alarm monitoring; model-specific accessories and backup must be confirmed."},
-    {"name":"Nemtek Druid 28LCD","application":"security-dual-zone","url":"https://www.nemtek.co.za/product/druid-28lcd-energizer/","verifiedFact":"Dual-zone security energizer with LCD; not a universal perimeter-size recommendation."},
-    {"name":"Nemtek Agri 10km","application":"agricultural","url":"https://www.nemtek.co.za/product/agri-10km-energizer/","verifiedFact":"Mains/battery agricultural energizer; the model label is not a coverage guarantee."}
+    {
+      "id": "nemtek-druid-13lcd",
+      "name": "Nemtek Druid 13LCD",
+      "brand": "Nemtek",
+      "model": "Druid 13LCD",
+      "application": "security",
+      "featuresEn": [
+        "Single zone",
+        "LCD"
+      ],
+      "featuresSw": [
+        "Kanda moja",
+        "LCD"
+      ],
+      "descriptionEn": "Security energizer with a single monitored zone and LCD status display.",
+      "descriptionSw": "Energizer ya usalama yenye kanda moja ya ufuatiliaji na skrini ya LCD.",
+      "url": "https://www.nemtek.co.za/product/druid-13lcd-energizer/",
+      "verifiedFact": "Single-zone security energizer with LCD and alarm monitoring; model-specific accessories and backup must be confirmed."
+    },
+    {
+      "id": "nemtek-druid-28lcd",
+      "name": "Nemtek Druid 28LCD",
+      "brand": "Nemtek",
+      "model": "Druid 28LCD",
+      "application": "security",
+      "featuresEn": [
+        "Dual zone",
+        "LCD"
+      ],
+      "featuresSw": [
+        "Kanda mbili",
+        "LCD"
+      ],
+      "descriptionEn": "Security energizer for separately planned monitoring zones.",
+      "descriptionSw": "Energizer ya usalama kwa kanda za ufuatiliaji zilizopangwa tofauti.",
+      "url": "https://www.nemtek.co.za/product/druid-28lcd-energizer/",
+      "verifiedFact": "Dual-zone security energizer with LCD; not a universal perimeter-size recommendation."
+    },
+    {
+      "id": "nemtek-agri-10km",
+      "name": "Nemtek Agri 10km",
+      "brand": "Nemtek",
+      "model": "Agri 10km",
+      "application": "agricultural",
+      "featuresEn": [
+        "Animal management",
+        "Mains / battery"
+      ],
+      "featuresSw": [
+        "Udhibiti wa mifugo",
+        "Umeme / betri"
+      ],
+      "descriptionEn": "Agricultural energizer selected for the animals, vegetation and actual fence conditions.",
+      "descriptionSw": "Energizer ya kilimo inayochaguliwa kwa aina ya mifugo, uoto na hali halisi ya uzio.",
+      "url": "https://www.nemtek.co.za/product/agri-10km-energizer/",
+      "verifiedFact": "Mains/battery agricultural energizer; the model label is not a coverage guarantee."
+    },
+    {
+      "id": "jva-z14",
+      "name": "JVA Z14",
+      "brand": "JVA",
+      "model": "Z14",
+      "application": "security",
+      "featuresEn": [
+        "Single zone",
+        "LCD / keypad"
+      ],
+      "featuresSw": [
+        "Kanda moja",
+        "LCD / keypad"
+      ],
+      "descriptionEn": "Single-zone perimeter security energizer with fence monitoring and supported keypad control.",
+      "descriptionSw": "Energizer ya usalama ya kanda moja yenye ufuatiliaji wa uzio na udhibiti kwa keypad inayolingana.",
+      "url": "https://store.jva-fence.com.au/products/jva-z14",
+      "verifiedFact": "Official JVA product listing confirms single-zone security application, LCD/keypad and fence alarms. No power-output or accessory-inclusion assumption across variants."
+    },
+    {
+      "id": "jva-z28",
+      "name": "JVA Z28",
+      "brand": "JVA",
+      "model": "Z28",
+      "application": "security",
+      "featuresEn": [
+        "Dual zone",
+        "Perimeter monitoring"
+      ],
+      "featuresSw": [
+        "Kanda mbili",
+        "Ufuatiliaji wa uzio"
+      ],
+      "descriptionEn": "Dual-zone security energizer for a perimeter requiring separate zone identification.",
+      "descriptionSw": "Energizer ya usalama ya kanda mbili kwa eneo linalohitaji kutambua kanda tofauti.",
+      "url": "https://www.jva-fence.com.au/security.php",
+      "verifiedFact": "Official JVA security range distinguishes Z28 dual-zone from single-zone models."
+    },
+    {
+      "id": "gallagher-mbs200",
+      "name": "Gallagher MBS200",
+      "brand": "Gallagher",
+      "model": "MBS200",
+      "application": "agricultural",
+      "featuresEn": [
+        "Animal management",
+        "Mains / battery / solar"
+      ],
+      "featuresSw": [
+        "Udhibiti wa mifugo",
+        "Umeme / betri / sola"
+      ],
+      "descriptionEn": "Multi-powered agricultural energizer. Assess the complete power arrangement and fence load for your land.",
+      "descriptionSw": "Energizer ya kilimo yenye chaguo tofauti za umeme. Chanzo cha umeme na mahitaji ya uzio vitathminiwe kwa eneo lako.",
+      "url": "https://shop.am.gallagher.com/au/en_AU/animal-management/electric-fencing/power/multi-powered-energizers/mbs200-multi-powered-fence-energizer/p/G38911",
+      "verifiedFact": "Official Gallagher MBS200 listing confirms animal-management application and mains, battery or solar installation options. No regional price/warranty or kit inclusion copied."
+    },
+    {
+      "id": "stafix-x3",
+      "name": "Stafix X3",
+      "brand": "Stafix",
+      "model": "X3",
+      "application": "agricultural",
+      "featuresEn": [
+        "Animal management",
+        "Mains / battery"
+      ],
+      "featuresSw": [
+        "Udhibiti wa mifugo",
+        "Umeme / betri"
+      ],
+      "descriptionEn": "X-series agricultural energizer with mains or battery operation; confirm the regional model and accessories.",
+      "descriptionSw": "Energizer ya kilimo ya X-series inayotumia umeme au betri; thibitisha modeli ya soko husika na vifaa vya ziada.",
+      "url": "https://www.stafix.co.za/Stafix%20Catalogue%20Full.pdf",
+      "verifiedFact": "Official Stafix regional catalogue lists X3 X-series multi-powered energizer for livestock/predator control. Availability requires confirmation."
+    },
+    {
+      "id": "stafix-x6i",
+      "name": "Stafix X6i",
+      "brand": "Stafix",
+      "model": "X6i",
+      "application": "agricultural",
+      "featuresEn": [
+        "Animal management",
+        "LCD monitoring"
+      ],
+      "featuresSw": [
+        "Udhibiti wa mifugo",
+        "Ufuatiliaji wa LCD"
+      ],
+      "descriptionEn": "Agricultural Unigizer with LCD and earth-monitoring features. Application and supported accessories need assessment.",
+      "descriptionSw": "Unigizer ya kilimo yenye LCD na ufuatiliaji wa earthing. Matumizi na vifaa vinavyolingana vitathminiwe kwanza.",
+      "url": "https://nz.stafix.com/sites/default/files/webdam_assets/142228798.pdf",
+      "verifiedFact": "Official Stafix manufacturer manual covers X6i as LCD/earth monitoring agricultural Unigizer; the manual warns models may not be available in all markets."
+    }
   ],
   "guidance": [
-    {"url":"https://www.nemtek.co.za/product-category/game-wildlife/game-energizers/","purpose":"Separate wildlife/animal-management equipment category; does not establish BM wildlife delivery capability."},
-    {"url":"https://www.nemtek.co.za/documents/","purpose":"Current product-specific user/installer manuals and lightning-protection documentation; actual installation follows the selected manual and applicable local requirements."},
-    {"url":"https://nemtek.co.za/wp-content/uploads/2021/09/instruction-manual-pet.pdf","purpose":"Manufacturer earthing principles: output, soil and moisture affect earthing; no universal electrode specification copied to public copy."}
+    {
+      "url": "https://www.nemtek.co.za/product-category/game-wildlife/game-energizers/",
+      "purpose": "Separate wildlife/animal-management equipment category; does not establish BM wildlife delivery capability."
+    },
+    {
+      "url": "https://www.nemtek.co.za/documents/",
+      "purpose": "Current product-specific user/installer manuals and lightning-protection documentation; actual installation follows the selected manual and applicable local requirements."
+    },
+    {
+      "url": "https://nemtek.co.za/wp-content/uploads/2021/09/instruction-manual-pet.pdf",
+      "purpose": "Manufacturer earthing principles: output, soil and moisture affect earthing; no universal electrode specification copied to public copy."
+    }
   ],
   "bmPriceEvidence": "No approved current price record supplied; legacy seed examples are not verified inventory or pricing and were not used.",
-  "manufacturerImageRights": "Unverified; no manufacturer photography downloaded or reproduced. Official product pages linked instead."
+  "manufacturerImageRights": "Unverified; no manufacturer photography downloaded or reproduced. Official product pages linked instead.",
+  "pendingBrands": [
+    {
+      "ownerSpelling": "Lanster",
+      "status": "Not confidently identified from primary manufacturer evidence; no model added. Request exact label/model photo or official datasheet."
+    },
+    {
+      "ownerSpelling": "Starfix",
+      "status": "Verified Stafix separately, using its actual spelling. Owner should confirm this is the intended brand; no invented Starfix model."
+    }
+  ],
+  "integration": "Local editorial equipment reference data only. Stable IDs support a later reviewed catalogue mapping; no Medusa API, product records, prices or stock integration."
 }

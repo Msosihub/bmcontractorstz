@@ -28,7 +28,7 @@ export function FencePlanner({ lang }: {
         })}
       </div>
       {t.applications.map((item, i) => <article key={item.id} id={`ef-panel-${item.id}`} className="ef-app-panel" hidden={selected !== i} aria-label={item.name}>
-        <figure><Image src={item.image} alt={item.alt} fill sizes="(max-width:760px) 100vw, 42vw"/><figcaption>{lang === "sw" ? "Picha ya mfano wa mazingira" : "Illustrative setting"}</figcaption></figure>
+        <figure><Image src={item.image} alt={item.alt} fill sizes="(max-width:760px) 100vw, 42vw"/></figure>
         <div className="ef-panel-copy"><p className="eyebrow">{item.name}</p><h3>{item.title}</h3><p>{item.body}</p><ul>{item.points.map(x => <li key={x}><Check size={16} aria-hidden="true"/><span>{x}</span></li>)}</ul><p className="ef-panel-note">{item.note}</p></div>
       </article>)}
       <div className="ef-brief" aria-label={t.briefLabel}>
