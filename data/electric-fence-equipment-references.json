@@ -19,7 +19,10 @@
       "descriptionEn": "Security energizer with a single monitored zone and LCD status display.",
       "descriptionSw": "Energizer ya usalama yenye kanda moja ya ufuatiliaji na skrini ya LCD.",
       "url": "https://www.nemtek.co.za/product/druid-13lcd-energizer/",
-      "verifiedFact": "Single-zone security energizer with LCD and alarm monitoring; model-specific accessories and backup must be confirmed."
+      "verifiedFact": "Single-zone security energizer with LCD and alarm monitoring; model-specific accessories and backup must be confirmed.",
+      "imagePath": "/assets/electric-fence-products/nemtek-druid-13lcd-640.webp",
+      "imageWidth": 640,
+      "imageHeight": 640
     },
     {
       "id": "nemtek-druid-28lcd",
@@ -38,7 +41,10 @@
       "descriptionEn": "Security energizer for separately planned monitoring zones.",
       "descriptionSw": "Energizer ya usalama kwa kanda za ufuatiliaji zilizopangwa tofauti.",
       "url": "https://www.nemtek.co.za/product/druid-28lcd-energizer/",
-      "verifiedFact": "Dual-zone security energizer with LCD; not a universal perimeter-size recommendation."
+      "verifiedFact": "Dual-zone security energizer with LCD; not a universal perimeter-size recommendation.",
+      "imagePath": "/assets/electric-fence-products/nemtek-druid-28lcd-640.webp",
+      "imageWidth": 640,
+      "imageHeight": 640
     },
     {
       "id": "nemtek-agri-10km",
@@ -57,7 +63,10 @@
       "descriptionEn": "Agricultural energizer selected for the animals, vegetation and actual fence conditions.",
       "descriptionSw": "Energizer ya kilimo inayochaguliwa kwa aina ya mifugo, uoto na hali halisi ya uzio.",
       "url": "https://www.nemtek.co.za/product/agri-10km-energizer/",
-      "verifiedFact": "Mains/battery agricultural energizer; the model label is not a coverage guarantee."
+      "verifiedFact": "Mains/battery agricultural energizer; the model label is not a coverage guarantee.",
+      "imagePath": "/assets/electric-fence-products/nemtek-agri-10km-640.webp",
+      "imageWidth": 640,
+      "imageHeight": 640
     },
     {
       "id": "jva-z14",
@@ -76,7 +85,10 @@
       "descriptionEn": "Single-zone perimeter security energizer with fence monitoring and supported keypad control.",
       "descriptionSw": "Energizer ya usalama ya kanda moja yenye ufuatiliaji wa uzio na udhibiti kwa keypad inayolingana.",
       "url": "https://store.jva-fence.com.au/products/jva-z14",
-      "verifiedFact": "Official JVA product listing confirms single-zone security application, LCD/keypad and fence alarms. No power-output or accessory-inclusion assumption across variants."
+      "verifiedFact": "Official JVA product listing confirms single-zone security application, LCD/keypad and fence alarms. No power-output or accessory-inclusion assumption across variants.",
+      "imagePath": "/assets/electric-fence-products/jva-z14-640.webp",
+      "imageWidth": 466,
+      "imageHeight": 640
     },
     {
       "id": "jva-z28",
@@ -95,7 +107,10 @@
       "descriptionEn": "Dual-zone security energizer for a perimeter requiring separate zone identification.",
       "descriptionSw": "Energizer ya usalama ya kanda mbili kwa eneo linalohitaji kutambua kanda tofauti.",
       "url": "https://www.jva-fence.com.au/security.php",
-      "verifiedFact": "Official JVA security range distinguishes Z28 dual-zone from single-zone models."
+      "verifiedFact": "Official JVA security range distinguishes Z28 dual-zone from single-zone models.",
+      "imagePath": "/assets/electric-fence-products/jva-z28-640.webp",
+      "imageWidth": 600,
+      "imageHeight": 600
     },
     {
       "id": "gallagher-mbs200",
@@ -114,7 +129,10 @@
       "descriptionEn": "Multi-powered agricultural energizer. Assess the complete power arrangement and fence load for your land.",
       "descriptionSw": "Energizer ya kilimo yenye chaguo tofauti za umeme. Chanzo cha umeme na mahitaji ya uzio vitathminiwe kwa eneo lako.",
       "url": "https://shop.am.gallagher.com/au/en_AU/animal-management/electric-fencing/power/multi-powered-energizers/mbs200-multi-powered-fence-energizer/p/G38911",
-      "verifiedFact": "Official Gallagher MBS200 listing confirms animal-management application and mains, battery or solar installation options. No regional price/warranty or kit inclusion copied."
+      "verifiedFact": "Official Gallagher MBS200 listing confirms animal-management application and mains, battery or solar installation options. No regional price/warranty or kit inclusion copied.",
+      "imagePath": "/assets/electric-fence-products/gallagher-mbs200-640.webp",
+      "imageWidth": 515,
+      "imageHeight": 515
     },
     {
       "id": "stafix-x3",
@@ -133,7 +151,10 @@
       "descriptionEn": "X-series agricultural energizer with mains or battery operation; confirm the regional model and accessories.",
       "descriptionSw": "Energizer ya kilimo ya X-series inayotumia umeme au betri; thibitisha modeli ya soko husika na vifaa vya ziada.",
       "url": "https://www.stafix.co.za/Stafix%20Catalogue%20Full.pdf",
-      "verifiedFact": "Official Stafix regional catalogue lists X3 X-series multi-powered energizer for livestock/predator control. Availability requires confirmation."
+      "verifiedFact": "Official Stafix regional catalogue lists X3 X-series multi-powered energizer for livestock/predator control. Availability requires confirmation.",
+      "imagePath": "/assets/electric-fence-products/stafix-x3-640.webp",
+      "imageWidth": 614,
+      "imageHeight": 640
     },
     {
       "id": "stafix-x6i",
@@ -152,7 +173,10 @@
       "descriptionEn": "Agricultural Unigizer with LCD and earth-monitoring features. Application and supported accessories need assessment.",
       "descriptionSw": "Unigizer ya kilimo yenye LCD na ufuatiliaji wa earthing. Matumizi na vifaa vinavyolingana vitathminiwe kwanza.",
       "url": "https://nz.stafix.com/sites/default/files/webdam_assets/142228798.pdf",
-      "verifiedFact": "Official Stafix manufacturer manual covers X6i as LCD/earth monitoring agricultural Unigizer; the manual warns models may not be available in all markets."
+      "verifiedFact": "Official Stafix manufacturer manual covers X6i as LCD/earth monitoring agricultural Unigizer; the manual warns models may not be available in all markets.",
+      "imagePath": "/assets/electric-fence-products/stafix-x6i-640.webp",
+      "imageWidth": 378,
+      "imageHeight": 378
     }
   ],
   "guidance": [
@@ -170,7 +194,7 @@
     }
   ],
   "bmPriceEvidence": "No approved current price record supplied; legacy seed examples are not verified inventory or pricing and were not used.",
-  "manufacturerImageRights": "Unverified; no manufacturer photography downloaded or reproduced. Official product pages linked instead.",
+  "manufacturerImageRights": "Actual official-source photographs used for local review only; all commercial reuse clearances pending. See data/electric-fence-product-images.json. Images excluded from Git until cleared; hosted/Production builds blocked by media policy.",
   "pendingBrands": [
     {
       "ownerSpelling": "Lanster",

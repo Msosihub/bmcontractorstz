@@ -43,3 +43,7 @@ next-env.d.ts
 /app/generated/prisma
 
 /.test-cache/
+
+# Official product photos: local review only until reuse permissions are documented.
+/public/assets/electric-fence-products/
+/design-preview/media-originals/electric-fence-products/
