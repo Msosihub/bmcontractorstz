@@ -30,3 +30,7 @@ Motion settings remain design/accessibility policy rather than arbitrary CMS mar
 ## Owner decisions before the next backend milestone
 
 Approve section fields and editing/review responsibilities; review the sector labels against actual delivery scope; supply real team/project/client evidence if those sections are wanted; review manufacturer relationship wording and image/logo rights before adding a brand strip. Confirm the existing storage inventory, environment isolation, spend, retention and restore ownership from the media plan before provisioning uploads. None of these decisions authorizes production migration, deployment or notifications.
+
+## 1 November 2026 — limited CCTV customer implementation
+
+The owner approved seven named customer references and a local-only CCTV belt/editor. `docs/commercial/cctv/REVIEW.md` records the exact names, source defaults, fixed SiteSetting key, permission gates and test evidence. `/admin/customers` manages names, order, visibility and prepared local logo/image references. Secure uploads/storage, other public belts and broader CMS ownership remain outside this change. No migration, Production write or deployment occurred.

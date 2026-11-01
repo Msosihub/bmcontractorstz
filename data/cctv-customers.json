@@ -1,0 +1,9 @@
+[
+ {"id":"simba-lodges","name":"Simba Lodges","enabled":true,"approved":true,"imagePath":"","imageApproved":false},
+ {"id":"abc-metros","name":"ABC Metros","enabled":true,"approved":true,"imagePath":"","imageApproved":false},
+ {"id":"kilimanjaro-busses-office","name":"Kilimanjaro Busses Office","enabled":true,"approved":true,"imagePath":"","imageApproved":false},
+ {"id":"mauli-tours","name":"Mauli Tours","enabled":true,"approved":true,"imagePath":"","imageApproved":false},
+ {"id":"royal-furnitures","name":"Royal Furnitures","enabled":true,"approved":true,"imagePath":"","imageApproved":false},
+ {"id":"jankan-farmers","name":"Jankan Farmers","enabled":true,"approved":true,"imagePath":"","imageApproved":false},
+ {"id":"sukeeko-garages","name":"Sukeeko Garages","enabled":true,"approved":true,"imagePath":"","imageApproved":false}
+]

@@ -1,0 +1,572 @@
+{
+  "en": {
+    "service": "CCTV installation in Tanzania",
+    "title": "Your space.",
+    "emphasis": "Your CCTV solution.",
+    "intro": "4, 8, 16 cameras or more. We plan the equipment, install it neatly and show you how to use your system.",
+    "metaTitle": "CCTV Installation, 4MP IP & Camera Systems in Tanzania",
+    "metaDescription": "Plan CCTV for your home, shop, office or hotel with BM Contractors. Compare 4MP IP/PoE, HD, Wi-Fi and 4G options. Request a quotation in Moshi, Arusha or nationwide.",
+    "quote": "Request a CCTV quotation",
+    "survey": "Request a site survey",
+    "whatsapp": "WhatsApp about CCTV",
+    "call": "Call national sales",
+    "price": "Request Current Price",
+    "territory": "Moshi · Arusha · Nationwide enquiries",
+    "jump": [
+      "Installation packages",
+      "System options",
+      "Questions"
+    ],
+    "plannerLabel": "CCTV + INSTALLATION",
+    "plannerTitle": "Choose a starting point. We’ll take it from there.",
+    "plannerIntro": "One quotation, from equipment to installation and handover. Choose your property below; we’ll confirm the layout and price for your site.",
+    "caseLabel": "Your premises",
+    "countLabel": "A starting point for coverage",
+    "caseHeading": "What we would assess",
+    "countNote": "Camera count is not a coverage guarantee. Confirm recorder channels, PoE power, storage and room for expansion.",
+    "contextLabel": "Your enquiry brief",
+    "contextSuffix": "CCTV planning guide — equipment and installation to be assessed",
+    "cases": [
+      {
+        "id": "home",
+        "name": "Home & compound",
+        "coverage": "Start with the gate, entrances and parking, then cover the important gaps around your compound.",
+        "approach": "Consider a 4MP IP/PoE system for a new installation, or assess a compatible HD upgrade where sound coaxial cabling already exists."
+      },
+      {
+        "id": "shop",
+        "name": "Shop",
+        "coverage": "Cover the entrance, till and stock areas, with closer views where transaction detail matters.",
+        "approach": "Balance overview cameras with closer views at important points. Check backlighting, lighting after closing and safe recorder placement."
+      },
+      {
+        "id": "office",
+        "name": "Tour office & business",
+        "coverage": "Keep reception, access points and shared office areas in view, with tidy cabling and controlled viewing access.",
+        "approach": "Plan tidy cable containment, staff viewing permissions and remote checks by an authorised manager."
+      },
+      {
+        "id": "hotel",
+        "name": "Hotel & lodge",
+        "coverage": "Plan discreet views of reception, public corridors, parking and service entrances.",
+        "approach": "Use discreet, appropriate housings and concealed or contained cabling. Keep guest bedrooms, bathrooms and changing spaces outside the camera plan."
+      },
+      {
+        "id": "school",
+        "name": "School",
+        "coverage": "Focus on gates, reception and shared routes, with agreed viewing permissions and attention to children’s privacy.",
+        "approach": "Agree who may view/export footage, the retention period and appropriate notice before selecting cameras and recording permissions."
+      },
+      {
+        "id": "warehouse",
+        "name": "Warehouse",
+        "coverage": "See loading points, stock aisles, doors and yard activity; assess distance and lighting before choosing lenses.",
+        "approach": "Assess low light, dust, outdoor exposure, network distances and cable protection. Larger premises may need more than one PoE switch."
+      },
+      {
+        "id": "institution",
+        "name": "Institution",
+        "coverage": "Coordinate entrances and shared areas across buildings, with a site plan and room for expansion.",
+        "approach": "Specify channels, network design, recording retention, UPS needs, access roles and handover documentation. Discuss phased expansion."
+      }
+    ],
+    "sizes": [
+      {
+        "count": "4",
+        "title": "Home & small shop",
+        "body": "A compact home, small shop or defined office area. Start with the main entry and the few views that matter most.",
+        "items": [
+          "Entrances & key viewpoints",
+          "Suitable IP/PoE or HD system",
+          "Recording & phone viewing setup"
+        ]
+      },
+      {
+        "count": "8",
+        "title": "Larger home & office",
+        "body": "A larger home, busy shop, tour office or smaller lodge with several entrances and shared areas.",
+        "items": [
+          "Several indoor/outdoor viewpoints",
+          "Planned cabling & PoE capacity",
+          "Storage for your agreed retention"
+        ]
+      },
+      {
+        "count": "16",
+        "title": "Business & hospitality",
+        "body": "A hotel, school, warehouse or office compound with several activity zones and authorised viewers.",
+        "items": [
+          "Reception, parking & working areas",
+          "Network & user access planning",
+          "Storage & backup assessment"
+        ]
+      },
+      {
+        "count": "16+",
+        "title": "Institutions & larger sites",
+        "body": "Larger institutions, multiple buildings or phased projects. A survey and equipment schedule should lead the design.",
+        "items": [
+          "Multiple buildings or phased works",
+          "Designed network, recording & storage",
+          "Site survey & itemised BOQ"
+        ]
+      }
+    ],
+    "optionsLabel": "CHOOSE THE RIGHT APPROACH",
+    "optionsTitle": "Different places. Different ways to connect.",
+    "optionsIntro": "Not sure which fits? Tell us about your premises—we’ll help you choose.",
+    "options": [
+      {
+        "title": "IP / PoE CCTV",
+        "tag": "A practical starting point for new systems",
+        "body": "IP cameras connect over a network. PoE can carry data and power over one suitable Ethernet cable to compatible equipment. An NVR records the video; select channels, bandwidth and switch power for the whole system."
+      },
+      {
+        "title": "Analogue HD / DVR",
+        "tag": "Assess existing coaxial wiring",
+        "body": "HD cameras normally connect to a compatible DVR over coaxial cable, with power supplied separately or through supported PoC equipment. Reusing good wiring may help, but camera/DVR format, resolution and power compatibility must be checked."
+      },
+      {
+        "title": "Standalone Wi-Fi cameras",
+        "tag": "For a few home or small-user viewpoints",
+        "body": "Useful where local Wi-Fi is reliable and camera power is available. Wi-Fi does not mean no power cable. Check signal at the actual mounting point, microSD recording, app support and any optional cloud subscription."
+      },
+      {
+        "title": "4G SIM cameras, with or without solar",
+        "tag": "Where fixed internet is unavailable",
+        "body": "Check mobile coverage, supported SIM/network bands, data cost and power first. A 4G camera can use an appropriate mains/battery supply or a matched solar setup. Panel size, battery condition and shade affect operation; recording modes vary by model."
+      }
+    ],
+    "hiddenTitle": "Discreet or “hidden/secret” camera requests",
+    "hiddenBody": "Discuss the authorised purpose, privacy, permissions and who can view recordings before specifying discreet equipment. Keep cameras out of guest bedrooms, bathrooms and changing spaces. A small, visible camera is often the better starting point; do not assume audio recording is appropriate.",
+    "hotelLabel": "HOTELS, LODGES & TOUR OFFICES",
+    "hotelTitle": "Discreet cameras. A considered finish.",
+    "hotelBody": "For hotel receptions, tour offices and shared spaces. Tidy cable routes, thoughtfully placed cameras and viewing access agreed with you.",
+    "equipmentLabel": "UNDERSTAND THE HARDWARE",
+    "equipmentTitle": "Cameras are only part of the picture.",
+    "equipmentBody": "A useful quotation identifies camera models and lenses, DVR/NVR channels, PoE equipment or power supplies, surveillance HDD capacity, cable quantities, containment, mounting accessories, installation and setup. Ask what is included, what is optional and what ongoing data or cloud costs may apply.",
+    "brandTitle": "Hikvision · Tiandy · Dahua",
+    "brandIntro": "Brands and models are selected for your installation and confirmed availability. These are manufacturer examples, not stock promises.",
+    "productLabels": [
+      "4MP · IP bullet · PoE · IP67",
+      "4MP · IP bullet · PoE · IP67",
+      "4MP · IP turret/eyeball · PoE"
+    ],
+    "sourceLink": "Manufacturer reference",
+    "catalogue": "Browse the CCTV catalogue",
+    "supplyNote": "Need cameras only, a complete installation or a wholesale/BOQ quotation? Say which you need. Prices, availability, labour, VAT treatment and warranty terms must be confirmed in writing.",
+    "solarNote": "Hikvision AOV SolarVu is a manufacturer family to discuss for solar/4G applications. Confirm the exact model, recording mode, SIM support and battery/solar assumptions; AOV is not a blanket promise of continuous full-frame-rate recording.",
+    "technicalLabel": "WHAT CUSTOMERS USUALLY WANT TO KNOW",
+    "technicalTitle": "Quick answers before you enquire.",
+    "faqs": [
+      {
+        "q": "Will it record without internet?",
+        "a": "A suitably configured local DVR/NVR can record without an internet connection while its cameras and power remain available. Remote phone viewing needs an internet path at the site and on the phone. Standalone cameras vary: confirm local microSD/NVR support rather than assuming cloud recording."
+      },
+      {
+        "q": "Can I check cameras from my phone outside Tanzania?",
+        "a": "Remote viewing may be possible with a supported manufacturer app and a working connection. Setup depends on the exact equipment, account, network and regional app/service availability. Keep the account under your control, use strong authentication and give other viewers only the access they need."
+      },
+      {
+        "q": "How many days will a hard drive record?",
+        "a": "There is no honest fixed answer from camera count alone. Retention depends on usable HDD capacity, total bitrate, frame rate, compression, audio and continuous or event recording. Ask for a retention estimate using your proposed settings, then check actual playback after commissioning. Old footage is normally overwritten when configured storage fills."
+      },
+      {
+        "q": "Will I see clearly at night?",
+        "a": "Infrared often records in black and white; colour night recording needs suitable light or model-specific illumination. Headlights, reflective surfaces, insects and mounting angles affect results. Test the important view after dark; an advertised illumination distance is not a face-identification guarantee."
+      },
+      {
+        "q": "Which cameras go indoors or outdoors?",
+        "a": "Choose indoor housings for their intended environment and outdoor-rated cameras with suitable weather protection where exposed. Check sun, rain, dust, corrosion, mounting and sealed connectors. A wide lens covers more area; a tighter view may be needed for useful detail at a gate or counter."
+      },
+      {
+        "q": "What happens when power goes off?",
+        "a": "Cameras, the recorder and any network equipment they depend on need backup power. For remote viewing, the router or 4G link also needs power and a working network. Size the UPS/inverter from actual load and required runtime; a camera alone on backup does not keep an entire system recording."
+      },
+      {
+        "q": "Does a SIM or solar camera have monthly costs?",
+        "a": "A 4G camera needs an active compatible SIM and a suitable data plan. Frequent remote viewing can use substantial data. Some apps offer optional paid cloud storage. Ask about local recording, recurring costs, solar charging conditions and whether the model records continuously, by events or in an AOV mode."
+      },
+      {
+        "q": "Can BM improve an existing system?",
+        "a": "Share recorder and camera model numbers, a few photos and the problem you want solved. BM can assess compatibility, camera positions, cabling, HDD health, app access and backup power before recommending what to retain or replace. Do not send account passwords over WhatsApp."
+      },
+      {
+        "q": "How do I get an accurate installation price?",
+        "a": "Tell us your location, premises type, important views, approximate camera count, existing equipment and desired recording period. Photos or a simple plan help. A site survey can resolve distances and cable routes before an itemised equipment-and-installation quotation is agreed."
+      }
+    ],
+    "deliveryLabel": "FROM FIRST LOOK TO EVERYDAY USE",
+    "deliveryTitle": "A tidy installation. A usable handover.",
+    "steps": [
+      [
+        "Site assessment",
+        "Agree the views, light, privacy boundaries, cable routes and power conditions."
+      ],
+      [
+        "Equipment selection",
+        "Match lenses, recorder, storage, network and backup; agree the written scope and price."
+      ],
+      [
+        "Neat installation",
+        "Mount securely, contain cables, protect connections and label the relevant runs."
+      ],
+      [
+        "Configuration & testing",
+        "Set recording, date/time, authorised viewing, playback and agreed night checks."
+      ],
+      [
+        "Owner handover",
+        "Show phone viewing, playback/export and access management; confirm documentation and agreed terms."
+      ],
+      [
+        "Support & maintenance",
+        "Agree support scope and response arrangements. Plan cleaning, recording checks, firmware review and HDD health checks."
+      ]
+    ],
+    "briefLabel": "LET’S PLAN YOUR CCTV",
+    "briefTitle": "Tell us where. We’ll help with the rest.",
+    "briefBody": "Send your location, property type and a starting camera count. We’ll discuss the installation and whether a site survey is needed.",
+    "related": "Complete the security picture",
+    "relatedLinks": [
+      "Electric fencing",
+      "Gate automation",
+      "Networking",
+      "UPS & backup power",
+      "Institutional procurement"
+    ],
+    "mediaNote": "Service scenes and unbranded equipment are illustrative, including AI-generated imagery. They are not completed BM projects, real client sites or exact product photographs.",
+    "includedLabel": "A complete system, planned around you",
+    "included": [
+      "Cameras & recorder",
+      "HDD & cabling",
+      "Neat installation",
+      "Phone setup & handover"
+    ],
+    "packageQuote": "Quote this installation",
+    "packagePrice": "Request Package Price",
+    "packageNote": "Starting configurations, quoted for your site. Models, HDD size, cable lengths, backup and labour are itemised before agreement; camera count alone does not guarantee coverage.",
+    "processTitle": "From your first message to a working system.",
+    "process": [
+      [
+        "Tell us what you need",
+        "Site assessment, equipment selection and a clear quotation."
+      ],
+      [
+        "We install and configure",
+        "Tidy cabling, recording, phone access and testing."
+      ],
+      [
+        "You take control",
+        "Practical handover, playback and agreed support."
+      ]
+    ],
+    "lifecycle": [
+      {
+        "label": "ALREADY HAVE CCTV?",
+        "title": "Keep your system working.",
+        "body": "Camera cleaning, picture and recording checks, HDD health, cable faults and phone-viewing support. Ask about regular maintenance after an initial assessment of your existing system.",
+        "action": "Arrange CCTV maintenance",
+        "context": "CCTV maintenance — existing system",
+        "survey": false
+      },
+      {
+        "label": "BUILDING A HOME OR BUSINESS?",
+        "title": "Prepare now. Finish neatly.",
+        "body": "Plan camera points, conduits, cable routes and recorder locations before plastering and ceilings. We can coordinate CCTV preparation with your builder for homes, offices and multi-storey buildings.",
+        "action": "Plan CCTV for my building",
+        "context": "CCTV preparation — building under construction",
+        "survey": true
+      }
+    ],
+    "propertyQuestion": "Where do you need CCTV?",
+    "coverageLabel": "Coverage to consider",
+    "optionsAction": "Help me choose my CCTV system",
+    "optionsContext": "CCTV — help choosing the right system"
+  },
+  "sw": {
+    "service": "Ufungaji wa CCTV Tanzania",
+    "title": "CCTV iliyofungwa",
+    "emphasis": "kwa mahitaji yako.",
+    "intro": "Chagua mfumo wa kamera 4, 8, 16 au zaidi. Tunapanga vifaa, tunafunga kwa unadhifu na kukuelekeza kutumia mfumo wako.",
+    "metaTitle": "Ufungaji wa CCTV, Kamera za 4MP IP na Mifumo Tanzania",
+    "metaDescription": "Panga CCTV ya nyumba, duka, ofisi au hoteli na BM Contractors. Linganisha IP/PoE za 4MP, HD, Wi-Fi na 4G. Omba makadirio Moshi, Arusha na maeneo mengine Tanzania.",
+    "quote": "Omba makadirio ya CCTV",
+    "survey": "Omba ukaguzi wa eneo",
+    "whatsapp": "Ulizia CCTV WhatsApp",
+    "call": "Piga simu kwa mauzo",
+    "price": "Ulizia Bei ya Sasa",
+    "territory": "Moshi · Arusha · Maombi kutoka Tanzania nzima",
+    "jump": [
+      "Vifurushi vya ufungaji",
+      "Chaguo za mfumo",
+      "Maswali"
+    ],
+    "plannerLabel": "CCTV PAMOJA NA UFUNGAJI",
+    "plannerTitle": "Chagua pa kuanzia. Tumalizie pamoja.",
+    "plannerIntro": "Vifaa, ufungaji na maelekezo ya matumizi kwenye makadirio moja. Chagua aina ya eneo lako; tutathibitisha mpangilio na bei kulingana na mahitaji yako.",
+    "caseLabel": "Eneo lako",
+    "countLabel": "Chagua idadi ya kamera ya kuanzia",
+    "caseHeading": "Tutakachoangalia",
+    "countNote": "Idadi ya kamera pekee haihakikishi eneo lote kuonekana. Hakiki chaneli za rekoda, uwezo wa PoE, hifadhi na nafasi ya kuongeza vifaa.",
+    "contextLabel": "Muhtasari wa ombi lako",
+    "contextSuffix": "Mwongozo wa CCTV — vifaa na ufungaji vitathminiwe",
+    "cases": [
+      {
+        "id": "home",
+        "name": "Nyumba na kiwanja",
+        "coverage": "Anza na geti, milango na maegesho, kisha panga mwonekano wa maeneo mengine muhimu ndani ya kiwanja.",
+        "approach": "Kwa mfumo mpya, jadili kamera za 4MP IP/PoE. Ikiwa kuna nyaya nzuri za coaxial, tathmini kama zinafaa kubaki kwenye mfumo wa HD unaoendana na rekoda."
+      },
+      {
+        "id": "shop",
+        "name": "Duka",
+        "coverage": "Angalia mlango, kaunta ya malipo na sehemu ya bidhaa; ongeza mwonekano wa karibu pale maelezo ya tukio yanapohitajika.",
+        "approach": "Changanya mwonekano wa jumla na kamera za maeneo muhimu. Angalia mwanga unaotokea nyuma ya mtu, hali ya usiku na sehemu salama ya kuweka rekoda."
+      },
+      {
+        "id": "office",
+        "name": "Ofisi za utalii na biashara",
+        "coverage": "Weka mapokezi, milango na maeneo ya kazi ya pamoja kwenye mwonekano, kwa nyaya nadhifu na ruhusa za kutazama zilizopangwa.",
+        "approach": "Panga nyaya kwa unadhifu, ruhusa za kutazama na namna meneja aliyeidhinishwa atakavyoangalia akiwa mbali."
+      },
+      {
+        "id": "hotel",
+        "name": "Hoteli na lodge",
+        "coverage": "Panga kamera zinazokaa vizuri kwenye mapokezi, korido za pamoja, maegesho na milango ya huduma.",
+        "approach": "Chagua kamera zinazokaa vizuri kwenye jengo na nyaya zilizofichwa au kupitishwa kwa unadhifu. Vyumba vya wageni, bafu na sehemu za kubadilishia nguo visiwe kwenye mpango wa kamera."
+      },
+      {
+        "id": "school",
+        "name": "Shule",
+        "coverage": "Anza na geti, mapokezi na njia za pamoja, kwa ruhusa zilizokubaliwa na kuzingatia faragha ya watoto.",
+        "approach": "Kubalianeni nani atatazama au kutoa nakala za video, muda wa kuhifadhi rekodi na taarifa zinazofaa kwa wanaotumia eneo kabla ya kuchagua mfumo."
+      },
+      {
+        "id": "warehouse",
+        "name": "Ghala",
+        "coverage": "Angalia sehemu za kupakia, njia kati ya bidhaa, milango na uwanja; tathmini umbali na mwanga kabla ya kuchagua lenzi.",
+        "approach": "Tathmini mwanga hafifu, vumbi, mvua, umbali wa mtandao na ulinzi wa nyaya. Jengo kubwa linaweza kuhitaji switch zaidi ya moja ya PoE."
+      },
+      {
+        "id": "institution",
+        "name": "Taasisi",
+        "coverage": "Panga milango na maeneo ya pamoja katika majengo tofauti, kwa kufuata ramani na nafasi ya kuongeza mfumo.",
+        "approach": "Bainisha chaneli, mtandao, muda wa kuhifadhi video, UPS, ruhusa za watumiaji na nyaraka za makabidhiano. Jadili pia kuongeza mfumo kwa awamu."
+      }
+    ],
+    "sizes": [
+      {
+        "count": "4",
+        "title": "Nyumba na duka dogo",
+        "body": "Nyumba ndogo, duka dogo au sehemu maalumu ya ofisi. Anza na mlango mkuu na maeneo yenye umuhimu zaidi.",
+        "items": [
+          "Milango na maeneo muhimu",
+          "IP/PoE au HD inayofaa",
+          "Kurekodi na kutazama kwa simu"
+        ]
+      },
+      {
+        "count": "8",
+        "title": "Nyumba kubwa na ofisi",
+        "body": "Nyumba kubwa, duka lenye shughuli nyingi, ofisi ya utalii au lodge ndogo yenye milango na maeneo kadhaa.",
+        "items": [
+          "Maeneo kadhaa ya ndani/nje",
+          "Mpangilio wa nyaya na PoE",
+          "Hifadhi kwa muda uliokubaliwa"
+        ]
+      },
+      {
+        "count": "16",
+        "title": "Biashara na hoteli",
+        "body": "Hoteli, shule, ghala au eneo la ofisi lenye sehemu nyingi na watu tofauti walioidhinishwa kutazama.",
+        "items": [
+          "Mapokezi, maegesho na maeneo ya kazi",
+          "Mtandao na ruhusa za watumiaji",
+          "Hifadhi na backup vitathminiwe"
+        ]
+      },
+      {
+        "count": "16+",
+        "title": "Taasisi na maeneo makubwa",
+        "body": "Taasisi kubwa, majengo mengi au kazi ya awamu. Ukaguzi wa eneo na orodha ya vifaa viongoze mpango.",
+        "items": [
+          "Majengo mengi au kazi ya awamu",
+          "Mtandao, rekoda na hifadhi vipangwe",
+          "Ukaguzi wa eneo na BOQ"
+        ]
+      }
+    ],
+    "optionsLabel": "CHAGUA MFUMO UNAOFAA",
+    "optionsTitle": "Unahitaji mfumo wa aina gani?",
+    "optionsIntro": "Huna uhakika? Tuambie eneo lako; tutakusaidia kuchagua.",
+    "options": [
+      {
+        "title": "CCTV za IP / PoE",
+        "tag": "Chaguo la kujadili kwa mfumo mpya",
+        "body": "Kamera za IP hutumia mtandao. PoE inaweza kupitisha data na umeme kwenye kebo moja ya Ethernet inayofaa, kwa vifaa vinavyoendana. NVR huhifadhi video; chagua chaneli, uwezo wa data na umeme wa switch kwa mfumo mzima."
+      },
+      {
+        "title": "Analogue HD / DVR",
+        "tag": "Tathmini nyaya za coaxial zilizopo",
+        "body": "Kamera za HD kwa kawaida huunganishwa na DVR inayofaa kwa kebo ya coaxial. Umeme hupitishwa tofauti au kwa PoC ikiwa vifaa vinaiunga mkono. Nyaya nzuri zinaweza kubaki, lakini aina ya signal, resolution na uoanifu wa rekoda lazima vikaguliwe."
+      },
+      {
+        "title": "Kamera za Wi-Fi zinazojitegemea",
+        "tag": "Kwa maeneo machache ya nyumba au biashara ndogo",
+        "body": "Zinafaa pale Wi-Fi inapofika vizuri na kuna umeme wa kamera. Wi-Fi haimaanishi kamera haihitaji umeme. Pima signal sehemu itakapofungwa; hakiki kurekodi kwenye microSD, programu ya simu na gharama za hiari za cloud."
+      },
+      {
+        "title": "Kamera za SIM 4G, zenye au zisizo na sola",
+        "tag": "Pale intaneti ya kudumu haipatikani",
+        "body": "Anza na signal ya mtandao wa simu, SIM inayofaa, gharama za data na umeme. Kamera ya 4G inaweza kutumia umeme/betri inayofaa au mfumo wa sola uliochaguliwa kwa mahitaji yake. Kivuli, paneli na hali ya betri huathiri matumizi; aina ya kurekodi hutegemea modeli."
+      }
+    ],
+    "hiddenTitle": "Maombi ya kamera za siri au zisizoonekana kwa urahisi",
+    "hiddenBody": "Eleza matumizi yaliyoidhinishwa, faragha, ruhusa na nani atakayetazama rekodi kabla ya kuchagua vifaa. Kamera zisiwe kwenye vyumba vya wageni, bafu au sehemu za kubadilishia nguo. Mara nyingi kamera ndogo inayoonekana ndiyo mwanzo unaofaa; usichukulie kurekodi sauti kuwa lazima.",
+    "hotelLabel": "HOTELI, LODGE NA OFISI ZA UTALII",
+    "hotelTitle": "Ulinzi mzuri. Ufungaji nadhifu.",
+    "hotelBody": "CCTV kwa mapokezi, maeneo ya pamoja na maegesho. Nyaya nadhifu, kamera zinazokaa vizuri kwenye jengo na ruhusa za kutazama zilizopangwa.",
+    "equipmentLabel": "FAHAMU VIFAA VYA MFUMO",
+    "equipmentTitle": "Kamera ni sehemu moja tu ya mfumo.",
+    "equipmentBody": "Makadirio yenye maelezo yataje modeli na lenzi, chaneli za DVR/NVR, vifaa vya PoE au power supply, ukubwa wa surveillance HDD, nyaya, vifaa vya kupitishia nyaya, vifaa vya kufungia, kazi na usanidi. Uliza kilichojumuishwa, cha hiari na gharama zozote za data au cloud.",
+    "brandTitle": "Hikvision · Tiandy · Dahua",
+    "brandIntro": "Chapa na modeli huchaguliwa kulingana na kazi na upatikanaji. Hii ni mifano ya watengenezaji, si uthibitisho wa stock.",
+    "productLabels": [
+      "4MP · IP bullet · PoE · IP67",
+      "4MP · IP bullet · PoE · IP67",
+      "4MP · IP turret/eyeball · PoE"
+    ],
+    "sourceLink": "Nyaraka za mtengenezaji",
+    "catalogue": "Angalia katalogi ya CCTV",
+    "supplyNote": "Unahitaji vifaa pekee, ufungaji kamili au makadirio ya jumla/BOQ? Taja unachohitaji. Bei, upatikanaji, kazi, VAT na masharti ya dhamana vithibitishwe kwa maandishi.",
+    "solarNote": "Hikvision AOV SolarVu ni familia ya vifaa vya mtengenezaji inayoweza kujadiliwa kwa sola/4G. Hakiki modeli, namna ya kurekodi, SIM na mahitaji ya betri/paneli. AOV si ahadi ya kila kamera kurekodi kwa frame rate ya juu saa zote.",
+    "technicalLabel": "MASWALI YA WATEJA KABLA YA KUCHAGUA",
+    "technicalTitle": "Majibu mafupi. Maamuzi rahisi.",
+    "faqs": [
+      {
+        "q": "CCTV itarekodi bila intaneti?",
+        "a": "DVR/NVR iliyosanidiwa vizuri inaweza kurekodi bila intaneti mradi kamera na umeme wake vinafanya kazi. Kutazama kupitia simu ukiwa mbali kunahitaji intaneti eneo la kamera na kwenye simu. Kwa kamera inayojitegemea, hakiki uwezo wa kurekodi kwenye microSD au NVR inayooana; si kila kamera inahitaji cloud."
+      },
+      {
+        "q": "Nitaweza kuangalia kamera nikiwa nje ya Tanzania?",
+        "a": "Inawezekana kwa mfumo wenye programu inayokubalika na muunganisho unaofanya kazi. Inategemea vifaa, akaunti, mtandao na upatikanaji wa huduma ya programu husika. Akaunti iwe chini ya udhibiti wako, iwe na ulinzi imara na ruhusa za kila mtumiaji zilingane na jukumu lake."
+      },
+      {
+        "q": "HDD itahifadhi video za siku ngapi?",
+        "a": "Idadi ya kamera pekee haitoshi kutoa jibu la uhakika. Muda hutegemea nafasi halisi ya HDD, bitrate ya jumla, frame rate, compression, sauti na kurekodi muda wote au kwa matukio. Omba makadirio kwa mipangilio inayopendekezwa, kisha hakiki playback baada ya ufungaji. Mfumo uliosanidiwa kufanya hivyo huandika juu ya rekodi za zamani hifadhi ikijaa."
+      },
+      {
+        "q": "Nitaona vizuri usiku?",
+        "a": "Infrared mara nyingi hutoa picha nyeusi na nyeupe; picha za rangi usiku zinahitaji mwanga unaofaa au teknolojia ya modeli husika. Taa za magari, sehemu zinazong’aa, wadudu na pembe ya kamera vinaweza kuathiri picha. Pima eneo muhimu baada ya giza; umbali wa mwanga uliotangazwa si dhamana ya kutambua uso."
+      },
+      {
+        "q": "Kamera gani zinafaa ndani na nje?",
+        "a": "Chagua kamera ya mazingira husika. Kwa nje, hakiki kinga ya mvua/vumbi, jua, kutu, sehemu ya kufunga na viunganishi vilivyolindwa. Lenzi pana huonyesha eneo kubwa; sehemu kama geti au kaunta inaweza kuhitaji mwonekano wa karibu zaidi ili kutoa maelezo ya kutosha."
+      },
+      {
+        "q": "Umeme ukikatika itakuwaje?",
+        "a": "Kamera, rekoda na vifaa vya mtandao vinavyohusika vinahitaji umeme wa akiba. Kutazama kwa simu ukiwa mbali kunahitaji pia router au 4G kuwa na umeme na mtandao. Chagua UPS/inverter kwa mzigo halisi na muda unaohitaji; kuweka kamera pekee kwenye backup hakuhakikishi mfumo mzima kuendelea kurekodi."
+      },
+      {
+        "q": "Kamera ya SIM au sola ina gharama za kila mwezi?",
+        "a": "Kamera ya 4G inahitaji SIM inayokubalika na kifurushi cha data. Kutazama mara kwa mara ukiwa mbali kunaweza kutumia data nyingi. Baadhi ya programu zina cloud ya kulipia kwa hiari. Uliza kuhusu kurekodi ndani ya kifaa, gharama zinazoendelea, hali ya kuchaji sola na kama modeli inarekodi muda wote, kwa matukio au kwa AOV."
+      },
+      {
+        "q": "BM inaweza kuboresha mfumo uliopo?",
+        "a": "Tuma modeli za rekoda na kamera, picha chache na tatizo unalotaka kutatua. BM inaweza kutathmini uoanifu, nafasi za kamera, nyaya, hali ya HDD, programu ya simu na backup kabla ya kupendekeza cha kubaki au kubadilishwa. Usitume nywila za akaunti kupitia WhatsApp."
+      },
+      {
+        "q": "Nitapataje makadirio sahihi ya ufungaji?",
+        "a": "Taja eneo, aina ya jengo, sehemu unazotaka kuona, idadi ya kuanzia ya kamera, vifaa vilivyopo na muda wa kuhifadhi video. Picha au ramani rahisi husaidia. Ukaguzi wa eneo unaweza kufafanua umbali na njia za nyaya kabla ya kukubaliana makadirio ya vifaa na kazi."
+      }
+    ],
+    "deliveryLabel": "KUANZIA TATHMINI HADI MATUMIZI",
+    "deliveryTitle": "Ufungaji nadhifu. Makabidhiano yanayoeleweka.",
+    "steps": [
+      [
+        "Tathmini ya eneo",
+        "Kubali maeneo ya kuangalia, mwanga, mipaka ya faragha, njia za nyaya na hali ya umeme."
+      ],
+      [
+        "Uchaguzi wa vifaa",
+        "Linganisha lenzi, rekoda, HDD, mtandao na backup; kubali wigo wa kazi na bei kwa maandishi."
+      ],
+      [
+        "Ufungaji nadhifu",
+        "Funga kwa usalama, pitisha nyaya vizuri, linda viunganishi na weka alama zinazohitajika."
+      ],
+      [
+        "Usanidi na majaribio",
+        "Weka kurekodi, tarehe/saa, ruhusa, playback na majaribio ya usiku yaliyokubaliwa."
+      ],
+      [
+        "Makabidhiano kwa mwenye mfumo",
+        "Onyesha matumizi ya simu, kutafuta/kutoa video na kusimamia watumiaji; hakiki nyaraka na masharti."
+      ],
+      [
+        "Msaada na matengenezo",
+        "Kubali wigo wa msaada na utaratibu wa kushughulikia matatizo. Panga usafi, ukaguzi wa kurekodi, firmware na hali ya HDD."
+      ]
+    ],
+    "briefLabel": "TUPANGE CCTV YAKO",
+    "briefTitle": "Tuambie eneo lako. Tupange ufungaji.",
+    "briefBody": "Tuma aina ya jengo, eneo na idadi ya kamera unayofikiria. Tutajadili kifurushi na kama ukaguzi wa eneo unahitajika.",
+    "related": "Unganisha mifumo ya ulinzi",
+    "relatedLinks": [
+      "Uzio wa umeme",
+      "Geti la kiotomatiki",
+      "Mtandao",
+      "UPS na umeme wa akiba",
+      "Ununuzi wa taasisi"
+    ],
+    "mediaNote": "Picha za maeneo na vifaa visivyo na chapa ni za mfano, zikiwemo zilizozalishwa kwa AI. Si miradi iliyokamilishwa na BM, maeneo ya wateja halisi wala picha za modeli husika.",
+    "includedLabel": "Mfumo kamili, uliopangwa kwa ajili yako",
+    "included": [
+      "Kamera na rekoda",
+      "HDD na nyaya",
+      "Ufungaji nadhifu",
+      "Usanidi wa simu na maelekezo"
+    ],
+    "packageQuote": "Ulizia kifurushi hiki",
+    "packagePrice": "Omba Bei ya Kifurushi",
+    "packageNote": "Vifurushi ni vya kujadili. Modeli, HDD, urefu wa nyaya, backup na kazi vitabainishwa kwenye nukuu; idadi pekee haihakikishi eneo lote kuonekana.",
+    "processTitle": "Hatua tatu hadi mfumo wako kufanya kazi.",
+    "process": [
+      [
+        "Tuambie unachohitaji",
+        "Tathmini ya eneo, vifaa na makadirio ya kazi."
+      ],
+      [
+        "Tunafunga na kusanidi",
+        "Nyaya nadhifu, rekoda, simu na majaribio."
+      ],
+      [
+        "Tunakuelekeza na kusaidia",
+        "Matumizi, playback na mpango wa msaada."
+      ]
+    ],
+    "lifecycle": [
+      {
+        "label": "TAYARI UNA CCTV?",
+        "title": "Mfumo wako uendelee kufanya kazi.",
+        "body": "Usafi wa kamera, ukaguzi wa picha, kurekodi na HDD, matatizo ya nyaya na kutazama kwa simu. Ulizia matengenezo ya mara kwa mara baada ya tathmini ya mfumo wako uliopo.",
+        "action": "Panga matengenezo ya CCTV",
+        "context": "Matengenezo ya CCTV — mfumo uliopo",
+        "survey": false
+      },
+      {
+        "label": "UNAJENGA NYUMBA AU OFISI?",
+        "title": "Andaa mapema. Malizia kwa unadhifu.",
+        "body": "Panga sehemu za kamera, mabomba ya nyaya, njia za kebo na eneo la rekoda kabla ya plasta na dari. Tunaweza kuratibu maandalizi ya CCTV na fundi wako kwa nyumba, ofisi na majengo ya ghorofa.",
+        "action": "Panga CCTV ya jengo langu",
+        "context": "Maandalizi ya CCTV — jengo linalojengwa",
+        "survey": true
+      }
+    ],
+    "propertyQuestion": "Unahitaji CCTV kwenye eneo la aina gani?",
+    "coverageLabel": "Maeneo ya kuangalia",
+    "optionsAction": "Nisaidie kuchagua mfumo wa CCTV",
+    "optionsContext": "CCTV — ushauri wa kuchagua mfumo unaofaa"
+  }
+}
