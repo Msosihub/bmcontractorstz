@@ -114,17 +114,17 @@ export default function HeroSection({
 
                 <div className="absolute top-4 left-4 flex items-center gap-2 rounded-md bg-slate-950/80 px-2 py-1 text-[10px] font-mono uppercase tracking-wider text-emerald-400 backdrop-blur-sm">
                   <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-ping" />
-                  CAM_01 // LIVE
+                  {lang === "sw" ? "Mfumo wa CCTV" : "CCTV system"}
                 </div>
 
                 <div className="absolute bottom-5 left-5 right-5 text-white">
                   <p className="inline-flex items-center gap-1.5 rounded-full bg-red-600/90 px-3 py-1 text-[11px] font-black uppercase tracking-wider text-white">
-                    <ShieldCheck className="h-3 w-3" /> Professional Framework
+                    <ShieldCheck className="h-3 w-3" /> {lang === "sw" ? "Mpango wa ufungaji" : "Installation planning"}
                   </p>
                   <h3 className="mt-3 text-xl font-black leading-tight">
                     {lang === "sw"
-                      ? "Ufungaji unaozingatia viwango vya kimataifa."
-                      : "Installations executed to meticulous international safety standards."}
+                      ? "Tunapanga vifaa, ufungaji na msaada kulingana na eneo lako."
+                      : "Plan equipment, installation and support around your site."}
                   </h3>
                 </div>
               </div>

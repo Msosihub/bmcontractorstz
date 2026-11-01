@@ -72,8 +72,8 @@ export default function WhyChooseBM({ lang }: { lang: string }) {
           <div className="lg:col-span-5">
             <p className="text-base leading-relaxed text-slate-400 lg:border-l-2 lg:border-slate-700 lg:pl-6">
               {lang === "sw"
-                ? "Tunahakikisha usalama wako hauna mashaka kwa kutumia vifaa vya kisasa vinavyodumu na mafundi wenye uzoefu wa hali ya juu."
-                : "We ensure your security remains absolute by deploying durable modern hardware alongside highly experienced technicians."}
+                ? "Tunapanga vifaa na ufungaji kulingana na mahitaji ya eneo lako."
+                : "We plan equipment and installation around the requirements of your site."}
             </p>
           </div>
         </div>
@@ -88,18 +88,18 @@ export default function WhyChooseBM({ lang }: { lang: string }) {
 
             <div className="relative z-20">
               <span className="inline-flex items-center rounded-full bg-red-500/90 px-3 py-1 text-xs font-bold text-white uppercase tracking-wider shadow-sm animate-pulse">
-                Live Feed
+                {lang === "sw" ? "Mifumo ya usalama" : "Security systems"}
               </span>
             </div>
 
             <div className="relative z-20 mt-auto">
               <h4 className="text-lg font-black text-white tracking-wide">
-                {lang === "sw" ? "Ulinzi wa Masaa 24" : "24/7 Premium Security"}
+                {lang === "sw" ? "Mpango wa usalama" : "Security planning"}
               </h4>
               <p className="mt-2 text-sm text-slate-400 leading-relaxed">
                 {lang === "sw"
-                  ? "Mifumo thabiti inayokupa amani ya moyo popote ulipo duniani."
-                  : "Uncompromising systems built to provide absolute peace of mind everywhere."}
+                  ? "Zungumza na timu yetu kuhusu maeneo ya ulinzi, vifaa na msaada."
+                  : "Discuss coverage, equipment and support requirements with our team."}
               </p>
             </div>
           </div>

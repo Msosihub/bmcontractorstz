@@ -20,6 +20,8 @@
 
 import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/prisma";
+import { requireAdmin } from "@/lib/auth/admin-auth";
+import { validateAdminForm } from "@/lib/admin-validation";
 
 function slugify(value: string) {
   /**
@@ -35,6 +37,8 @@ function slugify(value: string) {
 }
 
 export async function createSupportArticle(formData: FormData) {
+  await requireAdmin();
+  validateAdminForm(formData);
   const categoryEn = String(formData.get("categoryEn") || "").trim();
   const categorySw = String(formData.get("categorySw") || "").trim();
 
@@ -100,6 +104,8 @@ export async function createSupportArticle(formData: FormData) {
 }
 
 export async function toggleSupportArticlePublished(formData: FormData) {
+  await requireAdmin();
+  validateAdminForm(formData);
   /**
    * Publish or hide a support article without deleting it.
    */
@@ -125,6 +131,8 @@ export async function toggleSupportArticlePublished(formData: FormData) {
 }
 
 export async function updateSupportArticle(formData: FormData) {
+  await requireAdmin();
+  validateAdminForm(formData);
   /**
    * Updates an existing support/help center article.
    *

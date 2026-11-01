@@ -19,6 +19,8 @@
 
 import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/prisma";
+import { requireAdmin } from "@/lib/auth/admin-auth";
+import { validateAdminForm } from "@/lib/admin-validation";
 
 function slugify(value: string) {
   /**
@@ -57,6 +59,8 @@ function parseIncludedItems(value: string) {
 }
 
 export async function createCctvPackage(formData: FormData) {
+  await requireAdmin();
+  validateAdminForm(formData);
   const titleEn = String(formData.get("titleEn") || "").trim();
   const titleSw = String(formData.get("titleSw") || "").trim();
   const cameras = parseNumber(formData.get("cameras"));
@@ -108,6 +112,8 @@ export async function createCctvPackage(formData: FormData) {
 }
 
 export async function toggleCctvPackagePublished(formData: FormData) {
+  await requireAdmin();
+  validateAdminForm(formData);
   /**
    * Publish or hide a CCTV package without deleting it.
    */
@@ -132,6 +138,8 @@ export async function toggleCctvPackagePublished(formData: FormData) {
 }
 
 export async function updateCctvPackage(formData: FormData) {
+  await requireAdmin();
+  validateAdminForm(formData);
   /**
    * Updates an existing CCTV package record.
    *

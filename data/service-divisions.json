@@ -1,0 +1,68 @@
+[
+  {
+    "id": "security",
+    "en": "Security, Safety & Automation",
+    "sw": "Ulinzi, Usalama na Mifumo ya Kiotomatiki",
+    "slugs": [
+      "cctv",
+      "electric-fence",
+      "gate-motors",
+      "access-control",
+      "fire-alarm-systems",
+      "video-intercom"
+    ],
+    "descriptionEn": "CCTV installation, electric fencing and gate automation lead a coordinated approach to perimeter protection, entry control and alarms.",
+    "descriptionSw": "Ufungaji wa CCTV, uzio wa umeme na mageti ya kiotomatiki ni msingi wa ulinzi wa mipaka, udhibiti wa kuingia na mifumo ya tahadhari.",
+    "shortEn": "Security & automation",
+    "shortSw": "Ulinzi na usalama"
+  },
+  {
+    "id": "electrical",
+    "en": "Electrical Engineering & Contracting",
+    "sw": "Uhandisi na Kazi za Umeme",
+    "slugs": ["electrical-contracting"],
+    "descriptionEn": "Distribution, circuits, lighting, protective devices and agreed inspection/testing for building electrical installations.",
+    "descriptionSw": "Usambazaji wa umeme, saketi, taa, vifaa vya kinga na ukaguzi na vipimo vilivyokubaliwa kwa mifumo ya majengo.",
+    "shortEn": "Electrical",
+    "shortSw": "Umeme"
+  },
+  {
+    "id": "power",
+    "en": "Power Generation, Solar & Backup",
+    "sw": "Jenereta, Umeme wa Jua na Mifumo ya Akiba",
+    "slugs": [
+      "generators",
+      "solar-panel-systems",
+      "power-backup",
+      "solar-street-lights"
+    ],
+    "descriptionEn": "Generator/ATS integration, solar PV, UPS and batteries assessed around essential loads, operating time and the site.",
+    "descriptionSw": "Uunganishaji wa jenereta na ATS, sola, UPS na betri ukipangwa kulingana na mizigo muhimu, muda wa matumizi na hali ya eneo.",
+    "shortEn": "Power & backup",
+    "shortSw": "Nishati na akiba"
+  },
+  {
+    "id": "ict",
+    "en": "ICT, Networking & Business Telephony",
+    "sw": "TEHAMA, Mitandao na Simu za Biashara",
+    "slugs": ["networking", "telephone-systems"],
+    "descriptionEn": "Structured cabling, Wi-Fi, switching and office/hotel PBX or IP-PBX telephone systems planned together.",
+    "descriptionSw": "Nyaya za mtandao, Wi-Fi, swichi na mifumo ya simu za PBX au IP-PBX kwa ofisi na hoteli vikiratibiwa pamoja.",
+    "shortEn": "Networks & telephones",
+    "shortSw": "Mitandao na simu"
+  },
+  {
+    "id": "support-supply",
+    "en": "HVAC, Equipment Supply & Technical Support",
+    "sw": "Viyoyozi, Ugavi wa Vifaa na Huduma za Kiufundi",
+    "slugs": [
+      "air-conditioners",
+      "maintenance-support",
+      "institutional-procurement"
+    ],
+    "descriptionEn": "Air conditioning, system maintenance and specification-led supply enquiries. Institutional procurement connects every division.",
+    "descriptionSw": "Viyoyozi, matengenezo ya mifumo na maombi ya vifaa yanayoongozwa na vipimo. Ununuzi wa taasisi unahusisha idara zote.",
+    "shortEn": "HVAC & technical supply",
+    "shortSw": "Viyoyozi na ugavi"
+  }
+]

@@ -1,3 +1,5 @@
+import reviewedServices from "@/data/premium-services.json";
+import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Service Edit Page
  * -----------------------
@@ -39,6 +41,7 @@ function asTextLines(value: unknown) {
 }
 
 export default async function AdminServiceEditPage({ params }: PageProps) {
+  await requireAdminPage();
   const resolvedParams = await params;
 
   const service = await prisma.service.findUnique({
@@ -56,6 +59,11 @@ export default async function AdminServiceEditPage({ params }: PageProps) {
       title="Edit Service"
       subtitle="Update service page content, features and public details."
     >
+      <p className="mb-6 rounded-xl border border-white/20 p-4 text-sm">
+        {reviewedServices.some((x) => x.slug === service.slug)
+          ? "Premium service: reviewed source content currently owns the main title, introduction, technical sections, FAQs and related links. This editor controls publication and supplemental body content. Image URLs require separate rights approval before public display. Title and description edits here do not replace the premium headline."
+          : "This editor controls the public service title, introduction, body, feature list and publication. Technical guidance and related links remain reviewed source content. Image URLs require separate rights approval before public display."}
+      </p>
       <div className="grid items-start gap-6 xl:grid-cols-[0.9fr_1.1fr]">
         <form
           action={updateService}

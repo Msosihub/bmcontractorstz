@@ -1,3 +1,4 @@
+import { redirect } from "next/navigation";
 /**
  * Admin Auth Helpers
  * ------------------
@@ -12,6 +13,7 @@
  */
 
 import crypto from "crypto";
+import { canAdminister } from "./admin-policy";
 import { cookies } from "next/headers";
 import { prisma } from "@/lib/prisma";
 
@@ -122,15 +124,7 @@ export async function getCurrentAdminSession() {
 
   if (!session) return null;
 
-  if (session.expiresAt <= new Date()) {
-    await prisma.adminSession.delete({
-      where: {
-        id: session.id,
-      },
-    });
-
-    return null;
-  }
+  if (!canAdminister(session, isAllowedAdminPhone)) return null;
 
   return session;
 }
@@ -148,4 +142,17 @@ export async function clearAdminSession() {
   }
 
   cookieStore.delete(ADMIN_SESSION_COOKIE);
+}
+
+/** Existing phone allowlist grants the ADMIN role; no unconnected AdminUser role is inferred. */
+export async function requireAdmin() {
+  const session = await getCurrentAdminSession();
+  if (!session) throw new Error("Unauthorized");
+  return session;
+}
+
+export async function requireAdminPage() {
+  const session = await getCurrentAdminSession();
+  if (!session) redirect("/admin/login");
+  return session;
 }

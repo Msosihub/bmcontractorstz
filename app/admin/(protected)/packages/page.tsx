@@ -1,3 +1,4 @@
+import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin CCTV Packages Page
  * ------------------------
@@ -42,6 +43,7 @@ function asStringArray(value: unknown) {
 }
 
 export default async function AdminPackagesPage() {
+  await requireAdminPage();
   const packages = await prisma.cctvPackage.findMany({
     orderBy: {
       cameras: "asc",

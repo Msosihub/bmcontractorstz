@@ -1,3 +1,4 @@
+import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Product Edit Page
  * -----------------------
@@ -51,6 +52,7 @@ function specificationsToText(value: unknown) {
 }
 
 export default async function AdminProductEditPage({ params }: PageProps) {
+  await requireAdminPage();
   const resolvedParams = await params;
 
   const product = await prisma.product.findUnique({

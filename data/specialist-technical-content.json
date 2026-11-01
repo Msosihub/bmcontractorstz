@@ -1,0 +1,1082 @@
+{
+  "cctv": {
+    "references": ["hikvision", "dahua", "tiandy"],
+    "en": {
+      "title": "CCTV choices, explained.",
+      "intro": "Start with what must be seen: an entrance identity, a till transaction, a vehicle approach or a broad yard. The same camera is rarely right for every view.",
+      "comparison": [
+        {
+          "option": "IP cameras + NVR",
+          "consideration": "Network cameras use Ethernet; check PoE power, recording bandwidth, channel licences where applicable and supported camera features."
+        },
+        {
+          "option": "Analogue HD + DVR",
+          "consideration": "Existing coaxial cable may be reusable after testing. Match the camera signal format and resolution to the DVR; an NVR is not a direct substitute."
+        },
+        {
+          "option": "Fixed lens, varifocal or PTZ",
+          "consideration": "A wide view covers more space but gives less detail at distance. Varifocal lenses refine framing; PTZ needs a monitoring strategy and does not watch every direction at once."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Recording time is a calculation",
+          "body": "Retention depends on camera count, codec, bitrate, frame rate, recording schedule and usable disk capacity. Ask for a storage calculation rather than a fixed number of days based only on terabytes."
+        },
+        {
+          "title": "Night-time acceptance matters",
+          "body": "Check faces and movement in the actual lighting, including backlit entrances and reflections. Bullet, dome and turret describe housings; none alone guarantees a particular night image. Agree user accounts, remote access and playback/export training at handover."
+        }
+      ],
+      "faq": {
+        "question": "Will a higher megapixel camera always identify a person?",
+        "answer": "No. Lens, distance, mounting angle, lighting, motion and compression all matter. Agree the required detail at each view during assessment and test it before handover."
+      }
+    },
+    "sw": {
+      "title": "Chaguo za CCTV, kwa maelezo yanayoeleweka.",
+      "intro": "Anza na unachotaka kuona: mtu anayeingia, shughuli za kaunta, gari linalokaribia au eneo la nje. Kamera moja haiwezi kufaa kwa kila sehemu.",
+      "comparison": [
+        {
+          "option": "Kamera za IP + NVR",
+          "consideration": "Kamera hutumia mtandao wa Ethernet. Hakiki umeme wa PoE, uwezo wa kurekodi data, idadi ya kamera na vipengele vinavyoungwa mkono na NVR."
+        },
+        {
+          "option": "Kamera za analogue HD + DVR",
+          "consideration": "Nyaya za coaxial zilizopo zinaweza kutumika baada ya kupimwa. Aina ya signal na resolution ya kamera lazima viendane na DVR; NVR si mbadala wa moja kwa moja."
+        },
+        {
+          "option": "Lenzi ya kudumu, varifocal au PTZ",
+          "consideration": "Picha pana huonyesha eneo kubwa lakini maelezo hupungua kwa vitu vilivyo mbali. Varifocal husaidia kurekebisha eneo linaloonekana. PTZ huhitaji mpango wa ufuatiliaji; haioni pande zote kwa wakati mmoja."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Muda wa kuhifadhi picha huhesabiwa",
+          "body": "Idadi ya kamera, codec, bitrate, frame rate, ratiba ya kurekodi na nafasi halisi ya diski huathiri siku za kuhifadhi. Omba hesabu ya storage badala ya kupewa siku kwa kuangalia terabytes pekee."
+        },
+        {
+          "title": "Jaribio la usiku ni muhimu",
+          "body": "Pima mwonekano wa watu na vitu vinavyotembea katika mwanga wa eneo husika, hasa milango yenye mwanga nyuma na sehemu zenye reflection. Bullet, dome na turret ni maumbo ya kamera; umbo pekee halihakikishi picha nzuri usiku. Makabidhiano yajumuishe akaunti, remote access na namna ya kutafuta na kutoa rekodi."
+        }
+      ],
+      "faq": {
+        "question": "Je, megapixel nyingi zinatosha kumtambua mtu?",
+        "answer": "Hapana. Lenzi, umbali, urefu na mwelekeo wa kamera, mwanga na compression vina mchango. Kiwango cha maelezo kinachohitajika kikubaliwe wakati wa tathmini na kijaribiwe kabla ya makabidhiano."
+      }
+    }
+  },
+  "electric-fence": {
+    "references": ["nemtek"],
+    "en": {
+      "title": "One fence category. Three different briefs.",
+      "intro": "Security perimeters, livestock control and wildlife boundaries have different operating requirements. Begin with the purpose of the fence, not an energizer distance printed on a box.",
+      "comparison": [
+        {
+          "option": "Residential & commercial security",
+          "consideration": "Assess wall condition, exposed approaches, gates, alarm zones, earth system, backup supply and the response to a fence fault."
+        },
+        {
+          "option": "Agricultural & farm fencing",
+          "consideration": "Define livestock or crop-protection purpose, permanent or movable paddocks, vegetation, terrain and mains/battery/solar supply. Animal-management energizers are not interchangeable with security energizers."
+        },
+        {
+          "option": "Game & wildlife applications",
+          "consideration": "Species, conservation conditions, boundary length, public access, monitoring and maintenance access require specialist assessment. Manufacturer application guidance is not evidence of a completed BM wildlife project."
+        }
+      ],
+      "notes": [
+        {
+          "title": "A complete perimeter system",
+          "body": "The assessed scope can include a suitable energizer, wire or animal-appropriate conductors, posts/brackets, insulators, tensioners, gate connections, earth system, warning signs, lightning protection and fault indication. Component selection follows the application and manufacturer instructions."
+        },
+        {
+          "title": "Farm power and maintenance",
+          "body": "Solar operation needs an energy balance for the energizer, battery and panel through low-sun periods. Vegetation contact, damaged insulators, poor joints and changing ground conditions affect performance. Agree inspection, safe isolation, fault-finding and vegetation-control responsibilities."
+        },
+        {
+          "title": "Wildlife work needs a separate technical brief",
+          "body": "Request species and land-use information, access routes, environmental constraints and the monitoring requirement. No universal wire spacing, pulse setting or energizer size is specified here. BM specialist delivery and any required professional involvement must be confirmed before a commitment."
+        }
+      ],
+      "faq": {
+        "question": "Can I use an Agri energizer for a burglar-alarm fence?",
+        "answer": "Do not assume so. Nemtek distinguishes its Agri animal-management range from security energizers. Selection must match the intended use; advertised fence distance is not a guarantee for vegetation, multiple wires or the conditions on your land."
+      }
+    },
+    "sw": {
+      "title": "Aina moja ya huduma. Mahitaji matatu tofauti.",
+      "intro": "Uzio wa usalama, udhibiti wa mifugo na mipaka ya maeneo ya wanyamapori vina mahitaji tofauti. Kusudi la uzio litangulie idadi ya kilomita iliyoandikwa kwenye energizer.",
+      "comparison": [
+        {
+          "option": "Usalama wa makazi na biashara",
+          "consideration": "Tathmini hali ya ukuta, njia za kuingia, mageti, maeneo ya alarm, mfumo wa earth, umeme wa akiba na hatua zinazochukuliwa uzio unapopata hitilafu."
+        },
+        {
+          "option": "Uzio wa mashamba na mifugo",
+          "consideration": "Fafanua kama lengo ni kudhibiti mifugo au kulinda mazao, malisho ya kudumu au yanayohamishwa, uoto, mwinuko wa ardhi na chanzo cha umeme. Energizer ya mifugo si mbadala wa moja kwa moja wa energizer ya usalama."
+        },
+        {
+          "option": "Maeneo ya wanyamapori na hifadhi",
+          "consideration": "Aina ya wanyama, mazingira ya uhifadhi, urefu wa mpaka, njia za watu na ufuatiliaji huhitaji tathmini maalumu. Maelezo ya matumizi kutoka kwa mtengenezaji si ushahidi wa mradi wa BM uliokamilika."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Uzio ni mfumo unaohitaji vifaa vinavyoendana",
+          "body": "Wigo unaotathminiwa unaweza kujumuisha energizer inayofaa, waya au kondakta zinazofaa kwa wanyama husika, nguzo au brackets, vihami, tensioners, viungio vya geti, earth, alama za tahadhari, kinga ya radi na taarifa za hitilafu. Vifaa huchaguliwa kulingana na matumizi na maelekezo ya mtengenezaji."
+        },
+        {
+          "title": "Umeme na matengenezo shambani",
+          "body": "Mfumo wa sola huhitaji kuoanisha matumizi ya energizer, betri na paneli kwa nyakati zenye jua kidogo. Majani yanayogusa waya, vihami vilivyovunjika, viungio vibovu na hali ya udongo huathiri utendaji. Kubaliana kuhusu ukaguzi, kuzima mfumo kwa usalama, kutafuta hitilafu na kuondoa uoto."
+        },
+        {
+          "title": "Uzio wa wanyamapori huhitaji maelezo maalumu ya kazi",
+          "body": "Taja aina ya wanyama, matumizi ya ardhi, njia za kuingia, masharti ya mazingira na namna ya kufuatilia uzio. Hapa hatutoi vipimo vya jumla vya nafasi za waya, pulse au ukubwa wa energizer. Uwezo wa BM kutekeleza kazi hiyo na ushiriki wa wataalamu unaohitajika vithibitishwe kabla ya makubaliano."
+        }
+      ],
+      "faq": {
+        "question": "Je, energizer ya Agri inafaa kwa uzio wa alarm ya uvamizi?",
+        "answer": "Usidhani hivyo. Nemtek hutofautisha Agri ya kudhibiti wanyama na energizer za usalama. Chaguo lilingane na matumizi; kilomita zilizo kwenye bidhaa si ahadi ya utendaji kwa kila uoto, idadi ya waya au hali ya shamba."
+      }
+    }
+  },
+  "gate-motors": {
+    "references": ["centurion"],
+    "en": {
+      "title": "Select the operator around the gate.",
+      "intro": "BM gate automation enquiries should identify the gate type and mechanical condition before selecting a motor.",
+      "comparison": [
+        {
+          "option": "Sliding gate",
+          "consideration": "Assess gate mass, travel, track, rollers, slope and rolling resistance. A motor cannot correct a binding or unstable gate."
+        },
+        {
+          "option": "Swing gate",
+          "consideration": "Leaf geometry, hinge condition, opening angle, wind exposure and mounting geometry govern operator choice."
+        },
+        {
+          "option": "Busy entrance",
+          "consideration": "Opening cycles and peak traffic determine duty requirements. A domestic operator is not automatically suitable for a busy institutional entrance."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Safety is part of the scope",
+          "body": "Discuss beams or other specified safety devices, obstruction response, pedestrian access, warning indications and manual release. Test the complete gate system and teach the owner how to isolate and release it safely."
+        },
+        {
+          "title": "Power, access and servicing",
+          "body": "Agree remote controls, keypad/intercom interfaces and supported access-control inputs. Battery backup has finite capacity and depends on battery condition and usage. Maintenance covers the mechanical gate as well as the motor, controls and backup supply."
+        }
+      ],
+      "faq": {
+        "question": "Can an existing intercom open the automated gate?",
+        "answer": "Sometimes. Check the exact intercom output and operator input, isolation requirements and intended opening function. Do not assume all products with the same brand communicate directly."
+      }
+    },
+    "sw": {
+      "title": "Motor ichaguliwe kulingana na geti.",
+      "intro": "Kwa huduma ya gate automation, BM huhitaji kujua aina na hali ya geti kabla ya kuchagua motor.",
+      "comparison": [
+        {
+          "option": "Geti linaloteleza",
+          "consideration": "Angalia uzito, umbali wa mwendo, reli, rollers, mteremko na urahisi wa kusogea. Motor haitatengeneza geti linalokwama au lisilo imara."
+        },
+        {
+          "option": "Geti la mabawa",
+          "consideration": "Ukubwa wa mabawa, bawaba, pembe ya kufunguka, upepo na nafasi ya kufunga operator huongoza uchaguzi."
+        },
+        {
+          "option": "Lango lenye magari mengi",
+          "consideration": "Idadi ya kufungua na kufunga na msongamano huamua duty inayohitajika. Motor ya nyumbani si lazima ifae kwa lango la taasisi lenye matumizi mengi."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Vifaa vya usalama ni sehemu ya kazi",
+          "body": "Jadili safety beams au vifaa vingine vilivyobainishwa, namna mfumo unavyojibu kizuizi, njia ya watembea kwa miguu na manual release. Mfumo mzima ujaribiwe na mmiliki aelekezwe namna ya kuuzima na kuachia geti kwa usalama."
+        },
+        {
+          "title": "Umeme, njia za kufungua na matengenezo",
+          "body": "Kubaliana kuhusu remote, keypad, intercom na input za access control zinazoungwa mkono. Betri ya akiba ina muda maalumu unaotegemea hali yake na matumizi. Matengenezo yahusishe geti lenyewe, motor, controls na umeme wa akiba."
+        }
+      ],
+      "faq": {
+        "question": "Je, intercom iliyopo inaweza kufungua geti?",
+        "answer": "Inawezekana kwa mifumo inayooana. Hakiki output ya intercom, input ya operator na mahitaji ya isolation. Bidhaa za chapa moja si lazima ziwasiliane moja kwa moja."
+      }
+    }
+  },
+  "electrical-contracting": {
+    "references": ["schneider", "abb", "siemens"],
+    "en": {
+      "title": "Distribution, protection and verification.",
+      "intro": "Electrical contracting begins with the load, supply arrangement and condition of the installation. A BOQ should distinguish equipment supply, installation and testing.",
+      "comparison": [
+        {
+          "option": "New installation / extension",
+          "consideration": "Review supply capacity, circuits, cable routes, distribution boards, isolation and space for future loads."
+        },
+        {
+          "option": "Protection selection",
+          "consideration": "MCB/MCCB address overcurrent; RCD/RCCB and RCBO functions differ. Device type, fault level, cable and coordination must be assessed together."
+        },
+        {
+          "option": "Lighting and earthing",
+          "consideration": "Agree lighting use, controls, maintenance access, earthing and bonding. A list of luminaires alone does not define an installation."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Assessment and handover",
+          "body": "Record existing conditions and proposed changes, agree circuit schedules and technical scope, and include inspection/testing and labelled handover documents. Required professional sign-off and approvals must be established for the actual work; no registration or certification is claimed here."
+        },
+        {
+          "title": "Materials quotations",
+          "body": "Provide drawings or a BOQ, quantities, voltage/phase, installation environment and exact manufacturer references where specified. Alternatives should be clearly identified and approved rather than silently substituted."
+        }
+      ],
+      "faq": {
+        "question": "Can a breaker be chosen just from its amp rating?",
+        "answer": "No. Rated voltage, breaking capacity, trip characteristics, cable protection and coordination with other devices matter. Final selection needs installation-specific assessment."
+      }
+    },
+    "sw": {
+      "title": "Usambazaji, kinga na upimaji wa umeme.",
+      "intro": "Kazi za umeme huanza na mahitaji ya mzigo, namna umeme unavyoingia na hali ya mfumo uliopo. BOQ itofautishe vifaa, ufungaji na upimaji.",
+      "comparison": [
+        {
+          "option": "Mfumo mpya au upanuzi",
+          "consideration": "Pitia uwezo wa supply, saketi, njia za nyaya, distribution boards, sehemu za kutenga umeme na nafasi ya mizigo ya baadaye."
+        },
+        {
+          "option": "Uchaguzi wa vifaa vya kinga",
+          "consideration": "MCB/MCCB hulinda dhidi ya overcurrent; kazi za RCD/RCCB na RCBO hutofautiana. Aina ya kifaa, fault level, nyaya na uratibu wa kinga vitathminiwe pamoja."
+        },
+        {
+          "option": "Taa na mfumo wa earth",
+          "consideration": "Kubaliana matumizi ya taa, controls, namna ya kufanya matengenezo, earthing na bonding. Orodha ya taa pekee haifafanui mfumo mzima."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Tathmini na makabidhiano",
+          "body": "Rekodi hali iliyopo na mabadiliko yanayopendekezwa, ratiba ya saketi na wigo wa kazi. Jumuisha ukaguzi, upimaji na nyaraka zenye utambulisho wa saketi. Uthibitisho wa kitaalamu na vibali vinavyohitajika viamuliwe kwa kazi husika; hatudai usajili au vyeti ambavyo havijathibitishwa."
+        },
+        {
+          "title": "Nukuu za vifaa",
+          "body": "Wasilisha michoro au BOQ, idadi, voltage/phase, mazingira ya ufungaji na rejea za mtengenezaji pale zilipotajwa. Vifaa mbadala vitajwe wazi na vikubaliwe kabla ya kubadilishwa."
+        }
+      ],
+      "faq": {
+        "question": "Je, ampere pekee zinatosha kuchagua breaker?",
+        "answer": "Hapana. Voltage, breaking capacity, aina ya trip, kinga ya nyaya na uratibu na vifaa vingine ni muhimu. Chaguo la mwisho linahitaji tathmini ya mfumo husika."
+      }
+    }
+  },
+  "solar-panel-systems": {
+    "references": ["sunova", "ritar", "chloride"],
+    "en": {
+      "title": "Design around energy use, not panel count.",
+      "intro": "Solar PV enquiries need a daily load profile, roof or ground information and a clear decision about which loads must remain powered during an outage.",
+      "comparison": [
+        {
+          "option": "PV module selection",
+          "consideration": "Compare exact module technology and datasheet, dimensions, shading and mounting. A higher nameplate wattage does not alone establish daily energy yield."
+        },
+        {
+          "option": "Grid-tied, hybrid or off-grid",
+          "consideration": "A grid-tied system does not automatically provide backup during a power cut. Inverter topology, isolation and supported backup circuits must be explicit."
+        },
+        {
+          "option": "Battery storage",
+          "consideration": "Compare usable energy, chemistry, charge/discharge limits, inverter/BMS compatibility and operating conditions; do not mix incompatible battery types."
+        }
+      ],
+      "notes": [
+        {
+          "title": "The whole system",
+          "body": "Assess string voltage/current limits, roof suitability, mounting, DC/AC protection, earthing, cable routes and access. Monitoring, documentation and the owner’s shutdown procedure belong in handover."
+        },
+        {
+          "title": "Maintenance and integration",
+          "body": "Plan panel inspection/cleaning access, alarm checks and battery care according to the selected equipment. Generator integration requires verified inverter/charger support and an agreed changeover arrangement; it is not automatic because both sources produce electricity."
+        }
+      ],
+      "faq": {
+        "question": "How many panels will run my premises?",
+        "answer": "List appliances, their demand, operating hours and starting loads first. The design must account for sunlight, shading, losses and backup priorities before a panel or battery quantity can be quoted."
+      }
+    },
+    "sw": {
+      "title": "Panga mfumo kwa matumizi ya nishati, si idadi ya paneli.",
+      "intro": "Ombi la sola linahitaji kujua mizigo ya kila siku, taarifa za paa au eneo la ardhini na vifaa vinavyopaswa kuendelea kufanya kazi umeme unapokatika.",
+      "comparison": [
+        {
+          "option": "Uchaguzi wa paneli",
+          "consideration": "Linganisha teknolojia na datasheet ya modeli, ukubwa, kivuli na mounting. Watt nyingi zilizoandikwa kwenye paneli pekee hazihakikishi nishati ya siku nzima."
+        },
+        {
+          "option": "Grid-tied, hybrid au off-grid",
+          "consideration": "Mfumo wa grid-tied si lazima utoe umeme wakati gridi imekatika. Aina ya inverter, isolation na saketi za backup vifafanuliwe."
+        },
+        {
+          "option": "Hifadhi ya betri",
+          "consideration": "Linganisha nishati inayotumika, kemia ya betri, uwezo wa kuchaji/kutoa umeme, uoanifu wa inverter/BMS na mazingira. Usichanganye betri zisizooana."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Mfumo mzima",
+          "body": "Tathmini voltage/current ya strings, uimara wa paa, mounting, kinga za DC/AC, earth, njia za nyaya na nafasi ya matengenezo. Monitoring, nyaraka na maelekezo ya kuzima mfumo ni sehemu ya makabidhiano."
+        },
+        {
+          "title": "Matengenezo na kuunganisha vyanzo",
+          "body": "Panga ukaguzi na usafishaji wa paneli, kuhakiki alarms na utunzaji wa betri kulingana na vifaa. Kuunganisha jenereta kunahitaji inverter/charger inayounga mkono matumizi hayo na changeover iliyopangwa; si suala la kuunganisha vyanzo viwili tu."
+        }
+      ],
+      "faq": {
+        "question": "Nahitaji paneli ngapi kwa jengo langu?",
+        "answer": "Orodhesha vifaa, matumizi yake, saa za kufanya kazi na mizigo ya kuanzia. Jua, kivuli, upotevu na vipaumbele vya backup vihesabiwe kabla ya kutoa idadi ya paneli au betri."
+      }
+    }
+  },
+  "power-backup": {
+    "references": ["ritar", "chloride"],
+    "en": {
+      "title": "Choose the loads that cannot stop.",
+      "intro": "UPS and inverter backup serve different continuity needs. Define the equipment, acceptable interruption and required runtime before choosing a rating.",
+      "comparison": [
+        {
+          "option": "UPS for sensitive equipment",
+          "consideration": "Assess watts and VA, topology, transfer behaviour, surge demand and supported battery expansion. A router and a server room need different designs."
+        },
+        {
+          "option": "Inverter / battery backup",
+          "consideration": "Check continuous and starting load, usable battery energy, charger capacity, protective devices and ventilation or installation conditions."
+        },
+        {
+          "option": "Generator-supported continuity",
+          "consideration": "A UPS may bridge generator start and transfer, but charger input limits and generator waveform/frequency compatibility need confirmation."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Runtime is conditional",
+          "body": "Battery capacity, age, discharge rate, temperature and conversion losses affect runtime. Compare systems at the stated load and battery configuration, not just the inverter’s kVA."
+        },
+        {
+          "title": "Test the changeover",
+          "body": "Agree which circuits are backed up and how normal power returns. Maintenance should include battery condition, alarms, safe isolation and a planned load test without disrupting essential operations."
+        }
+      ],
+      "faq": {
+        "question": "Will a larger UPS kVA give more backup hours?",
+        "answer": "Not necessarily. kVA describes power capacity; runtime depends mainly on the battery system and actual load. Request a load-specific runtime estimate and its assumptions."
+      }
+    },
+    "sw": {
+      "title": "Chagua vifaa ambavyo havipaswi kusimama.",
+      "intro": "UPS na inverter za backup zina mahitaji tofauti. Fafanua vifaa, muda wa kukatika unaokubalika na saa za backup kabla ya kuchagua rating.",
+      "comparison": [
+        {
+          "option": "UPS kwa vifaa nyeti",
+          "consideration": "Tathmini watts na VA, aina ya UPS, namna inavyohamisha umeme, surge na uwezekano wa kuongeza betri. Router na chumba cha servers haviitaji mpango mmoja."
+        },
+        {
+          "option": "Inverter na betri",
+          "consideration": "Hakiki mzigo wa kawaida na wa kuanzia, nishati halisi ya betri, uwezo wa charger, vifaa vya kinga na mazingira ya ufungaji."
+        },
+        {
+          "option": "Backup inayosaidiwa na jenereta",
+          "consideration": "UPS inaweza kushikilia mzigo jenereta inapoanza na changeover ikifanya kazi. Uoanifu wa charger na voltage/frequency ya jenereta uthibitishwe."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Muda wa backup hutegemea hali halisi",
+          "body": "Ukubwa na umri wa betri, discharge rate, joto na losses huathiri muda. Linganisha mifumo kwa mzigo na betri zilizotajwa, si kVA ya inverter pekee."
+        },
+        {
+          "title": "Jaribu uhamishaji wa umeme",
+          "body": "Kubaliana saketi zinazopata backup na namna supply ya kawaida inavyorejea. Matengenezo yahusishe hali ya betri, alarms, isolation salama na load test iliyopangwa bila kuvuruga shughuli muhimu."
+        }
+      ],
+      "faq": {
+        "question": "Je, UPS yenye kVA kubwa itaongeza saa za backup?",
+        "answer": "Si lazima. kVA inaonyesha uwezo wa kubeba mzigo; muda hutegemea zaidi betri na matumizi halisi. Omba makadirio yanayoonyesha mzigo, betri na masharti ya hesabu."
+      }
+    }
+  },
+  "generators": {
+    "references": ["cummins", "dse"],
+    "en": {
+      "title": "The genset is one part of the power system.",
+      "intro": "BM generator enquiries cover assessed supply, installation, changeover, control and service requirements. Confirm the exact genset identity before specifying parts.",
+      "comparison": [
+        {
+          "option": "kW / kVA and duty",
+          "consideration": "Distinguish active power from apparent power, and standby duty from prime duty. Size for phase balance, motor starting, ambient conditions and the intended operating schedule."
+        },
+        {
+          "option": "ATS / AMF",
+          "consideration": "ATS switches the power path; AMF control monitors supply and manages generator start/stop. The controller, switching assembly and protection must work together."
+        },
+        {
+          "option": "Controls and service parts",
+          "consideration": "Record genset, engine, alternator and controller model/serial numbers. Filters, belts, sensors and chargers require exact compatibility, not just an engine-brand match."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Site integration",
+          "body": "Assessment includes access and base, ventilation, exhaust route, noise-sensitive areas, fuel arrangements, cable/protection and earthing. A controller change needs wiring, sensing and protection review; factory settings should not be assumed suitable."
+        },
+        {
+          "title": "Commissioning and care",
+          "body": "Agree mains-failure/return tests, transfer and retransfer behaviour, staged load testing, alarms and operator handover. Service intervals follow the exact engine/genset manual, operating hours and conditions; no universal service interval is promised."
+        }
+      ],
+      "faq": {
+        "question": "Does a DSE controller include the automatic transfer switch?",
+        "answer": "No. A controller such as the DSE7320 MKII manages AMF functions; appropriately rated switching equipment and a correctly designed installation are still required."
+      }
+    },
+    "sw": {
+      "title": "Jenereta ni sehemu ya mfumo mzima wa umeme.",
+      "intro": "Maombi ya jenereta kwa BM huhusisha tathmini ya vifaa, ufungaji, changeover, controls na matengenezo. Tambua genset yenyewe kabla ya kutaja spare parts.",
+      "comparison": [
+        {
+          "option": "kW / kVA na aina ya matumizi",
+          "consideration": "Tofautisha nguvu inayotumika na apparent power, pamoja na standby na prime duty. Zingatia usawa wa phase, kuanza kwa motors, joto la eneo na saa za matumizi."
+        },
+        {
+          "option": "ATS / AMF",
+          "consideration": "ATS huhamisha njia ya umeme; AMF hufuatilia supply na kuongoza kuwaka/kuzima kwa jenereta. Controller, switching assembly na kinga lazima viendane."
+        },
+        {
+          "option": "Controls na service parts",
+          "consideration": "Rekodi modeli na serial za genset, engine, alternator na controller. Filters, mikanda, sensors na chargers zichaguliwe kwa uoanifu halisi, si jina la engine pekee."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Ufungaji unaozingatia eneo",
+          "body": "Tathmini njia ya kuingiza vifaa, msingi, hewa, exhaust, maeneo yanayoathiriwa na kelele, mafuta, nyaya, kinga na earth. Kubadilisha controller kunahitaji kupitia wiring, sensing na protection; factory settings zisichukuliwe kuwa zinafaa moja kwa moja."
+        },
+        {
+          "title": "Majaribio na utunzaji",
+          "body": "Kubaliana majaribio ya kukatika/kurejea kwa umeme, transfer na retransfer, kuongeza mzigo kwa hatua, alarms na maelekezo kwa mtumiaji. Ratiba ya service ifuate manual, saa za kazi na mazingira ya jenereta husika; hatutoi interval moja kwa kila modeli."
+        }
+      ],
+      "faq": {
+        "question": "Je, controller ya DSE ina ATS ndani yake?",
+        "answer": "Hapana. Controller kama DSE7320 MKII huongoza AMF. Bado kunahitajika switching equipment yenye rating inayofaa na ufungaji uliosanifiwa kwa mfumo husika."
+      }
+    }
+  },
+  "networking": {
+    "references": ["omada", "cudy", "mikrotik", "ubiquiti"],
+    "en": {
+      "title": "A network designed for its users.",
+      "intro": "BM networking covers structured cabling, switching, routing and assessed Wi-Fi coverage for homes, offices, hotels and institutions.",
+      "comparison": [
+        {
+          "option": "Cabled backbone",
+          "consideration": "Plan copper or fibre links, distance, route, termination, rack layout and testing. Advertised port speed alone does not establish end-to-end performance."
+        },
+        {
+          "option": "Managed Wi-Fi",
+          "consideration": "AP location, building materials, user density, channel planning and backhaul affect coverage. A strong signal reading is not the same as usable capacity."
+        },
+        {
+          "option": "Segmentation and PoE",
+          "consideration": "Separate guest, staff, voice and security traffic where required. Check PoE standard, per-port demand and total switch power budget."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Resilience and handover",
+          "body": "Discuss UPS support, labelled ports, configuration backups, administrator ownership and fault escalation. Secondary internet depends on available providers and a tested failover design, not a promise of uninterrupted connectivity."
+        },
+        {
+          "title": "Design the shared infrastructure",
+          "body": "CCTV and IP telephones use the network too. Agree addressing, VLANs, voice prioritisation and capacity with the systems they support before installation."
+        }
+      ],
+      "faq": {
+        "question": "Can extra access points fix every Wi-Fi problem?",
+        "answer": "No. Interference, poor backhaul, incorrect placement or overloaded uplinks may be the cause. Assess the site and usage before adding hardware."
+      }
+    },
+    "sw": {
+      "title": "Mtandao unaopangwa kwa watumiaji wake.",
+      "intro": "BM hushughulikia structured cabling, switches, routers na tathmini ya Wi-Fi kwa makazi, ofisi, hoteli na taasisi.",
+      "comparison": [
+        {
+          "option": "Njia kuu za nyaya",
+          "consideration": "Panga copper au fibre, umbali, njia, termination, rack na upimaji. Speed ya port pekee haithibitishi utendaji kutoka mwisho mmoja hadi mwingine."
+        },
+        {
+          "option": "Wi-Fi inayosimamiwa",
+          "consideration": "Mahali pa access points, kuta, idadi ya watumiaji, channels na backhaul huathiri coverage. Signal yenye nguvu si lazima iwe na uwezo wa kutosha kwa watumiaji wote."
+        },
+        {
+          "option": "Kutenga matumizi na PoE",
+          "consideration": "Tenganisha mtandao wa wageni, wafanyakazi, simu na CCTV inapohitajika. Hakiki aina ya PoE, matumizi ya kila port na jumla ya umeme wa switch."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Uendelevu na makabidhiano",
+          "body": "Jadili UPS, labels za ports, nakala za configuration, umiliki wa akaunti za admin na utaratibu wa kuripoti hitilafu. Internet ya pili hutegemea watoa huduma waliopo na failover iliyojaribiwa; si ahadi ya internet kutokatika kabisa."
+        },
+        {
+          "title": "Miundombinu ya pamoja",
+          "body": "CCTV na simu za IP hutumia mtandao pia. Kubaliana IP addresses, VLANs, kipaumbele cha sauti na uwezo unaohitajika kabla ya ufungaji."
+        }
+      ],
+      "faq": {
+        "question": "Je, kuongeza access points kunamaliza kila tatizo la Wi-Fi?",
+        "answer": "Hapana. Tatizo linaweza kuwa interference, backhaul, mahali pa vifaa au uplink iliyojaa. Eneo na matumizi vitathminiwe kabla ya kuongeza vifaa."
+      }
+    }
+  },
+  "telephone-systems": {
+    "references": ["yeastar", "grandstream"],
+    "en": {
+      "title": "PBX, IP-PBX and the working day.",
+      "intro": "Connect reception, offices, departments or hotel rooms through a telephone system sized for the way calls actually move.",
+      "comparison": [
+        {
+          "option": "Analogue extensions",
+          "consideration": "Existing analogue handsets may need a compatible analogue PBX or FXS gateway. Reuse depends on cabling condition and required features."
+        },
+        {
+          "option": "IP extensions / SIP",
+          "consideration": "IP phones use the data network; SIP trunks provide external calling where an appropriate provider is available. Extensions and simultaneous external calls are different capacities."
+        },
+        {
+          "option": "Office and hotel workflows",
+          "consideration": "Agree reception transfer, ring groups, opening-hour routing, room/department numbering and access permissions. PMS, billing or intercom integration is model/licence-specific and must be verified."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Before quotation",
+          "body": "Provide extension counts, expected concurrent calls, existing lines and handsets, internet/network condition and growth plans. Confirm PoE, voice prioritisation, backup power, trunk costs and licence scope."
+        },
+        {
+          "title": "A usable handover",
+          "body": "Test incoming/outgoing and internal calls, transfers and failure behaviour. Hand over extension lists, restricted administrator access, backups and user training. Remote access must be secured; exposing a PBX directly to the internet is not a default requirement."
+        }
+      ],
+      "faq": {
+        "question": "Can my video intercom replace an office PBX?",
+        "answer": "A door station may communicate with selected indoor stations or supported SIP systems, but it is not automatically a complete business PBX. Check the exact models, supported functions and interoperability."
+      }
+    },
+    "sw": {
+      "title": "PBX na IP-PBX kwa shughuli za kila siku.",
+      "intro": "Unganisha mapokezi, ofisi, idara au vyumba vya hoteli kwa mfumo wa simu unaolingana na namna simu zinavyopokelewa na kuhamishwa.",
+      "comparison": [
+        {
+          "option": "Extensions za analogue",
+          "consideration": "Simu za analogue zilizopo zinaweza kuhitaji PBX inayooana au FXS gateway. Kutumia vifaa vya zamani hutegemea hali ya nyaya na huduma zinazohitajika."
+        },
+        {
+          "option": "Extensions za IP / SIP",
+          "consideration": "Simu za IP hutumia mtandao wa data. SIP trunk huunganisha simu za nje kupitia mtoa huduma anayefaa. Idadi ya extensions si sawa na idadi ya simu za nje zinazoweza kupigwa kwa wakati mmoja."
+        },
+        {
+          "option": "Matumizi ya ofisi na hoteli",
+          "consideration": "Kubaliana transfer ya mapokezi, ring groups, ratiba ya kupokea simu, namba za vyumba/idara na ruhusa. Kuunganisha PMS, billing au intercom hutegemea modeli na licence; kuthibitishwe kwanza."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Taarifa za kuandaa nukuu",
+          "body": "Taja idadi ya extensions, simu zinazotarajiwa kwa wakati mmoja, laini na handsets zilizopo, hali ya internet/mtandao na mpango wa upanuzi. Hakiki PoE, kipaumbele cha sauti, backup, gharama za trunk na licence."
+        },
+        {
+          "title": "Makabidhiano yanayomwezesha mtumiaji",
+          "body": "Jaribu simu za ndani na nje, transfer na namna mfumo unavyofanya kazi supply ikikatika. Kabidhi orodha ya extensions, akaunti za admin zenye ruhusa zinazofaa, backups na mafunzo. Remote access iwe salama; PBX haipaswi kuwekwa wazi kwenye internet bila mpango wa ulinzi."
+        }
+      ],
+      "faq": {
+        "question": "Je, video intercom inaweza kuchukua nafasi ya PBX ya ofisi?",
+        "answer": "Door station inaweza kuwasiliana na indoor stations au baadhi ya mifumo ya SIP inayooana. Haimaanishi ni PBX kamili ya biashara. Hakiki modeli, vipengele na uoanifu wa mifumo husika."
+      }
+    }
+  },
+  "institutional-procurement": {
+    "references": [],
+    "en": {
+      "title": "A quotation that can be evaluated.",
+      "intro": "BM receives equipment and installation enquiries from institutions within its confirmed service scope. A useful RFQ separates mandatory requirements from preferences.",
+      "comparison": [
+        {
+          "option": "Supply only",
+          "consideration": "State manufacturer/model where mandatory, quantities, accessories, delivery location, documentation and acceptance requirements."
+        },
+        {
+          "option": "Supply and installation",
+          "consideration": "Include drawings or site information, BOQ, installation interfaces, testing, handover and who provides power/network/civil works."
+        },
+        {
+          "option": "Retail / wholesale enquiry",
+          "consideration": "Identify intended use and quantities. Trade pricing, lead time, availability, taxes, delivery and warranty must be confirmed in the written offer."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Comparable alternatives",
+          "body": "Ask for a line-by-line response showing compliant items, exclusions and proposed equivalents with datasheets. A similar-looking model is not automatically equivalent."
+        },
+        {
+          "title": "Submission and acceptance",
+          "body": "Share the RFQ reference, deadline and required response format. Agree inspection, commissioning or delivery acceptance and applicable supporting documents. No procurement accreditation, framework membership or manufacturer agency is implied."
+        }
+      ],
+      "faq": {
+        "question": "Can BM quote a BOQ with several service disciplines?",
+        "answer": "Submit it for scope review. BM will need to identify the items it can supply or install, any clarifications and any exclusions before committing to a price or delivery programme."
+      }
+    },
+    "sw": {
+      "title": "Nukuu inayoweza kulinganishwa na kutathminiwa.",
+      "intro": "BM hupokea maombi ya vifaa na ufungaji kutoka taasisi katika wigo wake uliothibitishwa. RFQ nzuri hutenganisha masharti ya lazima na mapendeleo.",
+      "comparison": [
+        {
+          "option": "Vifaa pekee",
+          "consideration": "Taja mtengenezaji/modeli ikiwa ni lazima, idadi, accessories, eneo la kufikisha, nyaraka na masharti ya kukagua na kupokea vifaa."
+        },
+        {
+          "option": "Vifaa pamoja na ufungaji",
+          "consideration": "Weka michoro au taarifa za eneo, BOQ, sehemu za kuunganisha, majaribio na makabidhiano. Fafanua nani anatoa umeme, mtandao na kazi za ujenzi."
+        },
+        {
+          "option": "Rejareja / jumla",
+          "consideration": "Taja matumizi na idadi. Bei ya jumla, muda wa kuleta, upatikanaji, kodi, usafirishaji na dhamana vithibitishwe katika nukuu ya maandishi."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Vifaa mbadala vinavyolinganishwa kwa uwazi",
+          "body": "Omba majibu kwa kila kipengele yakionyesha kilichokidhi, kilicho nje ya wigo na mbadala unaopendekezwa pamoja na datasheet. Modeli inayofanana kwa sura si lazima iwe mbadala unaokidhi."
+        },
+        {
+          "title": "Kuwasilisha nukuu na kupokea kazi",
+          "body": "Tuma namba ya RFQ, tarehe ya mwisho na muundo wa majibu. Kubaliana namna ya kukagua, kufanya commissioning au kupokea vifaa na nyaraka zinazohitajika. Hatudai accreditation ya ununuzi, framework au uwakala wa mtengenezaji bila ushahidi."
+        }
+      ],
+      "faq": {
+        "question": "Je, BM inaweza kunukuu BOQ yenye taaluma kadhaa?",
+        "answer": "Itume ipitiwe kwa wigo. Kabla ya kukubaliana bei au ratiba, vifaa na kazi ambazo BM inaweza kutekeleza, maswali ya ufafanuzi na vilivyo nje ya wigo vinahitaji kuainishwa."
+      }
+    }
+  },
+  "access-control": {
+    "references": ["zkteco", "hikvision"],
+    "en": {
+      "title": "Door access and attendance are different jobs.",
+      "intro": "A biometric terminal can have several functions, but secure entry, attendance records and payroll are separate requirements.",
+      "comparison": [
+        {
+          "option": "Door access",
+          "consideration": "Match reader, controller, lock, door contact, exit device and backup supply. Door construction and safe exit behaviour govern the hardware."
+        },
+        {
+          "option": "Attendance",
+          "consideration": "Confirm shifts, enrolment, supported credential types, report formats and software licensing. A clock-in record is not a payroll integration."
+        },
+        {
+          "option": "Biometric or card / PIN",
+          "consideration": "Assess the users, environment, privacy requirements and alternative access method rather than assuming one credential suits everyone."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Installation and handover",
+          "body": "Survey doors and cable routes, agree access schedules and administrator ownership, then test authorised access, denied access, exit and power-loss behaviour. Emergency interfaces must be designed for the actual site."
+        },
+        {
+          "title": "Care of records and equipment",
+          "body": "Agree who enrols/removes users and controls exports and retention. Maintenance includes lock alignment, battery checks, reader condition and verified backups of the supported configuration."
+        }
+      ],
+      "faq": {
+        "question": "Will attendance data work with our payroll?",
+        "answer": "Only after checking the exact terminal/software, supported export/API, payroll format and licence. No payroll or ERP integration is included by assumption."
+      }
+    },
+    "sw": {
+      "title": "Udhibiti wa milango na mahudhurio ni mahitaji tofauti.",
+      "intro": "Terminal ya biometrics inaweza kuwa na kazi kadhaa. Kuingia kwa ruhusa, rekodi za mahudhurio na payroll vitathminiwe kila kimoja.",
+      "comparison": [
+        {
+          "option": "Udhibiti wa mlango",
+          "consideration": "Reader, controller, lock, door contact, kifaa cha kutoka na backup viendane. Hali ya mlango na njia salama ya kutoka huongoza hardware."
+        },
+        {
+          "option": "Mahudhurio",
+          "consideration": "Hakiki zamu, usajili, njia za utambulisho, muundo wa ripoti na licence. Rekodi ya kuingia si mfumo wa payroll moja kwa moja."
+        },
+        {
+          "option": "Biometrics, card au PIN",
+          "consideration": "Tathmini watumiaji, mazingira, faragha na njia mbadala ya kuingia badala ya kudhani utambulisho mmoja unafaa kwa wote."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Ufungaji na makabidhiano",
+          "body": "Kagua milango na njia za nyaya, kubaliana ratiba na umiliki wa akaunti, kisha jaribu kuingia kwa ruhusa, kukataliwa, kutoka na kukatika kwa umeme. Kuunganisha mifumo ya dharura kupangwe kwa eneo husika."
+        },
+        {
+          "title": "Utunzaji wa vifaa na rekodi",
+          "body": "Kubaliana nani anasajili/kuondoa watumiaji, kutoa ripoti na kuamua muda wa kuhifadhi. Matengenezo yahusishe lock alignment, betri, readers na backups za configuration inayoungwa mkono."
+        }
+      ],
+      "faq": {
+        "question": "Je, mahudhurio yataunganishwa na payroll yetu?",
+        "answer": "Hilo linahitaji kuhakiki terminal/software, export au API, format ya payroll na licence. Kuunganisha payroll au ERP si sehemu ya huduma kwa kudhani tu."
+      }
+    }
+  },
+  "air-conditioners": {
+    "references": ["gree", "hisense", "lg"],
+    "en": {
+      "title": "Cooling capacity is a site decision.",
+      "intro": "BM air-conditioning enquiries cover assessed equipment selection, installation and maintenance. Match the indoor/outdoor pair and power supply before comparing price.",
+      "comparison": [
+        {
+          "option": "Wall split",
+          "consideration": "Useful for individual spaces where the assessed cooling load, airflow, pipe route and condensate drainage can be met."
+        },
+        {
+          "option": "Cassette / ducted options",
+          "consideration": "Ceiling access, distribution, maintenance access and drainage become part of the design. A concealed unit is not simply a hidden wall split."
+        },
+        {
+          "option": "Inverter / fixed-speed",
+          "consideration": "Compare the exact models at stated conditions. Inverter control adjusts output; it does not justify a universal percentage saving or an undersized unit."
+        }
+      ],
+      "notes": [
+        {
+          "title": "BTU/h and heat load",
+          "body": "Cooling capacity is different from electrical input. Room area, occupancy, glazing, sun exposure, equipment heat and ventilation affect selection. Do not convert floor area into a guaranteed capacity without assessment."
+        },
+        {
+          "title": "Installation and servicing",
+          "body": "Agree unit positions, service clearances, pipework, drainage, electrical isolation and manufacturer commissioning checks. Routine care includes filters, coils, drains and fault diagnosis; refrigerant work must follow equipment requirements and competent practice."
+        }
+      ],
+      "faq": {
+        "question": "Can I replace only the outdoor unit?",
+        "answer": "Not without checking the manufacturer’s approved pairing, refrigerant, controls and electrical requirements. An apparently similar capacity does not prove compatibility."
+      }
+    },
+    "sw": {
+      "title": "Uwezo wa kupooza uamuliwe kwa tathmini ya eneo.",
+      "intro": "BM hupokea maombi ya kuchagua, kufunga na kutunza viyoyozi. Indoor na outdoor unit pamoja na supply vihakikiwe kabla ya kulinganisha bei.",
+      "comparison": [
+        {
+          "option": "Wall split",
+          "consideration": "Hufaa kwa chumba kinachokidhi tathmini ya cooling load, mzunguko wa hewa, njia ya mabomba na utiririshaji wa maji ya condensate."
+        },
+        {
+          "option": "Cassette / ducted",
+          "consideration": "Nafasi ya dari, usambazaji wa hewa, huduma na drainage ni sehemu ya usanifu. Kifaa cha kufichwa si wall split iliyofunikwa tu."
+        },
+        {
+          "option": "Inverter / fixed-speed",
+          "consideration": "Linganisha modeli halisi kwa hali zilizotajwa. Inverter hudhibiti output; haitoi sababu ya kuahidi asilimia moja ya kuokoa umeme au kuchagua kifaa kidogo kuliko mahitaji."
+        }
+      ],
+      "notes": [
+        {
+          "title": "BTU/h na joto la chumba",
+          "body": "Cooling capacity si sawa na matumizi ya umeme. Eneo, watu, madirisha, jua, vifaa vinavyotoa joto na hewa mpya huathiri uchaguzi. Ukubwa wa sakafu pekee hautoshi kuahidi capacity."
+        },
+        {
+          "title": "Ufungaji na service",
+          "body": "Kubaliana nafasi za units, nafasi ya matengenezo, mabomba, drainage, isolation na majaribio ya mtengenezaji. Huduma za kawaida huhusisha filters, coils, drains na kutafuta hitilafu. Kazi za refrigerant zifuate mahitaji ya vifaa na zifanywe kwa umahiri unaohitajika."
+        }
+      ],
+      "faq": {
+        "question": "Je, naweza kubadilisha outdoor unit pekee?",
+        "answer": "Kwanza hakiki pairing iliyoidhinishwa na mtengenezaji, refrigerant, controls na mahitaji ya umeme. Capacity inayofanana haithibitishi uoanifu."
+      }
+    }
+  },
+  "fire-alarm-systems": {
+    "references": [],
+    "en": {
+      "title": "Detection, warning and a clear response.",
+      "intro": "BM fire-alarm enquiries need a building-specific scope. Fire detection and intrusion detection serve different risks; neither should be described as a complete fire-protection system by itself.",
+      "comparison": [
+        {
+          "option": "Conventional zones",
+          "consideration": "A panel indicates a zone; zone layout and device compatibility need to match the building and the selected system."
+        },
+        {
+          "option": "Addressable detection",
+          "consideration": "Supported systems identify individual devices. Loop design, isolators, device protocols and panel compatibility require manufacturer-specific design."
+        },
+        {
+          "option": "Intrusion alarm",
+          "consideration": "Motion detectors, door contacts, keypads and signalling address unauthorised entry. They do not replace appropriate fire detection or emergency arrangements."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Before installation",
+          "body": "Identify building use, occupancy, existing systems, detector environment, audibility/visibility needs, manual call points and required interfaces. Establish the applicable design review, approvals and qualified specialist responsibilities before committing to a system."
+        },
+        {
+          "title": "Testing and ongoing responsibility",
+          "body": "Agree a device schedule, cause-and-effect requirements, commissioning records, user training and fault-reporting process. Maintenance and test arrangements must match the actual equipment and site obligations. No unverified certification or monitoring-service promise is made."
+        }
+      ],
+      "faq": {
+        "question": "Can any smoke detector connect to any fire panel?",
+        "answer": "No. Detector type, voltage, protocol and approved compatibility matter. Use the selected panel manufacturer’s compatibility documentation and the site-specific design."
+      }
+    },
+    "sw": {
+      "title": "Utambuzi wa hatari, tahadhari na hatua zinazoeleweka.",
+      "intro": "Mfumo wa fire alarm unahitaji wigo wa jengo husika. Fire detection na intrusion detection hushughulikia hatari tofauti; kila mmoja peke yake si mfumo kamili wa kinga ya moto.",
+      "comparison": [
+        {
+          "option": "Conventional zones",
+          "consideration": "Panel huonyesha zone yenye tukio. Mpangilio wa zones na uoanifu wa devices vilingane na jengo na mfumo uliochaguliwa."
+        },
+        {
+          "option": "Addressable detection",
+          "consideration": "Mifumo inayounga mkono hutambua kifaa kimoja kimoja. Loops, isolators, protocol na panel vinahitaji usanifu unaofuata mtengenezaji."
+        },
+        {
+          "option": "Intrusion alarm",
+          "consideration": "Motion detectors, door contacts, keypads na taarifa za alarm hushughulikia uvamizi. Havichukui nafasi ya fire detection na mipango ya dharura."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Kabla ya ufungaji",
+          "body": "Tambua matumizi ya jengo, watu, mifumo iliyopo, mazingira ya detectors, usikivu/mwonekano wa alarm, manual call points na interfaces. Mahitaji ya ukaguzi wa usanifu, vibali na majukumu ya wataalamu yawekwe wazi kabla ya makubaliano."
+        },
+        {
+          "title": "Majaribio na wajibu wa utunzaji",
+          "body": "Kubaliana device schedule, cause-and-effect, rekodi za commissioning, mafunzo na utaratibu wa taarifa za hitilafu. Matengenezo na majaribio yalingane na vifaa na majukumu ya eneo. Hatutoi ahadi ya certification au monitoring service isiyothibitishwa."
+        }
+      ],
+      "faq": {
+        "question": "Je, smoke detector yoyote inaweza kuunganishwa na panel yoyote?",
+        "answer": "Hapana. Aina ya detector, voltage, protocol na uoanifu ulioidhinishwa ni muhimu. Tumia nyaraka za mtengenezaji wa panel na usanifu wa eneo husika."
+      }
+    }
+  },
+  "maintenance-support": {
+    "references": [],
+    "en": {
+      "title": "A fault report that leads to a diagnosis.",
+      "intro": "BM technical support starts with the system identity, symptoms and safe access. Service scope is agreed after assessment; a response-time guarantee is not implied.",
+      "comparison": [
+        {
+          "option": "Preventive maintenance",
+          "consideration": "Agree an equipment register and inspection/test schedule based on use, environment and manufacturer requirements."
+        },
+        {
+          "option": "Fault diagnosis",
+          "consideration": "Record when the fault occurs, alarms, recent changes and affected functions. Distinguish power, cabling, configuration and failed equipment."
+        },
+        {
+          "option": "Repair / replacement",
+          "consideration": "Confirm diagnosis, compatible parts, configuration recovery and quotation before authorising replacement. Availability and warranty depend on the actual item."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Prepare for the visit",
+          "body": "Share make/model, age if known, prior service records and non-sensitive fault photos. Do not send passwords, access codes or security coverage plans through a public enquiry form."
+        },
+        {
+          "title": "Close the service loop",
+          "body": "Agree the work record, parts replaced, test results, unresolved issues and user handover. Configuration backups and changed credentials should pass through an agreed secure process."
+        }
+      ],
+      "faq": {
+        "question": "Can BM take over a system installed by someone else?",
+        "answer": "Submit its model list and symptoms for assessment. Documentation, administrator access, component availability and compatibility determine what can be supported."
+      }
+    },
+    "sw": {
+      "title": "Taarifa ya hitilafu inayosaidia kutafuta chanzo.",
+      "intro": "Huduma ya BM huanza na kutambua mfumo, dalili na njia salama ya kufikia vifaa. Wigo hukubaliwa baada ya tathmini; hakuna ahadi ya muda wa kufika inayodhaniwa.",
+      "comparison": [
+        {
+          "option": "Matengenezo ya kuzuia hitilafu",
+          "consideration": "Kubaliana orodha ya vifaa na ratiba ya ukaguzi/majaribio kulingana na matumizi, mazingira na maelekezo ya mtengenezaji."
+        },
+        {
+          "option": "Kutafuta chanzo",
+          "consideration": "Rekodi hitilafu hutokea lini, alarms, mabadiliko ya karibuni na kazi zilizoathirika. Tofautisha umeme, nyaya, configuration na kifaa kilichoharibika."
+        },
+        {
+          "option": "Kutengeneza / kubadilisha",
+          "consideration": "Thibitisha chanzo, spare parts zinazooana, kurejesha configuration na nukuu kabla ya kuruhusu mabadiliko. Upatikanaji na dhamana hutegemea kifaa husika."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Jiandae kwa ukaguzi",
+          "body": "Tuma make/model, umri ikiwa unajulikana, rekodi za service na picha zisizo na taarifa nyeti. Usitume passwords, access codes au ramani za coverage ya usalama kwenye fomu ya umma."
+        },
+        {
+          "title": "Kukamilisha huduma",
+          "body": "Kubaliana rekodi ya kazi, parts zilizobadilishwa, matokeo ya majaribio, yaliyobaki na maelekezo kwa mtumiaji. Backups na credentials zilizobadilishwa zikabidhiwe kwa njia salama iliyokubaliwa."
+        }
+      ],
+      "faq": {
+        "question": "Je, BM inaweza kuhudumia mfumo uliofungwa na mtu mwingine?",
+        "answer": "Tuma modeli na dalili kwa tathmini. Nyaraka, admin access, upatikanaji wa vifaa na uoanifu vitaamua kazi inayoweza kufanyika."
+      }
+    }
+  },
+  "solar-street-lights": {
+    "references": ["sunova", "ritar"],
+    "en": {
+      "title": "Lighting through the night needs an energy plan.",
+      "intro": "Solar street-light enquiries should define the area to be lit, night-time operating profile and mounting conditions rather than relying on a marketing wattage.",
+      "comparison": [
+        {
+          "option": "Integrated luminaire",
+          "consideration": "Panel, battery, controller and light are combined; check serviceability, shading, actual battery specification and supported dimming profile."
+        },
+        {
+          "option": "Separate panel / battery system",
+          "consideration": "Allows different positioning and component choices but requires compatible charging, protected enclosures, cabling and maintenance access."
+        },
+        {
+          "option": "Pole and distribution",
+          "consideration": "Assess pole/foundation design, wind exposure, mounting height and photometric coverage. A brighter-looking lamp does not prove the required ground illumination."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Before quotation",
+          "body": "Provide site location, road/path dimensions, required hours, shading and security conditions. Ask for the selected luminaire’s photometric and electrical information and a battery/solar energy balance."
+        },
+        {
+          "title": "Care and acceptance",
+          "body": "Agree a night-time check, controls/dimming behaviour and what happens after low-sun days. Maintenance covers panel cleanliness, battery condition, fixings, cable protection and safe access."
+        }
+      ],
+      "faq": {
+        "question": "Does the advertised lamp wattage tell me how many nights it will run?",
+        "answer": "No. Runtime depends on actual power, dimming schedule, battery usable energy, charging conditions and ageing. Confirm the exact component data and design assumptions."
+      }
+    },
+    "sw": {
+      "title": "Mwanga wa usiku unahitaji mpango wa nishati.",
+      "intro": "Maombi ya taa za barabarani za sola yafafanue eneo, saa za usiku na mazingira ya nguzo badala ya kutegemea watt za matangazo.",
+      "comparison": [
+        {
+          "option": "Taa ya integrated",
+          "consideration": "Paneli, betri, controller na taa vimeunganishwa. Hakiki uwezekano wa service, kivuli, vipimo halisi vya betri na ratiba ya dimming."
+        },
+        {
+          "option": "Paneli / betri tofauti",
+          "consideration": "Hutoa uhuru wa kuchagua na kuweka vifaa lakini huhitaji charger inayooana, enclosures, nyaya na nafasi ya matengenezo."
+        },
+        {
+          "option": "Nguzo na usambazaji wa mwanga",
+          "consideration": "Tathmini nguzo/msingi, upepo, urefu na photometric coverage. Taa inayoonekana kung’aa sana si uthibitisho wa mwanga unaohitajika ardhini."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Kabla ya nukuu",
+          "body": "Taja eneo, vipimo vya barabara/njia, saa zinazohitajika, kivuli na usalama. Omba taarifa za photometric na umeme za luminaire pamoja na hesabu ya betri na paneli."
+        },
+        {
+          "title": "Utunzaji na kupokea kazi",
+          "body": "Kubaliana ukaguzi wa usiku, controls/dimming na utendaji baada ya siku zenye jua kidogo. Matengenezo yahusishe usafi wa paneli, betri, fixings, kinga ya nyaya na njia salama ya kufikia vifaa."
+        }
+      ],
+      "faq": {
+        "question": "Je, watt za matangazo zinaonyesha taa itawaka usiku mingapi?",
+        "answer": "Hapana. Muda hutegemea matumizi halisi, dimming, nishati ya betri, kuchaji na umri wa vifaa. Hakiki taarifa za modeli na masharti ya hesabu."
+      }
+    }
+  },
+  "video-intercom": {
+    "references": ["hikvision"],
+    "en": {
+      "title": "See the visitor. Control the right entrance.",
+      "intro": "BM video-intercom enquiries cover door/gate communication and assessed release interfaces for homes, apartments and reception points.",
+      "comparison": [
+        {
+          "option": "IP video intercom",
+          "consideration": "Check network/PoE, indoor station or supported application, user accounts and exact model compatibility."
+        },
+        {
+          "option": "Two-wire options",
+          "consideration": "Existing wiring may be usable only after checking the supported system, cable condition, distance and topology."
+        },
+        {
+          "option": "Door / gate release",
+          "consideration": "Match relay outputs, lock or operator input and safe exit needs. Power for a lock is not automatically supplied by the intercom relay."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Apartment and visitor workflows",
+          "body": "Agree call routing, dwelling/reception numbering, resident administration and who can grant access. SIP or PBX integration is included only when the selected devices and functions have been verified."
+        },
+        {
+          "title": "Installation and support",
+          "body": "Assess camera view, rain/sun exposure, audio clarity and cable routes. Test calling, answering, release and loss-of-power behaviour; agree account ownership, updates and backup arrangements."
+        }
+      ],
+      "faq": {
+        "question": "Will remote answering always work without internet?",
+        "answer": "Local calling may work on the supported local system, while app/cloud features can depend on internet and vendor services. Confirm the intended failure behaviour for the exact equipment."
+      }
+    },
+    "sw": {
+      "title": "Mwone mgeni. Dhibiti lango linalohusika.",
+      "intro": "BM hupokea maombi ya mawasiliano ya mlango/geti na release interfaces kwa makazi, apartments na mapokezi.",
+      "comparison": [
+        {
+          "option": "Video intercom ya IP",
+          "consideration": "Hakiki mtandao/PoE, indoor station au app inayoungwa mkono, akaunti na uoanifu wa modeli."
+        },
+        {
+          "option": "Chaguo la two-wire",
+          "consideration": "Nyaya zilizopo zinaweza kufaa baada ya kuhakiki mfumo, hali ya nyaya, umbali na topology."
+        },
+        {
+          "option": "Kufungua mlango / geti",
+          "consideration": "Oanisha relay output, lock au input ya motor na mahitaji salama ya kutoka. Relay ya intercom si lazima itoe umeme wa lock."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Simu za wageni na apartments",
+          "body": "Kubaliana call routing, namba za vyumba/mapokezi, usimamizi wa wakazi na ruhusa za kufungua. Kuunganisha SIP au PBX kujumuishwe tu baada ya kuthibitisha vifaa na kazi zinazohitajika."
+        },
+        {
+          "title": "Ufungaji na huduma",
+          "body": "Tathmini mwonekano wa kamera, mvua/jua, sauti na njia za nyaya. Jaribu kupiga/kupokea, kufungua na kukatika kwa umeme. Kubaliana umiliki wa akaunti, updates na backups."
+        }
+      ],
+      "faq": {
+        "question": "Je, kupokea simu kwa mbali kutafanya kazi bila internet?",
+        "answer": "Simu za ndani zinaweza kufanya kazi kwa mfumo unaounga mkono kwenye local network. App/cloud zinaweza kuhitaji internet na huduma za mtengenezaji. Thibitisha utendaji wa modeli husika internet inapokatika."
+      }
+    }
+  }
+}

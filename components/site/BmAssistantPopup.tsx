@@ -45,7 +45,7 @@ export function BmAssistantPopup({ lang }: BmAssistantPopupProps) {
   const t = {
     en: {
       title: "BM Support",
-      status: "Online · Site Survey Help",
+      status: "Site survey help",
       intro:
         "Karibu. Need help with CCTV, electric fence, gate motor or product price?",
       survey: "Request Site Survey",
@@ -55,7 +55,7 @@ export function BmAssistantPopup({ lang }: BmAssistantPopupProps) {
     },
     sw: {
       title: "BM Support",
-      status: "Online · Site Survey Help",
+      status: "Site survey help",
       intro:
         "Karibu. Unahitaji msaada wa CCTV, electric fence, gate motor au bei ya bidhaa?",
       survey: "Omba Site Survey",

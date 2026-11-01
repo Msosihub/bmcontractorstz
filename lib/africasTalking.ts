@@ -46,6 +46,7 @@ export async function sendSms(
   to: string,
   message: string,
 ): Promise<SendSmsResult> {
+  if (process.env.VERCEL_ENV === "preview" || process.env.BM_ISOLATED_PREVIEW === "1" || process.env.BM_DISABLE_NOTIFICATIONS === "1") return { ok: true, status: 204, data: null };
   const username = process.env.AT_USERNAME;
   const apiKey = process.env.AT_API_KEY;
   const senderId = process.env.AT_SENDER_ID || "BM SECURITY";
@@ -71,14 +72,11 @@ export async function sendSms(
       Accept: "application/json",
     },
     body,
+    signal: AbortSignal.timeout(10000),
   });
 
   const data = await res.json().catch(() => null);
 
-  console.log("Africa's Talking response:", {
-    status: res.status,
-    data,
-  });
 
   if (!res.ok) {
     throw new Error(`Africa's Talking SMS failed with status ${res.status}`);
@@ -92,6 +90,7 @@ export async function sendSms(
 }
 
 export async function notifyBmOffice(message: string) {
+  if (process.env.VERCEL_ENV === "preview" || process.env.BM_ISOLATED_PREVIEW === "1" || process.env.BM_DISABLE_NOTIFICATIONS === "1") return [];
   /**
    * Send one notification message to all BM office numbers.
    * Priority:
@@ -108,10 +107,10 @@ export async function notifyBmOffice(message: string) {
     : siteConfig.notificationNumbers;
 
   const results = await Promise.allSettled(
-    numbers.map((number) => sendSms(number, message)),
+    [...new Set(numbers.map(normalizePhoneForSms))].map((number) => sendSms(number, message)),
   );
 
-  console.log("BM office SMS notification results:", results);
+  if (results.some(result => result.status === "rejected")) console.warn("BM office notification delivery failed; enquiry remains saved.");
 
   return results;
 }

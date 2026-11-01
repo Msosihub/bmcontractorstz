@@ -65,11 +65,12 @@ export function LoadingLink({
     <Link
       href={href}
       target={target}
-      onClick={() => {
+      onClick={(event) => {
+        onClick?.(event);
         /**
          * Only show loading for internal links.
          */
-        if (!target) {
+        if (!event.defaultPrevented && !target && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey && event.button === 0 && hrefPath !== pathname) {
           setIsLoading(true);
         }
       }}

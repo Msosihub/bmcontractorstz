@@ -1,20 +1,11 @@
+import { PremiumArticle } from "@/components/premium/Article";
 /**
  * Privacy Policy Page
  * -------------------
  * Basic privacy policy for BM Contractors website.
  */
 
-import type { Metadata } from "next";
-import { Header } from "@/components/site/Header";
-import { Footer } from "@/components/site/Footer";
-import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
 import { isLanguage, type Language } from "@/lib/i18n/config";
-
-export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description:
-    "Privacy Policy for BM Contractors Tanzania website, contact forms and site survey requests.",
-};
 
 type PageProps = {
   searchParams: Promise<{
@@ -60,69 +51,53 @@ export default async function PrivacyPolicyPage({ searchParams }: PageProps) {
       ],
     },
     sw: {
-      title: "Privacy Policy",
+      title: "Sera ya faragha",
       updated: "Imesasishwa mwisho: Julai 2026",
       intro:
-        "BM Engineering Contractors LTD tunaheshimu faragha yako. Sera hii inaeleza tunavyokusanya na kutumia taarifa unazotuma kupitia website.",
+        "BM Engineering Contractors LTD tunaheshimu faragha yako. Sera hii inaeleza tunavyokusanya na kutumia taarifa unazotuma kupitia tovuti.",
       sections: [
         {
           title: "Taarifa tunazokusanya",
-          text: "Tunaweza kukusanya jina, namba ya simu, email, location, huduma unayohitaji, aina ya eneo na ujumbe wako unapojaza contact form au site survey request.",
+          text: "Tunaweza kukusanya jina, namba ya simu, barua pepe, eneo, huduma unayohitaji, aina ya eneo na ujumbe wako unapojaza fomu ya mawasiliano au ombi la ukaguzi wa eneo.",
         },
         {
           title: "Tunavyotumia taarifa zako",
-          text: "Tunatumia taarifa zako kuwasiliana na wewe, kuelewa mahitaji yako ya security/safety, kutoa ushauri, kupanga site survey na kuandaa quotation.",
+          text: "Tunatumia taarifa zako kuwasiliana nawe, kuelewa mahitaji yako ya ulinzi na usalama, kutoa ushauri, kupanga ukaguzi wa eneo na kuandaa nukuu ya bei.",
         },
         {
           title: "Kushirikisha taarifa",
-          text: "Hatuuzi taarifa zako binafsi. Tunaweza kushirikisha taarifa muhimu tu kwa timu ya BM Contractors au service providers wanaohusika kujibu ombi lako.",
+          text: "Hatuuzi taarifa zako binafsi. Tunaweza kushirikisha taarifa muhimu tu kwa timu ya BM Contractors au watoa huduma wanaohusika kujibu ombi lako.",
         },
         {
-          title: "Mawasiliano",
-          text: "Tunaweza kuwasiliana nawe kwa simu, SMS, WhatsApp au email kuhusu inquiry yako, site survey, quotation au support.",
+          title: "Namna ya kuwasiliana nawe",
+          text: "Tunaweza kuwasiliana nawe kwa simu, SMS, WhatsApp au barua pepe kuhusu ombi lako, ukaguzi wa eneo, nukuu ya bei au msaada.",
         },
         {
           title: "Usalama wa taarifa",
-          text: "Tunachukua hatua za kawaida kulinda taarifa zinazotumwa, lakini hakuna website au njia ya mawasiliano inayoweza kuhakikishwa kuwa salama asilimia 100.",
+          text: "Tunachukua hatua za kawaida kulinda taarifa zinazotumwa, lakini hakuna tovuti au njia ya mawasiliano inayoweza kuhakikishwa kuwa salama asilimia 100.",
         },
         {
-          title: "Mawasiliano",
-          text: "Kwa maswali ya privacy, wasiliana na BM Contractors kupitia contact details zilizopo kwenye website hii.",
+          title: "Maswali kuhusu faragha",
+          text: "Kwa maswali kuhusu faragha, wasiliana na BM Contractors kupitia taarifa za mawasiliano zilizopo kwenye tovuti hii.",
         },
       ],
     },
   }[lang];
 
   return (
-    <>
-      <Header lang={lang} />
-
-      <main className="min-h-screen bg-white px-4 py-14 text-slate-950 sm:px-6 sm:py-16">
-        <article className="mx-auto max-w-4xl">
-          <p className="text-sm font-black text-red-600">{t.updated}</p>
-          <h1 className="mt-3 text-4xl font-black tracking-tight sm:text-6xl">
-            {t.title}
-          </h1>
-          <p className="mt-6 text-lg leading-8 text-slate-600">{t.intro}</p>
-
-          <div className="mt-10 grid gap-5">
-            {t.sections.map((section) => (
-              <section
-                key={section.title}
-                className="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-6"
-              >
-                <h2 className="text-xl font-black text-slate-950">
-                  {section.title}
-                </h2>
-                <p className="mt-3 leading-7 text-slate-600">{section.text}</p>
-              </section>
-            ))}
-          </div>
-        </article>
-      </main>
-
-      <Footer lang={lang} />
-      <FloatingWhatsApp lang={lang} />
-    </>
+    <PremiumArticle
+      lang={lang}
+      title={t.title}
+      label={t.updated}
+      intro={t.intro}
+      enquiry={false}
+    >
+      {t.sections.map((section) => (
+        <section key={section.title}>
+          <h2>{section.title}</h2>
+          <p>{section.text}</p>
+        </section>
+      ))}
+    </PremiumArticle>
   );
 }

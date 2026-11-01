@@ -1,111 +1,40 @@
-/**
- * Sitemap
- * -------
- * Helps Google and other search engines discover BM Contractors pages.
- *
- * Includes:
- * - Static public pages.
- * - Published products from Neon.
- * - Published CCTV packages from Neon.
- * - Published support articles from Neon.
- */
-
+import {isPreview} from "@/lib/preview-safety.mjs";
 import type { MetadataRoute } from "next";
 import { prisma } from "@/lib/prisma";
-
-const baseUrl = "https://bmcontractorstz.com";
-
+import { getServiceBySlug } from "@/data/services";
+import premiumServices from "@/data/premium-services.json";
+import secondaryServices from "@/data/secondary-services.json";
+import { supportArticles } from "@/data/support";
+import { publicPages, languageUrl } from "@/lib/seo";
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const staticPages = [
-    "",
-    "/services",
-    "/services/cctv",
-    "/services/electric-fence",
-    "/services/gate-motors",
-    "/services/access-control",
-    "/services/networking",
-    "/services/power-backup",
-    "/services/video-intercom",
-    "/services/fire-alarm-systems",
-    "/services/maintenance-support",
-    "/services/solar-street-lights",
-    "/services/solar-panel-systems",
-    "/services/air-conditioners",
-    "/cctv-packages",
-    "/products",
-    "/projects",
-    "/support",
-    "/contact",
-    "/request-site-survey",
-    "/about",
-    "/privacy-policy",
-    "/terms",
-  ];
-
-  const [products, packages, supportArticles] = await Promise.all([
-    prisma.product.findMany({
-      where: {
-        isPublished: true,
-      },
-      select: {
-        slug: true,
-        updatedAt: true,
-      },
-    }),
-
-    prisma.cctvPackage.findMany({
-      where: {
-        isPublished: true,
-      },
-      select: {
-        slug: true,
-        updatedAt: true,
-      },
-    }),
-
-    prisma.supportArticle.findMany({
-      where: {
-        isPublished: true,
-      },
-      select: {
-        slug: true,
-        updatedAt: true,
-      },
-    }),
-  ]);
-
-  const staticEntries = staticPages.map((page) => ({
-    url: `${baseUrl}${page}`,
-    lastModified: new Date(),
-    changeFrequency: page === "" ? ("weekly" as const) : ("monthly" as const),
-    priority: page === "" ? 1 : 0.8,
-  }));
-
-  const productEntries = products.map((product) => ({
-    url: `${baseUrl}/products/${product.slug}`,
-    lastModified: product.updatedAt,
-    changeFrequency: "monthly" as const,
-    priority: 0.65,
-  }));
-
-  const packageEntries = packages.map((pkg) => ({
-    url: `${baseUrl}/cctv-packages/${pkg.slug}`,
-    lastModified: pkg.updatedAt,
-    changeFrequency: "monthly" as const,
-    priority: 0.75,
-  }));
-
-  const supportEntries = supportArticles.map((article) => ({
-    url: `${baseUrl}/support/${article.slug}`,
-    lastModified: article.updatedAt,
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
-  }));
-
-  return [
-    ...staticEntries,
-    ...packageEntries,
-    ...productEntries,
-    ...supportEntries,
-  ];
+ if(isPreview())return [];
+ const [products, packages, articles, services] = await Promise.all([
+  prisma.product.findMany({ where:{isPublished:true}, select:{slug:true,updatedAt:true} }),
+  prisma.cctvPackage.findMany({ where:{isPublished:true}, select:{slug:true,updatedAt:true} }),
+  prisma.supportArticle.findMany({ select:{slug:true,isPublished:true,updatedAt:true,titleSw:true,summarySw:true,contentSw:true} }),
+  prisma.service.findMany(),
+ ]);
+ const entries: MetadataRoute.Sitemap = [];
+ const add = (path: string, translated: boolean, updatedAt?: Date) => {
+  const languages = { en:languageUrl(path,"en"), sw:languageUrl(path,"sw"), "x-default":languageUrl(path,"en") };
+  entries.push({url:languageUrl(path,"en"), ...(updatedAt ? {lastModified:updatedAt}:{}), ...(translated ? {alternates:{languages}}:{})});
+  if(translated) entries.push({url:languageUrl(path,"sw"), ...(updatedAt ? {lastModified:updatedAt}:{}), alternates:{languages}});
+ };
+ for (const path of Object.keys(publicPages)) {
+  if (path.startsWith("/services/")) {
+   const slug=path.split("/").pop()!;
+   const record=services.find(service=>service.slug===slug);
+   if(record && !record.isPublished) continue;
+   const premium=premiumServices.find(service=>service.slug===slug);
+   const service=record || secondaryServices.find(service=>service.slug===slug) || getServiceBySlug(slug);
+   const translated=premium ? (!record?.contentEn || Boolean(record.contentSw)) : Boolean(service?.titleSw && service?.descriptionSw && service?.contentSw);
+   add(path, translated, record?.updatedAt);
+  } else add(path,true);
+ }
+ products.forEach(p=>add("/products/"+p.slug,false,p.updatedAt));
+ packages.forEach(p=>add("/cctv-packages/"+p.slug,false,p.updatedAt));
+ const articleSlugs=new Set(articles.map(a=>a.slug));
+ articles.filter(a=>a.isPublished).forEach(a=>add("/support/"+a.slug,Boolean(a.titleSw && a.summarySw && a.contentSw),a.updatedAt));
+ supportArticles.filter(a=>!articleSlugs.has(a.slug)).forEach(a=>add("/support/"+a.slug,Boolean(a.titleSw && a.summarySw && a.contentSw)));
+ return entries;
 }

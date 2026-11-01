@@ -1,353 +1,299 @@
-/**
- * Products Page
- * -------------
- * Public product catalog page for BM Contractors.
- *
- * Current features:
- * - Reads real products and categories from Neon Postgres.
- * - Falls back to static category guidance if database is still empty.
- * - Supports English and Swahili.
- * - Mobile-friendly responsive layout.
- * - Request quote/site survey CTA.
- *
- * Future:
- * - Add product detail pages.
- * - Add product image uploads.
- * - Add product filtering/search.
- * - Add small ecommerce/cart flow.
- */
-
-import Link from "next/link";
+import { RecordImage } from "@/components/premium/RecordImage";
+import { specificationEntries } from "@/lib/product-specifications.mjs";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
-import { ProductCard } from "@/components/site/ProductCard";
-import { productCategories } from "@/data/products";
+import { Photo, EnquiryLink } from "@/components/premium/Frame";
 import { prisma } from "@/lib/prisma";
-import { isLanguage, type Language } from "@/lib/i18n/config";
-import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
-
-type PageProps = {
+export default async function Page({
+  searchParams,
+}: {
   searchParams: Promise<{
     lang?: string;
+    q?: string;
+    category?: string;
+    page?: string;
   }>;
-};
-
-function formatPriceLabel(price: number | null, lang: Language) {
-  /**
-   * Public price label.
-   * If price is missing, show request price text.
-   */
-  if (!price) {
-    return lang === "sw" ? "Omba bei" : "Request price";
-  }
-
-  return `TZS ${price.toLocaleString("en-US")}`;
-}
-
-export default async function ProductsPage({ searchParams }: PageProps) {
-  const params = await searchParams;
-  const lang: Language = isLanguage(params.lang) ? params.lang : "en";
-
-  const dbCategories = await prisma.productCategory.findMany({
-    include: {
-      products: {
-        where: {
-          isPublished: true,
-        },
-        orderBy: {
-          createdAt: "desc",
-        },
-      },
-    },
-    orderBy: {
-      createdAt: "desc",
-    },
+}) {
+  const p = await searchParams;
+  const lang = p.lang === "sw" ? "sw" : "en";
+  const sw = lang === "sw";
+  const q = (p.q || "").trim().slice(0, 100);
+  const category = (p.category || "").slice(0, 100);
+  const page = Math.max(
+    1,
+    Math.min(1000, Number.parseInt(p.page || "1", 10) || 1),
+  );
+  const categories = await prisma.productCategory.findMany({
+    where: { products: { some: { isPublished: true } } },
+    orderBy: { nameEn: "asc" },
   });
-
-  const products = await prisma.product.findMany({
+  const records = await prisma.product.findMany({
     where: {
       isPublished: true,
+      ...(category ? { category: { slug: category } } : {}),
+      ...(q
+        ? {
+            OR: [
+              { name: { contains: q, mode: "insensitive" as const } },
+              { brand: { contains: q, mode: "insensitive" as const } },
+            ],
+          }
+        : {}),
     },
-    include: {
-      category: true,
-    },
-    orderBy: {
-      createdAt: "desc",
-    },
-    take: 50,
+    include: { category: true },
+    orderBy: { createdAt: "desc" },
+    take: 51,
+    skip: (page - 1) * 50,
   });
-
-  const content = {
-    en: {
-      label: "Security & Safety Products",
-      title: "Products for safer homes, offices and businesses",
-      description:
-        "Explore CCTV, electric fence, gate motors, access control, networking and power backup products. Request a quote and our team will guide you based on your site needs.",
-      requestSurvey: "Request Site Survey",
-      contact: "Contact Sales",
-      categoriesTitle: "Product categories",
-      featuredTitle: "Available products",
-      featuredText:
-        "These are products currently listed by BM Contractors. Final quotation may depend on brand, model, quantity, installation materials and availability.",
-      quoteTitle: "Need product prices or installation quotation?",
-      quoteText:
-        "Send us your requirements and BM Contractors will prepare a clean quotation for products, installation materials and labour.",
-      quoteButton: "Request Quotation",
-      emptyTitle: "Products are being prepared",
-      emptyText:
-        "BM Contractors is preparing the product catalog. You can still request a quote or site survey.",
-      staticCategoriesTitle: "Main product areas",
-    },
-    sw: {
-      label: "Bidhaa za Ulinzi na Usalama",
-      title: "Bidhaa kwa nyumba, ofisi na biashara salama zaidi",
-      description:
-        "Angalia bidhaa za CCTV, electric fence, gate motors, access control, networking na power backup. Omba quotation na timu yetu itakuongoza kulingana na mahitaji ya site.",
-      requestSurvey: "Omba Ukaguzi wa Site",
-      contact: "Wasiliana na Sales",
-      categoriesTitle: "Makundi ya bidhaa",
-      featuredTitle: "Bidhaa zilizopo",
-      featuredText:
-        "Hizi ni bidhaa zilizowekwa na BM Contractors. Quotation ya mwisho inaweza kutegemea brand, model, quantity, materials za installation na upatikanaji.",
-      quoteTitle: "Unahitaji bei za bidhaa au quotation ya installation?",
-      quoteText:
-        "Tuma mahitaji yako, BM Contractors tutakuandalia quotation safi ya bidhaa, materials na labour.",
-      quoteButton: "Omba Quotation",
-      emptyTitle: "Bidhaa zinaandaliwa",
-      emptyText:
-        "BM Contractors tunaandaa product catalog. Bado unaweza kuomba quotation au ukaguzi wa site.",
-      staticCategoriesTitle: "Makundi makuu ya bidhaa",
-    },
-  };
-
-  const t = content[lang];
-
+  const products = records.slice(0, 50);
+  const pageLink = (n: number) =>
+    "/products?" +
+    new URLSearchParams({ lang, q, category, page: String(n) }).toString();
+  const guides = sw
+    ? [
+        [
+          "CCTV na ulinzi",
+          "cctv",
+          "Modeli halisi, ubora wa picha, lenzi, IP/analogi, PoE, uwezo wa DVR/NVR na muda wa kuhifadhi rekodi.",
+        ],
+        [
+          "Umeme na nishati",
+          "generator",
+          "kW/kVA, volti, awamu, uwezo wa betri, uoanifu wa inverter na vifaa vya kinga.",
+        ],
+        [
+          "Mitandao na simu",
+          "network",
+          "Idadi ya sehemu za kuunganisha, uwezo wa PoE, Wi-Fi, SIP, namba za ndani na uoanifu wa mfumo uliopo.",
+        ],
+      ]
+    : [
+        [
+          "Security & surveillance",
+          "cctv",
+          "Exact model, resolution, lens, IP/analog format, PoE, recorder compatibility and storage requirements.",
+        ],
+        [
+          "Electrical & power",
+          "generator",
+          "kW/kVA, voltage, phase, usable battery energy, inverter compatibility and protective devices.",
+        ],
+        [
+          "Networks & telephones",
+          "network",
+          "Port count, PoE budget, Wi-Fi coverage, SIP, extensions, codecs and existing-system compatibility.",
+        ],
+      ];
   return (
     <>
       <Header lang={lang} />
-
-      <main className="min-h-screen bg-white text-slate-950">
-        <section className="relative overflow-hidden bg-white px-4 py-14 sm:px-6 sm:py-20">
-          {/* Minimal background accents for a clean premium feel. */}
-          <div className="absolute right-0 top-0 h-72 w-72 rounded-full bg-red-50 blur-3xl" />
-          <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-slate-100 blur-3xl" />
-
-          <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+      <main id="main" className="premium-main">
+        <section className="catalogue-intro section">
+          <p className="eyebrow">
+            {sw ? "VIFAA / REJAREJA NA JUMLA" : "EQUIPMENT / RETAIL & TRADE"}
+          </p>
+          <h1>
+            {sw
+              ? "Chagua kwa mahitaji.\nThibitisha kwa vipimo."
+              : "Specified with care.\nSelected for your site."}
+          </h1>
+          <p className="lead">
+            {sw
+              ? "Modeli na vipimo vina maana vinapolingana na matumizi yako. Ulizia upatikanaji, dhamana na bei kabla ya kuagiza."
+              : "Model numbers matter when they match the requirement. Confirm availability, warranty terms and a current quotation before ordering."}
+          </p>
+          <form className="catalogue-search" action="/products">
+            <input type="hidden" name="lang" value={lang} />
+            <label htmlFor="equipment-search">
+              {sw
+                ? "Tafuta jina, chapa au modeli"
+                : "Search name, brand or model"}
+            </label>
             <div>
-              <p className="inline-flex rounded-full bg-red-50 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-red-700">
-                {t.label}
-              </p>
-
-              <h1 className="mt-6 max-w-4xl text-4xl font-black tracking-tight sm:text-6xl">
-                {t.title}
-              </h1>
-
-              <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
-                {t.description}
-              </p>
-
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <Link
-                  href={`/request-site-survey?lang=${lang}`}
-                  className="rounded-full bg-red-600 px-6 py-3 text-center text-sm font-black text-white transition hover:bg-red-700"
-                >
-                  {t.requestSurvey}
-                </Link>
-
-                <Link
-                  href={`/contact?lang=${lang}`}
-                  className="rounded-full border border-slate-300 px-6 py-3 text-center text-sm font-black text-slate-950 transition hover:bg-slate-50"
-                >
-                  {t.contact}
-                </Link>
-              </div>
+              <input
+                id="equipment-search"
+                name="q"
+                maxLength={100}
+                defaultValue={q}
+              />
+              <button className="button dark">
+                {sw ? "Tafuta" : "Search"} ↗
+              </button>
             </div>
-
-            <div className="rounded-[2rem] bg-slate-950 p-5 text-white shadow-2xl">
-              <div className="grid grid-cols-2 gap-3">
-                {(dbCategories.length > 0
-                  ? dbCategories.slice(0, 6).map((category) => ({
-                      slug: category.slug,
-                      name:
-                        lang === "sw"
-                          ? category.nameSw || category.nameEn
-                          : category.nameEn,
-                      description:
-                        category.description ||
-                        (lang === "sw"
-                          ? "Bidhaa za BM Contractors"
-                          : "BM Contractors products"),
-                    }))
-                  : productCategories.slice(0, 6).map((category) => ({
-                      slug: category.slug,
-                      name: lang === "sw" ? category.nameSw : category.nameEn,
-                      description:
-                        lang === "sw"
-                          ? category.descriptionSw
-                          : category.descriptionEn,
-                    }))
-                ).map((category) => (
-                  <div
-                    key={category.slug}
-                    className="rounded-3xl bg-white/10 p-4 ring-1 ring-white/10"
-                  >
-                    <p className="text-sm font-black">{category.name}</p>
-                    <p className="mt-2 line-clamp-2 text-xs leading-5 text-slate-300">
-                      {category.description}
-                    </p>
-                  </div>
+            <div className="catalogue-filters">
+              <label htmlFor="equipment-category">
+                {sw ? "Kundi la vifaa" : "Equipment category"}
+              </label>
+              <select
+                id="equipment-category"
+                name="category"
+                defaultValue={category}
+              >
+                <option value="">
+                  {sw ? "Makundi yote" : "All categories"}
+                </option>
+                {categories.map((c) => (
+                  <option key={c.slug} value={c.slug}>
+                    {sw ? c.nameSw || c.nameEn : c.nameEn}
+                  </option>
                 ))}
-              </div>
+              </select>
+              {(q || category) && (
+                <a href={"/products?lang=" + lang}>
+                  {sw ? "Ondoa vichujio" : "Clear filters"}
+                </a>
+              )}
             </div>
-          </div>
+          </form>
         </section>
-
-        <section className="border-y border-slate-200 bg-slate-50 px-4 py-14 sm:px-6 sm:py-16">
-          <div className="mx-auto max-w-7xl">
-            <div>
-              <p className="text-sm font-black text-red-600">
-                {t.categoriesTitle}
-              </p>
-              <h2 className="mt-2 text-3xl font-black tracking-tight sm:text-4xl">
-                {dbCategories.length > 0
-                  ? t.categoriesTitle
-                  : t.staticCategoriesTitle}
-              </h2>
-            </div>
-
-            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {(dbCategories.length > 0
-                ? dbCategories.map((category) => ({
-                    slug: category.slug,
-                    name:
-                      lang === "sw"
-                        ? category.nameSw || category.nameEn
-                        : category.nameEn,
-                    description:
-                      category.description ||
-                      (lang === "sw"
-                        ? "Bidhaa na solutions kutoka BM Contractors."
-                        : "Products and solutions from BM Contractors."),
-                    count: category.products.length,
-                  }))
-                : productCategories.map((category) => ({
-                    slug: category.slug,
-                    name: lang === "sw" ? category.nameSw : category.nameEn,
-                    description:
-                      lang === "sw"
-                        ? category.descriptionSw
-                        : category.descriptionEn,
-                    count: null,
-                  }))
-              ).map((category) => (
-                <article
-                  key={category.slug}
-                  className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-                >
-                  <h3 className="text-xl font-black">{category.name}</h3>
-
-                  <p className="mt-3 text-sm leading-7 text-slate-600">
-                    {category.description}
+        <section className="section catalogue-records">
+          <div className="section-heading">
+            <h2>{sw ? "Bidhaa zilizochapishwa" : "Published equipment"}</h2>
+            <p>
+              {sw ? "Ukurasa" : "Page"} {page} · {products.length}
+              {records.length > 50 ? "+" : ""} {sw ? "matokeo" : "results"}
+            </p>
+          </div>
+          {products.length ? (
+            <div className="record-grid">
+              {products.map((x) => (
+                <article key={x.id}>
+                  <RecordImage kind="product" record={x} lang={lang} />
+                  <p className="eyebrow">
+                    {(sw
+                      ? x.category?.nameSw || x.category?.nameEn
+                      : x.category?.nameEn) || (sw ? "VIFAA" : "EQUIPMENT")}
                   </p>
-
-                  {category.count !== null ? (
-                    <p className="mt-4 text-xs font-black uppercase tracking-[0.16em] text-red-600">
-                      {category.count} products
+                  <h3>
+                    <a href={"/products/" + x.slug + "?lang=" + lang}>
+                      {x.name} ↗
+                    </a>
+                  </h3>
+                  <p>
+                    {x.brand ||
+                      (sw ? "Chapa ithibitishwe" : "Brand to be confirmed")}
+                  </p>
+                  {sw && x.description && (
+                    <p className="scope-note">
+                      Maelezo ya bidhaa hii bado yako kwa Kiingereza.
                     </p>
-                  ) : null}
+                  )}
+                  <p>{x.description}</p>
+                  {specificationEntries(x.specifications).length > 0 && (
+                    <ul className="record-specs">
+                      {specificationEntries(x.specifications)
+                        .slice(0, 3)
+                        .map(([k, v], i) => (
+                          <li key={k + i}>
+                            {k}: {v}
+                          </li>
+                        ))}
+                    </ul>
+                  )}
+                  <div className="record-bottom">
+                    <strong>
+                      {x.price !== null
+                        ? "TZS " + x.price.toLocaleString("en-US")
+                        : sw
+                          ? "Omba nukuu ya bei"
+                          : "Request a quotation"}
+                    </strong>
+                    <a href={"/products/" + x.slug + "?lang=" + lang}>
+                      {sw ? "Maelezo" : "Details"} ↗
+                    </a>
+                  </div>
                 </article>
               ))}
             </div>
-          </div>
-        </section>
-
-        <section className="px-4 py-14 sm:px-6 sm:py-16">
-          <div className="mx-auto max-w-7xl">
-            <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-              <div>
-                <p className="text-sm font-black text-red-600">
-                  {t.featuredTitle}
-                </p>
-                <h2 className="mt-2 text-3xl font-black tracking-tight sm:text-4xl">
-                  Products customers ask for
-                </h2>
-              </div>
-
-              <p className="max-w-xl text-sm leading-6 text-slate-600">
-                {t.featuredText}
+          ) : (
+            <div className="catalogue-empty">
+              <h3>
+                {sw
+                  ? "Tuanzie kwenye orodha yako ya vifaa."
+                  : "Start with your equipment schedule."}
+              </h3>
+              <p>
+                {sw
+                  ? "Hakuna rekodi ya bidhaa inayolingana iliyochapishwa hapa kwa sasa. Tuma modeli au vipimo unavyohitaji; hatujaweka bidhaa, bei au madai ya stock yasiyothibitishwa."
+                  : "No matching product record is currently published here. Send the model or specification you need; unverified products, prices and stock claims are not listed."}
               </p>
+              <EnquiryLink
+                lang={lang}
+                subject={q || "Equipment specification"}
+              />
             </div>
-
-            {products.length === 0 ? (
-              <div className="mt-8 rounded-[2rem] border border-slate-200 bg-slate-50 p-8 text-center">
-                <h3 className="text-2xl font-black">{t.emptyTitle}</h3>
-                <p className="mx-auto mt-3 max-w-xl leading-7 text-slate-600">
-                  {t.emptyText}
-                </p>
-                <Link
-                  href={`/request-site-survey?lang=${lang}`}
-                  className="mt-6 inline-flex rounded-full bg-red-600 px-6 py-3 text-sm font-black text-white hover:bg-red-700"
-                >
-                  {t.requestSurvey}
-                </Link>
-              </div>
-            ) : (
-              <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                {products.map((product) => (
-                  <ProductCard
-                    key={product.id}
-                    lang={lang}
-                    slug={product.slug}
-                    name={product.name}
-                    brand={product.brand || undefined}
-                    imageUrl={product.imageUrl}
-                    categoryName={
-                      product.category
-                        ? lang === "sw"
-                          ? product.category.nameSw || product.category.nameEn
-                          : product.category.nameEn
-                        : "Product"
-                    }
-                    summaryEn={
-                      product.description ||
-                      "Product available from BM Contractors."
-                    }
-                    summarySw={
-                      product.description ||
-                      "Bidhaa inapatikana BM Contractors."
-                    }
-                    priceLabelEn={formatPriceLabel(product.price, "en")}
-                    priceLabelSw={formatPriceLabel(product.price, "sw")}
-                  />
-                ))}
-              </div>
+          )}
+        </section>
+        {(page > 1 || records.length > 50) && (
+          <nav
+            className="section catalogue-pagination"
+            aria-label={sw ? "Kurasa za bidhaa" : "Catalogue pages"}
+          >
+            {page > 1 && (
+              <a href={pageLink(page - 1)}>
+                ← {sw ? "Uliotangulia" : "Previous"}
+              </a>
             )}
+            {records.length > 50 && (
+              <a href={pageLink(page + 1)}>{sw ? "Unaofuata" : "Next"} →</a>
+            )}
+          </nav>
+        )}
+        <section className="section equipment">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">
+                {sw ? "MWONGOZO WA MAOMBI" : "A MORE USEFUL EQUIPMENT ENQUIRY"}
+              </p>
+              <h2>
+                {sw
+                  ? "Taarifa sahihi.\nUchaguzi unaofaa."
+                  : "The details behind\na better selection."}
+              </h2>
+            </div>
+            <p className="section-intro">
+              {sw
+                ? "Haya ni makundi ya mahitaji, si modeli zinazodaiwa kuwa dukani."
+                : "These are specification guides, not product listings or stock claims."}
+            </p>
+          </div>
+          <div className="equipment-grid">
+            {guides.map(([title, asset, body]) => (
+              <article key={title}>
+                <Photo asset={asset} lang={lang} />
+                <div className="equipment-caption">
+                  <h3>{title}</h3>
+                  <p>{body}</p>
+                </div>
+              </article>
+            ))}
           </div>
         </section>
-
-        <section className="px-4 pb-14 sm:px-6 sm:pb-16">
-          <div className="mx-auto max-w-7xl rounded-[2rem] bg-slate-950 p-8 text-white shadow-xl sm:p-10">
-            <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
-              <div>
-                <h2 className="text-3xl font-black">{t.quoteTitle}</h2>
-                <p className="mt-3 max-w-2xl leading-7 text-slate-300">
-                  {t.quoteText}
-                </p>
-              </div>
-
-              <Link
-                href={`/request-site-survey?lang=${lang}`}
-                className="rounded-full bg-red-600 px-6 py-3 text-center text-sm font-black text-white transition hover:bg-red-700"
-              >
-                {t.quoteButton}
-              </Link>
+        <section className="brief-band">
+          <div>
+            <p className="eyebrow">
+              {sw ? "REJAREJA / JUMLA" : "RETAIL / WHOLESALE"}
+            </p>
+            <h2>
+              {sw
+                ? "Kifaa kimoja.\nAu orodha nzima."
+                : "One item.\nOr the whole schedule."}
+            </h2>
+          </div>
+          <div>
+            <p>
+              {sw
+                ? "Kwa rejareja, tuma modeli na idadi. Kwa jumla au taasisi, ongeza BOQ, ratiba na eneo la uwasilishaji. Bei na masharti huandaliwa kwa ombi husika."
+                : "For retail, share the model and quantity. For trade or institutions, include your BOQ, required date and delivery location. Pricing and terms are specific to the enquiry."}
+            </p>
+            <div className="enquiry-pair">
+              <EnquiryLink lang={lang} subject="Retail equipment" />
+              <EnquiryLink lang={lang} subject="Equipment schedule" trade />
             </div>
           </div>
         </section>
       </main>
-
       <Footer lang={lang} />
-      <FloatingWhatsApp lang={lang} />
     </>
   );
 }

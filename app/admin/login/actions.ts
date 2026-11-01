@@ -77,7 +77,7 @@ export async function verifyAdminOtp(formData: FormData) {
     redirect("/admin/login?error=invalid");
   }
 
-  if (!otp || otp.length !== 6) {
+  if (!/^\d{6}$/.test(otp)) {
     redirect(
       `/admin/login/verify?phone=${encodeURIComponent(phone)}&error=otp`,
     );
@@ -111,10 +111,8 @@ export async function verifyAdminOtp(formData: FormData) {
   const isValid = otpRecord.otpHash === hashValue(otp);
 
   if (!isValid) {
-    await prisma.adminOtp.update({
-      where: {
-        id: otpRecord.id,
-      },
+    await prisma.adminOtp.updateMany({
+      where: { id: otpRecord.id, usedAt: null, attempts: { lt: 5 }, expiresAt: { gt: new Date() } },
       data: {
         attempts: {
           increment: 1,
@@ -127,14 +125,11 @@ export async function verifyAdminOtp(formData: FormData) {
     );
   }
 
-  await prisma.adminOtp.update({
-    where: {
-      id: otpRecord.id,
-    },
-    data: {
-      usedAt: new Date(),
-    },
+  const consumed = await prisma.adminOtp.updateMany({
+    where: { id: otpRecord.id, usedAt: null, attempts: { lt: 5 }, expiresAt: { gt: new Date() }, otpHash: hashValue(otp) },
+    data: { usedAt: new Date() },
   });
+  if (consumed.count !== 1) redirect("/admin/login?error=invalid");
 
   await createAdminSession(phone);
 

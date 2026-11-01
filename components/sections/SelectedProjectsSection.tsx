@@ -93,10 +93,10 @@ export default function SelectedProjectsSection({
                 {/* Action Trigger Block */}
                 <div className="mt-6 border-t border-slate-100 px-1 pt-4">
                   <LoadingLink
-                    href={`/projects/${project.slug}?lang=${lang}`}
+                    href={`/projects?lang=${lang}`}
                     className="inline-flex items-center gap-1 text-xs font-black uppercase tracking-wider text-slate-900 group-hover:text-red-600 transition-colors"
                   >
-                    {lang === "sw" ? "Kagua Mradi" : "View Case Study"}
+                    {lang === "sw" ? "Kagua Mradi" : "View projects"}
                     <ArrowRight className="h-3 w-3 transition-transform duration-200 group-hover:translate-x-0.5" />
                   </LoadingLink>
                 </div>

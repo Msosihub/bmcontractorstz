@@ -1,0 +1,130 @@
+{
+  "cctv": {
+    "equipmentQuery": "CCTV",
+    "related": [
+      "electric-fence",
+      "gate-motors",
+      "networking"
+    ]
+  },
+  "electric-fence": {
+    "equipmentQuery": "Electric fence",
+    "related": [
+      "cctv",
+      "gate-motors",
+      "maintenance-support"
+    ]
+  },
+  "gate-motors": {
+    "equipmentQuery": "Gate motor",
+    "related": [
+      "electric-fence",
+      "video-intercom",
+      "access-control"
+    ]
+  },
+  "access-control": {
+    "equipmentQuery": "Access control",
+    "related": [
+      "video-intercom",
+      "networking",
+      "power-backup"
+    ]
+  },
+  "fire-alarm-systems": {
+    "equipmentQuery": "Alarm",
+    "related": [
+      "electrical-contracting",
+      "access-control",
+      "maintenance-support"
+    ]
+  },
+  "video-intercom": {
+    "equipmentQuery": "Intercom",
+    "related": [
+      "gate-motors",
+      "access-control",
+      "networking"
+    ]
+  },
+  "electrical-contracting": {
+    "equipmentQuery": "Electrical",
+    "related": [
+      "generators",
+      "power-backup",
+      "solar-panel-systems"
+    ]
+  },
+  "generators": {
+    "equipmentQuery": "Generator",
+    "related": [
+      "electrical-contracting",
+      "power-backup",
+      "maintenance-support"
+    ]
+  },
+  "solar-panel-systems": {
+    "equipmentQuery": "Solar",
+    "related": [
+      "electrical-contracting",
+      "power-backup",
+      "solar-street-lights"
+    ]
+  },
+  "power-backup": {
+    "equipmentQuery": "UPS",
+    "related": [
+      "generators",
+      "electrical-contracting",
+      "networking"
+    ]
+  },
+  "solar-street-lights": {
+    "equipmentQuery": "Solar light",
+    "related": [
+      "solar-panel-systems",
+      "electrical-contracting",
+      "maintenance-support"
+    ]
+  },
+  "networking": {
+    "equipmentQuery": "Network",
+    "related": [
+      "telephone-systems",
+      "cctv",
+      "power-backup"
+    ]
+  },
+  "telephone-systems": {
+    "equipmentQuery": "Telephone",
+    "related": [
+      "networking",
+      "power-backup",
+      "video-intercom"
+    ]
+  },
+  "air-conditioners": {
+    "equipmentQuery": "Air conditioning",
+    "related": [
+      "electrical-contracting",
+      "maintenance-support",
+      "institutional-procurement"
+    ]
+  },
+  "maintenance-support": {
+    "equipmentQuery": "Service parts",
+    "related": [
+      "cctv",
+      "gate-motors",
+      "generators"
+    ]
+  },
+  "institutional-procurement": {
+    "equipmentQuery": "",
+    "related": [
+      "electrical-contracting",
+      "generators",
+      "networking"
+    ]
+  }
+}

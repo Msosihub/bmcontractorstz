@@ -1,3 +1,4 @@
+import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Services Page
  * -------------------
@@ -33,6 +34,7 @@ function asStringArray(value: unknown) {
 }
 
 export default async function AdminServicesPage() {
+  await requireAdminPage();
   const services = await prisma.service.findMany({
     orderBy: {
       createdAt: "desc",

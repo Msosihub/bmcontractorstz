@@ -1,20 +1,11 @@
+import { PremiumArticle } from "@/components/premium/Article";
 /**
  * Terms Page
  * ----------
  * Basic website terms for BM Contractors Tanzania.
  */
 
-import type { Metadata } from "next";
-import { Header } from "@/components/site/Header";
-import { Footer } from "@/components/site/Footer";
-import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
 import { isLanguage, type Language } from "@/lib/i18n/config";
-
-export const metadata: Metadata = {
-  title: "Terms of Service",
-  description:
-    "Terms of Service for using the BM Contractors Tanzania website and submitting inquiries or site survey requests.",
-};
 
 type PageProps = {
   searchParams: Promise<{
@@ -60,69 +51,53 @@ export default async function TermsPage({ searchParams }: PageProps) {
       ],
     },
     sw: {
-      title: "Terms of Service",
+      title: "Masharti ya huduma",
       updated: "Imesasishwa mwisho: Julai 2026",
       intro:
-        "Masharti haya yanatumika unapotumia website ya BM Contractors, kutuma inquiry, kuomba site survey au kuwasiliana nasi kupitia online forms.",
+        "Masharti haya yanatumika unapotumia tovuti ya BM Contractors, kutuma maombi, kuomba ukaguzi wa eneo au kuwasiliana nasi kupitia fomu za mtandaoni.",
       sections: [
         {
-          title: "Taarifa za website",
-          text: "Taarifa zilizopo kwenye website hii ni kwa ajili ya mwongozo kuhusu huduma na bidhaa za BM Contractors. Ushauri wa mwisho na quotation hutegemea hali ya site na upatikanaji wa bidhaa.",
+          title: "Taarifa za tovuti",
+          text: "Taarifa zilizopo kwenye tovuti hii ni kwa ajili ya mwongozo kuhusu huduma na bidhaa za BM Contractors. Ushauri wa mwisho na nukuu ya bei hutegemea hali ya eneo na upatikanaji wa bidhaa.",
         },
         {
-          title: "Site survey na quotation",
-          text: "Kutuma site survey request hakumaanishi bei ya mwisho imethibitishwa. Bei ya mwisho inaweza kutegemea location, materials, umbali wa cable, bidhaa, ugumu wa installation na mahitaji ya site.",
+          title: "Ukaguzi wa eneo na nukuu ya bei",
+          text: "Kutuma ombi la ukaguzi wa eneo hakumaanishi bei ya mwisho imethibitishwa. Bei ya mwisho inaweza kutegemea eneo, vifaa, umbali wa nyaya, bidhaa, ugumu wa ufungaji na mahitaji ya eneo.",
         },
         {
           title: "Upatikanaji wa bidhaa",
-          text: "Bidhaa, brands na bei zinaweza kubadilika kulingana na stock, suppliers na mahitaji ya project.",
+          text: "Bidhaa, chapa na bei zinaweza kubadilika kulingana na vifaa vilivyopo, wasambazaji na mahitaji ya kazi.",
         },
         {
           title: "Wajibu wa mteja",
-          text: "Mteja anatakiwa kutoa taarifa sahihi za mawasiliano, location na mahitaji ya site ili BM Contractors waweze kujibu vizuri.",
+          text: "Mteja anatakiwa kutoa taarifa sahihi za mawasiliano, eneo na mahitaji ya eneo ili BM Contractors waweze kujibu vizuri.",
         },
         {
-          title: "External links",
-          text: "Website inaweza kuwa na links za WhatsApp, catalogs au platforms nyingine. BM Contractors haihusiki na upatikanaji au sera za third-party platforms.",
+          title: "Viungo vya nje",
+          text: "Tovuti inaweza kuwa na viungo vya WhatsApp, orodha za bidhaa au majukwaa mengine. BM Contractors haihusiki na upatikanaji au sera za majukwaa ya wahusika wengine.",
         },
         {
           title: "Mabadiliko",
-          text: "BM Contractors inaweza kuboresha masharti haya kadri huduma, website features au operations zinavyobadilika.",
+          text: "BM Contractors inaweza kuboresha masharti haya kadri huduma, vipengele vya tovuti au shughuli zinavyobadilika.",
         },
       ],
     },
   }[lang];
 
   return (
-    <>
-      <Header lang={lang} />
-
-      <main className="min-h-screen bg-white px-4 py-14 text-slate-950 sm:px-6 sm:py-16">
-        <article className="mx-auto max-w-4xl">
-          <p className="text-sm font-black text-red-600">{t.updated}</p>
-          <h1 className="mt-3 text-4xl font-black tracking-tight sm:text-6xl">
-            {t.title}
-          </h1>
-          <p className="mt-6 text-lg leading-8 text-slate-600">{t.intro}</p>
-
-          <div className="mt-10 grid gap-5">
-            {t.sections.map((section) => (
-              <section
-                key={section.title}
-                className="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-6"
-              >
-                <h2 className="text-xl font-black text-slate-950">
-                  {section.title}
-                </h2>
-                <p className="mt-3 leading-7 text-slate-600">{section.text}</p>
-              </section>
-            ))}
-          </div>
-        </article>
-      </main>
-
-      <Footer lang={lang} />
-      <FloatingWhatsApp lang={lang} />
-    </>
+    <PremiumArticle
+      lang={lang}
+      title={t.title}
+      label={t.updated}
+      intro={t.intro}
+      enquiry={false}
+    >
+      {t.sections.map((section) => (
+        <section key={section.title}>
+          <h2>{section.title}</h2>
+          <p>{section.text}</p>
+        </section>
+      ))}
+    </PremiumArticle>
   );
 }

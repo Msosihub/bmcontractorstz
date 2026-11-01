@@ -1,3 +1,4 @@
+import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Settings Page
  * -------------------
@@ -15,12 +16,19 @@
 import { AdminShell } from "@/components/admin/AdminShell";
 import { siteConfig } from "@/data/site";
 
-export default function AdminSettingsPage() {
+export default async function AdminSettingsPage() {
+  await requireAdminPage();
   return (
     <AdminShell
       title="Website Settings"
       subtitle="Manage BM Contractors website contacts, brand details, office numbers and system settings."
     >
+      <a
+        href="/admin/customers"
+        className="mb-5 inline-flex min-h-12 items-center rounded-xl bg-white px-5 font-bold text-slate-950"
+      >
+        Manage customer names &amp; logos →
+      </a>
       <div className="grid gap-4 lg:grid-cols-2">
         <section className="rounded-[2rem] border border-white/10 bg-white p-6 text-slate-950 shadow-2xl shadow-black/20">
           <p className="text-xs font-black uppercase tracking-[0.18em] text-red-600">

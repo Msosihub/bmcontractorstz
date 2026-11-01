@@ -1,0 +1,52 @@
+{
+  "cctv": {
+    "asset": "cctv",
+    "en": "Camera mounted at a building entrance",
+    "sw": "Kamera iliyofungwa kwenye mlango wa jengo"
+  },
+  "electric-fence": {
+    "asset": "agricultural-fence",
+    "en": "Electric fence conductors and insulators along a paddock",
+    "sw": "Waya na vihami vya uzio wa umeme pembezoni mwa eneo la mifugo"
+  },
+  "gate-motors": {
+    "asset": "gate",
+    "en": "Automated gate at a contemporary entrance",
+    "sw": "Geti la kiotomatiki kwenye lango la kisasa"
+  },
+  "access-control": {
+    "asset": "access",
+    "en": "An access card held beside a door reader",
+    "sw": "Kadi ya kufungulia mlango ikiwa karibu na kisoma kadi"
+  },
+  "electrical-contracting": {
+    "asset": "electrical",
+    "en": "Electrical distribution equipment in an installation context",
+    "sw": "Vifaa vya usambazaji wa umeme katika mazingira ya ufungaji"
+  },
+  "solar-panel-systems": {
+    "asset": "solar",
+    "en": "Solar panels in a building energy system",
+    "sw": "Paneli za sola katika mfumo wa nishati wa jengo"
+  },
+  "generators": {
+    "asset": "generator",
+    "en": "Generator equipment in a backup power setting",
+    "sw": "Jenereta katika mazingira ya umeme wa akiba"
+  },
+  "networking": {
+    "asset": "network",
+    "en": "Network equipment and structured cabling",
+    "sw": "Vifaa vya mtandao na mpangilio wa nyaya"
+  },
+  "telephone-systems": {
+    "asset": "telephone",
+    "en": "Office telephone system illustration",
+    "sw": "Mfano wa mfumo wa simu za ofisi"
+  },
+  "air-conditioners": {
+    "asset": "hvac",
+    "en": "Wall-mounted split air conditioner in an office",
+    "sw": "Kiyoyozi cha ukutani ndani ya ofisi"
+  }
+}

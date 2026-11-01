@@ -15,8 +15,9 @@
 
 "use server";
 
-import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/prisma";
+import { requireAdmin } from "@/lib/auth/admin-auth";
+import { validateAdminForm } from "@/lib/admin-validation";
 
 const allowedStatuses = [
   "NEW",
@@ -33,6 +34,8 @@ function isAllowedStatus(value: string): value is SurveyStatus {
 }
 
 export async function updateSiteSurveyStatus(formData: FormData) {
+  await requireAdmin();
+  validateAdminForm(formData);
   /**
    * Extract request ID and new status from submitted form.
    */
@@ -62,6 +65,5 @@ export async function updateSiteSurveyStatus(formData: FormData) {
   /**
    * Refresh admin page so the latest status appears immediately.
    */
-  revalidatePath("/admin/site-surveys");
-  revalidatePath("/admin");
+  // AdminActionForm explicitly refreshes after the write has completed.
 }

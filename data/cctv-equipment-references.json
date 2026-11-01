@@ -1,0 +1,10 @@
+{
+  "checked": "2026-10-31",
+  "status": "Manufacturer references only; BM availability and current pricing unverified",
+  "products": [
+    {"brand":"Hikvision","model":"DS-2CD1043G2-LIU(F)","source":"https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000002/S000000003/S000000004/OFR010251/M000064174/SM000042445/Data_Sheet/DS-2CD1043G2-LIUF_Datasheet_20230914.pdf","facts":["4MP","IP bullet","802.3af PoE","IP67"],"bmPrice":null,"bmStockVerified":false},
+    {"brand":"Tiandy","model":"TC-C34UV 3FRB-4","source":"https://en.tiandy.com/special-product/68322933.html","facts":["4MP","IP bullet","802.3af PoE","IP67"],"bmPrice":null,"bmStockVerified":false},
+    {"brand":"Dahua","model":"IPC-HDW2449T-S-IL","source":"https://www.dahuasecurity.com/kr/products/network-products/network-cameras/wizsense-2-series/smart-dual-light/ipc-hdw2449t-s-il","facts":["4MP","IP turret/eyeball","PoE"],"bmPrice":null,"bmStockVerified":false}
+  ],
+  "solar":{"family":"Hikvision AOV SolarVu","source":"https://www.hikvision.com/europe/newsroom/latest-news/2025/hikvision-launches-its-new-aov-4g-solar-camera-series/","bmModelAvailabilityVerified":false}
+}

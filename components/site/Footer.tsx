@@ -1,156 +1,97 @@
-/**
- * Footer Component
- * ----------------
- * Shared public website footer for BM Contractors.
- *
- * Purpose:
- * - Shows quick links and contact details.
- * - Uses centralized siteConfig for phone/email details.
- * - Uses LoadingLink for navigation feedback.
- * - Supports language-aware links.
- */
-
-import type { Language } from "@/lib/i18n/config";
-import { getDictionary } from "@/lib/i18n/dictionary";
+import { FooterContacts } from "@/components/premium/OfficeContacts";
 import { siteConfig } from "@/data/site";
-import { LoadingLink } from "@/components/ui/LoadingLink";
+import navigation from "@/data/footer-navigation.json";
+import Image from "next/image";
+import type { Language } from "@/lib/i18n/config";
 
-type FooterProps = {
-  lang: Language;
-};
-
-export function Footer({ lang }: FooterProps) {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const t = getDictionary(lang) as any;
-
-  const footerText =
-    lang === "sw"
-      ? "Huduma za security, safety, networking na smart systems kwa nyumba, biashara na taasisi Tanzania."
-      : "Security, safety, networking and smart system solutions for homes, businesses and institutions across Tanzania.";
-
+export function Footer({ lang }: { lang: Language }) {
+  const sw = lang === "sw";
   return (
-    <footer className="border-t border-slate-200 bg-slate-950 text-white">
-      <div className="mx-auto grid max-w-7xl gap-8 px-6 py-12 md:grid-cols-4">
-        <div className="md:col-span-2">
-          <h2 className="text-xl font-black">{siteConfig.shortName}</h2>
-
-          <p className="mt-4 max-w-md text-sm leading-6 text-slate-300">
-            {footerText}
-          </p>
-
-          <div className="mt-5 flex flex-wrap gap-2">
-            {siteConfig.services.slice(0, 4).map((service) => (
-              <span
-                key={service}
-                className="rounded-full bg-white/10 px-3 py-1 text-xs font-bold text-slate-200 ring-1 ring-white/10"
-              >
-                {service}
-              </span>
-            ))}
-          </div>
-        </div>
-
+    <footer
+      className="premium-footer"
+      data-content-owner="siteConfig + reviewed footer navigation"
+    >
+      <div className="footer-introduction">
         <div>
-          <h3 className="text-sm font-bold">Quick Links</h3>
-
-          <div className="mt-4 grid gap-2 text-sm text-slate-300">
-            <LoadingLink
-              href={`/services?lang=${lang}`}
-              className="hover:text-white"
-            >
-              {t.nav.services}
-            </LoadingLink>
-
-            <LoadingLink
-              href={`/cctv-packages?lang=${lang}`}
-              className="hover:text-white"
-            >
-              {t.nav.cctvPackages}
-            </LoadingLink>
-
-            <LoadingLink
-              href={`/products?lang=${lang}`}
-              className="hover:text-white"
-            >
-              {t.nav.products}
-            </LoadingLink>
-
-            <LoadingLink
-              href={`/support?lang=${lang}`}
-              className="hover:text-white"
-            >
-              {t.nav.support}
-            </LoadingLink>
-
-            <LoadingLink
-              href={`/request-site-survey?lang=${lang}`}
-              className="hover:text-white"
-            >
-              {t.nav.requestSurvey}
-            </LoadingLink>
-
-            <LoadingLink
-              href={`/contact?lang=${lang}`}
-              className="hover:text-white"
-            >
-              {t.nav.contact}
-            </LoadingLink>
-          </div>
-        </div>
-
-        <div>
-          <h3 className="text-sm font-bold">Contact</h3>
-
-          <div className="mt-4 grid gap-2 text-sm text-slate-300">
-            <p>WhatsApp: {siteConfig.whatsapp.label}</p>
-
-            {siteConfig.phones.map((phone) => (
-              <p key={phone.raw}>
-                {phone.type}: {phone.label}
-              </p>
-            ))}
-
-            <p>Email: {siteConfig.email}</p>
-            <p>{siteConfig.location.country}</p>
-          </div>
-
-          <a
-            href={siteConfig.whatsapp.url}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-5 inline-flex rounded-full bg-green-600 px-4 py-2 text-xs font-black text-white transition hover:bg-green-700"
-          >
-            Chat WhatsApp
+          <a className="brand" href={"/?lang=" + lang}>
+            <Image
+              src="/assets/official-logo.png"
+              width={42}
+              height={46}
+              alt="BM Contractors"
+            />
+            <span>
+              BM CONTRACTORS
+              <small>
+                {sw
+                  ? "Usalama. Uhandisi. Teknolojia."
+                  : "Security. Engineering. Technology."}
+              </small>
+            </span>
           </a>
+          <p>
+            {sw
+              ? "BM Engineering Contractors Limited: CCTV, uzio wa umeme, mageti ya kiotomatiki na mifumo ya umeme, nishati na mawasiliano. Mahitaji yako yanaongoza wigo wa kazi."
+              : "BM Engineering Contractors Limited: CCTV, electric fencing, gate automation and electrical, power and communications systems. Your requirements guide the scope."}
+          </p>
         </div>
+        <a
+          className="footer-enquiry"
+          href={"/request-site-survey?lang=" + lang}
+        >
+          {sw ? "Tuzungumzie mahitaji yako" : "Let’s discuss your requirements"}
+          <span aria-hidden="true">↗</span>
+        </a>
       </div>
-
-      <div className="mt-6 flex flex-wrap px-6 py-4 gap-4 text-sm font-semibold text-slate-500">
-        <LoadingLink
-          href={`/about?lang=${lang}`}
-          className="hover:text-red-600"
-        >
-          {lang === "sw" ? "Kuhusu" : "About"}
-        </LoadingLink>
-
-        <LoadingLink
-          href={`/privacy-policy?lang=${lang}`}
-          className="hover:text-red-600"
-        >
-          Privacy Policy
-        </LoadingLink>
-
-        <LoadingLink
-          href={`/terms?lang=${lang}`}
-          className="hover:text-red-600"
-        >
-          {lang === "sw" ? "Masharti" : "Terms"}
-        </LoadingLink>
+      <div className="footer-directory">
+        {navigation.map((group) => (
+          <nav key={group.id} aria-labelledby={"footer-" + group.id}>
+            <h2 id={"footer-" + group.id}>{group[lang]}</h2>
+            <ul>
+              {group.links.map((link) => {
+                const href =
+                  "query" in link
+                    ? "/products?" +
+                      new URLSearchParams({ lang, q: link.query }).toString()
+                    : link.href + "?lang=" + lang;
+                return (
+                  <li key={href}>
+                    <a href={href}>{link[lang]}</a>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
+        ))}
       </div>
-
-      <div className="border-t border-slate-800 px-6 py-4 text-center text-xs text-slate-400">
-        © {new Date().getFullYear()} {siteConfig.shortName}. All rights
-        reserved.
+      <FooterContacts lang={lang} />
+      <nav
+        className="footer-shortcuts"
+        aria-label={
+          sw
+            ? "Njia fupi za mawasiliano na huduma"
+            : "Contact and service shortcuts"
+        }
+      >
+        <a href="/whatsapp">WhatsApp · {siteConfig.whatsapp.label} ↗</a>
+        <a href="/huduma" lang="sw">
+          Huduma kwa Kiswahili ↗
+        </a>
+        <a href="#main">{sw ? "Rudi juu" : "Back to top"} ↑</a>
+      </nav>
+      <p className="disclosure">
+        {sw
+          ? "Picha zilizoainishwa kuwa za AI ni mifano ya kueleza huduma. Hazionyeshi miradi, wafanyakazi au wateja wa BM. Modeli, bei, upatikanaji na mahitaji ya kiufundi huthibitishwa kwenye nukuu ya bei."
+          : "Images labelled AI illustrate services; they do not show actual BM projects, employees or clients. Models, prices, availability and technical requirements are confirmed in the quotation."}
+      </p>
+      <div className="footer-bottom">
+        <span>© 2026 BM Engineering Contractors Limited</span>
+        <div>
+          <a href={"/privacy-policy?lang=" + lang}>
+            {sw ? "Faragha" : "Privacy"}
+          </a>
+          <a href={"/terms?lang=" + lang}>{sw ? "Masharti" : "Terms"}</a>
+        </div>
       </div>
     </footer>
   );

@@ -1,3 +1,5 @@
+import {AdminActionForm} from "@/components/admin/AdminActionForm";
+import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Messages Page
  * -------------------
@@ -44,6 +46,7 @@ function statusClass(status: string) {
 const statuses = ["NEW", "CONTACTED", "CLOSED"];
 
 export default async function AdminMessagesPage() {
+  await requireAdminPage();
   const messages = await prisma.contactMessage.findMany({
     orderBy: {
       createdAt: "desc",
@@ -156,7 +159,7 @@ export default async function AdminMessagesPage() {
 
                   <div className="mt-4 flex flex-wrap gap-2">
                     {statuses.map((status) => (
-                      <form key={status} action={updateContactMessageStatus}>
+                      <AdminActionForm key={status} action={updateContactMessageStatus}>
                         {/* Hidden values tell the server action which message to update. */}
                         <input
                           type="hidden"
@@ -166,7 +169,7 @@ export default async function AdminMessagesPage() {
                         <input type="hidden" name="status" value={status} />
 
                         <AdminStatusButton>{status}</AdminStatusButton>
-                      </form>
+                      </AdminActionForm>
                     ))}
                   </div>
                 </div>

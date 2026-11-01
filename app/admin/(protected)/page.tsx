@@ -1,3 +1,4 @@
+import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Dashboard Page
  * --------------------
@@ -15,13 +16,13 @@
  * - Lead statistics.
  */
 
-import Link from "next/link";
 import { AdminShell } from "@/components/admin/AdminShell";
 import { AdminStatCard } from "@/components/admin/AdminStatCard";
 import { prisma } from "@/lib/prisma";
 import { LoadingLink } from "@/components/ui/LoadingLink";
 
 export default async function AdminPage() {
+  await requireAdminPage();
   const supportArticleCount = await prisma.supportArticle.count();
 
   const publishedSupportArticleCount = await prisma.supportArticle.count({
@@ -110,7 +111,7 @@ export default async function AdminPage() {
   ];
 
   return (
-    <>
+    <AdminShell title="Admin Dashboard" subtitle="Manage website content and enquiries.">
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
         <AdminStatCard
           label="Site Surveys"
@@ -187,6 +188,6 @@ export default async function AdminPage() {
           </LoadingLink>
         ))}
       </div>
-    </>
+    </AdminShell>
   );
 }

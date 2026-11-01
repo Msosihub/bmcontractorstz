@@ -20,6 +20,8 @@
 
 import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/prisma";
+import { requireAdmin } from "@/lib/auth/admin-auth";
+import { validateAdminForm } from "@/lib/admin-validation";
 
 function slugify(value: string) {
   /**
@@ -34,6 +36,8 @@ function slugify(value: string) {
 }
 
 export async function createProject(formData: FormData) {
+  await requireAdmin();
+  validateAdminForm(formData);
   const titleEn = String(formData.get("titleEn") || "").trim();
   const titleSw = String(formData.get("titleSw") || "").trim();
   const category = String(formData.get("category") || "").trim();
@@ -84,6 +88,8 @@ export async function createProject(formData: FormData) {
 }
 
 export async function toggleProjectPublished(formData: FormData) {
+  await requireAdmin();
+  validateAdminForm(formData);
   /**
    * Publish or hide a project/gallery record without deleting it.
    */
@@ -108,6 +114,8 @@ export async function toggleProjectPublished(formData: FormData) {
 }
 
 export async function updateProject(formData: FormData) {
+  await requireAdmin();
+  validateAdminForm(formData);
   /**
    * Updates an existing project/gallery record.
    *
