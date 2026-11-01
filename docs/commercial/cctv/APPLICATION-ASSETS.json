@@ -1,0 +1,131 @@
+{
+  "date": "2026-11-02",
+  "tool": "Built-in image_gen (not API/CLI fallback)",
+  "assets": [
+    {
+      "id": "shop",
+      "original": "design-preview/media-originals/cctv-applications/shop.png",
+      "source": "Built-in image_gen tool",
+      "usage": "AI-generated service illustration; no BM customer, actual project or staff identity claim",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape website service illustration, 3:2 composition. A small modern Tanzanian shop interior: neat shelves of unbranded household groceries, a practical sales counter near an entrance, tasteful small turret CCTV camera mounted high at the wall/ceiling corner aimed toward entrance and counter. No people. Premium natural editorial photography, believable East African construction and proportions, warm daylight, ivory/graphite/olive palette, refined but practical setting, surveillance device visible in context without dominating. Professional clean cable routing. No logos, watermarks, text, labels, split panels or collage. Fictional scene, never imply an actual BM customer site. Frame with enough context for a medium horizontal photo; crisp material details, realistic camera geometry.",
+      "variants": [
+        {
+          "path": "public/assets/cctv-applications/shop-640.webp",
+          "bytes": 58256,
+          "sha256": "a452a97860769fcfcfd1af76050ae1d8147f99d276b462585779c9d322de73cf"
+        },
+        {
+          "path": "public/assets/cctv-applications/shop-960.webp",
+          "bytes": 108326,
+          "sha256": "4e0f1c341ef9ab099438d272e1c2efa0b348b107f3d9264d4e1edef45bc04c19"
+        },
+        {
+          "path": "public/assets/cctv-applications/shop-1440.webp",
+          "bytes": 189776,
+          "sha256": "ab63a74c4f329c448aceab0fa32bf1147c7f88a70b9b8ac9ca8fb892fd088ce9"
+        }
+      ]
+    },
+    {
+      "id": "office",
+      "original": "design-preview/media-originals/cctv-applications/office.png",
+      "source": "Built-in image_gen tool",
+      "usage": "AI-generated service illustration; no BM customer, actual project or staff identity claim",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape website service illustration, 3:2 composition. A polished Tanzanian safari-tour company office: warm timber reception desk, discreet desks, maps with no legible text, restrained safari decor, broad windows, one small high-mounted turret CCTV camera viewing reception and access corridor. No people. Premium natural editorial photography, believable East African construction and proportions, warm daylight, ivory/graphite/olive palette, refined but practical setting, surveillance device visible in context without dominating. Professional clean cable routing. No logos, watermarks, text, labels, split panels or collage. Fictional scene, never imply an actual BM customer site. Frame with enough context for a medium horizontal photo; crisp material details, realistic camera geometry.",
+      "variants": [
+        {
+          "path": "public/assets/cctv-applications/office-640.webp",
+          "bytes": 64524,
+          "sha256": "1b207ae6ed794d36345dbcd717732475c698b3143a63b8af5365dcefdbfa8c1b"
+        },
+        {
+          "path": "public/assets/cctv-applications/office-960.webp",
+          "bytes": 133872,
+          "sha256": "4afb352aac5f497f1d621e3b28432bec58431a60fce3a667df4266218bd83a8a"
+        },
+        {
+          "path": "public/assets/cctv-applications/office-1440.webp",
+          "bytes": 258822,
+          "sha256": "a512e656f84bfabeaa66c7ecf80be2944ae17e23ac8c1add661a107f42430d12"
+        }
+      ]
+    },
+    {
+      "id": "school",
+      "original": "design-preview/media-originals/cctv-applications/school.png",
+      "source": "Built-in image_gen tool",
+      "usage": "AI-generated service illustration; no BM customer, actual project or staff identity claim",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape website service illustration, 3:2 composition. A neat Tanzanian school reception/administration entrance and sheltered walkway, warm plaster walls and simple landscaping, one discreet high mounted CCTV turret camera overseeing public entrance only. No children, no people. Premium natural editorial photography, believable East African construction and proportions, warm daylight, ivory/graphite/olive palette, refined but practical setting, surveillance device visible in context without dominating. Professional clean cable routing. No logos, watermarks, text, labels, split panels or collage. Fictional scene, never imply an actual BM customer site. Frame with enough context for a medium horizontal photo; crisp material details, realistic camera geometry.",
+      "variants": [
+        {
+          "path": "public/assets/cctv-applications/school-640.webp",
+          "bytes": 54200,
+          "sha256": "f6f86f0adb3d5c9699ed04616224de20cc9724ff47bbb32f655038d0be127bb5"
+        },
+        {
+          "path": "public/assets/cctv-applications/school-960.webp",
+          "bytes": 103780,
+          "sha256": "bd6d633a3c8a42d7f1350ec3b2d4abadb65bd31477d73705faf37500aa4a5729"
+        },
+        {
+          "path": "public/assets/cctv-applications/school-1440.webp",
+          "bytes": 187186,
+          "sha256": "c2feca35d1616c30092f1fd6fa5694a6f944561ea755e511a39dcadc1f1c7ed0"
+        }
+      ]
+    },
+    {
+      "id": "warehouse",
+      "original": "design-preview/media-originals/cctv-applications/warehouse.png",
+      "source": "Built-in image_gen tool",
+      "usage": "AI-generated service illustration; no BM customer, actual project or staff identity claim",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape website service illustration, 3:2 composition. A well-kept Tanzanian commercial warehouse, practical metal racks with plain unbranded cartons, clear loading doorway, one realistically mounted security camera overlooking loading and stock access. No people, no vehicles. Premium natural editorial photography, believable East African construction and proportions, warm daylight, ivory/graphite/olive palette, refined but practical setting, surveillance device visible in context without dominating. Professional clean cable routing. No logos, watermarks, text, labels, split panels or collage. Fictional scene, never imply an actual BM customer site. Frame with enough context for a medium horizontal photo; crisp material details, realistic camera geometry.",
+      "variants": [
+        {
+          "path": "public/assets/cctv-applications/warehouse-640.webp",
+          "bytes": 58326,
+          "sha256": "80105808d52eefc11c36855c89fdb46272328cbee60f3b472adfff8100c4e608"
+        },
+        {
+          "path": "public/assets/cctv-applications/warehouse-960.webp",
+          "bytes": 114036,
+          "sha256": "04d20deb4d44342badaa6b82b11305d657c99265a2f05bfa62d916d06826590b"
+        },
+        {
+          "path": "public/assets/cctv-applications/warehouse-1440.webp",
+          "bytes": 212692,
+          "sha256": "0c15a5973729b79b178b530013e4d5dccf6b85cc43b71b0b5a7a953ebbf534c6"
+        }
+      ]
+    },
+    {
+      "id": "institution",
+      "original": "design-preview/media-originals/cctv-applications/institution.png",
+      "source": "Built-in image_gen tool",
+      "usage": "AI-generated service illustration; no BM customer, actual project or staff identity claim",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape website service illustration, 3:2 composition. A contemporary Tanzanian institutional office compound reception entrance: ivory plaster, stone and warm timber detailing, modest landscaped courtyard and covered public entrance, discreet high-mounted CCTV camera overlooking the main approach. No people. Premium natural editorial photography, believable East African construction and proportions, warm daylight, ivory/graphite/olive palette, refined but practical setting, surveillance device visible in context without dominating. Professional clean cable routing. No logos, watermarks, text, labels, split panels or collage. Fictional scene, never imply an actual BM customer site. Frame with enough context for a medium horizontal photo; crisp material details, realistic camera geometry.",
+      "variants": [
+        {
+          "path": "public/assets/cctv-applications/institution-640.webp",
+          "bytes": 63240,
+          "sha256": "a20cd7c0899f903a4df586b6cdbdd2475f66eab98799af313b98fa8e5908cec0"
+        },
+        {
+          "path": "public/assets/cctv-applications/institution-960.webp",
+          "bytes": 127274,
+          "sha256": "eee2323fa6b8748f269a6e41d26c3f4654e37dd01d0502b19c0c1a10a33e35de"
+        },
+        {
+          "path": "public/assets/cctv-applications/institution-1440.webp",
+          "bytes": 238616,
+          "sha256": "d029bfd9c33ca34d0676ff2ebd98d17c8c2586064c74a32df6d9ab546792f734"
+        }
+      ]
+    }
+  ],
+  "reused": {
+    "home": "/assets/cctv-960.webp",
+    "hotel": "/assets/cctv-commercial/hotel-960.webp"
+  },
+  "disclosure": "Existing restrained page/footer image disclosure retained; no repetitive labels added."
+}

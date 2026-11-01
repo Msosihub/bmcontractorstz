@@ -1588,3 +1588,33 @@
     font-size: 18px;
   }
 }
+
+/* Application-led CCTV selector: the approved fencing interaction, in CCTV's palette. */
+.cctv-property-guide > .eyebrow{margin:0 0 14px;color:#526044}
+.cctv-property-guide .cctv-application-intro{max-width:620px;margin:0 0 24px;font-size:14px;color:#5c6257}
+.cctv-property-guide .cctv-place-picker{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0 0 16px}
+.cctv-property-guide .cctv-place-picker button{position:relative;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:10px;text-align:left;min-height:152px;padding:18px 18px 24px;border:1px solid #c8cbbb;background:#f9f7f0;color:#283229;border-radius:0;transition:background .15s,color .15s}
+.cctv-property-guide .cctv-place-picker button[aria-pressed="true"]{background:#47563e;color:#fffdf6;border-color:#47563e}
+.cctv-property-guide .cctv-place-picker button:hover{border-color:#566344}
+.cctv-place-top{display:flex;align-items:center;justify-content:space-between;width:100%;opacity:.85}
+.cctv-place-top>span{font-size:10px;letter-spacing:.12em}
+.cctv-property-guide .cctv-place-picker button strong{font-size:16px;font-weight:500;line-height:1.3}
+.cctv-property-guide .cctv-place-picker button .cctv-place-short{font-size:11px;line-height:1.5;max-width:90%;opacity:.85}
+.cctv-place-arrow{position:absolute;right:15px;bottom:12px;font-size:17px}
+.cctv-application-panel{display:grid;grid-template-columns:.9fr 1.1fr;background:#f5f2e9;border:1px solid #d4d4c6;margin-bottom:30px}
+.cctv-application-panel[hidden]{display:none}
+.cctv-application-panel figure{position:relative;margin:0;min-height:440px;overflow:hidden;background:#e3e2d8}
+.cctv-application-panel figure img{object-fit:cover}
+.cctv-application-copy{padding:32px 35px}
+.cctv-application-copy h4{font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:34px;line-height:1.08;margin:16px 0}
+.cctv-application-copy>p:not(.eyebrow){font-size:14px;line-height:1.65;margin:12px 0}
+.cctv-application-copy .cctv-application-approach{color:#5b6255}
+.cctv-application-copy ul{padding:0;margin:20px 0;list-style:none;display:grid;gap:12px}
+.cctv-application-copy li{display:flex;gap:10px;font-size:12px;line-height:1.6}
+.cctv-application-copy li>span:first-child{color:#526044}
+.cctv-application-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:24px}
+.cctv-application-actions>a:not(.button){display:inline-flex;align-items:center;font-size:12px;min-height:44px}
+.cctv-application-actions .button{min-height:46px;font-size:12px;padding:13px 17px}
+@media(max-width:1000px){.cctv-property-guide .cctv-place-picker{grid-template-columns:repeat(3,minmax(0,1fr))}.cctv-application-copy{padding:26px}.cctv-application-copy h4{font-size:30px}}
+@media(max-width:760px){.cctv-property-guide .cctv-place-picker{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.cctv-property-guide .cctv-place-picker button{min-height:145px;padding:15px 14px 24px}.cctv-property-guide .cctv-place-picker button strong{font-size:15px}.cctv-application-panel{grid-template-columns:1fr}.cctv-application-panel figure{min-height:0;aspect-ratio:3/2}.cctv-application-copy{padding:26px 22px}.cctv-application-copy h4{font-size:30px}.cctv-application-actions{gap:8px 18px}.cctv-application-actions .button{width:100%;justify-content:space-between}}
+@media(prefers-reduced-motion:reduce){.cctv-property-guide .cctv-place-picker button{transition:none}}

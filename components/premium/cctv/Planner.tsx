@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 import {
   House,
   Store,
@@ -37,34 +38,27 @@ export function CctvPlanner({ lang }: { lang: Language }) {
         <p>{t.plannerIntro}</p>
       </div>
       <div className="cctv-property-guide">
+        <p className="eyebrow">{t.applicationLabel}</p>
         <h3 id="cctv-property-question">{t.propertyQuestion}</h3>
-        <div
-          className="cctv-place-picker"
-          role="group"
-          aria-labelledby="cctv-property-question"
-        >
+        <p className="cctv-application-intro">{t.applicationIntro}</p>
+        <div className="cctv-place-picker" role="group" aria-labelledby="cctv-property-question">
           {t.cases.map((x, i) => {
             const Icon = propertyIcons[i];
-            return (
-              <button
-                type="button"
-                key={x.id}
-                aria-pressed={i === place}
-                onClick={() => setPlace(i)}
-              >
-                <Icon size={23} strokeWidth={1.35} aria-hidden="true" />
-                <span>{x.name}</span>
-                <span className="cctv-property-check" aria-hidden="true">
-                  {i === place ? "✓" : ""}
-                </span>
-              </button>
-            );
+            return <button type="button" key={x.id} aria-pressed={i === place} aria-controls={`cctv-place-${x.id}`} onClick={() => setPlace(i)}>
+              <span className="cctv-place-top"><Icon size={24} strokeWidth={1.35} aria-hidden="true" /><span>0{i + 1}</span></span>
+              <strong>{x.name}</strong><span className="cctv-place-short">{x.short}</span><span className="cctv-place-arrow" aria-hidden="true">↗</span>
+            </button>;
           })}
         </div>
-        <div className="cctv-place-brief" aria-live="polite">
-          <span className="eyebrow">{t.coverageLabel}</span>
-          <p>{t.cases[place].coverage}</p>
-        </div>
+        {t.cases.map((x, i) => {
+          const links = cctvLinks(lang, `${sw ? "Ufungaji wa CCTV" : "CCTV installation"} — ${x.name}`);
+          return <article key={x.id} id={`cctv-place-${x.id}`} className="cctv-application-panel" hidden={place !== i} aria-labelledby={`cctv-place-heading-${x.id}`}>
+            <figure><Image src={x.image} alt={x.imageAlt} style={{objectPosition: x.id === "warehouse" || x.id === "institution" ? "right center" : "center"}} fill sizes="(max-width:760px) 100vw, 42vw" /></figure>
+            <div className="cctv-application-copy"><p className="eyebrow">{x.name}</p><h4 id={`cctv-place-heading-${x.id}`}>{x.panelTitle}</h4><p>{x.coverage}</p><p className="cctv-application-approach">{x.approach}</p><ul>{x.points.map(point => <li key={point}><span aria-hidden="true">✓</span><span>{point}</span></li>)}</ul>
+              <div className="cctv-application-actions"><a className="button dark" href={links.quote}>{sw ? "Ulizia CCTV ya eneo hili" : "Plan CCTV for this space"} <span aria-hidden="true">↗</span></a><a href={links.survey}>{t.survey} ↗</a></div>
+            </div>
+          </article>;
+        })}
       </div>
       <div className="cctv-package-grid">
         {t.sizes.map((x, i) => {
