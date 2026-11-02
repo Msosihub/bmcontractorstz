@@ -4,6 +4,7 @@ import { ReferenceCatalogue } from "@/components/catalogue/ReferenceCatalogue";
 import { zktecoProducts, zktecoCategories } from "@/lib/catalogue/zkteco";
 import { isLanguage } from "@/lib/i18n/config";
 import { pageMetadata } from "@/lib/seo";
+import { DoorAccessoryGuide } from "@/components/premium/access-control/EquipmentGuide";
 import "@/components/premium/access-control/access.css";
 type Props = { searchParams: Promise<{ lang?: string; category?: string }> };
 export async function generateMetadata({ searchParams }: Props) {
@@ -62,9 +63,10 @@ export default async function Page({ searchParams }: Props) {
             lang={lang}
             namespace="/catalogue/zkteco"
             categories={zktecoCategories}
-            initialCategory={q.category}
+            initialCategory={q.category === "hotel" ? "smart-lock" : q.category}
           />
         </section>
+        <DoorAccessoryGuide lang={lang} />
       </main>
       <Footer lang={lang} imageNotice={false} />
     </>

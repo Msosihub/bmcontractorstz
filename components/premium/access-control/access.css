@@ -1209,3 +1209,417 @@
     line-height: 1.7;
   }
 }
+
+/* 04B — equipment discovery, people and genuine manufacturer software media. */
+.ac-catalogue-invite {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 6%;
+  background: #e8eee7;
+  border-top: 1px solid #ccd5c9;
+  border-bottom: 1px solid #ccd5c9;
+}
+.ac-catalogue-invite h2 {
+  max-width: 580px;
+}
+.ac-catalogue-invite p {
+  max-width: 530px;
+}
+.ac-category-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  column-gap: 28px;
+}
+.ac-category-links a {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 17px 0;
+  border-bottom: 1px solid #bdcaba;
+  font-size: 15px;
+  text-decoration: none;
+}
+.ac-category-links a:hover,
+.ac-category-links a:focus-visible {
+  color: #345039;
+  text-decoration: underline;
+}
+.ac-bt-intro {
+  max-width: 900px;
+  margin-bottom: 48px;
+}
+.ac-bt-stage {
+  position: relative;
+  padding-bottom: 10%;
+  margin-bottom: 28px;
+}
+.ac-office-photo > img {
+  width: 100%;
+  height: auto;
+  max-height: 630px;
+  object-fit: cover;
+  object-position: center 45%;
+}
+.ac-bt-monitor {
+  position: relative;
+  width: 86%;
+  margin: -8% auto 0;
+  background: #fff;
+  box-shadow: 0 20px 60px #18251c26;
+  border: 10px solid #28342e;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.ac-bt-monitor img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.ac-bt-monitor figcaption {
+  font-size: 12px;
+  padding: 12px 16px;
+  color: #435448;
+  background: white;
+}
+.ac-benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 7%;
+  margin-top: 55px;
+}
+.ac-benefits article {
+  display: flex;
+  gap: 20px;
+  border-top: 1px solid #d7dbd4;
+  padding: 25px 0;
+}
+.ac-benefits article > span {
+  font-size: 12px;
+  color: #47634c;
+  padding-top: 6px;
+}
+.ac-benefits h3 {
+  font-size: 22px;
+  margin: 0 0 7px;
+}
+.ac-benefits p {
+  margin: 0;
+  max-width: 490px;
+}
+.ac-report-section {
+  background: #203b2e;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 6%;
+}
+.ac-report-section h2,
+.ac-report-section p,
+.ac-report-section a,
+.ac-report-section .eyebrow {
+  color: inherit;
+}
+.ac-report-section > div {
+  min-width: 0;
+}
+.ac-report-scroll {
+  overflow-x: auto;
+  align-self: center;
+  background: #fff;
+  color: #25392d;
+  box-shadow: 0 16px 50px #0002;
+}
+.ac-report-scroll table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 13px;
+  min-width: 610px;
+}
+.ac-report-scroll caption {
+  padding: 22px;
+  text-align: left;
+  background: #ecf2e9;
+  color: #354d3d;
+  font-weight: 600;
+}
+.ac-report-scroll th,
+.ac-report-scroll td {
+  padding: 16px 13px;
+  text-align: left;
+  border-bottom: 1px solid #e3e8df;
+  white-space: nowrap;
+}
+.ac-report-scroll thead {
+  background: #f4f6f1;
+}
+.ac-complete > article {
+  display: grid;
+  grid-template-columns: 40px 1fr 1.3fr auto;
+  align-items: baseline;
+  gap: 20px;
+  border-top: 1px solid #cdd4c9;
+  padding: 24px 0;
+}
+.ac-complete > article h3 {
+  font-size: 24px;
+  margin: 0;
+}
+.ac-complete > article p {
+  margin: 0;
+}
+.ac-complete > article a {
+  font-size: 14px;
+}
+.ac-attendance-flow {
+  background: #f0f3eb;
+}
+.ac-flow-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 35px 0;
+}
+.ac-flow-steps li {
+  border-top: 3px solid #b7c5b4;
+  background: #fff;
+  padding: 20px;
+  transition: background 0.2s;
+}
+.ac-flow-steps li[data-active="true"] {
+  border-color: #3e6243;
+  background: #dbe8d6;
+}
+.ac-flow-steps h3 {
+  font-size: 20px;
+}
+.ac-flow-steps p {
+  font-size: 14px;
+}
+.ac-flow-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.ac-flow-controls button {
+  padding: 12px 16px;
+  background: #fff;
+  border: 1px solid #66805f;
+  border-radius: 0;
+  color: #263f2b;
+  cursor: pointer;
+}
+.ac-flow-controls button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.ac-flow-controls button:focus-visible {
+  outline: 3px solid #54704c;
+  outline-offset: 3px;
+}
+.ac-flow-controls button[aria-current="step"] {
+  background: #25462f;
+  color: white;
+}
+@media (max-width: 1000px) {
+  .ac-report-section {
+    grid-template-columns: 1fr;
+  }
+  .ac-complete > article {
+    grid-template-columns: 30px 1fr 1.2fr;
+  }
+  .ac-complete > article a {
+    grid-column: 2/4;
+  }
+  .ac-flow-steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .ac-catalogue-invite {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .ac-category-links {
+    column-gap: 22px;
+  }
+  .ac-category-links a {
+    font-size: 14px;
+  }
+  .ac-bt-intro {
+    margin-bottom: 25px;
+  }
+  .ac-bt-stage {
+    padding-bottom: 0;
+  }
+  .ac-office-photo > img {
+    aspect-ratio: 1.1;
+    object-fit: cover;
+  }
+  .ac-bt-monitor {
+    width: 100%;
+    margin: 0;
+    border-width: 5px;
+    border-radius: 0;
+  }
+  .ac-bt-monitor figcaption {
+    font-size: 11px;
+  }
+  .ac-benefits {
+    grid-template-columns: 1fr;
+    margin-top: 35px;
+  }
+  .ac-benefits h3 {
+    font-size: 21px;
+  }
+  .ac-complete > article {
+    grid-template-columns: 27px 1fr;
+    gap: 10px 15px;
+  }
+  .ac-complete > article p,
+  .ac-complete > article a {
+    grid-column: 2;
+  }
+  .ac-flow-steps {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .ac-flow-steps li {
+    padding: 16px;
+  }
+  .ac-flow-steps h3 {
+    margin: 0 0 5px;
+  }
+  .ac-flow-steps p {
+    margin: 0;
+  }
+  .ac-flow-steps li::before {
+    content: counter(list-item, decimal-leading-zero);
+    float: right;
+    font-size: 12px;
+    color: #47634c;
+  }
+  .ac-flow-controls {
+    gap: 8px;
+  }
+  .ac-flow-controls button {
+    font-size: 13px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ac-flow-steps li {
+    transition: none;
+  }
+}
+.ac-office-photo {
+  position: relative;
+}
+.ac-office-photo > img {
+  max-height: none;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.ac-office-screen {
+  position: absolute;
+  left: 2.6%;
+  top: 35.7%;
+  width: 13.5%;
+  height: 32%;
+  overflow: hidden;
+  background: #fff;
+  transform: matrix(1, 0.16, 0.15, 1, 0, 0);
+  transform-origin: top left;
+  pointer-events: none;
+}
+.ac-office-screen img {
+  position: absolute;
+  max-width: none;
+  width: 510%;
+  height: auto;
+  left: -363%;
+  top: -17%;
+}
+@media (max-width: 700px) {
+  .ac-office-screen {
+    display: none;
+  }
+  .ac-office-photo > img {
+    object-position: 67% center;
+  }
+}
+.ac-bt-spotlight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6%;
+  align-items: center;
+  background: #f2f5ef;
+}
+.ac-bt-spotlight > a {
+  background: white;
+  box-shadow: 0 14px 40px #293d2517;
+  border-bottom: 5px solid #70955f;
+}
+.ac-bt-spotlight img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.rc-compare dd {
+  margin: 4px 0 15px;
+}
+.rc-compare dt {
+  font-weight: 600;
+}
+.rc-compare td {
+  max-width: 360px;
+}
+@media (max-width: 700px) {
+  .ac-bt-spotlight {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+.rc-category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 30px;
+}
+.rc-category-tabs button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border: 1px solid #b8c6b4;
+  background: white;
+  color: #28422f;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: left;
+  min-height: 44px;
+}
+.rc-category-tabs button[aria-pressed="true"] {
+  background: #294b34;
+  color: white;
+  border-color: #294b34;
+}
+.rc-category-tabs small {
+  opacity: 0.8;
+}
+.rc-category-tabs button:focus-visible {
+  outline: 3px solid #597450;
+  outline-offset: 3px;
+}
+@media (max-width: 600px) {
+  .rc-category-tabs {
+    gap: 7px;
+  }
+  .rc-category-tabs button {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+}

@@ -6,6 +6,13 @@ import { ReferenceCard } from "@/components/catalogue/ReferenceCard";
 import { solutionLinks } from "@/components/catalogue/links";
 import { zktecoProducts } from "@/lib/catalogue/zkteco";
 import { t } from "./content";
+import {
+  BioTimePresentation,
+  CatalogueInvitation,
+  CompleteSolutions,
+} from "./CommercialSections";
+import { AttendanceComparison, SoftwareScopeMatrix } from "./EquipmentGuide";
+import { AttendanceFlow } from "./AttendanceFlow";
 import "./access.css";
 export const solutionContent = {
   "time-attendance": {
@@ -22,7 +29,7 @@ export const solutionContent = {
       "Mahudhurio kwa alama za vidole, uso, kadi au PIN kwa ofisi, hoteli, maduka, shule, zahanati, viwanda na matawi nchini Tanzania. BM husaidia kuchagua kifaa, programu na namna ya kutoa ripoti kwa pamoja.",
     ),
     image: "workplace",
-    models: ["senseface-4a", "speedface-v5l", "f18-pro"],
+    models: ["k40-pro", "mb360", "mb20"],
     options: [
       [
         t("Small office or shop", "Ofisi ndogo au duka"),
@@ -273,6 +280,8 @@ export function SolutionPage({
             />
           </div>
         </section>
+        <CatalogueInvitation lang={lang} />
+        {kind === "time-attendance" && <BioTimePresentation lang={lang} />}
         <section className="ac-section ac-sage">
           <p className="eyebrow">
             {sw
@@ -346,6 +355,14 @@ export function SolutionPage({
             ↗
           </a>
         </section>
+        {kind === "time-attendance" && (
+          <>
+            <AttendanceComparison lang={lang} />
+            <SoftwareScopeMatrix lang={lang} />
+            <CompleteSolutions lang={lang} />
+            <AttendanceFlow lang={lang} />
+          </>
+        )}
         <section className="ac-section ac-faq">
           <h2>{sw ? "Maswali yanayoulizwa." : "Questions worth asking."}</h2>
           {c.faq.map(([q, a]) => (

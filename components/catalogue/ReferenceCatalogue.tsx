@@ -27,7 +27,9 @@ export function ReferenceCatalogue({
     [selected, setSelected] = useState<string[]>([]);
   const filtered = products.filter(
     (p) =>
-      (category === "all" || p.category === category) &&
+      (category === "all" ||
+        p.category === category ||
+        p.categories?.includes(category)) &&
       `${p.name} ${p.variants.join(" ")} ${p.summary[lang]} ${categories[p.category]?.[lang]}`
         .toLocaleLowerCase()
         .includes(query.toLocaleLowerCase().trim()),
@@ -35,6 +37,36 @@ export function ReferenceCatalogue({
   const compared = selected.map((id) => products.find((p) => p.slug === id)!);
   return (
     <div className="rc-catalogue">
+      <div
+        className="rc-category-tabs"
+        role="group"
+        aria-label={sw ? "Chagua kundi la bidhaa" : "Choose a product category"}
+      >
+        <button
+          type="button"
+          aria-pressed={category === "all"}
+          onClick={() => setCategory("all")}
+        >
+          {sw ? "Zote" : "All"} <small>{products.length}</small>
+        </button>
+        {Object.entries(categories).map(([id, label]) => (
+          <button
+            type="button"
+            key={id}
+            aria-pressed={category === id}
+            onClick={() => setCategory(id)}
+          >
+            {label[lang]}{" "}
+            <small>
+              {
+                products.filter(
+                  (p) => p.category === id || p.categories?.includes(id),
+                ).length
+              }
+            </small>
+          </button>
+        ))}
+      </div>
       <div className="rc-filters">
         <label>
           {sw ? "Tafuta modeli au matumizi" : "Find a model or application"}
@@ -162,6 +194,23 @@ export function ReferenceCatalogue({
                   ))}
                 </tr>
                 <tr>
+                  <th scope="row">
+                    {sw ? "Vipimo vilivyohakikiwa" : "Verified specifications"}
+                  </th>
+                  {compared.map((p) => (
+                    <td key={p.slug}>
+                      <dl>
+                        {p.specs.map((s) => (
+                          <div key={s.label.en}>
+                            <dt>{s.label[lang]}</dt>
+                            <dd>{s.value[lang]}</dd>
+                          </div>
+                        ))}
+                      </dl>
+                    </td>
+                  ))}
+                </tr>
+                <tr>
                   <th scope="row">{sw ? "Ulinganifu" : "Compatibility"}</th>
                   {compared.map((p) => (
                     <td key={p.slug}>{p.compatibility[lang]}</td>
@@ -195,7 +244,8 @@ export function ReferenceEnquiry({
   const sw = lang === "sw",
     [variant, setVariant] = useState(p.variants[0]),
     [scope, setScope] = useState("installed"),
-    detail = `ZKTeco ${variant} — ${scope === "installed" ? (sw ? "mfumo uliofungwa" : "installed system") : scope === "equipment" ? (sw ? "vifaa pekee" : "equipment only") : sw ? "matengenezo ya mfumo uliopo" : "existing-system support"}`,
+    software = p.category === "software",
+    detail = `ZKTeco ${variant} — ${scope === "installed" ? (sw ? "mfumo uliofungwa" : "installed system") : scope === "equipment" ? (software ? (sw ? "leseni pekee" : "licence only") : sw ? "vifaa pekee" : "equipment only") : sw ? "matengenezo ya mfumo uliopo" : "existing-system support"}`,
     links = solutionLinks(lang, detail);
   return (
     <div className="rc-enquiry">
@@ -217,7 +267,13 @@ export function ReferenceEnquiry({
             {sw ? "Mfumo kamili uliofungwa" : "Complete installed system"}
           </option>
           <option value="equipment">
-            {sw ? "Vifaa pekee" : "Equipment only"}
+            {software
+              ? sw
+                ? "Leseni pekee"
+                : "Licence only"
+              : sw
+                ? "Vifaa pekee"
+                : "Equipment only"}
           </option>
           <option value="support">
             {sw ? "Matengenezo / uboreshaji" : "Maintenance / upgrade"}

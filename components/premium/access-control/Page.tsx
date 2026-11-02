@@ -10,6 +10,11 @@ import { solutionLinks } from "@/components/catalogue/links";
 import { zktecoProducts } from "@/lib/catalogue/zkteco";
 import { paths, software, faqs } from "./content";
 import { SystemExplanation } from "./SystemExplanation";
+import {
+  CatalogueInvitation,
+  CompleteSolutions,
+  BioTimeSpotlight,
+} from "./CommercialSections";
 import "./access.css";
 export function AccessPage({
   lang,
@@ -134,6 +139,7 @@ export function AccessPage({
             {sw ? "Katalogi" : "Catalogue"} ↗
           </a>
         </nav>
+        <CatalogueInvitation lang={lang} />
         <section id="solutions" className="ac-section">
           <div className="ac-heading">
             <div>
@@ -157,7 +163,14 @@ export function AccessPage({
               <a
                 key={p.id}
                 className="ac-path"
-                href={`${p.link}${p.link.startsWith("/") ? "?lang=" + lang : ""}`}
+                href={
+                  p.link.startsWith("/")
+                    ? p.link.split("#")[0] +
+                      "?lang=" +
+                      lang +
+                      (p.link.includes("#") ? "#" + p.link.split("#")[1] : "")
+                    : p.link
+                }
               >
                 <div className="ac-path-art">
                   {p.id === "software" ? (
@@ -199,6 +212,7 @@ export function AccessPage({
             ))}
           </div>
         </section>
+        <BioTimeSpotlight lang={lang} />
         <section id="doors" className="ac-section ac-sage">
           <div className="ac-heading">
             <div>
@@ -622,6 +636,7 @@ export function AccessPage({
             ))}
           </ol>
         </section>
+        <CompleteSolutions lang={lang} />
         <SystemExplanation lang={lang} />
         <section className="ac-section ac-faq">
           <p className="eyebrow">

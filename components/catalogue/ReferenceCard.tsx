@@ -39,7 +39,13 @@ export function ReferenceCard({
               p.brand +
                 " " +
                 p.name +
-                (sw ? " — bei ya vifaa" : " — equipment price"),
+                (p.category === "software"
+                  ? sw
+                    ? " — leseni na usanidi"
+                    : " — licence & deployment"
+                  : sw
+                    ? " — bei ya vifaa"
+                    : " — equipment price"),
             ).quote
           }
         >

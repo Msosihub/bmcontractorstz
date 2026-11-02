@@ -106,7 +106,13 @@ export default async function Page({ params, searchParams }: Props) {
             />
             <p className="ac-note">
               {referenceStatus[p.classification][lang]} ·{" "}
-              {sw ? "Picha ya mtengenezaji" : "Manufacturer photograph"}
+              {p.category === "software"
+                ? sw
+                  ? "Picha rasmi ya programu"
+                  : "Official software media"
+                : sw
+                  ? "Picha ya mtengenezaji"
+                  : "Manufacturer photograph"}
             </p>
           </div>
           <div className="rc-detail-copy">
@@ -130,8 +136,8 @@ export default async function Page({ params, searchParams }: Props) {
               <p>{p.compatibility[lang]}</p>
               <p className="ac-note">
                 {sw
-                  ? "Taarifa zimehakikiwa 2 Novemba 2026. Toleo halisi, nyaraka za sasa na tathmini ya eneo ndizo huongoza ufungaji."
-                  : "Reviewed 2 November 2026. The exact supplied revision, current manufacturer documentation and site assessment govern installation."}
+                  ? "Taarifa zimehakikiwa 3 Novemba 2026. Toleo halisi, nyaraka za sasa na tathmini ya eneo ndizo huongoza ufungaji."
+                  : "Reviewed 3 November 2026. The exact supplied revision, current manufacturer documentation and site assessment govern installation."}
               </p>
             </div>
             <dl>

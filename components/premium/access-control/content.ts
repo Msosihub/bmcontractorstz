@@ -2,79 +2,88 @@ import type { Localized } from "@/lib/catalogue/types";
 export const t = (en: string, sw: string): Localized => ({ en, sw });
 export const paths = [
   {
-    id: "doors",
-    title: t("Control who enters.", "Dhibiti anayeingia."),
-    label: t("Door access control", "Udhibiti wa kuingia mlangoni"),
+    id: "attendance",
+    title: t("A reliable daily check-in.", "Mahudhurio ya kila siku."),
+    label: t("I need an attendance machine", "Nahitaji mashine ya mahudhurio"),
     body: t(
-      "From a PIN-operated office door to a managed multi-door building. Select permissions, secure the lock and keep a safe way out.",
-      "Kuanzia mlango wa ofisi unaotumia PIN hadi jengo lenye milango mingi. Panga ruhusa, kufuli na njia salama ya kutoka.",
+      "Fingerprint, face, card or PIN: compare familiar K40 Pro and MB terminals against your team and reporting needs.",
+      "Alama za vidole, uso, kadi au PIN: linganisha K40 Pro na MB kulingana na wafanyakazi na ripoti unazohitaji.",
+    ),
+    image: "mb360",
+    link: "/services/access-control/time-attendance",
+  },
+  {
+    id: "software",
+    title: t("Turn records into decisions.", "Rekodi zisaidie maamuzi."),
+    label: t(
+      "I need complete attendance software",
+      "Nahitaji mfumo kamili wa mahudhurio",
+    ),
+    body: t(
+      "BioTime, supported terminals, shifts, manager reports and training—with licensing and responsibilities clearly scoped.",
+      "BioTime, mashine zinazooana, zamu, ripoti na mafunzo; leseni na wajibu vinaainishwa wazi.",
+    ),
+    image: "biotime-dashboard",
+    link: "/services/access-control/time-attendance#biotime",
+  },
+  {
+    id: "doors",
+    title: t("A door that knows who enters.", "Mlango wenye ruhusa sahihi."),
+    label: t(
+      "I want fingerprint / PIN door access",
+      "Nahitaji mlango wa fingerprint / PIN",
+    ),
+    body: t(
+      "A terminal is only one part. Plan the lock, exit button, emergency release, power and safe installation together.",
+      "Terminal ni sehemu moja. Panga kufuli, kitufe cha kutoka, ufunguaji wa dharura, umeme na ufungaji salama pamoja.",
     ),
     image: "f18-pro",
     link: "#doors",
   },
   {
-    id: "attendance",
-    title: t("Every shift, accounted for.", "Kila zamu iwe na taarifa."),
-    label: t("Staff time attendance", "Mahudhurio ya wafanyakazi"),
-    body: t(
-      "Fingerprint, face or card check-in, shift rules and useful reports. Attendance records do not automatically control a door.",
-      "Kusajili kuingia kwa alama za vidole, uso au kadi; kupanga zamu na kupata ripoti. Kurekodi mahudhurio si kufungua mlango moja kwa moja.",
+    id: "controllers",
+    title: t(
+      "One building. Clear permissions.",
+      "Jengo moja. Ruhusa zilizo wazi.",
     ),
-    image: "senseface-4a",
-    link: "/services/access-control/time-attendance",
+    label: t(
+      "I need multiple controlled doors",
+      "Nahitaji kudhibiti milango mingi",
+    ),
+    body: t(
+      "Protected controllers, compatible readers, access levels and event review for offices and institutions.",
+      "Controllers zilizolindwa, readers zinazooana, viwango vya ruhusa na ukaguzi wa matukio kwa ofisi na taasisi.",
+    ),
+    image: "inbio-pro-plus",
+    link: "#doors",
   },
   {
     id: "locks",
     title: t("A thoughtful welcome.", "Mapokezi yenye mpangilio."),
     label: t(
-      "Smart locks & hotel access",
-      "Makufuli janja na mifumo ya hoteli",
+      "I need hotel or smart locks",
+      "Nahitaji makufuli ya hoteli au smart locks",
     ),
     body: t(
-      "Choose a lock for the door—and an ecosystem for the people using it. Home app access and hotel guest-card management are different solutions.",
-      "Chagua kufuli linalofaa mlango na mfumo unaofaa watumiaji. App ya nyumbani ni tofauti na usimamizi wa kadi za wageni wa hoteli.",
+      "Guest cards, suitable door hardware and supported hotel management; home app locks are a different ecosystem.",
+      "Kadi za wageni, vifaa vinavyofaa mlango na usimamizi wa hoteli unaooana; makufuli ya app ya nyumbani yana mfumo tofauti.",
     ),
-    image: "sl01-t430h",
+    image: "lh4000",
     link: "/services/access-control/smart-locks",
-  },
-  {
-    id: "software",
-    title: t("See the whole picture.", "Simamia kwa taarifa sahihi."),
-    label: t("Management software & cloud", "Programu za usimamizi na cloud"),
-    body: t(
-      "On-premise or cloud, attendance or security: match the platform, firmware, licences and data responsibilities before installation.",
-      "Programu ya kwenye seva yako au cloud, kwa mahudhurio au usalama: linganisha vifaa, firmware, leseni na wajibu wa data kabla ya kufunga.",
-    ),
-    image: "inbio-pro-plus",
-    link: "#software",
-  },
-  {
-    id: "entrances",
-    title: t("Keep people moving.", "Watu wapite kwa mpangilio."),
-    label: t(
-      "Turnstiles & entrance management",
-      "Turnstiles na udhibiti wa viingilio",
-    ),
-    body: t(
-      "Reception, factory and institutional staff entrances, with an accessible alternative lane and a considered emergency exit plan.",
-      "Mapokezi, viwanda na viingilio vya wafanyakazi wa taasisi, pamoja na njia inayofikika na mpango wa kutoka dharura.",
-    ),
-    image: "ts2000-plus",
-    link: "#entrances",
   },
   {
     id: "support",
     title: t(
-      "Make it work. Keep it working.",
-      "Ifanye kazi. Iendelee kufanya kazi.",
+      "Make the existing system work.",
+      "Mfumo uliopo ufanye kazi vizuri.",
     ),
     label: t(
-      "Installation, integration & maintenance",
-      "Ufungaji, uunganishaji na matengenezo",
+      "I need repairs, setup or support",
+      "Nahitaji matengenezo, usanidi au msaada",
     ),
     body: t(
-      "A complete scope: assessment, equipment, neat cabling, setup, user training and support for an existing or new system.",
-      "Huduma yenye mpangilio: tathmini, vifaa, nyaya nadhifu, usanidi, mafunzo na msaada kwa mfumo mpya au uliopo.",
+      "Diagnosis, authorized backup, firmware and licence checks, reconfiguration and a clear handover.",
+      "Uchunguzi, backup yenye ruhusa, ukaguzi wa firmware na leseni, usanidi na makabidhiano yaliyo wazi.",
     ),
     image: "inbio-classic",
     link: "#support",

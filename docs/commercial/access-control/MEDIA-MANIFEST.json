@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-11-02",
+  "reviewed": "2026-11-03",
   "manufacturer": [
     {
       "id": "f18",
@@ -169,6 +169,198 @@
       "rights": "Manufacturer photography; owner reports telephone authorization from authorized dealers for BM sales presentation. Dealer identity and written confirmation pending; no distributorship claim.",
       "webSha256": "37308798e0448b1ee0e028b46305c81982722754ea96f083daac95170b1c3478",
       "webBytes": 45850
+    },
+    {
+      "id": "mb1000",
+      "sourceUrl": "https://zkteco.sa/assets/uploads/products/recomended/261e2dd69458018869eefe25ea26a98e.png",
+      "sourcePage": "https://zkteco.sa/product-details/mb1000",
+      "original": "design-preview/media-originals/access-control/mb1000.png",
+      "output": "/images/access-control/mb1000.webp",
+      "width": 350,
+      "height": 386,
+      "sha256": "ded33633b57dd8214281f8a7cada73f7a4a51ce0ff11c33f19e8562a5ad176b9",
+      "webSha256": "155665d5473f6c45cadee89d8030d32f0c33f1893992f19d06a94f8bf80c8119",
+      "rights": "Owner-reported dealer permission; manufacturer media reused without altered interface or product identity. No official dealership claim."
+    },
+    {
+      "id": "mb360",
+      "sourceUrl": "https://new-website-file.s3.ap-southeast-1.amazonaws.com/images/20211208/00f977f64407a2d9fafdc6d5c10f2589.jpg",
+      "sourcePage": "https://www.zkteco.in/MB_Series/40",
+      "original": "design-preview/media-originals/access-control/mb360.jpg",
+      "output": "/images/access-control/mb360.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "476dc207791629b62ccf480ba9ab0cd28e6ac3f1db01f6e27fea33d701afb5b2",
+      "webSha256": "0e8abf486a29d19a44a934889f5c6e21ec05045138fcfcf5358a551c47977d3c",
+      "rights": "Owner-reported dealer permission; manufacturer media reused without altered interface or product identity. No official dealership claim."
+    },
+    {
+      "id": "mb10",
+      "sourceUrl": "https://www.zkteco-ea.com/wp-content/uploads/2023/01/mb10.png",
+      "sourcePage": "https://www.zkteco-ea.com/mb10/",
+      "original": "design-preview/media-originals/access-control/mb10.png",
+      "output": "/images/access-control/mb10.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "4ab8db424bef290c575d7715c9db276ae7b44c015bb1c9785b060d743b69f7d0",
+      "webSha256": "93ad4260c088c990c998b9acc452ed3f6eb2138c1569ffc3dd1a72b7c3e94ce7",
+      "rights": "Owner-reported dealer permission; manufacturer media reused without altered interface or product identity. No official dealership claim."
+    },
+    {
+      "id": "sc105",
+      "sourceUrl": "https://www.zkteco-ea.com/wp-content/uploads/2023/03/sc105.png",
+      "sourcePage": "https://www.zkteco-ea.com/sc105/",
+      "original": "design-preview/media-originals/access-control/sc105.png",
+      "output": "/images/access-control/sc105.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "3be3240b48423886aafdd877e03fb9d1b5de49abeca0bb9aeba610ceb9d6f2bf",
+      "webSha256": "13b039b4afed0c00c96ca873fe740c89c8b3d584329318dadc2cb0c302958772",
+      "rights": "Owner-reported dealer permission; manufacturer media reused without altered interface or product identity. No official dealership claim."
+    },
+    {
+      "id": "mb20",
+      "sourceUrl": "https://www.zkteco-ea.com/wp-content/uploads/2023/01/mb20-1.png",
+      "sourcePage": "https://www.zkteco-ea.com/mb20/",
+      "original": "design-preview/media-originals/access-control/mb20.png",
+      "output": "/images/access-control/mb20.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "0ac646f8c07fd0d5f4c24ff2c53c3c7007b19638a600e670836be683260da017",
+      "webSha256": "147ae143c8b906de0f99e17838c8cf2a6ee08ccfdc6e1e7ab9f7e7e0e6736b0a",
+      "rights": "Owner-reported dealer permission; manufacturer media reused without altered interface or product identity. No official dealership claim."
+    },
+    {
+      "id": "k40-pro",
+      "sourceUrl": "https://d1agmp9y4cki1i.cloudfront.net/images/20250701/K40%20Pro_500x500.png",
+      "sourcePage": "https://www.zkteco.in/Classic/k40-pro",
+      "original": "design-preview/media-originals/access-control/k40-pro.png",
+      "output": "/images/access-control/k40-pro.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "db5350fcca8c8a3a40afb0ec79cf8495979684a197a1f49e5dcb427871a04ddb",
+      "webSha256": "04f9732c8cfd70b0d5792bbf981865053f8e58fd3f5c743ead7a9b7ad34588e4",
+      "rights": "Owner-reported dealer permission; manufacturer media reused without altered interface or product identity. No official dealership claim."
+    },
+    {
+      "id": "eb104",
+      "sourceUrl": "https://www.zkteco-ea.com/wp-content/uploads/2023/04/f1f8a7c646269dc81cc0d01b34a8b531-300x300.jpg",
+      "sourcePage": "https://www.zkteco-ea.com/accessories/",
+      "original": "design-preview/media-originals/access-control/eb104.jpg",
+      "output": "/images/access-control/eb104.webp",
+      "width": 300,
+      "height": 300,
+      "sha256": "7d0757d3b8ea7856ba87a6cd792e647d4834123fb972dc6d0569d7d191343bb5",
+      "webSha256": "1b79a8d406d3d3be445adfa38dd221b24721327ac463d5c17e859468bcbcac82",
+      "rights": "Owner-reported dealer permission; manufacturer media reused without altered interface or product identity. No official dealership claim."
+    },
+    {
+      "id": "kr600",
+      "sourceUrl": "https://www.zkteco-ea.com/wp-content/uploads/2023/03/Readers-05.png",
+      "sourcePage": "https://www.zkteco-ea.com/kr600-zkteco/",
+      "original": "design-preview/media-originals/access-control/kr600.png",
+      "output": "/images/access-control/kr600.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "a985c1ccf12f9803dcca149c638b54ddbbb51bb50657f67757fdfc1d60219f5d",
+      "webSha256": "c464747bebe1738d843b75da4f96accf0f3fcdf29f056c3b022356cea37602a9",
+      "rights": "Owner-reported dealer permission; manufacturer media reused without altered interface or product identity. No official dealership claim."
+    },
+    {
+      "id": "fr1200",
+      "sourceUrl": "https://www.zkteco-ea.com/wp-content/uploads/2023/03/FR1200-ZKTeco.png",
+      "sourcePage": "https://www.zkteco-ea.com/fr1200-zkteco/",
+      "original": "design-preview/media-originals/access-control/fr1200.png",
+      "output": "/images/access-control/fr1200.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "cabe77400b90224704f276820e725f201fd8c83274bc330ca9bb63a96db4f3d3",
+      "webSha256": "0045baaa9ff05161b1915284418593648ff07fd97e3b616450725a2477796bc1",
+      "rights": "Owner-reported dealer permission; manufacturer media reused without altered interface or product identity. No official dealership claim."
+    },
+    {
+      "id": "ex-802",
+      "sourceUrl": "https://www.zkteco-ea.com/wp-content/uploads/2023/04/c9eb8e54d58d6e0e3b4a56fcc904bdb9-300x300.jpg",
+      "sourcePage": "https://www.zkteco-ea.com/accessories/",
+      "original": "design-preview/media-originals/access-control/ex-802.jpg",
+      "output": "/images/access-control/ex-802.webp",
+      "width": 300,
+      "height": 300,
+      "sha256": "c4b34344e9ed029680f246311012a06019af664f67bb3b54f987c42d4bc223c3",
+      "webSha256": "2d96418f414dac7485ac5cfd84133aeb8f9fbd629a1881eb355d5b9cd35ce13f",
+      "rights": "Owner-reported dealer permission; manufacturer media reused without altered interface or product identity. No official dealership claim."
+    },
+    {
+      "id": "al-280-led",
+      "sourceUrl": "https://www.zkteco-ea.com/wp-content/uploads/2023/02/AL180-1-zkteco-east-africa.png",
+      "sourcePage": "https://www.zkteco-ea.com/al180-1-zkteco-east-africa/",
+      "original": "design-preview/media-originals/access-control/al-280-led.png",
+      "output": "/images/access-control/al-280-led.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "44d3c147a96a0922d36d9fa8c7ac49f90b563594bed978b783074fec35ffd767",
+      "webSha256": "2049e9e686dee5259302c4e761933be62555ceb85f3c8529cda4ea242971e95d",
+      "rights": "Owner-reported dealer permission; manufacturer media reused without altered interface or product identity. No official dealership claim."
+    },
+    {
+      "id": "zkbio-cvaccess",
+      "sourceUrl": "https://www.zkteco-ea.com/wp-content/uploads/2024/02/Banner.jpg",
+      "sourcePage": "https://www.zkteco-ea.com/zkbiocvaccess/",
+      "original": "design-preview/media-originals/access-control/zkbio-cvaccess.jpg",
+      "output": "/images/access-control/zkbio-cvaccess.webp",
+      "width": 1903,
+      "height": 700,
+      "sha256": "3f51214eedc9fad3d05c56e6dd8c937347e8749c9b7cc2c6225ba79d527e2370",
+      "webSha256": "bae71ee43b199c599d7bf6b2e65e2872a24a049e87dc9165be257ba2cbd41ba4",
+      "rights": "Owner-reported dealer permission; manufacturer media reused without altered interface or product identity. No official dealership claim."
+    },
+    {
+      "id": "zkbio-hlms",
+      "sourceUrl": "https://www.zkteco-ea.com/wp-content/uploads/2025/03/ZKBioHLMS_Leaflet-V1.0_20210401-01.jpg",
+      "sourcePage": "https://www.zkteco-ea.com/zkbio-hlms/",
+      "original": "design-preview/media-originals/access-control/zkbio-hlms.jpg",
+      "output": "/images/access-control/zkbio-hlms.webp",
+      "width": 1921,
+      "height": 701,
+      "sha256": "7e5957378050e79c7f63b17326050ca1a20ea4422212efb146022d12f5c544be",
+      "webSha256": "88b53b4f9a3c143470fac8345e0d42013fb049f10a528d724bf358b6d0979e35",
+      "rights": "Owner-reported dealer permission; manufacturer media reused without altered interface or product identity. No official dealership claim."
+    },
+    {
+      "id": "biotime-9-5",
+      "sourceUrl": "https://www.zkteco-ea.com/wp-content/uploads/2024/08/BioTime-9.5-Head-01-01.png",
+      "sourcePage": "https://www.zkteco-ea.com/biotime9-5/",
+      "original": "design-preview/media-originals/access-control/biotime-9-5.png",
+      "output": "/images/access-control/biotime-9-5.webp",
+      "width": 3830,
+      "height": 913,
+      "sha256": "6352459889278e640b8948c6cf8145170f6c21f60addd3360a3608cd6b76ca46",
+      "webSha256": "ed33bc66e3e38070378c405b414d0d65c7cff86c9854b1bce0160fada91215c9",
+      "rights": "Owner-reported dealer permission; manufacturer media reused without altered interface or product identity. No official dealership claim."
+    },
+    {
+      "id": "biotime-cloud",
+      "sourceUrl": "https://www.zkteco-ea.com/wp-content/uploads/2024/10/BTC_web-banner_1-04.png",
+      "sourcePage": "https://www.zkteco-ea.com/biotime-cloud-kenya/",
+      "original": "design-preview/media-originals/access-control/biotime-cloud.png",
+      "output": "/images/access-control/biotime-cloud.webp",
+      "width": 3250,
+      "height": 1175,
+      "sha256": "0c4c90da12222d606bfa31865274ad6a517f7096adc5ce5c465f9a434b7dc8e5",
+      "webSha256": "f274d04681316723e50fc86318505a5fc5dc5570a11db22255548cd867d656c8",
+      "rights": "Owner-reported dealer permission; manufacturer media reused without altered interface or product identity. No official dealership claim."
+    },
+    {
+      "id": "k40",
+      "sourceUrl": "https://www.zkteco-ea.com/wp-content/uploads/2023/04/K40.png",
+      "sourcePage": "https://www.zkteco-ea.com/biometric-time-attendance-systems-in-kenya/k40-time-attendance-device/",
+      "original": "design-preview/media-originals/access-control/k40.png",
+      "output": "/images/access-control/k40.webp",
+      "width": 2643,
+      "height": 1949,
+      "sha256": "0b375c31e451dd57e141e4265f8b67c01dcf3b17d65d43505be8b2a9460bbafe",
+      "webSha256": "bac21be1dbdffedba35d4079105af897aee6a340a3150b1e004e12e849372971",
+      "rights": "Owner-reported dealer permission; manufacturer media reused without altered interface or product identity. No official dealership claim."
     }
   ],
   "scenes": [
@@ -207,6 +399,18 @@
         "/images/access-control/hotel-1440.webp": 137114
       },
       "creativeBrief": "Fictional hotel manager welcoming a guest at a refined Arusha lodge guestroom; warm wood/stone, unbranded RFID-style handle; no actual BM installation or branded-device claim."
+    },
+    {
+      "id": "hr-office",
+      "source": "Built-in OpenAI image generation, 3 November 2026",
+      "original": "design-preview/media-originals/access-control/hr-office.png",
+      "usage": "Fictional HR managers/workplace, not actual BM staff or project. Original manufacturer BioTime media displayed separately by HTML/CSS, never generatively redrawn.",
+      "prompt": "Photorealistic modern Tanzanian HR office; two managers planning work, ivory/walnut office, neutral blank monitor, natural light, no logos or employee personal data.",
+      "derivatives": [
+        "/images/access-control/hr-office-640.webp",
+        "/images/access-control/hr-office-960.webp",
+        "/images/access-control/hr-office-1440.webp"
+      ]
     }
   ]
 }

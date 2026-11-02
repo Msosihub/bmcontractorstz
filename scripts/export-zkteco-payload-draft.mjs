@@ -57,7 +57,7 @@ await writeFile(
       automaticImport: false,
       automaticPublication: false,
       requiredSchemaReview: [
-        "Extend categoryKey choices for terminal, controller, reader, smart-lock, hotel and entrance",
+        "Extend categoryKey choices for fingerprint-attendance, face-attendance, terminal, controller, reader, smart-lock, entrance, accessory and software",
         "Replace CENTURION-only brochure/source validators with explicit reviewed manufacturer allowlists",
         "Resolve engineering tenant, brand, categories and approved media to real tenant-scoped relationship IDs",
         "Validate localized array identities, publication access and public image projection before importing",

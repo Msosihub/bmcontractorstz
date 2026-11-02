@@ -13,8 +13,8 @@ const products = JSON.parse(
   );
 const { solutionLinks } = await bundle("components/catalogue/links.ts");
 test("ZKTeco references have verified local photos, complete bilingual fields and no price/stock claims", async () => {
-  assert.equal(products.length, 13);
-  assert.equal(new Set(products.map((p) => p.slug)).size, 13);
+  assert(products.length >= 29);
+  assert.equal(new Set(products.map((p) => p.slug)).size, products.length);
   for (const p of products) {
     assert.equal(p.brand, "ZKTeco");
     assert.equal(p.price, null);
@@ -23,7 +23,14 @@ test("ZKTeco references have verified local photos, complete bilingual fields an
     assert(
       p.summary.en && p.summary.sw && p.compatibility.en && p.compatibility.sw,
     );
-    assert.equal(new URL(p.source).hostname, "www.zkteco.com");
+    assert(
+      [
+        "www.zkteco.com",
+        "www.zkteco-ea.com",
+        "www.zkteco.in",
+        "zkteco.sa",
+      ].includes(new URL(p.source).hostname),
+    );
     assert(manifest.manufacturer.some((m) => m.id === p.slug));
     for (const s of p.specs)
       assert(s.label.en && s.label.sw && s.value.en && s.value.sw);
@@ -205,4 +212,55 @@ test("software guidance covers distinct platforms, licensing and both official s
   assert(page.includes("/Security_Bulletinsibs/26"));
   assert(page.includes("/Security_Bulletinsibs/27"));
   assert(!/fetch\(|localhost|127\.0\.0\.1/.test(page));
+});
+
+test("04B preserves distinct attendance identities, conditional licensing and complete door components", async () => {
+  const get = (id) => products.find((p) => p.slug === id);
+  for (const id of [
+    "k40",
+    "k40-pro",
+    "mb360",
+    "mb1000",
+    "mb10",
+    "mb20",
+    "kr600",
+    "sc105",
+    "fr1200",
+    "al-280-led",
+    "eb104",
+    "ex-802",
+    "biotime-9-5",
+    "biotime-cloud",
+    "zkbio-cvaccess",
+    "zkbio-hlms",
+  ])
+    assert(get(id), id);
+  assert.match(get("k40").compatibility.en, /do not assume BioTime 9.5/);
+  assert.match(get("mb1000").summary.en, /not MB100/);
+  assert(!get("mb100"), "Unverified MB100 must not be silently aliased");
+  assert.match(get("mb360").compatibility.en, /firmware\/ADMS/);
+  assert.match(get("mb20").specs[2].value.en, /distinct from MB20-VL/);
+  assert.match(get("fr1200").specs[1].value.en, /not a USB enrolment/);
+  assert.match(get("biotime-9-5").compatibility.en, /not universal inclusions/);
+  const source = await readFile(
+    "components/premium/access-control/CommercialSections.tsx",
+    "utf8",
+  );
+  assert.match(source, /SAMPLE REPORT · FICTIONAL DATA/);
+  assert.match(source, /Demo 001/);
+  assert.match(source, /not a software screenshot/);
+  const guide = await readFile(
+    "components/premium/access-control/EquipmentGuide.tsx",
+    "utf8",
+  );
+  for (const term of [
+    "electric strike",
+    "emergency-release",
+    "door sensor",
+    "12V",
+    "5V",
+    "key fobs",
+    "ZK9500",
+  ])
+    assert(guide.includes(term), term);
 });
