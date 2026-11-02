@@ -147,6 +147,9 @@ export default async function Page({
           </form>
         </section>
         <section className="section catalogue-records">
+          <p className="eyebrow">CENTURION / {sw ? "MILANGO YA KIOTOMATIKI" : "GATE AUTOMATION"}</p>
+          <p><a className="button dark" href={`/catalogue/centurion?lang=${lang}`}>{sw ? "Chunguza modeli, vifaa na nukuu za CENTURION" : "Explore CENTURION models, accessories & quotations"} ↗</a></p>
+          <p>{sw ? "Mwongozo wa vifaa vya mtengenezaji. Bei na upatikanaji vithibitishwe kwenye nukuu." : "Manufacturer equipment guide. Current prices and availability are confirmed on quotation."}</p>
           <div className="section-heading">
             <h2>{sw ? "Bidhaa zilizochapishwa" : "Published equipment"}</h2>
             <p>

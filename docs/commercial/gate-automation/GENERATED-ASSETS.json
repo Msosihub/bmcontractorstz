@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-02",
+  "assets": [
+    {
+      "id": "arrival",
+      "original": "design-preview/media-originals/gate-automation/arrival.png",
+      "prompt": "Use case: photorealistic-natural. Asset: wide premium engineering website hero, landscape 3:2. A believable modern Tanzanian home entrance with an open horizontal sliding steel gate, ivory plaster walls, local stone paving and green planting. A stylish Black Tanzanian adult couple in ordinary contemporary everyday clothes arrives at their home, standing together safely on the pedestrian path OUTSIDE the moving gate path; one holds a small generic remote loosely at waist height. Warm genuine expressions, candid natural body language, not posing for an advert. The gate and entrance remain the main visual subject, people occupy about one quarter of the frame. Warm morning light, architectural editorial photography, premium restrained ivory/graphite/olive/bronze palette. A small generic gate motor at the fixed gate post is mechanically plausible, cable runs neat. No logo, text, identifiable client/property, uniform, trademark product imitation, watermarks or cinematic fantasy. Fictional people and property, never portray BM staff or completed work. Actual manufacturer product photos will be displayed separately. Gate open, safe clearances and no children or person in pinch zone.",
+      "source": "Built-in image_gen tool",
+      "usage": "Fictional people and application scenes; not BM employees, customers or completed installations. Not manufacturer product photographs.",
+      "variants": [
+        {
+          "path": "public/assets/gate-automation/arrival-640.webp",
+          "bytes": 72418,
+          "sha256": "230b421a116562946d4f7adf517652798fb93950324e8c512b45eb2a4fce7f94"
+        },
+        {
+          "path": "public/assets/gate-automation/arrival-960.webp",
+          "bytes": 140000,
+          "sha256": "3caf7c84153cafbeaaae53088c21f1c568008e368546ab47ec58828a454ae645"
+        },
+        {
+          "path": "public/assets/gate-automation/arrival-1440.webp",
+          "bytes": 248302,
+          "sha256": "3d9f2281fa0107e0d6f65fd37a1ee81245c5d8b2cf2b38ac480a6ef8c52e3eab"
+        }
+      ]
+    },
+    {
+      "id": "consultation",
+      "original": "design-preview/media-originals/gate-automation/consultation.png",
+      "prompt": "Use case: photorealistic-natural. Asset: landscape 3:2 service consultation photograph for a premium Tanzanian gate automation website. Black Tanzanian woman technical consultant in a plain neutral shirt and trousers and a Black Tanzanian adult home owner in everyday clothes calmly reviewing a simple unlettered site sketch on a clipboard at a modern gated entrance. Natural warm engaged conversation, believable hands and faces, people not looking at viewer. Stationary open gate in background, both people stand in a separate safe pedestrian area far from hinges and gate travel; no tools working on an energized motor. Refined but practical local stone, ivory walls, neat landscaping. Architectural editorial quality, natural daylight, graphite/ivory/olive palette, no text, badges, logos or marked company clothing. Fictional illustrative people, not actual BM employees, qualifications or completed projects. Avoid staged handshake or hard hats without need.",
+      "source": "Built-in image_gen tool",
+      "usage": "Fictional people and application scenes; not BM employees, customers or completed installations. Not manufacturer product photographs.",
+      "variants": [
+        {
+          "path": "public/assets/gate-automation/consultation-640.webp",
+          "bytes": 53400,
+          "sha256": "2d0cf4e750e6662f346c67cbd420687ca70d9f8f28746a45ef7b5c57e7edff40"
+        },
+        {
+          "path": "public/assets/gate-automation/consultation-960.webp",
+          "bytes": 93792,
+          "sha256": "cac88b57e9a32f9c08720a4fe8d37d39dca78790f79f271e86a06bc2d19f0ce8"
+        },
+        {
+          "path": "public/assets/gate-automation/consultation-1440.webp",
+          "bytes": 156914,
+          "sha256": "4630f572993ce5f9e876c3a52e7a3c93fae149f2c55247f417406805b30f3873"
+        }
+      ]
+    },
+    {
+      "id": "swing",
+      "original": "design-preview/media-originals/gate-automation/swing.png",
+      "prompt": "Use case: photorealistic-natural. Asset: landscape 3:2 service application image. A realistic premium Tanzanian compound entrance with two open inward-swing steel gate leaves on substantial masonry pillars. Two modest unbranded linear actuator arms correctly mounted between the pillars and each gate leaf on the inside, clean cable routing. Clear separate pedestrian approach, stone paving, ivory walls and understated green planting, warm daytime editorial architectural photograph. No people, cars, logos, text, watermark, specific manufacturer labels or invented completed project. No sliding track; this must clearly show a double-leaf swing gate and coherent geometry, not a hybrid gate. Premium graphite and ivory restrained finish.",
+      "source": "Built-in image_gen tool",
+      "usage": "Fictional people and application scenes; not BM employees, customers or completed installations. Not manufacturer product photographs.",
+      "variants": [
+        {
+          "path": "public/assets/gate-automation/swing-640.webp",
+          "bytes": 71466,
+          "sha256": "67d65f6b08581471d4e9e8e740dc29e3fcdc8f0d2ba9750652e4c065b9ca0d62"
+        },
+        {
+          "path": "public/assets/gate-automation/swing-960.webp",
+          "bytes": 136028,
+          "sha256": "a8825bacd6c5cbece549c6813a4e54e4cb67817851147b1e73bff5e2d5ef2b70"
+        },
+        {
+          "path": "public/assets/gate-automation/swing-1440.webp",
+          "bytes": 243086,
+          "sha256": "5270286d7f28e145ed3a1558f5142916acbaefe5aa1e66193f23124a4e365adc"
+        }
+      ]
+    }
+  ]
+}

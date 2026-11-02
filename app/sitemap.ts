@@ -31,6 +31,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
    add(path, translated, record?.updatedAt);
   } else add(path,true);
  }
+ // Only the active catalogue authority contributes published entries. Preview exits above.
+ const {centurionProducts}=await import('@/lib/catalogue/provider');
+ add('/catalogue/centurion',true);
+ for(const product of await centurionProducts())add('/catalogue/centurion/'+product.slug,true);
  products.forEach(p=>add("/products/"+p.slug,false,p.updatedAt));
  packages.forEach(p=>add("/cctv-packages/"+p.slug,false,p.updatedAt));
  const articleSlugs=new Set(articles.map(a=>a.slug));
