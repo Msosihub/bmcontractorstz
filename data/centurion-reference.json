@@ -1,0 +1,1323 @@
+[
+  {
+    "slug": "d3-smart-plus",
+    "name": "D3 SMΔRT+",
+    "brand": "CENTURION",
+    "category": "sliding",
+    "generation": "smart-plus",
+    "images": [
+      {
+        "src": "/assets/gate-automation/products/d3.webp",
+        "alt": "D3 SMΔRT+ — CENTURION manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "A connected sliding-gate operator. Manufacturer gate-mass limit: 300 kg; the gate mechanics, length, wind exposure and usage must also be assessed.",
+      "sw": "Mota ya geti la kuteleza yenye mawasiliano ya kidijitali. Kiwango cha uzito kilichoainishwa na mtengenezaji ni hadi kilo 300; mwendo wa geti, urefu, upepo na matumizi pia vinahitaji tathmini."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Gate mass limit",
+          "sw": "Kiwango cha uzito"
+        },
+        "value": {
+          "en": "Up to 300 kg, subject to installation requirements",
+          "sw": "Hadi kilo 300, kwa kuzingatia masharti ya ufungaji"
+        }
+      },
+      {
+        "label": {
+          "en": "Motor system",
+          "sw": "Mfumo wa mota"
+        },
+        "value": {
+          "en": "12V DC",
+          "sw": "12V DC"
+        }
+      },
+      {
+        "label": {
+          "en": "Connectivity",
+          "sw": "Mawasiliano"
+        },
+        "value": {
+          "en": "Built-in Bluetooth LE + 2.4GHz Wi-Fi",
+          "sw": "Bluetooth LE na Wi-Fi ya 2.4GHz zilizojengewa ndani"
+        }
+      },
+      {
+        "label": {
+          "en": "Backup",
+          "sw": "Umeme wa akiba"
+        },
+        "value": {
+          "en": "Battery-driven; battery configuration and charger to be specified",
+          "sw": "Hutumia betri; ukubwa wa betri na chaja vitathibitishwa kwenye nukuu"
+        }
+      }
+    ],
+    "variants": [
+      "D3 SMΔRT+"
+    ],
+    "source": "https://www.centsys.co.za/d3smart-id/",
+    "documents": [
+      {
+        "label": {
+          "en": "D-Series SMΔRT+ installation manual",
+          "sw": "Mwongozo wa D-Series SMΔRT+"
+        },
+        "url": "https://www.centsys.co.za/pdf/prod/plus/1401.D.01.0029%20D-Series%20SMARTplus%20Combined%20Manual%2012062026_AP_WebApp.pdf"
+      },
+      {
+        "label": {
+          "en": "Manufacturer documentation library",
+          "sw": "Maktaba ya nyaraka za mtengenezaji"
+        },
+        "url": "https://www.centsys.co.za/documentation/"
+      }
+    ],
+    "related": [
+      "nova-controls",
+      "safety-beams",
+      "batteries-power"
+    ],
+    "price": null,
+    "availability": "confirm-on-enquiry"
+  },
+  {
+    "slug": "d4-smart-plus",
+    "name": "D4 SMΔRT+",
+    "brand": "CENTURION",
+    "category": "sliding",
+    "generation": "smart-plus",
+    "images": [
+      {
+        "src": "/assets/gate-automation/products/d4.webp",
+        "alt": "D4 SMΔRT+ — CENTURION manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "A connected sliding-gate operator. Manufacturer gate-mass limit: 450 kg; the gate mechanics, length, wind exposure and usage must also be assessed.",
+      "sw": "Mota ya geti la kuteleza yenye mawasiliano ya kidijitali. Kiwango cha uzito kilichoainishwa na mtengenezaji ni hadi kilo 450; mwendo wa geti, urefu, upepo na matumizi pia vinahitaji tathmini."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Gate mass limit",
+          "sw": "Kiwango cha uzito"
+        },
+        "value": {
+          "en": "Up to 450 kg, subject to installation requirements",
+          "sw": "Hadi kilo 450, kwa kuzingatia masharti ya ufungaji"
+        }
+      },
+      {
+        "label": {
+          "en": "Motor system",
+          "sw": "Mfumo wa mota"
+        },
+        "value": {
+          "en": "12V DC",
+          "sw": "12V DC"
+        }
+      },
+      {
+        "label": {
+          "en": "Connectivity",
+          "sw": "Mawasiliano"
+        },
+        "value": {
+          "en": "Built-in Bluetooth LE + 2.4GHz Wi-Fi",
+          "sw": "Bluetooth LE na Wi-Fi ya 2.4GHz zilizojengewa ndani"
+        }
+      },
+      {
+        "label": {
+          "en": "Backup",
+          "sw": "Umeme wa akiba"
+        },
+        "value": {
+          "en": "Battery-driven; battery configuration and charger to be specified",
+          "sw": "Hutumia betri; ukubwa wa betri na chaja vitathibitishwa kwenye nukuu"
+        }
+      }
+    ],
+    "variants": [
+      "D4 SMΔRT+"
+    ],
+    "source": "https://www.centsys.co.za/d4smartplus-id/",
+    "documents": [
+      {
+        "label": {
+          "en": "D-Series SMΔRT+ installation manual",
+          "sw": "Mwongozo wa D-Series SMΔRT+"
+        },
+        "url": "https://www.centsys.co.za/pdf/prod/plus/1401.D.01.0029%20D-Series%20SMARTplus%20Combined%20Manual%2012062026_AP_WebApp.pdf"
+      },
+      {
+        "label": {
+          "en": "Manufacturer documentation library",
+          "sw": "Maktaba ya nyaraka za mtengenezaji"
+        },
+        "url": "https://www.centsys.co.za/documentation/"
+      }
+    ],
+    "related": [
+      "nova-controls",
+      "safety-beams",
+      "batteries-power"
+    ],
+    "price": null,
+    "availability": "confirm-on-enquiry"
+  },
+  {
+    "slug": "d5-evo-smart-plus",
+    "name": "D5-EVO SMΔRT+",
+    "brand": "CENTURION",
+    "category": "sliding",
+    "generation": "smart-plus",
+    "images": [
+      {
+        "src": "/assets/gate-automation/products/d5evo.webp",
+        "alt": "D5-EVO SMΔRT+ — CENTURION manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "A connected sliding-gate operator. Manufacturer gate-mass limit: 500 kg; the gate mechanics, length, wind exposure and usage must also be assessed.",
+      "sw": "Mota ya geti la kuteleza yenye mawasiliano ya kidijitali. Kiwango cha uzito kilichoainishwa na mtengenezaji ni hadi kilo 500; mwendo wa geti, urefu, upepo na matumizi pia vinahitaji tathmini."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Gate mass limit",
+          "sw": "Kiwango cha uzito"
+        },
+        "value": {
+          "en": "Up to 500 kg, subject to installation requirements",
+          "sw": "Hadi kilo 500, kwa kuzingatia masharti ya ufungaji"
+        }
+      },
+      {
+        "label": {
+          "en": "Motor system",
+          "sw": "Mfumo wa mota"
+        },
+        "value": {
+          "en": "12V DC",
+          "sw": "12V DC"
+        }
+      },
+      {
+        "label": {
+          "en": "Connectivity",
+          "sw": "Mawasiliano"
+        },
+        "value": {
+          "en": "Built-in Bluetooth LE + 2.4GHz Wi-Fi",
+          "sw": "Bluetooth LE na Wi-Fi ya 2.4GHz zilizojengewa ndani"
+        }
+      },
+      {
+        "label": {
+          "en": "Backup",
+          "sw": "Umeme wa akiba"
+        },
+        "value": {
+          "en": "Battery-driven; battery configuration and charger to be specified",
+          "sw": "Hutumia betri; ukubwa wa betri na chaja vitathibitishwa kwenye nukuu"
+        }
+      }
+    ],
+    "variants": [
+      "D5-EVO SMΔRT+"
+    ],
+    "source": "https://www.centsys.co.za/centurion-d5evosmartplus-gate-motor/",
+    "documents": [
+      {
+        "label": {
+          "en": "D-Series SMΔRT+ installation manual",
+          "sw": "Mwongozo wa D-Series SMΔRT+"
+        },
+        "url": "https://www.centsys.co.za/pdf/prod/plus/1401.D.01.0029%20D-Series%20SMARTplus%20Combined%20Manual%2012062026_AP_WebApp.pdf"
+      },
+      {
+        "label": {
+          "en": "Manufacturer documentation library",
+          "sw": "Maktaba ya nyaraka za mtengenezaji"
+        },
+        "url": "https://www.centsys.co.za/documentation/"
+      }
+    ],
+    "related": [
+      "nova-controls",
+      "safety-beams",
+      "batteries-power"
+    ],
+    "price": null,
+    "availability": "confirm-on-enquiry"
+  },
+  {
+    "slug": "d6-smart-plus",
+    "name": "D6 SMΔRT+",
+    "brand": "CENTURION",
+    "category": "sliding",
+    "generation": "smart-plus",
+    "images": [
+      {
+        "src": "/assets/gate-automation/products/d6.webp",
+        "alt": "D6 SMΔRT+ — CENTURION manufacturer product photograph"
+      },
+      {
+        "src": "/assets/gate-automation/products/d6-selection.webp",
+        "alt": "CENTURION D6 SMΔRT+ manufacturer selection photograph"
+      }
+    ],
+    "summary": {
+      "en": "A connected sliding-gate operator. Manufacturer gate-mass limit: 600 kg; the gate mechanics, length, wind exposure and usage must also be assessed.",
+      "sw": "Mota ya geti la kuteleza yenye mawasiliano ya kidijitali. Kiwango cha uzito kilichoainishwa na mtengenezaji ni hadi kilo 600; mwendo wa geti, urefu, upepo na matumizi pia vinahitaji tathmini."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Gate mass limit",
+          "sw": "Kiwango cha uzito"
+        },
+        "value": {
+          "en": "Up to 600 kg, subject to installation requirements",
+          "sw": "Hadi kilo 600, kwa kuzingatia masharti ya ufungaji"
+        }
+      },
+      {
+        "label": {
+          "en": "Motor system",
+          "sw": "Mfumo wa mota"
+        },
+        "value": {
+          "en": "24V DC",
+          "sw": "24V DC"
+        }
+      },
+      {
+        "label": {
+          "en": "Connectivity",
+          "sw": "Mawasiliano"
+        },
+        "value": {
+          "en": "Built-in Bluetooth LE + 2.4GHz Wi-Fi",
+          "sw": "Bluetooth LE na Wi-Fi ya 2.4GHz zilizojengewa ndani"
+        }
+      },
+      {
+        "label": {
+          "en": "Backup",
+          "sw": "Umeme wa akiba"
+        },
+        "value": {
+          "en": "Battery-driven; battery configuration and charger to be specified",
+          "sw": "Hutumia betri; ukubwa wa betri na chaja vitathibitishwa kwenye nukuu"
+        }
+      }
+    ],
+    "variants": [
+      "D6 SMΔRT+"
+    ],
+    "source": "https://www.centsys.co.za/centurion-d6-smart-id/",
+    "documents": [
+      {
+        "label": {
+          "en": "D-Series SMΔRT+ installation manual",
+          "sw": "Mwongozo wa D-Series SMΔRT+"
+        },
+        "url": "https://www.centsys.co.za/pdf/prod/plus/1401.D.01.0029%20D-Series%20SMARTplus%20Combined%20Manual%2012062026_AP_WebApp.pdf"
+      },
+      {
+        "label": {
+          "en": "Manufacturer documentation library",
+          "sw": "Maktaba ya nyaraka za mtengenezaji"
+        },
+        "url": "https://www.centsys.co.za/documentation/"
+      }
+    ],
+    "related": [
+      "nova-controls",
+      "safety-beams",
+      "batteries-power"
+    ],
+    "price": null,
+    "availability": "confirm-on-enquiry"
+  },
+  {
+    "slug": "d10-smart-plus",
+    "name": "D10 SMΔRT+",
+    "brand": "CENTURION",
+    "category": "sliding",
+    "generation": "smart-plus",
+    "images": [
+      {
+        "src": "/assets/gate-automation/products/d10.webp",
+        "alt": "D10 SMΔRT+ — CENTURION manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "A connected sliding-gate operator. Manufacturer gate-mass limit: 1,000 kg; the gate mechanics, length, wind exposure and usage must also be assessed.",
+      "sw": "Mota ya geti la kuteleza yenye mawasiliano ya kidijitali. Kiwango cha uzito kilichoainishwa na mtengenezaji ni hadi kilo 1,000; mwendo wa geti, urefu, upepo na matumizi pia vinahitaji tathmini."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Gate mass limit",
+          "sw": "Kiwango cha uzito"
+        },
+        "value": {
+          "en": "Up to 1,000 kg, subject to installation requirements",
+          "sw": "Hadi kilo 1,000, kwa kuzingatia masharti ya ufungaji"
+        }
+      },
+      {
+        "label": {
+          "en": "Motor system",
+          "sw": "Mfumo wa mota"
+        },
+        "value": {
+          "en": "24V DC",
+          "sw": "24V DC"
+        }
+      },
+      {
+        "label": {
+          "en": "Connectivity",
+          "sw": "Mawasiliano"
+        },
+        "value": {
+          "en": "Built-in Bluetooth LE + 2.4GHz Wi-Fi",
+          "sw": "Bluetooth LE na Wi-Fi ya 2.4GHz zilizojengewa ndani"
+        }
+      },
+      {
+        "label": {
+          "en": "Backup",
+          "sw": "Umeme wa akiba"
+        },
+        "value": {
+          "en": "Battery-driven; battery configuration and charger to be specified",
+          "sw": "Hutumia betri; ukubwa wa betri na chaja vitathibitishwa kwenye nukuu"
+        }
+      }
+    ],
+    "variants": [
+      "D10 SMΔRT+"
+    ],
+    "source": "https://www.centsys.co.za/centurion-d10smart-id/",
+    "documents": [
+      {
+        "label": {
+          "en": "D-Series SMΔRT+ installation manual",
+          "sw": "Mwongozo wa D-Series SMΔRT+"
+        },
+        "url": "https://www.centsys.co.za/pdf/prod/plus/1401.D.01.0029%20D-Series%20SMARTplus%20Combined%20Manual%2012062026_AP_WebApp.pdf"
+      },
+      {
+        "label": {
+          "en": "Manufacturer documentation library",
+          "sw": "Maktaba ya nyaraka za mtengenezaji"
+        },
+        "url": "https://www.centsys.co.za/documentation/"
+      }
+    ],
+    "related": [
+      "nova-controls",
+      "safety-beams",
+      "batteries-power"
+    ],
+    "price": null,
+    "availability": "confirm-on-enquiry"
+  },
+  {
+    "slug": "d10-turbo-smart-plus",
+    "name": "D10 TURBO SMΔRT+",
+    "brand": "CENTURION",
+    "category": "sliding",
+    "generation": "smart-plus",
+    "images": [
+      {
+        "src": "/assets/gate-automation/products/d10turbo.webp",
+        "alt": "D10 TURBO SMΔRT+ — CENTURION manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "A connected sliding-gate operator. Manufacturer gate-mass limit: 250 kg; the gate mechanics, length, wind exposure and usage must also be assessed.",
+      "sw": "Mota ya geti la kuteleza yenye mawasiliano ya kidijitali. Kiwango cha uzito kilichoainishwa na mtengenezaji ni hadi kilo 250; mwendo wa geti, urefu, upepo na matumizi pia vinahitaji tathmini."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Gate mass limit",
+          "sw": "Kiwango cha uzito"
+        },
+        "value": {
+          "en": "Up to 250 kg, subject to installation requirements",
+          "sw": "Hadi kilo 250, kwa kuzingatia masharti ya ufungaji"
+        }
+      },
+      {
+        "label": {
+          "en": "Motor system",
+          "sw": "Mfumo wa mota"
+        },
+        "value": {
+          "en": "24V DC",
+          "sw": "24V DC"
+        }
+      },
+      {
+        "label": {
+          "en": "Connectivity",
+          "sw": "Mawasiliano"
+        },
+        "value": {
+          "en": "Built-in Bluetooth LE + 2.4GHz Wi-Fi",
+          "sw": "Bluetooth LE na Wi-Fi ya 2.4GHz zilizojengewa ndani"
+        }
+      },
+      {
+        "label": {
+          "en": "Backup",
+          "sw": "Umeme wa akiba"
+        },
+        "value": {
+          "en": "Battery-driven; battery configuration and charger to be specified",
+          "sw": "Hutumia betri; ukubwa wa betri na chaja vitathibitishwa kwenye nukuu"
+        }
+      }
+    ],
+    "variants": [
+      "D10 TURBO SMΔRT+"
+    ],
+    "source": "https://www.centsys.co.za/d10tsmart-id/",
+    "documents": [
+      {
+        "label": {
+          "en": "D-Series SMΔRT+ installation manual",
+          "sw": "Mwongozo wa D-Series SMΔRT+"
+        },
+        "url": "https://www.centsys.co.za/pdf/prod/plus/1401.D.01.0029%20D-Series%20SMARTplus%20Combined%20Manual%2012062026_AP_WebApp.pdf"
+      },
+      {
+        "label": {
+          "en": "Manufacturer documentation library",
+          "sw": "Maktaba ya nyaraka za mtengenezaji"
+        },
+        "url": "https://www.centsys.co.za/documentation/"
+      }
+    ],
+    "related": [
+      "nova-controls",
+      "safety-beams",
+      "batteries-power"
+    ],
+    "price": null,
+    "availability": "confirm-on-enquiry"
+  },
+  {
+    "slug": "d20-smart-plus",
+    "name": "D20 SMΔRT+",
+    "brand": "CENTURION",
+    "category": "sliding",
+    "generation": "smart-plus",
+    "images": [
+      {
+        "src": "/assets/gate-automation/products/d20.webp",
+        "alt": "D20 SMΔRT+ — CENTURION manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "A connected sliding-gate operator. Manufacturer gate-mass limit: 2,000 kg; the gate mechanics, length, wind exposure and usage must also be assessed.",
+      "sw": "Mota ya geti la kuteleza yenye mawasiliano ya kidijitali. Kiwango cha uzito kilichoainishwa na mtengenezaji ni hadi kilo 2,000; mwendo wa geti, urefu, upepo na matumizi pia vinahitaji tathmini."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Gate mass limit",
+          "sw": "Kiwango cha uzito"
+        },
+        "value": {
+          "en": "Up to 2,000 kg, subject to installation requirements",
+          "sw": "Hadi kilo 2,000, kwa kuzingatia masharti ya ufungaji"
+        }
+      },
+      {
+        "label": {
+          "en": "Motor system",
+          "sw": "Mfumo wa mota"
+        },
+        "value": {
+          "en": "24V DC",
+          "sw": "24V DC"
+        }
+      },
+      {
+        "label": {
+          "en": "Connectivity",
+          "sw": "Mawasiliano"
+        },
+        "value": {
+          "en": "Built-in Bluetooth LE + 2.4GHz Wi-Fi",
+          "sw": "Bluetooth LE na Wi-Fi ya 2.4GHz zilizojengewa ndani"
+        }
+      },
+      {
+        "label": {
+          "en": "Backup",
+          "sw": "Umeme wa akiba"
+        },
+        "value": {
+          "en": "Battery-driven; battery configuration and charger to be specified",
+          "sw": "Hutumia betri; ukubwa wa betri na chaja vitathibitishwa kwenye nukuu"
+        }
+      }
+    ],
+    "variants": [
+      "D20 SMΔRT+"
+    ],
+    "source": "https://www.centsys.co.za/centurion-d20smart-id/",
+    "documents": [
+      {
+        "label": {
+          "en": "D-Series SMΔRT+ installation manual",
+          "sw": "Mwongozo wa D-Series SMΔRT+"
+        },
+        "url": "https://www.centsys.co.za/pdf/prod/plus/1401.D.01.0029%20D-Series%20SMARTplus%20Combined%20Manual%2012062026_AP_WebApp.pdf"
+      },
+      {
+        "label": {
+          "en": "Manufacturer documentation library",
+          "sw": "Maktaba ya nyaraka za mtengenezaji"
+        },
+        "url": "https://www.centsys.co.za/documentation/"
+      }
+    ],
+    "related": [
+      "nova-controls",
+      "safety-beams",
+      "batteries-power"
+    ],
+    "price": null,
+    "availability": "confirm-on-enquiry"
+  },
+  {
+    "slug": "vantage-smart-plus",
+    "name": "VANTAGE SMΔRT+",
+    "brand": "CENTURION",
+    "category": "swing",
+    "generation": "smart-plus",
+    "images": [
+      {
+        "src": "/assets/gate-automation/products/vantage.webp",
+        "alt": "VANTAGE SMΔRT+ — CENTURION manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "Linear swing-gate operators, selected for the leaf geometry, width, wind exposure and mounting position—not weight alone.",
+      "sw": "Mota za milango ya geti inayofunguka kwa bawaba. Uchaguzi hutegemea vipimo vya kila mlango, upepo na nafasi ya kufunga mota, si uzito pekee."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Variants",
+          "sw": "Aina"
+        },
+        "value": {
+          "en": "300 / 400 / 500 actuator-stroke families",
+          "sw": "Makundi ya urefu wa mwendo wa actuator: 300 / 400 / 500"
+        }
+      },
+      {
+        "label": {
+          "en": "Motor system",
+          "sw": "Mfumo wa mota"
+        },
+        "value": {
+          "en": "12V DC",
+          "sw": "12V DC"
+        }
+      },
+      {
+        "label": {
+          "en": "Connectivity",
+          "sw": "Mawasiliano"
+        },
+        "value": {
+          "en": "Bluetooth LE + 2.4GHz Wi-Fi on SMΔRT+",
+          "sw": "Bluetooth LE na Wi-Fi ya 2.4GHz kwenye SMΔRT+"
+        }
+      },
+      {
+        "label": {
+          "en": "Selection",
+          "sw": "Uchaguzi"
+        },
+        "value": {
+          "en": "Opening angle, pillar geometry, leaf width and locking requirements must be assessed",
+          "sw": "Pembe ya kufunguka, nguzo, upana wa mlango na kufuli vinahitaji tathmini"
+        }
+      }
+    ],
+    "variants": [
+      "VANTAGE 300 SMΔRT+",
+      "VANTAGE 400 SMΔRT+",
+      "VANTAGE 500 SMΔRT+"
+    ],
+    "source": "https://www.centsys.co.za/vantage_smart-id/",
+    "documents": [
+      {
+        "label": {
+          "en": "SMΔRT+ brochure",
+          "sw": "Brosha ya SMΔRT+"
+        },
+        "url": "https://www.centsys.co.za/pdf/prod/plus/1408.D.02.0013%20Vantage%20SMARTplus%20Brochure_02032026_AP_Web_App.pdf"
+      },
+      {
+        "label": {
+          "en": "Manufacturer documentation library",
+          "sw": "Maktaba ya nyaraka za mtengenezaji"
+        },
+        "url": "https://www.centsys.co.za/documentation/"
+      }
+    ],
+    "related": [
+      "nova-controls",
+      "safety-beams",
+      "batteries-power"
+    ],
+    "price": null,
+    "availability": "confirm-on-enquiry"
+  },
+  {
+    "slug": "sdo5-smart-plus",
+    "name": "SDO5 SMΔRT+",
+    "brand": "CENTURION",
+    "category": "garage",
+    "generation": "smart-plus",
+    "images": [
+      {
+        "src": "/assets/gate-automation/products/sdo5.webp",
+        "alt": "SDO5 SMΔRT+ — CENTURION manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "A mains-powered garage-door operator range with optional battery backup. Door balance, type, size and rail selection determine suitability.",
+      "sw": "Mota za milango ya gereji zinazotumia umeme wa kawaida, zenye chaguo la betri ya akiba. Aina, ukubwa, uwiano wa mlango na reli ndivyo vinavyoamua uchaguzi."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Variants",
+          "sw": "Aina"
+        },
+        "value": {
+          "en": "T10 / T12",
+          "sw": "T10 / T12"
+        }
+      },
+      {
+        "label": {
+          "en": "Motor system",
+          "sw": "Mfumo wa mota"
+        },
+        "value": {
+          "en": "24V DC motor; mains-powered operator",
+          "sw": "Mota ya 24V DC; mfumo hutumia umeme wa kawaida"
+        }
+      },
+      {
+        "label": {
+          "en": "Backup",
+          "sw": "Umeme wa akiba"
+        },
+        "value": {
+          "en": "Optional battery-backup accessory, not assumed included",
+          "sw": "Kifaa cha betri ya akiba ni chaguo la ziada; hakidhaniwi kuwamo kwenye kila kifurushi"
+        }
+      },
+      {
+        "label": {
+          "en": "Connectivity",
+          "sw": "Mawasiliano"
+        },
+        "value": {
+          "en": "Bluetooth LE + 2.4GHz Wi-Fi",
+          "sw": "Bluetooth LE na Wi-Fi ya 2.4GHz"
+        }
+      }
+    ],
+    "variants": [
+      "SDO5 SMΔRT+ T10",
+      "SDO5 SMΔRT+ T12"
+    ],
+    "source": "https://www.centsys.co.za/centurion-sdo5-smart-id/",
+    "documents": [
+      {
+        "label": {
+          "en": "SDO5 SMΔRT+ brochure",
+          "sw": "Brosha ya SDO5 SMΔRT+"
+        },
+        "url": "https://www.centsys.co.za/pdf/prod/plus/1415.D.02.0001%20SDO5%20SMARTplus%20Brochure_21092026_MT_Web.pdf"
+      },
+      {
+        "label": {
+          "en": "Manufacturer documentation library",
+          "sw": "Maktaba ya nyaraka za mtengenezaji"
+        },
+        "url": "https://www.centsys.co.za/documentation/"
+      }
+    ],
+    "related": [
+      "nova-controls",
+      "safety-beams",
+      "batteries-power"
+    ],
+    "price": null,
+    "availability": "confirm-on-enquiry"
+  },
+  {
+    "slug": "rdo-digital",
+    "name": "RDO Digital",
+    "brand": "CENTURION",
+    "category": "garage",
+    "generation": "current",
+    "images": [
+      {
+        "src": "/assets/gate-automation/products/rdo.webp",
+        "alt": "RDO Digital — CENTURION manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "A roll-up garage-door operator. Confirm door dimensions, balance, installation space and exact supplied revision before ordering.",
+      "sw": "Mota ya mlango wa gereji unaojikunja kwenda juu. Vipimo, uwiano wa mlango, nafasi ya ufungaji na toleo la kifaa vihakikiwe kabla ya kuagiza."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Application",
+          "sw": "Matumizi"
+        },
+        "value": {
+          "en": "Roll-up garage doors",
+          "sw": "Milango ya gereji ya kujikunja"
+        }
+      },
+      {
+        "label": {
+          "en": "Compatibility",
+          "sw": "Ulinganifu"
+        },
+        "value": {
+          "en": "Not interchangeable with sectional-door or industrial-shutter operators",
+          "sw": "Si mbadala wa moja kwa moja wa mota za sectional au shutter za viwandani"
+        }
+      },
+      {
+        "label": {
+          "en": "Connectivity",
+          "sw": "Mawasiliano"
+        },
+        "value": {
+          "en": "Confirm compatible accessories; SMΔRT+ Wi-Fi is not assumed",
+          "sw": "Vifaa vya mawasiliano vihakikiwe; Wi-Fi ya SMΔRT+ haidhaniwi kuwamo"
+        }
+      }
+    ],
+    "variants": [
+      "RDO Digital"
+    ],
+    "source": "https://www.centsys.co.za/centurion-roll-up-garage-door-operators-id/",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer documentation library",
+          "sw": "Maktaba ya nyaraka za mtengenezaji"
+        },
+        "url": "https://www.centsys.co.za/documentation/"
+      }
+    ],
+    "related": [
+      "nova-controls",
+      "safety-beams",
+      "batteries-power"
+    ],
+    "price": null,
+    "availability": "confirm-on-enquiry"
+  },
+  {
+    "slug": "rso-industrial-shutter",
+    "name": "RSO industrial shutter operators",
+    "brand": "CENTURION",
+    "category": "garage",
+    "generation": "documented",
+    "images": [
+      {
+        "src": "/assets/gate-automation/products/rso.webp",
+        "alt": "CENTURION RSO family operator photograph extracted from the manufacturer catalogue"
+      }
+    ],
+    "summary": {
+      "en": "Manufacturer-documented industrial roller-shutter operators. Assess the shutter, counterbalance, duty, electrical supply and manual operation before selecting a revision.",
+      "sw": "Mota za shutter za viwandani zilizoelezwa na mtengenezaji. Kagua shutter, counterbalance, matumizi, umeme na njia ya kufungua kwa mkono kabla ya kuchagua toleo."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Documented families",
+          "sw": "Makundi yaliyoandikwa"
+        },
+        "value": {
+          "en": "RSO5 / 5R / 5DC / 5RE / 5R3P / 9; exact revision and availability to confirm",
+          "sw": "RSO5 / 5R / 5DC / 5RE / 5R3P / 9; toleo na upatikanaji vithibitishwe"
+        }
+      },
+      {
+        "label": {
+          "en": "Assessment",
+          "sw": "Tathmini"
+        },
+        "value": {
+          "en": "Door mechanics, duty cycle, phase/supply and mounting; not interchangeable with a home garage operator",
+          "sw": "Mitambo ya mlango, marudio ya matumizi, awamu ya umeme na ufungaji; si mbadala wa mota ya gereji ya nyumbani"
+        }
+      }
+    ],
+    "variants": [
+      "RSO — site-specific model selection"
+    ],
+    "source": "https://www.centsys.co.za/pdf/cat/24/7.%20RSO%20pages%2017102024BM.pdf",
+    "documents": [
+      {
+        "label": {
+          "en": "RSO manufacturer catalogue",
+          "sw": "Katalogi ya RSO ya mtengenezaji"
+        },
+        "url": "https://www.centsys.co.za/pdf/cat/24/7.%20RSO%20pages%2017102024BM.pdf"
+      }
+    ],
+    "related": [
+      "safety-beams",
+      "keypads",
+      "batteries-power"
+    ],
+    "price": null,
+    "availability": "confirm-on-enquiry"
+  },
+  {
+    "slug": "sector-ii",
+    "name": "SECTOR II",
+    "brand": "CENTURION",
+    "category": "barrier",
+    "generation": "current",
+    "images": [
+      {
+        "src": "/assets/gate-automation/products/sector.webp",
+        "alt": "SECTOR II — CENTURION manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "Vehicle access control for managed parking, institutional entrances and commercial sites. A boom barrier does not replace a secure perimeter gate.",
+      "sw": "Udhibiti wa magari kwenye maegesho, taasisi na maeneo ya biashara. Kizuizi cha mkono si mbadala wa geti la usalama wa mpaka."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Application",
+          "sw": "Matumizi"
+        },
+        "value": {
+          "en": "Commercial vehicle entrances and parking",
+          "sw": "Viingilio vya magari na maegesho ya biashara"
+        }
+      },
+      {
+        "label": {
+          "en": "Planning",
+          "sw": "Mpango wa eneo"
+        },
+        "value": {
+          "en": "Boom length, vehicle detection, traffic flow and pedestrian separation",
+          "sw": "Urefu wa mkono, vitambuzi vya magari, mtiririko wa magari na njia tofauti ya watembea kwa miguu"
+        }
+      },
+      {
+        "label": {
+          "en": "Safety",
+          "sw": "Usalama"
+        },
+        "value": {
+          "en": "Specify compatible detectors and safety devices for the site",
+          "sw": "Chagua vitambuzi na vifaa vya usalama vinavyofaa eneo"
+        }
+      }
+    ],
+    "variants": [
+      "SECTOR II"
+    ],
+    "source": "https://www.centsys.co.za/centurion-sector-ii-traffic-barrier-id/",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer documentation library",
+          "sw": "Maktaba ya nyaraka za mtengenezaji"
+        },
+        "url": "https://www.centsys.co.za/documentation/"
+      }
+    ],
+    "related": [
+      "safety-beams",
+      "keypads",
+      "gsm-access"
+    ],
+    "price": null,
+    "availability": "confirm-on-enquiry"
+  },
+  {
+    "slug": "nova-controls",
+    "name": "NOVA remote controls & receivers",
+    "brand": "CENTURION",
+    "category": "accessories",
+    "generation": "current",
+    "images": [
+      {
+        "src": "/assets/gate-automation/products/nova.webp",
+        "alt": "NOVA remote controls & receivers — CENTURION manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "Hand-held access and compatible receiver options. Match frequency, receiver model, channel requirements and supported coding before pairing.",
+      "sw": "Rimoti na receiver zinazooana kwa kufungua geti. Hakiki masafa, modeli ya receiver, idadi ya njia na mfumo wa usimbaji kabla ya kuunganisha."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Family",
+          "sw": "Kundi"
+        },
+        "value": {
+          "en": "NOVA remote controls and receivers",
+          "sw": "Rimoti na receiver za NOVA"
+        }
+      },
+      {
+        "label": {
+          "en": "Compatibility",
+          "sw": "Ulinganifu"
+        },
+        "value": {
+          "en": "Model-specific; not every remote works with every receiver",
+          "sw": "Hutegemea modeli; si kila rimoti inafanya kazi na kila receiver"
+        }
+      }
+    ],
+    "variants": [
+      "NOVA remote — model to confirm",
+      "NOVA receiver — model to confirm"
+    ],
+    "source": "https://www.centsys.co.za/demo/centurion-remotes-and-receivers-id/",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer documentation library",
+          "sw": "Maktaba ya nyaraka za mtengenezaji"
+        },
+        "url": "https://www.centsys.co.za/documentation/"
+      }
+    ],
+    "related": [
+      "keypads",
+      "gsm-access"
+    ],
+    "price": null,
+    "availability": "confirm-on-enquiry"
+  },
+  {
+    "slug": "safety-beams",
+    "name": "Infrared safety beams",
+    "brand": "CENTURION",
+    "category": "accessories",
+    "generation": "current",
+    "images": [
+      {
+        "src": "/assets/gate-automation/products/safety.webp",
+        "alt": "Infrared safety beams — CENTURION manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "Compatible beam families, including Photon SMΔRT where specified. Beam placement and other safety measures depend on the gate and surrounding pedestrian routes.",
+      "sw": "Vihisi vya usalama vya infrared, ikiwemo Photon SMΔRT pale vinapofaa. Nafasi ya kufunga na hatua nyingine za usalama hutegemea geti na njia za watu."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Selection",
+          "sw": "Uchaguzi"
+        },
+        "value": {
+          "en": "Confirm wired/wireless model, supply and controller compatibility",
+          "sw": "Hakiki modeli ya waya au isiyotumia waya, umeme na ulinganifu wa controller"
+        }
+      },
+      {
+        "label": {
+          "en": "Purpose",
+          "sw": "Madhumuni"
+        },
+        "value": {
+          "en": "Part of a site-specific safety design; not a guarantee against all hazards",
+          "sw": "Sehemu ya mpango wa usalama wa eneo; si kinga ya kila hatari"
+        }
+      }
+    ],
+    "variants": [
+      "Infrared safety beams"
+    ],
+    "source": "https://www.centsys.co.za/demo/centurion-gate-and-garage-accessories-id/",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer documentation library",
+          "sw": "Maktaba ya nyaraka za mtengenezaji"
+        },
+        "url": "https://www.centsys.co.za/documentation/"
+      }
+    ],
+    "related": [
+      "nova-controls",
+      "safety-beams",
+      "batteries-power"
+    ],
+    "price": null,
+    "availability": "confirm-on-enquiry"
+  },
+  {
+    "slug": "keypads",
+    "name": "SMARTGUARDair keypad",
+    "brand": "CENTURION",
+    "category": "accessories",
+    "generation": "current",
+    "images": [
+      {
+        "src": "/assets/gate-automation/products/keypad.webp",
+        "alt": "SMARTGUARDair keypad — CENTURION manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "Coded access for compatible systems. Plan who can grant or remove access and how temporary permissions will be managed.",
+      "sw": "Kuingia kwa msimbo kwenye mifumo inayooana. Panga nani atasimamia misimbo na jinsi ruhusa za muda zitakavyodhibitiwa."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Family",
+          "sw": "Kundi"
+        },
+        "value": {
+          "en": "SMARTGUARDair wireless keypad",
+          "sw": "Keypad isiyotumia waya ya SMARTGUARDair"
+        }
+      },
+      {
+        "label": {
+          "en": "Assessment",
+          "sw": "Tathmini"
+        },
+        "value": {
+          "en": "Receiver compatibility, range and user-access policy",
+          "sw": "Ulinganifu wa receiver, umbali wa mawasiliano na sera ya ruhusa"
+        }
+      }
+    ],
+    "variants": [
+      "SMARTGUARDair keypad"
+    ],
+    "source": "https://www.centsys.co.za/demo/centurion-access-and-intercom-accessories-id/",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer documentation library",
+          "sw": "Maktaba ya nyaraka za mtengenezaji"
+        },
+        "url": "https://www.centsys.co.za/documentation/"
+      }
+    ],
+    "related": [
+      "nova-controls",
+      "gsm-access"
+    ],
+    "price": null,
+    "availability": "confirm-on-enquiry"
+  },
+  {
+    "slug": "gsm-access",
+    "name": "GSM access & intercom options",
+    "brand": "CENTURION",
+    "category": "accessories",
+    "generation": "current",
+    "images": [
+      {
+        "src": "/assets/gate-automation/products/gsm.webp",
+        "alt": "GSM access & intercom options — CENTURION manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "G-ULTRA access control and G-SPEAK ULTRA intercom families require the correct model, mobile-network support, SIM service and compatible gate interface.",
+      "sw": "Makundi ya G-ULTRA kwa udhibiti wa kuingia na G-SPEAK ULTRA kwa intercom yanahitaji modeli sahihi, mtandao unaofaa, huduma ya SIM na kiunganishi kinachooana na geti."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Connectivity",
+          "sw": "Mawasiliano"
+        },
+        "value": {
+          "en": "Mobile-network service; coverage and ongoing SIM/data costs must be checked",
+          "sw": "Huduma ya mtandao wa simu; upatikanaji na gharama za SIM/data vihakikiwe"
+        }
+      },
+      {
+        "label": {
+          "en": "Selection",
+          "sw": "Uchaguzi"
+        },
+        "value": {
+          "en": "Access switching and voice intercom are different requirements",
+          "sw": "Kufungua geti kwa simu na mazungumzo ya intercom ni mahitaji tofauti"
+        }
+      }
+    ],
+    "variants": [
+      "G-ULTRA — revision/network to confirm",
+      "G-SPEAK ULTRA — revision/network to confirm"
+    ],
+    "source": "https://www.centsys.co.za/demo/centurion-mobile-connect-devices-id/",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer documentation library",
+          "sw": "Maktaba ya nyaraka za mtengenezaji"
+        },
+        "url": "https://www.centsys.co.za/documentation/"
+      }
+    ],
+    "related": [
+      "keypads",
+      "nova-controls"
+    ],
+    "price": null,
+    "availability": "confirm-on-enquiry"
+  },
+  {
+    "slug": "racks-mechanical",
+    "name": "Racks & mechanical accessories",
+    "brand": "CENTURION",
+    "category": "accessories",
+    "generation": "current",
+    "images": [
+      {
+        "src": "/assets/gate-automation/products/mechanical.webp",
+        "alt": "Racks & mechanical accessories — CENTURION manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "Gate racks, wheels and supporting mechanical parts must match the gate, motor and mounting conditions. Fix a stiff or damaged gate before automation.",
+      "sw": "Rack, magurudumu na sehemu za mitambo lazima zilingane na geti, mota na ufungaji. Geti linalokwama au lililoharibika lirekebishwe kabla ya kuwekewa mota."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Selection",
+          "sw": "Uchaguzi"
+        },
+        "value": {
+          "en": "Rack material/profile, support, wheel and track condition",
+          "sw": "Aina ya rack, uimara wa sehemu za kushikilia, hali ya magurudumu na reli"
+        }
+      }
+    ],
+    "variants": [
+      "Racks & mechanical accessories"
+    ],
+    "source": "https://www.centsys.co.za/demo/centurion-gate-and-garage-accessories-id/",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer documentation library",
+          "sw": "Maktaba ya nyaraka za mtengenezaji"
+        },
+        "url": "https://www.centsys.co.za/documentation/"
+      }
+    ],
+    "related": [
+      "d5-evo-smart-plus",
+      "d6-smart-plus",
+      "safety-beams"
+    ],
+    "price": null,
+    "availability": "confirm-on-enquiry"
+  },
+  {
+    "slug": "batteries-power",
+    "name": "Batteries & power accessories",
+    "brand": "CENTURION",
+    "category": "accessories",
+    "generation": "current",
+    "images": [
+      {
+        "src": "/assets/gate-automation/products/battery.webp",
+        "alt": "Batteries & power accessories — CENTURION manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "Replacement batteries, chargers and suitable power protection are selected for the actual controller and duty. Battery backup does not guarantee unlimited cycles during an outage.",
+      "sw": "Betri za kubadilisha, chaja na kinga ya umeme huchaguliwa kulingana na controller na matumizi. Betri ya akiba haimaanishi geti litafanya kazi bila kikomo umeme unapokatika."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Selection",
+          "sw": "Uchaguzi"
+        },
+        "value": {
+          "en": "Correct voltage, capacity, charger and enclosure requirements",
+          "sw": "Volteji, uwezo wa betri, chaja na boksi linalofaa"
+        }
+      },
+      {
+        "label": {
+          "en": "Backup",
+          "sw": "Umeme wa akiba"
+        },
+        "value": {
+          "en": "Runtime varies with battery health, gate load, usage and accessories",
+          "sw": "Muda hutegemea hali ya betri, uzito wa geti, matumizi na vifaa vya ziada"
+        }
+      }
+    ],
+    "variants": [
+      "Batteries & power accessories"
+    ],
+    "source": "https://www.centsys.co.za/demo/centurion-gate-and-garage-accessories-id/",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer documentation library",
+          "sw": "Maktaba ya nyaraka za mtengenezaji"
+        },
+        "url": "https://www.centsys.co.za/documentation/"
+      }
+    ],
+    "related": [
+      "d5-evo-smart-plus",
+      "d6-smart-plus",
+      "sdo5-smart-plus"
+    ],
+    "price": null,
+    "availability": "confirm-on-enquiry"
+  }
+]

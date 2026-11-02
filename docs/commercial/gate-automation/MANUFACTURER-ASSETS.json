@@ -1,0 +1,184 @@
+{
+  "permission": "Owner confirms permission from CENTURION main dealers, user brief 2 November 2026. Product photographs only; no dealership/certification claim. No independent written licence supplied.",
+  "assets": [
+    {
+      "id": "d3",
+      "page": "https://www.centsys.co.za/d3smart-id/",
+      "url": "https://www.centsys.co.za/img/prod/plus/CENTURION-SYSTEMS-D3-SMART-PLUS.jpg",
+      "original": "design-preview/media-originals/gate-automation/products/d3.jpg",
+      "path": "/assets/gate-automation/products/d3.webp",
+      "sha256": "277c7b2256f876bae395b6b5e9a565344957b30f2c3acdaf58168e7f83890b32",
+      "width": 716,
+      "height": 540
+    },
+    {
+      "id": "d4",
+      "page": "https://www.centsys.co.za/d4smartplus-id/",
+      "url": "https://www.centsys.co.za/img/prod/plus/CENTURION-SYSTEMS-D4-SMART-PLUS.jpg",
+      "original": "design-preview/media-originals/gate-automation/products/d4.jpg",
+      "path": "/assets/gate-automation/products/d4.webp",
+      "sha256": "976f0d8a7a49472fd4f30efbbedb2a0d94c35d70218c8a853413df1925bed9f3",
+      "width": 716,
+      "height": 540
+    },
+    {
+      "id": "d5evo",
+      "page": "https://www.centsys.co.za/centurion-d5evosmartplus-gate-motor/",
+      "url": "https://www.centsys.co.za/img/prod/plus/CENTURION-SYSTEMS-D5-EVO-SMART-PLUS.jpg",
+      "original": "design-preview/media-originals/gate-automation/products/d5evo.jpg",
+      "path": "/assets/gate-automation/products/d5evo.webp",
+      "sha256": "a7110f4b6d1057900c30fd45e04ece2d097cc33d13d34f90e4c9a07bb8a4cae0",
+      "width": 716,
+      "height": 540
+    },
+    {
+      "id": "d6",
+      "page": "https://www.centsys.co.za/centurion-d6-smart-id/",
+      "url": "https://www.centsys.co.za/img/prod/plus/CENTURION-SYSTEMS-D6-SMART-PLUS.jpg",
+      "original": "design-preview/media-originals/gate-automation/products/d6.jpg",
+      "path": "/assets/gate-automation/products/d6.webp",
+      "sha256": "4b1338c3b76810ccb8c74a89840bf640a8997bf62fe1d81cd4944b86afe7acb0",
+      "width": 716,
+      "height": 540
+    },
+    {
+      "id": "d10",
+      "page": "https://www.centsys.co.za/centurion-d10smart-id/",
+      "url": "https://www.centsys.co.za/img/prod/plus/CENTURION-SYSTEMS-D10-SMART-PLUS.jpg",
+      "original": "design-preview/media-originals/gate-automation/products/d10.jpg",
+      "path": "/assets/gate-automation/products/d10.webp",
+      "sha256": "2cf7d01414e9f311e012b4c868511481f50c50e137273602eb763446c7c8c873",
+      "width": 716,
+      "height": 540
+    },
+    {
+      "id": "d10turbo",
+      "page": "https://www.centsys.co.za/d10tsmart-id/",
+      "url": "https://www.centsys.co.za/img/prod/plus/CENTURION-SYSTEMS-D10T-SMART-PLUS.jpg",
+      "original": "design-preview/media-originals/gate-automation/products/d10turbo.jpg",
+      "path": "/assets/gate-automation/products/d10turbo.webp",
+      "sha256": "1e919264352d5c63e84c68e3b9a6f0602b912e0e3b0e0f18ca1abe835c56de37",
+      "width": 716,
+      "height": 540
+    },
+    {
+      "id": "d20",
+      "page": "https://www.centsys.co.za/centurion-d20smart-id/",
+      "url": "https://www.centsys.co.za/img/prod/plus/CENTURION-SYSTEMS-D20-SMART-PLUS.jpg",
+      "original": "design-preview/media-originals/gate-automation/products/d20.jpg",
+      "path": "/assets/gate-automation/products/d20.webp",
+      "sha256": "bbf34c0548a5772a055b9e9a448509f9875ca81968511cf3a1c57c7a4b5ac238",
+      "width": 716,
+      "height": 540
+    },
+    {
+      "id": "sdo5",
+      "page": "https://www.centsys.co.za/centurion-sdo5-smart-id/",
+      "url": "https://www.centsys.co.za/img/prod/plus/CENTURION-SYSTEMS-SDO5-SMART-PLUS.jpg",
+      "original": "design-preview/media-originals/gate-automation/products/sdo5.jpg",
+      "path": "/assets/gate-automation/products/sdo5.webp",
+      "sha256": "4d71fbee7b4ae26d989685f4422d4b42bd7cfcf2279c25f2ea2637eba15232b9",
+      "width": 716,
+      "height": 540
+    },
+    {
+      "id": "rdo",
+      "page": "https://www.centsys.co.za/centurion-roll-up-garage-door-operators-id/",
+      "url": "https://www.centsys.co.za/demo/img/prod/gdo/RDOD.jpg",
+      "original": "design-preview/media-originals/gate-automation/products/rdo.jpg",
+      "path": "/assets/gate-automation/products/rdo.webp",
+      "sha256": "6055f63574d649de04b079d7e4e5a503f8a15d0639d5c93ed53666dd11f4d442",
+      "width": 750,
+      "height": 750
+    },
+    {
+      "id": "vantage",
+      "page": "https://www.centsys.co.za/vantage_smart-id/",
+      "url": "https://www.centsys.co.za/demo/img/prod/swings/vantage/CENTURION-VANTAGE-SM%CE%94RT-SWING-GATE-MOTOR.jpg",
+      "original": "design-preview/media-originals/gate-automation/products/vantage.jpg",
+      "path": "/assets/gate-automation/products/vantage.webp",
+      "sha256": "0e81c3a09ab82511a8cf36975e6759f57f730a1635e68f5f0f5f139b760bb803",
+      "width": 716,
+      "height": 540
+    },
+    {
+      "id": "nova",
+      "page": "https://www.centsys.co.za/demo/centurion-remotes-and-receivers-id/",
+      "url": "https://www.centsys.co.za/demo/img/prod/accessories/CENTURION-SYSTEMS-REMOTE-CONTROLS.jpg",
+      "original": "design-preview/media-originals/gate-automation/products/nova.jpg",
+      "path": "/assets/gate-automation/products/nova.webp",
+      "sha256": "a46a144e2668ca2ac544e524902587505cf6fd67d4a7cb4568547d90910b3e9b",
+      "width": 750,
+      "height": 750
+    },
+    {
+      "id": "keypad",
+      "page": "https://www.centsys.co.za/demo/centurion-access-and-intercom-accessories-id/",
+      "url": "https://www.centsys.co.za/demo/img/prod/accessories/CENTURION-SYSTEMS-SM%CE%94RTGUARD-AIR.jpg",
+      "original": "design-preview/media-originals/gate-automation/products/keypad.jpg",
+      "path": "/assets/gate-automation/products/keypad.webp",
+      "sha256": "4aae1d183429d47f73b0fefbdeb641da16e08c18c038f066d3e94de210354207",
+      "width": 750,
+      "height": 750
+    },
+    {
+      "id": "gsm",
+      "page": "https://www.centsys.co.za/demo/centurion-mobile-connect-devices-id/",
+      "url": "https://www.centsys.co.za/demo/img/prod/accessories/G_ULTRA-Selector2.jpg",
+      "original": "design-preview/media-originals/gate-automation/products/gsm.jpg",
+      "path": "/assets/gate-automation/products/gsm.webp",
+      "sha256": "c751bf3b58e9bb5216e8093b98bdf479c0de2e1b0abebafe903cadb2274b1c27",
+      "width": 750,
+      "height": 750
+    },
+    {
+      "id": "sector",
+      "page": "https://www.centsys.co.za/centurion-sector-ii-traffic-barrier-id/",
+      "url": "https://www.centsys.co.za/demo/img/prod/barriers/sectorii/CENTURION-SECTOR-II-RECTANGULAR-TRAFFIC-BARRIER.jpg",
+      "original": "design-preview/media-originals/gate-automation/products/sector.jpg",
+      "path": "/assets/gate-automation/products/sector.webp",
+      "sha256": "a9160252520fc2b9d5062197f8d09ef3747866403d6965c8671f955bee9bf35e",
+      "width": 716,
+      "height": 540
+    },
+    {
+      "id": "safety",
+      "page": "https://www.centsys.co.za/centurion-beams-and-safety-accessories-id/",
+      "url": "https://www.centsys.co.za/demo/img/prod/accessories/CENTURION-SYSTEMS-INFRARED-BEAMS.jpg",
+      "original": "design-preview/media-originals/gate-automation/products/safety.jpg",
+      "path": "/assets/gate-automation/products/safety.webp",
+      "sha256": "33f18a1989ad44ff87170e655d7af1420c177cfe300f0c9f49781cd1a50671bd"
+    },
+    {
+      "id": "battery",
+      "page": "https://www.centsys.co.za/centurion-battery-and-power-accessories-id/",
+      "url": "https://www.centsys.co.za/demo/img/prod/accessories/powerpack/Centurion-Systems-SM%CE%94RT-Power-Pack001.jpg",
+      "original": "design-preview/media-originals/gate-automation/products/battery.jpg",
+      "path": "/assets/gate-automation/products/battery.webp",
+      "sha256": "1bb1c930d3a2f1bb208a7e9e7043f33489f0da53547653912f0d4feedd9da8eb"
+    },
+    {
+      "id": "mechanical",
+      "page": "https://www.centsys.co.za/centurion-racks-wheels-and-accessories-id/",
+      "url": "https://www.centsys.co.za/demo/img/prod/accessories/wheels/Centurion-Systems---Gate-Shox-Wheels-Kit.jpg",
+      "original": "design-preview/media-originals/gate-automation/products/mechanical.jpg",
+      "path": "/assets/gate-automation/products/mechanical.webp",
+      "sha256": "638fd6a656fc90aa3315433ebdd538bfa2709de75752d548edc4c7a87b56d516"
+    },
+    {
+      "id": "d6-selection",
+      "url": "https://www.centsys.co.za/img/prod/plus/Centurion-Systems-D6-SMART-Plus-Gate-motor.jpg",
+      "path": "/assets/gate-automation/products/d6-selection.webp",
+      "sha256": "ea151db41a2092c1f4edfaeccd7778e4db8ce27a3a82aa8d18e8df11a82719e4",
+      "original": "design-preview/media-originals/gate-automation/products/d6-selection.jpg"
+    },
+    {
+      "id": "rso",
+      "url": "https://www.centsys.co.za/pdf/cat/24/7.%20RSO%20pages%2017102024BM.pdf",
+      "source": "Page 1 embedded operator photograph, Im0.jp2. Family illustration, exact model confirmed on enquiry.",
+      "path": "/assets/gate-automation/products/rso.webp",
+      "original": "design-preview/media-originals/gate-automation/products/rso.png",
+      "sha256": "facd788b668593e362ac00097cd309defc68b4ff84edf497c3995a77a9ff2f66"
+    }
+  ]
+}

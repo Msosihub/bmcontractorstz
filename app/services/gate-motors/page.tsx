@@ -1,27 +1,37 @@
-/**
- * Gate Motors Service Page
- * ------------------------
- * Public service page for gate motor installation.
- *
- * SEO:
- * - Strong title and description for automatic gate motor services.
- */
-
-import { ServiceDetailPage } from "@/components/site/ServiceDetailPage";
-import { isLanguage, type Language } from "@/lib/i18n/config";
-
-
-type PageProps = {
-  searchParams: Promise<{
-    lang?: string;
-  }>;
-};
-
-export default async function GateMotorsServicePage({
+import { centurionProducts } from "@/lib/catalogue/provider";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { GateAutomationPage } from "@/components/premium/gate-automation/Page";
+import { getServiceRecord } from "@/lib/services";
+import { isLanguage } from "@/lib/i18n/config";
+import { pageMetadata } from "@/lib/seo";
+type Props = { searchParams: Promise<{ lang?: string }> };
+export async function generateMetadata({
   searchParams,
-}: PageProps) {
-  const params = await searchParams;
-  const lang: Language = isLanguage(params.lang) ? params.lang : "en";
-
-  return <ServiceDetailPage lang={lang} slug="gate-motors" />;
+}: Props): Promise<Metadata> {
+  const p = await searchParams,
+    lang = isLanguage(p.lang) ? p.lang : "en",
+    r = await getServiceRecord("gate-motors");
+  if (r && !r.isPublished) return { robots: { index: false, follow: false } };
+  return pageMetadata(
+    "/services/gate-motors",
+    lang,
+    lang === "en"
+      ? [
+          "CENTURION Gate Motor Installation, Equipment & Repairs",
+          "Sliding and swing gate automation, garage doors and traffic barriers in Tanzania. Explore CENTURION SMΔRT+ equipment and request a site survey in Moshi or Arusha.",
+        ]
+      : [
+          "Ufungaji na Matengenezo ya Mota za Geti za CENTURION",
+          "Mota za geti za kuteleza na bawaba, gereji na vizuizi vya magari Tanzania. Chunguza SMΔRT+ na uombe ukaguzi wa eneo Moshi au Arusha.",
+        ],
+  );
+}
+export default async function Page({ searchParams }: Props) {
+  const p = await searchParams,
+    lang = isLanguage(p.lang) ? p.lang : "en",
+    record = await getServiceRecord("gate-motors");
+  if (record && !record.isPublished) notFound();
+  const products = await centurionProducts();
+  return <GateAutomationPage lang={lang} record={record} products={products} />;
 }
