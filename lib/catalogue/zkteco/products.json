@@ -1,0 +1,857 @@
+[
+  {
+    "slug": "f18",
+    "name": "F18",
+    "brand": "ZKTeco",
+    "category": "terminal",
+    "generation": "Manufacturer reference • reviewed 2 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/f18.webp",
+        "alt": "F18 — ZKTeco manufacturer photograph"
+      }
+    ],
+    "summary": {
+      "en": "Familiar fingerprint, card-option and PIN door terminal. A practical starting point for an existing office system assessment.",
+      "sw": "Kifaa kinachofahamika cha alama za vidole, PIN na chaguo la kadi. Kinafaa kuanzia tathmini ya mfumo uliopo ofisini."
+    },
+    "source": "https://www.zkteco.com/en/FSeries/F18",
+    "variants": [
+      "F18"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Identification",
+          "sw": "Utambulisho"
+        },
+        "value": {
+          "en": "Fingerprint / PIN; card option",
+          "sw": "Alama za vidole / PIN; kadi kwa toleo husika"
+        }
+      },
+      {
+        "label": {
+          "en": "Network",
+          "sw": "Mtandao"
+        },
+        "value": {
+          "en": "TCP/IP, RS485, Wiegand",
+          "sw": "TCP/IP, RS485, Wiegand"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "AC PUSH and TA PUSH firmware have different software paths. Verify the installed firmware before selecting attendance software.",
+      "sw": "Firmware ya AC PUSH na TA PUSH hutumia njia tofauti za programu. Hakiki toleo kabla ya kuchagua programu ya mahudhurio."
+    },
+    "classification": "existing",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer specifications & documentation",
+          "sw": "Vipimo na nyaraka za mtengenezaji"
+        },
+        "url": "https://www.zkteco.com/en/FSeries/F18"
+      }
+    ],
+    "related": [
+      "f18-pro",
+      "senseface-4a"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "f18-pro",
+    "name": "F18 Pro",
+    "brand": "ZKTeco",
+    "category": "terminal",
+    "generation": "Manufacturer reference • reviewed 2 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/f18-pro.webp",
+        "alt": "F18 Pro — ZKTeco manufacturer photograph"
+      }
+    ],
+    "summary": {
+      "en": "A newer fingerprint/card/PIN terminal with a 4MP camera. For assessed office access and supported attendance configurations.",
+      "sw": "Kifaa kipya zaidi cha alama za vidole, kadi na PIN chenye kamera ya 4MP. Kwa milango ya ofisi na mahudhurio katika mpangilio unaooana."
+    },
+    "source": "https://www.zkteco.com/en/FSeries/F18_Pro",
+    "variants": [
+      "F18 Pro"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Display",
+          "sw": "Skrini"
+        },
+        "value": {
+          "en": "2.4-inch",
+          "sw": "Inchi 2.4"
+        }
+      },
+      {
+        "label": {
+          "en": "Fingerprint capacity",
+          "sw": "Alama za vidole"
+        },
+        "value": {
+          "en": "3,000",
+          "sw": "3,000"
+        }
+      },
+      {
+        "label": {
+          "en": "Card capacity",
+          "sw": "Kadi"
+        },
+        "value": {
+          "en": "5,000",
+          "sw": "5,000"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Confirm firmware, software and optional video/intercom service. Camera presence does not establish CCTV recording capability.",
+      "sw": "Hakiki firmware, programu na huduma ya hiari ya video/intercom. Kamera yake haimaanishi ni mfumo wa kurekodi CCTV."
+    },
+    "classification": "current",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer specifications & documentation",
+          "sw": "Vipimo na nyaraka za mtengenezaji"
+        },
+        "url": "https://www.zkteco.com/en/FSeries/F18_Pro"
+      }
+    ],
+    "related": [
+      "f18",
+      "speedface-v5l"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "senseface-4a",
+    "name": "SenseFace 4 Series",
+    "brand": "ZKTeco",
+    "category": "terminal",
+    "generation": "Manufacturer reference • reviewed 2 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/senseface-4a.webp",
+        "alt": "SenseFace 4 Series — ZKTeco manufacturer photograph"
+      }
+    ],
+    "summary": {
+      "en": "Facial recognition for everyday workplace arrivals, with fingerprint on the 4A variant. Choose the exact entry or standard version.",
+      "sw": "Utambuzi wa uso kwa wafanyakazi wanapoingia; 4A pia ina alama za vidole. Chagua toleo halisi la entry au standard."
+    },
+    "source": "https://www.zkteco.com/en/SenseFaceSeries/SenseFace_4_Series",
+    "variants": [
+      "SenseFace 4A",
+      "SenseFace 4B"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Display",
+          "sw": "Skrini"
+        },
+        "value": {
+          "en": "4.3-inch",
+          "sw": "Inchi 4.3"
+        }
+      },
+      {
+        "label": {
+          "en": "Variant distinction",
+          "sw": "Tofauti ya matoleo"
+        },
+        "value": {
+          "en": "4A: fingerprint + face; 4B: face, no fingerprint",
+          "sw": "4A: alama za vidole na uso; 4B: uso, bila alama za vidole"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "AC PUSH, TA PUSH and BEST modes serve different platforms. Optional battery and capacities depend on the purchased configuration. Photo: 4A.",
+      "sw": "AC PUSH, TA PUSH na BEST hutegemea jukwaa. Betri ya hiari na uwezo hutegemea kifaa kilichoagizwa. Picha: 4A."
+    },
+    "classification": "current",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer specifications & documentation",
+          "sw": "Vipimo na nyaraka za mtengenezaji"
+        },
+        "url": "https://www.zkteco.com/en/SenseFaceSeries/SenseFace_4_Series"
+      }
+    ],
+    "related": [
+      "speedface-v5l",
+      "f18-pro"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "speedface-v5l",
+    "name": "SpeedFace-V5L Series",
+    "brand": "ZKTeco",
+    "category": "terminal",
+    "generation": "Manufacturer reference • reviewed 2 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/speedface-v5l.webp",
+        "alt": "SpeedFace-V5L Series — ZKTeco manufacturer photograph"
+      }
+    ],
+    "summary": {
+      "en": "Face-based entry with distinct fingerprint, RFID and QR variants. Suitable for assessed attendance or door-access installations.",
+      "sw": "Kuingia kwa utambuzi wa uso, pamoja na matoleo tofauti ya alama za vidole, RFID na QR. Kwa mahudhurio au udhibiti wa mlango uliotathminiwa."
+    },
+    "source": "https://www.zkteco.com/en/SpeedFaceSeries/SpeedFace-V5L-Series",
+    "variants": [
+      "SpeedFace-V5L",
+      "SpeedFace-V5L-RFID",
+      "SpeedFace-V5L [QR]"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Display",
+          "sw": "Skrini"
+        },
+        "value": {
+          "en": "5-inch",
+          "sw": "Inchi 5"
+        }
+      },
+      {
+        "label": {
+          "en": "Variant distinction",
+          "sw": "Tofauti ya matoleo"
+        },
+        "value": {
+          "en": "RFID model omits fingerprint; QR needs the QR variant",
+          "sw": "RFID haina alama za vidole; QR inahitaji toleo la QR"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Current ZAM230 family reference. Do not apply old same-name model capacities. Confirm firmware and AC PUSH/TA PUSH software compatibility. Photo: V5L.",
+      "sw": "Rejea ya familia ya ZAM230. Usitumie uwezo wa modeli za zamani zenye jina hilo. Hakiki firmware na programu ya AC PUSH/TA PUSH. Picha: V5L."
+    },
+    "classification": "current",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer specifications & documentation",
+          "sw": "Vipimo na nyaraka za mtengenezaji"
+        },
+        "url": "https://www.zkteco.com/en/SpeedFaceSeries/SpeedFace-V5L-Series"
+      }
+    ],
+    "related": [
+      "senseface-4a",
+      "inbio-pro-plus"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "inbio-pro-plus",
+    "name": "InBio Pro Plus Series",
+    "brand": "ZKTeco",
+    "category": "controller",
+    "generation": "Manufacturer reference • reviewed 2 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/inbio-pro-plus.webp",
+        "alt": "InBio Pro Plus Series — ZKTeco manufacturer photograph"
+      }
+    ],
+    "summary": {
+      "en": "Controller-based access for one, two or four doors, with compatible readers. The controller belongs in a protected location.",
+      "sw": "Udhibiti wa mlango mmoja, miwili au minne kwa readers zinazooana. Controller huwekwa sehemu iliyolindwa."
+    },
+    "source": "https://www.zkteco.com/en/InBioProPlusSeries/InBio_Pro_Plus_Series",
+    "variants": [
+      "InBio160 Pro Plus",
+      "InBio260 Pro Plus",
+      "InBio460 Pro Plus"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Door selection",
+          "sw": "Idadi ya milango"
+        },
+        "value": {
+          "en": "160: 1 / 260: 2 / 460: 4",
+          "sw": "160: 1 / 260: 2 / 460: 4"
+        }
+      },
+      {
+        "label": {
+          "en": "Network",
+          "sw": "Mtandao"
+        },
+        "value": {
+          "en": "TCP/IP",
+          "sw": "TCP/IP"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Verify reader protocol, firmware, lock power and licensed CVAccess/CVSecurity support. Photo shows InBio460 Pro Plus, not the complete door kit.",
+      "sw": "Hakiki protocol ya reader, firmware, umeme wa kufuli na leseni ya CVAccess/CVSecurity. Picha ni InBio460 Pro Plus; si seti kamili ya mlango."
+    },
+    "classification": "current",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer specifications & documentation",
+          "sw": "Vipimo na nyaraka za mtengenezaji"
+        },
+        "url": "https://www.zkteco.com/en/InBioProPlusSeries/InBio_Pro_Plus_Series"
+      }
+    ],
+    "related": [
+      "c3-plus",
+      "inbio-classic"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "inbio-classic",
+    "name": "InBio160 / 260 / 460",
+    "brand": "ZKTeco",
+    "category": "controller",
+    "generation": "Manufacturer reference • reviewed 2 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/inbio-classic.webp",
+        "alt": "InBio160 / 260 / 460 — ZKTeco manufacturer photograph"
+      }
+    ],
+    "summary": {
+      "en": "Older InBio controllers remain relevant when maintaining or assessing an existing installation. Identify the board and software before ordering replacements.",
+      "sw": "Controllers za awali za InBio zina umuhimu katika matengenezo ya mifumo iliyopo. Tambua board na programu kabla ya kuagiza mbadala."
+    },
+    "source": "https://www.zkteco.com/en/comparison?pid=145",
+    "variants": [
+      "InBio160",
+      "InBio260",
+      "InBio460"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Doors",
+          "sw": "Milango"
+        },
+        "value": {
+          "en": "1 / 2 / 4 respectively",
+          "sw": "1 / 2 / 4 kulingana na modeli"
+        }
+      },
+      {
+        "label": {
+          "en": "Reader interfaces",
+          "sw": "Miunganisho ya readers"
+        },
+        "value": {
+          "en": "RS485 / supported Wiegand",
+          "sw": "RS485 / Wiegand inayooana"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Not interchangeable with Pro Plus by name alone. Assess supported software and firmware; do not install unsupported legacy software. Photo: InBio160.",
+      "sw": "Jina pekee halimaanishi inabadilishana na Pro Plus. Hakiki programu na firmware zinazoungwa mkono. Picha: InBio160."
+    },
+    "classification": "existing",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer specifications & documentation",
+          "sw": "Vipimo na nyaraka za mtengenezaji"
+        },
+        "url": "https://www.zkteco.com/en/comparison?pid=145"
+      }
+    ],
+    "related": [
+      "inbio-pro-plus",
+      "c3-plus"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "c3-plus",
+    "name": "C3 Plus Series",
+    "brand": "ZKTeco",
+    "category": "controller",
+    "generation": "Manufacturer reference • reviewed 2 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/c3-plus.webp",
+        "alt": "C3 Plus Series — ZKTeco manufacturer photograph"
+      }
+    ],
+    "summary": {
+      "en": "Card-oriented multi-door control for offices and institutions using suitable readers and separately specified door hardware.",
+      "sw": "Udhibiti wa milango kwa kadi katika ofisi na taasisi, ukitumia readers zinazofaa na vifaa vya mlango vilivyoainishwa."
+    },
+    "source": "https://www.zkteco.com/en/C3PlusSeries/C3_Plus_Series",
+    "variants": [
+      "C3-100 Plus",
+      "C3-200 Plus",
+      "C3-400 Plus"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Model selection",
+          "sw": "Uchaguzi wa modeli"
+        },
+        "value": {
+          "en": "C3-100 / 200 / 400 Plus",
+          "sw": "C3-100 / 200 / 400 Plus"
+        }
+      },
+      {
+        "label": {
+          "en": "Architecture",
+          "sw": "Mpangilio"
+        },
+        "value": {
+          "en": "Separate controller and compatible readers",
+          "sw": "Controller tofauti na readers zinazooana"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Verify door count, reader format and software licence for the exact board. This is the Plus family, not the older C3. Photo: C3-400 Plus.",
+      "sw": "Hakiki milango, aina ya reader na leseni ya programu kwa board husika. Hii ni familia ya Plus, si C3 ya zamani. Picha: C3-400 Plus."
+    },
+    "classification": "current",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer specifications & documentation",
+          "sw": "Vipimo na nyaraka za mtengenezaji"
+        },
+        "url": "https://www.zkteco.com/en/C3PlusSeries/C3_Plus_Series"
+      }
+    ],
+    "related": [
+      "inbio-pro-plus",
+      "inbio-classic"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "ml100",
+    "name": "ML100",
+    "brand": "ZKTeco",
+    "category": "smart-lock",
+    "generation": "Manufacturer reference • reviewed 2 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/ml100.webp",
+        "alt": "ML100 — ZKTeco manufacturer photograph"
+      }
+    ],
+    "summary": {
+      "en": "Fingerprint, passcode and IC-card smart lock with ZSmart app management over compatible Wi-Fi. Check the door before selecting a lock.",
+      "sw": "Kufuli janja la alama za vidole, namba ya siri na kadi ya IC, likisimamiwa na ZSmart kupitia Wi-Fi inayooana. Kagua mlango kwanza."
+    },
+    "source": "https://www.zkteco.com/en/comparison?pid=586",
+    "variants": [
+      "ML100"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Door thickness",
+          "sw": "Unene wa mlango"
+        },
+        "value": {
+          "en": "35–60 mm",
+          "sw": "35–60 mm"
+        }
+      },
+      {
+        "label": {
+          "en": "Mortise",
+          "sw": "Mortise"
+        },
+        "value": {
+          "en": "European 5050",
+          "sw": "European 5050"
+        }
+      },
+      {
+        "label": {
+          "en": "Emergency power",
+          "sw": "Umeme wa dharura"
+        },
+        "value": {
+          "en": "Micro-USB",
+          "sw": "Micro-USB"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "ZSmart / 2.4GHz Wi-Fi. Not automatically compatible with HLMS or hotel PMS. Confirm battery supply and emergency access procedure at handover.",
+      "sw": "ZSmart / Wi-Fi ya 2.4GHz. Haioani moja kwa moja na kila HLMS au PMS ya hoteli. Hakiki betri na namna ya kufungua dharura."
+    },
+    "classification": "current",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer specifications & documentation",
+          "sw": "Vipimo na nyaraka za mtengenezaji"
+        },
+        "url": "https://www.zkteco.com/en/comparison?pid=586"
+      }
+    ],
+    "related": [
+      "sl01-t430h",
+      "lh4000"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "sl01-t430h",
+    "name": "SL01-T430H",
+    "brand": "ZKTeco",
+    "category": "smart-lock",
+    "generation": "Manufacturer reference • reviewed 2 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/sl01-t430h.webp",
+        "alt": "SL01-T430H — ZKTeco manufacturer photograph"
+      }
+    ],
+    "summary": {
+      "en": "Lever-handle smart lock for compatible wooden swing doors, with fingerprint, card, PIN, ZSmart app and mechanical-key access.",
+      "sw": "Kufuli lenye mpini kwa mlango wa mbao wa bawaba unaofaa; hufunguka kwa alama za vidole, kadi, PIN, ZSmart au ufunguo."
+    },
+    "source": "https://www.zkteco.com/en/comparison?pid=799",
+    "variants": [
+      "SL01-T430H"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Door thickness",
+          "sw": "Unene wa mlango"
+        },
+        "value": {
+          "en": "35–60 mm standard",
+          "sw": "35–60 mm toleo la kawaida"
+        }
+      },
+      {
+        "label": {
+          "en": "Backset / centres",
+          "sw": "Backset / nafasi"
+        },
+        "value": {
+          "en": "55 mm / 72 mm",
+          "sw": "55 mm / 72 mm"
+        }
+      },
+      {
+        "label": {
+          "en": "Emergency power",
+          "sw": "Umeme wa dharura"
+        },
+        "value": {
+          "en": "USB-C, DC 5V",
+          "sw": "USB-C, DC 5V"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "2.4GHz Wi-Fi; Bluetooth is for network configuration. Confirm mortise, handing, batteries and connectivity; do not assume hotel software support.",
+      "sw": "Wi-Fi ya 2.4GHz; Bluetooth ni kwa usanidi wa mtandao. Hakiki mortise, mwelekeo, betri na mtandao; usidhani inaunganishwa na programu yoyote ya hoteli."
+    },
+    "classification": "current",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer specifications & documentation",
+          "sw": "Vipimo na nyaraka za mtengenezaji"
+        },
+        "url": "https://www.zkteco.com/en/comparison?pid=799"
+      }
+    ],
+    "related": [
+      "ml100",
+      "lh4000"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "lh4000",
+    "name": "LH4000",
+    "brand": "ZKTeco",
+    "category": "hotel",
+    "generation": "Manufacturer reference • reviewed 2 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/lh4000.webp",
+        "alt": "LH4000 — ZKTeco manufacturer photograph"
+      }
+    ],
+    "summary": {
+      "en": "RFID hotel-room lock reference. Plan guest cards, reception encoder and the matching hotel lock management system together.",
+      "sw": "Rejea ya kufuli la RFID la chumba cha hoteli. Panga kadi za wageni, encoder ya mapokezi na programu inayoendana pamoja."
+    },
+    "source": "https://www.zkteco.com/en/LH4000",
+    "variants": [
+      "LH4000"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Application",
+          "sw": "Matumizi"
+        },
+        "value": {
+          "en": "Hotel guest-room access",
+          "sw": "Milango ya vyumba vya hoteli"
+        }
+      },
+      {
+        "label": {
+          "en": "System planning",
+          "sw": "Mpangilio"
+        },
+        "value": {
+          "en": "Lock + compatible encoder, cards and software",
+          "sw": "Kufuli + encoder, kadi na programu zinazoendana"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Verify HLMS / SmartLock version, lock firmware and encoder compatibility. PMS integration needs a separately confirmed interface and licence.",
+      "sw": "Hakiki toleo la HLMS / SmartLock, firmware ya kufuli na encoder. PMS inahitaji kiunganishi na leseni vilivyothibitishwa."
+    },
+    "classification": "current",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer specifications & documentation",
+          "sw": "Vipimo na nyaraka za mtengenezaji"
+        },
+        "url": "https://www.zkteco.com/en/LH4000"
+      },
+      {
+        "label": {
+          "en": "LH4000 datasheet (manufacturer PDF)",
+          "sw": "LH4000: maelezo ya mtengenezaji (PDF)"
+        },
+        "url": "https://www.zkteco-ea.com/wp-content/uploads/2023/12/LH4000.pdf"
+      }
+    ],
+    "related": [
+      "ml100",
+      "sl01-t430h"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "ts2000-plus",
+    "name": "TS2000 Plus Series",
+    "brand": "ZKTeco",
+    "category": "entrance",
+    "generation": "Manufacturer reference • reviewed 2 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/ts2000-plus.webp",
+        "alt": "TS2000 Plus Series — ZKTeco manufacturer photograph"
+      }
+    ],
+    "summary": {
+      "en": "Bidirectional tripod entrance control for assessed staff or institutional entrances. Include a separate accessible route in the entrance plan.",
+      "sw": "Turnstile ya mikono mitatu kwa udhibiti wa kuingia na kutoka kwa wafanyakazi au taasisi. Panga pia njia inayofikika kwa wenye uhitaji."
+    },
+    "source": "https://www.zkteco.com/en/TripodTurnstile/TS2000_Plus_Series",
+    "variants": [
+      "TS2000 Plus Series"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Lane width",
+          "sw": "Upana wa njia"
+        },
+        "value": {
+          "en": "550 mm",
+          "sw": "550 mm"
+        }
+      },
+      {
+        "label": {
+          "en": "Emergency arrangement",
+          "sw": "Mpangilio wa dharura"
+        },
+        "value": {
+          "en": "Drop-arm function; site-specific egress design",
+          "sw": "Mkono unaoshuka; njia ya dharura itathminiwe"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Readers, controller and software are selected separately. Ticketing, gym subscriptions and visitor systems require an integration assessment.",
+      "sw": "Readers, controller na programu huchaguliwa kulingana na mfumo. Tiketi, usajili wa gym na wageni vinahitaji tathmini ya uunganishaji."
+    },
+    "classification": "current",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer specifications & documentation",
+          "sw": "Vipimo na nyaraka za mtengenezaji"
+        },
+        "url": "https://www.zkteco.com/en/TripodTurnstile/TS2000_Plus_Series"
+      }
+    ],
+    "related": [
+      "inbio-pro-plus",
+      "speedface-v5l"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "c2-260",
+    "name": "C2-260",
+    "brand": "ZKTeco",
+    "category": "controller",
+    "generation": "Manufacturer reference • reviewed 2 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/c2-260.webp",
+        "alt": "C2-260 — ZKTeco manufacturer photograph"
+      }
+    ],
+    "summary": {
+      "en": "A compact two-door controller, expandable only with the specified optional modules. Plan readers and the software path before ordering.",
+      "sw": "Controller ndogo ya milango miwili, inayopanuka kwa modules za hiari zilizoainishwa tu. Panga readers na programu kabla ya kuagiza."
+    },
+    "source": "https://www.zkteco.com/en/C2Series/C2-260",
+    "variants": [
+      "C2-260"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Standard doors",
+          "sw": "Milango ya kawaida"
+        },
+        "value": {
+          "en": "2",
+          "sw": "2"
+        }
+      },
+      {
+        "label": {
+          "en": "Expansion",
+          "sw": "Upanuzi"
+        },
+        "value": {
+          "en": "Optional DM10 modules; up to 8 doors in supported configuration",
+          "sw": "DM10 za hiari; hadi milango 8 kwa mpangilio unaokubalika"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "RS485 readers; supported Wiegand readers need the specified WR485 bridge. Confirm exact software/version support.",
+      "sw": "Readers za RS485; Wiegand inayooana inahitaji WR485 iliyoainishwa. Hakiki programu na toleo husika."
+    },
+    "classification": "current",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer specifications & documentation",
+          "sw": "Vipimo na nyaraka za mtengenezaji"
+        },
+        "url": "https://www.zkteco.com/en/C2Series/C2-260"
+      }
+    ],
+    "related": [
+      "inbio-pro-plus",
+      "c3-plus"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "kr500",
+    "name": "KR500 Series",
+    "brand": "ZKTeco",
+    "category": "reader",
+    "generation": "Manufacturer reference • reviewed 2 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/kr500.webp",
+        "alt": "KR500 Series — ZKTeco manufacturer photograph"
+      }
+    ],
+    "summary": {
+      "en": "RFID reader family for a matching access controller. Reader, card technology and interface must agree.",
+      "sw": "Familia ya readers za RFID kwa controller inayolingana. Reader, aina ya kadi na interface lazima ziendane."
+    },
+    "source": "https://www.zkteco.com/en/KR500Series/KR500-Series",
+    "variants": [
+      "KR500 Series — confirm exact suffix"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Role",
+          "sw": "Kazi"
+        },
+        "value": {
+          "en": "Card credential reader; separate controller required",
+          "sw": "Reader ya kadi; controller tofauti inahitajika"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Confirm suffix, card frequency/format, output protocol and controller support. A reader alone is not a complete door-access system.",
+      "sw": "Hakiki suffix, frequency/format ya kadi, protocol na controller. Reader pekee si mfumo kamili wa mlango."
+    },
+    "classification": "current",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer specifications & documentation",
+          "sw": "Vipimo na nyaraka za mtengenezaji"
+        },
+        "url": "https://www.zkteco.com/en/KR500Series/KR500-Series"
+      }
+    ],
+    "related": [
+      "c3-plus",
+      "c2-260"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  }
+]

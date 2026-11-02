@@ -1,0 +1,212 @@
+{
+  "reviewed": "2026-11-02",
+  "manufacturer": [
+    {
+      "id": "f18",
+      "sourceUrl": "https://www.zkteco-ea.com/wp-content/uploads/2023/03/f18.png",
+      "sourcePage": "https://www.zkteco-ea.com/f18-zkteco/",
+      "original": "design-preview/media-originals/access-control/f18.png",
+      "output": "/images/access-control/f18.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "3e666ec234e060e12061a3941e83b8f743e2a98fbb3c16f03fd3dec42ae152c9",
+      "rights": "Manufacturer photography; owner reports telephone authorization from authorized dealers for BM sales presentation. Dealer identity and written confirmation pending; no distributorship claim.",
+      "webSha256": "8ca98b1237d83bc90cd75b076a618b58020dfefd4c5c0f37b11d2bd90ef2e7af",
+      "webBytes": 12284
+    },
+    {
+      "id": "f18-pro",
+      "sourceUrl": "https://s3.zktecoip.com/images/20260323/F18%20Pro-02.jpg",
+      "sourcePage": "https://www.zkteco.com/en/FSeries/F18_Pro",
+      "original": "design-preview/media-originals/access-control/f18-pro.jpg",
+      "output": "/images/access-control/f18-pro.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "95aa37a457cb533abd9e99ea900ac00b47baedeec62e08e56ea730e5fba98bea",
+      "rights": "Manufacturer photography; owner reports telephone authorization from authorized dealers for BM sales presentation. Dealer identity and written confirmation pending; no distributorship claim.",
+      "webSha256": "f44db0de5cb1edfcea11dfa35d98c4f05a2403b24bb154b9a552934dfe5e851b",
+      "webBytes": 10958
+    },
+    {
+      "id": "senseface-4a",
+      "sourceUrl": "https://www.zkteco-ea.com/wp-content/uploads/2024/06/SenseFace-4A_front_Fingerprint-light-1.png",
+      "sourcePage": "https://www.zkteco-ea.com/visible-light-facial-recognition/",
+      "original": "design-preview/media-originals/access-control/senseface-4a.png",
+      "output": "/images/access-control/senseface-4a.webp",
+      "width": 6240,
+      "height": 3512,
+      "sha256": "f505c4408bbff70b5615ed6fb601ee2880378d617b51eedc3b002c8166a8f9ec",
+      "rights": "Manufacturer photography; owner reports telephone authorization from authorized dealers for BM sales presentation. Dealer identity and written confirmation pending; no distributorship claim.",
+      "webSha256": "edcdcd1d5d1e2fd2fe42ee353cef04832050b4273ccc0e4545fd847c2104c97d",
+      "webBytes": 9916
+    },
+    {
+      "id": "speedface-v5l",
+      "sourceUrl": "https://s3.zktecoip.com/images/20250805/SpeedFace-V5L-01.jpg",
+      "sourcePage": "https://www.zkteco.com/en/SpeedFaceSeries/SpeedFace-V5L-Series",
+      "original": "design-preview/media-originals/access-control/speedface-v5l.jpg",
+      "output": "/images/access-control/speedface-v5l.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "13a18252f2e46748f8a6d8f6856cfb6920c7fb76eede3fe376befcff42e383f0",
+      "rights": "Manufacturer photography; owner reports telephone authorization from authorized dealers for BM sales presentation. Dealer identity and written confirmation pending; no distributorship claim.",
+      "webSha256": "d356b92fe9270de2f7fd04f3579fc36259ba2aefdebd9d128e4093d6b6307d2f",
+      "webBytes": 12182
+    },
+    {
+      "id": "inbio-pro-plus",
+      "sourceUrl": "https://s3.zktecoip.com/images/20250821/inBio%20460%20Pro%20Plus-01.jpg",
+      "sourcePage": "https://www.zkteco.com/en/InBioProPlusSeries/InBio_Pro_Plus_Series",
+      "original": "design-preview/media-originals/access-control/inbio-pro-plus.jpg",
+      "output": "/images/access-control/inbio-pro-plus.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "4cc08c55d2234c4d96d626471aaa4254e48426c7c39057c9cdb3401f623ffae2",
+      "rights": "Manufacturer photography; owner reports telephone authorization from authorized dealers for BM sales presentation. Dealer identity and written confirmation pending; no distributorship claim.",
+      "webSha256": "d2e423961c4bb5bfa3e764c6469604f5581bd6cec64cddc7a323668132980feb",
+      "webBytes": 10578
+    },
+    {
+      "id": "inbio-classic",
+      "sourceUrl": "https://www.zkteco-ea.com/wp-content/uploads/2023/03/inBIO160-1.png",
+      "sourcePage": "https://www.zkteco-ea.com/inbio-series/",
+      "original": "design-preview/media-originals/access-control/inbio-classic.png",
+      "output": "/images/access-control/inbio-classic.webp",
+      "width": 705,
+      "height": 705,
+      "sha256": "877d45a58db99b1681b1293cd1bf80b9d7f1b33041ec4e717170c9ca068e7871",
+      "rights": "Manufacturer photography; owner reports telephone authorization from authorized dealers for BM sales presentation. Dealer identity and written confirmation pending; no distributorship claim.",
+      "webSha256": "ea61a181a3a6ba2e2629df85f576afafa54472e65fc3ef93b48b79b783232db0",
+      "webBytes": 21652
+    },
+    {
+      "id": "c3-plus",
+      "sourceUrl": "https://s3.zktecoip.com/images/20240904/C3-400%20Plus-01.jpg",
+      "sourcePage": "https://www.zkteco.com/en/C3PlusSeries/C3_Plus_Series",
+      "original": "design-preview/media-originals/access-control/c3-plus.jpg",
+      "output": "/images/access-control/c3-plus.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "dc8b9731e00d2e5bd47a509f449fcd2dec469f854bc924618e5a820bc756103a",
+      "rights": "Manufacturer photography; owner reports telephone authorization from authorized dealers for BM sales presentation. Dealer identity and written confirmation pending; no distributorship claim.",
+      "webSha256": "cfb4154f5fc71be92629d1e0f640d1de07522be4c802bffb3c4aa40b5e8eb0d5",
+      "webBytes": 34840
+    },
+    {
+      "id": "ml100",
+      "sourceUrl": "https://s3.zktecoip.com/images/20240329/ML100-A.jpg",
+      "sourcePage": "https://www.zkteco.com/en/comparison?pid=586",
+      "original": "design-preview/media-originals/access-control/ml100.jpg",
+      "output": "/images/access-control/ml100.webp",
+      "width": 400,
+      "height": 230,
+      "sha256": "0ffb00faa236d1c494c6180c703eac7ecd6c3886a4ddd9321a7971defb3ae878",
+      "rights": "Manufacturer photography; owner reports telephone authorization from authorized dealers for BM sales presentation. Dealer identity and written confirmation pending; no distributorship claim.",
+      "webSha256": "5f7424ae9b1017de1a2642a277c1f793a1fc2b1645266fa89ce01be6f80ccb9f",
+      "webBytes": 1524
+    },
+    {
+      "id": "sl01-t430h",
+      "sourceUrl": "https://s3.zktecoip.com/images/20240719/SL01-T430H-A.jpg",
+      "sourcePage": "https://www.zkteco.com/en/comparison?pid=799",
+      "original": "design-preview/media-originals/access-control/sl01-t430h.jpg",
+      "output": "/images/access-control/sl01-t430h.webp",
+      "width": 400,
+      "height": 230,
+      "sha256": "ba6a64d82cfe3532cca2572964d94e286958a3f72050ca7801d9629caa35509e",
+      "rights": "Manufacturer photography; owner reports telephone authorization from authorized dealers for BM sales presentation. Dealer identity and written confirmation pending; no distributorship claim.",
+      "webSha256": "fb49ab61dd94ce6514451f756a141a00d93f36e88fe04e56ca1e121cc50b7b27",
+      "webBytes": 1332
+    },
+    {
+      "id": "lh4000",
+      "sourceUrl": "https://www.zkteco-ea.com/wp-content/uploads/2023/03/LH4000.png",
+      "sourcePage": "https://www.zkteco-ea.com/hotel-lock-system/",
+      "original": "design-preview/media-originals/access-control/lh4000.png",
+      "output": "/images/access-control/lh4000.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "e2b61c5bf458e2f4e1e05eae82d3c2f93507fd71f111be9ca42fbcb202c9b47b",
+      "rights": "Manufacturer photography; owner reports telephone authorization from authorized dealers for BM sales presentation. Dealer identity and written confirmation pending; no distributorship claim.",
+      "webSha256": "6d6b2075fd548ac77615918795114ffb8a9d431c803aada1907d1afa9dcba016",
+      "webBytes": 9376
+    },
+    {
+      "id": "ts2000-plus",
+      "sourceUrl": "https://s3.zktecoip.com/images/20240930/TS2000%20Plus%20Series-04.jpg",
+      "sourcePage": "https://www.zkteco.com/en/TripodTurnstile/TS2000_Plus_Series",
+      "original": "design-preview/media-originals/access-control/ts2000-plus.jpg",
+      "output": "/images/access-control/ts2000-plus.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "711470d24b11a8256df21a533a85223d29a08c16ef8787b9da63342f3141c156",
+      "rights": "Manufacturer photography; owner reports telephone authorization from authorized dealers for BM sales presentation. Dealer identity and written confirmation pending; no distributorship claim.",
+      "webSha256": "19ae183bba5844ec5ced7f27e310a5f6e2b7fb1ed2778aca1591ec86b1bd7f84",
+      "webBytes": 4860
+    },
+    {
+      "id": "c2-260",
+      "sourceUrl": "https://s3.zktecoip.com/images/20211213/f4d40c88378d1fc023c31a18d06af307.png",
+      "sourcePage": "https://www.zkteco.com/en/C2Series/C2-260",
+      "original": "design-preview/media-originals/access-control/c2-260.png",
+      "output": "/images/access-control/c2-260.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "decefc139db4a588240dd12c5a1ee18f558d87b2e1d7040ba51e23716d0596af",
+      "rights": "Manufacturer photography; owner reports telephone authorization from authorized dealers for BM sales presentation. Dealer identity and written confirmation pending; no distributorship claim.",
+      "webSha256": "7aae4156434ca6f5a5baa36d74431e626b4a112d6bb47ed31f1f3be6156590c8",
+      "webBytes": 13968
+    },
+    {
+      "id": "kr500",
+      "sourceUrl": "https://s3.zktecoip.com/images/20211214/750294dd83d041cb026e3ef1ee3f846d.png",
+      "sourcePage": "https://www.zkteco.com/en/KR500Series/KR500-Series",
+      "original": "design-preview/media-originals/access-control/kr500.png",
+      "output": "/images/access-control/kr500.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "cda664c94789fda028bc94e6fdcab918ae9617878c47a72436b408276b7aae94",
+      "rights": "Manufacturer photography; owner reports telephone authorization from authorized dealers for BM sales presentation. Dealer identity and written confirmation pending; no distributorship claim.",
+      "webSha256": "37308798e0448b1ee0e028b46305c81982722754ea96f083daac95170b1c3478",
+      "webBytes": 45850
+    }
+  ],
+  "scenes": [
+    {
+      "id": "workplace",
+      "source": "OpenAI image generation, 2 November 2026",
+      "original": "design-preview/media-originals/access-control/workplace.png",
+      "usage": "Fictional illustrative environment and people, not a BM project, client or branded equipment photograph.",
+      "derivatives": [
+        "/images/access-control/workplace-640.webp",
+        "/images/access-control/workplace-960.webp",
+        "/images/access-control/workplace-1440.webp"
+      ],
+      "originalSha256": "75a720bc1ed623ca48ed1450d02fa0d8896a4e33caf5512bf9c3309835289a01",
+      "derivativeBytes": {
+        "/images/access-control/workplace-640.webp": 41980,
+        "/images/access-control/workplace-960.webp": 75286,
+        "/images/access-control/workplace-1440.webp": 130186
+      },
+      "creativeBrief": "Fictional East African professionals arriving at an elegant Tanzanian tour-office entrance; warm limestone, ivory/graphite architecture, discreet unbranded reader; natural people; no text, logo, uniform or real client/project claim."
+    },
+    {
+      "id": "hotel",
+      "source": "OpenAI image generation, 2 November 2026",
+      "original": "design-preview/media-originals/access-control/hotel.png",
+      "usage": "Fictional illustrative environment and people, not a BM project, client or branded equipment photograph.",
+      "derivatives": [
+        "/images/access-control/hotel-640.webp",
+        "/images/access-control/hotel-960.webp",
+        "/images/access-control/hotel-1440.webp"
+      ],
+      "originalSha256": "5248e9e708447af307768528225e9b1f60062f50dec381376c61acff1c82b32a",
+      "derivativeBytes": {
+        "/images/access-control/hotel-640.webp": 38686,
+        "/images/access-control/hotel-960.webp": 73232,
+        "/images/access-control/hotel-1440.webp": 137114
+      },
+      "creativeBrief": "Fictional hotel manager welcoming a guest at a refined Arusha lodge guestroom; warm wood/stone, unbranded RFID-style handle; no actual BM installation or branded-device claim."
+    }
+  ]
+}

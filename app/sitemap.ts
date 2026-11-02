@@ -35,6 +35,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
  const {centurionProducts}=await import('@/lib/catalogue/provider');
  add('/catalogue/centurion',true);
  for(const product of await centurionProducts())add('/catalogue/centurion/'+product.slug,true);
+ const {zktecoProducts}=await import('@/lib/catalogue/zkteco');
+ add('/catalogue/zkteco',true);
+ for(const product of zktecoProducts)add('/catalogue/zkteco/'+product.slug,true);
+ const access=services.find(service=>service.slug==='access-control');
+ if(!access || access.isPublished){
+  add('/services/access-control/time-attendance',true,access?.updatedAt);
+  add('/services/access-control/smart-locks',true,access?.updatedAt);
+ }
  products.forEach(p=>add("/products/"+p.slug,false,p.updatedAt));
  packages.forEach(p=>add("/cctv-packages/"+p.slug,false,p.updatedAt));
  const articleSlugs=new Set(articles.map(a=>a.slug));
