@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "staff-attendance-for-tanzanian-businesses",
+    "service": "access-control",
+    "image": "/images/access-control/hr-office-1440.webp",
+    "alt": {
+      "en": "Office managers planning staff attendance",
+      "sw": "Wasimamizi wa ofisi wakipanga mahudhurio ya wafanyakazi"
+    },
+    "category": {
+      "en": "ATTENDANCE",
+      "sw": "MAHUDHURIO"
+    },
+    "title": {
+      "en": "Before buying an attendance machine, ask these three questions.",
+      "sw": "Kabla ya kununua mashine ya mahudhurio, jiulize haya."
+    },
+    "summary": {
+      "en": "A short guide for offices, hotels and growing businesses in Tanzania: start with your shifts and reports, then choose the equipment.",
+      "sw": "Mwongozo mfupi kwa ofisi, hoteli na biashara zinazokua Tanzania: anza na zamu na ripoti unazohitaji, kisha chagua vifaa."
+    },
+    "sections": [
+      {
+        "title": {
+          "en": "1. What do you need to know each day?",
+          "sw": "1. Unahitaji kujua nini kila siku?"
+        },
+        "text": {
+          "en": "For an office, it may be arrivals and late attendance. A hotel may need overnight shifts, days off and approved overtime. Write down your actual working patterns before comparing machines. A fingerprint or face terminal records events; it does not decide your employment policies.",
+          "sw": "Ofisi inaweza kuhitaji taarifa za waliofika na waliochelewa. Hoteli inaweza kuhitaji zamu za usiku, mapumziko na muda wa ziada ulioidhinishwa. Andika ratiba zako halisi kabla ya kulinganisha mashine. Mashine hurekodi matukio; haiamui sera za kazi."
+        }
+      },
+      {
+        "title": {
+          "en": "2. One site, or several branches?",
+          "sw": "2. Eneo moja au matawi kadhaa?"
+        },
+        "text": {
+          "en": "Confirm how records will reach the person preparing reports. USB collection, a local network and a managed online system have different practical requirements. If internet or power is interrupted, ask how the selected terminal stores records and synchronizes later. Do not assume every model supports Wi-Fi or every software edition.",
+          "sw": "Hakiki namna rekodi zitakavyomfikia anayetoa ripoti. USB, mtandao wa ndani na mfumo wa mtandaoni vina mahitaji tofauti. Umeme au intaneti ikikatika, uliza kifaa kinahifadhi vipi rekodi na kuzituma baadaye. Si kila modeli ina Wi-Fi au inaoana na kila toleo la programu."
+        }
+      },
+      {
+        "title": {
+          "en": "3. Who checks and approves the report?",
+          "sw": "3. Nani anakagua na kuidhinisha ripoti?"
+        },
+        "text": {
+          "en": "Ask for a demonstration using your shift pattern, including missed punches and overnight work. Agree who may see staff records, correct exceptions and export reports. Keep access limited and explain the system to staff. Attendance data needs review before it is used for payroll; payroll integration is a separate scope.",
+          "sw": "Omba maonyesho kwa ratiba yako, pamoja na rekodi zilizokosekana na zamu za usiku. Kubaliana nani anaona taarifa, anasahihisha makosa na kutoa ripoti. Dhibiti ruhusa na waeleze wafanyakazi matumizi ya mfumo. Ripoti zikaguliwe kabla ya mishahara; muunganisho wa payroll ni kazi tofauti."
+        }
+      }
+    ],
+    "cta": {
+      "en": "Tell BM your staff count, locations and shifts. We can scope the terminal, software, installation and training in one quotation.",
+      "sw": "Tuambie idadi ya wafanyakazi, maeneo na zamu. BM inaweza kuainisha mashine, programu, ufungaji na mafunzo kwenye nukuu moja."
+    },
+    "source": "https://www.zkteco-ea.com/biotime9-5/",
+    "reviewed": "2026-11-04",
+    "published": true
+  },
+  {
+    "slug": "door-access-control-office-checklist",
+    "service": "access-control",
+    "image": "/images/access-control/workplace-1440.webp",
+    "alt": {
+      "en": "Contemporary office entrance and workplace",
+      "sw": "Mlango na mazingira ya ofisi ya kisasa"
+    },
+    "category": {
+      "en": "DOOR ACCESS",
+      "sw": "UDHIBITI WA MILANGO"
+    },
+    "title": {
+      "en": "A secure office door needs more than a fingerprint reader.",
+      "sw": "Usalama wa mlango wa ofisi ni zaidi ya reader ya fingerprint."
+    },
+    "summary": {
+      "en": "Reader, lock, controller and exit arrangements: a simple checklist for planning office access control in Moshi, Arusha and beyond.",
+      "sw": "Reader, kufuli, controller na njia ya kutoka: mambo ya kuangalia unapopanga access control ya ofisi Moshi, Arusha na maeneo mengine."
+    },
+    "sections": [
+      {
+        "title": {
+          "en": "Start with the door and the people.",
+          "sw": "Anza na mlango na watumiaji."
+        },
+        "text": {
+          "en": "A glass reception door, a timber office door and an outdoor staff entrance may need different locks and fixings. Decide who should enter, at what times, and how visitors are received. A site assessment should inspect the door condition and cable route before selecting equipment.",
+          "sw": "Mlango wa kioo wa mapokezi, wa mbao wa ofisi na mlango wa nje wa wafanyakazi vinaweza kuhitaji makufuli na vifaa tofauti. Amua nani aingie, muda gani na wageni wapokelewe vipi. Tathmini iangalie hali ya mlango na njia za nyaya kabla ya kuchagua vifaa."
+        }
+      },
+      {
+        "title": {
+          "en": "Plan a complete system.",
+          "sw": "Panga mfumo kamili."
+        },
+        "text": {
+          "en": "The reader identifies a credential; a compatible controller applies access rules; the lock secures the door. Include the power supply, exit button, door sensor and suitable backup where required. An IP-rated outdoor reader still needs properly sealed cable entries. Confirm the exact card technology and firmware before reusing existing readers.",
+          "sw": "Reader hutambua kadi au alama; controller inayooana hutekeleza ruhusa; kufuli hufunga mlango. Jumuisha power supply, kitufe cha kutoka, sensor ya mlango na umeme wa akiba inapohitajika. Reader ya nje yenye IP rating bado inahitaji nyaya zilizofungwa vizuri. Hakiki aina ya kadi na firmware kabla ya kutumia tena vifaa vya zamani."
+        }
+      },
+      {
+        "title": {
+          "en": "Test exit and power-loss behaviour.",
+          "sw": "Jaribu kutoka na umeme unapokatika."
+        },
+        "text": {
+          "en": "Emergency exit and power-loss behaviour must be assessed for the specific door and building. Ask for a practical handover: approved entry, denied entry, normal exit and the agreed emergency procedure. Avoid choosing a lock only by its appearance or advertised holding force.",
+          "sw": "Njia ya dharura na namna mfumo unavyofanya kazi umeme ukikatika vitathminiwe kwa mlango na jengo husika. Wakati wa makabidhiano, jaribu ruhusa ya kuingia, kukataliwa, kutoka kawaida na utaratibu wa dharura uliokubaliwa. Usichague kufuli kwa mwonekano au nguvu iliyotangazwa pekee."
+        }
+      }
+    ],
+    "cta": {
+      "en": "Send BM the door type, number of entrances and required access hours. Request a site survey for a complete installed-system quotation.",
+      "sw": "Tuma aina ya milango, idadi ya sehemu za kuingia na saa za ruhusa. Omba tathmini ya eneo kwa nukuu ya mfumo kamili."
+    },
+    "source": "https://www.zkteco.com/en/BiometricReader/FR1500S",
+    "reviewed": "2026-11-04",
+    "published": true
+  },
+  {
+    "slug": "security-screening-choose-the-right-tool",
+    "service": "access-control",
+    "image": "/images/access-control/zk-d180.webp",
+    "alt": {
+      "en": "ZKTeco ZK-D180 handheld metal detector",
+      "sw": "Detector ya chuma ya mkononi ya ZKTeco ZK-D180"
+    },
+    "category": {
+      "en": "SECURITY SCREENING",
+      "sw": "UKAGUZI WA USALAMA"
+    },
+    "title": {
+      "en": "Metal detector, inspection mirror or X-ray: which job needs which tool?",
+      "sw": "Detector ya chuma, kioo au X-ray: kila kifaa kina kazi gani?"
+    },
+    "summary": {
+      "en": "A clear starting point for hotels, institutions and controlled entrances. These tools do different jobs and need a planned inspection procedure.",
+      "sw": "Mwongozo kwa hoteli, taasisi na malango yenye ukaguzi. Vifaa hivi vina kazi tofauti na vinahitaji utaratibu wa matumizi."
+    },
+    "sections": [
+      {
+        "title": {
+          "en": "People: handheld metal detection.",
+          "sw": "Watu: detector ya chuma ya mkononi."
+        },
+        "text": {
+          "en": "A model such as ZK-D180 helps trained staff check for metal objects using visual and selectable sound or vibration alerts. It does not detect every prohibited item. Agree a respectful inspection procedure and demonstrate settings with suitable test objects before use.",
+          "sw": "ZK-D180 husaidia walinzi waliofunzwa kukagua vitu vya chuma kwa viashiria vya mwanga na sauti au mtetemo. Haigundui kila kitu kilichokatazwa. Panga ukaguzi wenye heshima na fanya maonyesho ya settings kwa vitu vya majaribio vinavyofaa."
+        }
+      },
+      {
+        "title": {
+          "en": "Vehicles: a visual check underneath.",
+          "sw": "Magari: ukaguzi wa macho wa sehemu ya chini."
+        },
+        "text": {
+          "en": "A wheeled mirror such as ZK-M3 lets an operator see parts of the vehicle underside. Light, positioning and a safe inspection area matter. It is a manual visual aid, not automatic detection or proof that a vehicle is safe.",
+          "sw": "Kioo chenye magurudumu kama ZK-M3 humwezesha mlinzi kuona sehemu ya chini ya gari. Mwanga, mpangilio na eneo salama la ukaguzi ni muhimu. Ni msaada wa macho, si mfumo wa kugundua vitu moja kwa moja wala uthibitisho wa usalama wa gari."
+        }
+      },
+      {
+        "title": {
+          "en": "Baggage: specialist X-ray screening.",
+          "sw": "Mizigo: ukaguzi maalumu wa X-ray."
+        },
+        "text": {
+          "en": "ZKX6040 is a baggage X-ray reference with a 600 × 400mm tunnel. It is a different class of system from a handheld detector. Space, power, trained operators, radiation-safety requirements and applicable local approvals need specialist review before procurement. Confirm the full scope and support arrangement rather than ordering by model name alone.",
+          "sw": "ZKX6040 ni rejea ya X-ray ya mizigo yenye tundu la 600 × 400mm. Ni mfumo tofauti na detector ya mkononi. Nafasi, umeme, mafunzo, usalama wa mionzi na vibali vinavyohitajika vinahitaji tathmini ya mtaalamu kabla ya ununuzi. Hakiki kazi nzima na msaada badala ya kuagiza kwa jina pekee."
+        }
+      }
+    ],
+    "cta": {
+      "en": "Tell BM what you need to inspect, the entrance layout and expected traffic. We will confirm equipment availability and the assessment needed.",
+      "sw": "Tuambie unachotaka kukagua, mpangilio wa lango na wingi wa watumiaji. Tutahakiki upatikanaji wa vifaa na tathmini inayohitajika."
+    },
+    "source": "https://zkteco.technology/en/product/zk-d180/",
+    "reviewed": "2026-11-04",
+    "published": true
+  }
+]
