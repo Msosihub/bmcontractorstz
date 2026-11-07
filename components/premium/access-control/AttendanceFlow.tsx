@@ -77,6 +77,7 @@ export function AttendanceFlow({ lang }: { lang: Language }) {
     <section
       ref={ref}
       className="ac-section ac-attendance-flow"
+      data-playing={playing && visible && !reduced}
       aria-labelledby="attendance-flow-title"
     >
       <p className="eyebrow">
@@ -85,6 +86,76 @@ export function AttendanceFlow({ lang }: { lang: Language }) {
       <h2 id="attendance-flow-title">
         {sw ? "Fuata rekodi moja." : "Follow one attendance record."}
       </h2>
+      <p className="ac-flow-intro">
+        {sw
+          ? "Kutoka mashineni hadi kwa msimamizi. Bonyeza kuonyesha mtiririko au chagua hatua yoyote."
+          : "From the attendance machine to your manager. Play the sequence or choose any step."}
+      </p>
+      <svg
+        className="ac-flow-diagram"
+        viewBox="0 0 720 130"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path className="ac-flow-track" d="M74 111H646" />
+        <path className="ac-flow-progress" d={`M74 111H${74 + step * 143}`} />
+        {[0, 1, 2, 3, 4].map((i) => (
+          <g
+            key={i}
+            transform={`translate(${74 + i * 143} 65)`}
+            data-active={i === step}
+          >
+            <circle className="ac-flow-halo" r="43" />
+            <circle className="ac-flow-node" r="32" />
+            <g
+              className="ac-flow-icon"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              {i === 0 && (
+                <>
+                  <rect x="-14" y="-20" width="28" height="40" rx="4" />
+                  <path d="M-7-12H7M-5 2a5 5 0 0 1 10 0v7M-2 1v9M2 13v-6" />
+                </>
+              )}
+              {i === 1 && (
+                <>
+                  <path d="M-21-7a30 30 0 0 1 42 0M-14 1a20 20 0 0 1 28 0M-6 9a9 9 0 0 1 12 0" />
+                  <circle cy="17" r="1" />
+                </>
+              )}
+              {i === 2 && (
+                <>
+                  <rect x="-18" y="-19" width="36" height="16" rx="3" />
+                  <rect x="-18" y="3" width="36" height="16" rx="3" />
+                  <path d="M-10-11h1M-4-11H9M-10 11h1M-4 11H9" />
+                </>
+              )}
+              {i === 3 && (
+                <>
+                  <rect x="-21" y="-16" width="42" height="28" rx="3" />
+                  <path d="M0 12v8M-10 20h20M-8-2l5 5 11-11" />
+                </>
+              )}
+              {i === 4 && (
+                <>
+                  <path d="M-14-21H7l9 9v33h-30zM7-21v10h9M-7 12V5M0 12V-2M7 12V1" />
+                </>
+              )}
+            </g>
+          </g>
+        ))}
+        <circle
+          className="ac-flow-packet"
+          r="5"
+          cy="111"
+          cx="74"
+          style={{ transform: `translateX(${step * 143}px)` }}
+        />
+      </svg>
       <ol className="ac-flow-steps">
         {steps.map(([title, body], i) => (
           <li key={title} data-active={step === i}>
@@ -97,6 +168,7 @@ export function AttendanceFlow({ lang }: { lang: Language }) {
         <button
           type="button"
           disabled={reduced}
+          aria-pressed={playing}
           onClick={() => {
             if (step === 4) setStep(0);
             setPlaying(!playing);

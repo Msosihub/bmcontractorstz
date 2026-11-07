@@ -336,7 +336,14 @@
       "height": 913,
       "sha256": "6352459889278e640b8948c6cf8145170f6c21f60addd3360a3608cd6b76ca46",
       "webSha256": "ed33bc66e3e38070378c405b414d0d65c7cff86c9854b1bce0160fada91215c9",
-      "rights": "Owner-reported dealer permission; manufacturer media reused without altered interface or product identity. No official dealership claim."
+      "rights": "Owner-reported dealer permission; manufacturer media reused without altered interface or product identity. No official dealership claim.",
+      "attendanceDetailDerivative": {
+        "output": "/images/access-control/biotime-dashboard-detail.webp",
+        "width": 3830,
+        "bytes": 93980,
+        "sha256": "d5ad5d57699af5c95f63a921b6e0570b19ae7bb073aa1a6d8e41ef28b82174c8",
+        "usage": "Full-resolution optimized original marketing media. CSS viewport displays the genuine dashboard area without generative alteration; attribution retained. Catalogue image unchanged."
+      }
     },
     {
       "id": "biotime-cloud",
@@ -361,6 +368,150 @@
       "sha256": "0b375c31e451dd57e141e4265f8b67c01dcf3b17d65d43505be8b2a9460bbafe",
       "webSha256": "bac21be1dbdffedba35d4079105af897aee6a340a3150b1e004e12e849372971",
       "rights": "Owner-reported dealer permission; manufacturer media reused without altered interface or product identity. No official dealership claim."
+    },
+    {
+      "id": "ll-03",
+      "sourceUrl": "https://zkteco.technology/wp-content/uploads/ll-02.jpg",
+      "sourcePage": "https://zkteco.technology/en/product/ll-03-2/",
+      "original": "design-preview/media-originals/access-control/ll-03.jpg",
+      "output": "/images/access-control/ll-03.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "729bbfc3a78caf0e796a34d62bb9b471f640a32383bc373e72f1b026b96f7bf0",
+      "webSha256": "b835a9522f01544b103f1062afe8e9e97af37a6cafbd68117ca3e8933854027e",
+      "rights": "Owner-reported supplier permission for manufacturer product imagery. No official dealership or BM stock claim. Original product identity retained.",
+      "note": "Source LL-03 page reuses ll-02.jpg. Presented explicitly as LL Series family photography, not proof of exact LL-03 reader or sensor configuration."
+    },
+    {
+      "id": "fht2400",
+      "sourceUrl": "https://zkteco.technology/wp-content/uploads/2022/01/ba5a0e7cc2e335091d07a12d8e3e618e.png",
+      "sourcePage": "https://zkteco.technology/en/product/fht2400/",
+      "original": "design-preview/media-originals/access-control/fht2400.png",
+      "output": "/images/access-control/fht2400.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "edffa12a177c091e1969a56e4b49b9650db754eed0a6127ed06051f4d48b8aed",
+      "webSha256": "bf062f607bc47932c14c93daf044ef3545bd7f4933afa2cd539ed228ac97f633",
+      "rights": "Owner-reported supplier permission for manufacturer product imagery. No official dealership or BM stock claim. Original product identity retained."
+    },
+    {
+      "id": "uhf5-pro",
+      "sourceUrl": "https://zkteco.technology/wp-content/uploads/2022/01/0c829c341e2736b2420afe6c58c3a054.jpg",
+      "sourcePage": "https://zkteco.technology/en/product/uhf5-pro/",
+      "original": "design-preview/media-originals/access-control/uhf5-pro.jpg",
+      "output": "/images/access-control/uhf5-pro.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "7b7efb7e8e5bf41fa4b309e390d6ad856cdf861558f4a9635a85a56b23b047d2",
+      "webSha256": "0558d8d04ae04fa7f993101b8c9e8670807b5fbe69109091dfaa1bbeb9b975ea",
+      "rights": "Owner-reported supplier permission for manufacturer product imagery. No official dealership or BM stock claim. Original product identity retained.",
+      "note": "Manufacturer reuses UHF Pro family image for UHF5 Pro and UHF10 Pro."
+    },
+    {
+      "id": "uhf10-pro",
+      "sourceUrl": "https://zkteco.technology/wp-content/uploads/2022/01/0c829c341e2736b2420afe6c58c3a054.jpg",
+      "sourcePage": "https://zkteco.technology/en/product/uhf10-pro/",
+      "original": "design-preview/media-originals/access-control/uhf10-pro.jpg",
+      "output": "/images/access-control/uhf10-pro.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "7b7efb7e8e5bf41fa4b309e390d6ad856cdf861558f4a9635a85a56b23b047d2",
+      "webSha256": "0558d8d04ae04fa7f993101b8c9e8670807b5fbe69109091dfaa1bbeb9b975ea",
+      "rights": "Owner-reported supplier permission for manufacturer product imagery. No official dealership or BM stock claim. Original product identity retained.",
+      "note": "Manufacturer reuses UHF Pro family image for UHF5 Pro and UHF10 Pro."
+    },
+    {
+      "id": "zk8500r",
+      "sourceUrl": "https://zkteco.technology/wp-content/uploads/2022/01/caf2657213667fd98e79204e5f423ca8.png",
+      "sourcePage": "https://zkteco.technology/en/product/reader/",
+      "original": "design-preview/media-originals/access-control/zk8500r.png",
+      "output": "/images/access-control/zk8500r.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "9850b614c9edfa7e708570db3f7c63a242dd4945a1bf5029fa9ab470db203d2e",
+      "webSha256": "e9a9e4f2a13ad3d81fd7c6a3b27dca32f24cdc1758e50b6e6a5e8af561cc5042",
+      "rights": "Owner-reported supplier permission for manufacturer product imagery. No official dealership or BM stock claim. Original product identity retained."
+    },
+    {
+      "id": "fr1500s",
+      "sourceUrl": "https://zkteco.technology/wp-content/uploads/2022/01/b5695b239b3b1708ea6f72c05a6071e0.png",
+      "sourcePage": "https://zkteco.technology/en/product/fr1500s/",
+      "original": "design-preview/media-originals/access-control/fr1500s.png",
+      "output": "/images/access-control/fr1500s.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "4432d8fa3efc14c22ab2ec0cbf56d6280cb46115bee35c5b2e1d8a56be694d14",
+      "webSha256": "72b8a28ef34076579249e7cdd5e19f4453a8acae38c0fff17f39ed5c33bd407a",
+      "rights": "Owner-reported supplier permission for manufacturer product imagery. No official dealership or BM stock claim. Original product identity retained."
+    },
+    {
+      "id": "zkb201",
+      "sourceUrl": "https://zkteco.technology/wp-content/uploads/2022/01/02e65322e5e262aa83142effae9579c8.png",
+      "sourcePage": "https://zkteco.technology/en/product/zkb201/",
+      "original": "design-preview/media-originals/access-control/zkb201.png",
+      "output": "/images/access-control/zkb201.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "cf554b373bec51fb8f193b62cccf626c0bee088ea4eaa6f457eea6a9fe5f3ced",
+      "webSha256": "bc6b348c6253f5fa7fec91d6c70c90684b792813c2b0829e49422ae856a80c96",
+      "rights": "Owner-reported supplier permission for manufacturer product imagery. No official dealership or BM stock claim. Original product identity retained."
+    },
+    {
+      "id": "zk-m3",
+      "sourceUrl": "https://zkteco.technology/wp-content/uploads/zk-m3.jpg",
+      "sourcePage": "https://zkteco.technology/en/product/zk-m3/",
+      "original": "design-preview/media-originals/access-control/zk-m3.jpg",
+      "output": "/images/access-control/zk-m3.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "8b1fa5d1a569987e46f43c8db064c89f964050d59d3d54beb580e4ec7fda9efc",
+      "webSha256": "7c4bb33fb929ff1647a834aa6672869aace9f5eaf23a67d40436c3df3cb7a3d3",
+      "rights": "Owner-reported supplier permission for manufacturer product imagery. No official dealership or BM stock claim. Original product identity retained."
+    },
+    {
+      "id": "zkx6040",
+      "sourceUrl": "https://zkteco.technology/wp-content/uploads/2022/01/d689bb5795402764eb0be5185ed275d0.png",
+      "sourcePage": "https://zkteco.technology/en/product/zkx6040/",
+      "original": "design-preview/media-originals/access-control/zkx6040.png",
+      "output": "/images/access-control/zkx6040.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "fe826a7f6fb60c9e901e95092063d188188190503dfad3a63e6b67b7c8f4f941",
+      "webSha256": "ff50dd05c26f69a8d9eacf6ef02cb12c65233c0a162205ea6f46301f048feb59",
+      "rights": "Owner-reported supplier permission for manufacturer product imagery. No official dealership or BM stock claim. Original product identity retained."
+    },
+    {
+      "id": "probg3100",
+      "sourceUrl": "https://zkteco.technology/wp-content/uploads/probg3100.jpg",
+      "sourcePage": "https://zkteco.technology/en/product/probg3100/",
+      "original": "design-preview/media-originals/access-control/probg3100.jpg",
+      "output": "/images/access-control/probg3100.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "1bafbde6c2f78573ae9d0e5b3bc6de863620c79cf4e970582d16c6e3ec19cf1c",
+      "webSha256": "a30a0d8879cdd2ecd792db4bd2364cbb143d414ef8336bb1a54f916bfcdf74de",
+      "rights": "Owner-reported supplier permission for manufacturer product imagery. No official dealership or BM stock claim. Original product identity retained."
+    },
+    {
+      "id": "zk-d180",
+      "sourceUrl": "https://zkteco.technology/wp-content/uploads/2022/01/28034169937fae87c78e62bccfa4eb0f.png",
+      "sourcePage": "https://zkteco.technology/en/product/zk-d180/",
+      "original": "design-preview/media-originals/access-control/zk-d180.png",
+      "output": "/images/access-control/zk-d180.webp",
+      "width": 500,
+      "height": 500,
+      "sha256": "f33f8c6377fa906cd705713d36e6e1fefca26ea9c7d7bf31ae78254f45ac1a93",
+      "webSha256": "f9efbfa1eba8ef35c3f31511ba8cbfd8d4718d47747b47d82e66018f78b352ef",
+      "rights": "Owner-reported supplier permission for manufacturer product imagery. No official dealership or BM stock claim. Original product identity retained."
+    },
+    {
+      "id": "zkteco-logo",
+      "sourceUrl": "https://zkteco.technology/wp-content/uploads/2021/12/logo_svg.svg",
+      "sourcePage": "https://zkteco.technology/en/catalog/",
+      "output": "/images/access-control/zkteco-logo.svg",
+      "sha256": "577ddb5878b239d0b55a448755a587fb22de8b404e2d0ce4070cb1c3c7e127eb",
+      "rights": "Unmodified manufacturer logo identifying referenced technology; no affiliation or authorized-dealer claim.",
+      "colour": "Original SVG contains #7ebb47 green and white; displayed on graphite for contrast."
     }
   ],
   "scenes": [

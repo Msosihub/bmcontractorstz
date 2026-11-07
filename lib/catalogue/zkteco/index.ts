@@ -24,5 +24,15 @@ export const zktecoCategories: Record<string, Localized> = {
   },
   entrance: { en: "Turnstiles", sw: "Turnstiles" },
   accessory: { en: "Door Accessories", sw: "Vifaa vya Kukamilisha Milango" },
+  vehicle: {
+    en: "Vehicle Access & Barriers",
+    sw: "Vizuizi na Udhibiti wa Magari",
+  },
+  enrolment: {
+    en: "Fingerprint Enrolment Scanners",
+    sw: "Vifaa vya Kusajili Alama za Vidole",
+  },
+  barcode: { en: "Barcode & QR Scanners", sw: "Scanners za Barcode na QR" },
+  inspection: { en: "Security Screening", sw: "Vifaa vya Ukaguzi wa Usalama" },
   software: { en: "Software & Licences", sw: "Programu na Leseni" },
 };

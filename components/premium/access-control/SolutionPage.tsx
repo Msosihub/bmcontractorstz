@@ -13,6 +13,7 @@ import {
 } from "./CommercialSections";
 import { AttendanceComparison, SoftwareScopeMatrix } from "./EquipmentGuide";
 import { AttendanceFlow } from "./AttendanceFlow";
+import { AttendanceSales } from "./AttendanceSales";
 import "./access.css";
 export const solutionContent = {
   "time-attendance": {
@@ -225,7 +226,7 @@ export const solutionContent = {
   },
 };
 export type SolutionKey = keyof typeof solutionContent;
-export function SolutionPage({
+function LegacySolutionPage({
   kind,
   lang,
 }: {
@@ -402,5 +403,16 @@ export function SolutionPage({
       </main>
       <Footer lang={lang} imageNotice={false} />
     </>
+  );
+}
+
+export function SolutionPage(props: { kind: SolutionKey; lang: Language }) {
+  return props.kind === "time-attendance" ? (
+    <AttendanceSales
+      lang={props.lang}
+      content={solutionContent["time-attendance"]}
+    />
+  ) : (
+    <LegacySolutionPage {...props} />
   );
 }

@@ -1943,5 +1943,790 @@
     "price": null,
     "availability": "request-confirmation",
     "categories": []
+  },
+  {
+    "slug": "ll-03",
+    "name": "LL-03 Electric Motor Lock",
+    "brand": "ZKTeco",
+    "category": "accessory",
+    "generation": "Manufacturer reference • reviewed 3 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/ll-03.webp",
+        "alt": "LL Series motor-lock family photograph supplied on the LL-03 reference page"
+      }
+    ],
+    "summary": {
+      "en": "Motor-driven door lock with an EM card reader and door-sensor option. Assess the door, power supply and emergency exit arrangement before choosing.",
+      "sw": "Kufuli la mlango linalotumia mota, lenye kisomaji cha kadi za EM na chaguo la sensor ya mlango. Mlango, umeme na njia ya kutoka wakati wa dharura hukaguliwa kabla ya kuchagua."
+    },
+    "source": "https://zkteco.technology/en/product/ll-03-2/",
+    "variants": [
+      "LL-03 Electric Motor Lock"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Power",
+          "sw": "Umeme"
+        },
+        "value": {
+          "en": "12V DC; supply sized to the verified revision",
+          "sw": "12V DC; power supply huchaguliwa kulingana na toleo"
+        }
+      },
+      {
+        "label": {
+          "en": "Family",
+          "sw": "Familia"
+        },
+        "value": {
+          "en": "LL-03: EM 125kHz reader and door sensor described by regional catalogue",
+          "sw": "LL-03: katalogi ya eneo inaeleza reader ya EM 125kHz na sensor ya mlango"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "LL Series family image. Regional LL-03 headline and parameter table disagree on current, RFID and sensor fields; confirm the actual LL-03 datasheet, supplied reader/sensor and exit behaviour before ordering.",
+      "sw": "Picha ya familia ya LL Series. Maelezo ya LL-03 na jedwali la vipimo kwenye katalogi hayalingani kuhusu current, RFID na sensor; hakiki datasheet, reader/sensor itakayotolewa na namna ya kutoka kabla ya kuagiza."
+    },
+    "classification": "existing",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer reference & documentation",
+          "sw": "Rejea na nyaraka za mtengenezaji"
+        },
+        "url": "https://zkteco.technology/en/product/ll-03-2/"
+      }
+    ],
+    "related": [
+      "ex-802",
+      "c3-plus"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "fht2400",
+    "name": "FHT2400 Series",
+    "brand": "ZKTeco",
+    "category": "entrance",
+    "generation": "Manufacturer reference • reviewed 3 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/fht2400.webp",
+        "alt": "FHT2400 Series — manufacturer reference"
+      }
+    ],
+    "summary": {
+      "en": "Full-height rotating turnstiles for controlled staff entrances, compounds and industrial premises. Plan an accessible alternative entrance and emergency egress alongside the turnstile.",
+      "sw": "Turnstile za urefu kamili zinazozunguka kwa milango ya wafanyakazi, viwanja na maeneo ya viwanda. Panga pia njia inayofikika kwa wote na njia ya dharura."
+    },
+    "source": "https://www.zkteco.com/en/FHTSeries/FHT2400",
+    "variants": [
+      "FHT2400",
+      "FHT2411",
+      "FHT2422"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Cabinet",
+          "sw": "Kabati"
+        },
+        "value": {
+          "en": "SUS304 stainless steel; IP54",
+          "sw": "Stainless steel SUS304; IP54"
+        }
+      },
+      {
+        "label": {
+          "en": "Lane",
+          "sw": "Njia"
+        },
+        "value": {
+          "en": "580mm lane; verify site clearances",
+          "sw": "Njia 580mm; hakiki nafasi ya ufungaji"
+        }
+      },
+      {
+        "label": {
+          "en": "Models",
+          "sw": "Modeli"
+        },
+        "value": {
+          "en": "FHT2400 base / FHT2411 RFID / FHT2422 fingerprint + RFID",
+          "sw": "FHT2400 ya msingi / FHT2411 RFID / FHT2422 fingerprint + RFID"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Reader, controller and software depend on the selected variant. Older regional throughput/lifecycle figures differ from the global datasheet; confirm the supplied revision, foundations, exit route and access policy.",
+      "sw": "Reader, controller na programu hutegemea toleo. Takwimu za kasi na maisha ya kifaa kwenye katalogi ya zamani hutofautiana na datasheet ya kimataifa; hakiki toleo, msingi, njia ya kutoka na utaratibu wa kuingia."
+    },
+    "classification": "current",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer reference & documentation",
+          "sw": "Rejea na nyaraka za mtengenezaji"
+        },
+        "url": "https://www.zkteco.com/en/FHTSeries/FHT2400"
+      }
+    ],
+    "related": [
+      "ts2000-plus",
+      "inbio-pro-plus"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "uhf5-pro",
+    "name": "UHF5 Pro",
+    "brand": "ZKTeco",
+    "category": "vehicle",
+    "generation": "Manufacturer reference • reviewed 3 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/uhf5-pro.webp",
+        "alt": "UHF5 Pro / UHF10 Pro manufacturer family photograph"
+      }
+    ],
+    "summary": {
+      "en": "Passive UHF RFID reader for vehicle access. Suitable tags, lane geometry and a compatible controller are part of the complete solution.",
+      "sw": "Kisomaji cha UHF RFID kwa udhibiti wa kuingia kwa magari. Tags zinazofaa, mpangilio wa njia na controller inayooana ni sehemu za mfumo."
+    },
+    "source": "https://www.zkteco.com/en/UHF5ProUHF10Pro/UHF5-UHF10",
+    "variants": [
+      "UHF5 Pro"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Reading distance",
+          "sw": "Umbali wa kusoma"
+        },
+        "value": {
+          "en": "Manufacturer handheld test 2–8m; scenario example around 4m",
+          "sw": "Jaribio la mtengenezaji 2–8m; mfano wa eneo karibu 4m"
+        }
+      },
+      {
+        "label": {
+          "en": "Protection",
+          "sw": "Ulinzi"
+        },
+        "value": {
+          "en": "IP66 enclosure",
+          "sw": "Ganda la IP66"
+        }
+      },
+      {
+        "label": {
+          "en": "Interface",
+          "sw": "Mawasiliano"
+        },
+        "value": {
+          "en": "Wiegand / RS485 options; confirm supplied interface",
+          "sw": "Chaguo za Wiegand / RS485; hakiki interface itakayotolewa"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Shared UHF Pro family photography. Range is not a site guarantee: tag, windscreen, mounting and interference matter. Confirm regional RF frequency approval and controller compatibility before supply; not an attendance terminal.",
+      "sw": "Picha ni ya familia ya UHF Pro. Umbali si ahadi kwa kila eneo: tag, kioo cha gari, ufungaji na mwingiliano huathiri. Hakiki masafa yanayoruhusiwa na controller kabla ya kuagiza; si mashine ya mahudhurio."
+    },
+    "classification": "current",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer reference & documentation",
+          "sw": "Rejea na nyaraka za mtengenezaji"
+        },
+        "url": "https://www.zkteco.com/en/UHF5ProUHF10Pro/UHF5-UHF10"
+      }
+    ],
+    "related": [
+      "probg3100",
+      "c3-plus"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "uhf10-pro",
+    "name": "UHF10 Pro",
+    "brand": "ZKTeco",
+    "category": "vehicle",
+    "generation": "Manufacturer reference • reviewed 3 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/uhf10-pro.webp",
+        "alt": "UHF5 Pro / UHF10 Pro manufacturer family photograph"
+      }
+    ],
+    "summary": {
+      "en": "Passive UHF RFID reader for vehicle access. Suitable tags, lane geometry and a compatible controller are part of the complete solution.",
+      "sw": "Kisomaji cha UHF RFID kwa udhibiti wa kuingia kwa magari. Tags zinazofaa, mpangilio wa njia na controller inayooana ni sehemu za mfumo."
+    },
+    "source": "https://www.zkteco.com/en/UHF5ProUHF10Pro/UHF5-UHF10",
+    "variants": [
+      "UHF10 Pro"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Reading distance",
+          "sw": "Umbali wa kusoma"
+        },
+        "value": {
+          "en": "Manufacturer handheld test 10–20m; scenario example around 8m",
+          "sw": "Jaribio la mtengenezaji 10–20m; mfano wa eneo karibu 8m"
+        }
+      },
+      {
+        "label": {
+          "en": "Protection",
+          "sw": "Ulinzi"
+        },
+        "value": {
+          "en": "IP66 enclosure",
+          "sw": "Ganda la IP66"
+        }
+      },
+      {
+        "label": {
+          "en": "Interface",
+          "sw": "Mawasiliano"
+        },
+        "value": {
+          "en": "Wiegand / RS485 options; confirm supplied interface",
+          "sw": "Chaguo za Wiegand / RS485; hakiki interface itakayotolewa"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Shared UHF Pro family photography. Range is not a site guarantee: tag, windscreen, mounting and interference matter. Confirm regional RF frequency approval and controller compatibility before supply; not an attendance terminal.",
+      "sw": "Picha ni ya familia ya UHF Pro. Umbali si ahadi kwa kila eneo: tag, kioo cha gari, ufungaji na mwingiliano huathiri. Hakiki masafa yanayoruhusiwa na controller kabla ya kuagiza; si mashine ya mahudhurio."
+    },
+    "classification": "current",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer reference & documentation",
+          "sw": "Rejea na nyaraka za mtengenezaji"
+        },
+        "url": "https://www.zkteco.com/en/UHF5ProUHF10Pro/UHF5-UHF10"
+      }
+    ],
+    "related": [
+      "probg3100",
+      "c3-plus"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "zk8500r",
+    "name": "ZK8500R",
+    "brand": "ZKTeco",
+    "category": "enrolment",
+    "generation": "Manufacturer reference • reviewed 3 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/zk8500r.webp",
+        "alt": "ZK8500R — manufacturer reference"
+      }
+    ],
+    "summary": {
+      "en": "USB fingerprint enrolment and RFID card-issuing reader for a compatible management workstation. Register users at the desk rather than at each entrance.",
+      "sw": "Kifaa cha USB cha kusajili alama za vidole na namba za kadi za RFID kwenye kompyuta yenye programu inayooana."
+    },
+    "source": "https://zkteco.technology/en/product/reader/",
+    "variants": [
+      "ZK8500R"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Connection",
+          "sw": "Muunganisho"
+        },
+        "value": {
+          "en": "USB to a compatible computer",
+          "sw": "USB kwenda kompyuta inayooana"
+        }
+      },
+      {
+        "label": {
+          "en": "Capture",
+          "sw": "Usajili"
+        },
+        "value": {
+          "en": "Optical fingerprint sensor and ID/Mifare card serial numbers",
+          "sw": "Sensor ya optical fingerprint na namba za kadi za ID/Mifare"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "An enrolment peripheral, not a standalone attendance or door terminal. Verify software, SDK, driver, operating system and card variant; do not assume support in every BioTime edition.",
+      "sw": "Ni kifaa cha usajili, si mashine inayojitegemea ya mahudhurio au mlango. Hakiki programu, SDK, driver, operating system na aina ya kadi; si kila toleo la BioTime litakubali."
+    },
+    "classification": "existing",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer reference & documentation",
+          "sw": "Rejea na nyaraka za mtengenezaji"
+        },
+        "url": "https://zkteco.technology/en/product/reader/"
+      }
+    ],
+    "related": [
+      "inbio-pro-plus",
+      "biotime-9-5"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "fr1500s",
+    "name": "FR1500S Outdoor Fingerprint Reader",
+    "brand": "ZKTeco",
+    "category": "reader",
+    "generation": "Manufacturer reference • reviewed 3 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/fr1500s.webp",
+        "alt": "FR1500S Outdoor Fingerprint Reader — manufacturer reference"
+      }
+    ],
+    "summary": {
+      "en": "Outdoor fingerprint and RFID reader for a compatible access-control system. Useful at staff entrances where a separate controller manages the door.",
+      "sw": "Kisomaji cha nje cha alama za vidole na RFID kwa mfumo unaooana. Kinafaa kwenye mlango wa wafanyakazi unaosimamiwa na controller tofauti."
+    },
+    "source": "https://zkteco.technology/en/product/fr1500s/",
+    "variants": [
+      "FR1500S Outdoor Fingerprint Reader"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Protection",
+          "sw": "Ulinzi"
+        },
+        "value": {
+          "en": "IP65; installation and cable entry must maintain sealing",
+          "sw": "IP65; ufungaji na nyaya lazima vihifadhi ulinzi"
+        }
+      },
+      {
+        "label": {
+          "en": "Connection",
+          "sw": "Muunganisho"
+        },
+        "value": {
+          "en": "RS485; controller and firmware dependent",
+          "sw": "RS485; hutegemea controller na firmware"
+        }
+      },
+      {
+        "label": {
+          "en": "Revision",
+          "sw": "Toleo"
+        },
+        "value": {
+          "en": "Regional Silk ID reference; newer global Z-ID revision differs",
+          "sw": "Rejea ya eneo ya Silk ID; toleo jipya la Z-ID lina tofauti"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "This regional image/reference describes the Silk ID generation. Newer FR1500S revisions have different sensor, power and protocol specifications. Confirm the exact SKU and controller pairing; IP65 does not mean submersible.",
+      "sw": "Picha na rejea ya eneo ni ya kizazi cha Silk ID. Matoleo mapya ya FR1500S yana sensor, umeme na protocols tofauti. Hakiki SKU na controller; IP65 haimaanishi kifaa kinaweza kuzamishwa majini."
+    },
+    "classification": "existing",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer reference & documentation",
+          "sw": "Rejea na nyaraka za mtengenezaji"
+        },
+        "url": "https://zkteco.technology/en/product/fr1500s/"
+      }
+    ],
+    "related": [
+      "fr1200",
+      "inbio-pro-plus"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "zkb201",
+    "name": "ZKB201 2D Barcode Scanner",
+    "brand": "ZKTeco",
+    "category": "barcode",
+    "generation": "Manufacturer reference • reviewed 3 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/zkb201.webp",
+        "alt": "ZKB201 2D Barcode Scanner — manufacturer reference"
+      }
+    ],
+    "summary": {
+      "en": "Handheld wired scanner for retail counters, stores and compatible business applications. Reads supported 1D barcodes and 2D codes including QR.",
+      "sw": "Scanner ya mkononi yenye waya kwa kaunta, stoo na programu za biashara zinazooana. Husoma barcode za 1D na codes za 2D zikiwemo QR."
+    },
+    "source": "https://www.zkteco.com/en/comparison?pid=271",
+    "variants": [
+      "ZKB201 2D Barcode Scanner"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Interface",
+          "sw": "Muunganisho"
+        },
+        "value": {
+          "en": "USB 2.0",
+          "sw": "USB 2.0"
+        }
+      },
+      {
+        "label": {
+          "en": "Scan mode",
+          "sw": "Usomaji"
+        },
+        "value": {
+          "en": "Manual trigger or automatic scanning",
+          "sw": "Kubonyeza trigger au usomaji wa moja kwa moja"
+        }
+      },
+      {
+        "label": {
+          "en": "Codes",
+          "sw": "Codes"
+        },
+        "value": {
+          "en": "1D and 2D, including QR and Data Matrix",
+          "sw": "1D na 2D, zikiwemo QR na Data Matrix"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "A POS/data-capture peripheral, not a fingerprint or access reader. Confirm code formats, application input and workstation compatibility; no POS or ERP integration is included by default.",
+      "sw": "Ni kifaa cha POS/usomaji wa taarifa, si reader ya fingerprint au mlango. Hakiki aina za codes, uingizaji wa taarifa kwenye programu na kompyuta; muunganisho wa POS au ERP haujajumuishwa moja kwa moja."
+    },
+    "classification": "current",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer reference & documentation",
+          "sw": "Rejea na nyaraka za mtengenezaji"
+        },
+        "url": "https://www.zkteco.com/en/comparison?pid=271"
+      }
+    ],
+    "related": [
+      "zk8500r"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "zk-m3",
+    "name": "ZK-M3 Inspection Mirror",
+    "brand": "ZKTeco",
+    "category": "inspection",
+    "generation": "Manufacturer reference • reviewed 3 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/zk-m3.webp",
+        "alt": "ZK-M3 Inspection Mirror — manufacturer reference"
+      }
+    ],
+    "summary": {
+      "en": "Wheeled under-vehicle mirror with an LED light for visual checks at controlled entrances. A practical aid for a trained security team.",
+      "sw": "Kioo chenye magurudumu na taa ya LED kwa ukaguzi wa chini ya magari kwenye malango. Husaidia walinzi waliopewa mafunzo."
+    },
+    "source": "https://zkteco.technology/en/product/zk-m3/",
+    "variants": [
+      "ZK-M3 Inspection Mirror"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Mirror",
+          "sw": "Kioo"
+        },
+        "value": {
+          "en": "300mm diameter",
+          "sw": "Kipenyo 300mm"
+        }
+      },
+      {
+        "label": {
+          "en": "Handle",
+          "sw": "Mpini"
+        },
+        "value": {
+          "en": "1200–1400mm rod",
+          "sw": "Mpini 1200–1400mm"
+        }
+      },
+      {
+        "label": {
+          "en": "Inspection",
+          "sw": "Ukaguzi"
+        },
+        "value": {
+          "en": "Manual visual inspection; LED light",
+          "sw": "Ukaguzi wa macho unaofanywa na mtu; taa ya LED"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "A manual visual aid, not an automatic scanner, explosive detector or guarantee of detection. Confirm included light and battery requirements and train operators in a site-specific inspection procedure.",
+      "sw": "Ni msaada wa ukaguzi wa macho, si scanner ya moja kwa moja, detector ya vilipuzi wala hakikisho la kugundua kila kitu. Hakiki taa, betri na mafunzo ya utaratibu wa ukaguzi wa eneo."
+    },
+    "classification": "current",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer reference & documentation",
+          "sw": "Rejea na nyaraka za mtengenezaji"
+        },
+        "url": "https://zkteco.technology/en/product/zk-m3/"
+      }
+    ],
+    "related": [
+      "zk-d180",
+      "probg3100"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "zkx6040",
+    "name": "ZKX6040 X-ray Inspection System",
+    "brand": "ZKTeco",
+    "category": "inspection",
+    "generation": "Manufacturer reference • reviewed 3 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/zkx6040.webp",
+        "alt": "ZKX6040 X-ray Inspection System — manufacturer reference"
+      }
+    ],
+    "summary": {
+      "en": "Dual-energy baggage X-ray system for professionally planned screening points at hotels, institutions and transport facilities. Requires specialist assessment and trained operation.",
+      "sw": "Mfumo wa X-ray wa kukagua mizigo kwa maeneo yaliyopangwa kitaalamu kama hoteli, taasisi na vituo vya usafiri. Unahitaji tathmini maalumu na waendeshaji waliofunzwa."
+    },
+    "source": "https://zkteco.technology/en/product/zkx6040/",
+    "variants": [
+      "ZKX6040 X-ray Inspection System"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Tunnel",
+          "sw": "Tundu la ukaguzi"
+        },
+        "value": {
+          "en": "600 × 400mm",
+          "sw": "600 × 400mm"
+        }
+      },
+      {
+        "label": {
+          "en": "Technology",
+          "sw": "Teknolojia"
+        },
+        "value": {
+          "en": "Dual-energy X-ray; TCP/IP interface",
+          "sw": "X-ray ya dual-energy; interface ya TCP/IP"
+        }
+      },
+      {
+        "label": {
+          "en": "Planning",
+          "sw": "Mpango"
+        },
+        "value": {
+          "en": "Space, power, training and local approvals assessed separately",
+          "sw": "Nafasi, umeme, mafunzo na vibali vya eneo hutathminiwa tofauti"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Not a metal-detector wand or medical scanner. Availability, model revision, installation, radiation-safety requirements, approvals and specialist support must be confirmed before quotation; no licensing or specialist certification is implied.",
+      "sw": "Si detector ya chuma ya mkononi wala scanner ya kitabibu. Upatikanaji, toleo, ufungaji, usalama wa mionzi, vibali na msaada wa kitaalamu lazima vithibitishwe kabla ya nukuu; hatudai leseni au vyeti maalumu."
+    },
+    "classification": "current",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer reference & documentation",
+          "sw": "Rejea na nyaraka za mtengenezaji"
+        },
+        "url": "https://zkteco.technology/en/product/zkx6040/"
+      }
+    ],
+    "related": [
+      "zk-d180",
+      "zk-m3"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "probg3100",
+    "name": "ProBG3100 Folding-boom Barrier",
+    "brand": "ZKTeco",
+    "category": "vehicle",
+    "generation": "Manufacturer reference • reviewed 3 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/probg3100.webp",
+        "alt": "ProBG3100 Folding-boom Barrier — manufacturer reference"
+      }
+    ],
+    "summary": {
+      "en": "Vehicle barrier with a folding boom and LED indication for access lanes with height constraints. Plan the lane, controls and pedestrian route together.",
+      "sw": "Kizuizi cha magari chenye mkono unaokunjika na alama za LED kwa njia zenye nafasi ndogo ya juu. Panga njia, controls na njia ya watembea kwa miguu kwa pamoja."
+    },
+    "source": "https://zkteco.technology/en/product/probg3100/",
+    "variants": [
+      "ProBG3100 Folding-boom Barrier"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Boom",
+          "sw": "Mkono"
+        },
+        "value": {
+          "en": "Folding boom with LED indication",
+          "sw": "Mkono unaokunjika wenye LED"
+        }
+      },
+      {
+        "label": {
+          "en": "Drive",
+          "sw": "Uendeshaji"
+        },
+        "value": {
+          "en": "Servo-motor barrier family",
+          "sw": "Familia ya vizuizi vinavyotumia servo motor"
+        }
+      },
+      {
+        "label": {
+          "en": "System",
+          "sw": "Mfumo"
+        },
+        "value": {
+          "en": "Reader/controller and safety devices selected separately",
+          "sw": "Reader/controller na vifaa vya usalama huchaguliwa tofauti"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Confirm boom length, duty requirements, safety sensors, vehicle detection and emergency operation. RFID or remote controls are not assumed to be included; installation depends on site assessment.",
+      "sw": "Hakiki urefu wa mkono, matumizi, sensors za usalama, utambuzi wa magari na matumizi wakati wa dharura. RFID au remotes hazidhaniwi kujumuishwa; ufungaji hutegemea tathmini ya eneo."
+    },
+    "classification": "current",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer reference & documentation",
+          "sw": "Rejea na nyaraka za mtengenezaji"
+        },
+        "url": "https://zkteco.technology/en/product/probg3100/"
+      }
+    ],
+    "related": [
+      "uhf5-pro",
+      "uhf10-pro",
+      "zk-m3"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
+  },
+  {
+    "slug": "zk-d180",
+    "name": "ZK-D180 Handheld Metal Detector",
+    "brand": "ZKTeco",
+    "category": "inspection",
+    "generation": "Manufacturer reference • reviewed 3 November 2026",
+    "images": [
+      {
+        "src": "/images/access-control/zk-d180.webp",
+        "alt": "ZK-D180 Handheld Metal Detector — manufacturer reference"
+      }
+    ],
+    "summary": {
+      "en": "Compact handheld metal detector for controlled-entry screening by trained personnel. Visual indicators and selectable alerts support a clear inspection routine.",
+      "sw": "Detector ndogo ya chuma ya mkononi kwa ukaguzi wa watu unaofanywa na walinzi waliofunzwa. Ina viashiria vya mwanga na chaguo za tahadhari."
+    },
+    "source": "https://zkteco.technology/en/product/zk-d180/",
+    "variants": [
+      "ZK-D180 Handheld Metal Detector"
+    ],
+    "specs": [
+      {
+        "label": {
+          "en": "Alerts",
+          "sw": "Tahadhari"
+        },
+        "value": {
+          "en": "Sound + light or vibration + light",
+          "sw": "Sauti + mwanga au mtetemo + mwanga"
+        }
+      },
+      {
+        "label": {
+          "en": "Power",
+          "sw": "Umeme"
+        },
+        "value": {
+          "en": "9V rechargeable battery reference; confirm supplied kit",
+          "sw": "Rejea ya betri inayochajiwa ya 9V; hakiki vifaa vilivyojumuishwa"
+        }
+      },
+      {
+        "label": {
+          "en": "Size",
+          "sw": "Ukubwa"
+        },
+        "value": {
+          "en": "345 × 69 × 25mm",
+          "sw": "345 × 69 × 25mm"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "A metal detector, not a detector for all prohibited items or a magnetic-stripe card reader. Detection depends on object, orientation and operator procedure. Confirm charger/battery and demonstrate settings at handover.",
+      "sw": "Ni detector ya chuma, si ya kila kitu kilichokatazwa wala kisomaji cha kadi ya magnetic stripe. Ugunduzi hutegemea kitu, mwelekeo na utaratibu wa ukaguzi. Hakiki charger/betri na pewa maelekezo wakati wa makabidhiano."
+    },
+    "classification": "current",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer reference & documentation",
+          "sw": "Rejea na nyaraka za mtengenezaji"
+        },
+        "url": "https://zkteco.technology/en/product/zk-d180/"
+      }
+    ],
+    "related": [
+      "zk-m3",
+      "zkx6040"
+    ],
+    "price": null,
+    "availability": "request-confirmation"
   }
 ]

@@ -29,6 +29,7 @@ test("ZKTeco references have verified local photos, complete bilingual fields an
         "www.zkteco-ea.com",
         "www.zkteco.in",
         "zkteco.sa",
+        "zkteco.technology",
       ].includes(new URL(p.source).hostname),
     );
     assert(manifest.manufacturer.some((m) => m.id === p.slug));
@@ -187,6 +188,12 @@ test("ZKTeco bilingual sitemap includes curated models and excludes withdrawn se
       x.url.endsWith("/services/access-control/time-attendance?lang=sw"),
     ),
   );
+  const guides = JSON.parse(await readFile("data/blog.json", "utf8")).filter(
+    (a) => a.published,
+  );
+  for (const article of guides)
+    for (const suffix of ["", "?lang=sw"])
+      assert(map.some((x) => x.url.endsWith("/blog/" + article.slug + suffix)));
   withdrawn = true;
   map = await sitemap();
   assert(!map.some((x) => x.url.includes("/services/access-control")));
