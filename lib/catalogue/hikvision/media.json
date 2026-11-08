@@ -1,0 +1,57 @@
+{
+  "ds-k1t341cmfw": {
+    "src": "/images/hikvision/ds-k1t341cmfw.webp",
+    "source": "https://s3-eu-west-1.amazonaws.com/files.visiotech.es/files/pdf/DS-K1T341CMFW_EN.pdf",
+    "description": "Distributor model sheet with Hikvision product artwork"
+  },
+  "ds-k1107am": {
+    "src": "/images/hikvision/ds-k1107am.webp",
+    "source": "https://infotech-inn.ru/upload/iblock/07d/5izq3onrwcdr9rklb3ice141m43nih1l.pdf",
+    "description": "Hikvision datasheet cover artwork"
+  },
+  "ds-k2602t": {
+    "src": "/images/hikvision/ds-k2602t.webp",
+    "source": "https://www.kamery-hikvision.cz/files/Datasheet_DS-K2602T.pdf",
+    "description": "Hikvision DS-K2600T series enclosure image; enclosure and board supply must be confirmed separately"
+  },
+  "ds-kis603-p-c": {
+    "src": "/images/hikvision/ds-kis603-p-c.webp",
+    "source": "https://ftp3.syscom.mx/usuarios/scorrea/CA/HIK/DSKIS603P%28C%29/DS-KIS603-PC_datasheet.pdf",
+    "description": "Hikvision datasheet cover artwork"
+  },
+  "ds-kis702y": {
+    "src": "/images/hikvision/ds-kis702y.webp",
+    "source": "https://infotech-inn.ru/upload/iblock/6db/i7qk3y7lzdvdunnhz052klhk1smqp9jz.pdf",
+    "description": "Hikvision datasheet cover artwork"
+  },
+  "ds-2cd1043g2-liu-f": {
+    "src": "/images/hikvision/ds-2cd1043g2-liu-f.webp",
+    "source": "https://dsc.hu/themes/frontend/documents/DS-2CD1043G2-LIUF19042024142016963997.pdf",
+    "description": "Hikvision datasheet cover artwork"
+  },
+  "ds-2cd2347g2h-liu": {
+    "src": "/images/hikvision/ds-2cd2347g2h-liu.webp",
+    "source": "https://cctv9.my/cdn/shop/files/DS-2CD2347G2H-LIU_Datasheet_20230719_page-0001.jpg?v=1703655140",
+    "description": "Hikvision LI(U) datasheet cover crop showing the white and black family variants"
+  },
+  "ds-7608nxi-k2-8p-d": {
+    "src": "/images/hikvision/ds-7608nxi-k2-8p-d.webp",
+    "source": "https://www.hikvisionjapan.com/wp-content/uploads/2024/12/%E6%B8%B2%E6%9F%93%E5%9B%BE.png",
+    "description": "Hikvision Japan exact revision (D) product page image"
+  },
+  "ds-2cv2041g2-idw": {
+    "src": "/images/hikvision/ds-2cv2041g2-idw.webp",
+    "source": "https://shop.datacom.bg/images/products/originals/HikVision/add/DS-2CV2041G2-IDW-W_Datasheet_20250313.pdf",
+    "description": "Hikvision (W) datasheet cover artwork"
+  },
+  "ds-2cfs04-4g": {
+    "src": "/images/hikvision/ds-2cfs04-4g.webp",
+    "source": "https://eshop.q4security.sk/obchod_homedir/data/2981/prilohy/DS-2CFS04_4G_Datasheet_20260211.pdf",
+    "description": "Hikvision datasheet cover artwork"
+  },
+  "ds-pwa96-m-we": {
+    "src": "/images/hikvision/ds-pwa96-m-we.webp",
+    "source": "https://netviewcctv.co.uk/HIKVISION/axpro/Datasheet/DS-PWA96-M-WE.pdf",
+    "description": "Hikvision datasheet cover artwork"
+  }
+}

@@ -134,8 +134,17 @@ export default async function Page({ params, searchParams }: Props) {
                 {sw ? "Huduma na suluhisho" : "Explore the service"} ↗
               </a>
               {" · "}
-              <a href={`/catalogue/zkteco?lang=${lang}`}>
-                {sw ? "Katalogi ya ZKTeco" : "ZKTeco catalogue"} ↗
+              <a
+                href={`/catalogue/${a.service === "hikvision" ? "hikvision" : "zkteco"}?lang=${lang}`}
+              >
+                {a.service === "hikvision"
+                  ? sw
+                    ? "Katalogi ya Hikvision"
+                    : "Hikvision catalogue"
+                  : sw
+                    ? "Katalogi ya ZKTeco"
+                    : "ZKTeco catalogue"}{" "}
+                ↗
               </a>
             </nav>
           </div>

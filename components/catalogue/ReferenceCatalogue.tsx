@@ -12,12 +12,14 @@ export function ReferenceCatalogue({
   namespace,
   categories,
   initialCategory,
+  searchExample,
 }: {
   products: ReferenceProduct[];
   lang: Language;
   namespace: string;
   categories: Record<string, Localized>;
   initialCategory?: string;
+  searchExample?: Localized;
 }) {
   const sw = lang === "sw",
     [query, setQuery] = useState(""),
@@ -75,7 +77,8 @@ export function ReferenceCatalogue({
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder={
-              sw ? "Mfano: SenseFace, hoteli…" : "Try SenseFace, hotel…"
+              searchExample?.[lang] ??
+              (sw ? "Mfano: SenseFace, hoteli…" : "Try SenseFace, hotel…")
             }
           />
         </label>
@@ -220,7 +223,9 @@ export function ReferenceCatalogue({
                   <th scope="row">{sw ? "Chaguo la nukuu" : "Quotation"}</th>
                   {compared.map((p) => (
                     <td key={p.slug}>
-                      <a href={solutionLinks(lang, "ZKTeco " + p.name).quote}>
+                      <a
+                        href={solutionLinks(lang, p.brand + " " + p.name).quote}
+                      >
                         {sw ? "Omba bei ya sasa" : "Request Current Price"} ↗
                       </a>
                     </td>
@@ -245,7 +250,7 @@ export function ReferenceEnquiry({
     [variant, setVariant] = useState(p.variants[0]),
     [scope, setScope] = useState("installed"),
     software = p.category === "software",
-    detail = `ZKTeco ${variant} — ${scope === "installed" ? (sw ? "mfumo uliofungwa" : "installed system") : scope === "equipment" ? (software ? (sw ? "leseni pekee" : "licence only") : sw ? "vifaa pekee" : "equipment only") : sw ? "matengenezo ya mfumo uliopo" : "existing-system support"}`,
+    detail = `${p.brand} ${variant} — ${scope === "installed" ? (sw ? "mfumo uliofungwa" : "installed system") : scope === "equipment" ? (software ? (sw ? "leseni pekee" : "licence only") : sw ? "vifaa pekee" : "equipment only") : sw ? "matengenezo ya mfumo uliopo" : "existing-system support"}`,
     links = solutionLinks(lang, detail);
   return (
     <div className="rc-enquiry">

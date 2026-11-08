@@ -114,6 +114,23 @@ export default async function Page({
                       </article>
                     );
                   })}
+                {d.id === "security" && (
+                  <article className="directory-note">
+                    <a href={`/services/hikvision?lang=${lang}`}>
+                      <h3>
+                        {lang === "sw"
+                          ? "Hikvision kwa ulinzi wa majengo"
+                          : "Hikvision building security"}
+                      </h3>
+                      <span aria-hidden="true">↗</span>
+                    </a>
+                    <p>
+                      {lang === "sw"
+                        ? "Panga CCTV, udhibiti wa milango, intercom na kengele kulingana na matumizi ya jengo lako."
+                        : "Plan CCTV, access control, video intercom and alarms around the way your building works."}
+                    </p>
+                  </article>
+                )}
               </div>
               <a className="division-return" href="#division-navigation">
                 {lang === "sw"

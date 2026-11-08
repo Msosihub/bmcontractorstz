@@ -75,6 +75,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   add("/catalogue/zkteco", true);
   for (const product of zktecoProducts)
     add("/catalogue/zkteco/" + product.slug, true);
+  const { hikvisionProducts } = await import("@/lib/catalogue/hikvision");
+  add("/services/hikvision", true);
+  add("/catalogue/hikvision", true);
+  for (const product of hikvisionProducts)
+    add("/catalogue/hikvision/" + product.slug, true);
   const access = services.find((service) => service.slug === "access-control");
   if (!access || access.isPublished) {
     add("/services/access-control/time-attendance", true, access?.updatedAt);

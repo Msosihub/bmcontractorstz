@@ -56,7 +56,7 @@ test("journal exposes reviewed published articles only, with bilingual copy, loc
       assert(a.sections.every((s) => s.title[lang] && s.text[lang]));
     }
     assert((await readFile("public" + a.image)).length > 1000);
-    assert.equal(a.service, "access-control");
+    assert(["access-control", "hikvision"].includes(a.service));
     assert(!/localhost|api\/media/.test(JSON.stringify(a)));
   }
 });
