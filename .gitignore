@@ -46,3 +46,6 @@ next-env.d.ts
 
 # Unoptimised source photos retained locally; owner-approved web variants are tracked.
 /design-preview/media-originals/electric-fence-products/
+
+# Full-resolution ZKTeco/scene masters retained locally; optimized public assets are versioned.
+/design-preview/media-originals/access-control/

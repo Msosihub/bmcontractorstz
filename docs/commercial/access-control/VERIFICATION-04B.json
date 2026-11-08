@@ -1,0 +1,198 @@
+{
+  "reviewed": "2026-11-03",
+  "status": "Owner commercial review; no hosted Preview requested",
+  "automatedTests": 228,
+  "automatedTestsFailed": 0,
+  "guardedProductionModeBuild": "passed using restricted synthetic Preview identity",
+  "typeScript": "passed in final Next build",
+  "lint": {
+    "errors": 0,
+    "preExistingWarnings": 16
+  },
+  "runtimeAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "renderedAccessibilityViews": 20,
+  "axeViolations": 0,
+  "modelLanguageRoutes": 58,
+  "formTests": {
+    "pass": true,
+    "syntheticOnly": true,
+    "productionAccess": false,
+    "results": [
+      {
+        "lang": "en",
+        "contactSavedOnce": true,
+        "contactContextPreserved": true,
+        "surveySavedOnce": true,
+        "surveyContextPreserved": true,
+        "duplicateContactPrevented": true,
+        "receipts": 2,
+        "notificationsSuppressed": true
+      },
+      {
+        "lang": "sw",
+        "contactSavedOnce": true,
+        "contactContextPreserved": true,
+        "surveySavedOnce": true,
+        "surveyContextPreserved": true,
+        "duplicateContactPrevented": "covered in English",
+        "receipts": 2,
+        "notificationsSuppressed": true
+      }
+    ],
+    "externalBrowserRequests": [],
+    "cleanup": {
+      "recordsRemoved": 4,
+      "receiptsRemoved": 4,
+      "onlyExactFixtureIDs": true
+    }
+  },
+  "adminTests": {
+    "pass": true,
+    "checks": [
+      "Unauthenticated admin denied",
+      "Product saved; Saving state completed",
+      "Withdrawn product unavailable",
+      "Publication restored for exact synthetic fixture",
+      "Authenticated messages and site-survey admin load"
+    ],
+    "syntheticSessionOnly": true,
+    "liveOtpSent": false,
+    "productionAccess": false,
+    "cleanup": "Exact synthetic product/category/session removed"
+  },
+  "browserInteractions": [
+    {
+      "filters": true,
+      "comparison": true,
+      "softwareQuotation": true,
+      "motion": {
+        "optIn": true,
+        "pause": true,
+        "replay": true,
+        "offscreenStop": true,
+        "reducedManual": true
+      }
+    },
+    {
+      "noJavascriptContent": true
+    }
+  ],
+  "regressions": [
+    {
+      "path": "/services/cctv?lang=en",
+      "status": 200
+    },
+    {
+      "path": "/services/electric-fence?lang=sw",
+      "status": 200
+    },
+    {
+      "path": "/services/gate-motors?lang=en",
+      "status": 200
+    },
+    {
+      "path": "/catalogue/centurion?lang=sw",
+      "status": 200
+    },
+    {
+      "path": "/products?lang=en",
+      "status": 200
+    }
+  ],
+  "localPerformance": {
+    "viewport": 390,
+    "dpr": 2,
+    "lcpMs": 1544,
+    "cls": 0,
+    "navigation": [
+      {
+        "ttfbMs": 16.600000023841858,
+        "domContentLoadedMs": 1408.1999999284744
+      }
+    ],
+    "resources": [
+      {
+        "path": "/_next/static/media/22a5144ee8d83bca-s.p.woff2",
+        "encodedBytes": 29288,
+        "durationMs": 19
+      },
+      {
+        "path": "/_next/static/media/7d4881bb7e1bf84d-s.p.woff2",
+        "encodedBytes": 23108,
+        "durationMs": 25
+      },
+      {
+        "path": "/_next/static/css/2c12bbadd3e17e33.css",
+        "encodedBytes": 10740,
+        "durationMs": 24
+      },
+      {
+        "path": "/_next/static/css/eb7ae4a36e14f8cc.css",
+        "encodedBytes": 8614,
+        "durationMs": 26
+      },
+      {
+        "path": "/_next/static/chunks/webpack-fd026c618d98aaa8.js",
+        "encodedBytes": 1718,
+        "durationMs": 23
+      },
+      {
+        "path": "/_next/static/css/a956bf434bb85a84.css",
+        "encodedBytes": 5691,
+        "durationMs": 25
+      },
+      {
+        "path": "/_next/static/chunks/c028d67c-c7d79cf90e28cd61.js",
+        "encodedBytes": 64058,
+        "durationMs": 40
+      },
+      {
+        "path": "/_next/static/chunks/main-app-b3b3a612d20d8cd3.js",
+        "encodedBytes": 517,
+        "durationMs": 29
+      },
+      {
+        "path": "/_next/static/chunks/4074-ebc78c4a5dee5b4b.js",
+        "encodedBytes": 67746,
+        "durationMs": 47
+      },
+      {
+        "path": "/_next/static/chunks/1770-adc91986e471c2ae.js",
+        "encodedBytes": 5795,
+        "durationMs": 8
+      },
+      {
+        "path": "/_next/static/chunks/app/services/access-control/page-9337f0f822bbcc6f.js",
+        "encodedBytes": 4185,
+        "durationMs": 9
+      },
+      {
+        "path": "/_next/image",
+        "encodedBytes": 42384,
+        "durationMs": 13
+      },
+      {
+        "path": "/_next/image",
+        "encodedBytes": 2912,
+        "durationMs": 4
+      }
+    ],
+    "hero": "http://127.0.0.1:3022/_next/image?url=%2Fimages%2Faccess-control%2Fworkplace-1440.webp&w=828&q=75",
+    "overflow": false
+  },
+  "limitations": [
+    "Local lab measurements are not field Core Web Vitals or Lighthouse scores.",
+    "Hosted idle/cold database behavior remains to be validated after separate Preview authorization.",
+    "No independent provider-side telemetry was accessed; suppression was verified in application tests with disabled credentials and provider-deny enforcement.",
+    "GitHub Actions account billing lock remains a release limitation; no required check bypass."
+  ],
+  "productionUnchanged": true,
+  "payloadEnabled": false
+}
