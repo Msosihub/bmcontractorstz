@@ -107,10 +107,10 @@ export default async function Page({ params, searchParams }: Props) {
             <ReferenceEnquiry p={product} lang={lang} />
           </div>
         </section>
-        <section className="ac-section hv-details">
-          <h2>
+        <details className="ac-section hv-details hv-disclosure">
+          <summary>
             {sw ? "Vipimo na ulinganifu" : "Specifications & compatibility"}
-          </h2>
+          </summary>
           <dl>
             {product.specs.map((spec) => (
               <div key={spec.label.en}>
@@ -132,7 +132,7 @@ export default async function Page({ params, searchParams }: Props) {
               </a>
             ))}
           </div>
-        </section>
+        </details>
         {related.length > 0 && (
           <section className="ac-section">
             <h2>{sw ? "Rejea nyingine" : "Related references"}</h2>

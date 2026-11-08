@@ -1,5 +1,22 @@
 export const solutions = [
   {
+    id: "video",
+    category: "video",
+    title: {
+      en: "CCTV & intelligent surveillance",
+      sw: "CCTV na ufuatiliaji mahiri",
+    },
+    intro: {
+      en: "See activity at gates, reception areas and loading bays. Plan 4MP IP coverage around the detail needed in each view, night lighting, storage duration and power outages.",
+      sw: "Fuatilia shughuli kwenye mageti, mapokezi na maeneo ya kupakia mizigo. Panga kamera za IP za 4MP kulingana na undani unaohitajika kwenye kila eneo, mwanga wa usiku, muda wa kuhifadhi video na kukatika kwa umeme.",
+    },
+    equipment: {
+      en: "Compare ColorVu hybrid-light cameras and AcuSense recorders. Wi-Fi needs reliable coverage and local power. AOV SolarVu 4G can suit remote points after checking LTE bands, data, shade, battery and recording mode.",
+      sw: "Linganisha kamera za ColorVu zenye mwanga mseto na virekodi vya AcuSense. Wi-Fi inahitaji mawimbi imara na umeme karibu. AOV SolarVu 4G inaweza kufaa mbali baada ya kuhakiki masafa ya LTE, kifurushi cha data, kivuli, betri na namna ya kurekodi.",
+    },
+  },
+
+  {
     id: "access",
     category: "access",
     title: {
@@ -18,7 +35,10 @@ export const solutions = [
   {
     id: "intercom",
     category: "intercom",
-    title: { en: "Video intercom", sw: "Intercom yenye kamera" },
+    title: {
+      en: "Video intercom & smart entrances",
+      sw: "Intercom yenye kamera",
+    },
     intro: {
       en: "Let residents or reception staff see and speak to visitors before opening the gate or door. Plan around who answers at a home, apartment entrance, office or lodge reception.",
       sw: "Wakazi au wahudumu wa mapokezi wanaweza kumuona na kuzungumza na mgeni kabla ya kufungua geti au mlango. Panga nani atapokea simu nyumbani, kwenye jengo la vyumba, ofisini au mapokezi ya lodge.",
@@ -26,19 +46,6 @@ export const solutions = [
     equipment: {
       en: "For new wiring, consider an IP door station and paired indoor monitor. A matched two-wire kit may suit an upgrade after cable and distance checks. Apartment call routing and lock release are designed separately from a single-villa kit.",
       sw: "Kwa nyaya mpya, zingatia kifaa cha nje cha IP na skrini ya ndani inayooana nacho. Seti ya nyaya mbili inaweza kufaa kwenye mfumo wa zamani baada ya kukagua nyaya na umbali. Mfumo wa kuita kila chumba na kufungua mlango kwenye jengo la vyumba hupangwa tofauti na seti ya nyumba moja.",
-    },
-  },
-  {
-    id: "video",
-    category: "video",
-    title: { en: "CCTV & remote sites", sw: "CCTV na maeneo ya mbali" },
-    intro: {
-      en: "See activity at gates, reception areas and loading bays. Plan 4MP IP coverage around the detail needed in each view, night lighting, storage duration and power outages.",
-      sw: "Fuatilia shughuli kwenye mageti, mapokezi na maeneo ya kupakia mizigo. Panga kamera za IP za 4MP kulingana na undani unaohitajika kwenye kila eneo, mwanga wa usiku, muda wa kuhifadhi video na kukatika kwa umeme.",
-    },
-    equipment: {
-      en: "Compare ColorVu hybrid-light cameras and AcuSense recorders. Wi-Fi needs reliable coverage and local power. AOV SolarVu 4G can suit remote points after checking LTE bands, data, shade, battery and recording mode.",
-      sw: "Linganisha kamera za ColorVu zenye mwanga mseto na virekodi vya AcuSense. Wi-Fi inahitaji mawimbi imara na umeme karibu. AOV SolarVu 4G inaweza kufaa mbali baada ya kuhakiki masafa ya LTE, kifurushi cha data, kivuli, betri na namna ya kurekodi.",
     },
   },
   {
@@ -61,8 +68,8 @@ export const solutions = [
     id: "building",
     category: "software",
     title: {
-      en: "Integrated building security",
-      sw: "Mifumo jumuishi ya ulinzi wa majengo",
+      en: "Building security with HikCentral",
+      sw: "Ulinzi wa majengo kwa HikCentral",
     },
     intro: {
       en: "Give a security desk a clearer view of events across a hotel, hospital campus or commercial property. Start with what the operator needs to see and do at each incident.",
@@ -82,8 +89,9 @@ export const diagram = [
       en: "A compatible IP camera sends footage to its recorder.",
       sw: "Kamera ya IP inayooana hutuma video kwenye kinasa video chake.",
     },
-    path: "M90 68H170V127H226",
-    point: [90, 68],
+    path: "M103 114H139V155H203",
+    point: [103, 114],
+    end: [203, 155],
   },
   {
     name: { en: "Reader → Controller", sw: "Kisoma kadi → Kidhibiti" },
@@ -91,8 +99,9 @@ export const diagram = [
       en: "A supported reader sends credential data to the door controller.",
       sw: "Kisoma kadi kinachooana hutuma taarifa za kadi kwenye kidhibiti cha mlango.",
     },
-    path: "M103 218H160V170H226",
-    point: [103, 218],
+    path: "M143 239H191V212H245",
+    point: [143, 239],
+    end: [245, 212],
   },
   {
     name: { en: "Door station → Monitor", sw: "Kifaa cha nje → Skrini" },
@@ -100,8 +109,9 @@ export const diagram = [
       en: "A paired intercom calls its indoor station.",
       sw: "Intercom ya mlangoni hupigia skrini ya ndani iliyounganishwa nayo.",
     },
-    path: "M445 218H386V170H321",
-    point: [445, 218],
+    path: "M466 240H409V213H349",
+    point: [466, 240],
+    end: [349, 213],
   },
   {
     name: { en: "Detector → AX PRO panel", sw: "Kihisi → Paneli ya AX PRO" },
@@ -109,7 +119,8 @@ export const diagram = [
       en: "A compatible detector reports to its own alarm panel.",
       sw: "Kihisi kinachooana hutuma taarifa kwenye paneli yake ya kengele.",
     },
-    path: "M460 68H388V127H321",
-    point: [460, 68],
+    path: "M474 109H438V152H365",
+    point: [474, 109],
+    end: [365, 152],
   },
 ] as const;

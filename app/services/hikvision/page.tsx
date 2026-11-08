@@ -10,15 +10,48 @@ import { pageMetadata } from "@/lib/seo";
 import "./hikvision.css";
 
 const path = "/services/hikvision";
-const featuredSlugs = [
-  "ds-k1t341cmfw",
-  "ds-kis603-p-c",
-  "ds-2cd2347g2h-liu",
-  "ds-pwa96-m-we",
-];
-const featured = featuredSlugs.flatMap((slug) =>
-  hikvisionProducts.filter((item) => item.slug === slug),
-);
+const presentation = {
+  video: {
+    model: "ds-2cd2347g2h-liu",
+    scene: "/images/hikvision/courtyard.webp",
+    caption: {
+      en: "Arrival areas · gates · loading bays",
+      sw: "Maeneo ya kuwasili · mageti · sehemu za mizigo",
+    },
+  },
+  access: {
+    model: "ds-k1t341cmfw",
+    caption: {
+      en: "Staff doors · shifts · restricted rooms",
+      sw: "Milango ya wafanyakazi · zamu · vyumba maalumu",
+    },
+  },
+  intercom: {
+    model: "ds-kis603-p-c",
+    scene: "/images/hikvision/reception.webp",
+    caption: {
+      en: "Homes · apartment entries · reception",
+      sw: "Nyumba · majengo ya makazi · mapokezi",
+    },
+  },
+  intrusion: {
+    model: "ds-pwa96-m-we",
+    caption: {
+      en: "Shops · offices · stockrooms",
+      sw: "Maduka · ofisi · stoo",
+    },
+  },
+  building: {
+    model: "hikcentral-professional",
+    caption: {
+      en: "Hotels · campuses · commercial buildings",
+      sw: "Hoteli · kampasi · majengo ya biashara",
+    },
+  },
+} satisfies Record<
+  string,
+  { model: string; scene?: string; caption: { en: string; sw: string } }
+>;
 type Props = { searchParams: Promise<{ lang?: string }> };
 const copy = {
   en: [
@@ -143,72 +176,86 @@ export default async function Page({ searchParams }: Props) {
               ? "Anza na matumizi ya eneo lako."
               : "Start with the way your site works."}
           </h2>
-          {solutions.map((solution, index) => (
-            <article id={solution.id} className="hv-solution" key={solution.id}>
-              <span className="hv-number" aria-hidden="true">
-                0{index + 1}
-              </span>
-              <div>
-                <h3>{solution.title[lang]}</h3>
-                <p>{solution.intro[lang]}</p>
-              </div>
-              <div>
-                <p>{solution.equipment[lang]}</p>
-                <a
-                  href={`/catalogue/hikvision?lang=${lang}&category=${solution.category}`}
-                >
-                  {sw ? "Angalia vifaa" : "Explore equipment"}{" "}
-                  <span aria-hidden="true">↗</span>
-                </a>
-                {solution.id === "video" && (
-                  <a href={`/services/cctv?lang=${lang}`}>
-                    {sw
-                      ? "Huduma kamili ya CCTV"
-                      : "Full CCTV installation service"}{" "}
+          {solutions.map((solution, index) => {
+            const view = presentation[solution.id];
+            const model = hikvisionProducts.find(
+              (item) => item.slug === view.model,
+            )!;
+            const scene = "scene" in view ? view.scene : undefined;
+            const photo = model.images[0];
+            const enquiry = solutionLinks(
+              lang,
+              `Hikvision — ${solution.title[lang]}`,
+            );
+            return (
+              <article
+                id={solution.id}
+                className="hv-solution"
+                key={solution.id}
+              >
+                <div className="hv-solution-media">
+                  {scene ? (
+                    <Image
+                      src={scene}
+                      fill
+                      alt=""
+                      sizes="(max-width:760px) 100vw, 48vw"
+                    />
+                  ) : photo ? (
+                    <Image
+                      src={photo.src}
+                      width={400}
+                      height={260}
+                      alt={photo.alt}
+                      sizes="(max-width:760px) 68vw, 28vw"
+                    />
+                  ) : (
+                    <p className="hv-software-art">
+                      <strong>HikCentral</strong>
+                      <span>Professional</span>
+                    </p>
+                  )}
+                </div>
+                <div className="hv-solution-copy">
+                  <p className="hv-kicker">
+                    0{index + 1} / {view.caption[lang]}
+                  </p>
+                  <h3>{solution.title[lang]}</h3>
+                  <p>{solution.intro[lang]}</p>
+                  <details className="hv-disclosure">
+                    <summary>
+                      {sw
+                        ? "Vifaa na mambo ya kuhakiki"
+                        : "Equipment & compatibility"}
+                    </summary>
+                    <p>{solution.equipment[lang]}</p>
+                  </details>
+                  <div className="hv-solution-links">
+                    <a href={`/catalogue/hikvision/${model.slug}?lang=${lang}`}>
+                      {model.name} ↗
+                    </a>
+                    <a
+                      href={`/catalogue/hikvision?lang=${lang}&category=${solution.category}`}
+                    >
+                      {sw ? "Vifaa vya kundi hili" : "Browse this category"} ↗
+                    </a>
+                    {solution.id === "video" && (
+                      <a href={`/services/cctv?lang=${lang}`}>
+                        {sw
+                          ? "Huduma ya ufungaji wa CCTV"
+                          : "CCTV installation service"}{" "}
+                        ↗
+                      </a>
+                    )}
+                  </div>
+                  <a className="hv-button hv-primary" href={enquiry.quote}>
+                    {sw ? "Jadili mahitaji yako" : "Discuss your requirements"}{" "}
                     <span aria-hidden="true">↗</span>
                   </a>
-                )}
-              </div>
-            </article>
-          ))}
-        </section>
-        <section className="hv-equipment">
-          <div className="hv-wrap">
-            <div className="hv-equipment-heading">
-              <div>
-                <p className="hv-kicker">
-                  {sw ? "MODELI ZA REJEA" : "EQUIPMENT REFERENCES"}
-                </p>
-                <h2>
-                  {sw ? "Vifaa vinavyounda mfumo." : "Meet the equipment."}
-                </h2>
-              </div>
-              <a href={`/catalogue/hikvision?lang=${lang}`}>
-                {sw ? "Fungua katalogi yote" : "Open full catalogue"}{" "}
-                <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-            <div className="hv-featured">
-              {featured.map((item) => (
-                <a
-                  key={item.slug}
-                  href={`/catalogue/hikvision/${item.slug}?lang=${lang}`}
-                >
-                  {item.images[0] && (
-                    <Image
-                      src={item.images[0].src}
-                      width={300}
-                      height={200}
-                      sizes="(max-width:760px) 44vw, 22vw"
-                      alt=""
-                    />
-                  )}
-                  <strong>{item.name}</strong>
-                  <span>{item.summary[lang]}</span>
-                </a>
-              ))}
-            </div>
-          </div>
+                </div>
+              </article>
+            );
+          })}
         </section>
         <section className="hv-close">
           <div className="hv-wrap">

@@ -13,6 +13,7 @@ export function ReferenceCatalogue({
   categories,
   initialCategory,
   searchExample,
+  comparisonShortcut = false,
 }: {
   products: ReferenceProduct[];
   lang: Language;
@@ -20,6 +21,7 @@ export function ReferenceCatalogue({
   categories: Record<string, Localized>;
   initialCategory?: string;
   searchExample?: Localized;
+  comparisonShortcut?: boolean;
 }) {
   const sw = lang === "sw",
     [query, setQuery] = useState(""),
@@ -101,6 +103,14 @@ export function ReferenceCatalogue({
         {sw ? "Modeli/familia" : "Models/families"}: {filtered.length}.{" "}
         {sw ? "Chagua hadi 3 kulinganisha." : "Select up to 3 to compare."}
       </p>
+      {comparisonShortcut && compared.length > 0 && (
+        <p>
+          <a className="ac-textlink" href="#rc-compare-title">
+            {sw ? "Angalia ulinganisho" : "View comparison"} ({compared.length})
+            ↓
+          </a>
+        </p>
+      )}
       <div className="rc-grid">
         {filtered.map((p) => (
           <div key={p.slug}>
@@ -145,7 +155,10 @@ export function ReferenceCatalogue({
       {compared.length > 0 && (
         <section className="rc-compare" aria-labelledby="rc-compare-title">
           <div className="ac-heading">
-            <h2 id="rc-compare-title">
+            <h2
+              id="rc-compare-title"
+              tabIndex={comparisonShortcut ? -1 : undefined}
+            >
               {sw ? "Linganisha chaguo lako" : "Compare your shortlist"}
             </h2>
             <button

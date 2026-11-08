@@ -64,6 +64,7 @@ export default async function Page({ searchParams }: Props) {
             namespace={path}
             categories={hikvisionCategories}
             initialCategory={query.category}
+            comparisonShortcut
             searchExample={{
               en: "Try MinMoe, ColorVu…",
               sw: "Mfano: MinMoe, ColorVu…",

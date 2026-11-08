@@ -42,14 +42,54 @@ export function BuildingDiagram({ lang }: { lang: Language }) {
 
   return (
     <div className="hv-diagram" ref={region}>
-      <svg viewBox="0 0 550 270" aria-hidden="true" focusable="false">
+      <svg viewBox="0 0 560 285" aria-hidden="true" focusable="false">
+        <defs>
+          <pattern
+            id="hv-drafting"
+            width="20"
+            height="20"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M20 0H0V20"
+              fill="none"
+              stroke="#493b36"
+              strokeWidth=".65"
+            />
+          </pattern>
+        </defs>
+        <rect width="560" height="285" fill="url(#hv-drafting)" />
+        <path d="M42 253H522M66 261H493" stroke="#81695d" fill="none" />
         <path
-          className="hv-building"
-          d="M55 244H495 M92 244V99L274 36L458 99V244 M117 93V237 M432 93V237 M118 105H432 M118 192H432 M194 105V192 M354 105V192 M212 244V111H336V244 M246 244V196H303V244 M127 222H180V202H127Z M369 222H420V202H369Z"
+          d="M116 246V106L176 73H349L449 104V246Z"
+          fill="#50413a"
+          stroke="#b99a86"
         />
+        <path d="M176 73H349L449 104H116Z" fill="#836858" stroke="#c5a692" />
+        <path d="M157 114H412V243H157Z" fill="#2e2b29" stroke="#a38978" />
+        <path
+          d="M163 125H249V176H163ZM321 125H404V176H321ZM164 188H218V239H164ZM366 188H404V239H366Z"
+          fill="#706052"
+          stroke="#ad907c"
+        />
+        <path d="M250 244V119H320V244Z" fill="#423a35" stroke="#ae8e7b" />
+        <path
+          d="M263 243V190H308V243ZM285 190V243M176 125V176M190 125V176M389 125V176M376 125V176M163 149H249M321 149H404"
+          fill="none"
+          stroke="#ad907c"
+        />
+        <path d="M231 174L285 157L337 174Z" fill="#8d6c59" stroke="#c5a692" />
         {diagram.map((item, index) => (
           <g key={item.path} data-active={active === index}>
             <path className="hv-signal" d={item.path} pathLength="100" />
+            <rect
+              className="hv-endpoint"
+              x={item.end[0] - 4}
+              y={item.end[1] - 4}
+              width="8"
+              height="8"
+              rx="2"
+            />
             <circle cx={item.point[0]} cy={item.point[1]} r="12" />
             <text x={item.point[0]} y={item.point[1] + 4} textAnchor="middle">
               {index + 1}
