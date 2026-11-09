@@ -1,724 +1,364 @@
-"use client";
-
-import { PreviewNotice } from "@/components/site/PreviewNotice";
-import { siteConfig } from "@/data/site";
-import { Footer } from "@/components/site/Footer";
-import { TrustBelt } from "./TrustBelt";
-import {
-  SecurityNavigation,
-  SecurityLinks,
-} from "@/components/site/SecurityNavigation";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
-type Lang = "en" | "sw";
-const assets = [
-  "cctv",
-  "gate",
-  "electrical",
-  "solar",
-  "generator",
-  "network",
-  "telephone",
-  "engineering",
-];
-const copy = {
-  en: {
-    nav: ["Expertise", "Equipment", "Our approach", "Contact"],
-    quote: "Discuss your project",
-    menu: "Menu",
-    close: "Close",
-    eyebrow: "SECURITY SYSTEMS · ELECTRICAL CONTRACTING",
-    title: (
-      <>
-        Protection.
-        <br />
-        Power.
-        <br />
-        <em>Peace of mind.</em>
-      </>
-    ),
-    intro:
-      "CCTV installation, electric fencing, gate automation and electrical contracting. Thoughtfully planned for your site.",
-    heroCta: "Explore our services",
-    heroNote: "For homes, businesses, hotels and institutions in Tanzania.",
-    scroll: "A considered approach. From the first conversation.",
-    serviceLabel: "01 / OUR EXPERTISE",
-    serviceTitle: (
-      <>
-        Security and electrical.
-        <br />
-        <em>Planned around you.</em>
-      </>
-    ),
-    serviceIntro:
-      "From a secure entrance to dependable power and connected workplaces. Start with what your site needs.",
-    services: [
-      "CCTV installation & surveillance",
-      "Electric fencing & gate automation",
-      "Electrical contracting",
-      "Solar & battery backup",
-      "Standby generators",
-      "ICT & structured networking",
-      "Business telephones & IP-PBX",
-      "Institutional procurement",
+import { Header } from "@/components/site/Header";
+import { Footer } from "@/components/site/Footer";
+import { siteConfig } from "@/data/site";
+import type { Language } from "@/lib/i18n/config";
+import { ExperienceMotion } from "./ExperienceMotion";
+import { TrustBelt } from "./TrustBelt";
+import { ManufacturerBelts } from "./ManufacturerBelts";
+import "./experience.css";
+
+const requirements = [
+  {
+    asset: "cctv",
+    slug: "cctv",
+    title: [
+      "See what happens on site",
+      "Fuatilia kinachoendelea kwenye eneo lako",
     ],
-    descriptions: [
-      "Thoughtful camera coverage, recording and remote access, planned around the way your property is used.",
-      "Perimeter protection and controlled entry, with electric fencing and gate automation considered together.",
-      "Electrical installation, distribution, materials and maintenance, with the scope defined around your project.",
-      "Solar, hybrid inverter, UPS and battery enquiries brought together around your power requirements.",
-      "Generator supply, changeover and integration enquiries, with technical and servicing scope confirmed for each site.",
-      "Structured cabling, network cabinets and office connectivity, designed for organized, maintainable infrastructure.",
-      "Office extensions, IP phones and business communication requirements, considered alongside your network.",
-      "A clear route from your specifications or BOQ to equipment sourcing and a project-specific quotation.",
+    detail: [
+      "Camera coverage, recording and remote viewing, planned around the people and places you need to protect.",
+      "Panga maeneo ya kamera, hifadhi ya video na ufuatiliaji wa mbali kulingana na matumizi ya eneo lako.",
     ],
-    discuss: "Discuss this requirement",
-    imageLabel: "AI-generated illustration",
-    technical:
-      "Technical scope and delivery arrangements are confirmed during quotation.",
-    engineeringLabel: "02 / ENGINEERING WITH PURPOSE",
-    engineeringTitle: (
-      <>
-        The details matter.
-        <br />
-        <em>So does the whole.</em>
-      </>
-    ),
-    engineeringCopy:
-      "Good systems belong to the building. We begin with your requirements, consider how the systems work together, and define a practical scope for supply, installation and support.",
-    engineeringItems: [
-      "Electrical systems & materials",
-      "Power generation & backup",
-      "Technical equipment procurement",
-    ],
-    powerLabel: "POWER, CONSIDERED",
-    powerTitle: (
-      <>
-        Keep your operations
-        <br />
-        <em>moving.</em>
-      </>
-    ),
-    powerCopy:
-      "Generators, solar, UPS and battery backup. Discuss the load, the site and the level of continuity your operation needs.",
-    powerCta: "Plan your power requirements",
-    equipmentLabel: "03 / THE EQUIPMENT COLLECTION",
-    equipmentTitle: (
-      <>
-        Technical equipment.
-        <br />
-        <em>A more considered selection.</em>
-      </>
-    ),
-    equipmentCopy:
-      "Explore the equipment families behind your project. Specific models, specifications, availability and prices are confirmed with our team.",
-    categories: [
-      "Security & access",
-      "Power & backup",
-      "Networks & communications",
-    ],
-    retail: "Retail enquiries",
-    wholesale: "Trade & wholesale enquiries",
-    categoryCta: "Discuss equipment",
-    approachLabel: "04 / WORKING TOGETHER",
-    approachTitle: (
-      <>
-        Clarity from
-        <br />
-        <em>the beginning.</em>
-      </>
-    ),
-    steps: [
-      [
-        "Your requirements",
-        "Tell us about your property, priorities and specifications.",
-      ],
-      [
-        "Site & technical review",
-        "Agree what needs to be assessed and define a suitable scope.",
-      ],
-      [
-        "A considered quotation",
-        "Review equipment, delivery arrangements and the proposed next step.",
-      ],
-    ],
-    contactLabel: "LET’S DISCUSS YOUR NEXT PROJECT",
-    contactTitle: (
-      <>
-        A better environment
-        <br />
-        <em>starts with a conversation.</em>
-      </>
-    ),
-    contactCopy:
-      "Bring us a requirement, a drawing or a question. We will help define the next step.",
-    telephone: "Telephone",
-    email: "Email",
-    footer: "Security. Engineering. Technology.",
-    rights: "BM Engineering Contractors Limited",
-    language: "Language",
-    name: "Your name or organization",
-    contact: "Phone or email",
-    requirement: "Project requirements",
-    equipmentTag: "EQUIPMENT CATEGORY",
-    noProjects:
-      "Genuine project photography and verified case studies will be added separately.",
   },
-  sw: {
-    nav: ["Huduma", "Vifaa", "Namna tunavyofanya kazi", "Mawasiliano"],
-    quote: "Tuzungumzie mradi wako",
-    menu: "Menyu",
-    close: "Funga",
-    eyebrow: "MIFUMO YA USALAMA · KAZI ZA UMEME",
-    title: (
-      <>
-        Usalama.
-        <br />
-        Umeme.
-        <br />
-        <em>Kwa uhakika.</em>
-      </>
-    ),
-    intro:
-      "Ufungaji wa CCTV, uzio wa umeme, milango ya kiotomatiki na kazi za umeme. Tunapanga kila mfumo kulingana na mahitaji yako.",
-    heroCta: "Fahamu huduma zetu",
-    heroNote: "Kwa makazi, biashara, hoteli na taasisi nchini Tanzania.",
-    scroll: "Tunaanza kwa kukusikiliza. Kisha tunapanga hatua inayofaa.",
-    serviceLabel: "01 / HUDUMA ZETU",
-    serviceTitle: (
-      <>
-        Usalama na umeme.
-        <br />
-        <em>Kulingana na mahitaji yako.</em>
-      </>
-    ),
-    serviceIntro:
-      "Linda eneo lako, boresha mifumo ya umeme na unganisha mawasiliano ya ofisi. Tueleze unachohitaji ili tupange kazi inayofaa.",
-    services: [
-      "Ufungaji wa CCTV",
-      "Uzio wa umeme na milango ya kiotomatiki",
-      "Kazi za umeme",
-      "Sola na mifumo ya betri",
-      "Jenereta za umeme wa akiba",
-      "TEHAMA na mitandao",
-      "Mifumo ya simu za ofisi na IP-PBX",
-      "Ugavi wa vifaa kwa taasisi",
+  {
+    asset: "gate",
+    slug: "electric-fence",
+    title: ["Secure the perimeter and entrances", "Linda mipaka na milango"],
+    detail: [
+      "Combine electric fencing, gate automation and controlled access as the site requires.",
+      "Chagua uzio wa umeme, geti la kiotomatiki na udhibiti wa kuingia kulingana na eneo lako.",
     ],
-    descriptions: [
-      "Mpangilio wa kamera, uhifadhi wa video na ufuatiliaji wa mbali unaozingatia matumizi ya eneo lako.",
-      "Ufungaji wa uzio wa umeme na mifumo ya kufungua na kufunga milango kiotomatiki, kulingana na mahitaji ya usalama wa eneo lako.",
-      "Ufungaji wa mifumo ya umeme, usambazaji wa vifaa na matengenezo, kwa kazi zilizokubaliwa kulingana na mahitaji ya mradi wako.",
-      "Sola, hybrid inverter, UPS na betri: tunazingatia vifaa unavyotumia na mahitaji yako ya umeme wa akiba.",
-      "Ugavi wa jenereta na uunganishaji wa changeover. Kazi za ufungaji na matengenezo hukubaliwa baada ya kubaini mahitaji ya eneo lako.",
-      "Ufungaji wa nyaya, makabati ya mtandao na mawasiliano ya ofisi, kwa miundombinu iliyopangwa na inayotunzwa kwa urahisi.",
-      "Simu za ndani za ofisi, IP phones na IP-PBX kwa mawasiliano ya biashara, zikioanishwa na mtandao wako.",
-      "Tuletee mahitaji ya kiufundi au BOQ yako. Tutakusaidia kutafuta vifaa vinavyofaa na kuandaa nukuu ya bei kulingana na mahitaji hayo.",
-    ],
-    discuss: "Jadili mahitaji haya",
-    imageLabel: "Picha ya mfano iliyozalishwa kwa AI",
-    technical:
-      "Kazi zitakazofanyika na utaratibu wa utekelezaji huthibitishwa kwenye nukuu ya bei.",
-    engineeringLabel: "02 / KAZI ZA UMEME NA MIFUMO",
-    engineeringTitle: (
-      <>
-        Kila sehemu ni muhimu.
-        <br />
-        <em>Mifumo ifanye kazi pamoja.</em>
-      </>
-    ),
-    engineeringCopy:
-      "Tunaanza kwa kuelewa mahitaji ya jengo lako na jinsi mifumo yake inavyounganishwa. Kisha tunakubaliana kuhusu vifaa, ufungaji na huduma utakazohitaji.",
-    engineeringItems: [
-      "Mifumo na vifaa vya umeme",
-      "Uzalishaji na akiba ya umeme",
-      "Manunuzi ya vifaa vya kiufundi",
-    ],
-    powerLabel: "UMEME WA AKIBA KWA MAHITAJI YAKO",
-    powerTitle: (
-      <>
-        Jiandae kwa
-        <br />
-        <em>umeme unapokatika.</em>
-      </>
-    ),
-    powerCopy:
-      "Jenereta, sola, UPS na betri za akiba. Tueleze vifaa unavyotumia na shughuli unazohitaji ziendelee umeme unapokatika.",
-    powerCta: "Panga mahitaji yako ya umeme",
-    equipmentLabel: "03 / MAKUNDI YA VIFAA",
-    equipmentTitle: (
-      <>
-        Vifaa vinavyofaa.
-        <br />
-        <em>Kwa mahitaji ya kazi yako.</em>
-      </>
-    ),
-    equipmentCopy:
-      "Fahamu makundi ya vifaa vya mradi wako. Modeli, vipimo, upatikanaji na bei huthibitishwa na timu yetu.",
-    categories: [
-      "Usalama na udhibiti wa kuingia",
-      "Nishati na umeme wa akiba",
-      "Mitandao na mawasiliano",
-    ],
-    retail: "Ulizia ununuzi wa rejareja",
-    wholesale: "Ulizia ununuzi wa jumla",
-    categoryCta: "Jadili vifaa",
-    approachLabel: "04 / KUFANYA KAZI PAMOJA",
-    approachTitle: (
-      <>
-        Uwazi tangu
-        <br />
-        <em>mwanzo.</em>
-      </>
-    ),
-    steps: [
-      [
-        "Mahitaji yako",
-        "Tueleze kuhusu eneo lako, vipaumbele na maelezo ya kiufundi.",
-      ],
-      [
-        "Tathmini ya eneo na kiufundi",
-        "Tunakubaliana kuhusu tathmini inayohitajika na kazi zitakazofanyika.",
-      ],
-      [
-        "Nukuu ya bei",
-        "Pitia vifaa vilivyopendekezwa, gharama na utaratibu wa utekelezaji.",
-      ],
-    ],
-    contactLabel: "TUZUNGUMZIE MRADI WAKO",
-    contactTitle: (
-      <>
-        Tuanzie kwenye
-        <br />
-        <em>mahitaji yako.</em>
-      </>
-    ),
-    contactCopy:
-      "Una mahitaji, mchoro au swali? Wasiliana nasi tupange hatua inayofuata.",
-    telephone: "Simu",
-    email: "Barua pepe",
-    footer: "Usalama. Uhandisi. Teknolojia.",
-    rights: "BM Engineering Contractors Limited",
-    language: "Lugha",
-    name: "Jina lako au la taasisi",
-    contact: "Simu au barua pepe",
-    requirement: "Mahitaji ya mradi",
-    equipmentTag: "KUNDI LA VIFAA",
-    noProjects:
-      "Picha halisi na maelezo ya miradi vitaongezwa baada ya kuthibitishwa.",
   },
-};
-const anchors = ["services", "equipment", "approach", "contact"];
-const servicePaths = [
-  "cctv",
-  "electric-fence",
-  "electrical-contracting",
-  "solar-panel-systems",
-  "generators",
-  "networking",
-  "telephone-systems",
-  "institutional-procurement",
-];
-function Arrow() {
-  return <span aria-hidden="true">↗</span>;
-}
-function Photo({
-  asset,
-  alt,
-  className = "",
-  priority = false,
-  label,
-}: {
-  asset: string;
-  alt: string;
-  className?: string;
-  priority?: boolean;
-  label: string;
-}) {
-  return (
-    <figure className={"photo " + className}>
-      <Image
-        src={"/assets/" + asset + "-1440.webp"}
-        alt={alt}
-        fill
-        sizes={priority ? "100vw" : "(max-width: 760px) 100vw, 55vw"}
-        preload={priority}
-        style={{ objectFit: "cover" }}
-      />
-      <figcaption>{label}</figcaption>
-    </figure>
-  );
-}
-export default function Homepage({ lang }: { lang: Lang }) {
-  const router = useRouter();
-  const t = copy[lang];
-  const [active, setActive] = useState<number | null>(0);
-  const [menu, setMenu] = useState(false);
-  const enquire = (value: string) => {
-    router.push(
-      "/request-site-survey?lang=" +
-        lang +
-        "&service=" +
-        encodeURIComponent(value),
-    );
-  };
+  {
+    asset: "electrical",
+    slug: "electrical-contracting",
+    title: ["Plan electrical work", "Panga kazi za umeme"],
+    detail: [
+      "Discuss installation, distribution, technical materials and maintenance.",
+      "Jadili ufungaji, usambazaji wa umeme, vifaa na matengenezo.",
+    ],
+  },
+  {
+    asset: "solar",
+    slug: "solar-panel-systems",
+    title: [
+      "Keep essential equipment running",
+      "Dumisha huduma muhimu umeme ukikatika",
+    ],
+    detail: [
+      "Compare solar, batteries, UPS and generators around your load and the time you need backup.",
+      "Linganisha sola, betri, UPS na jenereta kulingana na mzigo na muda unaohitaji umeme wa akiba.",
+    ],
+  },
+  {
+    asset: "network",
+    slug: "networking",
+    title: ["Connect offices and teams", "Unganisha ofisi na timu"],
+    detail: [
+      "Plan structured cabling, reliable networks and business telephone systems.",
+      "Panga nyaya za mtandao na mifumo ya simu za ofisi.",
+    ],
+  },
+  {
+    asset: "engineering",
+    slug: "institutional-procurement",
+    title: [
+      "Source equipment for a project",
+      "Pata vifaa vya mradi au taasisi",
+    ],
+    detail: [
+      "Bring a model list, specification or BOQ for a scoped quotation.",
+      "Tuletee orodha ya modeli, vipimo au BOQ ili tuandae nukuu ya bei.",
+    ],
+  },
+] as const;
+
+const equipment = [
+  {
+    title: ["Building security", "Ulinzi wa majengo"],
+    image: "/images/hikvision/ds-2cd2347g2h-liu.webp",
+    path: "/catalogue/hikvision",
+    brand: "Hikvision",
+  },
+  {
+    title: ["Gate automation", "Mageti ya kiotomatiki"],
+    image: "/assets/gate-automation/products/d6.webp",
+    path: "/catalogue/centurion",
+    brand: "CENTURION",
+  },
+  {
+    title: ["Doors & attendance", "Milango na mahudhurio"],
+    image: "/images/access-control/mb360.webp",
+    path: "/catalogue/zkteco",
+    brand: "ZKTeco",
+  },
+] as const;
+
+const steps = [
+  [
+    "Tell us what you need",
+    "Share your priorities, site and any drawings or specifications.",
+    "Tueleze unachohitaji",
+    "Tuma mahitaji, eneo na michoro au vipimo ulivyonavyo.",
+  ],
+  [
+    "Review the site and scope",
+    "Agree what to assess and which systems fit your requirements.",
+    "Pitia eneo na wigo wa kazi",
+    "Tunakubaliana kuhusu tathmini na mifumo inayofaa.",
+  ],
+  [
+    "Review your quotation",
+    "See the proposed equipment, scope and next steps before deciding.",
+    "Pitia nukuu ya bei",
+    "Angalia vifaa vilivyopendekezwa, kazi na hatua zinazofuata.",
+  ],
+] as const;
+
+export default function Homepage({ lang }: { lang: Language }) {
+  const sw = lang === "sw",
+    l = sw ? 1 : 0;
+  const local = (path: string) => path + "?lang=" + lang;
+  const quote = local("/contact");
+  const survey = local("/request-site-survey");
   return (
     <>
-      <a className="skip" href="#main">
-        {lang === "en" ? "Skip to content" : "Nenda kwenye maudhui"}
-      </a>
-      <PreviewNotice lang={lang} />
-      <header className="site-header">
-        <a
-          className="brand"
-          href={"/?lang=" + lang}
-          aria-label="BM Engineering Contractors homepage"
-        >
+      <Header lang={lang} />
+      <main id="main" className="bm-experience">
+        <ExperienceMotion />
+        <section className="bm-hero" aria-labelledby="bm-hero-title">
           <Image
-            src="/assets/official-logo.png"
-            width={42}
-            height={46}
-            alt="BM Contractors official shield"
+            src="/assets/hero-1440.webp"
+            alt=""
+            fill
+            preload
+            sizes="100vw"
           />
-          <span>
-            BM CONTRACTORS<small>ENGINEERING · TANZANIA</small>
-          </span>
-        </a>
-        <nav
-          className="desktop-nav"
-          aria-label={lang === "en" ? "Main navigation" : "Menyu kuu"}
-        >
-          <SecurityNavigation lang={lang} />
-          {t.nav.map((x, i) => (
-            <a href={"#" + anchors[i]} key={x}>
-              {x}
-            </a>
-          ))}
-        </nav>
-        <div className="header-actions">
-          <div className="languages" aria-label={t.language}>
-            <a
-              href="?lang=en"
-              lang="en"
-              aria-label="English"
-              aria-current={lang === "en" ? "page" : undefined}
-            >
-              EN
-            </a>
-            <span>/</span>
-            <a
-              href="?lang=sw"
-              lang="sw"
-              aria-label="Kiswahili"
-              aria-current={lang === "sw" ? "page" : undefined}
-            >
-              SW
-            </a>
-          </div>
-          <button className="header-enquiry" onClick={() => enquire("")}>
-            {t.quote}
-            <Arrow />
-          </button>
-          <button
-            className="menu-toggle"
-            aria-expanded={menu}
-            aria-controls="mobile-menu"
-            onClick={() => setMenu(!menu)}
-          >
-            {menu ? t.close : t.menu}
-            <span aria-hidden="true">{menu ? "−" : "+"}</span>
-          </button>
-        </div>
-      </header>
-      {menu ? (
-        <nav className="mobile-menu" id="mobile-menu" aria-label={t.menu}>
-          <SecurityLinks lang={lang} />
-          {t.nav.map((x, i) => (
-            <a href={"#" + anchors[i]} key={x} onClick={() => setMenu(false)}>
-              {x}
-              <Arrow />
-            </a>
-          ))}
-          <button onClick={() => enquire("")}>
-            {t.quote}
-            <Arrow />
-          </button>
-        </nav>
-      ) : null}
-      <main id="main">
-        <section className="hero" lang={lang}>
-          <Photo
-            asset="hero"
-            alt={
-              lang === "en"
-                ? "AI-generated contemporary building with discreet CCTV and automated entrance"
-                : "Jengo la mfano lililozalishwa kwa AI lenye CCTV na lango la kiotomatiki"
-            }
-            label={t.imageLabel}
-            priority
-          />
-          <div className="hero-shade" />
-          <div className="hero-content">
-            <p className="eyebrow light">{t.eyebrow}</p>
-            <h1>{t.title}</h1>
-            <p className="hero-intro">{t.intro}</p>
-            <div className="hero-actions">
-              <button className="button ivory" onClick={() => enquire("")}>
-                {t.quote}
-                <Arrow />
-              </button>
-              <a className="hero-services" href="#services">
-                {t.heroCta}
+          <div className="bm-wrap bm-hero-inner">
+            <p className="bm-label">
+              {sw
+                ? "USALAMA · UMEME · MAWASILIANO"
+                : "SECURITY · ELECTRICAL · CONNECTIVITY"}
+            </p>
+            <h1 id="bm-hero-title">
+              {sw ? "Linda eneo lako." : "Protect your premises."}
+              <br />
+              <em>
+                {sw ? "Endeleza shughuli zako." : "Keep your site running."}
+              </em>
+            </h1>
+            <p>
+              {sw
+                ? "CCTV, uzio wa umeme, mageti ya kiotomatiki na mifumo ya umeme kwa makazi, biashara na taasisi Tanzania."
+                : "CCTV, electric fencing, gate automation and electrical systems for homes, businesses and institutions in Tanzania."}
+            </p>
+            <div className="bm-actions">
+              <a className="bm-action bm-solid" href="#services">
+                {sw ? "Chagua unachohitaji" : "Find your solution"}{" "}
                 <span aria-hidden="true">↓</span>
               </a>
+              <a className="bm-action bm-outline" href={quote}>
+                {sw ? "Omba nukuu ya bei" : "Request a quotation"}{" "}
+                <span aria-hidden="true">↗</span>
+              </a>
             </div>
-            <p className="hero-note">{t.heroNote}</p>
           </div>
-          <div className="hero-index">
-            <span>BM / 01</span>
-            <span>
-              {lang === "en"
-                ? "Security · Electrical · Connected systems"
-                : "Usalama · Umeme · Mawasiliano"}
-            </span>
-          </div>
+          <p className="bm-hero-location">MOSHI · ARUSHA · TANZANIA</p>
         </section>
-        <div className="intro-line">
-          <p>{t.scroll}</p>
-          <a href="#services" aria-label={t.heroCta}>
-            ↓
-          </a>
-        </div>
-        <TrustBelt kind="systems" lang={lang} />
-        <section className="section expertise" id="services">
-          <div className="section-heading">
-            <div>
-              <p className="eyebrow">{t.serviceLabel}</p>
-              <h2>{t.serviceTitle}</h2>
-            </div>
-            <p className="section-intro">{t.serviceIntro}</p>
+        <section id="services" className="bm-wrap bm-section" data-bm-reveal>
+          <div className="bm-section-heading">
+            <p className="bm-label">
+              {sw
+                ? "01 / CHAGUA MAHITAJI YAKO"
+                : "01 / CHOOSE YOUR REQUIREMENT"}
+            </p>
+            <h2>
+              {sw ? "Unahitaji kufanya nini?" : "What do you need to do?"}
+            </h2>
           </div>
-          <div className="expertise-layout">
-            <Photo
-              asset={assets[active ?? 0]}
-              alt={t.services[active ?? 0] + " — " + t.imageLabel}
-              label={t.imageLabel}
-              className="expertise-photo"
-            />
-            <div
-              className="service-list"
-              role="group"
-              aria-label={
-                lang === "en" ? "Explore our services" : "Fahamu huduma zetu"
-              }
-            >
-              {t.services.map((name, i) => (
-                <div
-                  className={"service-item " + (active === i ? "active" : "")}
-                  key={name}
-                >
-                  <button
-                    id={"service-tab-" + i}
-                    aria-expanded={active === i}
-                    aria-controls={"service-panel-" + i}
-                    onClick={() =>
-                      setActive((previous) => (previous === i ? null : i))
-                    }
-                  >
-                    <span className="index">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <span>{name}</span>
-                    <span aria-hidden="true">{active === i ? "−" : "+"}</span>
-                  </button>
-                  {active === i ? (
-                    <div
-                      role="region"
-                      id={"service-panel-" + i}
-                      aria-labelledby={"service-tab-" + i}
-                    >
-                      <p>{t.descriptions[i]}</p>
-                      <a
-                        className="text-link"
-                        href={"/services/" + servicePaths[i] + "?lang=" + lang}
-                      >
-                        {t.discuss}
-                        <Arrow />
+          <div className="bm-requirements">
+            {requirements.map(({ asset, slug, title, detail }, i) => (
+              <details name="bm-home-requirements" key={slug} open={i === 0}>
+                <summary>
+                  <span className="bm-index" aria-hidden="true">
+                    0{i + 1}
+                  </span>
+                  <span>{title[l]}</span>
+                  <span className="bm-plus" aria-hidden="true">
+                    +
+                  </span>
+                </summary>
+                <div className="bm-requirement-panel">
+                  <Image
+                    src={`/assets/${asset}-640.webp`}
+                    alt=""
+                    width={640}
+                    height={426}
+                    sizes="(max-width: 680px) 94vw, 32vw"
+                  />
+                  <div>
+                    <p>{detail[l]}</p>
+                    <div className="bm-links">
+                      <a href={local("/services/" + slug)}>
+                        {sw ? "Fahamu huduma" : "Explore the service"} ↗
                       </a>
                       {i === 1 && (
-                        <a
-                          className="text-link"
-                          href={"/services/gate-motors?lang=" + lang}
-                        >
-                          {lang === "sw"
-                            ? "Milango ya kiotomatiki"
-                            : "Gate automation"}
-                          <Arrow />
+                        <a href={local("/services/gate-motors")}>
+                          {sw ? "Mageti ya kiotomatiki" : "Gate automation"} ↗
                         </a>
                       )}
+                      {i === 3 && (
+                        <a href={local("/services/generators")}>
+                          {sw ? "Jenereta" : "Generators"} ↗
+                        </a>
+                      )}
+                      {i === 4 && (
+                        <a href={local("/services/telephone-systems")}>
+                          {sw ? "Simu za ofisi" : "Business telephony"} ↗
+                        </a>
+                      )}
+                      <a
+                        href={
+                          survey + "&service=" + encodeURIComponent(title[l])
+                        }
+                      >
+                        {sw ? "Panga tathmini ya eneo" : "Plan a site survey"} ↗
+                      </a>
                     </div>
-                  ) : null}
+                  </div>
                 </div>
-              ))}
-            </div>
-          </div>
-          <p className="scope-note">{t.technical}</p>
-        </section>
-        <section className="engineering">
-          <div className="engineering-copy">
-            <p className="eyebrow">{t.engineeringLabel}</p>
-            <h2>{t.engineeringTitle}</h2>
-            <p>{t.engineeringCopy}</p>
-            <ul>
-              {t.engineeringItems.map((item, i) => (
-                <li key={item}>
-                  <span>0{i + 1}</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <button
-              className="button dark"
-              onClick={() => enquire(t.services[7])}
-            >
-              {t.quote}
-              <Arrow />
-            </button>
-          </div>
-          <Photo
-            asset="electrical"
-            alt={t.services[2] + " — " + t.imageLabel}
-            label={t.imageLabel}
-            className="engineering-photo"
-          />
-        </section>
-        <section className="power">
-          <div className="power-images">
-            <Photo
-              asset="solar"
-              alt={t.services[3] + " — " + t.imageLabel}
-              label={t.imageLabel}
-            />
-            <Photo
-              asset="generator"
-              alt={t.services[4] + " — " + t.imageLabel}
-              label={t.imageLabel}
-            />
-          </div>
-          <div className="power-copy">
-            <p className="eyebrow light">{t.powerLabel}</p>
-            <h2>{t.powerTitle}</h2>
-            <p>{t.powerCopy}</p>
-            <button
-              className="text-link light-link"
-              onClick={() => enquire(t.services[4])}
-            >
-              {t.powerCta}
-              <Arrow />
-            </button>
-          </div>
-        </section>
-        <section className="section equipment" id="equipment">
-          <div className="section-heading">
-            <div>
-              <p className="eyebrow">{t.equipmentLabel}</p>
-              <h2>{t.equipmentTitle}</h2>
-            </div>
-            <p className="section-intro">{t.equipmentCopy}</p>
-          </div>
-          <div className="equipment-grid">
-            {["cctv", "generator", "network"].map((asset, i) => (
-              <article key={asset}>
-                <Photo
-                  asset={asset}
-                  alt={t.categories[i] + " — " + t.imageLabel}
-                  label={t.imageLabel}
-                />
-                <div className="equipment-caption">
-                  <p className="eyebrow">{t.equipmentTag}</p>
-                  <h3>{t.categories[i]}</h3>
-                  <button
-                    className="text-link"
-                    onClick={() => router.push("/products?lang=" + lang)}
-                  >
-                    {t.categoryCta}
-                    <Arrow />
-                  </button>
-                </div>
-              </article>
+              </details>
             ))}
           </div>
-          <div className="trade">
-            <button onClick={() => enquire(t.retail)}>
-              {t.retail}
-              <Arrow />
-            </button>
-            <button onClick={() => enquire(t.wholesale)}>
-              {t.wholesale}
-              <Arrow />
-            </button>
+          <a className="bm-text-link" href={local("/services")}>
+            {sw ? "Huduma zote za BM" : "View all BM services"} ↗
+          </a>
+        </section>
+        <section className="bm-applications" data-bm-reveal>
+          <div className="bm-application-image">
+            <Image
+              src="/images/hikvision/reception.webp"
+              alt={
+                sw
+                  ? "Picha ya mfano ya mapokezi ya jengo"
+                  : "Illustrative reception at a contemporary building"
+              }
+              fill
+              sizes="(max-width: 760px) 100vw, 55vw"
+            />
+          </div>
+          <div className="bm-application-copy">
+            <p className="bm-label">
+              {sw
+                ? "02 / MIFUMO KWA ENEO LAKO"
+                : "02 / SOLUTIONS FOR YOUR SITE"}
+            </p>
+            <h2>
+              {sw
+                ? "Kutoka getini hadi mapokezi."
+                : "From the gate to reception."}
+            </h2>
+            <p>
+              {sw
+                ? "Panga CCTV, udhibiti wa milango na intercom kulingana na jinsi wageni na wafanyakazi wanavyotumia jengo."
+                : "Plan CCTV, access control and intercom around how visitors and staff use the building."}
+            </p>
+            <a
+              className="bm-action bm-outline"
+              href={local("/services/hikvision")}
+            >
+              {sw ? "Ulinzi wa majengo" : "Explore building security"} ↗
+            </a>
           </div>
         </section>
-        <TrustBelt kind="sectors" lang={lang} />
-        <section className="approach section" id="approach">
-          <div>
-            <p className="eyebrow">{t.approachLabel}</p>
-            <h2>{t.approachTitle}</h2>
+        <section id="equipment" className="bm-wrap bm-section" data-bm-reveal>
+          <div className="bm-section-heading">
+            <p className="bm-label">
+              {sw ? "03 / VIFAA NA MATUMIZI" : "03 / EQUIPMENT & APPLICATIONS"}
+            </p>
+            <h2>
+              {sw
+                ? "Angalia vifaa kwa matumizi yako."
+                : "See the equipment behind the solution."}
+            </h2>
           </div>
-          <div className="steps">
-            {t.steps.map(([title, desc], i) => (
-              <article key={title}>
-                <span className="step-number">0{i + 1}</span>
+          <div className="bm-equipment-grid">
+            {equipment.map((item) => (
+              <a
+                className="bm-equipment-card"
+                key={item.brand}
+                href={local(item.path)}
+              >
+                <div className="bm-equipment-image">
+                  <Image
+                    src={item.image}
+                    alt=""
+                    fill
+                    sizes="(max-width:680px) 84vw, 30vw"
+                  />
+                </div>
                 <div>
-                  <h3>{title}</h3>
-                  <p>{desc}</p>
+                  <p className="bm-label">{item.brand}</p>
+                  <h3>
+                    {item.title[l]} <span aria-hidden="true">↗</span>
+                  </h3>
                 </div>
-              </article>
+              </a>
             ))}
           </div>
+          <a className="bm-text-link" href={local("/products")}>
+            {sw ? "Fungua orodha ya vifaa" : "Browse all equipment"} ↗
+          </a>
         </section>
-        <section className="contact section" id="contact">
-          <div>
-            <p className="eyebrow light">{t.contactLabel}</p>
-            <h2>{t.contactTitle}</h2>
-            <p>{t.contactCopy}</p>
-            <button className="button ivory" onClick={() => enquire("")}>
-              {t.quote}
-              <Arrow />
-            </button>
+        <ManufacturerBelts lang={lang} />
+        <TrustBelt kind="sectors" lang={lang} />
+        <section id="approach" className="bm-wrap bm-section" data-bm-reveal>
+          <div className="bm-section-heading">
+            <p className="bm-label">
+              {sw ? "04 / JINSI TUNAVYOFANYA KAZI" : "04 / HOW IT WORKS"}
+            </p>
+            <h2>
+              {sw
+                ? "Hatua tatu kuelekea nukuu."
+                : "Three steps to a quotation."}
+            </h2>
           </div>
-          <div className="contact-details">
-            <div>
-              <p>
-                {lang === "sw"
-                  ? "Mauzo na maombi nchi nzima"
-                  : "Sales & national enquiries"}
-              </p>
-              <a href={"tel:" + siteConfig.sales.raw}>
+          <ol className="bm-process">
+            {steps.map(([en, detail, swTitle, swDetail], i) => (
+              <li key={en}>
+                <span className="bm-index">0{i + 1}</span>
+                <h3>{sw ? swTitle : en}</h3>
+                <p>{sw ? swDetail : detail}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
+        <section id="contact" className="bm-contact" data-bm-reveal>
+          <div className="bm-wrap">
+            <p className="bm-label">
+              {sw ? "TUZUNGUMZIE MRADI WAKO" : "LET’S DISCUSS YOUR PROJECT"}
+            </p>
+            <h2>
+              {sw
+                ? "Tuanzie kwenye mahitaji yako."
+                : "Tell us what your site needs."}
+            </h2>
+            <div className="bm-actions">
+              <a className="bm-action bm-solid" href={quote}>
+                {sw ? "Omba nukuu ya bei" : "Request a quotation"} ↗
+              </a>
+              <a className="bm-action bm-outline" href={survey}>
+                {sw ? "Panga tathmini ya eneo" : "Plan a site survey"} ↗
+              </a>
+              <a className="bm-text-link" href={`tel:${siteConfig.sales.raw}`}>
                 {siteConfig.sales.label}
               </a>
             </div>
-            <div>
-              <p>{t.email}</p>
-              <a href="mailto:sales@bmcontractorstz.com">
-                sales@bmcontractorstz.com
-              </a>
-            </div>
-            <span>TANZANIA</span>
           </div>
         </section>
       </main>
-      <Footer lang={lang} />
-      <div className="mobile-cta">
-        <button onClick={() => enquire("")}>
-          {t.quote}
-          <Arrow />
-        </button>
-        <a href="#contact">
-          {lang === "en" ? "Contact" : "Mawasiliano"}
-          <Arrow />
-        </a>
-      </div>
+      <Footer lang={lang} imageNotice={false} />
     </>
   );
 }

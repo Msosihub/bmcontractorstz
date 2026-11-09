@@ -2673,3 +2673,23 @@ body.premium-site:has(dialog[open]) {
   font-size: 12px;
   line-height: 1.6;
 }
+
+/* Shared navigation and interaction affordances. */
+.premium-site .bm-mobile-disclosure { display: none; }
+.premium-site :is(.site-header,.premium-footer,.catalogue-records,.enquiry-layout,.visual-directory) :is(a,button,summary):focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+.premium-site :is(.desktop-nav,.premium-footer,.visual-directory) a:hover { text-underline-offset: .24em; text-decoration: underline; }
+@media (max-width:900px) {
+  .premium-site .site-header:has(.bm-mobile-disclosure) { position:relative; z-index:10; }
+  .premium-site .bm-mobile-disclosure { display:block; }
+  .premium-site .bm-mobile-disclosure summary { min-height:44px; list-style:none; cursor:pointer; }
+  .premium-site .bm-mobile-disclosure summary::-webkit-details-marker { display:none; }
+  .premium-site .bm-mobile-disclosure[open] summary span { transform:rotate(45deg); }
+  .premium-site .bm-mobile-disclosure > nav {
+    position:absolute; inset:100% 0 auto; max-height:min(72dvh,32rem); overflow:auto;
+    box-shadow:0 16px 26px #211b1724;
+  }
+  .premium-site .bm-mobile-disclosure nav a[aria-current="page"] { font-weight:750; }
+}
