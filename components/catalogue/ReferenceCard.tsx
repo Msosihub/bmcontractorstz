@@ -13,18 +13,21 @@ export function ReferenceCard({
   namespace: string;
 }) {
   const sw = lang === "sw";
+  const photo = p.images[0];
   return (
     <article className="rc-card">
-      <a href={`${namespace}/${p.slug}?lang=${lang}`} className="rc-photo">
-        <Image
-          src={p.images[0].src}
-          width={640}
-          height={640}
-          sizes="(max-width:650px) 85vw, (max-width:1000px) 42vw, 28vw"
-          alt={p.images[0].alt}
-        />
-        <span aria-hidden="true">↗</span>
-      </a>
+      {photo && (
+        <a href={`${namespace}/${p.slug}?lang=${lang}`} className="rc-photo">
+          <Image
+            src={photo.src}
+            width={640}
+            height={640}
+            sizes="(max-width:650px) 85vw, (max-width:1000px) 42vw, 28vw"
+            alt={photo.alt}
+          />
+          <span aria-hidden="true">↗</span>
+        </a>
+      )}
       <div className="rc-card-copy">
         <p className="eyebrow">{referenceStatus[p.classification][lang]}</p>
         <h3>

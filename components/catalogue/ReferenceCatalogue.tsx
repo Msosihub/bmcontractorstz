@@ -12,12 +12,16 @@ export function ReferenceCatalogue({
   namespace,
   categories,
   initialCategory,
+  searchExample,
+  comparisonShortcut = false,
 }: {
   products: ReferenceProduct[];
   lang: Language;
   namespace: string;
   categories: Record<string, Localized>;
   initialCategory?: string;
+  searchExample?: Localized;
+  comparisonShortcut?: boolean;
 }) {
   const sw = lang === "sw",
     [query, setQuery] = useState(""),
@@ -75,7 +79,8 @@ export function ReferenceCatalogue({
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder={
-              sw ? "Mfano: SenseFace, hoteli…" : "Try SenseFace, hotel…"
+              searchExample?.[lang] ??
+              (sw ? "Mfano: SenseFace, hoteli…" : "Try SenseFace, hotel…")
             }
           />
         </label>
@@ -98,6 +103,14 @@ export function ReferenceCatalogue({
         {sw ? "Modeli/familia" : "Models/families"}: {filtered.length}.{" "}
         {sw ? "Chagua hadi 3 kulinganisha." : "Select up to 3 to compare."}
       </p>
+      {comparisonShortcut && compared.length > 0 && (
+        <p>
+          <a className="ac-textlink" href="#rc-compare-title">
+            {sw ? "Angalia ulinganisho" : "View comparison"} ({compared.length})
+            ↓
+          </a>
+        </p>
+      )}
       <div className="rc-grid">
         {filtered.map((p) => (
           <div key={p.slug}>
@@ -142,7 +155,10 @@ export function ReferenceCatalogue({
       {compared.length > 0 && (
         <section className="rc-compare" aria-labelledby="rc-compare-title">
           <div className="ac-heading">
-            <h2 id="rc-compare-title">
+            <h2
+              id="rc-compare-title"
+              tabIndex={comparisonShortcut ? -1 : undefined}
+            >
               {sw ? "Linganisha chaguo lako" : "Compare your shortlist"}
             </h2>
             <button
@@ -220,7 +236,9 @@ export function ReferenceCatalogue({
                   <th scope="row">{sw ? "Chaguo la nukuu" : "Quotation"}</th>
                   {compared.map((p) => (
                     <td key={p.slug}>
-                      <a href={solutionLinks(lang, "ZKTeco " + p.name).quote}>
+                      <a
+                        href={solutionLinks(lang, p.brand + " " + p.name).quote}
+                      >
                         {sw ? "Omba bei ya sasa" : "Request Current Price"} ↗
                       </a>
                     </td>
@@ -245,7 +263,7 @@ export function ReferenceEnquiry({
     [variant, setVariant] = useState(p.variants[0]),
     [scope, setScope] = useState("installed"),
     software = p.category === "software",
-    detail = `ZKTeco ${variant} — ${scope === "installed" ? (sw ? "mfumo uliofungwa" : "installed system") : scope === "equipment" ? (software ? (sw ? "leseni pekee" : "licence only") : sw ? "vifaa pekee" : "equipment only") : sw ? "matengenezo ya mfumo uliopo" : "existing-system support"}`,
+    detail = `${p.brand} ${variant} — ${scope === "installed" ? (sw ? "mfumo uliofungwa" : "installed system") : scope === "equipment" ? (software ? (sw ? "leseni pekee" : "licence only") : sw ? "vifaa pekee" : "equipment only") : sw ? "matengenezo ya mfumo uliopo" : "existing-system support"}`,
     links = solutionLinks(lang, detail);
   return (
     <div className="rc-enquiry">

@@ -178,5 +178,65 @@
     "source": "https://zkteco.technology/en/product/zk-d180/",
     "reviewed": "2026-11-04",
     "published": true
+  },
+  {
+    "slug": "plan-building-security-tanzania",
+    "service": "hikvision",
+    "image": "/images/hikvision/building.webp",
+    "alt": {
+      "en": "Architectural view of a modern lodge entrance at dusk",
+      "sw": "Mwonekano wa lango la lodge ya kisasa wakati wa machweo"
+    },
+    "category": {
+      "en": "BUILDING SECURITY",
+      "sw": "ULINZI WA MAJENGO"
+    },
+    "title": {
+      "en": "Planning security for a new building? Start with the doors.",
+      "sw": "Unapanga ulinzi wa jengo jipya? Anza na milango."
+    },
+    "summary": {
+      "en": "Three decisions to make before buying cameras, intercoms or access control for your property.",
+      "sw": "Maamuzi matatu kabla ya kununua kamera, intercom au vifaa vya kudhibiti milango ya jengo lako."
+    },
+    "sections": [
+      {
+        "title": {
+          "en": "1. Draw the routes people use",
+          "sw": "1. Chora njia wanazotumia watu"
+        },
+        "text": {
+          "en": "A hotel has different routes for guests, staff and deliveries. Mark each entrance, who should open it and what happens after hours. Set aside private areas when planning camera views.",
+          "sw": "Hoteli ina njia tofauti kwa wageni, wafanyakazi na wanaoleta mizigo. Weka alama kwenye kila mlango, bainisha nani anaruhusiwa kufungua na utaratibu wa baada ya saa za kazi. Epuka kuelekeza kamera kwenye sehemu za faragha."
+        }
+      },
+      {
+        "title": {
+          "en": "2. Check power and cable routes",
+          "sw": "2. Kagua umeme na njia za nyaya"
+        },
+        "text": {
+          "en": "If the building is still under construction, agree conduits and equipment positions before the finishes go in. On an existing site, test the cable before choosing a two-wire intercom and check how each critical device stays powered during an outage.",
+          "sw": "Ikiwa ujenzi unaendelea, kubaliana kuhusu mabomba ya nyaya na nafasi za vifaa kabla ya kazi za umaliziaji. Kwa jengo lililopo, pima nyaya kabla ya kuchagua intercom ya nyaya mbili, na hakiki namna kila kifaa muhimu kitakavyopata umeme wakati umeme wa kawaida umekatika."
+        }
+      },
+      {
+        "title": {
+          "en": "3. Decide what the operator must do",
+          "sw": "3. Bainisha kazi za mhudumu wa ulinzi"
+        },
+        "text": {
+          "en": "A receptionist may need to answer the door. A security desk may need to review footage after an alarm. Write down the actual workflow, then verify the devices, firmware and licences needed to support it.",
+          "sw": "Mhudumu wa mapokezi anaweza kuhitaji kuzungumza na mgeni mlangoni. Wahudumu wa ulinzi wanaweza kuhitaji kukagua video baada ya tahadhari. Andika hatua wanazopaswa kufuata, kisha hakiki vifaa, firmware na leseni zinazohitajika."
+        }
+      }
+    ],
+    "cta": {
+      "en": "Send BM your floor plan and the entrances you need to manage. Ask for equipment only or a site assessment and installed quotation.",
+      "sw": "Tuma kwa BM mchoro wa jengo na milango unayotaka kudhibiti. Omba vifaa pekee au tathmini ya eneo pamoja na nukuu ya ufungaji."
+    },
+    "source": "https://tpp.hikvision.com/products/HCP-Integration",
+    "reviewed": "2026-11-08",
+    "published": true
   }
 ]
