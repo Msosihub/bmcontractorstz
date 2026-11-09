@@ -93,6 +93,10 @@ test("motion CSS supplies opposite directions, hover/focus/persistent pause, key
   const source = await readFile("components/premium/Homepage.tsx", "utf8");
   assert.match(source, /<Footer lang=\{lang\}/);
   assert.doesNotMatch(source, /<footer>/);
+  assert.match(source, /<ManufacturerBelts lang=\{lang\}/);
+  assert.match(source, /<TrustBelt kind="sectors"/);
+  const directory = await readFile("app/services/page.tsx", "utf8");
   for (const kind of ["systems", "sectors"])
-    assert.ok(source.includes('<TrustBelt kind="' + kind + '"'));
+    assert.ok(directory.includes('kind="' + kind + '"'));
+
 });

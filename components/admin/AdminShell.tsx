@@ -30,6 +30,7 @@ const navItems = [
   { label: "Products", href: "/admin/products" },
   { label: "CCTV Packages", href: "/admin/packages" },
   { label: "Customer names & logos", href: "/admin/customers" },
+  { label: "Manufacturer logos", href: "/admin/manufacturer-logos" },
   { label: "Projects", href: "/admin/projects" },
   { label: "Support Articles", href: "/admin/support" },
   { label: "Settings", href: "/admin/settings" },
