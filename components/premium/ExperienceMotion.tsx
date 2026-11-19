@@ -6,6 +6,11 @@ import { useEffect } from "react";
 export function ExperienceMotion() {
   useEffect(() => {
     if (!("IntersectionObserver" in window)) return;
+    const main = document.querySelector(".bm-experience");
+    const visibility = () =>
+      main?.toggleAttribute("data-bm-hidden", document.hidden);
+    visibility();
+    document.addEventListener("visibilitychange", visibility);
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
@@ -14,9 +19,14 @@ export function ExperienceMotion() {
               "data-bm-in-view",
               entry.isIntersecting,
             );
-          } else if (entry.isIntersecting) {
+          }
+          if (
+            entry.isIntersecting &&
+            entry.target.hasAttribute("data-bm-reveal")
+          ) {
             entry.target.setAttribute("data-bm-entered", "");
-            observer.unobserve(entry.target);
+            if (!entry.target.hasAttribute("data-bm-belt"))
+              observer.unobserve(entry.target);
           }
         }
       },
@@ -25,7 +35,11 @@ export function ExperienceMotion() {
     document
       .querySelectorAll("[data-bm-reveal],[data-bm-belt]")
       .forEach((node) => observer.observe(node));
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      document.removeEventListener("visibilitychange", visibility);
+      main?.removeAttribute("data-bm-hidden");
+    };
   }, []);
   return null;
 }

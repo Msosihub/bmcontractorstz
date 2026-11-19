@@ -4,361 +4,637 @@ import { Footer } from "@/components/site/Footer";
 import { siteConfig } from "@/data/site";
 import type { Language } from "@/lib/i18n/config";
 import { ExperienceMotion } from "./ExperienceMotion";
-import { TrustBelt } from "./TrustBelt";
 import { ManufacturerBelts } from "./ManufacturerBelts";
 import "./experience.css";
 
-const requirements = [
+const chapters = [
   {
-    asset: "cctv",
+    id: "cctv",
+    title: ["CCTV & surveillance", "Kamera za CCTV"],
     slug: "cctv",
-    title: [
-      "See what happens on site",
-      "Fuatilia kinachoendelea kwenye eneo lako",
-    ],
-    detail: [
-      "Camera coverage, recording and remote viewing, planned around the people and places you need to protect.",
-      "Panga maeneo ya kamera, hifadhi ya video na ufuatiliaji wa mbali kulingana na matumizi ya eneo lako.",
-    ],
   },
   {
-    asset: "gate",
+    id: "fencing",
+    title: ["Electric fencing", "Uzio wa umeme"],
     slug: "electric-fence",
-    title: ["Secure the perimeter and entrances", "Linda mipaka na milango"],
-    detail: [
-      "Combine electric fencing, gate automation and controlled access as the site requires.",
-      "Chagua uzio wa umeme, geti la kiotomatiki na udhibiti wa kuingia kulingana na eneo lako.",
-    ],
   },
   {
-    asset: "electrical",
+    id: "gates",
+    title: ["Automated gates", "Mageti ya kiotomatiki"],
+    slug: "gate-motors",
+  },
+  {
+    id: "access",
+    title: ["Access & attendance", "Milango na mahudhurio"],
+    slug: "access-control",
+  },
+  {
+    id: "electrical",
+    title: ["Electrical engineering", "Uhandisi wa umeme"],
     slug: "electrical-contracting",
-    title: ["Plan electrical work", "Panga kazi za umeme"],
-    detail: [
-      "Discuss installation, distribution, technical materials and maintenance.",
-      "Jadili ufungaji, usambazaji wa umeme, vifaa na matengenezo.",
-    ],
   },
   {
-    asset: "solar",
+    id: "power",
+    title: ["Solar & backup power", "Sola na umeme wa akiba"],
     slug: "solar-panel-systems",
-    title: [
-      "Keep essential equipment running",
-      "Dumisha huduma muhimu umeme ukikatika",
-    ],
-    detail: [
-      "Compare solar, batteries, UPS and generators around your load and the time you need backup.",
-      "Linganisha sola, betri, UPS na jenereta kulingana na mzigo na muda unaohitaji umeme wa akiba.",
-    ],
   },
   {
-    asset: "network",
+    id: "connectivity",
+    title: ["Networks & telephony", "Mitandao na simu"],
     slug: "networking",
-    title: ["Connect offices and teams", "Unganisha ofisi na timu"],
-    detail: [
-      "Plan structured cabling, reliable networks and business telephone systems.",
-      "Panga nyaya za mtandao na mifumo ya simu za ofisi.",
-    ],
-  },
-  {
-    asset: "engineering",
-    slug: "institutional-procurement",
-    title: [
-      "Source equipment for a project",
-      "Pata vifaa vya mradi au taasisi",
-    ],
-    detail: [
-      "Bring a model list, specification or BOQ for a scoped quotation.",
-      "Tuletee orodha ya modeli, vipimo au BOQ ili tuandae nukuu ya bei.",
-    ],
   },
 ] as const;
 
-const equipment = [
-  {
-    title: ["Building security", "Ulinzi wa majengo"],
-    image: "/images/hikvision/ds-2cd2347g2h-liu.webp",
-    path: "/catalogue/hikvision",
-    brand: "Hikvision",
-  },
-  {
-    title: ["Gate automation", "Mageti ya kiotomatiki"],
-    image: "/assets/gate-automation/products/d6.webp",
-    path: "/catalogue/centurion",
-    brand: "CENTURION",
-  },
-  {
-    title: ["Doors & attendance", "Milango na mahudhurio"],
-    image: "/images/access-control/mb360.webp",
-    path: "/catalogue/zkteco",
-    brand: "ZKTeco",
-  },
-] as const;
-
-const steps = [
-  [
-    "Tell us what you need",
-    "Share your priorities, site and any drawings or specifications.",
-    "Tueleze unachohitaji",
-    "Tuma mahitaji, eneo na michoro au vipimo ulivyonavyo.",
-  ],
-  [
-    "Review the site and scope",
-    "Agree what to assess and which systems fit your requirements.",
-    "Pitia eneo na wigo wa kazi",
-    "Tunakubaliana kuhusu tathmini na mifumo inayofaa.",
-  ],
-  [
-    "Review your quotation",
-    "See the proposed equipment, scope and next steps before deciding.",
-    "Pitia nukuu ya bei",
-    "Angalia vifaa vilivyopendekezwa, kazi na hatua zinazofuata.",
-  ],
-] as const;
+function Signal({ kind }: { kind: "fence" | "gate" | "network" }) {
+  return (
+    <svg
+      className={`bm-signal bm-signal-${kind}`}
+      viewBox="0 0 240 64"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path className="bm-signal-base" d="M12 32H228" />
+      <path className="bm-signal-flow" d="M12 32H228" />
+      {[24, 120, 216].map((x, i) => (
+        <g key={x}>
+          <circle cx={x} cy="32" r="7" />
+          <circle
+            className="bm-signal-pulse"
+            style={{ animationDelay: `${i * 0.6}s` }}
+            cx={x}
+            cy="32"
+            r="11"
+          />
+        </g>
+      ))}
+    </svg>
+  );
+}
 
 export default function Homepage({ lang }: { lang: Language }) {
   const sw = lang === "sw",
     l = sw ? 1 : 0;
-  const local = (path: string) => path + "?lang=" + lang;
-  const quote = local("/contact");
-  const survey = local("/request-site-survey");
+  const local = (path: string) => `${path}?lang=${lang}`;
+  const survey = (service: string) =>
+    `${local("/request-site-survey")}&service=${encodeURIComponent(service)}`;
+  const quote = (service: string) =>
+    `${local("/contact")}&subject=${encodeURIComponent(service)}`;
+  const actions = (slug: string, service: string) => (
+    <div className="bm-chapter-actions">
+      <a className="bm-arrow-link" href={local(`/services/${slug}`)}>
+        {sw ? "Fahamu huduma" : "Explore the solution"}
+        <span aria-hidden="true">↗</span>
+      </a>
+      <a className="bm-quiet-link" href={survey(service)}>
+        {sw ? "Panga tathmini" : "Plan a site survey"}
+        <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  );
   return (
-    <>
+    <div className="bm-home-shell">
       <Header lang={lang} />
       <main id="main" className="bm-experience">
         <ExperienceMotion />
         <section className="bm-hero" aria-labelledby="bm-hero-title">
-          <Image
-            src="/assets/hero-1440.webp"
-            alt=""
-            fill
-            preload
-            sizes="100vw"
-          />
+          <picture>
+            <source
+              media="(max-width: 760px)"
+              srcSet="/images/home/building-hero-mobile.webp"
+            />
+            <Image
+              src="/images/home/building-hero.webp"
+              alt=""
+              fill
+              loading="eager"
+              fetchPriority="high"
+              sizes="100vw"
+            />
+          </picture>
           <div className="bm-wrap bm-hero-inner">
             <p className="bm-label">
+              <span className="bm-live-dot" />
               {sw
-                ? "USALAMA · UMEME · MAWASILIANO"
-                : "SECURITY · ELECTRICAL · CONNECTIVITY"}
+                ? "BM CONTRACTORS / UHANDISI KWA ENEO LAKO"
+                : "BM CONTRACTORS / ENGINEERING YOUR EVERYDAY"}
             </p>
             <h1 id="bm-hero-title">
-              {sw ? "Linda eneo lako." : "Protect your premises."}
-              <br />
-              <em>
-                {sw ? "Endeleza shughuli zako." : "Keep your site running."}
-              </em>
+              <span>{sw ? "Maeneo salama." : "Safer spaces."}</span>
+              <span>{sw ? "Umeme wa uhakika." : "Reliable power."}</span>
+              <span>{sw ? "Mawasiliano bora." : "Smarter connections."}</span>
             </h1>
-            <p>
+            <p className="bm-hero-description">
               {sw
-                ? "CCTV, uzio wa umeme, mageti ya kiotomatiki na mifumo ya umeme kwa makazi, biashara na taasisi Tanzania."
-                : "CCTV, electric fencing, gate automation and electrical systems for homes, businesses and institutions in Tanzania."}
+                ? "Ulinzi, mifumo ya umeme na mawasiliano. Tunapanga na kufunga mifumo inayofaa makazi, biashara na taasisi Tanzania."
+                : "Security, electrical engineering and connected technology. Thoughtfully planned and installed for homes, businesses and institutions across Tanzania."}
             </p>
             <div className="bm-actions">
               <a className="bm-action bm-solid" href="#services">
-                {sw ? "Chagua unachohitaji" : "Find your solution"}{" "}
+                {sw ? "Angalia huduma" : "Explore our services"}
                 <span aria-hidden="true">↓</span>
               </a>
-              <a className="bm-action bm-outline" href={quote}>
-                {sw ? "Omba nukuu ya bei" : "Request a quotation"}{" "}
+              <a
+                className="bm-action bm-glass"
+                href={survey(sw ? "Tathmini ya mradi" : "Project assessment")}
+              >
+                {sw ? "Tuzungumzie eneo lako" : "Let’s talk about your site"}
                 <span aria-hidden="true">↗</span>
               </a>
             </div>
           </div>
-          <p className="bm-hero-location">MOSHI · ARUSHA · TANZANIA</p>
+          <div className="bm-hero-caption">
+            <span>
+              01 /{" "}
+              {sw ? "ULINZI. UMEME. MAWASILIANO." : "SECURE. POWER. CONNECT."}
+            </span>
+            <span>MOSHI · ARUSHA · TANZANIA</span>
+          </div>
+          <div className="bm-hero-note" aria-hidden="true">
+            <span className="bm-note-cross">+</span>
+            <div>
+              {sw
+                ? "Majengo bora. Mifumo bora."
+                : "Better buildings. Smarter systems."}
+              <small>
+                {sw
+                  ? "Kutoka getini hadi sehemu za kazi."
+                  : "From the entrance to the everyday."}
+              </small>
+            </div>
+          </div>
         </section>
-        <section id="services" className="bm-wrap bm-section" data-bm-reveal>
-          <div className="bm-section-heading">
+        <ManufacturerBelts lang={lang} />
+        <section
+          id="services"
+          className="bm-service-intro bm-wrap"
+          data-bm-reveal
+        >
+          <div>
             <p className="bm-label">
               {sw
-                ? "01 / CHAGUA MAHITAJI YAKO"
-                : "01 / CHOOSE YOUR REQUIREMENT"}
+                ? "MIFUMO INAYOFAA MAISHA NA KAZI ZAKO"
+                : "ENGINEERED AROUND THE WAY YOU LIVE & WORK"}
             </p>
             <h2>
-              {sw ? "Unahitaji kufanya nini?" : "What do you need to do?"}
+              {sw
+                ? "Eneo moja. Mahitaji mengi."
+                : "One place. Many possibilities."}
             </h2>
           </div>
-          <div className="bm-requirements">
-            {requirements.map(({ asset, slug, title, detail }, i) => (
-              <details name="bm-home-requirements" key={slug} open={i === 0}>
-                <summary>
-                  <span className="bm-index" aria-hidden="true">
-                    0{i + 1}
-                  </span>
-                  <span>{title[l]}</span>
-                  <span className="bm-plus" aria-hidden="true">
-                    +
-                  </span>
-                </summary>
-                <div className="bm-requirement-panel">
-                  <Image
-                    src={`/assets/${asset}-640.webp`}
-                    alt=""
-                    width={640}
-                    height={426}
-                    sizes="(max-width: 680px) 94vw, 32vw"
-                  />
-                  <div>
-                    <p>{detail[l]}</p>
-                    <div className="bm-links">
-                      <a href={local("/services/" + slug)}>
-                        {sw ? "Fahamu huduma" : "Explore the service"} ↗
-                      </a>
-                      {i === 1 && (
-                        <a href={local("/services/gate-motors")}>
-                          {sw ? "Mageti ya kiotomatiki" : "Gate automation"} ↗
-                        </a>
-                      )}
-                      {i === 3 && (
-                        <a href={local("/services/generators")}>
-                          {sw ? "Jenereta" : "Generators"} ↗
-                        </a>
-                      )}
-                      {i === 4 && (
-                        <a href={local("/services/telephone-systems")}>
-                          {sw ? "Simu za ofisi" : "Business telephony"} ↗
-                        </a>
-                      )}
-                      <a
-                        href={
-                          survey + "&service=" + encodeURIComponent(title[l])
-                        }
-                      >
-                        {sw ? "Panga tathmini ya eneo" : "Plan a site survey"} ↗
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </details>
+          <p>
+            {sw
+              ? "Kutoka nyumbani hadi hotelini, ofisini au kiwandani. Anza na unachohitaji; tutakusaidia kupanga mfumo unaofaa."
+              : "A home. A hotel. A busy office. Start with what matters to your site. We’ll help you find the right system."}
+          </p>
+          <nav
+            className="bm-chapter-nav"
+            aria-label={
+              sw ? "Huduma kwenye ukurasa huu" : "Services on this page"
+            }
+          >
+            {chapters.map((c) => (
+              <a key={c.id} href={`#${c.id}`}>
+                {c.title[l]}
+                <span aria-hidden="true">↘</span>
+              </a>
             ))}
-          </div>
-          <a className="bm-text-link" href={local("/services")}>
-            {sw ? "Huduma zote za BM" : "View all BM services"} ↗
-          </a>
+          </nav>
         </section>
-        <section className="bm-applications" data-bm-reveal>
-          <div className="bm-application-image">
+        <section
+          id="cctv"
+          className="bm-chapter bm-surveillance bm-wrap"
+          aria-labelledby="bm-cctv-heading"
+          data-bm-reveal
+          data-bm-belt
+        >
+          <div className="bm-scene bm-cctv-scene">
             <Image
-              src="/images/hikvision/reception.webp"
+              src="/assets/cctv-applications/office-1440.webp"
               alt={
                 sw
-                  ? "Picha ya mfano ya mapokezi ya jengo"
-                  : "Illustrative reception at a contemporary building"
+                  ? "Mandhari ya ofisi yenye mwanga wa asili"
+                  : "An office environment with natural light"
               }
               fill
-              sizes="(max-width: 760px) 100vw, 55vw"
+              sizes="(max-width:760px) 100vw, 56vw"
             />
+            <div className="bm-viewfinder" aria-hidden="true">
+              <i />
+              <i />
+              <i />
+              <i />
+              <span className="bm-viewfinder-scan" />
+            </div>
+            <div className="bm-scene-caption">
+              <span className="bm-live-dot" />
+              {sw
+                ? "Panga uone kinachohitajika."
+                : "A clearer view of what matters."}
+            </div>
+            <div className="bm-device bm-camera-device">
+              <Image
+                src="/images/hikvision/ds-2cd2347g2h-liu.webp"
+                width={200}
+                height={180}
+                alt="Hikvision DS-2CD2347G2H-LIU"
+                sizes="(max-width:760px) 96px, 160px"
+              />
+            </div>
           </div>
-          <div className="bm-application-copy">
-            <p className="bm-label">
+          <div className="bm-chapter-copy">
+            <p className="bm-label">01 / {chapters[0].title[l]}</p>
+            <h2 id="bm-cctv-heading">
               {sw
-                ? "02 / MIFUMO KWA ENEO LAKO"
-                : "02 / SOLUTIONS FOR YOUR SITE"}
-            </p>
-            <h2>
-              {sw
-                ? "Kutoka getini hadi mapokezi."
-                : "From the gate to reception."}
+                ? "Ona vizuri. Fuatilia kwa urahisi."
+                : "See clearly. Stay connected."}
             </h2>
             <p>
               {sw
-                ? "Panga CCTV, udhibiti wa milango na intercom kulingana na jinsi wageni na wafanyakazi wanavyotumia jengo."
-                : "Plan CCTV, access control and intercom around how visitors and staff use the building."}
+                ? "CCTV iliyopangwa kwa milango, sehemu za kazi na mipaka yako. Video zilizohifadhiwa na ufuatiliaji kwenye simu, kulingana na mfumo wako."
+                : "CCTV planned around your entrances, working spaces and boundaries. Clear recordings and phone viewing, configured for your site."}
             </p>
-            <a
-              className="bm-action bm-outline"
-              href={local("/services/hikvision")}
-            >
-              {sw ? "Ulinzi wa majengo" : "Explore building security"} ↗
+            <div className="bm-capabilities">
+              <span>{sw ? "Makazi na biashara" : "Homes & businesses"}</span>
+              <span>IP / PoE</span>
+              <span>{sw ? "Ufuatiliaji wa mbali" : "Remote viewing"}</span>
+            </div>
+            {actions("cctv", "CCTV installation")}
+            <a className="bm-small-link" href={local("/catalogue/hikvision")}>
+              {sw
+                ? "Angalia vifaa vya Hikvision"
+                : "Explore Hikvision equipment"}{" "}
+              ↗
             </a>
           </div>
         </section>
-        <section id="equipment" className="bm-wrap bm-section" data-bm-reveal>
-          <div className="bm-section-heading">
-            <p className="bm-label">
-              {sw ? "03 / VIFAA NA MATUMIZI" : "03 / EQUIPMENT & APPLICATIONS"}
-            </p>
-            <h2>
-              {sw
-                ? "Angalia vifaa kwa matumizi yako."
-                : "See the equipment behind the solution."}
-            </h2>
+        <section
+          id="fencing"
+          className="bm-fencing"
+          aria-labelledby="bm-fence-heading"
+          data-bm-reveal
+          data-bm-belt
+        >
+          <div className="bm-wrap bm-fencing-inner">
+            <div className="bm-chapter-copy">
+              <p className="bm-label">02 / {chapters[1].title[l]}</p>
+              <h2 id="bm-fence-heading">
+                {sw
+                  ? "Ulinzi unaoanzia mipakani."
+                  : "Protection starts at the perimeter."}
+              </h2>
+              <p>
+                {sw
+                  ? "Uzio wa umeme kwa makazi, biashara na mashamba. Tathmini ya eneo huongoza uchaguzi wa mashine, nyaya, earthing na mfumo wa tahadhari."
+                  : "Electric fencing for homes, businesses and farms. Your perimeter shapes the energizer, wire layout, earthing and alarm requirements."}
+              </p>
+              <div className="bm-technical-note">
+                <Signal kind="fence" />
+                <span>
+                  {sw
+                    ? "Mashine · Nyaya · Tahadhari"
+                    : "Energizer · Fence line · Alert"}
+                </span>
+              </div>
+              {actions("electric-fence", "Electric fence assessment")}
+            </div>
+            <div className="bm-scene bm-fence-scene">
+              <Image
+                src="/assets/electric-fence-commercial/security-1440.webp"
+                alt={
+                  sw
+                    ? "Uzio wa umeme juu ya ukuta wa jengo"
+                    : "Electric fence lines along a property wall"
+                }
+                fill
+                sizes="(max-width:760px) 100vw, 52vw"
+              />
+              <div className="bm-scene-caption">
+                {sw
+                  ? "Kila mpaka una mahitaji yake."
+                  : "Every boundary deserves its own plan."}
+              </div>
+            </div>
           </div>
-          <div className="bm-equipment-grid">
-            {equipment.map((item) => (
+        </section>
+        <section
+          id="gates"
+          className="bm-gates"
+          aria-labelledby="bm-gate-heading"
+          data-bm-reveal
+          data-bm-belt
+        >
+          <Image
+            src="/assets/gate-automation/arrival-1440.webp"
+            alt={
+              sw
+                ? "Geti na njia ya kuingia kwenye makazi"
+                : "A residential gate and arrival courtyard"
+            }
+            fill
+            sizes="100vw"
+          />
+          <div className="bm-wrap">
+            <div className="bm-gate-panel">
+              <p className="bm-label">03 / {chapters[2].title[l]}</p>
+              <h2 id="bm-gate-heading">
+                {sw
+                  ? "Karibu nyumbani. Ingia kwa urahisi."
+                  : "A better welcome. Every day."}
+              </h2>
+              <p>
+                {sw
+                  ? "Mageti ya kusogea au kufunguka kwa mabawa. Tunachagua mota na vifaa vya usalama kulingana na geti lako na matumizi yake."
+                  : "Sliding and swing gate automation. The right motor, controls and safety accessories for your gate and daily traffic."}
+              </p>
+              {actions("gate-motors", "Gate automation")}
+              <a className="bm-small-link" href={local("/catalogue/centurion")}>
+                CENTURION {sw ? "vifaa na modeli" : "models & accessories"} ↗
+              </a>
+            </div>
+            <div className="bm-gate-marker" aria-hidden="true">
+              <Signal kind="gate" />
+              <span>
+                {sw ? "Fungua. Ingia. Funga." : "Open. Arrive. Close."}
+              </span>
+            </div>
+          </div>
+        </section>
+        <section
+          id="access"
+          className="bm-chapter bm-access bm-wrap"
+          aria-labelledby="bm-access-heading"
+          data-bm-reveal
+          data-bm-belt
+        >
+          <div className="bm-scene bm-access-scene">
+            <Image
+              src="/images/access-control/workplace-1440.webp"
+              alt={
+                sw
+                  ? "Watu wakitumia eneo la kisasa la kazi"
+                  : "People in a contemporary workplace"
+              }
+              fill
+              sizes="(max-width:760px) 100vw, 50vw"
+            />
+            <div className="bm-device bm-access-device">
+              <Image
+                src="/images/access-control/speedface-v5l.webp"
+                width={150}
+                height={210}
+                sizes="(max-width:760px) 75px, 110px"
+                alt="ZKTeco SpeedFace-V5L"
+              />
+            </div>
+            <span className="bm-scene-caption">
+              {sw
+                ? "Watu sahihi. Sehemu sahihi."
+                : "The right people. The right spaces."}
+            </span>
+          </div>
+          <div className="bm-chapter-copy">
+            <p className="bm-label">04 / {chapters[3].title[l]}</p>
+            <h2 id="bm-access-heading">
+              {sw
+                ? "Milango inadhibitiwa. Mahudhurio yanaeleweka."
+                : "Access, managed. Attendance, made useful."}
+            </h2>
+            <p>
+              {sw
+                ? "Udhibiti wa milango na mahudhurio kwa ofisi, shule na hoteli. Vifaa na programu huchaguliwa kulingana na watumiaji na taarifa unazohitaji."
+                : "Door access and staff attendance for offices, schools and hotels. Devices and software selected around your people and the reports you need."}
+            </p>
+            {actions("access-control", "Access control and attendance")}
+            <div className="bm-related-links">
+              <a href={local("/services/access-control/time-attendance")}>
+                {sw ? "Mahudhurio na BioTime" : "Attendance & BioTime"} ↗
+              </a>
+              <a href={local("/catalogue/zkteco")}>
+                {sw ? "Vifaa vya ZKTeco" : "ZKTeco equipment"} ↗
+              </a>
+            </div>
+          </div>
+        </section>
+        <section
+          id="electrical"
+          className="bm-electrical"
+          aria-labelledby="bm-electrical-heading"
+          data-bm-reveal
+        >
+          <div className="bm-wrap bm-chapter">
+            <div className="bm-chapter-copy">
+              <p className="bm-label">05 / {chapters[4].title[l]}</p>
+              <h2 id="bm-electrical-heading">
+                {sw
+                  ? "Msingi wa kila kitu kinachoendelea."
+                  : "Behind everything that runs."}
+              </h2>
+              <p>
+                {sw
+                  ? "Ufungaji wa umeme, bodi za usambazaji, taa, upimaji na matengenezo. Panga kazi za awali wakati wa ujenzi au boresha mfumo uliopo."
+                  : "Electrical installations, distribution, lighting, testing and maintenance. Plan ahead for a new build or improve the systems you already use."}
+              </p>
+              {actions(
+                "electrical-contracting",
+                "Electrical engineering and contracting",
+              )}
+            </div>
+            <div className="bm-scene">
+              <Image
+                src="/assets/electrical-1440.webp"
+                alt={
+                  sw
+                    ? "Mandhari ya mifumo ya umeme ya jengo"
+                    : "An architectural electrical systems concept"
+                }
+                fill
+                sizes="(max-width:760px) 100vw, 50vw"
+              />
+              <span className="bm-scene-caption">
+                {sw ? "Panga. Funga. Pima." : "Plan. Install. Test."}
+              </span>
+            </div>
+          </div>
+        </section>
+        <div className="bm-twin-chapters bm-wrap">
+          <section
+            id="power"
+            className="bm-power"
+            aria-labelledby="bm-power-heading"
+            data-bm-reveal
+            data-bm-belt
+          >
+            <div className="bm-scene">
+              <Image
+                src="/assets/solar-1440.webp"
+                alt={
+                  sw
+                    ? "Paneli za sola kwenye jengo"
+                    : "Solar panels in a building setting"
+                }
+                fill
+                sizes="(max-width:760px) 100vw, 48vw"
+              />
+              <span className="bm-scene-caption">
+                {sw
+                  ? "Mzigo wako. Mpango wako wa akiba."
+                  : "Your load. Your backup plan."}
+              </span>
+            </div>
+            <div className="bm-chapter-copy">
+              <p className="bm-label">06 / {chapters[5].title[l]}</p>
+              <h2 id="bm-power-heading">
+                {sw ? "Shughuli ziendelee." : "Keep the essentials running."}
+              </h2>
+              <p>
+                {sw
+                  ? "Sola, jenereta, betri na UPS. Panga mfumo kwa mzigo wa vifaa na muda unaohitaji umeme wa akiba."
+                  : "Solar, generators, batteries and UPS. Match your system to the equipment you use and the backup time you need."}
+              </p>
+              {actions("solar-panel-systems", "Solar and backup power")}
+              <a className="bm-small-link" href={local("/services/generators")}>
+                {sw ? "Jenereta na mifumo ya ATS" : "Generators & ATS systems"}{" "}
+                ↗
+              </a>
+            </div>
+          </section>
+          <section
+            id="connectivity"
+            className="bm-connectivity"
+            aria-labelledby="bm-network-heading"
+            data-bm-reveal
+            data-bm-belt
+          >
+            <div className="bm-chapter-copy">
+              <p className="bm-label">07 / {chapters[6].title[l]}</p>
+              <h2 id="bm-network-heading">
+                {sw
+                  ? "Unganisha watu. Rahisisha kazi."
+                  : "Bring people and places together."}
+              </h2>
+              <p>
+                {sw
+                  ? "Nyaya za mtandao, Wi-Fi na simu za ofisi au hoteli. Mawasiliano yanayopangwa kuendana na majengo na shughuli zako."
+                  : "Structured cabling, Wi-Fi and office or hotel telephone systems. Connections designed around your building and your working day."}
+              </p>
+              {actions("networking", "Networking and business communications")}
               <a
-                className="bm-equipment-card"
-                key={item.brand}
-                href={local(item.path)}
+                className="bm-small-link"
+                href={local("/services/telephone-systems")}
               >
-                <div className="bm-equipment-image">
-                  <Image
-                    src={item.image}
-                    alt=""
-                    fill
-                    sizes="(max-width:680px) 84vw, 30vw"
-                  />
-                </div>
-                <div>
-                  <p className="bm-label">{item.brand}</p>
-                  <h3>
-                    {item.title[l]} <span aria-hidden="true">↗</span>
-                  </h3>
-                </div>
+                {sw ? "Simu za ofisi na hoteli" : "Office & hotel telephony"} ↗
+              </a>
+            </div>
+            <div className="bm-scene">
+              <Image
+                src="/assets/network-1440.webp"
+                alt={
+                  sw
+                    ? "Mandhari ya teknolojia na mawasiliano ya ofisi"
+                    : "A workspace and business connectivity concept"
+                }
+                fill
+                sizes="(max-width:760px) 100vw, 48vw"
+              />
+              <span className="bm-network-nodes" aria-hidden="true">
+                <Signal kind="network" />
+              </span>
+            </div>
+          </section>
+        </div>
+        <section
+          className="bm-further bm-wrap"
+          aria-label={sw ? "Huduma nyingine" : "More specialist services"}
+        >
+          <p className="bm-label">
+            {sw ? "ZAIDI KWA JENGO LAKO" : "MORE FOR YOUR BUILDING"}
+          </p>
+          <div>
+            {[
+              [
+                "fire-alarm-systems",
+                "Fire & intrusion alarms",
+                "Mifumo ya tahadhari",
+              ],
+              [
+                "hikvision",
+                "Intercom & building security",
+                "Intercom na ulinzi wa majengo",
+              ],
+              ["air-conditioners", "Air conditioning", "Viyoyozi"],
+              [
+                "institutional-procurement",
+                "Institutional procurement",
+                "Ugavi wa vifaa kwa taasisi",
+              ],
+            ].map(([slug, en, swTitle]) => (
+              <a key={slug} href={local(`/services/${slug}`)}>
+                {sw ? swTitle : en}
+                <span aria-hidden="true">↗</span>
               </a>
             ))}
           </div>
-          <a className="bm-text-link" href={local("/products")}>
-            {sw ? "Fungua orodha ya vifaa" : "Browse all equipment"} ↗
+          <a className="bm-small-link" href={local("/services")}>
+            {sw ? "Huduma zote" : "All services"} ↗
           </a>
         </section>
-        <ManufacturerBelts lang={lang} />
-        <TrustBelt kind="sectors" lang={lang} />
-        <section id="approach" className="bm-wrap bm-section" data-bm-reveal>
-          <div className="bm-section-heading">
-            <p className="bm-label">
-              {sw ? "04 / JINSI TUNAVYOFANYA KAZI" : "04 / HOW IT WORKS"}
-            </p>
-            <h2>
-              {sw
-                ? "Hatua tatu kuelekea nukuu."
-                : "Three steps to a quotation."}
-            </h2>
-          </div>
-          <ol className="bm-process">
-            {steps.map(([en, detail, swTitle, swDetail], i) => (
-              <li key={en}>
-                <span className="bm-index">0{i + 1}</span>
-                <h3>{sw ? swTitle : en}</h3>
-                <p>{sw ? swDetail : detail}</p>
-              </li>
-            ))}
-          </ol>
-        </section>
         <section id="contact" className="bm-contact" data-bm-reveal>
-          <div className="bm-wrap">
-            <p className="bm-label">
-              {sw ? "TUZUNGUMZIE MRADI WAKO" : "LET’S DISCUSS YOUR PROJECT"}
-            </p>
-            <h2>
-              {sw
-                ? "Tuanzie kwenye mahitaji yako."
-                : "Tell us what your site needs."}
-            </h2>
-            <div className="bm-actions">
-              <a className="bm-action bm-solid" href={quote}>
-                {sw ? "Omba nukuu ya bei" : "Request a quotation"} ↗
-              </a>
-              <a className="bm-action bm-outline" href={survey}>
-                {sw ? "Panga tathmini ya eneo" : "Plan a site survey"} ↗
-              </a>
-              <a className="bm-text-link" href={`tel:${siteConfig.sales.raw}`}>
+          <div className="bm-wrap bm-contact-inner">
+            <div>
+              <p className="bm-label">
+                {sw
+                  ? "TUANZIE KWENYE ENEO LAKO"
+                  : "GOOD ENGINEERING STARTS WITH A CONVERSATION"}
+              </p>
+              <h2>
+                {sw
+                  ? "Una mpango? Tuufanyie kazi."
+                  : "Your next project. Let’s make it work."}
+              </h2>
+              <div className="bm-actions">
+                <a
+                  className="bm-action bm-solid"
+                  href={quote(sw ? "Mahitaji ya mradi" : "Project enquiry")}
+                >
+                  {sw ? "Omba nukuu ya bei" : "Request a quotation"}
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <a
+                  className="bm-action bm-glass"
+                  href={survey(sw ? "Tathmini ya eneo" : "Site assessment")}
+                >
+                  {sw ? "Panga tathmini ya eneo" : "Arrange a site assessment"}
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+            <div className="bm-contact-aside">
+              <ol>
+                <li>
+                  <span>01</span>
+                  {sw ? "Tueleze unachohitaji" : "Tell us what you need"}
+                </li>
+                <li>
+                  <span>02</span>
+                  {sw
+                    ? "Tupitie eneo na wigo wa kazi"
+                    : "Review your site and scope"}
+                </li>
+                <li>
+                  <span>03</span>
+                  {sw ? "Pokea nukuu ya bei" : "Receive a tailored quotation"}
+                </li>
+              </ol>
+              <a href={`tel:${siteConfig.sales.raw}`}>
                 {siteConfig.sales.label}
+                <span aria-hidden="true">↗</span>
               </a>
+              <p>MOSHI · ARUSHA · TANZANIA</p>
             </div>
           </div>
         </section>
       </main>
       <Footer lang={lang} imageNotice={false} />
-    </>
+    </div>
   );
 }
