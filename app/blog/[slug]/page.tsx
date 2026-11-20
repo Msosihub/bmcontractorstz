@@ -135,9 +135,11 @@ export default async function Page({ params, searchParams }: Props) {
               </a>
               {" · "}
               <a
-                href={`/catalogue/${a.service === "hikvision" ? "hikvision" : "zkteco"}?lang=${lang}`}
+                href={a.service === "generators" ? `/services/generators?lang=${lang}#equipment` : `/catalogue/${a.service === "hikvision" ? "hikvision" : "zkteco"}?lang=${lang}`}
               >
-                {a.service === "hikvision"
+                {a.service === "generators"
+                  ? sw ? "Vifaa vya jenereta na vidhibiti" : "Generator equipment & controls"
+                  : a.service === "hikvision"
                   ? sw
                     ? "Katalogi ya Hikvision"
                     : "Hikvision catalogue"

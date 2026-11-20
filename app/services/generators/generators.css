@@ -1,0 +1,1140 @@
+.ge-main{
+  --ge-ink:#1c302e;
+  --ge-paper:#f7f5ef;
+  --ge-bronze:#dfc5a2;
+  --ge-line:#ccd4ca;
+  color:var(--ge-ink);
+  background:var(--ge-paper);
+  line-height:1.65;
+  overflow:clip
+}
+.ge-main :is(h1,h2,h3,p,figure){
+  margin:0
+}
+.ge-main :is(h1,h2,h3){
+  font-weight:450;
+  letter-spacing:-.045em;
+  line-height:1.12;
+  text-wrap:balance
+}
+.ge-main h2{
+  font-size:clamp(32px,3.8vw,54px)
+}
+.ge-main h2 em,.ge-main h1 em{
+  display:block;
+  font-style:normal
+}
+.ge-main p{
+  font-size:16px
+}
+.ge-main a{
+  text-decoration:none
+}
+.ge-wrap{
+  width:min(1280px,calc(100% - 104px));
+  margin-inline:auto
+}
+.ge-section{
+  padding-block:100px
+}
+.ge-main section[id],.ge-main article[id]{
+  scroll-margin-top:105px
+}
+.ge-main :is(a,summary,input):focus-visible,.ge-equipment-grid:focus-visible{
+  outline:3px solid #1674a1;
+  outline-offset:5px
+}
+.ge-eyebrow{
+  font-size:10px!important;
+  font-weight:700;
+  letter-spacing:.14em;
+  line-height:1.7;
+  color:#41675d;
+  text-transform:uppercase
+}
+.ge-main .ge-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:22px;
+  background:#25483e;
+  color:#fffdf6;
+  padding:15px 22px;
+  min-height:51px;
+  font-size:13px;
+  font-weight:600;
+  border:1px solid transparent;
+  transition:background .2s,transform .2s;
+  line-height:1.45
+}
+.ge-main .ge-button:hover{
+  background:#17382f;
+  transform:translateY(-2px)
+}
+.ge-main .ge-button-bronze{
+  background:var(--ge-bronze);
+  color:#172a25
+}
+.ge-main .ge-button-bronze:hover{
+  background:#ead6b9
+}
+.ge-text-link{
+  font-size:13px;
+  padding-block:10px;
+  display:inline-block
+}
+.ge-inline-link{
+  font-size:13px;
+  font-weight:600;
+  display:inline-block;
+  margin-top:24px;
+  border-bottom:1px solid #8fafa0;
+  padding-bottom:8px
+}
+.ge-hero{
+  background:#192c29;
+  color:#fffdf4;
+  position:relative;
+  min-height:820px;
+  padding-bottom:34px;
+  isolation:isolate
+}
+.ge-hero-photo{
+  position:absolute;
+  inset:0 0 0 32%;
+  z-index:-2
+}
+.ge-hero-photo>img,.ge-hero-photo img{
+  object-fit:cover;
+  object-position:56% center
+}
+.ge-hero-photo:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,#192c29 0%,rgba(25,44,41,.75) 12%,rgba(25,44,41,.05) 55%),linear-gradient(0deg,rgba(14,29,27,.82),transparent 50%)
+}
+.ge-hero-photo figure{
+  height:100%
+}
+.ge-hero-photo figure>div{
+  height:100%!important
+}
+.ge-hero-content{
+  padding-top:28px;
+  padding-bottom:64px
+}
+.ge-breadcrumb{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  font-size:11px;
+  color:#dde5db;
+  margin-bottom:70px
+}
+.ge-hero .ge-eyebrow{
+  color:#dce6d8
+}
+.ge-hero h1{
+  font-size:clamp(44px,5vw,73px);
+  max-width:12ch;
+  margin-top:22px;
+  line-height:1.06;
+  letter-spacing:-.05em
+}
+.ge-hero h1 em{
+  color:#e4cba9
+}
+.ge-hero .ge-lead{
+  color:#e1e8de;
+  max-width:44ch;
+  margin-top:26px;
+  font-size:16px;
+  line-height:1.7
+}
+.ge-hero-actions{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:12px;
+  margin-top:30px
+}
+.ge-intent{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  background:rgba(22,42,38,.82);
+  backdrop-filter:blur(12px);
+  border:1px solid rgba(233,241,226,.28);
+  border-radius:3px;
+  box-shadow:0 16px 50px #071e1520
+}
+.ge-intent>a{
+  position:relative;
+  padding:25px 42px 25px 25px;
+  border-right:1px solid #ccd4ca44;
+  transition:background .2s;
+  min-width:0
+}
+.ge-intent>a:hover{
+  background:#ffffff13
+}
+.ge-intent>a:last-child{
+  border-right:0
+}
+.ge-intent small{
+  display:block;
+  color:#e2cfb6;
+  letter-spacing:.13em;
+  font-size:9px;
+  font-weight:650
+}
+.ge-intent strong{
+  font-weight:450;
+  display:block;
+  font-size:19px;
+  margin-top:10px;
+  line-height:1.35;
+  letter-spacing:-.025em
+}
+.ge-intent a>span{
+  position:absolute;
+  right:21px;
+  top:46px;
+  color:#e1c6a3
+}
+.ge-navigation{
+  border-bottom:1px solid var(--ge-line);
+  background:#eeeae0
+}
+.ge-navigation>.ge-wrap{
+  display:flex
+}
+.ge-navigation a{
+  padding:23px 0;
+  margin-right:34px;
+  font-size:12px;
+  display:inline-flex;
+  align-items:center;
+  gap:18px;
+  white-space:nowrap
+}
+.ge-navigation a span{
+  font-size:14px;
+  color:#54766a
+}
+.ge-section-heading{
+  display:grid;
+  grid-template-columns:1.05fr 1fr;
+  gap:90px;
+  align-items:end;
+  margin-bottom:45px
+}
+.ge-section-heading h2{
+  margin-top:17px
+}
+.ge-section-heading>p{
+  max-width:49ch;
+  color:#4d6258
+}
+.ge-section-heading h2 em{
+  color:#526f60
+}
+.ge-applications{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:40px
+}
+.ge-applications article{
+  border-top:1px solid #aebbae;
+  padding-top:25px
+}
+.ge-applications article>span{
+  font-size:11px;
+  color:#50695b
+}
+.ge-applications h3{
+  font-size:24px;
+  margin:18px 0
+}
+.ge-applications p{
+  color:#526358;
+  font-size:15px
+}
+.ge-applications small{
+  display:block;
+  margin-top:24px;
+  font-size:10px;
+  letter-spacing:.06em;
+  color:#536551
+}
+.ge-installation{
+  background:#e8ede5;
+  padding-block:85px;
+  border-block:1px solid #d4ddd0
+}
+.ge-installation-layout{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:110px
+}
+.ge-installation h2{
+  margin:18px 0 25px
+}
+.ge-installation h2 em{
+  color:#517461
+}
+.ge-installation-heading>p:not(.ge-eyebrow){
+  max-width:43ch;
+  color:#4a6053
+}
+.ge-installation-heading .ge-button{
+  margin-top:29px
+}
+.ge-delivery{
+  list-style:none;
+  counter-reset:ge-step;
+  padding:0;
+  margin:0
+}
+.ge-delivery li{
+  counter-increment:ge-step;
+  padding:23px 0 23px 48px;
+  border-top:1px solid #bdcbb9;
+  position:relative
+}
+.ge-delivery li:before{
+  content:"0"counter(ge-step);
+  position:absolute;
+  left:0;
+  top:26px;
+  font-size:10px;
+  color:#456c54
+}
+.ge-delivery h3{
+  font-size:23px;
+  margin-bottom:12px
+}
+.ge-delivery p{
+  font-size:15px;
+  color:#4f6558
+}
+.ge-controls{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:75px;
+  align-items:start
+}
+.ge-controls h2{
+  margin:18px 0 24px
+}
+.ge-controls h2 em{
+  color:#526f60
+}
+.ge-controls-copy>p:not(.ge-eyebrow){
+  color:#4e655a
+}
+.ge-details{
+  border-block-start:1px solid var(--ge-line);
+  margin-top:25px;
+  font-size:14px
+}
+.ge-details>summary{
+  cursor:pointer;
+  font-size:13px;
+  font-weight:600;
+  display:flex;
+  gap:20px;
+  justify-content:space-between;
+  align-items:center;
+  list-style:none;
+  padding:17px 0;
+  line-height:1.55
+}
+.ge-details summary::-webkit-details-marker{
+  display:none
+}
+.ge-details summary>span{
+  font-size:20px;
+  flex-shrink:0;
+  font-weight:400
+}
+.ge-details[open]>summary>span{
+  transform:rotate(45deg)
+}
+.ge-details p,.ge-details li{
+  font-size:14px!important;
+  color:#4e655a;
+  line-height:1.8
+}
+.ge-details ul{
+  padding-left:18px;
+  margin:0 0 15px
+}
+.ge-details li+li{
+  margin-top:10px
+}
+.ge-details a{
+  font-size:12px;
+  border-bottom:1px solid #94ab9a
+}
+.ge-details>p{
+  padding-bottom:19px
+}
+.ge-flow{
+  min-width:0;
+  border:1px solid #c6d1c1;
+  background:linear-gradient(135deg,#edf0e7,#fafaf4);
+  padding:25px;
+  border-radius:6px;
+  box-shadow:0 20px 65px #102c1810
+}
+.ge-flow>legend{
+  position:absolute;
+  clip-path:inset(50%);
+  width:1px;
+  height:1px;
+  overflow:hidden
+}
+.ge-flow-states{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:5px
+}
+.ge-flow-states label{
+  cursor:pointer;
+  position:relative
+}
+.ge-flow-states input{
+  position:absolute;
+  opacity:0;
+  width:100%;
+  height:100%;
+  inset:0;
+  margin:0;
+  cursor:pointer
+}
+.ge-flow-states label>span{
+  display:block;
+  border:1px solid #c7d3c0;
+  padding:11px 8px;
+  border-radius:3px;
+  font-size:10px;
+  font-weight:600;
+  line-height:1.35;
+  min-height:66px;
+  transition:background .2s
+}
+.ge-flow-states small{
+  display:block;
+  margin-bottom:7px;
+  font-size:9px;
+  color:#526750
+}
+.ge-flow-states input:checked+span{
+  background:#254b40;
+  color:#fff;
+  border-color:#254b40
+}
+.ge-flow-states input:checked+span small{
+  color:#deceb8
+}
+.ge-flow-states input:focus-visible+span{
+  outline:3px solid #1674a1;
+  outline-offset:2px
+}
+.ge-flow-drawing{
+  display:block;
+  width:100%;
+  height:auto;
+  margin:25px 0
+}
+.ge-flow-drawing rect{
+  fill:#fffefa;
+  stroke:#9fb49e;
+  stroke-width:1.5
+}
+.ge-flow-drawing text{
+  font-family:inherit;
+  font-size:15px;
+  fill:#203b31;
+  font-weight:550
+}
+.ge-wire{
+  fill:none;
+  stroke:#c8d3c2;
+  stroke-width:5
+}
+.ge-current{
+  fill:none;
+  stroke:#2a795b;
+  stroke-width:4;
+  opacity:0;
+  stroke-dasharray:10 7;
+  animation:ge-energy 1.15s linear 4;
+  animation-play-state:paused
+}
+.ge-flow[data-bm-in-view] .ge-current{
+  animation-play-state:running
+}
+.ge-flow:not([data-bm-in-view]) .ge-current,.ge-main[data-bm-hidden] .ge-current{
+  animation-play-state:paused
+}
+.ge-symbol{
+  fill:none;
+  stroke:#476e56;
+  stroke-width:2.5;
+  stroke-linecap:round;
+  stroke-linejoin:round
+}
+.ge-flow:has(#ge-state-mains:checked) :is(.ge-utility,.ge-load),.ge-flow:has(#ge-state-return:checked) :is(.ge-utility,.ge-load),.ge-flow:has(#ge-state-generator:checked) :is(.ge-genset,.ge-load){
+  opacity:1
+}
+.ge-flow:has(#ge-state-generator:checked) .ge-genset{
+  stroke:#9a6b2e
+}
+.ge-flow:has(#ge-state-generator:checked) .ge-load{
+  stroke:#9a6b2e
+}
+.ge-explanation{
+  display:none;
+  font-size:14px!important;
+  color:#355241;
+  min-height:76px
+}
+.ge-flow:has(#ge-state-mains:checked) .ge-explanation-mains,.ge-flow:has(#ge-state-start:checked) .ge-explanation-start,.ge-flow:has(#ge-state-generator:checked) .ge-explanation-generator,.ge-flow:has(#ge-state-return:checked) .ge-explanation-return{
+  display:block
+}
+.ge-flow-note{
+  font-size:11px!important;
+  color:#53654f;
+  border-top:1px solid #cbd6c4;
+  padding-top:16px;
+  margin-top:16px!important;
+  line-height:1.65
+}
+.ge-maintenance{
+  background:#233b35;
+  color:#faf8ef;
+  padding:85px 0
+}
+.ge-maintenance-layout{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:110px
+}
+.ge-maintenance .ge-eyebrow{
+  color:#c9dbc9
+}
+.ge-maintenance h2{
+  margin:18px 0 23px
+}
+.ge-maintenance h2 em{
+  color:#dfc6a7
+}
+.ge-maintenance-layout>div>p:not(.ge-eyebrow){
+  color:#d6e1d4;
+  max-width:45ch
+}
+.ge-maintenance-actions{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:15px;
+  margin-top:30px
+}
+.ge-care-panel{
+  border:1px solid #d9e7d43d;
+  background:linear-gradient(135deg,#ffffff0c,#ffffff03);
+  padding:30px;
+  border-radius:5px
+}
+.ge-care-panel>article{
+  border-top:1px solid #e0ecdb30;
+  margin-top:21px;
+  padding-top:21px
+}
+.ge-care-panel h3{
+  font-size:24px;
+  margin-bottom:12px
+}
+.ge-care-panel p:not(.ge-eyebrow){
+  font-size:14px;
+  color:#d4e1d1
+}
+.ge-equipment .ge-section-heading{
+  grid-template-columns:1fr 1fr
+}
+.ge-equipment-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:26px
+}
+.ge-equipment-grid>article{
+  background:#fffef9;
+  border:1px solid #d4dbcf;
+  border-radius:5px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  transition:box-shadow .2s,transform .2s
+}
+.ge-equipment-grid>article:hover{
+  box-shadow:0 12px 30px #1c412212;
+  transform:translateY(-3px)
+}
+.ge-product-image{
+  height:220px;
+  position:relative;
+  background:#fff
+}
+.ge-product-image img{
+  object-fit:contain;
+  padding:30px
+}
+.ge-product-copy{
+  padding:24px;
+  display:flex;
+  flex-direction:column;
+  flex:1
+}
+.ge-brand{
+  font-size:12px!important;
+  color:#536a58;
+  margin-top:12px!important
+}
+.ge-product-copy h3{
+  font-size:27px;
+  margin:4px 0 16px
+}
+.ge-product-copy>p:not(.ge-eyebrow):not(.ge-brand){
+  color:#526554;
+  font-size:14px
+}
+.ge-product-copy .ge-details{
+  margin-top:20px;
+  margin-bottom:24px
+}
+.ge-product-actions{
+  margin-top:auto;
+  display:flex;
+  flex-direction:column;
+  gap:12px
+}
+.ge-product-actions a:first-child{
+  background:#284c3d;
+  color:#fffdf7;
+  display:block;
+  text-align:center;
+  padding:12px;
+  font-size:12px
+}
+.ge-product-actions a:first-child:hover{
+  background:#173a29
+}
+.ge-product-actions a:last-child{
+  font-size:12px;
+  align-self:flex-start;
+  padding:6px 0;
+  border-bottom:1px solid #a9bba6
+}
+.ge-parts{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:60px;
+  border-top:1px solid #b6c6b1;
+  padding-top:36px;
+  margin-top:44px
+}
+.ge-parts h3{
+  font-size:26px;
+  margin:10px 0
+}
+.ge-parts p:not(.ge-eyebrow){
+  max-width:65ch;
+  color:#526654;
+  font-size:14px
+}
+.ge-parts .ge-button{
+  flex-shrink:0
+}
+.ge-specialist{
+  background:#e9ede5;
+  padding:85px 0;
+  border-block:1px solid #d5ddd0
+}
+.ge-specialist .ge-section-heading{
+  align-items:center
+}
+.ge-specialist-list article{
+  display:grid;
+  grid-template-columns:40px 1fr 180px;
+  gap:30px;
+  padding:27px 0;
+  border-top:1px solid #b8c8b0;
+  align-items:start
+}
+.ge-specialist-number{
+  font-size:11px;
+  color:#476b4a;
+  margin-top:5px
+}
+.ge-specialist h3{
+  font-size:27px;
+  margin-bottom:14px
+}
+.ge-specialist-list article>div>p{
+  font-size:15px;
+  color:#4d634e;
+  max-width:65ch
+}
+.ge-specialist .ge-details{
+  margin-top:17px;
+  border:0
+}
+.ge-specialist .ge-details summary{
+  padding:0;
+  font-size:11px;
+  justify-content:flex-start;
+  font-weight:500
+}
+.ge-specialist .ge-details summary span{
+  font-size:15px
+}
+.ge-specialist .ge-details>p{
+  padding-top:10px
+}
+.ge-specialist .ge-inline-link{
+  margin-top:4px;
+  justify-self:end;
+  font-size:12px
+}
+.ge-faq{
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:100px
+}
+.ge-faq h2{
+  margin-top:18px
+}
+.ge-faq h2 em{
+  color:#5d7864
+}
+.ge-faq .ge-details:first-child{
+  margin-top:0
+}
+.ge-faq .ge-details{
+  margin-top:0
+}
+.ge-faq .ge-details summary{
+  font-size:15px;
+  padding:22px 0;
+  font-weight:500
+}
+.ge-closing{
+  padding:70px 0 60px;
+  background:#e8e2d6;
+  border-top:1px solid #cfc8b9
+}
+.ge-closing h2{
+  font-size:clamp(34px,4.5vw,60px);
+  max-width:21ch;
+  margin:20px 0
+}
+.ge-closing p:not(.ge-eyebrow){
+  max-width:60ch;
+  color:#4c6152
+}
+.ge-closing-actions{
+  display:flex;
+  gap:30px;
+  align-items:center;
+  flex-wrap:wrap;
+  margin-top:30px;
+  font-size:13px
+}
+.ge-related{
+  display:flex;
+  gap:25px;
+  flex-wrap:wrap;
+  font-size:11px;
+  border-top:1px solid #bfc5b4;
+  margin-top:42px;
+  padding-top:25px;
+  color:#415d4c
+}
+@keyframes ge-energy{
+  to{
+  stroke-dashoffset:-34
+}
+
+}
+
+@media(max-width:1100px){
+  .ge-wrap{
+  width:calc(100% - 64px)
+}
+.ge-hero{
+  min-height:760px
+}
+.ge-hero h1{
+  font-size:60px
+}
+.ge-hero .ge-lead{
+  max-width:40ch
+}
+.ge-section-heading{
+  gap:50px
+}
+.ge-installation-layout,.ge-controls,.ge-maintenance-layout,.ge-faq{
+  gap:50px
+}
+.ge-equipment-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr))
+}
+.ge-applications{
+  gap:26px
+}
+.ge-navigation a{
+  margin-right:24px;
+  gap:12px
+}
+.ge-hero-content{
+  padding-bottom:50px
+}
+.ge-breadcrumb{
+  margin-bottom:60px
+}
+.ge-hero-photo{
+  left:36%
+}
+
+}
+
+@media(max-width:760px){
+  .ge-wrap{
+  width:calc(100% - 40px)
+}
+.ge-section{
+  padding-block:62px
+}
+.ge-main h2{
+  font-size:35px
+}
+.ge-hero{
+  display:flex;
+  flex-direction:column;
+  min-height:0;
+  padding-bottom:0
+}
+.ge-hero-content{
+  order:0;
+  padding-top:23px;
+  padding-bottom:34px
+}
+.ge-breadcrumb{
+  margin-bottom:34px;
+  font-size:10px;
+  gap:10px
+}
+.ge-hero h1{
+  font-size:45px;
+  max-width:15ch;
+  margin-top:17px;
+  line-height:1.1
+}
+.ge-hero .ge-lead{
+  max-width:39ch;
+  font-size:15px;
+  margin-top:22px
+}
+.ge-hero-actions{
+  margin-top:25px;
+  gap:8px
+}
+.ge-main .ge-button{
+  font-size:12px;
+  padding:14px 18px;
+  min-height:49px
+}
+.ge-hero-photo{
+  position:relative;
+  order:1;
+  inset:auto;
+  width:100%;
+  height:340px;
+  z-index:0
+}
+.ge-hero-photo:after{
+  background:linear-gradient(0deg,#192c292b,transparent 45%)
+}
+.ge-hero-photo img{
+  object-position:49% center
+}
+.ge-intent{
+  order:2;
+  width:100%;
+  backdrop-filter:none;
+  border:0;
+  border-radius:0;
+  grid-template-columns:1fr;
+  background:#20382f
+}
+.ge-intent>a{
+  padding:18px 44px 18px 21px;
+  border-right:0;
+  border-bottom:1px solid #dfe8d930;
+  display:grid;
+  grid-template-columns:100px 1fr;
+  align-items:center;
+  gap:14px
+}
+.ge-intent small{
+  font-size:8px
+}
+.ge-intent strong{
+  margin:0;
+  font-size:15px;
+  letter-spacing:-.01em
+}
+.ge-intent a>span{
+  top:26px;
+  right:21px
+}
+.ge-navigation>.ge-wrap{
+  width:100%;
+  overflow-x:auto;
+  padding-inline:20px;
+  scrollbar-width:thin
+}
+.ge-navigation a{
+  padding-block:18px;
+  font-size:11px;
+  margin-right:25px;
+  gap:12px
+}
+.ge-section-heading,.ge-equipment .ge-section-heading{
+  grid-template-columns:1fr;
+  gap:22px;
+  margin-bottom:32px
+}
+.ge-section-heading h2{
+  margin-top:14px
+}
+.ge-section-heading>p{
+  font-size:15px
+}
+.ge-applications{
+  grid-template-columns:1fr;
+  gap:26px
+}
+.ge-applications article{
+  display:grid;
+  grid-template-columns:28px 1fr;
+  column-gap:8px;
+  padding-top:22px
+}
+.ge-applications article>span{
+  grid-column:1;
+  margin-top:3px
+}
+.ge-applications h3{
+  grid-column:2;
+  margin:0 0 13px;
+  font-size:24px
+}
+.ge-applications p,.ge-applications small{
+  grid-column:2
+}
+.ge-applications small{
+  margin-top:17px;
+  font-size:9px
+}
+.ge-installation{
+  padding-block:58px
+}
+.ge-installation-layout,.ge-controls,.ge-maintenance-layout,.ge-faq{
+  grid-template-columns:1fr;
+  gap:36px
+}
+.ge-installation h2{
+  margin-top:15px
+}
+.ge-installation-heading>p:not(.ge-eyebrow){
+  font-size:15px
+}
+.ge-delivery li{
+  padding:21px 0 21px 38px
+}
+.ge-delivery h3{
+  font-size:22px
+}
+.ge-controls h2{
+  margin-top:15px
+}
+.ge-controls-copy>p:not(.ge-eyebrow){
+  font-size:15px
+}
+.ge-flow{
+  padding:17px
+}
+.ge-flow-states{
+  gap:4px
+}
+.ge-flow-states label>span{
+  font-size:9px;
+  padding:9px 6px;
+  min-height:68px
+}
+.ge-flow-states small{
+  font-size:8px
+}
+.ge-flow-drawing{
+  margin:23px -3px;
+  width:calc(100% + 6px)
+}
+.ge-flow-drawing text{
+  font-size:16px
+}
+.ge-explanation{
+  font-size:13px!important;
+  min-height:96px
+}
+.ge-flow-note{
+  font-size:10px!important
+}
+.ge-maintenance{
+  padding:58px 0
+}
+.ge-maintenance-layout>div>p:not(.ge-eyebrow){
+  font-size:15px
+}
+.ge-care-panel{
+  padding:24px
+}
+.ge-care-panel h3{
+  font-size:23px
+}
+.ge-equipment-grid{
+  grid-template-columns:none;
+  grid-auto-flow:column;
+  grid-auto-columns:88%;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  gap:16px;
+  margin-inline:-20px;
+  padding:3px 20px 20px;
+  scroll-padding-left:20px;
+  scrollbar-width:thin
+}
+.ge-equipment-grid>article{
+  scroll-snap-align:start
+}
+.ge-product-image{
+  height:210px
+}
+.ge-product-copy{
+  padding:23px
+}
+.ge-product-copy h3{
+  font-size:27px
+}
+.ge-parts{
+  flex-direction:column;
+  align-items:flex-start;
+  gap:22px;
+  margin-top:30px;
+  padding-top:28px
+}
+.ge-parts h3{
+  font-size:26px
+}
+.ge-specialist{
+  padding:58px 0
+}
+.ge-specialist-list article{
+  grid-template-columns:25px 1fr;
+  gap:12px;
+  padding:25px 0
+}
+.ge-specialist-list article>.ge-inline-link{
+  grid-column:2;
+  justify-self:start;
+  margin-top:0
+}
+.ge-specialist h3{
+  font-size:25px
+}
+.ge-specialist-list article>div>p{
+  font-size:14px
+}
+.ge-faq{
+  gap:30px
+}
+.ge-faq .ge-details summary{
+  font-size:14px;
+  padding-block:20px
+}
+.ge-closing{
+  padding:55px 0 45px
+}
+.ge-closing h2{
+  font-size:38px
+}
+.ge-closing p:not(.ge-eyebrow){
+  font-size:15px
+}
+.ge-closing-actions{
+  gap:20px;
+  font-size:12px
+}
+.ge-closing-actions .ge-button{
+  flex-basis:100%
+}
+.ge-related{
+  gap:15px 22px;
+  margin-top:32px;
+  font-size:10px
+}
+
+}
+
+@media(max-width:360px){
+  .ge-hero h1{
+  font-size:39px
+}
+.ge-intent>a{
+  grid-template-columns:85px 1fr;
+  gap:9px
+}
+.ge-main h2{
+  font-size:32px
+}
+.ge-hero-photo{
+  height:300px
+}
+.ge-flow{
+  padding:12px
+}
+.ge-flow-states label>span{
+  font-size:8px;
+  padding-inline:5px
+}
+.ge-product-copy h3{
+  font-size:24px
+}
+
+}
+
+@media(prefers-reduced-motion:reduce){
+  .ge-main *{
+  animation:none!important;
+  transition:none!important;
+  scroll-behavior:auto!important
+}
+.ge-main .ge-button:hover,.ge-equipment-grid>article:hover{
+  transform:none
+}
+
+}
+
