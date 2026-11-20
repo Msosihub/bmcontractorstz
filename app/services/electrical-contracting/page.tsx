@@ -14,11 +14,11 @@ type Props = { searchParams: Promise<{ lang?: string }> };
 const seo = {
   en: [
     "Electrical Engineering & Industrial Contracting Tanzania | BM Contractors",
-    "Commercial electrical installations, switchgear, panels, MCC enquiries, power infrastructure assessment and maintenance. Technical quotations through Moshi and Arusha.",
+    "Commercial and industrial electrical contracting, panels, motor controls, transformers, power infrastructure and maintenance across Tanzania. Request a technical quotation.",
   ],
   sw: [
     "Uhandisi na Ukandarasi wa Umeme Tanzania | BM Contractors",
-    "Umeme wa majengo na viwanda, paneli, switchgear, maombi ya MCC, tathmini ya miundombinu na matengenezo. Nukuu za kiufundi kupitia Moshi na Arusha.",
+    "Ukandarasi wa umeme wa majengo na viwanda, paneli, udhibiti wa mota, transfoma, miundombinu na matengenezo Tanzania. Omba nukuu ya kiufundi.",
   ],
 } satisfies Record<Language, [string, string]>;
 export async function generateMetadata({ searchParams }: Props) {
@@ -99,8 +99,8 @@ export default async function Page({ searchParams }: Props) {
           ? "Uhandisi na ukandarasi wa umeme"
           : "Electrical engineering and contracting",
         serviceType: sw
-          ? "Tathmini, ugavi na maombi ya ufungaji wa umeme wa majengo na viwanda"
-          : "Commercial and industrial electrical assessment, equipment supply and installation enquiries",
+          ? "Ukandarasi, ufungaji na ugavi wa vifaa vya umeme wa majengo, viwanda na miundombinu"
+          : "Commercial, industrial and infrastructure electrical contracting, installation and equipment supply",
         provider: { "@id": SITE_URL + "/#business" },
         areaServed: { "@type": "Country", name: "Tanzania" },
         url: languageUrl(path, lang),
@@ -129,11 +129,11 @@ export default async function Page({ searchParams }: Props) {
         ],
         [
           "Naweza kuomba vifaa pekee?",
-          "Ndiyo. Taja vipimo, idadi, modeli inapohitajika na masharti ya kukabidhi. Bei ya sasa, upatikanaji na uoanifu huthibitishwa kwenye nukuu; hakuna orodha ya stock inayodhaniwa hapa.",
+          "Ndiyo. Taja vipimo, idadi, modeli inapohitajika na masharti ya kukabidhi. Tutathibitisha bei ya sasa, upatikanaji na uoanifu katika nukuu yako.",
         ],
         [
-          "Je, kazi za 11 kV / 33 kV na lifti zinajumuishwa moja kwa moja?",
-          "Hapana. Maombi hayo hutenganisha vifaa, maandalizi ya umeme, idhini za mtoa huduma na uteuzi wa mtaalamu mwenye sifa. Wigo na leseni zinazohusika hukubaliwa kabla ya kazi kuanza.",
+          "Mnapokea maombi ya miradi mikubwa ya miundombinu?",
+          "Ndiyo. Tuma eneo, sehemu ya kuunganishia, mahitaji ya mzigo, michoro au BOQ na muda wa mradi. Tutapanga mahitaji ya uhandisi, vifaa na utekelezaji kulingana na mradi wako.",
         ],
         [
           "Mnaweza kupanga kazi kwenye jengo linalotumika?",
@@ -147,11 +147,11 @@ export default async function Page({ searchParams }: Props) {
         ],
         [
           "Can I request equipment supply only?",
-          "Yes. Include specifications, quantities, model references where relevant and acceptance requirements. Current prices, availability and compatibility are confirmed in the quotation; this page does not imply stock.",
+          "Yes. Include specifications, quantities, model references where relevant and acceptance requirements. We confirm current prices, availability and compatibility in your quotation.",
         ],
         [
-          "Are 11 kV / 33 kV or lift works included automatically?",
-          "No. These enquiries separate equipment, electrical provisions, utility approvals and appropriately qualified specialist appointments. Scope and applicable authorizations are agreed before work starts.",
+          "Can I enquire about a large infrastructure project?",
+          "Yes. Share the location, supply connection, load requirements, drawings or BOQ and timeframe. We define the engineering, equipment and delivery requirements around your project.",
         ],
         [
           "Can work be planned around an occupied facility?",
@@ -467,7 +467,7 @@ export default async function Page({ searchParams }: Props) {
                   ["Fafanua", "Matumizi, eneo, mizigo na nyaraka zilizopo."],
                   [
                     "Tathmini",
-                    "Hali ya eneo, ufikiaji, vipimo na watu wenye leseni zinazofaa.",
+                    "Hali ya eneo, ufikiaji, mizigo na mahitaji ya vipimo.",
                   ],
                   [
                     "Kubali mpango",
@@ -485,7 +485,7 @@ export default async function Page({ searchParams }: Props) {
                   ],
                   [
                     "Assess",
-                    "Site conditions, access, tests and appropriately licensed personnel.",
+                    "Site conditions, access, loads and testing requirements.",
                   ],
                   [
                     "Agree",
@@ -506,8 +506,8 @@ export default async function Page({ searchParams }: Props) {
           </ol>
           <p className="ee-scope-note">
             {sw
-              ? "Wigo na leseni za watu wanaotekeleza huthibitishwa kwa mradi husika. Kazi maalumu za utility, udhibiti na lifti huratibiwa na wataalamu wenye idhini zinazofaa."
-              : "Delivery scope and personnel authorizations are confirmed for the project. Utility, specialist-control and lift packages are coordinated with appropriately authorized specialists."}
+              ? "Nyaraka za sifa za kiufundi na usajili wa kampuni zinapatikana kwa tathmini ya mradi na ununuzi kwa kuombwa."
+              : "Technical qualifications and company registration documents are available for project and procurement evaluation upon request."}
           </p>
         </section>
         <section id="ee-boq" className="ee-boq">
@@ -569,11 +569,23 @@ export default async function Page({ searchParams }: Props) {
                   <li key={x}>{x}</li>
                 ))}
               </ul>
-              <small>
+              <a
+                className="ee-qualification-link"
+                href={quote(
+                  sw
+                    ? "Nyaraka za sifa za kampuni kwa mradi au zabuni"
+                    : "Company qualifications for a project or tender",
+                )}
+              >
                 {sw
-                  ? "Fomu ya mawasiliano haina sehemu ya kupakia faili."
-                  : "The enquiry form does not accept file uploads."}
-              </small>
+                  ? "Omba nyaraka za kampuni"
+                  : "Request company qualifications"}{" "}
+                ↗
+              </a>
+              <a className="ee-project-call" href="tel:+255760111880">
+                {sw ? "Simu ya miradi" : "Project enquiries"}: +255 760 111 880
+                ↗
+              </a>
             </aside>
           </div>
         </section>

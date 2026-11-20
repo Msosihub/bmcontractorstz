@@ -1105,3 +1105,16 @@
     scroll-snap-type: none;
   }
 }
+.ee-qualification-link,
+.ee-project-call {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 12px;
+  margin-top: 12px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.ee-project-call {
+  margin-top: 4px;
+}

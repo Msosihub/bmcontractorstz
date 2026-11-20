@@ -45,3 +45,9 @@ Before contracting a restricted package: inspect the actual category/classes and
 One substantial stable electrical route; no new specialty doorway pages. One short original bilingual planning guide follows the repository journal standard. Public technical content is progressive disclosure, not a legal essay. The electrical diagram is a conceptual LV distribution explanation: incoming supply → isolation/protection → MDB → protected facility branches; protective earthing is separate. It is not a buildable wiring or switching diagram.
 
 Brief links preserve facility, site, supply, voltage if known, loads, scope, drawings/BOQ availability and timeframe as a bounded editable message in the existing contact/survey pages. No new schema or upload endpoint. Ordinary enquiries retain an empty message by default. User text is React-escaped and capped at 2,000 characters before rendering.
+
+## Final owner instruction — 20 November 2026
+
+The owner explicitly confirms BM holds the necessary electrical contracting licences and approves the full commercial/industrial/infrastructure presentation. Missing uploaded certificates or further licence inspection are **not a general website-publication blocker**. This supersedes any earlier editorial treatment that implied the business was merely a future opportunity or available only through partners.
+
+The final public version states capabilities confidently, offers company/technical documents on request for project/procurement evaluation, and does not invent licence classes/IDs, voltage maxima, personnel certificates or projects. Project-specific statutory approvals, utility procedures and specialist responsibilities remain contract-execution matters; the lift/equipment electrical-interface distinction remains accurate. The source register's external evidence limitations remain recorded, without repetitive marketing disclaimers.

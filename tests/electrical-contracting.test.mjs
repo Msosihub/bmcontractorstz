@@ -178,3 +178,46 @@ test("equipment families preserve bilingual purchase intent and service context 
     assert.doesNotMatch(html, /TZS\s*\d|In stock|Guaranteed warranty/);
   }
 });
+
+test("electrical commercial release offers qualifications and national project contact without repetitive licence caveats", async () => {
+  for (const lang of ["en", "sw"]) {
+    const html = renderToStaticMarkup(
+      await page.default({ searchParams: Promise.resolve({ lang }) }),
+    );
+    assert.match(html, /href="tel:\+255760111880"/);
+    assert(
+      html.includes(
+        lang === "en"
+          ? "Technical qualifications and company registration documents are available"
+          : "Nyaraka za sifa za kiufundi na usajili wa kampuni zinapatikana",
+      ),
+    );
+    const hrefs = [...html.matchAll(/href="(\/contact\?[^"]+)"/g)].map(
+      (m) =>
+        new URL(
+          m[1].replaceAll("&amp;", "&"),
+          "https://www.bmcontractorstz.com",
+        ),
+    );
+    const request = hrefs.find((u) =>
+      u.searchParams
+        .get("subject")
+        ?.includes(
+          lang === "en" ? "Company qualifications" : "Nyaraka za sifa",
+        ),
+    );
+    assert(request);
+    assert.equal(request.searchParams.get("lang"), lang);
+    assert.doesNotMatch(
+      html,
+      /Subject to licence verification|qualified-specialist coordination|appropriately licensed personnel|BM may not be qualified|Future capability/,
+    );
+    assert(
+      html.includes(
+        lang === "en"
+          ? "Industrial electrical installations"
+          : "Ufungaji wa umeme wa viwandani",
+      ),
+    );
+  }
+});
