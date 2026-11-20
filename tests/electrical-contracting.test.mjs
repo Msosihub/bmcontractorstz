@@ -134,3 +134,47 @@ test("prefilled brief is escaped text, not executable markup", () => {
   assert.match(html, /&lt;script&gt;alert\(1\)&lt;\/script&gt;/);
   assert.doesNotMatch(html, /<script>alert/);
 });
+
+test("equipment families preserve bilingual purchase intent and service context without invented products", async () => {
+  const { default: equipment } = await import(
+    "../data/electrical-equipment.json",
+    { with: { type: "json" } }
+  );
+  assert.equal(equipment.length, 6);
+  for (const lang of ["en", "sw"]) {
+    const l = lang === "sw" ? 1 : 0;
+    const html = renderToStaticMarkup(
+      await page.default({ searchParams: Promise.resolve({ lang }) }),
+    );
+    assert(html.includes('id="equipment"'));
+    for (const item of equipment) {
+      assert(html.includes(`id="equipment-${item.id}"`));
+      assert(html.includes(item.name[l].replaceAll("&", "&amp;")));
+      assert(item.selection.length === 3 && item.selection.every((x) => x[l]));
+      for (const intent of lang === "sw"
+        ? ["vifaa pekee", "ugavi na ufungaji"]
+        : ["equipment only", "supply & installation"]) {
+        const urls = [...html.matchAll(/href="(\/contact\?[^"]+)"/g)].map(
+          (m) =>
+            new URL(
+              m[1].replaceAll("&amp;", "&"),
+              "https://www.bmcontractorstz.com",
+            ),
+        );
+        const u = urls.find((u) =>
+          u.searchParams
+            .get("subject")
+            ?.includes(item.name[l] + " — " + intent),
+        );
+        assert(u, `${item.id}: ${intent}`);
+        assert.equal(u.searchParams.get("lang"), lang);
+        assert(
+          u.searchParams.get("brief").includes(item.name[l] + " — " + intent),
+        );
+      }
+      assert(html.includes(`href="#${item.service}"`));
+    }
+    assert(!html.includes('"@type":"Product"'));
+    assert.doesNotMatch(html, /TZS\s*\d|In stock|Guaranteed warranty/);
+  }
+});

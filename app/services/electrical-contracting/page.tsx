@@ -8,6 +8,7 @@ import { getServiceRecord } from "@/lib/services";
 import { pageMetadata, languageUrl, SITE_URL } from "@/lib/seo";
 import type { Language } from "@/lib/i18n/config";
 import "./electrical.css";
+import { EquipmentGuide } from "./EquipmentGuide";
 const path = "/services/electrical-contracting";
 type Props = { searchParams: Promise<{ lang?: string }> };
 const seo = {
@@ -282,6 +283,14 @@ export default async function Page({ searchParams }: Props) {
             </a>
           ))}
         </nav>
+        <div className="ee-equipment-shortcut ee-wrap">
+          <a href="#equipment">
+            {sw
+              ? "Angalia vifaa na omba nukuu"
+              : "Explore equipment & request a quotation"}{" "}
+            ↓
+          </a>
+        </div>
         <section
           className="ee-diagram ee-wrap"
           data-bm-belt
@@ -437,6 +446,7 @@ export default async function Page({ searchParams }: Props) {
             </section>
           </div>
         </div>
+        <EquipmentGuide lang={lang} enquiryUrl={quote} />
         <section
           className="ee-delivery ee-wrap"
           aria-labelledby="ee-delivery-title"
