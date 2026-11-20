@@ -12,11 +12,11 @@ export const publicPages: Record<
   "/": {
     en: [
       "CCTV, Electric Fence & Security Systems",
-      "BM Contractors provides CCTV, electric fences, gate automation, networking and backup power solutions in Tanzania.",
+      "CCTV, electric fencing and engineering equipment supply and installation. Offices in Moshi and Arusha; scheduled field services in Dar es Salaam and Dodoma.",
     ],
     sw: [
       "CCTV, Uzio wa Umeme na Mifumo ya Usalama",
-      "BM Contractors hutoa huduma za CCTV, uzio wa umeme, milango ya kiotomatiki, mitandao na umeme wa akiba Tanzania.",
+      "Ugavi na ufungaji wa CCTV, uzio wa umeme na mifumo ya uhandisi. Ofisi Moshi na Arusha; huduma za mafundi kwa miadi Dar es Salaam na Dodoma.",
     ],
   },
   "/services": {

@@ -17,9 +17,14 @@ export function OfficeLocations({ lang }: { lang: Language }) {
           : "Our offices. A local point of contact."}
       </h2>
       <div className="office-locations">
-        <article>
+        <article id="moshi-office">
           <h3>{sw ? "Ofisi ya Moshi" : "Moshi office"}</h3>
           <address>{moshi.address}</address>
+          <p>
+            {sw
+              ? "Ofisi ya BM kwa vifaa, nukuu za bei na mipango ya ufungaji na huduma."
+              : "A BM office for equipment enquiries, quotations, installation and service planning."}
+          </p>
           <a className="office-phone" href={"tel:" + moshi.phone.raw}>
             {moshi.phone.label}
           </a>
@@ -34,18 +39,34 @@ export function OfficeLocations({ lang }: { lang: Language }) {
             WhatsApp · Moshi ↗
           </a>
         </article>
-        <article>
+        <article id="arusha-office">
           <h3>{sw ? "Ofisi ya Arusha" : "Arusha office"}</h3>
           <address>{arusha.address}</address>
           <p>
             {sw
-              ? "Ofisi ya Arusha hupokea na kuratibu maombi ya wateja, ziara za kutathmini maeneo na huduma zinazohusiana. Wasiliana nasi kupanga ziara katika ofisi yetu ya Mianzini."
-              : "Our Arusha office receives and coordinates customer enquiries, site visits and related services. Contact us to arrange a visit to our Mianzini office."}
+              ? "Ofisi ya BM kwa vifaa, nukuu za bei na mipango ya ufungaji na huduma. Wasiliana nasi kuhusu ofisi yetu ya Mianzini."
+              : "A BM office for equipment enquiries, quotations, installation and service planning. Contact our Mianzini office."}
           </p>
           <a className="office-phone" href={"tel:" + arusha.phone.raw}>
             {arusha.phone.label}
           </a>
         </article>
+      </div>
+      <div className="office-field-coverage">
+        <p>
+          <strong>
+            {sw ? "Huduma za mafundi kwa miadi" : "Scheduled field services"}
+          </strong>{" "}
+          · {siteConfig.coverage.scheduledFieldCities.join(" · ")}
+        </p>
+        <p>
+          {sw
+            ? "Mafundi kwa tathmini na utekelezaji wa miradi iliyopangwa. Ugavi na huduma kaskazini mwa Tanzania, ikiwemo Tanga; maeneo mengine kwa makubaliano."
+            : "Technicians for scheduled surveys and project execution. Supply and services across northern Tanzania, including Tanga; other locations by agreement."}
+        </p>
+        <a href={"/request-site-survey?lang=" + lang}>
+          {sw ? "Panga tathmini ya eneo" : "Arrange a site assessment"} ↗
+        </a>
       </div>
     </section>
   );
@@ -77,10 +98,7 @@ export function FooterContacts({ lang }: { lang: Language }) {
           {offices.arusha.phone.label}
         </a>
         <a href={"/contact?lang=" + lang + "#offices"}>
-          {sw
-            ? "Maombi na mipango ya ziara"
-            : "Enquiries & site visit coordination"}{" "}
-          ↗
+          {sw ? "Mawasiliano na ofisi" : "Office details"} ↗
         </a>
       </div>
     </div>

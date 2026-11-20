@@ -4,7 +4,13 @@ import navigation from "@/data/footer-navigation.json";
 import Image from "next/image";
 import type { Language } from "@/lib/i18n/config";
 
-export function Footer({ lang, imageNotice = true }: { lang: Language; imageNotice?: boolean }) {
+export function Footer({
+  lang,
+  imageNotice = true,
+}: {
+  lang: Language;
+  imageNotice?: boolean;
+}) {
   const sw = lang === "sw";
   return (
     <footer
@@ -31,40 +37,51 @@ export function Footer({ lang, imageNotice = true }: { lang: Language; imageNoti
           </a>
           <p>
             {sw
-              ? "BM Engineering Contractors Limited: CCTV, uzio wa umeme, mageti ya kiotomatiki na mifumo ya umeme, nishati na mawasiliano. Mahitaji yako yanaongoza wigo wa kazi."
-              : "BM Engineering Contractors Limited: CCTV, electric fencing, gate automation and electrical, power and communications systems. Your requirements guide the scope."}
+              ? "Vifaa vya ulinzi na uhandisi. Ugavi, ufungaji na huduma za kiufundi."
+              : "Security and engineering equipment. Supply, installation and technical support."}
           </p>
         </div>
-        <a
-          className="footer-enquiry"
-          href={"/request-site-survey?lang=" + lang}
-        >
-          {sw ? "Tuzungumzie mahitaji yako" : "Let’s discuss your requirements"}
+        <a className="footer-enquiry" href={"/contact?lang=" + lang}>
+          {sw ? "Omba nukuu ya bei" : "Request a quotation"}
           <span aria-hidden="true">↗</span>
         </a>
       </div>
       <div className="footer-directory">
-        {navigation.map((group) => (
-          <nav key={group.id} aria-labelledby={"footer-" + group.id}>
-            <h2 id={"footer-" + group.id}>{group[lang]}</h2>
-            <ul>
-              {group.links.map((link) => {
-                const href =
-                  "query" in link
-                    ? "/products?" +
-                      new URLSearchParams({ lang, q: link.query }).toString()
-                    : link.href + "?lang=" + lang;
-                return (
-                  <li key={href}>
-                    <a href={href}>{link[lang]}</a>
-                  </li>
-                );
-              })}
-            </ul>
-          </nav>
-        ))}
+        {navigation.map((group) => {
+          const visibleCount = group.id === "core" ? 4 : 3;
+          const links = group.links.map((link) => {
+            const href =
+              "query" in link
+                ? "/products?" +
+                  new URLSearchParams({ lang, q: link.query }).toString()
+                : link.href + "?lang=" + lang;
+            return (
+              <li key={href}>
+                <a href={href}>{link[lang]}</a>
+              </li>
+            );
+          });
+          return (
+            <nav key={group.id} aria-labelledby={"footer-" + group.id}>
+              <h2 id={"footer-" + group.id}>{group[lang]}</h2>
+              <ul>{links.slice(0, visibleCount)}</ul>
+              {links.length > visibleCount && (
+                <details className="footer-more">
+                  <summary>
+                    {sw ? "Zaidi" : "More"} <span aria-hidden="true">+</span>
+                  </summary>
+                  <ul>{links.slice(visibleCount)}</ul>
+                </details>
+              )}
+            </nav>
+          );
+        })}
       </div>
       <FooterContacts lang={lang} />
+      <p className="footer-field-coverage">
+        {sw ? "Huduma za mafundi kwa miadi" : "Scheduled field services"} ·{" "}
+        {siteConfig.coverage.scheduledFieldCities.join(" · ")}
+      </p>
       <nav
         className="footer-shortcuts"
         aria-label={
@@ -80,9 +97,13 @@ export function Footer({ lang, imageNotice = true }: { lang: Language; imageNoti
         <a href="#main">{sw ? "Rudi juu" : "Back to top"} ↑</a>
       </nav>
       <p className="disclosure">
-        {imageNotice ? (sw
-          ? "Picha zilizoainishwa kuwa za AI ni mifano ya kueleza huduma. Hazionyeshi miradi, wafanyakazi au wateja wa BM. Modeli, bei, upatikanaji na mahitaji ya kiufundi huthibitishwa kwenye nukuu ya bei."
-          : "Images labelled AI illustrate services; they do not show actual BM projects, employees or clients. Models, prices, availability and technical requirements are confirmed in the quotation.") : (sw ? "Modeli, bei, upatikanaji na mahitaji ya kiufundi huthibitishwa kwenye makadirio." : "Models, prices, availability and technical requirements are confirmed in your quotation.")}
+        {imageNotice
+          ? sw
+            ? "Picha zilizoainishwa kuwa za AI ni mifano ya kueleza huduma. Hazionyeshi miradi, wafanyakazi au wateja wa BM. Modeli, bei, upatikanaji na mahitaji ya kiufundi huthibitishwa kwenye nukuu ya bei."
+            : "Images labelled AI illustrate services; they do not show actual BM projects, employees or clients. Models, prices, availability and technical requirements are confirmed in the quotation."
+          : sw
+            ? "Modeli, bei, upatikanaji na mahitaji ya kiufundi huthibitishwa kwenye makadirio."
+            : "Models, prices, availability and technical requirements are confirmed in your quotation."}
       </p>
       <div className="footer-bottom">
         <span>© 2026 BM Engineering Contractors Limited</span>

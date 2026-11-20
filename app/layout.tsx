@@ -5,6 +5,7 @@ import { headers } from "next/headers";
 import localFont from "next/font/local";
 import "./globals.css";
 import "./premium.css";
+import "@/components/premium/business-coverage.css";
 import { LocalBusinessJsonLd } from "@/components/seo/LocalBusinessJsonLd";
 import { pageMetadata, SITE_URL } from "@/lib/seo";
 
@@ -67,7 +68,7 @@ export default async function RootLayout({
           (pathIsAdmin(context.get("x-bm-path")) ? "" : "premium-site")
         }
       >
-        <LocalBusinessJsonLd />
+        <LocalBusinessJsonLd lang={lang} />
         {children}
       </body>
     </html>

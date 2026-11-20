@@ -65,6 +65,11 @@ export function PremiumEnquiry({
                 </a>
               )}
             </div>
+            <p className="enquiry-coverage">
+              {sw
+                ? "Ofisi za Moshi na Arusha. Mafundi kwa tathmini na kazi zilizopangwa Dar es Salaam na Dodoma. Taja eneo la mradi wako."
+                : "Offices in Moshi and Arusha. Technicians for scheduled surveys and projects in Dar es Salaam and Dodoma. Tell us where your project is located."}
+            </p>
             <Photo asset="engineering" lang={lang} />
           </aside>
           <div className="enquiry-sheet">

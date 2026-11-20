@@ -14,7 +14,15 @@
  */
 
 export const siteConfig = {
-  companyName: "BM Engineering Contractors LTD",
+  companyName: "BM Engineering Contractors Limited",
+  description: {
+    en: "BM Engineering Contractors supplies security and engineering equipment and installs CCTV, electric fencing, gate automation, electrical, power and communication systems. Visit our Moshi and Arusha offices; scheduled field services are available in Dar es Salaam and Dodoma.",
+    sw: "BM Engineering Contractors husambaza vifaa vya ulinzi na uhandisi, na kufunga CCTV, uzio wa umeme, mageti ya kiotomatiki, mifumo ya umeme, nishati na mawasiliano. Tuna ofisi Moshi na Arusha, na mafundi kwa kazi zilizopangwa Dar es Salaam na Dodoma.",
+  },
+  coverage: {
+    scheduledFieldCities: ["Dar es Salaam", "Dodoma"],
+    northernSupplyLocations: ["Moshi", "Arusha", "Tanga"],
+  },
   shortName: "BM Contractors LTD",
   brandName: "BM Contractors Tanzania",
   domain: "bmcontractorstz.com",

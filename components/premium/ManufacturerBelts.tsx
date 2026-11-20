@@ -47,16 +47,6 @@ export async function ManufacturerBelts({ lang }: { lang: Language }) {
                 : "Equipment brands we work with."}
             </h2>
           </div>
-          <div className="bm-logo-control">
-            <input
-              className="bm-logo-pause"
-              id="bm-logo-pause"
-              type="checkbox"
-            />
-            <label htmlFor="bm-logo-pause">
-              {sw ? "Sitisha mwendo" : "Pause motion"}
-            </label>
-          </div>
         </div>
         <div className="bm-logo-rows">
           {[items.slice(0, 5), items.slice(5)].map((row, i) => (

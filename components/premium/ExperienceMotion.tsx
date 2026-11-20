@@ -6,7 +6,7 @@ import { useEffect } from "react";
 export function ExperienceMotion() {
   useEffect(() => {
     if (!("IntersectionObserver" in window)) return;
-    const main = document.querySelector(".bm-experience");
+    const main = document.querySelector("main");
     const visibility = () =>
       main?.toggleAttribute("data-bm-hidden", document.hidden);
     visibility();

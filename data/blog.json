@@ -238,5 +238,65 @@
     "source": "https://tpp.hikvision.com/products/HCP-Integration",
     "reviewed": "2026-11-08",
     "published": true
+  },
+  {
+    "slug": "planning-a-pa-system-tanzania",
+    "service": "pa-sound-systems",
+    "image": "/images/pa-sound/ssa-250m.webp",
+    "alt": {
+      "en": "AHUJA SSA-250M public-address mixer amplifier",
+      "sw": "Amplifaya ya PA ya AHUJA SSA-250M"
+    },
+    "category": {
+      "en": "PA & SOUND",
+      "sw": "PA NA SAUTI"
+    },
+    "title": {
+      "en": "Planning a PA system? Start with the room, not the wattage.",
+      "sw": "Unapanga mfumo wa sauti? Anza na eneo, si idadi ya W."
+    },
+    "summary": {
+      "en": "A short guide for Tanzanian schools, hotels, offices and places of worship choosing paging and sound equipment.",
+      "sw": "Mwongozo mfupi kwa shule, hoteli, ofisi na maeneo ya ibada Tanzania yanayochagua vifaa vya matangazo na sauti."
+    },
+    "sections": [
+      {
+        "title": {
+          "en": "1. What needs to be heard, and where?",
+          "sw": "1. Ni sauti gani, na isikike wapi?"
+        },
+        "text": {
+          "en": "A classroom announcement, a meeting microphone and background music in hotel corridors have different needs. Note the room sizes, ceiling heights, nearby noise and whether announcements must reach separate areas. Good coverage is about where sound goes and how clearly people hear it.",
+          "sw": "Tangazo la darasani, kipaza sauti cha mkutanoni na muziki wa koridoni hotelini vina mahitaji tofauti. Andika vipimo vya vyumba, urefu wa dari, kelele na maeneo yanayohitaji matangazo tofauti. Mpango mzuri unalenga sauti ifike inapohitajika na ieleweke."
+        }
+      },
+      {
+        "title": {
+          "en": "2. Match the amplifier and speakers.",
+          "sw": "2. Oanisha amplifaya na spika."
+        },
+        "text": {
+          "en": "Confirm the exact outputs, speaker versions and selected power taps before choosing cable runs or quantities. For example, the SCM-15 and SCM-15T look similar but are specified for different connections. A 100 V installation and a low-impedance system require different planning. Ask BM to check existing equipment before adding speakers.",
+          "sw": "Hakiki matokeo ya amplifaya, toleo la spika na chaguo za W kabla ya kuamua nyaya au idadi. Kwa mfano, SCM-15 na SCM-15T zinafanana lakini zina mahitaji tofauti ya kuunganisha. Mfumo wa 100 V na wa impedansi ndogo hupangwa tofauti. Omba BM ihakiki vifaa vilivyopo kabla ya kuongeza spika."
+        }
+      },
+      {
+        "title": {
+          "en": "3. Separate equipment supply from installation.",
+          "sw": "3. Tofautisha vifaa na kazi ya ufungaji."
+        },
+        "text": {
+          "en": "For equipment-only supply, send models, quantities and the intended application. For a complete installation, ask for mounting, cabling, zone setup, sound checks and user handover to be identified in the quotation. Include the site location and existing system details so the assessment has a useful starting point.",
+          "sw": "Kwa vifaa pekee, tuma modeli, idadi na matumizi. Kwa ufungaji kamili, nukuu itaje vifaa vya kufungia, nyaya, usanidi wa maeneo, majaribio ya sauti na makabidhiano ya matumizi. Taja eneo na mfumo uliopo ili tathmini ianze na taarifa muhimu."
+        }
+      }
+    ],
+    "cta": {
+      "en": "Tell BM about your building, paging areas and existing equipment. Request current equipment prices or a planned site assessment.",
+      "sw": "Ieleze BM aina ya jengo, maeneo ya matangazo na vifaa vilivyopo. Omba bei za sasa au tathmini ya eneo iliyopangwa."
+    },
+    "source": "https://www.ahujaradios.com/Document/0-Guide_book-2020.pdf",
+    "reviewed": "2026-11-20",
+    "published": true
   }
 ]

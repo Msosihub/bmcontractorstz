@@ -1,8 +1,18 @@
 import Image from "next/image";
+import {
+  Camera,
+  Shield,
+  DoorOpen,
+  Fingerprint,
+  Zap,
+  Sun,
+  Network,
+} from "lucide-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { siteConfig } from "@/data/site";
 import type { Language } from "@/lib/i18n/config";
+import { BusinessCoverage } from "./BusinessCoverage";
 import { ExperienceMotion } from "./ExperienceMotion";
 import { ManufacturerBelts } from "./ManufacturerBelts";
 import "./experience.css";
@@ -12,36 +22,43 @@ const chapters = [
     id: "cctv",
     title: ["CCTV & surveillance", "Kamera za CCTV"],
     slug: "cctv",
+    icon: Camera,
   },
   {
     id: "fencing",
     title: ["Electric fencing", "Uzio wa umeme"],
     slug: "electric-fence",
+    icon: Shield,
   },
   {
     id: "gates",
     title: ["Automated gates", "Mageti ya kiotomatiki"],
     slug: "gate-motors",
+    icon: DoorOpen,
   },
   {
     id: "access",
     title: ["Access & attendance", "Milango na mahudhurio"],
     slug: "access-control",
+    icon: Fingerprint,
   },
   {
     id: "electrical",
     title: ["Electrical engineering", "Uhandisi wa umeme"],
     slug: "electrical-contracting",
+    icon: Zap,
   },
   {
     id: "power",
     title: ["Solar & backup power", "Sola na umeme wa akiba"],
     slug: "solar-panel-systems",
+    icon: Sun,
   },
   {
     id: "connectivity",
     title: ["Networks & telephony", "Mitandao na simu"],
     slug: "networking",
+    icon: Network,
   },
 ] as const;
 
@@ -125,8 +142,8 @@ export default function Homepage({ lang }: { lang: Language }) {
             </h1>
             <p className="bm-hero-description">
               {sw
-                ? "Ulinzi, mifumo ya umeme na mawasiliano. Tunapanga na kufunga mifumo inayofaa makazi, biashara na taasisi Tanzania."
-                : "Security, electrical engineering and connected technology. Thoughtfully planned and installed for homes, businesses and institutions across Tanzania."}
+                ? "Vifaa na ufungaji wa mifumo ya ulinzi, umeme na mawasiliano. Suluhisho zinazofaa makazi, biashara na taasisi Tanzania."
+                : "Security, electrical engineering and connected technology. Equipment supply and complete installations for homes, businesses and institutions across Tanzania."}
             </p>
             <div className="bm-actions">
               <a className="bm-action bm-solid" href="#services">
@@ -164,6 +181,35 @@ export default function Homepage({ lang }: { lang: Language }) {
           </div>
         </section>
         <ManufacturerBelts lang={lang} />
+        <nav
+          className="bm-buying-paths bm-wrap"
+          aria-label={sw ? "Chagua aina ya mahitaji" : "Choose how BM can help"}
+        >
+          <a href={local("/products")}>
+            <span>01</span>
+            <strong>{sw ? "Nunua vifaa" : "Buy equipment"}</strong>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href={quote("Trade and reseller equipment supply")}>
+            <span>02</span>
+            <strong>
+              {sw ? "Ugavi kwa wauzaji na mafundi" : "Trade & reseller supply"}
+            </strong>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href={quote("Complete system installation")}>
+            <span>03</span>
+            <strong>
+              {sw ? "Mfumo pamoja na ufungaji" : "Complete installation"}
+            </strong>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href={survey("Site assessment")}>
+            <span>04</span>
+            <strong>{sw ? "Tathmini ya eneo" : "Request a site survey"}</strong>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </nav>
         <section
           id="services"
           className="bm-service-intro bm-wrap"
@@ -192,12 +238,23 @@ export default function Homepage({ lang }: { lang: Language }) {
               sw ? "Huduma kwenye ukurasa huu" : "Services on this page"
             }
           >
-            {chapters.map((c) => (
-              <a key={c.id} href={`#${c.id}`}>
-                {c.title[l]}
-                <span aria-hidden="true">↘</span>
-              </a>
-            ))}
+            {chapters.map((chapter, index) => {
+              const Icon = chapter.icon;
+              return (
+                <a key={chapter.id} href={`#${chapter.id}`}>
+                  <span className="bm-service-tile-top" aria-hidden="true">
+                    <Icon size={25} strokeWidth={1.35} />
+                    <span>0{index + 1}</span>
+                  </span>
+                  <span className="bm-service-tile-title">
+                    {chapter.title[l]}
+                  </span>
+                  <span className="bm-service-tile-arrow" aria-hidden="true">
+                    ↗
+                  </span>
+                </a>
+              );
+            })}
           </nav>
         </section>
         <section
@@ -541,6 +598,46 @@ export default function Homepage({ lang }: { lang: Language }) {
               </span>
             </div>
           </section>
+        </div>
+        <section
+          className="bm-pa-feature bm-wrap"
+          aria-labelledby="bm-pa-title"
+          data-bm-reveal
+        >
+          <div className="bm-pa-device">
+            <Image
+              src="/images/pa-sound/ssa-250m.webp"
+              alt="AHUJA SSA-250M PA mixer amplifier"
+              width={420}
+              height={180}
+              sizes="(max-width:760px) 44vw, 25vw"
+            />
+          </div>
+          <div>
+            <p className="bm-label">
+              {sw
+                ? "PA · MATANGAZO · MIFUMO YA SAUTI"
+                : "PA · PAGING · SOUND SYSTEMS"}
+            </p>
+            <h2 id="bm-pa-title">
+              {sw ? "Sauti ieleweke. Kila eneo." : "Be heard. In every space."}
+            </h2>
+            <p>
+              {sw
+                ? "Kwa shule, kumbi, hoteli na matangazo ya umma. Vifaa pekee au mfumo pamoja na ufungaji."
+                : "For schools, meeting spaces, hotels and public announcements. Equipment supply or a complete installed system."}
+            </p>
+            <a
+              className="bm-arrow-link"
+              href={local("/services/pa-sound-systems")}
+            >
+              {sw ? "Fahamu mifumo ya sauti" : "Explore PA & sound systems"}
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </section>
+        <div className="bm-wrap">
+          <BusinessCoverage lang={lang} />
         </div>
         <section
           className="bm-further bm-wrap"

@@ -1,3 +1,4 @@
+import { BusinessCoverage } from "@/components/premium/BusinessCoverage";
 import { WorkingApproach } from "@/components/premium/WorkingApproach";
 import { Photo } from "@/components/premium/Frame";
 import { PremiumArticle } from "@/components/premium/Article";
@@ -19,8 +20,8 @@ export default async function Page({
       label={sw ? "KUHUSU BM CONTRACTORS" : "ABOUT BM CONTRACTORS"}
       intro={
         sw
-          ? "BM Engineering Contractors Limited hushughulikia mahitaji ya ulinzi, umeme na teknolojia kwa nyumba, biashara na taasisi."
-          : "BM Engineering Contractors Limited works with security, electrical and technology requirements for homes, businesses and institutions."
+          ? "BM Engineering Contractors Limited husambaza vifaa vya ulinzi na uhandisi na kutoa huduma za ufungaji kwa makazi, biashara na taasisi."
+          : "BM Engineering Contractors Limited supplies security and engineering equipment and delivers installation services for homes, businesses and institutions."
       }
     >
       <Photo
@@ -68,6 +69,35 @@ export default async function Page({
             : "CCTV, electric fencing and gate automation remain central to our services. Electrical contracting, generators, solar, backup power, networking and office telephones are planned around site conditions and use."}
         </p>
       </section>
+      <section>
+        <h2>
+          {sw
+            ? "Vifaa au mfumo kamili"
+            : "Equipment supply or a complete installation"}
+        </h2>
+        <p>
+          {sw
+            ? "Tunahudumia wanunuzi wa rejareja, mafundi, wauzaji wa vifaa na wanunuzi wa miradi. Tuma modeli, idadi na matumizi yanayokusudiwa; bei, upatikanaji na wigo wa ufungaji huthibitishwa katika nukuu."
+            : "We serve retail customers, technicians, resellers and project buyers. Share model references, quantities and intended use; pricing, availability and installation scope are confirmed in your quotation."}
+        </p>
+        <nav className="article-links">
+          <a href={"/products?lang=" + lang}>
+            {sw ? "Angalia vifaa" : "Browse equipment"} ↗
+          </a>
+          <a
+            href={
+              "/contact?lang=" +
+              lang +
+              "&subject=" +
+              encodeURIComponent("Trade and reseller supply")
+            }
+          >
+            {sw ? "Ugavi kwa wauzaji na mafundi" : "Trade and reseller supply"}{" "}
+            ↗
+          </a>
+        </nav>
+      </section>
+      <BusinessCoverage lang={lang} />
       <WorkingApproach lang={lang} />
       <nav className="article-links">
         <a href={"/services?lang=" + lang}>

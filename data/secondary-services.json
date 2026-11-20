@@ -184,5 +184,36 @@
       "question": "Je, intercom inaweza kufungua geti lenye mota iliyopo?",
       "answer": "Inawezekana kwa kiunganishi kinachooana. Tuma modeli za kidhibiti cha geti na intercom; namna ya kufungua na vifaa vya usalama vitathminiwe pamoja."
     }
+  },
+  {
+    "slug": "pa-sound-systems",
+    "titleEn": "PA, paging & sound system supply and installation",
+    "titleSw": "Ugavi na ufungaji wa mifumo ya PA, matangazo na sauti",
+    "descriptionEn": "Ahuja PA equipment and installed sound systems for schools, halls, hotels, places of worship and commercial paging. Request equipment prices or a site assessment.",
+    "descriptionSw": "Vifaa vya Ahuja na ufungaji wa mifumo ya sauti kwa shule, kumbi, hoteli, maeneo ya ibada na matangazo ya biashara. Omba bei au tathmini ya eneo.",
+    "contentEn": "BM supplies PA equipment and plans complete systems around coverage, room acoustics, paging zones, power and cabling. Equipment-only supply and complete installation are quoted as separate scopes.",
+    "contentSw": "BM husambaza vifaa vya PA na kupanga mifumo kwa eneo la kusikika, mwangwi wa jengo, maeneo ya matangazo, umeme na nyaya. Vifaa pekee na ufungaji wa mfumo kamili huainishwa tofauti kwenye nukuu.",
+    "featuresEn": [
+      "Equipment-only quotations",
+      "Coverage and zone planning",
+      "Installation, commissioning and handover"
+    ],
+    "featuresSw": [
+      "Nukuu za vifaa pekee",
+      "Mpango wa maeneo ya sauti na matangazo",
+      "Ufungaji, majaribio na makabidhiano"
+    ],
+    "equipmentEn": "Ahuja mixer amplifiers, paging microphones, ceiling, column and horn speakers and zoned paging equipment, selected for compatible outputs and loads.",
+    "equipmentSw": "Amplifaya, vipaza sauti vya matangazo, spika za darini, nguzo na honi na vifaa vya maeneo ya matangazo vya Ahuja, vikiwa vimeoanishwa kwa matokeo na mizigo.",
+    "maintenanceEn": "Agree speaker checks, cable inspection, microphone care and amplifier ventilation as part of support.",
+    "maintenanceSw": "Kubaliana ukaguzi wa spika na nyaya, utunzaji wa vipaza sauti na hewa ya kupooza amplifaya kama sehemu ya huduma.",
+    "faqEn": {
+      "question": "Can I buy equipment only?",
+      "answer": "Yes. Send models and quantities; current prices, compatibility and availability are confirmed in your quotation."
+    },
+    "faqSw": {
+      "question": "Naweza kununua vifaa pekee?",
+      "answer": "Ndiyo. Tuma modeli na idadi; bei, uoanifu na upatikanaji vithibitishwe kwenye nukuu."
+    }
   }
 ]

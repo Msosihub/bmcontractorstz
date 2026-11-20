@@ -233,22 +233,7 @@
   font-size: 1.15rem;
   letter-spacing: -0.025em;
 }
-.bm-logo-control {
-  position: relative;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  font-size: 0.71rem;
-}
-.bm-logo-pause {
-  accent-color: #285e4c;
-  width: 16px;
-  height: 16px;
-}
-.bm-logos label {
-  cursor: pointer;
-}
+
 .bm-logo-rows {
   display: grid;
   gap: 10px;
@@ -310,29 +295,7 @@
   color: #4e625b;
   font-size: 0.92rem;
 }
-.bm-chapter-nav {
-  grid-column: 1/-1;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px 22px;
-  border-block: 1px solid #d8e1d8;
-  padding-block: 15px;
-  margin-top: 12px;
-}
-.bm-chapter-nav a {
-  min-height: 35px;
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 0.7rem;
-  color: #475f56;
-}
-.bm-chapter-nav a:hover {
-  color: #0d5142;
-}
-.bm-chapter-nav a span {
-  color: #698c7d;
-}
+
 .bm-chapter {
   display: grid;
   grid-template-columns: 1.18fr 1fr;
@@ -880,9 +843,7 @@
   }
   .bm-logos
     :is(.bm-logo-window:hover, .bm-logo-window:focus-within)
-    .bm-logo-track,
-  .bm-logos:has(.bm-logo-pause:checked) .bm-logo-track,
-  .bm-logos:has(.bm-logo-pause:focus-visible) .bm-logo-track {
+    .bm-logo-track {
     animation-play-state: paused;
   }
   .bm-viewfinder-scan {
@@ -1029,10 +990,7 @@
     font-size: 0.95rem;
     max-width: 23ch;
   }
-  .bm-logo-control {
-    font-size: 0.63rem;
-    padding-top: 4px;
-  }
+
   .bm-logo-track li {
     width: calc(var(--logo-card-width, 210px) * 0.78);
     height: 64px;
@@ -1053,16 +1011,7 @@
     font-size: 2rem;
     max-width: 22ch;
   }
-  .bm-chapter-nav {
-    margin-top: 25px;
-    gap: 3px 17px;
-    padding-block: 10px;
-  }
-  .bm-chapter-nav a {
-    font-size: 0.64rem;
-    min-height: 35px;
-    gap: 5px;
-  }
+
   .bm-chapter,
   .bm-fencing-inner,
   .bm-electrical .bm-chapter {
@@ -1276,10 +1225,7 @@
     grid-template-columns: 1fr;
     max-width: 245px;
   }
-  .bm-logo-control label {
-    max-width: 7ch;
-    line-height: 1.4;
-  }
+
   .bm-capabilities {
     gap: 6px 10px;
   }
@@ -1293,9 +1239,6 @@
     animation: none !important;
     transition: none !important;
     scroll-behavior: auto !important;
-  }
-  .bm-logo-control {
-    display: none;
   }
 }
 /* Static and keyboard users can browse the entire original logo list. */
@@ -1320,27 +1263,235 @@
   opacity: 1;
   color: #3c5149;
 }
-@media (max-width: 760px) {
+
+/* Static solution tiles complement the moving equipment-brand belts. */
+.bm-chapter-nav {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+.bm-chapter-nav a {
+  position: relative;
+  min-height: 142px;
+  padding: 18px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  background: #e1ebe3;
+  color: #193d32;
+  border: 1px solid #173b3510;
+  border-radius: 7px;
+  scroll-snap-align: start;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+.bm-chapter-nav a:nth-child(2) {
+  background: #d5e1d6;
+}
+.bm-chapter-nav a:nth-child(3) {
+  background: #173b35;
+  color: #eff7ef;
+}
+.bm-chapter-nav a:nth-child(4) {
+  background: #deece8;
+}
+.bm-chapter-nav a:nth-child(5) {
+  background: #e8e4d9;
+}
+.bm-chapter-nav a:nth-child(6) {
+  background: #e1e3cf;
+}
+.bm-chapter-nav a:nth-child(7) {
+  background: #293f42;
+  color: #eff7ef;
+}
+.bm-service-tile-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.bm-service-tile-top > span {
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+}
+.bm-service-tile-title {
+  font-size: 0.79rem;
+  font-weight: 550;
+  line-height: 1.35;
+  max-width: 17ch;
+  padding-right: 10px;
+}
+.bm-service-tile-arrow {
+  position: absolute;
+  right: 12px;
+  bottom: 14px;
+  font-size: 0.8rem;
+}
+.bm-chapter-nav a:is(:hover, :focus-visible) {
+  transform: translateY(-4px);
+  box-shadow: 0 9px 20px #173b3514;
+}
+@media (max-width: 1100px) {
   .bm-chapter-nav {
-    flex-wrap: nowrap;
+    display: flex;
     overflow-x: auto;
+    padding-block: 5px 12px;
     scrollbar-width: thin;
-    padding-bottom: 14px;
+    scroll-snap-type: x proximity;
   }
   .bm-chapter-nav a {
-    flex-shrink: 0;
-    min-height: 40px;
+    flex: 0 0 162px;
+  }
+}
+@media (max-width: 760px) {
+  .bm-chapter-nav {
+    margin-top: 24px;
+    gap: 9px;
+  }
+  .bm-chapter-nav a {
+    flex-basis: 150px;
+    min-height: 127px;
+    padding: 15px;
+    gap: 16px;
+  }
+  .bm-service-tile-title {
+    font-size: 0.76rem;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .bm-experience:has(.bm-logo-pause:checked)
-    :is(
-      .bm-logo-track,
-      .bm-viewfinder-scan,
-      .bm-signal-flow,
-      .bm-signal-pulse
-    ) {
-    animation-play-state: paused;
+.bm-buying-paths {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding-block: 17px;
+  border-bottom: 1px solid #d8e1d8;
+}
+.bm-buying-paths a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 18px;
+  min-height: 48px;
+  border-right: 1px solid #d5ded5;
+  font-size: 0.76rem;
+}
+.bm-buying-paths a:first-child {
+  padding-left: 0;
+}
+.bm-buying-paths a:last-child {
+  border-right: 0;
+}
+.bm-buying-paths strong {
+  font-weight: 550;
+  flex: 1;
+}
+.bm-buying-paths a > span:first-child {
+  font-size: 0.58rem;
+  color: #4a695b;
+}
+.bm-buying-paths a:hover strong {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.bm-pa-feature {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 45px;
+  align-items: center;
+  padding: 25px 35px;
+  margin-block: 0 35px;
+  background: #e9e7df;
+  border-radius: 8px;
+}
+.bm-pa-device {
+  display: grid;
+  place-items: center;
+}
+.bm-pa-device img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+.bm-pa-feature h2 {
+  font-size: clamp(25px, 2.8vw, 37px);
+}
+.bm-pa-feature p:not(.bm-label) {
+  font-size: 0.85rem;
+  margin: 12px 0 0;
+  max-width: 48ch;
+}
+.bm-pa-feature .bm-label {
+  margin-bottom: 10px;
+}
+@media (max-width: 760px) {
+  .bm-buying-paths {
+    grid-template-columns: 1fr 1fr;
+    padding-block: 10px;
+  }
+  .bm-buying-paths a {
+    padding: 12px 10px;
+    gap: 9px;
+    font-size: 0.7rem;
+  }
+  .bm-buying-paths a:nth-child(2) {
+    border-right: 0;
+  }
+  .bm-buying-paths a:nth-child(3) {
+    padding-left: 0;
+  }
+  .bm-buying-paths a > span:first-child {
+    display: none;
+  }
+  .bm-service-intro {
+    padding-top: 30px;
+  }
+  .bm-chapter-copy {
+    padding-block: 20px 22px;
+  }
+  .bm-scene,
+  .bm-cctv-scene,
+  .bm-access-scene,
+  .bm-fence-scene {
+    height: 215px;
+  }
+  .bm-electrical .bm-scene {
+    height: 215px;
+  }
+  .bm-twin-chapters .bm-scene {
+    height: 210px;
+  }
+  .bm-gates {
+    min-height: 485px;
+  }
+  .bm-gate-panel {
+    margin-top: 135px;
+  }
+  .bm-pa-feature {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 22px;
+    margin-bottom: 25px;
+  }
+  .bm-pa-device {
+    justify-items: start;
+  }
+  .bm-pa-device img {
+    width: 220px;
+    height: 80px;
+    object-position: left center;
+  }
+  .bm-pa-feature h2 {
+    font-size: 26px;
+  }
+  .bm-pa-feature p:not(.bm-label) {
+    font-size: 0.81rem;
+  }
+}
+@media (max-width: 760px) {
+  .bm-buying-paths a {
+    font-size: 0.78rem;
   }
 }

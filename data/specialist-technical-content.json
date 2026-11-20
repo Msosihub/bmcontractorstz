@@ -1078,5 +1078,74 @@
         "answer": "Simu za ndani zinaweza kufanya kazi kwa mfumo unaounga mkono kwenye local network. App/cloud zinaweza kuhitaji internet na huduma za mtengenezaji. Thibitisha utendaji wa modeli husika internet inapokatika."
       }
     }
+  },
+  "pa-sound-systems": {
+    "references": [
+      "ahuja"
+    ],
+    "en": {
+      "title": "Sound planned around the space.",
+      "intro": "Match the source, amplifier outputs, speaker versions, cable routes and paging zones before installation. Total speaker load and the selected power taps matter.",
+      "comparison": [
+        {
+          "option": "Assess the space",
+          "consideration": "Confirm dimensions, use, background noise, power and paging zones."
+        },
+        {
+          "option": "Select the system",
+          "consideration": "Choose compatible amplifier outputs, speaker loads, cabling and controls."
+        },
+        {
+          "option": "Install and commission",
+          "consideration": "Agree neat mounting, sound checks, user instruction and support at handover."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Equipment-only supply",
+          "body": "Send model references, quantities and intended use. Prices, availability and compatibility are confirmed in your quotation."
+        },
+        {
+          "title": "Connection planning",
+          "body": "70/100 V line systems and low-impedance speakers need different connection designs. Match the exact model suffix and outputs rather than appearance."
+        }
+      ],
+      "faq": {
+        "question": "Can existing equipment be considered?",
+        "answer": "Share amplifier and speaker model labels, the current zones and any sound problems. Assessment can establish what may be reused and what needs replacement before a quotation."
+      }
+    },
+    "sw": {
+      "title": "Sauti inayopangwa kwa eneo.",
+      "intro": "Oanisha chanzo cha sauti, matokeo ya amplifaya, matoleo ya spika, nyaya na maeneo ya matangazo kabla ya ufungaji. Jumla ya mizigo na chaguo za W ni muhimu.",
+      "comparison": [
+        {
+          "option": "Tathmini eneo",
+          "consideration": "Hakiki vipimo, matumizi, kelele, umeme na maeneo ya matangazo."
+        },
+        {
+          "option": "Chagua vifaa",
+          "consideration": "Oanisha matokeo ya amplifaya, mizigo ya spika, nyaya na vidhibiti."
+        },
+        {
+          "option": "Funga na jaribu",
+          "consideration": "Kubaliana ufungaji nadhifu, majaribio ya sauti, mafunzo na huduma wakati wa makabidhiano."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Vifaa pekee",
+          "body": "Tuma modeli, idadi na matumizi. Bei, upatikanaji na uoanifu huthibitishwa kwenye nukuu yako."
+        },
+        {
+          "title": "Mpango wa kuunganisha",
+          "body": "Laini za 70/100 V na spika za impedansi ndogo zina mipango tofauti ya kuunganisha. Hakiki kiambishi cha modeli na matokeo, si mwonekano pekee."
+        }
+      ],
+      "faq": {
+        "question": "Vifaa vilivyopo vinaweza kutumika?",
+        "answer": "Tuma lebo za modeli za amplifaya na spika, maeneo yaliyopo na matatizo ya sauti. Tathmini inaweza kubainisha cha kutumia tena na kinachohitaji kubadilishwa kabla ya nukuu."
+      }
+    }
   }
 }
