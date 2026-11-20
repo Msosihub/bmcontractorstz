@@ -1,5 +1,4 @@
 "use client";
-import { useEffect, useRef } from "react";
 import { PreviewNotice } from "./PreviewNotice";
 import { SecurityNavigation, SecurityLinks } from "./SecurityNavigation";
 import Image from "next/image";
@@ -8,30 +7,6 @@ import type { Language } from "@/lib/i18n/config";
 export function Header({ lang }: { lang: Language }) {
   const path = usePathname();
   const search = useSearchParams();
-  const headerRef = useRef<HTMLElement>(null);
-  useEffect(() => {
-    const header = headerRef.current;
-    if (!header || path !== "/") return;
-    let last = window.scrollY;
-    let frame = 0;
-    const update = () => {
-      frame = 0;
-      const y = Math.max(0, window.scrollY);
-      header.classList.toggle("is-home-scrolled", y > 80);
-      const interactive = header.contains(document.activeElement) || !!header.querySelector("details[open]");
-      if (y < 140 || interactive) header.classList.remove("is-home-hidden");
-      else if (Math.abs(y - last) > 6) header.classList.toggle("is-home-hidden", y > last);
-      last = y;
-    };
-    const scroll = () => { if (!frame) frame = requestAnimationFrame(update); };
-    update();
-    window.addEventListener("scroll", scroll, { passive: true });
-    return () => {
-      window.removeEventListener("scroll", scroll);
-      if (frame) cancelAnimationFrame(frame);
-      header.classList.remove("is-home-scrolled", "is-home-hidden");
-    };
-  }, [path]);
   const language = (value: string) => {
     const q = new URLSearchParams(search.toString());
     q.set("lang", value);
@@ -49,7 +24,7 @@ export function Header({ lang }: { lang: Language }) {
         {lang === "sw" ? "Nenda kwenye maudhui" : "Skip to content"}
       </a>
       <PreviewNotice lang={lang} />
-      <header className="site-header" ref={headerRef}>
+      <header className="site-header">
         <a className="brand" href={"/?lang=" + lang}>
           <Image
             src="/assets/official-logo.png"
