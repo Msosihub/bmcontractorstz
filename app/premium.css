@@ -2652,7 +2652,9 @@ body.premium-site:has(dialog[open]) {
   padding: 0;
   font-size: 10px;
   letter-spacing: 0.025em;
-  text-shadow: 0 1px 3px #18201b, 0 0 5px #18201b;
+  text-shadow:
+    0 1px 3px #18201b,
+    0 0 5px #18201b;
 }
 .premium-site .hero > .photo figcaption {
   font-size: 10px;
@@ -2672,4 +2674,192 @@ body.premium-site:has(dialog[open]) {
   text-shadow: none;
   font-size: 12px;
   line-height: 1.6;
+}
+
+/* Shared navigation and interaction affordances. */
+.premium-site .bm-mobile-disclosure {
+  display: none;
+}
+.premium-site
+  :is(
+    .site-header,
+    .premium-footer,
+    .catalogue-records,
+    .enquiry-layout,
+    .visual-directory
+  )
+  :is(a, button, summary):focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+.premium-site :is(.desktop-nav, .premium-footer, .visual-directory) a:hover {
+  text-underline-offset: 0.24em;
+  text-decoration: underline;
+}
+@media (max-width: 900px) {
+  .premium-site .site-header:has(.bm-mobile-disclosure) {
+    position: relative;
+    z-index: 10;
+  }
+  .premium-site .bm-mobile-disclosure {
+    display: block;
+  }
+  .premium-site .bm-mobile-disclosure summary {
+    min-height: 44px;
+    list-style: none;
+    cursor: pointer;
+  }
+  .premium-site .bm-mobile-disclosure summary::-webkit-details-marker {
+    display: none;
+  }
+  .premium-site .bm-mobile-disclosure[open] summary span {
+    transform: rotate(45deg);
+  }
+  .premium-site .bm-mobile-disclosure > nav {
+    position: absolute;
+    inset: 100% 0 auto;
+    max-height: min(72dvh, 32rem);
+    overflow: auto;
+    box-shadow: 0 16px 26px #211b1724;
+  }
+  .premium-site .bm-mobile-disclosure nav a[aria-current="page"] {
+    font-weight: 750;
+  }
+}
+
+/* Compact shared footer. Secondary links stay available through native disclosures. */
+.premium-site footer.premium-footer {
+  padding-top: 44px;
+}
+.premium-site .footer-introduction {
+  padding-bottom: 25px;
+}
+.premium-site .footer-introduction p {
+  margin-top: 15px;
+  line-height: 1.65;
+}
+.premium-site .footer-directory {
+  padding-block: 25px;
+  gap: 20px 30px;
+}
+.premium-site .footer-directory h2 {
+  margin-bottom: 8px;
+}
+.premium-site .footer-more summary {
+  cursor: pointer;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #d8c8a7;
+  font-size: 11px;
+  list-style: none;
+}
+.premium-site .footer-more summary::-webkit-details-marker {
+  display: none;
+}
+.premium-site .footer-more[open] summary span {
+  transform: rotate(45deg);
+}
+.premium-site .footer-more summary:focus-visible {
+  outline: 2px solid #e1cc9f;
+  outline-offset: 3px;
+}
+.premium-site .premium-footer .footer-contacts {
+  padding-block: 23px;
+}
+.premium-site .footer-field-coverage {
+  margin: 12px 0 0;
+  font-size: 11px;
+  color: #cbd0c5;
+}
+.premium-site .office-field-coverage {
+  margin-top: 26px;
+  background: #e9ede4;
+  padding: 20px 24px;
+  font-size: 13px;
+}
+.premium-site .office-field-coverage p {
+  margin: 0 0 10px;
+}
+.premium-site .office-field-coverage a {
+  display: inline-block;
+  padding-block: 8px;
+}
+.premium-site .enquiry-coverage {
+  font-size: 13px;
+  max-width: 43ch;
+  margin-block: 20px;
+}
+@media (max-width: 760px) {
+  .premium-site footer.premium-footer {
+    padding-block: 30px 35px;
+  }
+  .premium-site .footer-introduction {
+    gap: 17px;
+  }
+  .premium-site .footer-enquiry {
+    font-size: 25px;
+    min-height: 44px;
+    padding-bottom: 8px;
+  }
+  .premium-site .footer-directory {
+    gap: 20px 16px;
+  }
+  .premium-site .premium-footer .footer-contacts {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 16px;
+  }
+  .premium-site .premium-footer .footer-contacts > div:first-child {
+    grid-column: 1/-1;
+  }
+  .premium-site .footer-contacts p {
+    margin: 0 0 6px;
+  }
+  .premium-site .footer-contacts address {
+    font-size: 11px;
+  }
+  .premium-site .footer-shortcuts {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0 22px;
+    padding-top: 12px;
+  }
+  .premium-site .footer-shortcuts a {
+    font-size: 11px;
+  }
+  .premium-site .premium-footer .disclosure {
+    margin-block: 10px;
+    font-size: 10px;
+  }
+  .premium-site .office-field-coverage {
+    padding: 16px;
+  }
+}
+.premium-site .directory-equipment-photo {
+  background: #e9ede4;
+  aspect-ratio: 1.6;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.premium-site .directory-equipment-photo img {
+  width: 90%;
+  height: 200px;
+  object-fit: contain;
+}
+.premium-site .footer-enquiry {
+  justify-self: end;
+  width: fit-content;
+  padding: 12px 18px;
+  border: 1px solid #7d8e7b;
+  border-radius: 5px;
+  font: 500 15px/1.4 var(--sans);
+  min-height: 44px;
+}
+@media (max-width: 760px) {
+  .premium-site .footer-enquiry {
+    justify-self: start;
+    font-size: 13px;
+  }
 }

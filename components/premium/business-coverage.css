@@ -1,0 +1,137 @@
+.premium-site .business-coverage {
+  padding: 38px 0;
+  border-top: 1px solid #d6ded6;
+  color: #203e34;
+}
+.premium-site .coverage-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 15px 35px;
+  margin-bottom: 24px;
+}
+.premium-site .coverage-heading > p,
+.premium-site .coverage-kind {
+  font:
+    600 10px/1.5 var(--font-geist-sans),
+    Arial,
+    sans-serif;
+  letter-spacing: 0.12em;
+}
+.premium-site .coverage-heading h2 {
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  font-size: clamp(24px, 2.8vw, 36px);
+  letter-spacing: -0.04em;
+  max-width: none;
+  margin: 0;
+}
+.premium-site .coverage-offices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+}
+.premium-site .coverage-offices article {
+  border-left: 2px solid #9cab98;
+  padding: 0 0 2px 18px;
+}
+.premium-site .coverage-offices h3 {
+  margin: 5px 0 9px;
+  font:
+    500 25px/1.2 var(--font-geist-sans),
+    Arial,
+    sans-serif;
+  letter-spacing: -0.03em;
+}
+.premium-site .coverage-offices address {
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 0 0 8px;
+}
+.premium-site .coverage-offices a {
+  font-size: 13px;
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  text-decoration: none;
+}
+.premium-site .coverage-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  background: #e7ece4;
+  padding: 18px 22px;
+  border-radius: 6px;
+  margin-top: 24px;
+}
+.premium-site .coverage-field p {
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 5px 0 0;
+}
+.premium-site .coverage-field strong {
+  font-size: 15px;
+  font-weight: 500;
+}
+.premium-site .coverage-field > a {
+  font-size: 12px;
+  flex-shrink: 0;
+  padding-block: 12px;
+  text-underline-offset: 5px;
+}
+.premium-site .coverage-supply {
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 14px 0 0;
+}
+.premium-site .coverage-supply a {
+  white-space: nowrap;
+}
+@media (max-width: 760px) {
+  .premium-site .business-coverage {
+    padding-block: 25px;
+  }
+  .premium-site .coverage-heading {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .premium-site .coverage-heading > p {
+    font-size: 9px;
+    margin: 0 0 10px;
+  }
+  .premium-site .coverage-heading h2 {
+    font-size: 25px;
+  }
+  .premium-site .coverage-offices {
+    gap: 12px;
+  }
+  .premium-site .coverage-offices article {
+    padding-left: 11px;
+  }
+  .premium-site .coverage-kind {
+    font-size: 8px;
+  }
+  .premium-site .coverage-offices h3 {
+    font-size: 23px;
+  }
+  .premium-site .coverage-offices address {
+    font-size: 11px;
+  }
+  .premium-site .coverage-offices a {
+    font-size: 11px;
+  }
+  .premium-site .coverage-field {
+    padding: 16px;
+    gap: 12px;
+  }
+  .premium-site .coverage-field p {
+    font-size: 11px;
+  }
+  .premium-site .coverage-field strong {
+    font-size: 13px;
+  }
+  .premium-site .coverage-field > a {
+    font-size: 11px;
+  }
+}

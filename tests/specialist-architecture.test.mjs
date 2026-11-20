@@ -14,11 +14,11 @@ const core = JSON.parse(await readFile("data/premium-services.json", "utf8"));
 const secondary = JSON.parse(
   await readFile("data/secondary-services.json", "utf8"),
 );
-test("each of the existing sixteen routes has one division, with security specialists first", () => {
+test("each of the seventeen approved routes has one division, with security specialists first", () => {
   const slugs = divisions.flatMap((x) => x.slugs);
   assert.equal(divisions.length, 5);
-  assert.equal(slugs.length, 16);
-  assert.equal(new Set(slugs).size, 16);
+  assert.equal(slugs.length, 17);
+  assert.equal(new Set(slugs).size, 17);
   assert.deepEqual(
     new Set(slugs),
     new Set([...core, ...secondary].map((x) => x.slug)),

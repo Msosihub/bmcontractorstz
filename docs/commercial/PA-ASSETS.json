@@ -1,0 +1,83 @@
+{
+  "reviewed": "2026-11-20",
+  "usage": "Official manufacturer marketing photographs used for owner-requested local PA offering. No BM installation, inventory or authorization claim is inferred. Owner permission record is the current PA/homepage instruction and the earlier manufacturer-marketing permission decision.",
+  "items": [
+    {
+      "model": "ssa-250m",
+      "source": "https://www.ahujaradios.com/mixer-amplifiers/high-wattage-pa-mixer-amplifiers/ssa-250m-2.html",
+      "image": "https://ahujaradios.com//images/UploadedImages/thumbs/0041034_ahuja-high-power-pa-amplifiers-SSA-250M.png",
+      "originalDimensions": [
+        800,
+        800
+      ],
+      "sha256": "ec454ca2d4290d5831da7fbfcfc8abb9d6de353a009b4bccff5dc2593ac9b0ad",
+      "bytes": 39100,
+      "processing": "Transparent margins trimmed; resized without enlargement; optimized WebP. Original colors and product appearance retained."
+    },
+    {
+      "model": "acm-96ch",
+      "source": "https://www.ahujaradios.com/microphones/paging-microphones-series/acm-96ch.html",
+      "image": "https://ahujaradios.com//images/UploadedImages/thumbs/0081216_ahuja-paging-microphone-ACM-96CH.png",
+      "originalDimensions": [
+        800,
+        800
+      ],
+      "sha256": "80caa6f254e7eb349669219126e4e059d9373a8cbcf4817f858df793d85a207a",
+      "bytes": 20178,
+      "processing": "Transparent margins trimmed; resized without enlargement; optimized WebP. Original colors and product appearance retained."
+    },
+    {
+      "model": "cs-8151t",
+      "source": "https://www.ahujaradios.com/speakers/pa-ceiling-speakers/cs-8151t.html",
+      "image": "https://ahujaradios.com//images/UploadedImages/thumbs/0010695_ahuja-ceiling-speaker-CS-8151T.png",
+      "originalDimensions": [
+        800,
+        800
+      ],
+      "sha256": "68466c752e83cb7fc43e1fbddeacb7af2f7243e93144c10e4e5ed9dcd0d18b26",
+      "bytes": 77374,
+      "processing": "Transparent margins trimmed; resized without enlargement; optimized WebP. Original colors and product appearance retained."
+    },
+    {
+      "model": "scm-15t",
+      "source": "https://www.ahujaradios.com/speakers/pa-column-speakers/scm-15-15t.html",
+      "image": "https://ahujaradios.com//images/UploadedImages/thumbs/0010681_ahuja-column-speaker-SCM-15.png",
+      "originalDimensions": [
+        800,
+        800
+      ],
+      "sha256": "ebeea626bf73f41fefef2df8b2971b2b2f2c6bc104d632b293f0681ffc9ff9ca",
+      "bytes": 37436,
+      "processing": "Transparent margins trimmed; resized without enlargement; optimized WebP. Original colors and product appearance retained."
+    },
+    {
+      "model": "uhc-xt-series",
+      "source": "https://www.ahujaradios.com/speakers/pa-horn-speakers/uhc-series-2.html",
+      "image": "https://ahujaradios.com//images/UploadedImages/thumbs/0010671_ahuja-horn-speaker-UHC_T.png",
+      "originalDimensions": [
+        800,
+        800
+      ],
+      "sha256": "31c30242e0c836da2fee035e2b1f7ff650b2a49ea6aa59c56d8639de45c1f31b",
+      "bytes": 14716,
+      "processing": "Transparent margins trimmed; resized without enlargement; optimized WebP. Original colors and product appearance retained."
+    },
+    {
+      "model": "apm-201rm",
+      "source": "https://www.ahujaradios.com/paging-system-2/paging-system/apm-201rm.html",
+      "image": "https://ahujaradios.com//images/UploadedImages/thumbs/0040967_ahuja-paging-system-apm-201rm.png",
+      "originalDimensions": [
+        800,
+        800
+      ],
+      "sha256": "6eee04d948e1c3ef8eea1d12d8c656ad22f1b901a57d8fe32c89678d3b16cc80",
+      "bytes": 22764,
+      "processing": "Transparent margins trimmed; resized without enlargement; optimized WebP. Original colors and product appearance retained."
+    }
+  ],
+  "modelIdentityNotes": [
+    "SCM-15/15T use the shared manufacturer family image. The T version is specified separately for 100 V operation.",
+    "UHC XT Series uses the manufacturer 100 V family photograph. It is not the low-impedance UHC Series.",
+    "CS-8151T was selected instead of CS-5061T because the latter product page exposed a differently named image. Exact CS-8151T source and rating were checked."
+  ]
+}

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { TrustBelt } from "@/components/premium/TrustBelt";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
@@ -88,10 +89,23 @@ export default async function Page({
                     return (
                       <article
                         className={
-                          visual ? "directory-feature" : "directory-note"
+                          visual || slug === "pa-sound-systems"
+                            ? "directory-feature"
+                            : "directory-note"
                         }
                         key={slug}
                       >
+                        {slug === "pa-sound-systems" && (
+                          <div className="directory-equipment-photo">
+                            <Image
+                              src="/images/pa-sound/ssa-250m.webp"
+                              alt="AHUJA SSA-250M PA mixer amplifier"
+                              width={640}
+                              height={360}
+                              sizes="(max-width:760px) 90vw, 30vw"
+                            />
+                          </div>
+                        )}
                         {visual && (
                           <Photo
                             asset={visual.asset}

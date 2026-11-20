@@ -34,7 +34,7 @@ test("office and footer contacts match confirmed numbers in both languages", () 
       assert.doesNotMatch(html, /supplied separately|itatolewa baadaye/);
       assert.doesNotMatch(
         html,
-        /wa.me\/255799660068|wa.me\/255760111880|Dar es Salaam|Dodoma|openingHours|maps.google/,
+        /wa.me\/255799660068|wa.me\/255760111880|openingHours|maps.google/,
       );
     }
     assert.match(fullFooter, /tel:\+255760111880/);
@@ -42,35 +42,44 @@ test("office and footer contacts match confirmed numbers in both languages", () 
     assert.match(offices, lang === "sw" ? /Ofisi ya Arusha/ : /Arusha office/);
   }
 });
-test("business structured data uses the confirmed Moshi address and distinct Arusha contact without invented address or hours", () => {
+test("structured data gives both physical offices equal identity and keeps field coverage separate", () => {
   const html = renderToStaticMarkup(schema.LocalBusinessJsonLd());
-  const json = JSON.parse(html.match(/<script[^>]*>([\s\S]*)<\/script>/)[1]);
-  assert.equal(json.telephone, "+255760111880");
-  assert.equal(json.address.streetAddress, "55 Market Road, Vijana Street");
-  assert.equal(json.address.addressLocality, "Moshi");
-  assert.equal(json.address.addressRegion, "Kilimanjaro");
-  assert.equal(json.address.addressCountry, "TZ");
-  const arusha = json.contactPoint.find(
-    (x) => x.name === "Arusha office — Mianzini",
-  );
+  const graph = JSON.parse(html.match(/<script[^>]*>([\s\S]*)<\/script>/)[1])[
+    "@graph"
+  ];
+  const company = graph.find((x) => x["@type"] === "Organization");
+  const offices = graph.filter((x) => x["@type"] === "LocalBusiness");
+  assert.equal(company.telephone, "+255760111880");
+  assert.equal(company.location.length, 2);
+  assert.equal(company.address, undefined);
+  assert.equal(offices.length, 2);
+  const moshi = offices.find((x) => x.address.addressLocality === "Moshi");
+  const arusha = offices.find((x) => x.address.addressLocality === "Arusha");
+  assert.equal(moshi.address.streetAddress, "55 Market Road, Vijana Street");
+  assert.equal(moshi.telephone, "+255745778821");
   assert.equal(arusha.telephone, "+255799660068");
-  assert.equal(arusha.address.addressLocality, "Mianzini");
-  assert.equal(arusha.address.addressRegion, "Arusha");
-  assert.equal(arusha.address.addressCountry, "TZ");
+  assert.equal(arusha.address.extendedAddress, "Mianzini");
   assert.equal(arusha.address.streetAddress, undefined);
-  assert.equal(arusha.hoursAvailable, undefined);
-  assert.equal(json.openingHours, undefined);
-  assert.equal(json.sameAs, undefined);
+  for (const office of offices) {
+    assert.equal(office.branchOf["@id"], company["@id"]);
+    assert.equal(office.address.addressCountry, "TZ");
+    assert.equal(office.openingHours, undefined);
+    assert.equal(office.geo, undefined);
+    assert(!/Dar es Salaam|Dodoma/.test(JSON.stringify(office.address)));
+  }
+  for (const city of ["Dar es Salaam", "Dodoma"])
+    assert(company.areaServed.some((x) => x.name === city));
+  assert.deepEqual(company.sameAs, [
+    "https://www.facebook.com/p/BM-Contractors-61558249603510/",
+    "https://www.instagram.com/bm_contractorstz/",
+  ]);
   assert.equal(
-    json.contactPoint.filter((x) => x.contactType === "WhatsApp").length,
-    1,
-  );
-  assert.equal(
-    json.contactPoint.find((x) => x.contactType === "WhatsApp").telephone,
+    company.contactPoint.find((x) => x.contactType === "WhatsApp").telephone,
     "+255745778821",
   );
-  assert.ok(json.knowsAbout.includes("CCTV installation"));
+  assert.ok(company.knowsAbout.includes("CCTV installation"));
 });
+
 test("display updates do not add Arusha to live notification recipients", () => {
   assert.deepEqual(config.siteConfig.notificationNumbers, [
     "+255745778821",

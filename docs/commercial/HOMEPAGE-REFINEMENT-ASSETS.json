@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-20",
+  "rights": "AI scenes generated for BM website illustrative use. Grandstream photo sourced from official marketing/product material at owner request; no independent supplier authorization asserted. Review manufacturer marketing-use terms before publication.",
+  "assets": [
+    {
+      "name": "church-pa",
+      "type": "AI-generated illustrative church PA environment; not a BM project or staff photograph",
+      "sha256": "ebc4ad8dab18494d89816b117bcfd367f2ca8507f95d9c261dfc105d49672822",
+      "asset": "public/images/home/church-pa.webp"
+    },
+    {
+      "name": "office-phones",
+      "type": "AI-generated illustrative office; unbranded scene phone, not a documented manufacturer model or BM customer",
+      "sha256": "2a36db49c1b254dde6962d686e1816e44efc43c1873c9b42a653febe7d86037d",
+      "asset": "public/images/home/office-phones.webp"
+    },
+    {
+      "name": "grandstream-grp2612",
+      "type": "Official manufacturer product photograph; GRP2612 reference, no BM stock or dealership claim",
+      "url": "https://www.grandstream.com/hubfs/Product%20Images/GRP/grp2612_left_web-website.png",
+      "page": "https://www.grandstream.com/products/ip-voice-telephony/carrier-grade-ip-phones/grp-series-professional-ip-phones/product/grp2612-p-w-g",
+      "sha256": "12e703338b7a8f932d6a80478631a68937da812fa423abed894b763d5fd8c38f",
+      "asset": "public/images/home/grandstream-grp2612.webp"
+    },
+    {
+      "name": "network-practical",
+      "asset": "public/images/home/network-practical.webp",
+      "type": "AI edit of existing illustrative architecture; replaces impractical cable tangles with short managed patch leads, paired panel/switch positions and UPS. Not an actual BM installation or construction diagram.",
+      "sha256": "fb1aff04f74add8057ab89d3432b0fddc3d47251ca3c5109adb0e22ba39408e9"
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import { siteConfig } from "@/data/site";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { ReferenceCatalogue } from "@/components/catalogue/ReferenceCatalogue";
@@ -45,9 +46,21 @@ export default async function Page({ searchParams }: Props) {
           <h1>{sw ? "Katalogi ya Hikvision" : "Hikvision equipment"}</h1>
           <p className="lead">
             {sw
-              ? "Linganisha modeli kabla ya kuomba vifaa pekee au mfumo kamili wenye ufungaji."
-              : "Compare exact references before requesting equipment only or a complete installed system."}
+              ? "Ugavi wa vifaa kwa wanunuzi wa rejareja, mafundi na miradi kupitia ofisi zetu za Moshi na Arusha. Linganisha modeli kwa vifaa pekee au mfumo wenye ufungaji."
+              : "Equipment supply for retail customers, technicians and project buyers through our Moshi and Arusha offices. Compare models for equipment-only or installed quotations."}
           </p>
+          <p className="ac-note">
+            {siteConfig.authorizations.hikvision.description[lang]}
+          </p>
+          <a
+            className="hv-text-link"
+            href={`/contact?lang=${lang}&subject=${encodeURIComponent("Hikvision trade and reseller supply")}`}
+          >
+            {sw
+              ? "Ugavi kwa wauzaji na mafundi"
+              : "Trade and reseller supply enquiries"}{" "}
+            ↗
+          </a>
           <p className="ac-note">
             {sw
               ? "Hizi ni rejea za mtengenezaji. BM huthibitisha bei, toleo, leseni na upatikanaji kwenye nukuu."

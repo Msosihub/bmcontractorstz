@@ -1,0 +1,73 @@
+{
+  "reviewedOn": "2026-11-20",
+  "permission": "The owner confirms suppliers and manufacturers permit relevant marketing use of imagery and branding in the attached 20 November homepage instruction. Marks remain the property of their owners. BM does not claim certification or official dealership status.",
+  "hero": {
+    "files": [
+      "/images/home/building-hero.webp",
+      "/images/home/building-hero-mobile.webp"
+    ],
+    "method": "Built-in image_gen. Optimized with Sharp. Mobile uses a separate architectural crop.",
+    "original": "/Users/imacslim2015/.codex/generated_images/01a1427a-b2c4-7363-8dae-fe16c077ef1a/exec-f1975f95-ec07-4705-8ea6-08d2d4ee85f9.png",
+    "prompt": "Use case: photorealistic-natural. Create one premium architectural editorial photograph for the homepage of BM Contractors, an engineering, electrical and security installation company in Tanzania. Wide landscape 16:9 cinematic composition, photorealistic, high-end architectural magazine quality. A believable contemporary two-storey commercial lodge/office reception in northern Tanzania, graphite metal framing, warm beige stone, tasteful slatted wood, generous glass, restrained landscaping and distant tropical trees. Blue-hour twilight with rich clean blue-green sky and beautiful warm interior illumination. Building occupies right two thirds, left third has darker architectural facade and landscaping to permit white headline overlay. On the right an unobtrusive correctly mounted modern white bullet security camera beneath eave, a slim access reader at the glass entrance, subtle neat rooftop solar panels. Foreground near entrance two well-dressed East African business people, one woman and one man, naturally walking and talking, small in frame, candid and professional. They are building occupants, no uniforms, logos or suggestion they are BM staff. A contemporary sliding gate edge visible at far right, paved arrival courtyard with authentic realistic materials. Eye-level wide lens, corrected verticals, exceptional lighting, calm luxury, crisp details without excessive sharpness. No text, no logos, no watermark, no captions, no futuristic holograms, no neon, no diagram overlay, no imaginary product branding, no construction-site clutter. Designed as an illustrative architectural scene, never a claimed completed client project.",
+    "usage": "Generated architectural concept with fictional occupants. No completed BM project, customer or staff identity is asserted."
+  },
+  "brands": [
+    {
+      "name": "Hikvision",
+      "file": "hikvision.png",
+      "source": "https://www.hikvision.com/content/dam/hikvision/en/marketing/image/partners/channel-partners/policy/Hikvision-Brand-Guidelines-for-Partners.pdf",
+      "processing": "Full Standard Logo extracted from page 6 at original colors, clip rectangle [430,210,700,255] in PDF points, rendered at 4x. The earlier abbreviated HIK icon was discarded."
+    },
+    {
+      "name": "Nemtek",
+      "file": "nemtek.svg",
+      "source": "https://www.nemtek.co.za/wp-content/uploads/2021/07/NEMTEK_logo.svg",
+      "processing": "Original SVG."
+    },
+    {
+      "name": "Tiandy",
+      "file": "tiandy.png",
+      "source": "https://bsg-i.nbxc.com/company/e3/b43b5c34bde4aab3182a8c73c31798.png",
+      "officialPage": "https://en.tiandy.com/",
+      "processing": "Official page header logo, blank margin trimmed, resized without enlargement, PNG optimized."
+    },
+    {
+      "name": "CENTURION",
+      "file": "centurion.png",
+      "source": "https://www.centsys.com/demo/img/CENTURION-logo---clear-01.png",
+      "processing": "Empty transparent margins trimmed without changing artwork or proportions."
+    },
+    {
+      "name": "ZKTeco",
+      "file": "zkteco.svg",
+      "source": "https://zkteco.technology/",
+      "processing": "Existing reviewed official SVG from the ZKTeco milestone, copied unchanged. White/green artwork uses a graphite card."
+    },
+    {
+      "name": "Dahua Technology",
+      "file": "dahua.png",
+      "source": "https://www.dahuasecurity.com/logo.png",
+      "processing": "Empty margins trimmed, resized without enlargement and PNG optimized."
+    },
+    {
+      "name": "TP-Link",
+      "file": "tplink.svg",
+      "source": "https://static.tp-link.com/assets/images/icon/logo.svg",
+      "officialPage": "https://www.tp-link.com/en/",
+      "processing": "Original SVG linked by official page CSS."
+    },
+    {
+      "name": "Grandstream",
+      "file": "grandstream.png",
+      "source": "https://www.grandstream.com/hubfs/raw_assets/public/Grandstream_Feb_2021/images/logo-grandstream-low-web.png",
+      "processing": "Blank margins trimmed without changing colors or artwork."
+    },
+    {
+      "name": "Yeastar",
+      "file": "yeastar.svg",
+      "source": "https://www.yeastar.com/wp-content/uploads/svg/yeastar-logo.svg",
+      "processing": "Original SVG."
+    }
+  ],
+  "reusedPhotography": "Existing reviewed generated images under assets/cctv-applications, electric-fence-commercial, gate-automation, images/access-control and the original electrical/solar/network asset families. Existing manufacturer device images are reused unchanged. Prior milestone provenance remains authoritative."
+}

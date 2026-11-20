@@ -20,7 +20,9 @@
     "id": "electrical",
     "en": "Electrical Engineering & Contracting",
     "sw": "Uhandisi na Kazi za Umeme",
-    "slugs": ["electrical-contracting"],
+    "slugs": [
+      "electrical-contracting"
+    ],
     "descriptionEn": "Distribution, circuits, lighting, protective devices and agreed inspection/testing for building electrical installations.",
     "descriptionSw": "Usambazaji wa umeme, saketi, taa, vifaa vya kinga na ukaguzi na vipimo vilivyokubaliwa kwa mifumo ya majengo.",
     "shortEn": "Electrical",
@@ -45,7 +47,11 @@
     "id": "ict",
     "en": "ICT, Networking & Business Telephony",
     "sw": "TEHAMA, Mitandao na Simu za Biashara",
-    "slugs": ["networking", "telephone-systems"],
+    "slugs": [
+      "networking",
+      "telephone-systems",
+      "pa-sound-systems"
+    ],
     "descriptionEn": "Structured cabling, Wi-Fi, switching and office/hotel PBX or IP-PBX telephone systems planned together.",
     "descriptionSw": "Nyaya za mtandao, Wi-Fi, swichi na mifumo ya simu za PBX au IP-PBX kwa ofisi na hoteli vikiratibiwa pamoja.",
     "shortEn": "Networks & telephones",

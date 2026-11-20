@@ -19,15 +19,12 @@ test("staging notice is absent from Production and explicit in both Preview lang
     else process.env.NEXT_PUBLIC_BM_PREVIEW = previous;
   }
 });
-test("both headers share the environment-scoped notice and image disclosures remain intact", async () => {
-  for (const path of [
-    "components/site/Header.tsx",
-    "components/premium/Homepage.tsx",
-  ]) {
-    const source = await readFile(path, "utf8");
-    assert.match(source, /<PreviewNotice lang=\{lang\}/);
-    assert.doesNotMatch(source, /<span>PHASE 1B \/ PRIVATE REVIEW/);
-  }
+test("homepage uses the shared environment-scoped header and image disclosures remain intact", async () => {
+  const header = await readFile("components/site/Header.tsx", "utf8");
+  const home = await readFile("components/premium/Homepage.tsx", "utf8");
+  assert.match(header, /<PreviewNotice lang=\{lang\}/);
+  assert.match(home, /<Header lang=\{lang\}/);
+  assert.doesNotMatch(home + header, /<span>PHASE 1B \/ PRIVATE REVIEW/);
   const about = await readFile("app/about/page.tsx", "utf8");
   assert.match(about, /fictional people, not BM employees or clients/);
   const css = await readFile("app/premium.css", "utf8");

@@ -474,5 +474,22 @@
     "bmInstallationStatus": "unverified",
     "contentApproval": "do not publish brand/model claims",
     "imageRights": "not cleared"
+  },
+  {
+    "id": "ahuja",
+    "brand": "Ahuja Radios",
+    "entityType": "manufacturer",
+    "specialty": "Public address, paging and sound systems",
+    "families": "PA mixer amplifiers; paging microphones; ceiling, column and horn speakers",
+    "officialSite": "https://www.ahujaradios.com/",
+    "source": "https://www.ahujaradios.com/mixer-amplifiers/high-wattage-pa-mixer-amplifiers/ssa-250m-2.html",
+    "checkedOn": "2026-11-20",
+    "identityStatus": "primary-source verified",
+    "modelEvidence": "Six model/family references verified against official pages; precise sources in data/pa-sound.ts",
+    "selectionAndCompatibility": "Match constant-voltage or low-impedance outputs, selected taps, total speaker load and paging controllers. SCM-15 and SCM-15T are different connection versions.",
+    "bmSupplyStatus": "not verified per model",
+    "bmInstallationStatus": "PA supply and installation scope approved by owner on 20 November 2026",
+    "contentApproval": "local reference and service content; not a live inventory record",
+    "imageRights": "Owner-directed manufacturer marketing imagery; local files and source hashes documented in PA-ASSETS.json."
   }
 ]
