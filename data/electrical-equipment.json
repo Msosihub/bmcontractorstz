@@ -1,0 +1,164 @@
+[
+  {
+    "id": "panels",
+    "image": "industrial-hero",
+    "service": "panels",
+    "name": ["Panels & distribution boards", "Paneli na bodi za usambazaji"],
+    "intro": [
+      "Organize incoming power and outgoing circuits around your building’s loads.",
+      "Panga umeme unaoingia na saketi kulingana na mizigo ya jengo lako."
+    ],
+    "types": ["MDB · SMDB · DB", "MDB · SMDB · DB"],
+    "selection": [
+      [
+        "Supply, load schedule and outgoing circuits.",
+        "Umeme uliopo, orodha ya mizigo na saketi."
+      ],
+      [
+        "Fault level, protection, enclosure and expansion space.",
+        "Kiwango cha hitilafu, ulinzi, enclosure na nafasi ya upanuzi."
+      ],
+      [
+        "Power-factor correction, where required, follows load and harmonic assessment.",
+        "Power-factor correction inapohitajika hufuata tathmini ya mizigo na harmonics."
+      ]
+    ]
+  },
+  {
+    "id": "switchgear",
+    "image": "switchgear",
+    "service": "panels",
+    "name": ["Switchgear & circuit breakers", "Switchgear na circuit breaker"],
+    "intro": [
+      "Select switching and protection devices that suit the system—not just the current rating.",
+      "Chagua vifaa vya switching na ulinzi vinavyofaa mfumo—si kiwango cha ampere pekee."
+    ],
+    "types": ["MCCB · ACB · isolation", "MCCB · ACB · isolation"],
+    "selection": [
+      [
+        "Operating voltage, poles and load current.",
+        "Voltage ya matumizi, poles na mkondo wa mzigo."
+      ],
+      [
+        "Breaking capacity and coordination with other protection.",
+        "Uwezo wa kukata hitilafu na uratibu wa vifaa vingine vya ulinzi."
+      ],
+      [
+        "Existing equipment references and compatible accessories.",
+        "Taarifa za vifaa vilivyopo na accessories zinazooana."
+      ]
+    ]
+  },
+  {
+    "id": "motor-controls",
+    "image": "motor-controls",
+    "service": "industrial",
+    "name": ["Motor control & drives", "Udhibiti wa mota na VFD"],
+    "intro": [
+      "Match pumps and machinery to the right starting, speed-control and protection approach.",
+      "Linganisha pampu na mashine na njia sahihi ya kuanzisha, kudhibiti kasi na kulinda mota."
+    ],
+    "types": ["MCC · VFD · starters", "MCC · VFD · starter"],
+    "selection": [
+      [
+        "Motor nameplate, supply and driven equipment.",
+        "Nameplate ya mota, umeme na mashine inayotumika."
+      ],
+      [
+        "Duty, starting method and operating environment.",
+        "Namna ya kazi, kuanzisha na mazingira ya matumizi."
+      ],
+      [
+        "Required controls, interlocks and specialist/OEM interfaces.",
+        "Udhibiti, interlocks na miingiliano ya mtaalamu au mtengenezaji."
+      ]
+    ]
+  },
+  {
+    "id": "transformers",
+    "image": "substation",
+    "service": "infrastructure",
+    "name": [
+      "Transformers & substation equipment",
+      "Transfoma na vifaa vya kituo"
+    ],
+    "intro": [
+      "Define the connection and demand before specifying a transformer or substation package.",
+      "Fafanua uunganishaji na mahitaji ya mzigo kabla ya kuainisha transfoma au vifaa vya kituo."
+    ],
+    "types": [
+      "Transformer · switching · protection",
+      "Transfoma · switching · ulinzi"
+    ],
+    "selection": [
+      [
+        "Utility supply requirements and incoming/outgoing voltage.",
+        "Masharti ya mtoa huduma na voltage zinazoingia na kutoka."
+      ],
+      [
+        "Load demand, site conditions and protection design.",
+        "Mahitaji ya mzigo, hali ya eneo na usanifu wa ulinzi."
+      ],
+      [
+        "Agree supply, qualified installation and commissioning responsibilities separately.",
+        "Kubalianeni tofauti majukumu ya ugavi, ufungaji wenye idhini na commissioning."
+      ]
+    ]
+  },
+  {
+    "id": "cables",
+    "image": "cables",
+    "service": "commercial",
+    "name": [
+      "Cables & termination accessories",
+      "Nyaya na vifaa vya termination"
+    ],
+    "intro": [
+      "Plan power and control cabling as a complete route, including glands and terminations.",
+      "Panga nyaya za nguvu na udhibiti kwa njia nzima, pamoja na gland na termination."
+    ],
+    "types": [
+      "Power · control · glands & lugs",
+      "Nguvu · udhibiti · gland na lug"
+    ],
+    "selection": [
+      [
+        "Circuit load, voltage, route length and installation method.",
+        "Mzigo wa saketi, voltage, urefu na namna ya kufunga."
+      ],
+      [
+        "Environment, protection and conductor requirements.",
+        "Mazingira, ulinzi na mahitaji ya conductor."
+      ],
+      [
+        "Cable schedule or samples/references for existing terminations.",
+        "Orodha ya nyaya au sampuli/taarifa za termination zilizopo."
+      ]
+    ]
+  },
+  {
+    "id": "earthing-protection",
+    "image": "earthing-protection",
+    "service": "panels",
+    "name": ["Earthing & surge protection", "Earthing na kinga ya surge"],
+    "intro": [
+      "Coordinate earthing, bonding and surge protection with the installation’s design.",
+      "Ratibu earthing, bonding na kinga ya surge kulingana na usanifu wa mfumo."
+    ],
+    "types": ["Earth bars · conductors · SPD", "Earth bar · conductor · SPD"],
+    "selection": [
+      [
+        "Existing earthing arrangement and site measurements.",
+        "Mpangilio wa earthing uliopo na vipimo vya eneo."
+      ],
+      [
+        "Supply characteristics and surge/lightning assessment.",
+        "Sifa za umeme na tathmini ya surge/radi."
+      ],
+      [
+        "Correctly coordinated devices, connections and inspection access.",
+        "Vifaa na miunganisho iliyoratibiwa, pamoja na ufikiaji wa ukaguzi."
+      ]
+    ]
+  }
+]

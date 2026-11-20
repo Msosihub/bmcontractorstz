@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-20",
+  "method": "Built-in image generation",
+  "assets": [
+    {
+      "name": "switchgear",
+      "asset": "public/images/electrical-contracting/switchgear.webp",
+      "original": "docs/commercial/electrical-originals/switchgear.png",
+      "sha256": "dbb92e6f632f2bd6684fc1dcb77f90201587bc453292c2a7d99d1e67213d2f9b",
+      "bytes": 24188,
+      "type": "Original AI-generated unbranded equipment-family illustration; not a verified model, stocked item or manufacturer photograph",
+      "rights": "Generated for BM website use; built-in image generation; original retained; no competitor assets copied",
+      "prompt": "A premium photorealistic editorial equipment-category photograph for an electrical engineering website. Two unbranded industrial molded-case circuit breakers, one larger and one smaller, neat dark grey housings and realistic copper terminal details, de-energized and unattached, on a warm ivory studio surface with soft shadows. Three-quarter view, subtle muted graphite and bronze palette, generous negative space, landscape 3:2. Recognizable practical electrical protection equipment, no invented labels, no readable ratings, no logos, no wiring instructions, no text, no watermark. This illustrates an equipment family, not an actual stock item."
+    },
+    {
+      "name": "motor-controls",
+      "asset": "public/images/electrical-contracting/motor-controls.webp",
+      "original": "docs/commercial/electrical-originals/motor-controls.png",
+      "sha256": "9188c87c98adbd5297341809edf089b311dbebcce24a3417e13813c497b2a238",
+      "bytes": 20376,
+      "type": "Original AI-generated unbranded equipment-family illustration; not a verified model, stocked item or manufacturer photograph",
+      "rights": "Generated for BM website use; built-in image generation; original retained; no competitor assets copied",
+      "prompt": "Premium photorealistic equipment-category photograph, landscape 3:2, an unbranded industrial variable-frequency drive standing beside a compact motor contactor on a warm ivory studio surface. Realistic vertical drive heatsink, blank small display, practical terminal covers closed, grey and muted teal tones, soft architectural studio lighting, subtle shadows, editorial luxury engineering catalogue. No brand marks, no readable ratings, no model labels, no text, no watermark, no exposed live wiring. Illustrative equipment family, not a specific purchasable product."
+    },
+    {
+      "name": "cables",
+      "asset": "public/images/electrical-contracting/cables.webp",
+      "original": "docs/commercial/electrical-originals/cables.png",
+      "sha256": "800ae96325f7e18a7574c3a968b1f3677c3f4e1a698f187ad47c2161ba67053b",
+      "bytes": 39816,
+      "type": "Original AI-generated unbranded equipment-family illustration; not a verified model, stocked item or manufacturer photograph",
+      "rights": "Generated for BM website use; built-in image generation; original retained; no competitor assets copied",
+      "prompt": "Premium photorealistic electrical equipment-category editorial photograph in landscape 3:2. Neatly arranged short unbranded heavy-duty black armoured power cable samples, one cut end showing believable copper conductors, insulation, bedding and steel-wire armour, with two appropriately sized brass cable glands beside them on a warm ivory studio surface. Restrained grey copper bronze palette, soft natural studio light, technically plausible material construction, sharp tactile detail, generous space. No logos, no readable markings, no text, no watermark, no live installation or wiring instructions."
+    },
+    {
+      "name": "earthing-protection",
+      "asset": "public/images/electrical-contracting/earthing-protection.webp",
+      "original": "docs/commercial/electrical-originals/earthing-protection.png",
+      "sha256": "2c33eebf98e95f6c3a7346a13fcdab58b58f655a5020dc685883ac7d738a7f64",
+      "bytes": 40728,
+      "type": "Original AI-generated unbranded equipment-family illustration; not a verified model, stocked item or manufacturer photograph",
+      "rights": "Generated for BM website use; built-in image generation; original retained; no competitor assets copied",
+      "prompt": "Premium photorealistic engineering equipment-family editorial still life, landscape 3:2. A copper earth bar mounted on two insulated supports, several correctly proportioned copper cable lugs and a closed unbranded DIN-rail surge protective device arranged separately and neatly on a warm ivory studio surface. No connection or wiring diagram implied; de-energized loose components. Realistic industrial materials, soft architectural studio light, warm copper, charcoal and muted blue-green, luxurious restrained catalogue photograph. No logos, no text, no ratings, no watermark, no certification marks."
+    }
+  ],
+  "reused": [
+    "industrial-hero.webp for panels",
+    "substation.webp for transformer context"
+  ],
+  "technicalUse": "Category editorial imagery, not specification sheets, wiring instructions or stock evidence"
+}

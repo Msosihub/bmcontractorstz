@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-20",
+  "assets": [
+    {
+      "name": "industrial-hero",
+      "asset": "public/images/electrical-contracting/industrial-hero.webp",
+      "sha256": "2332dc812b442e2fb61f6e9ce2016a3f107f3f7e16857bd7276bc7e6647a7e97",
+      "bytes": 168442,
+      "type": "Original AI-generated editorial illustration; not BM project, staff, completed works or equipment-inventory evidence",
+      "rights": "Generated for BM website use; local source retained. No competitor project photographs or manufacturer marks."
+    },
+    {
+      "name": "pumping-station",
+      "asset": "public/images/electrical-contracting/pumping-station.webp",
+      "sha256": "df725bdad96d43ca30d18994273dceb17074c94ec46f00f22fc0bd5547785c23",
+      "bytes": 171708,
+      "type": "Original AI-generated editorial illustration; not BM project, staff, completed works or equipment-inventory evidence",
+      "rights": "Generated for BM website use; local source retained. No competitor project photographs or manufacturer marks."
+    },
+    {
+      "name": "substation",
+      "asset": "public/images/electrical-contracting/substation.webp",
+      "sha256": "b2ca715d0f59c4646d003e8509c419d2320348ac54cc02ca9df7954eb0c743f8",
+      "bytes": 306936,
+      "type": "Original AI-generated editorial illustration; not BM project, staff, completed works or equipment-inventory evidence",
+      "rights": "Generated for BM website use; local source retained. No competitor project photographs or manufacturer marks."
+    }
+  ],
+  "technicalUse": "Illustrative context, not construction drawings or installation instructions. Site-specific equipment/safety requirements must be separately assessed."
+}

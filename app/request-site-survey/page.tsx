@@ -8,6 +8,7 @@ export default async function Page({
     service?: string;
     product?: string;
     package?: string;
+    brief?: string;
   }>;
 }) {
   const p = await searchParams;
@@ -15,6 +16,7 @@ export default async function Page({
     <PremiumEnquiry
       lang={p.lang === "sw" ? "sw" : "en"}
       survey
+      initialMessage={(p.brief || "").slice(0, 2000)}
       action={createSiteSurveyRequest}
       service={(p.service || "").slice(0, 100)}
       product={(p.product || "").slice(0, 200)}

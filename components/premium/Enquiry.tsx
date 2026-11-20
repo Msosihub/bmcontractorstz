@@ -3,6 +3,7 @@ import { OfficeLocations } from "./OfficeContacts";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { EnquiryForm } from "@/components/site/EnquiryForm";
+import { EnquiryMessage } from "@/components/site/EnquiryMessage";
 import { SubmitButton } from "@/components/ui/SubmitButton";
 import { Photo } from "./Frame";
 import type { Language } from "@/lib/i18n/config";
@@ -14,6 +15,7 @@ export function PremiumEnquiry({
   service = "",
   product = "",
   selectedPackage = "",
+  initialMessage = "",
 }: {
   lang: Language;
   survey?: boolean;
@@ -21,6 +23,7 @@ export function PremiumEnquiry({
   service?: string;
   product?: string;
   selectedPackage?: string;
+  initialMessage?: string;
 }) {
   const sw = lang === "sw";
   return (
@@ -216,11 +219,9 @@ export function PremiumEnquiry({
               <label>
                 {sw ? "Maelezo ya mahitaji" : "Your requirements"}
                 {!survey ? " *" : ""}
-                <textarea
-                  name="message"
-                  rows={5}
+                <EnquiryMessage
+                  initialValue={initialMessage}
                   required={!survey}
-                  maxLength={3000}
                 />
               </label>
               <p className="scope-note">
