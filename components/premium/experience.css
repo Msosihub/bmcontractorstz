@@ -1495,3 +1495,5 @@
     font-size: 0.78rem;
   }
 }
+
+.bm-dealer-note { margin-block: 0; padding-block: 18px; color: var(--bm-muted, #555d5a); font-size: .875rem; line-height: 1.65; }

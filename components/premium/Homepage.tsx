@@ -181,6 +181,9 @@ export default function Homepage({ lang }: { lang: Language }) {
           </div>
         </section>
         <ManufacturerBelts lang={lang} />
+        <p className="bm-wrap bm-dealer-note">
+          {siteConfig.authorizations.hikvision.description[lang]}
+        </p>
         <nav
           className="bm-buying-paths bm-wrap"
           aria-label={sw ? "Chagua aina ya mahitaji" : "Choose how BM can help"}

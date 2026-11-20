@@ -1,3 +1,4 @@
+import { siteConfig } from "@/data/site";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { ReferenceCatalogue } from "@/components/catalogue/ReferenceCatalogue";
@@ -47,6 +48,9 @@ export default async function Page({ searchParams }: Props) {
             {sw
               ? "Ugavi wa vifaa kwa wanunuzi wa rejareja, mafundi na miradi kupitia ofisi zetu za Moshi na Arusha. Linganisha modeli kwa vifaa pekee au mfumo wenye ufungaji."
               : "Equipment supply for retail customers, technicians and project buyers through our Moshi and Arusha offices. Compare models for equipment-only or installed quotations."}
+          </p>
+          <p className="ac-note">
+            {siteConfig.authorizations.hikvision.description[lang]}
           </p>
           <a
             className="hv-text-link"

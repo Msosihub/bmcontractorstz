@@ -69,7 +69,10 @@ test("structured data gives both physical offices equal identity and keeps field
   }
   for (const city of ["Dar es Salaam", "Dodoma"])
     assert(company.areaServed.some((x) => x.name === city));
-  assert.equal(company.sameAs, undefined);
+  assert.deepEqual(company.sameAs, [
+    "https://www.facebook.com/p/BM-Contractors-61558249603510/",
+    "https://www.instagram.com/bm_contractorstz/",
+  ]);
   assert.equal(
     company.contactPoint.find((x) => x.contactType === "WhatsApp").telephone,
     "+255745778821",

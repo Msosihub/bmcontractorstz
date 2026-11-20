@@ -90,9 +90,23 @@ export const siteConfig = {
     "Power Backup",
   ],
 
+  // Owner-supplied certificate reviewed 20 November 2026; no distributor claim.
+  authorizations: {
+    hikvision: {
+      designation: "Hikvision Authorized Dealer",
+      territory: "Tanzania",
+      validFrom: "2026-01-01",
+      validThrough: "2026-12-31",
+      description: {
+        en: "Hikvision Authorized Dealer in Tanzania — certificate valid 1 January–31 December 2026.",
+        sw: "Muuzaji aliyeidhinishwa wa Hikvision nchini Tanzania — cheti ni halali kuanzia 1 Januari hadi 31 Desemba 2026.",
+      },
+    },
+  },
+
   social: {
-    facebook: "",
-    instagram: "",
+    facebook: "https://www.facebook.com/p/BM-Contractors-61558249603510/",
+    instagram: "https://www.instagram.com/bm_contractorstz/",
     linkedin: "",
     tiktok: "",
   },
