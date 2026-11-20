@@ -3,6 +3,7 @@ import { OfficeLocations } from "./OfficeContacts";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { EnquiryForm } from "@/components/site/EnquiryForm";
+import { EnquiryMessage } from "@/components/site/EnquiryMessage";
 import { SubmitButton } from "@/components/ui/SubmitButton";
 import { Photo } from "./Frame";
 import type { Language } from "@/lib/i18n/config";
@@ -218,12 +219,9 @@ export function PremiumEnquiry({
               <label>
                 {sw ? "Maelezo ya mahitaji" : "Your requirements"}
                 {!survey ? " *" : ""}
-                <textarea
-                  name="message"
-                  defaultValue={initialMessage.slice(0, 2000)}
-                  rows={5}
+                <EnquiryMessage
+                  initialValue={initialMessage}
                   required={!survey}
-                  maxLength={3000}
                 />
               </label>
               <p className="scope-note">
