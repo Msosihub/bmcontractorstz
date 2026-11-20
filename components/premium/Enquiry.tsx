@@ -14,6 +14,7 @@ export function PremiumEnquiry({
   service = "",
   product = "",
   selectedPackage = "",
+  initialMessage = "",
 }: {
   lang: Language;
   survey?: boolean;
@@ -21,6 +22,7 @@ export function PremiumEnquiry({
   service?: string;
   product?: string;
   selectedPackage?: string;
+  initialMessage?: string;
 }) {
   const sw = lang === "sw";
   return (
@@ -218,6 +220,7 @@ export function PremiumEnquiry({
                 {!survey ? " *" : ""}
                 <textarea
                   name="message"
+                  defaultValue={initialMessage.slice(0, 2000)}
                   rows={5}
                   required={!survey}
                   maxLength={3000}

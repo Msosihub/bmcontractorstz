@@ -225,9 +225,9 @@
     "slug": "electrical-contracting",
     "asset": "electrical",
     "en": {
-      "name": "Electrical contracting",
+      "name": "Electrical engineering & contracting",
       "headline": "The infrastructure behind every system.",
-      "intro": "BM provides electrical installation and contracting enquiries for buildings and facilities: distribution, circuits, lighting, protective devices and integration with backup power. Work scope is defined after assessment.",
+      "intro": "Commercial distribution, panels and plant electrical enquiries. Scope equipment, assessment, installation and maintenance around the facility and applicable authorizations.",
       "sections": [
         {
           "title": "Distribution & protection",
@@ -260,9 +260,9 @@
       ]
     },
     "sw": {
-      "name": "Ufungaji na kazi za umeme",
+      "name": "Uhandisi na ukandarasi wa umeme",
       "headline": "Miundombinu inayowezesha kila mfumo.",
-      "intro": "BM hupokea mahitaji ya ufungaji na kazi za umeme kwenye majengo na maeneo ya kazi: usambazaji, saketi, taa, vifaa vya kinga na uunganishaji wa umeme wa akiba. Wigo wa kazi huandaliwa baada ya tathmini.",
+      "intro": "Maombi ya usambazaji wa umeme, paneli na mifumo ya viwandani. Panga vifaa, tathmini, ufungaji na matengenezo kulingana na eneo na idhini zinazohusika.",
       "sections": [
         {
           "title": "Usambazaji na kinga",

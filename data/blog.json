@@ -298,5 +298,65 @@
     "source": "https://www.ahujaradios.com/Document/0-Guide_book-2020.pdf",
     "reviewed": "2026-11-20",
     "published": true
+  },
+  {
+    "slug": "preparing-an-electrical-project-brief",
+    "service": "electrical-contracting",
+    "image": "/images/electrical-contracting/industrial-hero.webp",
+    "alt": {
+      "en": "Technical planning beside closed electrical switchboards",
+      "sw": "Mipango ya kiufundi karibu na paneli zilizofungwa"
+    },
+    "category": {
+      "en": "ELECTRICAL ENGINEERING",
+      "sw": "UHANDISI WA UMEME"
+    },
+    "title": {
+      "en": "Planning an electrical project? Start with a useful brief.",
+      "sw": "Unapanga mradi wa umeme? Anza na taarifa zinazoeleweka."
+    },
+    "summary": {
+      "en": "A short guide for Tanzanian facilities managers, commercial property owners and procurement teams preparing an electrical assessment or BOQ enquiry.",
+      "sw": "Mwongozo mfupi kwa wasimamizi wa majengo, wenye biashara na timu za ununuzi Tanzania wanaoandaa tathmini au ombi la BOQ la umeme."
+    },
+    "sections": [
+      {
+        "title": {
+          "en": "1. Describe what the facility needs.",
+          "sw": "1. Eleza mahitaji ya eneo."
+        },
+        "text": {
+          "en": "Name the location, building or process, existing supply and equipment to be served. Include motor nameplates or a load schedule if available. A list of equipment ratings is a starting point, not a complete demand calculation or cable design.",
+          "sw": "Taja eneo, aina ya jengo au shughuli, umeme uliopo na vifaa vinavyohitaji umeme. Jumuisha taarifa za nameplate za mota au orodha ya mizigo ikiwa ipo. Uwezo wa kila kifaa ni taarifa ya kuanzia, si hesabu kamili ya demand au usanifu wa kebo."
+        }
+      },
+      {
+        "title": {
+          "en": "2. Make the BOQ and drawings usable.",
+          "sw": "2. Weka BOQ na michoro katika hali inayotumika."
+        },
+        "text": {
+          "en": "Identify drawing revisions, quantities, required specifications and whether you want supply, installation, assessment or maintenance. Ask BM how to share documents securely; the website enquiry form does not upload attachments. Mark uncertain existing conditions for a site visit.",
+          "sw": "Taja matoleo ya michoro, idadi, vipimo na kama unahitaji vifaa, ufungaji, tathmini au matengenezo. Omba BM ikuongoze kutuma nyaraka kwa usalama; fomu ya tovuti haipokei viambatisho. Weka wazi hali ya eneo inayohitaji ziara."
+        }
+      },
+      {
+        "title": {
+          "en": "3. Plan access and responsibilities.",
+          "sw": "3. Panga ufikiaji na majukumu."
+        },
+        "text": {
+          "en": "Explain essential loads, shutdown windows and the target timeframe. Specialist control, utility and lift interfaces require clear appointments and applicable authorizations. Ask what tests, handover documents and maintenance support will be included before comparing quotation totals.",
+          "sw": "Eleza mizigo muhimu, muda wa kuzima mfumo na ratiba unayolenga. Miingiliano maalumu ya udhibiti, utility na lifti inahitaji watu walioteuliwa na idhini zinazohusika. Uliza vipimo, nyaraka za makabidhiano na huduma zitakazojumuishwa kabla ya kulinganisha jumla za nukuu."
+        }
+      }
+    ],
+    "cta": {
+      "en": "Share your facility type, site location and intended scope with BM. Start a technical assessment or BOQ discussion through our Moshi and Arusha offices.",
+      "sw": "Ieleze BM aina ya eneo, mahali na wigo unaokusudia. Anza mazungumzo ya tathmini ya kiufundi au BOQ kupitia ofisi zetu za Moshi na Arusha."
+    },
+    "source": "https://www.ewura.go.tz/publications/regulatory-tools",
+    "reviewed": "2026-11-20",
+    "published": true
   }
 ]

@@ -1,0 +1,247 @@
+[
+  {
+    "id": "commercial",
+    "letter": "A",
+    "kind": "commercial",
+    "title": [
+      "Commercial & institutional installations",
+      "Umeme wa majengo ya biashara na taasisi"
+    ],
+    "headline": [
+      "A building that works, from the main board out.",
+      "Umeme unaolihudumia jengo lako, kuanzia kwenye bodi kuu."
+    ],
+    "intro": [
+      "Plan distribution around the way a hotel, school, hospital or commercial property actually operates. Start with loads, routes and the systems that must stay available.",
+      "Panga usambazaji kulingana na matumizi halisi ya hoteli, shule, hospitali au jengo la biashara. Anza na mizigo ya vifaa, njia za nyaya na mifumo inayohitaji umeme wa uhakika."
+    ],
+    "scope": [
+      "Installation scope & assessment",
+      "Tathmini na wigo wa ufungaji"
+    ],
+    "details": [
+      [
+        "Three-phase distribution; main and sub-distribution boards; cable containment, risers and assessed busbar systems.",
+        "Umeme wa awamu tatu; bodi kuu na ndogo za usambazaji; njia za nyaya, risers na busbar zinazofaa usanifu."
+      ],
+      [
+        "Lighting, emergency lighting and essential-load separation are coordinated with the building use and backup strategy.",
+        "Taa, taa za dharura na utenganishaji wa mizigo muhimu hupangwa kulingana na matumizi ya jengo na mpango wa umeme wa akiba."
+      ],
+      [
+        "Share the layout, load schedule, existing supply and access or shutdown constraints. New construction and occupied-building upgrades require different delivery plans.",
+        "Tuma ramani, orodha ya mizigo, taarifa za umeme uliopo na masharti ya kuingia au kuzima mfumo. Jengo jipya na linalotumika yanahitaji mipango tofauti ya utekelezaji."
+      ]
+    ]
+  },
+  {
+    "id": "panels",
+    "letter": "B",
+    "kind": "panels",
+    "title": [
+      "Switchgear, panels & protection",
+      "Paneli, switchgear na ulinzi wa umeme"
+    ],
+    "headline": [
+      "Protection is part of the design.",
+      "Ulinzi ni sehemu ya usanifu."
+    ],
+    "intro": [
+      "An MDB is more than a metal enclosure. Capacity, fault levels, protection coordination and room for future loads belong in the same conversation.",
+      "MDB si sanduku la chuma pekee. Uwezo wa kubeba mzigo, kiwango cha hitilafu, uratibu wa vifaa vya ulinzi na nafasi ya upanuzi vipangwe pamoja."
+    ],
+    "scope": [
+      "Panel specification & modernization",
+      "Uainishaji na uboreshaji wa paneli"
+    ],
+    "details": [
+      [
+        "MDB, SMDB and final distribution boards; MCCB/ACB selection, switchgear, metering and outgoing-circuit schedules. Ratings and settings follow the project design.",
+        "MDB, SMDB na bodi za mwisho; uchaguzi wa MCCB/ACB, switchgear, mita na orodha ya saketi. Uwezo na mipangilio hufuata usanifu wa mradi."
+      ],
+      [
+        "Power-factor correction and capacitor-bank enquiries begin with measured load behaviour, harmonics and switching requirements—not a guessed capacitor size.",
+        "Power-factor correction na capacitor bank huanza na hali ya mizigo iliyopimwa, harmonics na mahitaji ya kuunganisha hatua za capacitors—si kukisia ukubwa wa capacitor."
+      ],
+      [
+        "Earthing, lightning and surge protection, cable terminations and safe isolation are assessed together. Existing panels need condition and compatibility checks before load expansion.",
+        "Earthing, kinga ya radi na surge, miisho ya nyaya na kutenga umeme kwa usalama hutathminiwa pamoja. Paneli iliyopo ihakikiwe hali na uoanifu kabla ya kuongeza mizigo."
+      ]
+    ]
+  },
+  {
+    "id": "industrial",
+    "letter": "C",
+    "kind": "industrial",
+    "title": [
+      "Industrial electrical & automation interfaces",
+      "Umeme wa viwandani na miingiliano ya udhibiti"
+    ],
+    "headline": [
+      "Keep the process in view.",
+      "Panga umeme kwa kuzingatia uzalishaji."
+    ],
+    "intro": [
+      "A pump, production line or processing plant needs an electrical scope that accounts for starting, control, protection and downtime. Bring the machinery details into the brief.",
+      "Pampu, laini ya uzalishaji au kiwanda huhitaji mpango unaozingatia kuanzisha mota, udhibiti, ulinzi na muda wa kusimamisha kazi. Jumuisha taarifa za mashine kwenye ombi lako."
+    ],
+    "scope": [
+      "Assessment, supply & scoped specialist coordination",
+      "Tathmini, ugavi na uratibu wa kazi maalumu"
+    ],
+    "details": [
+      [
+        "MCC enquiries, motor starters and VFD selection should identify motor ratings, starting duty, control method and the mechanical process.",
+        "Maombi ya MCC, starter na VFD yabainishe uwezo wa mota, namna ya kuanzisha, mbinu ya udhibiti na kazi ya mashine."
+      ],
+      [
+        "PLC and process-control electrical interfaces are scoped against the existing controller, I/O, interlocks and OEM requirements. Software changes require an agreed specialist scope.",
+        "Miingiliano ya PLC na udhibiti wa mitambo hupangwa kwa kuangalia controller iliyopo, I/O, interlocks na masharti ya mtengenezaji. Mabadiliko ya programu yanahitaji wigo wa mtaalamu uliokubaliwa."
+      ],
+      [
+        "Plant cabling, shutdown planning and maintenance documentation support factory upgrades. Hazardous-area and process-safety requirements need separate specialist assessment.",
+        "Nyaya za kiwanda, mipango ya kuzima mitambo na nyaraka za matengenezo husaidia maboresho. Maeneo yenye hatari maalumu na usalama wa mchakato yanahitaji tathmini ya wataalamu husika."
+      ]
+    ]
+  },
+  {
+    "id": "infrastructure",
+    "letter": "D",
+    "kind": "infrastructure",
+    "title": [
+      "Transformers, substations & infrastructure",
+      "Transfoma, vituo vidogo na miundombinu ya umeme"
+    ],
+    "headline": [
+      "Define the connection. Then the equipment.",
+      "Fafanua uunganishaji. Kisha chagua vifaa."
+    ],
+    "intro": [
+      "For transformer, switchgear, power-line or underground-cable enquiries, begin with the supply point, demand and utility requirements. Equipment supply and installation responsibilities must be explicit.",
+      "Kwa ombi la transfoma, switchgear, njia ya umeme au kebo ya ardhini, anza na sehemu ya kuunganishia, mahitaji ya mzigo na masharti ya mtoa huduma. Tenganisha majukumu ya ugavi na ufungaji."
+    ],
+    "scope": [
+      "Technical enquiry, procurement & qualified-specialist coordination",
+      "Ombi la kiufundi, ununuzi na uratibu wa wataalamu"
+    ],
+    "details": [
+      [
+        "11 kV / 33 kV distribution applications need project-specific transformer, switching, protection, cable and earthing specifications.",
+        "Miradi ya usambazaji wa 11 kV / 33 kV huhitaji vipimo vya mradi vya transfoma, switchgear, ulinzi, kebo na earthing."
+      ],
+      [
+        "Higher-voltage, line, underground-cable and substation packages are assessed for the applicable contractor class, licensed specialists, network approvals and commissioning responsibilities.",
+        "Kazi za voltage ya juu zaidi, njia za umeme, kebo za ardhini na vituo hutathminiwa kwa daraja la mkandarasi, leseni za wataalamu, idhini za mtandao na majukumu ya commissioning."
+      ],
+      [
+        "Utility connections, switching and energization are not included by default. Agree who designs, supplies, installs, witnesses tests and authorizes connection before procurement.",
+        "Kuunganishwa na mtoa huduma, switching na energization havijumuishwi moja kwa moja. Kubalianeni anayebuni, kusambaza, kufunga, kushuhudia majaribio na kuidhinisha uunganishaji kabla ya kununua."
+      ]
+    ]
+  },
+  {
+    "id": "reliability",
+    "letter": "E",
+    "kind": "reliability",
+    "title": [
+      "Testing, reliability & maintenance",
+      "Upimaji, uaminifu wa mfumo na matengenezo"
+    ],
+    "headline": [
+      "Know the condition. Plan the next step.",
+      "Fahamu hali ya mfumo. Panga hatua inayofuata."
+    ],
+    "intro": [
+      "Recurring trips, overheating or unexplained shutdowns deserve a considered investigation. Define the problem, safe access and the evidence needed before choosing equipment.",
+      "Kukatika mara kwa mara, joto kupita kiasi au mitambo kusimama bila sababu iliyo wazi vinahitaji uchunguzi. Fafanua tatizo, usalama wa kufikia vifaa na taarifa zinazohitajika kabla ya kuchagua vifaa."
+    ],
+    "scope": [
+      "Inspection & a project-specific test plan",
+      "Ukaguzi na mpango wa vipimo wa eneo lako"
+    ],
+    "details": [
+      [
+        "Installation condition, continuity, insulation and earthing assessments; protective-device and circuit-identification reviews, as appropriate to the agreed scope.",
+        "Hali ya ufungaji, continuity, insulation na earthing; uhakiki wa vifaa vya ulinzi na utambuzi wa saketi kulingana na wigo uliokubaliwa."
+      ],
+      [
+        "Thermal inspection, power-quality logging and specialist protection tests are arranged with suitable qualified personnel and appropriate instruments.",
+        "Ukaguzi wa picha za joto, kurekodi ubora wa umeme na vipimo maalumu vya ulinzi hupangwa kwa watu wenye sifa na vifaa vinavyofaa."
+      ],
+      [
+        "Agree the shutdown window, test method, findings report, remedial priorities and maintenance schedule. A site visit is not a guarantee that every fault can be repaired immediately.",
+        "Kubalianeni muda wa kuzima, mbinu za vipimo, ripoti ya matokeo, vipaumbele vya marekebisho na ratiba ya matengenezo. Ziara si ahadi ya kurekebisha kila tatizo papo hapo."
+      ]
+    ]
+  },
+  {
+    "id": "specialized",
+    "letter": "F",
+    "kind": "specialized",
+    "title": [
+      "Specialized facilities & technical supply",
+      "Miundombinu maalumu na ugavi wa kiufundi"
+    ],
+    "headline": [
+      "Different facilities. A precise brief.",
+      "Mahitaji tofauti. Wigo ulio wazi."
+    ],
+    "intro": [
+      "Water utilities, farms, processors and industrial buyers need equipment and electrical interfaces selected around their process—not a generic building package.",
+      "Huduma za maji, mashamba, wasindikaji na wanunuzi wa viwandani huhitaji vifaa na miingiliano ya umeme inayolingana na shughuli zao—si kifurushi cha kawaida cha jengo."
+    ],
+    "scope": [
+      "Facility assessment & equipment enquiries",
+      "Tathmini ya shughuli na maombi ya vifaa"
+    ],
+    "details": [
+      [
+        "Water-treatment and pumping stations: motor loads, duty/standby operation, control interfaces, protection and power availability.",
+        "Mitambo ya kutibu na kusukuma maji: mizigo ya mota, pampu ya kazi na ya akiba, miingiliano ya udhibiti, ulinzi na upatikanaji wa umeme."
+      ],
+      [
+        "Irrigation, agricultural processing and mining enquiries: operating environment, duty cycle, cable routes, access and specialist safety requirements.",
+        "Umwagiliaji, usindikaji wa mazao na migodi: mazingira ya kazi, muda wa matumizi, njia za nyaya, ufikiaji na usalama maalumu."
+      ],
+      [
+        "Street and high-mast lighting: layout, poles/foundations, luminaires, controls and electrical protection are assessed as a coordinated package. Public/private supply requests should include the BOQ and acceptance requirements.",
+        "Taa za barabarani na minara mirefu: mpangilio, nguzo na misingi, luminaires, udhibiti na ulinzi vipangwe pamoja. Maombi ya ugavi yajumuishe BOQ na masharti ya kukabidhi."
+      ]
+    ]
+  },
+  {
+    "id": "interfaces",
+    "letter": "G",
+    "kind": "interfaces",
+    "title": [
+      "Building equipment interfaces",
+      "Miingiliano ya vifaa vya jengo"
+    ],
+    "headline": [
+      "The supply behind specialist equipment.",
+      "Umeme unaowezesha vifaa maalumu."
+    ],
+    "intro": [
+      "Coordinate electrical provisions for lifts, escalators and other building systems with the equipment supplier and appointed specialist.",
+      "Panga mahitaji ya umeme ya lifti, escalator na mifumo mingine ya jengo pamoja na msambazaji na mtaalamu aliyeteuliwa."
+    ],
+    "scope": [
+      "Electrical provisions & specialist coordination",
+      "Maandalizi ya umeme na uratibu wa wataalamu"
+    ],
+    "details": [
+      [
+        "Assess dedicated supplies, safe isolation points, cable routes and earthing against the lift or escalator manufacturer’s requirements.",
+        "Tathmini umeme maalumu, sehemu za kutenga kwa usalama, njia za nyaya na earthing kulingana na masharti ya mtengenezaji wa lifti au escalator."
+      ],
+      [
+        "Coordinate backup, fire/emergency and building-management interfaces with the responsible designers and specialists. Do not assume universal interoperability.",
+        "Ratibu umeme wa akiba, miingiliano ya moto/dharura na building management pamoja na wabunifu na wataalamu husika. Usidhani kila kifaa kinaoana na kingine."
+      ],
+      [
+        "The appointed lift specialist handles lift installation, safety commissioning and certification. Electrical provisions and interface responsibilities are agreed separately.",
+        "Mtaalamu wa lifti aliyeteuliwa hushughulikia ufungaji, commissioning ya usalama na uthibitisho wa lifti. Majukumu ya maandalizi ya umeme na miingiliano hukubaliwa tofauti."
+      ]
+    ]
+  }
+]
