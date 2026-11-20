@@ -25,7 +25,6 @@ export function BusinessCoverage({ lang }: { lang: Language }) {
               {sw ? "OFISI YA BM" : "BM OFFICE"}
             </span>
             <h3>{office.city}</h3>
-            <address>{office.address}</address>
             <a href={`tel:${office.phone.raw}`}>{office.phone.label}</a>
           </article>
         ))}

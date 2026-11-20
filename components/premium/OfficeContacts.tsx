@@ -83,6 +83,9 @@ export function FooterContacts({ lang }: { lang: Language }) {
         </p>
         <a href={"tel:" + sales.raw}>{sales.label}</a>
         <a href={"mailto:" + email}>{email}</a>
+        <p className="footer-service-reach">
+          {sw ? "Ofisi Moshi na Arusha. Mafundi kwa tathmini na miradi iliyopangwa Dar es Salaam na Dodoma. Ugavi na huduma kaskazini mwa Tanzania, ikiwemo Tanga; maeneo mengine kwa makubaliano." : "Offices in Moshi and Arusha. Scheduled surveys and project support in Dar es Salaam and Dodoma. Northern supply and service coverage includes Tanga; other locations by arrangement."}
+        </p>
       </div>
       <div>
         <p>{sw ? "Ofisi ya Moshi" : "Moshi office"}</p>

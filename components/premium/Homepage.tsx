@@ -7,12 +7,12 @@ import {
   Zap,
   Sun,
   Network,
+  Phone,
 } from "lucide-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { siteConfig } from "@/data/site";
 import type { Language } from "@/lib/i18n/config";
-import { BusinessCoverage } from "./BusinessCoverage";
 import { ExperienceMotion } from "./ExperienceMotion";
 import { ManufacturerBelts } from "./ManufacturerBelts";
 import "./experience.css";
@@ -56,9 +56,15 @@ const chapters = [
   },
   {
     id: "connectivity",
-    title: ["Networks & telephony", "Mitandao na simu"],
+    title: ["ICT & networking", "Mitandao ya kompyuta"],
     slug: "networking",
     icon: Network,
+  },
+  {
+    id: "telephones",
+    title: ["Office & hotel phones", "Simu za ofisi na hoteli"],
+    slug: "telephone-systems",
+    icon: Phone,
   },
 ] as const;
 
@@ -181,9 +187,6 @@ export default function Homepage({ lang }: { lang: Language }) {
           </div>
         </section>
         <ManufacturerBelts lang={lang} />
-        <p className="bm-wrap bm-dealer-note">
-          {siteConfig.authorizations.hikvision.description[lang]}
-        </p>
         <nav
           className="bm-buying-paths bm-wrap"
           aria-label={sw ? "Chagua aina ya mahitaji" : "Choose how BM can help"}
@@ -516,132 +519,47 @@ export default function Homepage({ lang }: { lang: Language }) {
             </div>
           </div>
         </section>
-        <div className="bm-twin-chapters bm-wrap">
-          <section
-            id="power"
-            className="bm-power"
-            aria-labelledby="bm-power-heading"
-            data-bm-reveal
-            data-bm-belt
-          >
-            <div className="bm-scene">
-              <Image
-                src="/assets/solar-1440.webp"
-                alt={
-                  sw
-                    ? "Paneli za sola kwenye jengo"
-                    : "Solar panels in a building setting"
-                }
-                fill
-                sizes="(max-width:760px) 100vw, 48vw"
-              />
-              <span className="bm-scene-caption">
-                {sw
-                  ? "Mzigo wako. Mpango wako wa akiba."
-                  : "Your load. Your backup plan."}
-              </span>
-            </div>
-            <div className="bm-chapter-copy">
-              <p className="bm-label">06 / {chapters[5].title[l]}</p>
-              <h2 id="bm-power-heading">
-                {sw ? "Shughuli ziendelee." : "Keep the essentials running."}
-              </h2>
-              <p>
-                {sw
-                  ? "Sola, jenereta, betri na UPS. Panga mfumo kwa mzigo wa vifaa na muda unaohitaji umeme wa akiba."
-                  : "Solar, generators, batteries and UPS. Match your system to the equipment you use and the backup time you need."}
-              </p>
-              {actions("solar-panel-systems", "Solar and backup power")}
-              <a className="bm-small-link" href={local("/services/generators")}>
-                {sw ? "Jenereta na mifumo ya ATS" : "Generators & ATS systems"}{" "}
-                ↗
-              </a>
-            </div>
-          </section>
-          <section
-            id="connectivity"
-            className="bm-connectivity"
-            aria-labelledby="bm-network-heading"
-            data-bm-reveal
-            data-bm-belt
-          >
-            <div className="bm-chapter-copy">
-              <p className="bm-label">07 / {chapters[6].title[l]}</p>
-              <h2 id="bm-network-heading">
-                {sw
-                  ? "Unganisha watu. Rahisisha kazi."
-                  : "Bring people and places together."}
-              </h2>
-              <p>
-                {sw
-                  ? "Nyaya za mtandao, Wi-Fi na simu za ofisi au hoteli. Mawasiliano yanayopangwa kuendana na majengo na shughuli zako."
-                  : "Structured cabling, Wi-Fi and office or hotel telephone systems. Connections designed around your building and your working day."}
-              </p>
-              {actions("networking", "Networking and business communications")}
-              <a
-                className="bm-small-link"
-                href={local("/services/telephone-systems")}
-              >
-                {sw ? "Simu za ofisi na hoteli" : "Office & hotel telephony"} ↗
-              </a>
-            </div>
-            <div className="bm-scene">
-              <Image
-                src="/assets/network-1440.webp"
-                alt={
-                  sw
-                    ? "Mandhari ya teknolojia na mawasiliano ya ofisi"
-                    : "A workspace and business connectivity concept"
-                }
-                fill
-                sizes="(max-width:760px) 100vw, 48vw"
-              />
-              <span className="bm-network-nodes" aria-hidden="true">
-                <Signal kind="network" />
-              </span>
-            </div>
-          </section>
-        </div>
-        <section
-          className="bm-pa-feature bm-wrap"
-          aria-labelledby="bm-pa-title"
-          data-bm-reveal
-        >
-          <div className="bm-pa-device">
-            <Image
-              src="/images/pa-sound/ssa-250m.webp"
-              alt="AHUJA SSA-250M PA mixer amplifier"
-              width={420}
-              height={180}
-              sizes="(max-width:760px) 44vw, 25vw"
-            />
-          </div>
-          <div>
-            <p className="bm-label">
-              {sw
-                ? "PA · MATANGAZO · MIFUMO YA SAUTI"
-                : "PA · PAGING · SOUND SYSTEMS"}
-            </p>
-            <h2 id="bm-pa-title">
-              {sw ? "Sauti ieleweke. Kila eneo." : "Be heard. In every space."}
-            </h2>
-            <p>
-              {sw
-                ? "Kwa shule, kumbi, hoteli na matangazo ya umma. Vifaa pekee au mfumo pamoja na ufungaji."
-                : "For schools, meeting spaces, hotels and public announcements. Equipment supply or a complete installed system."}
-            </p>
-            <a
-              className="bm-arrow-link"
-              href={local("/services/pa-sound-systems")}
-            >
-              {sw ? "Fahamu mifumo ya sauti" : "Explore PA & sound systems"}
-              <span aria-hidden="true">↗</span>
-            </a>
+        <section id="power" className="bm-service-story bm-power-story bm-wrap" aria-labelledby="bm-power-heading" data-bm-reveal>
+          <div className="bm-scene"><Image src="/assets/solar-1440.webp" alt={sw ? "Paneli za sola na mfumo wa umeme wa akiba wa jengo" : "Solar panels and backup power in a building setting"} fill sizes="(max-width:760px) 100vw, 50vw" /></div>
+          <div className="bm-chapter-copy">
+            <p className="bm-label">06 / {chapters[5].title[l]}</p>
+            <h2 id="bm-power-heading">{sw ? "Shughuli ziendelee." : "Keep the essentials running."}</h2>
+            <p>{sw ? "Sola, betri na UPS kwa taa, vifaa na mifumo unayotegemea. Tathmini ya matumizi yako huamua ukubwa wa mfumo na muda wa umeme wa akiba." : "Solar, batteries and UPS for the lights, equipment and systems you rely on. Your energy use shapes the system size and backup time."}</p>
+            <div className="bm-capabilities"><span>Solar PV</span><span>{sw ? "Betri na UPS" : "Batteries & UPS"}</span><span>{sw ? "Umeme wa akiba" : "Backup power"}</span></div>
+            {actions("solar-panel-systems", "Solar and backup power")}
+            <a className="bm-small-link" href={local("/services/generators")}>{sw ? "Jenereta na mifumo ya ATS" : "Generators & ATS systems"} ↗</a>
           </div>
         </section>
-        <div className="bm-wrap">
-          <BusinessCoverage lang={lang} />
-        </div>
+        <section id="connectivity" className="bm-service-story bm-network-story bm-wrap" aria-labelledby="bm-network-heading" data-bm-reveal data-bm-belt>
+          <div className="bm-chapter-copy">
+            <p className="bm-label">07 / {chapters[6].title[l]}</p>
+            <h2 id="bm-network-heading">{sw ? "Mtandao bora. Kazi bila vikwazo." : "A better network. A smoother working day."}</h2>
+            <p>{sw ? "Nyaya za mtandao, Wi-Fi na kabati za vifaa kwa ofisi, hoteli na taasisi. Tunapanga sehemu za kuunganishia na eneo la Wi-Fi kulingana na jengo lako." : "Structured cabling, Wi-Fi and equipment racks for offices, hotels and institutions. Connection points and wireless coverage planned around your building."}</p>
+            <div className="bm-capabilities"><span>Wi-Fi</span><span>LAN</span><span>{sw ? "Kabati za vifaa" : "Network racks"}</span></div>
+            {actions("networking", "ICT networking and Wi-Fi")}
+          </div>
+          <div className="bm-scene"><Image src="/images/home/network-practical.webp" alt={sw ? "Kabati za vifaa vya mtandao katika jengo la kisasa" : "Network equipment racks in a contemporary building"} fill sizes="(max-width:760px) 100vw, 50vw" /><span className="bm-network-nodes" aria-hidden="true"><Signal kind="network" /></span></div>
+        </section>
+        <section id="telephones" className="bm-service-story bm-phone-story bm-wrap" aria-labelledby="bm-phone-heading" data-bm-reveal>
+          <div className="bm-scene"><Image src="/images/home/office-phones.webp" alt={sw ? "Mazingira ya ofisi yenye simu za mezani" : "An office setting with desk telephones"} fill sizes="(max-width:760px) 100vw, 50vw" /><div className="bm-device bm-phone-device"><Image src="/images/home/grandstream-grp2612.webp" alt="Grandstream GRP2612 IP desk phone" width={240} height={220} sizes="(max-width:760px) 110px, 170px" /></div></div>
+          <div className="bm-chapter-copy">
+            <p className="bm-label">08 / {chapters[7].title[l]}</p>
+            <h2 id="bm-phone-heading">{sw ? "Kila simu. Iwafikie wanaohusika." : "Every call. Connected to the right people."}</h2>
+            <p>{sw ? "Unganisha mapokezi, ofisi na vyumba vya hoteli kwa simu za ndani. Panga uelekezaji wa simu na IP-PBX kulingana na timu yako, kwa chaguo za Grandstream na Yeastar zinazofaa." : "Connect reception, offices and hotel rooms with internal extensions. Call routing and IP-PBX planned for your team, with suitable Grandstream and Yeastar options."}</p>
+            <div className="bm-capabilities"><span>IP-PBX</span><span>{sw ? "Simu za ndani" : "Internal extensions"}</span><span>{sw ? "Ofisi na hoteli" : "Offices & hotels"}</span></div>
+            {actions("telephone-systems", "Office and hotel telephone systems")}
+          </div>
+        </section>
+        <section id="pa-sound" className="bm-service-story bm-pa-story bm-wrap" aria-labelledby="bm-pa-title" data-bm-reveal>
+          <div className="bm-scene"><Image src="/images/home/church-pa.webp" alt={sw ? "Ukumbi wa ibada wenye spika nyembamba zilizofungwa ukutani" : "A worship hall with slim wall-mounted column speakers"} fill sizes="(max-width:760px) 100vw, 50vw" /><div className="bm-device bm-pa-device"><Image src="/images/pa-sound/ssa-250m.webp" alt="AHUJA SSA-250M PA mixer amplifier" width={320} height={140} sizes="(max-width:760px) 140px, 200px" /></div></div>
+          <div className="bm-chapter-copy">
+            <p className="bm-label">{sw ? "PA · MATANGAZO · MIFUMO YA SAUTI" : "PA · PAGING · SOUND SYSTEMS"}</p>
+            <h2 id="bm-pa-title">{sw ? "Sauti safi. Kila neno lieleweke." : "Clear sound. Every word matters."}</h2>
+            <p>{sw ? "Spika za ukutani kwa kanisa, matangazo kwa shule au sauti ya mikutano. Tunapanga maikrofoni, amplifaya na spika kulingana na ukubwa wa eneo na namna litakavyotumika." : "Wall-mounted speakers for a church, school announcements or sound for meetings. Microphones, amplifiers and speakers selected around the room and how you use it."}</p>
+            <div className="bm-capabilities"><span>{sw ? "Shule" : "Schools"}</span><span>{sw ? "Maeneo ya ibada" : "Places of worship"}</span><span>{sw ? "Kumbi na mikutano" : "Halls & meetings"}</span></div>
+            {actions("pa-sound-systems", "PA paging and sound system assessment")}
+          </div>
+        </section>
         <section
           className="bm-further bm-wrap"
           aria-label={sw ? "Huduma nyingine" : "More specialist services"}
@@ -649,34 +567,27 @@ export default function Homepage({ lang }: { lang: Language }) {
           <p className="bm-label">
             {sw ? "ZAIDI KWA JENGO LAKO" : "MORE FOR YOUR BUILDING"}
           </p>
-          <div>
+          <div className="bm-building-grid">
             {[
-              [
-                "fire-alarm-systems",
-                "Fire & intrusion alarms",
-                "Mifumo ya tahadhari",
-              ],
-              [
-                "hikvision",
-                "Intercom & building security",
-                "Intercom na ulinzi wa majengo",
-              ],
-              ["air-conditioners", "Air conditioning", "Viyoyozi"],
-              [
-                "institutional-procurement",
-                "Institutional procurement",
-                "Ugavi wa vifaa kwa taasisi",
-              ],
-            ].map(([slug, en, swTitle]) => (
-              <a key={slug} href={local(`/services/${slug}`)}>
-                {sw ? swTitle : en}
-                <span aria-hidden="true">↗</span>
-              </a>
-            ))}
+              {slug:"fire-alarm-systems", en:"Fire & intrusion alarms", sw:"Mifumo ya tahadhari", detailEn:"Detection and alerts, planned for your premises.", detailSw:"Ugunduzi na tahadhari kulingana na eneo lako.", image:"/images/services/fire-alarm-systems.jpg"},
+              {slug:"hikvision", en:"Intercom & building security", sw:"Intercom na ulinzi wa majengo", detailEn:"See who's at the entrance. Manage access.", detailSw:"Ona aliye mlangoni. Dhibiti anayeingia.", image:"/images/hikvision/courtyard.webp"},
+              {slug:"air-conditioners", en:"Air conditioning", sw:"Viyoyozi", detailEn:"Comfort for the rooms you use every day.", detailSw:"Mazingira mazuri katika vyumba unavyotumia.", image:"/assets/hvac-640.webp"},
+              {slug:"institutional-procurement", en:"Institutional procurement", sw:"Ugavi wa vifaa kwa taasisi", detailEn:"Technical materials, equipment and BOQ quotations.", detailSw:"Vifaa vya kiufundi na nukuu kulingana na BOQ.", image:"/assets/cctv-applications/institution-640.webp"},
+            ].map(item=>(<a key={item.slug} href={local(`/services/${item.slug}`)}><div className="bm-building-image"><Image src={item.image} alt="" fill sizes="(max-width:600px) 45vw, 25vw" /></div><div className="bm-building-copy"><h3>{sw ? item.sw : item.en}<span aria-hidden="true">↗</span></h3><p>{sw ? item.detailSw : item.detailEn}</p></div></a>))}
           </div>
           <a className="bm-small-link" href={local("/services")}>
             {sw ? "Huduma zote" : "All services"} ↗
           </a>
+        </section>
+        <section className="bm-credentials bm-wrap" aria-labelledby="bm-credentials-title">
+          <div><p className="bm-label">{sw ? "USAJILI NA SIFA ZA KAMPUNI" : "COMPANY CREDENTIALS"}</p><h2 id="bm-credentials-title">{sw ? "Msingi wa kazi zetu." : "The foundation behind our work."}</h2></div>
+          <ul>{[
+            ["BRELA", sw ? "Imesajiliwa" : "Registered"],
+            ["CRB", sw ? "Ina leseni" : "Licensed"],
+            ["TANESCO", sw ? "Imepitishwa katika uhakiki wa awali" : "Prequalified"],
+            ["EWURA", sw ? "Imepitishwa katika uhakiki wa awali" : "Prequalified"],
+          ].map(([name,status])=><li key={name}><strong>{name}</strong><span>{status}</span></li>)}</ul>
+          <a className="bm-arrow-link" href={quote("Engineering and equipment enquiry")}>{sw ? "Zungumza na timu yetu" : "Talk to our team"}<span aria-hidden="true">↗</span></a>
         </section>
         <section id="contact" className="bm-contact" data-bm-reveal>
           <div className="bm-wrap bm-contact-inner">

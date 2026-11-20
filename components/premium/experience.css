@@ -1497,3 +1497,52 @@
 }
 
 .bm-experience .bm-dealer-note { margin-block: 0; margin-inline: auto; padding-block: 18px; color: var(--bm-muted, #555d5a); font-size: .875rem; line-height: 1.65; }
+
+/* Each system is one complete desktop story; imagery leads on small screens. */
+.bm-service-story { display:grid; grid-template-columns:1fr 1fr; align-items:stretch; overflow:hidden; border-radius:10px; margin-block:42px; background:#e5ece2; }
+.bm-service-story .bm-scene { min-height:440px; height:100%; border-radius:0; }
+.bm-service-story .bm-chapter-copy { padding:clamp(28px,4vw,58px); align-self:center; }
+.bm-service-story .bm-chapter-copy h2 { font-size:clamp(2rem,3.3vw,3.4rem); }
+.bm-network-story { background:#263b3d; color:#f7f7ef; }
+.bm-network-story .bm-label, .bm-network-story .bm-capabilities span, .bm-network-story .bm-chapter-copy>p:not(.bm-label) { color:#cddbd4; }
+.bm-network-story :is(.bm-quiet-link,.bm-arrow-link) { color:#eef4ed; border-color:#ffffff50; }
+.bm-phone-story { background:#e9e4da; }
+.bm-phone-device { right:18px; bottom:20px; width:clamp(120px,14vw,190px); padding:12px; }
+.bm-phone-device img { width:100%; height:auto; }
+.bm-pa-story { background:#d9e5db; }
+.bm-pa-story .bm-pa-device { position:absolute; width:clamp(150px,18vw,240px); bottom:20px; right:18px; padding:14px; background:#f6f7f1; border-radius:6px; }
+.bm-pa-story .bm-pa-device img { width:100%; height:auto; }
+.bm-further { padding-block:40px 48px; }
+.bm-further .bm-building-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; margin-top:22px; }
+.bm-further .bm-building-grid>a { display:flex; flex-direction:column; align-items:stretch; gap:0; background:#e6eae3; border-radius:8px; overflow:hidden; text-decoration:none; }
+.bm-building-image { height:170px; position:relative; overflow:hidden; }
+.bm-building-image img { object-fit:cover; transition:transform .35s ease; }
+.bm-building-grid a:hover img { transform:scale(1.025); }
+.bm-building-copy { padding:19px 18px 22px; }
+.bm-building-copy h3 { display:flex; justify-content:space-between; gap:12px; font-size:1.07rem; letter-spacing:-.025em; line-height:1.35; }
+.bm-experience .bm-building-copy p { margin-top:10px; color:#526258; font-size:.8rem; line-height:1.6; }
+@media(max-width:1000px) { .bm-further .bm-building-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .bm-service-story .bm-chapter-copy { padding:28px; } }
+@media(max-width:760px) { .bm-service-story { grid-template-columns:1fr; margin-block:25px; } .bm-service-story .bm-scene { min-height:250px; height:250px; order:0; } .bm-service-story .bm-chapter-copy { order:1; padding:24px 22px 28px; } .bm-service-story .bm-chapter-copy h2 { font-size:2rem; } .bm-service-story .bm-chapter-copy>p:not(.bm-label) { font-size:.92rem; } .bm-building-image { height:135px; } .bm-building-copy { padding:15px 13px 19px; } .bm-building-copy h3 { font-size:.98rem; } .bm-experience .bm-building-copy p { font-size:.78rem; } .bm-further .bm-building-grid { gap:12px; } }
+@media(prefers-reduced-motion:reduce) { .bm-building-image img { transition:none; } .bm-building-grid a:hover img { transform:none; } }
+
+/* Restrained BM blue and a compact, keyboard-safe scroll-return header. */
+.bm-home-shell { --bm-blue:#0755a2; }
+.bm-home-shell .header-enquiry { background:#0755a2; color:#fff; }
+.premium-site .bm-home-shell .site-header { transition:transform .24s ease, box-shadow .24s ease, background .24s ease; }
+.premium-site .bm-home-shell .site-header.is-home-scrolled { position:fixed; top:16px; box-shadow:0 10px 35px #071c3330; border-color:#0755a225; }
+.bm-home-shell:has(.review-bar) .site-header.is-home-scrolled { top:34px; }
+.premium-site .bm-home-shell .site-header.is-home-hidden { transform:translateY(calc(-100% - 60px)); pointer-events:none; }
+.premium-site .bm-home-shell .site-header:focus-within { transform:none; pointer-events:auto; }
+.bm-home-shell .header-enquiry:hover { background:#064580; }
+.bm-chapter-nav a:nth-child(7) { background:#e0ebf7; color:#153b64; }
+.bm-credentials { padding-block:42px 48px; display:grid; grid-template-columns:1fr 1.35fr; gap:26px 45px; border-top:1px solid #d5dfe5; }
+.bm-credentials .bm-label { color:#0755a2; }
+.bm-credentials h2 { font-size:clamp(1.7rem,2.6vw,2.5rem); max-width:16ch; }
+.bm-credentials ul { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; align-self:center; }
+.bm-credentials li { padding-left:15px; border-left:2px solid #0755a240; }
+.bm-credentials strong { display:block; color:#0755a2; font-size:1rem; letter-spacing:.03em; }
+.bm-credentials li span { display:block; margin-top:8px; font-size:.77rem; line-height:1.55; color:#526258; }
+.bm-credentials>.bm-arrow-link { width:max-content; color:#0755a2; }
+.footer-contacts .footer-service-reach { font-size:.8rem; line-height:1.65; text-transform:none; letter-spacing:0; max-width:44ch; color:#c6d0c9; margin-top:13px; }
+@media(max-width:760px) { .bm-credentials { grid-template-columns:1fr; gap:25px; padding-block:28px 35px; } .bm-credentials ul { grid-template-columns:1fr 1fr; gap:22px; } .bm-credentials h2 { max-width:22ch; } }
+@media(prefers-reduced-motion:reduce) { .premium-site .bm-home-shell .site-header { transition:none; } .premium-site .bm-home-shell .site-header.is-home-hidden { transform:none; pointer-events:auto; } }

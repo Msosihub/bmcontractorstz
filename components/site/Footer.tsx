@@ -78,10 +78,6 @@ export function Footer({
         })}
       </div>
       <FooterContacts lang={lang} />
-      <p className="footer-field-coverage">
-        {sw ? "Huduma za mafundi kwa miadi" : "Scheduled field services"} ·{" "}
-        {siteConfig.coverage.scheduledFieldCities.join(" · ")}
-      </p>
       <nav
         className="footer-shortcuts"
         aria-label={
