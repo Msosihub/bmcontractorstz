@@ -1,0 +1,63 @@
+[
+  {
+    "id": "jinko",
+    "url": "https://www.jinkosolar.com/uploads/JKM565-585N-72HL4-%28V%29-F4-EN.pdf",
+    "original": "jinko-datasheet.pdf",
+    "transform": "Faithful crop of panel illustration from manufacturer datasheet page 1; white clearspace and WebP.",
+    "runtime": "public/images/solar-engineering/jinko.webp",
+    "bytes": 22118,
+    "sha256": "655a2019be2a78ff0d7ece6087863c389b05d10badc1ff3df6b0e2fc62bc0d7f",
+    "originalSHA256": "cbfd1aab5f200766c2284ca7d191bc8e16e6eb57db7f4c075c2df4984db75fe1",
+    "permission": "Owner confirmed marketing use of manufacturer imagery on 21 November 2026; not a dealership/stock claim."
+  },
+  {
+    "id": "deye",
+    "url": "https://deye.com/wp-content/uploads/2024/06/sun-5-12k-sg04lp3-eu-1-1024x1024.png",
+    "original": "deye.png",
+    "runtime": "public/images/solar-engineering/deye.webp",
+    "bytes": 12376,
+    "sha256": "2cef4c84c647110e395de0d94d56d149a058e5e69f7b623539b37b4b8e21e030",
+    "originalSHA256": "af60f3d3cf00944b0c25cf18c7dfe9cb37d0384660106ee9d93fd4ccf875a1be",
+    "permission": "Owner confirmed marketing use of manufacturer imagery on 21 November 2026; not a dealership/stock claim."
+  },
+  {
+    "id": "victron",
+    "url": "https://www.victronenergy.com/upload/products/MultiPlus-II_nw.png",
+    "original": "victron.png",
+    "runtime": "public/images/solar-engineering/victron.webp",
+    "bytes": 29134,
+    "sha256": "c8f43c86869d4f62f616c8c7590cd3ff3c3cbdb297f7b3f50e6a84d0f1fcc05d",
+    "originalSHA256": "e24a7555311f57f090acf6f426eb66d9ea0d2c9310d9e078a079d2dd1cea0097",
+    "permission": "Owner confirmed marketing use of manufacturer imagery on 21 November 2026; not a dealership/stock claim."
+  },
+  {
+    "id": "chloride",
+    "url": "https://static.wixstatic.com/media/0283bf_55540de3bd244405aa2cf7595357e7da~mv2.png/v1/fit/w_960,h_960,q_90/0283bf_55540de3bd244405aa2cf7595357e7da~mv2.png",
+    "original": "chloride.png",
+    "runtime": "public/images/solar-engineering/chloride.webp",
+    "bytes": 36972,
+    "sha256": "2fad1a8c234f56350c34f18e39fbc32e6751f39fc815eb2ae26565e7dd422d0f",
+    "originalSHA256": "c5d8d43ef1c736b73414ef7ae9f8264ec8cabf73391a4301068ce78d267546ee",
+    "permission": "Owner confirmed marketing use of manufacturer imagery on 21 November 2026; not a dealership/stock claim."
+  },
+  {
+    "id": "ritar",
+    "url": "https://www.ritarpower.cn/uploads/image/20251226/dg-series-lead-acid-batteries_20251226161244.webp",
+    "original": "ritar.webp",
+    "runtime": "public/images/solar-engineering/ritar.webp",
+    "bytes": 34784,
+    "sha256": "cd3ce329188b48e6bfcf09aafc6de3085bc65cf4b27d115163a51b8fa19342d8",
+    "originalSHA256": "69fbff8492135f87c4aad28edd9421b5454a7570e65791050f995d261e8e9bfe",
+    "permission": "Owner confirmed marketing use of manufacturer imagery on 21 November 2026; not a dealership/stock claim."
+  },
+  {
+    "id": "lorentz",
+    "url": "https://www.lorentz.de/wp-content/uploads/2016/10/ps2-large-whitespace-768x768.jpg",
+    "original": "lorentz.jpeg",
+    "runtime": "public/images/solar-engineering/lorentz.webp",
+    "bytes": 10158,
+    "sha256": "3b1be8b3434d4f30a2fa43e212af3321c33ce735cea23ad5c3dee0552c4b2c76",
+    "originalSHA256": "ec1b0ba9daa439979a98f2dc7afd30a881462ffb13f5b5be8049c8536e5762e6",
+    "permission": "Owner confirmed marketing use of manufacturer imagery on 21 November 2026; not a dealership/stock claim."
+  }
+]
