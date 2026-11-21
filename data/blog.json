@@ -418,5 +418,65 @@
     "source": "https://www.deepseaelectronics.com/genset/auto-mains-utility-failure-control-modules/dse7320-mkii",
     "reviewed": "2026-11-21",
     "published": true
+  },
+  {
+    "slug": "solar-system-assessment-tanzania",
+    "service": "solar-panel-systems",
+    "image": "/images/solar-engineering/campus-960.webp",
+    "alt": {
+      "en": "Solar arrays on a commercial campus",
+      "sw": "Paneli za sola kwenye majengo ya biashara"
+    },
+    "category": {
+      "en": "SOLAR ENGINEERING",
+      "sw": "UHANDISI WA SOLA"
+    },
+    "title": {
+      "en": "Before a solar quotation, prepare your energy brief.",
+      "sw": "Kabla ya nukuu ya sola, andaa taarifa za matumizi."
+    },
+    "summary": {
+      "en": "Three practical steps for Tanzanian businesses, institutions, lodges and farms planning solar, storage or a hybrid system.",
+      "sw": "Hatua tatu za kuandaa sola, betri au mfumo mseto kwa biashara, taasisi, lodges na mashamba Tanzania."
+    },
+    "sections": [
+      {
+        "title": {
+          "en": "1. Know the work and the hours.",
+          "sw": "1. Bainisha shughuli na saa za matumizi."
+        },
+        "text": {
+          "en": "List essential appliances, running hours, motor starting and what runs together. Bring electricity bills or measured demand where available. kW is power; kWh is energy. A battery nameplate does not tell you how many hours the entire building will run.",
+          "sw": "Orodhesha vifaa muhimu, saa za matumizi, kuanzisha mota na vifaa vinavyotumika pamoja. Andaa bili au vipimo vya matumizi ikiwa vipo. kW ni uwezo wa umeme; kWh ni kiasi cha nishati. Lebo ya betri haionyeshi jengo lote litapata umeme kwa saa ngapi."
+        }
+      },
+      {
+        "title": {
+          "en": "2. Bring the site and equipment details.",
+          "sw": "2. Andaa taarifa za eneo na vifaa."
+        },
+        "text": {
+          "en": "Identify the roof or land, shade, access and existing generator, inverter and battery model labels. For pumping, add source yield, daily water volume, total head and tank requirements. A compatible system is selected together; adding panels or mixing batteries without assessment is not the starting point.",
+          "sw": "Bainisha paa au ardhi, vivuli, ufikivu na lebo za jenereta, inverter na betri zilizopo. Kwa pampu, ongeza uwezo wa chanzo, ujazo wa maji kwa siku, total head na mahitaji ya tanki. Vifaa vinachaguliwa kama mfumo; kuongeza paneli au kuchanganya betri bila tathmini si mwanzo unaofaa."
+        }
+      },
+      {
+        "title": {
+          "en": "3. Ask for a complete, clear scope.",
+          "sw": "3. Omba wigo kamili ulio wazi."
+        },
+        "text": {
+          "en": "Distinguish equipment supply from installation, protection, approvals, monitoring and maintenance. Grid export needs an applicable approved arrangement; do not assume cash payments. Ask about commissioning, handover records, account ownership and support terms. Send documents through an agreed channel; the enquiry form does not upload files.",
+          "sw": "Tofautisha ugavi wa vifaa na ufungaji, kinga, idhini, monitoring na matengenezo. Kurudisha umeme gridi kunahitaji mpangilio ulioidhinishwa; usidhani malipo ya fedha. Uliza majaribio ya mwisho, nyaraka, umiliki wa akaunti na masharti ya huduma. Tuma nyaraka kwa njia mtakayokubaliana; fomu haipokei mafaili."
+        }
+      }
+    ],
+    "cta": {
+      "en": "Tell BM your site, essential loads and whether you need equipment, a complete system or maintenance. Start with an energy assessment and a quotation built around your requirements.",
+      "sw": "Ieleze BM eneo, vifaa muhimu na kama unahitaji vifaa pekee, mfumo kamili au matengenezo. Anza na tathmini ya nishati na nukuu kulingana na mahitaji yako."
+    },
+    "source": "https://www.victronenergy.com/media/pg/Energy_Storage_System/en/",
+    "reviewed": "2026-11-21",
+    "published": true
   }
 ]

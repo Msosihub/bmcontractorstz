@@ -1,0 +1,265 @@
+{
+  "equipment": [
+    {
+      "id": "jinko",
+      "brand": "JinkoSolar",
+      "model": "Tiger Neo 72HL4-(V)",
+      "category": [
+        "SOLAR MODULES",
+        "PANELI ZA SOLA"
+      ],
+      "image": "jinko",
+      "source": "https://www.jinkosolar.com/uploads/JKM565-585N-72HL4-%28V%29-F4-EN.pdf",
+      "intro": [
+        "N-type module family for a properly designed roof or ground array.",
+        "Familia ya paneli N-type kwa paa au mfumo wa ardhini uliosanifiwa."
+      ],
+      "facts": [
+        [
+          "Manufacturer reference: 565–585 W family, rated at standard test conditions; site yield varies.",
+          "Rejea ya mtengenezaji: familia ya 565–585 W katika hali sanifu za majaribio; uzalishaji wa eneo hutofautiana."
+        ],
+        [
+          "Confirm exact module suffix, string voltage/current, roof structure, shading and inverter limits.",
+          "Hakiki suffix ya modeli, voltage/current ya string, uwezo wa paa, vivuli na mipaka ya inverter."
+        ]
+      ],
+      "imageAlt": [
+        "JinkoSolar Tiger Neo module illustration",
+        "Picha ya paneli JinkoSolar Tiger Neo"
+      ]
+    },
+    {
+      "id": "deye",
+      "brand": "Deye",
+      "model": "SUN-12K-SG04LP3-EU",
+      "category": [
+        "HYBRID INVERTER",
+        "INVERTER MSETO"
+      ],
+      "image": "deye",
+      "source": "https://deye.com/product/sun-5-6-8-10-12k-sg04lp3-eu/",
+      "intro": [
+        "A three-phase, low-voltage-battery hybrid reference for an assessed installation.",
+        "Rejea ya inverter mseto ya awamu tatu yenye betri za voltage ya chini kwa mfumo uliotathminiwa."
+      ],
+      "facts": [
+        [
+          "12 kW model within the SUN-5–12K-SG04LP3-EU family; exact suffix and regional version matter.",
+          "Modeli ya 12 kW katika familia ya SUN-5–12K-SG04LP3-EU; suffix na toleo la eneo ni muhimu."
+        ],
+        [
+          "Verify approved battery/BMS, backup load limits, generator interface and grid settings; not every battery is compatible.",
+          "Hakiki betri/BMS iliyoidhinishwa, mipaka ya backup, interface ya jenereta na settings za gridi; si kila betri inaoana."
+        ]
+      ],
+      "imageAlt": [
+        "Deye SG04LP3-EU hybrid inverter",
+        "Inverter mseto Deye SG04LP3-EU"
+      ]
+    },
+    {
+      "id": "victron",
+      "brand": "Victron Energy",
+      "model": "MultiPlus-II",
+      "category": [
+        "INVERTER / CHARGER",
+        "INVERTER / CHARGER"
+      ],
+      "image": "victron",
+      "source": "https://www.victronenergy.com/inverters-chargers/multiplus-ii",
+      "intro": [
+        "A modular inverter/charger approach for designed battery and backup systems.",
+        "Inverter/charger kwa mfumo wa betri na umeme wa akiba unaosanifiwa."
+      ],
+      "facts": [
+        [
+          "The MultiPlus-II is not a PV charge controller. Solar requires appropriate MPPT or a designed AC-coupled arrangement.",
+          "MultiPlus-II si charge controller ya paneli. Sola inahitaji MPPT inayofaa au usanifu wa AC-coupling."
+        ],
+        [
+          "Choose exact VA, battery voltage and grid-code version; GX monitoring, BMS and generator interfaces are assessed separately.",
+          "Chagua VA, voltage ya betri na toleo la grid code; GX monitoring, BMS na interface ya jenereta hutathminiwa tofauti."
+        ]
+      ],
+      "imageAlt": [
+        "Victron MultiPlus-II inverter/charger",
+        "Victron MultiPlus-II inverter/charger"
+      ]
+    },
+    {
+      "id": "chloride",
+      "brand": "Chloride Exide",
+      "model": "Solar Platinum Lithium 12V 200Ah",
+      "category": [
+        "SMALL-SYSTEM LITHIUM",
+        "LITHIUM KWA MIFUMO MIDOGO"
+      ],
+      "image": "chloride",
+      "source": "https://www.chlorideexide.com/product-page/chloride-solar-platinum-lithium-12v-200ah-battery",
+      "intro": [
+        "A 12 V-class LiFePO4 reference for the right system—not a direct substitute for a 48 V rack.",
+        "Rejea ya LiFePO4 ya daraja la 12 V kwa mfumo unaofaa—si mbadala wa moja kwa moja wa rack ya 48 V."
+      ],
+      "facts": [
+        [
+          "Match the charging profile, BMS and equipment voltage. Any series/parallel use must be explicitly permitted for the exact battery.",
+          "Linganisha charging profile, BMS na voltage ya vifaa. Kuunganisha series/parallel kunahitaji ruhusa mahsusi ya modeli."
+        ],
+        [
+          "Final capacity, installation conditions and supplier terms are confirmed before supply.",
+          "Uwezo wa mwisho, hali ya ufungaji na masharti ya muuzaji huhakikiwa kabla ya ugavi."
+        ]
+      ],
+      "imageAlt": [
+        "Chloride Solar Platinum Lithium battery",
+        "Betri ya Chloride Solar Platinum Lithium"
+      ]
+    },
+    {
+      "id": "ritar",
+      "brand": "Ritar",
+      "model": "DG series · DG12-200 reference",
+      "category": [
+        "DEEP-CYCLE GEL",
+        "BETRI ZA GEL"
+      ],
+      "image": "ritar",
+      "source": "https://www.ritarpower.cn/products/dg-series-lead-acid-batteries/",
+      "intro": [
+        "Deep-cycle gel lead-acid options for a correctly sized and maintained bank.",
+        "Betri za gel za lead-acid kwa benki ya betri iliyochaguliwa na kutunzwa vizuri."
+      ],
+      "facts": [
+        [
+          "DG12-200 is listed at 12 V / 200 Ah. Rated Ah does not mean all stored energy should be discharged in daily service.",
+          "DG12-200 imeorodheshwa 12 V / 200 Ah. Ah nominal haimaanishi kutoa nishati yote kila siku."
+        ],
+        [
+          "Confirm capacity test rate, charging/temperature settings, ventilation, protection and replacement-bank condition. Image is a DG-family reference.",
+          "Hakiki kiwango cha kupima uwezo, settings za kuchaji/joto, hewa, kinga na hali ya benki inayobadilishwa. Picha ni rejea ya familia ya DG."
+        ]
+      ],
+      "imageAlt": [
+        "Ritar DG gel battery family",
+        "Familia ya betri za gel Ritar DG"
+      ]
+    },
+    {
+      "id": "lorentz",
+      "brand": "LORENTZ",
+      "model": "PS2 solar pumping systems",
+      "category": [
+        "SOLAR WATER PUMPING",
+        "KUSUKUMA MAJI KWA SOLA"
+      ],
+      "image": "lorentz",
+      "source": "https://www.lorentz.de/products-and-technology/products/ps2-solar-pumping-systems/",
+      "intro": [
+        "Matched pump, motor and controller options chosen from the actual water duty.",
+        "Pampu, mota na controller zinazochaguliwa kwa mahitaji halisi ya maji."
+      ],
+      "facts": [
+        [
+          "PS2 is a family, not one universal pump. Select using total dynamic head, water volume, source yield and seasonal conditions.",
+          "PS2 ni familia, si pampu moja ya kila matumizi. Chagua kwa total dynamic head, ujazo wa maji, uwezo wa chanzo na misimu."
+        ],
+        [
+          "A suitable storage tank can shift water use beyond pumping hours; batteries are not automatically required.",
+          "Tanki linalofaa linaweza kuweka maji kwa matumizi baada ya muda wa kusukuma; betri si lazima kila wakati."
+        ]
+      ],
+      "imageAlt": [
+        "LORENTZ PS2 solar pump controller",
+        "Controller ya pampu ya sola LORENTZ PS2"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": [
+        "Will ordinary grid-tied solar work during a power cut?",
+        "Je, sola ya kawaida ya gridi hufanya kazi umeme ukikatika?"
+      ],
+      "a": [
+        "Not automatically. Anti-islanding normally disconnects a grid-following inverter when the grid fails. Backup requires suitable equipment, separation and selected circuits. Tell BM which loads cannot stop.",
+        "Si moja kwa moja. Anti-islanding kwa kawaida hutenganisha inverter inayofuata gridi umeme ukikatika. Backup inahitaji vifaa, utenganishaji na saketi zinazofaa. Ieleze BM vifaa visivyopaswa kusimama."
+      ]
+    },
+    {
+      "q": [
+        "How many panels or batteries will I need?",
+        "Nitahitaji paneli au betri ngapi?"
+      ],
+      "a": [
+        "Start with measured demand, operating hours, simultaneous and starting loads, roof/shading and the backup period. kW describes power; kWh describes energy. Usable battery energy, reserve, losses and temperature affect the result.",
+        "Anza na matumizi yaliyopimwa, saa za kazi, vifaa vinavyotumika pamoja na wakati wa kuwaka, paa/vivuli na muda wa backup. kW ni uwezo wa kutoa umeme; kWh ni kiasi cha nishati. Nishati inayotumika, akiba, upotevu na joto huathiri matokeo."
+      ]
+    },
+    {
+      "q": [
+        "Can you use my existing generator or inverter?",
+        "Mnaweza kutumia jenereta au inverter yangu iliyopo?"
+      ],
+      "a": [
+        "We assess the exact model, condition, wiring, firmware, battery/BMS support and permitted generator interface. A safe proposal may keep equipment, reconfigure it or recommend replacement. We do not assume every brand connects together.",
+        "Tunatathmini modeli, hali, nyaya, firmware, uoanifu wa betri/BMS na interface ya jenereta. Pendekezo linaweza kuhifadhi, kubadili settings au kupendekeza vifaa vipya. Hatudhani kila chapa inaunganishwa na nyingine."
+      ]
+    },
+    {
+      "q": [
+        "Can I export surplus power to TANESCO?",
+        "Naweza kurudisha umeme wa ziada TANESCO?"
+      ],
+      "a": [
+        "Do not assume permission or cash payments. Grid connection, protection, metering and any net-metering arrangement need the applicable utility/EWURA process and an approved interconnection agreement. We assess the intended arrangement before installation.",
+        "Usidhani ruhusa au malipo ya fedha ni ya moja kwa moja. Muunganisho, kinga, mita na net-metering vinahitaji utaratibu unaohusika wa shirika/EWURA na makubaliano ya interconnection. Tunatathmini mpangilio kabla ya ufungaji."
+      ]
+    },
+    {
+      "q": [
+        "Do irrigation pumps need batteries?",
+        "Je, pampu za umwagiliaji zinahitaji betri?"
+      ],
+      "a": [
+        "Not always. A correctly selected daytime solar pump and water tank may meet the duty. Water yield, head, daily volume, irrigation timing and seasonal storage determine the approach.",
+        "Si kila wakati. Pampu ya sola ya mchana iliyochaguliwa vizuri na tanki vinaweza kutimiza mahitaji. Uwezo wa chanzo, head, ujazo wa kila siku, muda wa umwagiliaji na mahitaji ya misimu huainisha njia."
+      ]
+    },
+    {
+      "q": [
+        "Do you supply equipment without installation?",
+        "Mnauza vifaa bila ufungaji?"
+      ],
+      "a": [
+        "Yes—request equipment-only pricing with exact models, quantities and destination, or ask for a complete installation. Prices, availability, accessories, delivery and aftercare are stated in the quotation; there are no invented package prices here.",
+        "Ndiyo—omba bei ya vifaa pekee kwa modeli, idadi na mahali pa kupeleka, au omba ufungaji kamili. Bei, upatikanaji, vifaa vya ziada, usafirishaji na huduma huwekwa kwenye nukuu."
+      ]
+    }
+  ],
+  "rackStorageReference": {
+    "id": "pylontech",
+    "brand": "Pylontech",
+    "model": "US5000",
+    "category": [
+      "RACK LITHIUM STORAGE",
+      "BETRI ZA LITHIUM ZA RACK"
+    ],
+    "image": "pylontech",
+    "source": "https://en.pylontech.com.cn/products/c23/134.html",
+    "intro": [
+      "48 V LFP modular storage; a reference for a matched inverter and battery design.",
+      "Betri za LFP za moduli za 48 V; rejea ya usanifu wenye inverter na betri zinazooana."
+    ],
+    "facts": [
+      [
+        "Manufacturer nominal energy: 4.8 kWh per module. This is not a promise of usable AC energy or backup hours.",
+        "Nishati nominal ya mtengenezaji: 4.8 kWh kwa moduli. Hii si ahadi ya nishati ya AC inayotumika au saa za backup."
+      ],
+      [
+        "Indoor IP20 reference. Confirm exact revision, approved inverter, BMS communications, current limits, protection and installation conditions.",
+        "Rejea ya IP20 kwa ndani. Hakiki toleo, inverter iliyoidhinishwa, mawasiliano ya BMS, current, kinga na hali ya ufungaji."
+      ]
+    ]
+  }
+}
