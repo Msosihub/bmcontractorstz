@@ -1,36 +1,47 @@
 {
   "date": "2026-11-21",
-  "scope": "Four confirmed brands only; remaining screenshot brands pending owner confirmation",
+  "scope": "All 18 brands explicitly owner-approved for BM sourcing references and logo use",
+  "totalRuntimeArtworkBytes": 130772,
   "items": [
     {
-      "name": "Cummins",
-      "source": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Cummins_logo.svg",
-      "reference": "https://commons.wikimedia.org/wiki/File:Cummins_logo.svg",
-      "file": "public/images/generator-engineering/brands/cummins.svg",
-      "bytes": 3213,
-      "sha256": "ca09429f77496d0d39d872930d80344d19e0fea07be44d3bcb8a8e22178b8699",
-      "transformation": "Original vector mirror; identity checked against Cummins master-mark standards. Geometry/colour/proportions unchanged.",
-      "permission": "Owner-confirmed supplier permission for sales/marketing images; sourcing confirmed 21 November 2026. No appointment or partnership claim."
+      "name": "SEDEMAC",
+      "file": "public/images/generator-engineering/brands/sedemac.png",
+      "bytes": 35732,
+      "sha256": "681f767cbe8f2e8800095cebc037bb1c79ee158885b2cd478990518442caf5c0",
+      "permission": "Owner explicitly confirmed all 18 screenshot brands as BM sourcing references and permitted logo publication on 21 November 2026. No appointment or partnership claim.",
+      "source": "https://www.sedemac.com/static/media/LogoH.d88bbf31e84dd721664c.png",
+      "reference": "https://www.sedemac.com/",
+      "transformation": "Original supplied artwork; proportions/colours unchanged. Public manufacturer headers or established vector mirrors; no competitor graphics."
     },
     {
-      "name": "Perkins",
-      "source": "https://upload.wikimedia.org/wikipedia/commons/1/14/Perkins-Logo.svg",
-      "reference": "https://commons.wikimedia.org/wiki/File:Perkins-Logo.svg",
-      "file": "public/images/generator-engineering/brands/perkins.svg",
-      "bytes": 10502,
-      "sha256": "88b5a26fb5a1b915940917328a42ea3a68e7e06cbae42e815643fbe77f2d6cbf",
-      "transformation": "Original vector extracted from Perkins manufacturer literature and mirrored on Commons; unchanged.",
-      "permission": "Owner-confirmed supplier permission for sales/marketing images; sourcing confirmed 21 November 2026. No appointment or partnership claim."
+      "name": "Fluke",
+      "file": "public/images/generator-engineering/brands/fluke.svg",
+      "bytes": 1183,
+      "sha256": "19878c67304006319dba7e1dffa65485d438e190879915e8397932ff01115181",
+      "permission": "Owner explicitly confirmed all 18 screenshot brands as BM sourcing references and permitted logo publication on 21 November 2026. No appointment or partnership claim.",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/6/62/Fluke_Corporation_logo.svg",
+      "reference": "https://www.fluke.com/",
+      "transformation": "Original supplied artwork; proportions/colours unchanged. Public manufacturer headers or established vector mirrors; no competitor graphics."
     },
     {
-      "name": "Deep Sea Electronics",
-      "source": "https://www.deepseaelectronics.com/public/fonts/dse.woff?v=6",
-      "reference": "https://www.deepseaelectronics.com/",
-      "file": "public/images/generator-engineering/brands/dse.png",
-      "bytes": 4845,
-      "sha256": "6b2be510a8de91415b8267c06e81246618c7dccfce6bbf9303ebde1b0424be66",
-      "transformation": "Official header glyph u rendered with the original v6 font in local Chrome; whitespace trimmed and PNG compression only. Separate HTML brand caption is ordinary readable text, not a replacement logo.",
-      "permission": "Owner-confirmed supplier permission for sales/marketing images; sourcing confirmed 21 November 2026. No appointment or partnership claim."
+      "name": "AISIKAI",
+      "file": "public/images/generator-engineering/brands/aisikai.png",
+      "bytes": 26687,
+      "sha256": "bf91775e35d96b77b7627b486b531b0a713eaa84950d9113c1e6a6481c783a15",
+      "permission": "Owner explicitly confirmed all 18 screenshot brands as BM sourcing references and permitted logo publication on 21 November 2026. No appointment or partnership claim.",
+      "source": "https://iirorwxhlppilm5m.leadongcdn.com/cloud/lqBpiKjjlpSRjljnjiqnko/logo.gif",
+      "reference": "https://www.aisikaigroup.com/",
+      "transformation": "Static first frame of the manufacturer's current 180-frame logo GIF; downscaled to 800 px and PNG-compressed. No animated GIF in the runtime or generated/reconstructed artwork."
+    },
+    {
+      "name": "Siemens",
+      "file": "public/images/generator-engineering/brands/siemens.svg",
+      "bytes": 3547,
+      "sha256": "eb613a001ee052b1ec7cc2f002a4783bc98e2f102b24393f7c21eaa3c33e37cf",
+      "permission": "Owner explicitly confirmed all 18 screenshot brands as BM sourcing references and permitted logo publication on 21 November 2026. No appointment or partnership claim.",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Siemens_AG_logo.svg",
+      "reference": "https://www.siemens.com/",
+      "transformation": "Original supplied artwork; proportions/colours unchanged. Public manufacturer headers or established vector mirrors; no competitor graphics."
     },
     {
       "name": "ComAp",
@@ -40,7 +51,137 @@
       "bytes": 1836,
       "sha256": "6b860983f6641a7cba91a8a712af111585c0a05e7c73b3c520b11e036d6afbf8",
       "transformation": "Original inline header SVG extracted without geometry, colour or aspect-ratio changes.",
-      "permission": "Owner-confirmed supplier permission for sales/marketing images; sourcing confirmed 21 November 2026. No appointment or partnership claim."
+      "permission": "Owner explicitly confirmed all 18 screenshot brands as BM sourcing references and permitted logo publication on 21 November 2026. No appointment or partnership claim."
+    },
+    {
+      "name": "Fleetguard",
+      "file": "public/images/generator-engineering/brands/fleetguard.png",
+      "bytes": 6175,
+      "sha256": "e53644ec5d9edc51fa0dddf45adef96c98fe5017acf126e8075b69c7dcce0ba4",
+      "permission": "Owner explicitly confirmed all 18 screenshot brands as BM sourcing references and permitted logo publication on 21 November 2026. No appointment or partnership claim.",
+      "source": "https://www.fleetguard.com/sfsites/c/cms/delivery/media/MCKKLTXU6SIFHQVF2Z6JHHTEKYV4",
+      "reference": "https://www.fleetguard.com/",
+      "transformation": "Original supplied artwork; proportions/colours unchanged. Public manufacturer headers or established vector mirrors; no competitor graphics."
+    },
+    {
+      "name": "Danfoss",
+      "file": "public/images/generator-engineering/brands/danfoss.svg",
+      "bytes": 2370,
+      "sha256": "34d7974a1188df7c0f965568ed9301d7a8b80d6f2f729aa6b8c3e4cdef93b9dc",
+      "permission": "Owner explicitly confirmed all 18 screenshot brands as BM sourcing references and permitted logo publication on 21 November 2026. No appointment or partnership claim.",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Danfoss-Logo.svg",
+      "reference": "https://www.danfoss.com/en/",
+      "transformation": "Original supplied artwork; proportions/colours unchanged. Public manufacturer headers or established vector mirrors; no competitor graphics."
+    },
+    {
+      "name": "ABB",
+      "file": "public/images/generator-engineering/brands/abb.svg",
+      "bytes": 812,
+      "sha256": "c69ccbe3325b56e7b8b9d8e65d54ebd45a24bdcc51bd604b0acc93a87ffbefe7",
+      "permission": "Owner explicitly confirmed all 18 screenshot brands as BM sourcing references and permitted logo publication on 21 November 2026. No appointment or partnership claim.",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/0/00/ABB_logo.svg",
+      "reference": "https://global.abb/group/en",
+      "transformation": "Original supplied artwork; proportions/colours unchanged. Public manufacturer headers or established vector mirrors; no competitor graphics."
+    },
+    {
+      "name": "Caterpillar (CAT)",
+      "file": "public/images/generator-engineering/brands/cat.svg",
+      "bytes": 4184,
+      "sha256": "f08961cb2df47b03d971e5a7a87eac627d9a0798227ddbf5ac909041ed11b735",
+      "permission": "Owner explicitly confirmed all 18 screenshot brands as BM sourcing references and permitted logo publication on 21 November 2026. No appointment or partnership claim.",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Caterpillar_logo.svg",
+      "reference": "https://www.cat.com/en_US.html",
+      "transformation": "Original supplied artwork; proportions/colours unchanged. Public manufacturer headers or established vector mirrors; no competitor graphics."
+    },
+    {
+      "name": "Cummins",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Cummins_logo.svg",
+      "reference": "https://commons.wikimedia.org/wiki/File:Cummins_logo.svg",
+      "file": "public/images/generator-engineering/brands/cummins.svg",
+      "bytes": 3213,
+      "sha256": "ca09429f77496d0d39d872930d80344d19e0fea07be44d3bcb8a8e22178b8699",
+      "transformation": "Original vector mirror; identity checked against Cummins master-mark standards. Geometry/colour/proportions unchanged.",
+      "permission": "Owner explicitly confirmed all 18 screenshot brands as BM sourcing references and permitted logo publication on 21 November 2026. No appointment or partnership claim."
+    },
+    {
+      "name": "KRIPAL",
+      "file": "public/images/generator-engineering/brands/kripal.webp",
+      "bytes": 1938,
+      "sha256": "754b499ef58da69b5d4565bbcf69abf904fccee26893eacab99b95c4a09bbfea",
+      "permission": "Owner explicitly confirmed all 18 screenshot brands as BM sourcing references and permitted logo publication on 21 November 2026. No appointment or partnership claim.",
+      "source": "https://www.kripal.net/wp-content/uploads/2025/08/logo.webp",
+      "reference": "https://www.kripal.net/",
+      "transformation": "Original supplied artwork; proportions/colours unchanged. Public manufacturer headers or established vector mirrors; no competitor graphics."
+    },
+    {
+      "name": "John Deere",
+      "file": "public/images/generator-engineering/brands/john-deere.svg",
+      "bytes": 4313,
+      "sha256": "19baf77cdb8c67f4a512e969f6bdc21a5e32c414946a0e448e5aba525df422fa",
+      "permission": "Owner explicitly confirmed all 18 screenshot brands as BM sourcing references and permitted logo publication on 21 November 2026. No appointment or partnership claim.",
+      "source": "https://upload.wikimedia.org/wikipedia/en/0/02/John_Deere_Logo_%E2%80%93_Flat_2_Color.svg",
+      "reference": "https://www.deere.com/en-us",
+      "transformation": "Original supplied artwork; proportions/colours unchanged. Public manufacturer headers or established vector mirrors; no competitor graphics."
+    },
+    {
+      "name": "Donaldson",
+      "file": "public/images/generator-engineering/brands/donaldson.svg",
+      "bytes": 6580,
+      "sha256": "5b64560e6b9a56bdc4dfec5c71a121057fdfd4008b1b2e5037588ba00b5c1829",
+      "permission": "Owner explicitly confirmed all 18 screenshot brands as BM sourcing references and permitted logo publication on 21 November 2026. No appointment or partnership claim.",
+      "source": "https://www.donaldson.com/en-us/",
+      "reference": "https://www.donaldson.com/en-us/",
+      "transformation": "Original inline manufacturer header SVG extracted unchanged; standalone original path geometry."
+    },
+    {
+      "name": "WEICHAI",
+      "file": "public/images/generator-engineering/brands/weichai.png",
+      "bytes": 7598,
+      "sha256": "61c456143e9eaf04b0637f04b37a9eec8934ea6a7ce702685817cf5b9b01e9ff",
+      "permission": "Owner explicitly confirmed all 18 screenshot brands as BM sourcing references and permitted logo publication on 21 November 2026. No appointment or partnership claim.",
+      "source": "https://en.weichai.com/uiFramework/commonResource/image/2026040710461753492.png",
+      "reference": "https://en.weichai.com/",
+      "transformation": "Original supplied artwork; proportions/colours unchanged. Public manufacturer headers or established vector mirrors; no competitor graphics."
+    },
+    {
+      "name": "Perkins",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/1/14/Perkins-Logo.svg",
+      "reference": "https://commons.wikimedia.org/wiki/File:Perkins-Logo.svg",
+      "file": "public/images/generator-engineering/brands/perkins.svg",
+      "bytes": 10502,
+      "sha256": "88b5a26fb5a1b915940917328a42ea3a68e7e06cbae42e815643fbe77f2d6cbf",
+      "transformation": "Original vector extracted from Perkins manufacturer literature and mirrored on Commons; unchanged.",
+      "permission": "Owner explicitly confirmed all 18 screenshot brands as BM sourcing references and permitted logo publication on 21 November 2026. No appointment or partnership claim."
+    },
+    {
+      "name": "Copeland",
+      "file": "public/images/generator-engineering/brands/copeland.png",
+      "bytes": 5299,
+      "sha256": "d99e0232a12eb860d8550d20a6940230321a9aca25e3d52f29a535b2dc092717",
+      "permission": "Owner explicitly confirmed all 18 screenshot brands as BM sourcing references and permitted logo publication on 21 November 2026. No appointment or partnership claim.",
+      "source": "https://media.copeland.com/d84555c8-99d5-4b13-9d76-b1c3013c082d/Copeland%20Logo%20for%20ORC_16%3A9_PNG.png?width=580",
+      "reference": "https://www.copeland.com/en-us",
+      "transformation": "Uniform exterior whitespace removed; 24 px clear space restored on each side. Original blue wordmark geometry unchanged; PNG compression."
+    },
+    {
+      "name": "Schneider Electric",
+      "file": "public/images/generator-engineering/brands/schneider.svg",
+      "bytes": 3958,
+      "sha256": "ca997867dc564540e9a4bc1d8106c041c0b9f7d1c3ea22fbeff2a1e988e5aff4",
+      "permission": "Owner explicitly confirmed all 18 screenshot brands as BM sourcing references and permitted logo publication on 21 November 2026. No appointment or partnership claim.",
+      "source": "https://www.se.com/dam-assets/Xc4rnzKhHHwDzHM5xp4SXA/tFE2BmVonVU-Lnlx7tmISA/Original%20file/SE-logo-white-svg.svg",
+      "reference": "https://www.se.com/ww/en/",
+      "transformation": "Original official white logo variant, displayed on a dark tile; no recolouring."
+    },
+    {
+      "name": "Deep Sea Electronics",
+      "source": "https://www.deepseaelectronics.com/public/fonts/dse.woff?v=6",
+      "reference": "https://www.deepseaelectronics.com/",
+      "file": "public/images/generator-engineering/brands/dse.png",
+      "bytes": 4845,
+      "sha256": "6b2be510a8de91415b8267c06e81246618c7dccfce6bbf9303ebde1b0424be66",
+      "transformation": "Official header glyph u rendered with the original v6 font in local Chrome; whitespace trimmed and PNG compression only. Separate HTML brand caption is ordinary readable text, not a replacement logo.",
+      "permission": "Owner explicitly confirmed all 18 screenshot brands as BM sourcing references and permitted logo publication on 21 November 2026. No appointment or partnership claim."
     }
   ]
 }

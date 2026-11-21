@@ -70,6 +70,8 @@
   border-radius: 5px;
   transition: border-color .2s, box-shadow .2s;
 }
+.ge-brand-track li[data-ge-brand-dark] a { background: #1c3730; border-color: #1c3730; }
+.ge-brand-track li[data-ge-brand-id="aisikai"] a { background: #000; border-color: #000; }
 .ge-brand-track a:hover {
   border-color: #a0b39f;
   box-shadow: 0 3px 12px #2943340b;

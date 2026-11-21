@@ -8,6 +8,13 @@ import "./generator-brands.css";
 export function GeneratorBrandBelts({ lang }: { lang: Language }) {
   const sw = lang === "sw";
   // A second opposing row is useful only when enough distinct approved brands exist.
+  const enquiry = (name: string) => `/contact?${new URLSearchParams({
+    lang,
+    subject: `${sw ? "Ugavi wa vifaa" : "Equipment sourcing"} — ${name}`.slice(0, 120),
+    brief: sw
+      ? `Chapa: ${name}\nKifaa / modeli / namba ya kipuri:\nHitaji na idadi:\nEneo:\nAina ya jengo au matumizi:\nVifaa pekee / ufungaji / huduma:\nMuda unaohitaji:`
+      : `Brand: ${name}\nEquipment / model / part number:\nRequirement and quantity:\nSite / location:\nFacility / application:\nEquipment only / installation / service:\nTimeframe:`,
+  })}`;
   const rows = brands.length >= 8
     ? [brands.slice(0, Math.ceil(brands.length / 2)), brands.slice(Math.ceil(brands.length / 2))]
     : [brands];
@@ -35,8 +42,8 @@ export function GeneratorBrandBelts({ lang }: { lang: Language }) {
                     {repeated.map((brand, itemIndex) => {
                       const decorative = duplicate || itemIndex >= row.length;
                       return (
-                        <li key={`${brand.id}-${itemIndex}`} aria-hidden={decorative || undefined} inert={decorative || undefined}>
-                          <a href={brand.href} aria-label={sw ? `Angalia vifaa vya ${brand.name}` : `Explore ${brand.name} equipment`}>
+                        <li key={`${brand.id}-${itemIndex}`} data-ge-brand-id={brand.id} data-ge-brand-dark={brand.dark || undefined} aria-hidden={decorative || undefined} inert={decorative || undefined}>
+                          <a href={brand.href === "/contact" ? enquiry(brand.name) : brand.href} aria-label={brand.href === "/contact" ? (sw ? `Ulizia vifaa vya ${brand.name}` : `Enquire about ${brand.name} equipment`) : (sw ? `Angalia vifaa vya ${brand.name}` : `Explore ${brand.name} equipment`)}>
                             <Image src={`/images/generator-engineering/brands/${brand.image}`} alt={brand.name} width={brand.width} height={brand.height} loading="eager" unoptimized />
                             {brand.caption && <span className="ge-brand-card-caption">{brand.caption}</span>}
                           </a>
