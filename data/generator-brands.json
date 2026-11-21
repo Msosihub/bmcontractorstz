@@ -1,0 +1,38 @@
+[
+  {
+    "id": "cummins",
+    "name": "Cummins",
+    "image": "cummins.svg",
+    "width": 64,
+    "height": 64,
+    "href": "#ge-cummins-c110d5i",
+    "caption": null
+  },
+  {
+    "id": "perkins",
+    "name": "Perkins",
+    "image": "perkins.svg",
+    "width": 156,
+    "height": 50,
+    "href": "#ge-perkins-1103a-33g",
+    "caption": null
+  },
+  {
+    "id": "dse",
+    "name": "Deep Sea Electronics",
+    "image": "dse.png",
+    "width": 52,
+    "height": 52,
+    "href": "#ge-dse7320-mkii",
+    "caption": "Deep Sea Electronics"
+  },
+  {
+    "id": "comap",
+    "name": "ComAp",
+    "image": "comap.svg",
+    "width": 151,
+    "height": 42,
+    "href": "#ge-comap-amf25",
+    "caption": null
+  }
+]

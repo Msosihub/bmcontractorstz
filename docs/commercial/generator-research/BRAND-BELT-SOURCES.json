@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-21",
+  "scope": "Four confirmed brands only; remaining screenshot brands pending owner confirmation",
+  "items": [
+    {
+      "name": "Cummins",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Cummins_logo.svg",
+      "reference": "https://commons.wikimedia.org/wiki/File:Cummins_logo.svg",
+      "file": "public/images/generator-engineering/brands/cummins.svg",
+      "bytes": 3213,
+      "sha256": "ca09429f77496d0d39d872930d80344d19e0fea07be44d3bcb8a8e22178b8699",
+      "transformation": "Original vector mirror; identity checked against Cummins master-mark standards. Geometry/colour/proportions unchanged.",
+      "permission": "Owner-confirmed supplier permission for sales/marketing images; sourcing confirmed 21 November 2026. No appointment or partnership claim."
+    },
+    {
+      "name": "Perkins",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/1/14/Perkins-Logo.svg",
+      "reference": "https://commons.wikimedia.org/wiki/File:Perkins-Logo.svg",
+      "file": "public/images/generator-engineering/brands/perkins.svg",
+      "bytes": 10502,
+      "sha256": "88b5a26fb5a1b915940917328a42ea3a68e7e06cbae42e815643fbe77f2d6cbf",
+      "transformation": "Original vector extracted from Perkins manufacturer literature and mirrored on Commons; unchanged.",
+      "permission": "Owner-confirmed supplier permission for sales/marketing images; sourcing confirmed 21 November 2026. No appointment or partnership claim."
+    },
+    {
+      "name": "Deep Sea Electronics",
+      "source": "https://www.deepseaelectronics.com/public/fonts/dse.woff?v=6",
+      "reference": "https://www.deepseaelectronics.com/",
+      "file": "public/images/generator-engineering/brands/dse.png",
+      "bytes": 4845,
+      "sha256": "6b2be510a8de91415b8267c06e81246618c7dccfce6bbf9303ebde1b0424be66",
+      "transformation": "Official header glyph u rendered with the original v6 font in local Chrome; whitespace trimmed and PNG compression only. Separate HTML brand caption is ordinary readable text, not a replacement logo.",
+      "permission": "Owner-confirmed supplier permission for sales/marketing images; sourcing confirmed 21 November 2026. No appointment or partnership claim."
+    },
+    {
+      "name": "ComAp",
+      "source": "https://www.comap-control.com/",
+      "reference": "https://www.comap-control.com/",
+      "file": "public/images/generator-engineering/brands/comap.svg",
+      "bytes": 1836,
+      "sha256": "6b860983f6641a7cba91a8a712af111585c0a05e7c73b3c520b11e036d6afbf8",
+      "transformation": "Original inline header SVG extracted without geometry, colour or aspect-ratio changes.",
+      "permission": "Owner-confirmed supplier permission for sales/marketing images; sourcing confirmed 21 November 2026. No appointment or partnership claim."
+    }
+  ]
+}
