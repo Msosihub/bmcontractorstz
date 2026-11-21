@@ -1,0 +1,76 @@
+{
+  "permission": "Owner confirmation received 21 November 2026: BM can source Cummins, Perkins, Deep Sea Electronics and ComAp and has supplier permission to use their images for sales/marketing. No manufacturer appointment is implied.",
+  "illustration": {
+    "original": "docs/commercial/generator-originals/engineering-hero.png",
+    "optimized": "public/images/generator-engineering/engineering-hero.webp",
+    "tool": "built-in image_gen",
+    "purpose": "Fictional illustrative engineering setting, never BM completed-project evidence",
+    "prompt": "Use case: photorealistic-natural. Asset: premium corporate engineering website landscape photograph, 3:2 composition. Show a credible modern standby diesel-generator installation in a clean light-industrial / institutional service courtyard in northern Tanzania. A large graphite acoustic generator canopy on a concrete plinth, physically coherent ventilation louvers, a properly supported insulated exhaust leaving the enclosure and rising safely above, cable routes in robust neat conduits to an adjacent CLOSED transfer cabinet. Two East African engineering professionals, one man and one woman, wearing restrained dark workwear, safety shoes and hard hats, standing beside the shut generator reviewing a tablet and service checklist, candid and purposeful. No one works on live electrical parts. Warm morning side light, cream concrete architecture, distant subtle tropical planting, authentic materials, beautifully composed editorial industrial photography, high-end but practical. Generator occupies right two thirds, professionals visible near left centre, leave some calm shaded wall on far left for optional text. Avoid fake brands, letters, company names, logos, numbers, watermarks, staged victory gestures, impossible pipes, open energized cabinets, residential decorator generator, excessive dramatic fog, blue digital effects. This is an original fictional illustrative environment, not evidence of a real contractor's project. Generate one finished photograph only.",
+    "originalSHA256": "e57ab2e06cbf96cdeed6bcd0e5a92cd7fecdd67504fa448e9ca3dcdb39e51603",
+    "optimizedSHA256": "fa1bd1cd3809fd2e532108aad5f6482d0cebb099e554f74e3f8335b9792c18e9"
+  },
+  "manufacturers": [
+    {
+      "id": "dse7320-mkii",
+      "imageURL": "https://www.deepseaelectronics.com/public/uploads/products/crop/DSE7320MKII-360.jpg",
+      "page": "https://www.deepseaelectronics.com/genset/auto-mains-utility-failure-control-modules/dse7320-mkii",
+      "original": "docs/commercial/generator-originals/dse7320-mkii.image",
+      "permission": "Owner confirmed supplier permission for sales/marketing on 21 November 2026; preserve source/model identity.",
+      "optimized": "public/images/generator-engineering/dse7320-mkii.webp",
+      "transformation": "First 496\u00d7378 front-view tile extracted from authentic 4\u00d72 manufacturer rotation sheet; product appearance/branding unmodified.",
+      "originalSHA256": "9b44644f7066ed49589850e4c6c7040375b12630bb02ceb42f1f13a2745247ef",
+      "optimizedSHA256": "f96974a5953ff52e3c6f16db24c8bd94adacd3a12106c0aec507ef8a90b34a23"
+    },
+    {
+      "id": "dse8610-mkii",
+      "imageURL": "https://www.deepseaelectronics.com/public/uploads/products/crop/DSE8610MKII-360.jpg",
+      "page": "https://www.deepseaelectronics.com/genset/load-sharing-synchronising-control-modules/dse8610-mkii",
+      "original": "docs/commercial/generator-originals/dse8610-mkii.image",
+      "permission": "Owner confirmed supplier permission for sales/marketing on 21 November 2026; preserve source/model identity.",
+      "optimized": "public/images/generator-engineering/dse8610-mkii.webp",
+      "transformation": "First 496\u00d7378 front-view tile extracted from authentic 4\u00d72 manufacturer rotation sheet; product appearance/branding unmodified.",
+      "originalSHA256": "5a7f4bd5740598781cf3d75683ba4067e12d59b361fa0ab4fa7a2577af696eb2",
+      "optimizedSHA256": "cd3e7f943358070b311c52b11d3b2375eb6b84a5a3f655b42c352fd7b7237d46"
+    },
+    {
+      "id": "comap-amf25",
+      "imageURL": "https://imgproc.comap-control.com/Local/shp-media-files/comap/media/shpmediafiles/single%20gen-set%20controllers/intelilite/web%20images/optimized%20intelilite/intelilite4_amf25_main.png?f=WebP&w=960&h=960",
+      "page": "https://aus.comap-control.com/products/controllers/single-gen-set-controllers/intelilite/intelilite-4-amf-25/",
+      "original": "docs/commercial/generator-originals/comap-amf25.image",
+      "permission": "Owner confirmed supplier permission for sales/marketing on 21 November 2026; preserve source/model identity.",
+      "optimized": "public/images/generator-engineering/comap-amf25.webp",
+      "originalSHA256": "8ab462483016b04cfd8d40de89c5d519361545317d0aef306a73396ae647b5bc",
+      "optimizedSHA256": "c2b59ff00746ced68d64f0c523f191ed44a5855758b4bfd7dbbb21719e026850"
+    },
+    {
+      "id": "comap-intelineo5500",
+      "imageURL": "https://imgproc.comap-control.com/Local/shp-media-files/comap/media/shpmediafiles/master%20controllers/hybrid%20controllers/intelineo%205500/pictures/comap_intelineo_5500_main.png?f=WebP&w=960&h=960",
+      "page": "https://na.comap-control.com/products/controllers/microgrid-controllers/intelineo/intelineo-5500/",
+      "original": "docs/commercial/generator-originals/comap-intelineo5500.image",
+      "permission": "Owner confirmed supplier permission for sales/marketing on 21 November 2026; preserve source/model identity.",
+      "optimized": "public/images/generator-engineering/comap-intelineo5500.webp",
+      "originalSHA256": "c02dd643b67693a40d20dab1dfab53ff29f4722ab121493e7a6d81369fc9f156",
+      "optimizedSHA256": "9eebe4afea38cec97dec4876517c9b058699e678576ab905fa2b7d39a5100841"
+    },
+    {
+      "id": "cummins-c110d5i",
+      "imageURL": "https://www.cummins.com/sites/default/files/styles/product_hero_788x526/public/2023-01/cummins-6b59-generator-product.jpg?itok=YpTJYRNh",
+      "page": "https://www.cummins.com/en-na/generators/products/c110d5i",
+      "original": "docs/commercial/generator-originals/cummins-c110d5i.image",
+      "permission": "Owner confirmed supplier permission for sales/marketing on 21 November 2026.",
+      "optimized": "public/images/generator-engineering/cummins-c110d5i.webp",
+      "originalSHA256": "3ba750fd1e1a744f5b05bb61b633741c974d9130ed24791285de44e24073c6e9",
+      "optimizedSHA256": "4df72c5d2c453e94b192ca66f93773fda61392f81b71c2781434afee247b8af6"
+    },
+    {
+      "id": "perkins-1103a-33g",
+      "imageURL": "https://s7d2.scene7.com/is/image/Caterpillar/C10355903?%24cc-pdp1%24=&fmt=pjpeg",
+      "page": "https://www.perkins.com/en_GB/products/new/perkins/electric-power-generation/diesel-engines/1000002495.html",
+      "original": "docs/commercial/generator-originals/perkins-1103a-33g.image",
+      "permission": "Owner confirmed supplier permission for sales/marketing on 21 November 2026.",
+      "optimized": "public/images/generator-engineering/perkins-1103a-33g.webp",
+      "originalSHA256": "1ac31dd02273f2cd9dce877a57f47706e4c8756ad7f3ef46c7f88ead90933fa9",
+      "optimizedSHA256": "0cc899311af3ac248c58d29eb7e30de8af31ed45d33e7cbf7a8a1a2cb6e645e7"
+    }
+  ]
+}

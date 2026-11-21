@@ -1,0 +1,182 @@
+[
+  {
+    "id": "sedemac",
+    "name": "SEDEMAC",
+    "image": "sedemac.png",
+    "width": 155,
+    "height": 52,
+    "href": "/contact",
+    "caption": null,
+    "dark": false
+  },
+  {
+    "id": "fluke",
+    "name": "Fluke",
+    "image": "fluke.svg",
+    "width": 146,
+    "height": 48,
+    "href": "/contact",
+    "caption": null,
+    "dark": false
+  },
+  {
+    "id": "aisikai",
+    "name": "AISIKAI",
+    "image": "aisikai.png",
+    "width": 160,
+    "height": 48,
+    "href": "/contact",
+    "caption": null,
+    "dark": true
+  },
+  {
+    "id": "siemens",
+    "name": "Siemens",
+    "image": "siemens.svg",
+    "width": 163,
+    "height": 40,
+    "href": "/contact",
+    "caption": null,
+    "dark": false
+  },
+  {
+    "id": "comap",
+    "name": "ComAp",
+    "image": "comap.svg",
+    "width": 151,
+    "height": 42,
+    "href": "#ge-comap-amf25",
+    "caption": null,
+    "dark": false
+  },
+  {
+    "id": "fleetguard",
+    "name": "Fleetguard",
+    "image": "fleetguard.png",
+    "width": 104,
+    "height": 72,
+    "href": "/contact",
+    "caption": null,
+    "dark": false
+  },
+  {
+    "id": "danfoss",
+    "name": "Danfoss",
+    "image": "danfoss.svg",
+    "width": 144,
+    "height": 60,
+    "href": "/contact",
+    "caption": null,
+    "dark": false
+  },
+  {
+    "id": "abb",
+    "name": "ABB",
+    "image": "abb.svg",
+    "width": 116,
+    "height": 50,
+    "href": "/contact",
+    "caption": null,
+    "dark": false
+  },
+  {
+    "id": "cat",
+    "name": "Caterpillar (CAT)",
+    "image": "cat.svg",
+    "width": 160,
+    "height": 40,
+    "href": "/contact",
+    "caption": null,
+    "dark": false
+  },
+  {
+    "id": "cummins",
+    "name": "Cummins",
+    "image": "cummins.svg",
+    "width": 64,
+    "height": 64,
+    "href": "#ge-cummins-c110d5i",
+    "caption": null,
+    "dark": false
+  },
+  {
+    "id": "kripal",
+    "name": "KRIPAL",
+    "image": "kripal.webp",
+    "width": 152,
+    "height": 42,
+    "href": "/contact",
+    "caption": null,
+    "dark": false
+  },
+  {
+    "id": "john-deere",
+    "name": "John Deere",
+    "image": "john-deere.svg",
+    "width": 118,
+    "height": 66,
+    "href": "/contact",
+    "caption": null,
+    "dark": false
+  },
+  {
+    "id": "donaldson",
+    "name": "Donaldson",
+    "image": "donaldson.svg",
+    "width": 156,
+    "height": 45,
+    "href": "/contact",
+    "caption": null,
+    "dark": false
+  },
+  {
+    "id": "weichai",
+    "name": "WEICHAI",
+    "image": "weichai.png",
+    "width": 160,
+    "height": 40,
+    "href": "/contact",
+    "caption": null,
+    "dark": false
+  },
+  {
+    "id": "perkins",
+    "name": "Perkins",
+    "image": "perkins.svg",
+    "width": 156,
+    "height": 50,
+    "href": "#ge-perkins-1103a-33g",
+    "caption": null,
+    "dark": false
+  },
+  {
+    "id": "copeland",
+    "name": "Copeland",
+    "image": "copeland.png",
+    "width": 156,
+    "height": 48,
+    "href": "/contact",
+    "caption": null,
+    "dark": false
+  },
+  {
+    "id": "schneider",
+    "name": "Schneider Electric",
+    "image": "schneider.svg",
+    "width": 152,
+    "height": 53,
+    "href": "/contact",
+    "caption": null,
+    "dark": true
+  },
+  {
+    "id": "dse",
+    "name": "Deep Sea Electronics",
+    "image": "dse.png",
+    "width": 52,
+    "height": 52,
+    "href": "#ge-dse7320-mkii",
+    "caption": "Deep Sea Electronics",
+    "dark": false
+  }
+]

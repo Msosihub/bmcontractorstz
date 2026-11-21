@@ -358,5 +358,65 @@
     "source": "https://www.ewura.go.tz/publications/regulatory-tools",
     "reviewed": "2026-11-20",
     "published": true
+  },
+  {
+    "slug": "generator-quotation-checklist-tanzania",
+    "service": "generators",
+    "image": "/images/generator-engineering/engineering-hero.webp",
+    "alt": {
+      "en": "Generator system assessment beside closed equipment",
+      "sw": "Tathmini ya mfumo wa jenereta karibu na vifaa vilivyofungwa"
+    },
+    "category": {
+      "en": "GENERATOR ENGINEERING",
+      "sw": "UHANDISI WA JENERETA"
+    },
+    "title": {
+      "en": "Before you ask for a generator price, prepare these three things.",
+      "sw": "Kabla ya kuomba bei ya jenereta, andaa taarifa hizi tatu."
+    },
+    "summary": {
+      "en": "A practical quotation checklist for Tanzanian offices, hotels, institutions and facilities with an existing generator.",
+      "sw": "Mwongozo wa kuomba nukuu kwa ofisi, hoteli, taasisi na maeneo yenye jenereta Tanzania."
+    },
+    "sections": [
+      {
+        "title": {
+          "en": "1. List what must run together.",
+          "sw": "1. Orodhesha vifaa vinavyotumika pamoja."
+        },
+        "text": {
+          "en": "Include pumps, motors, refrigeration, lifts where relevant, lighting and IT loads. Note the phase and which circuits are essential. Starting demand and operating sequence can change the required size; a bill or a larger kVA label alone does not settle the design. Sensitive no-break loads may need UPS support.",
+          "sw": "Jumuisha pampu, mota, vifaa vya baridi, lifti inapohusika, taa na vifaa vya IT. Taja awamu na saketi muhimu. Mzigo wa kuanzisha na mpangilio wa matumizi vinaathiri ukubwa unaofaa; bili au kVA kubwa pekee haviainishi mfumo. Vifaa visivyovumilia kukatika vinaweza kuhitaji UPS."
+        }
+      },
+      {
+        "title": {
+          "en": "2. Explain the site and the duty.",
+          "sw": "2. Eleza eneo na namna ya matumizi."
+        },
+        "text": {
+          "en": "Share the location, available space, access, likely running hours, noise considerations and existing transfer panel. Ask for foundations, exhaust, ventilation, fuel arrangements, cables, protection and commissioning to be clearly included or excluded. Standby and prime ratings describe different duties.",
+          "sw": "Taja eneo, nafasi, ufikivu, saa za matumizi, kelele na paneli ya kubadili umeme iliyopo. Msingi, moshi, hewa, mafuta, kebo, kinga na majaribio ya mwisho viwekwe wazi kwenye nukuu. Standby na prime ni viwango vya matumizi tofauti."
+        }
+      },
+      {
+        "title": {
+          "en": "3. Bring the identifiers and maintenance history.",
+          "sw": "3. Andaa namba za vifaa na historia ya huduma."
+        },
+        "text": {
+          "en": "For an existing set, provide its make/model, engine serial number, controller reference, hours and fault symptoms. For a part, add the existing part number and quantity. Send documents or photographs through an agreed channel; the website form does not upload files. Ask what testing, handover records and maintenance support the quotation includes.",
+          "sw": "Kwa jenereta iliyopo, toa chapa/modeli, namba ya injini, kidhibiti, saa za kazi na dalili za hitilafu. Kwa kipuri, ongeza namba ya kipuri na idadi. Tuma nyaraka au picha kwa njia mtakayokubaliana; fomu ya tovuti haipokei mafaili. Uliza vipimo, nyaraka za makabidhiano na huduma zilizo kwenye nukuu."
+        }
+      }
+    ],
+    "cta": {
+      "en": "Tell BM whether you need equipment, a complete installation or maintenance. Share your site and essential loads to start a useful technical quotation.",
+      "sw": "Iambie BM kama unahitaji vifaa, ufungaji kamili au matengenezo. Taja eneo na vifaa muhimu kuanza nukuu yenye taarifa za kiufundi."
+    },
+    "source": "https://www.deepseaelectronics.com/genset/auto-mains-utility-failure-control-modules/dse7320-mkii",
+    "reviewed": "2026-11-21",
+    "published": true
   }
 ]
