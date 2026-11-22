@@ -14,6 +14,7 @@ import { Footer } from "@/components/site/Footer";
 import { siteConfig } from "@/data/site";
 import type { Language } from "@/lib/i18n/config";
 import { ExperienceMotion } from "./ExperienceMotion";
+import { HeroLight } from "./HeroLight";
 import { ManufacturerBelts } from "./ManufacturerBelts";
 import "./experience.css";
 
@@ -134,6 +135,7 @@ export default function Homepage({ lang }: { lang: Language }) {
               sizes="100vw"
             />
           </picture>
+          <HeroLight lang={lang} />
           <div className="bm-wrap bm-hero-inner">
             <p className="bm-label">
               <span className="bm-live-dot" />
