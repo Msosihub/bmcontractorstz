@@ -16,3 +16,6 @@
 .mn-feature .mn-kicker{color:#4b5f4c}
 
 .mn-availability{position:relative;z-index:2;padding:9px 4.5%;display:flex;flex-wrap:wrap;gap:8px 18px;background:#eee7d9;color:#4a513e;font-size:11px;line-height:1.6}.mn-availability a{color:#315a50;text-decoration:underline;text-underline-offset:3px}.mn-shell:has(.mn-availability) .mn-topbar{display:none}.premium-site .bm-home-shell .mn-shell:has(.mn-availability) .site-header.mn-header{top:100%}
+
+/* Keep the icon-only mobile toggle comfortable to tap. Native details exposes its state. */
+.mn-mobile-toggle{min-width:44px;justify-content:center}.mn-open-icon{font-size:22px;line-height:1}
