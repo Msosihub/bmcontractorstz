@@ -135,9 +135,11 @@ export default async function Page({ params, searchParams }: Props) {
               </a>
               {" · "}
               <a
-                href={a.service === "solar-panel-systems" ? `/services/solar-panel-systems?lang=${lang}#equipment` : a.service === "generators" ? `/services/generators?lang=${lang}#equipment` : `/catalogue/${a.service === "hikvision" ? "hikvision" : "zkteco"}?lang=${lang}`}
+                href={a.service === "power-backup" ? `/services/power-backup?lang=${lang}#equipment` : a.service === "solar-panel-systems" ? `/services/solar-panel-systems?lang=${lang}#equipment` : a.service === "generators" ? `/services/generators?lang=${lang}#equipment` : `/catalogue/${a.service === "hikvision" ? "hikvision" : "zkteco"}?lang=${lang}`}
               >
-                {a.service === "solar-panel-systems"
+                {a.service === "power-backup"
+                  ? sw ? "Vifaa vya UPS na backup" : "UPS & backup equipment"
+                  : a.service === "solar-panel-systems"
                   ? sw ? "Vifaa vya sola na mifumo mseto" : "Solar & hybrid equipment"
                   : a.service === "generators"
                   ? sw ? "Vifaa vya jenereta na vidhibiti" : "Generator equipment & controls"

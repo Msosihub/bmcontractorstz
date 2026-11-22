@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-22",
+  "ownerConfirmation": "Owner explicitly confirmed APC/Eaton sourcing and official image marketing permission in this chat. Existing Victron/Ritar imagery was approved for Solar and is reused without new dealership, inventory or pricing claims.",
+  "generated": {
+    "tool": "Built-in image_gen",
+    "original": "docs/commercial/power-backup-originals/workplace.png",
+    "publicVariants": [
+      "public/images/power-backup/workplace-640.webp",
+      "public/images/power-backup/workplace-960.webp",
+      "public/images/power-backup/workplace-1600.webp"
+    ],
+    "prompt": "Use case: photorealistic-natural. Asset type: premium engineering website hero photograph, landscape 3:2, also usable as a centered mobile crop. A contemporary Tanzanian commercial office: view through a clean glass service-room doorway into a tidy ventilated IT and power room, one closed unbranded graphite tower UPS and a separate closed matching battery cabinet on the floor beside an organised network rack, sensible clear access space, all power cables enclosed neatly, no exposed conductors. One adult East African facilities manager in ordinary professional clothing stands at the doorway looking at a tablet, no logos or uniforms. Warm natural daylight from the office corridor, textured warm stone, brushed metal and soft blue-green glass, elegant ivory and graphite palette. The equipment and manager clearly belong to the same realistic workplace, human scale and plausible installation. Architectural editorial photography, crisp restrained detail, premium but practical, no neon science-fiction visuals. Camera slightly wide, equipment and person grouped near center so mobile cropping retains useful story. No brand logos, no readable screen content, no watermarks, no text or labels. Fictional illustrative application, not a BM project, staff member or manufacturer-specific device.",
+    "usage": "Fictional unbranded workplace application; not a BM project, staff identity or specific manufacturer device."
+  },
+  "manufacturer": [
+    {
+      "brand": "APC by Schneider Electric",
+      "model": "SRV2KI-E",
+      "source": "https://www.se.com/sg/en/product/SRV2KI-E/",
+      "image": "https://download.se.com/files?default_image=DefaultProductImage.png&p_Doc_Ref=SPD_HEPN-B75K8T_FL_V&p_File_Type=rendition_369_jpg",
+      "original": "docs/commercial/power-backup-originals/apc.original",
+      "asset": "public/images/power-backup/apc.webp"
+    },
+    {
+      "brand": "Eaton",
+      "model": "9SX2000I",
+      "source": "https://www.eaton.com/in/en-us/skuPage.9SX2000I.html",
+      "image": "https://dynamicmedia.eaton.com/is/image/eaton/9SX2000I_R?wid=1000&hei=1000&fmt=png-alpha",
+      "original": "docs/commercial/power-backup-originals/eaton.original",
+      "asset": "public/images/power-backup/eaton.webp",
+      "note": "Manufacturer labels photo representative; quoted exact regional revision/accessories still verified."
+    }
+  ],
+  "reused": [
+    "public/images/solar-engineering/victron.webp",
+    "public/images/solar-engineering/ritar.webp",
+    "public/images/luxury-concepts/cctv-960.webp",
+    "public/images/solar-engineering/off-grid-cctv.webp",
+    "public/images/home/network-practical.webp",
+    "public/images/electrical-contracting/industrial-hero.webp"
+  ],
+  "hashes": [
+    {
+      "path": "docs/commercial/power-backup-originals/workplace.png",
+      "bytes": 2368776,
+      "sha256": "d44d707fddf6477b95c2a801bb86ae2a6f25a64a59dd708ce61731e6abea41d2"
+    },
+    {
+      "path": "public/images/power-backup/workplace-640.webp",
+      "bytes": 36898,
+      "sha256": "36296be07297c726519ded3b568060ae6d6b979f3016e96c6af12a6bcd212d2e"
+    },
+    {
+      "path": "public/images/power-backup/workplace-960.webp",
+      "bytes": 71444,
+      "sha256": "137812a6da487c95cfc1f72ba03ddee64c94ffb4a671e57178ceefed5baca044"
+    },
+    {
+      "path": "public/images/power-backup/workplace-1600.webp",
+      "bytes": 146878,
+      "sha256": "8274a015062783d3fc35e1dce2b0f5ad7df58bc288ec037360b2c38b6ef795d8"
+    },
+    {
+      "path": "docs/commercial/power-backup-originals/apc.original",
+      "bytes": 17954,
+      "sha256": "f6abae8320355a991ea8bfd9500199e7d3c1d5b41f91f49f69a892866de0b63d"
+    },
+    {
+      "path": "public/images/power-backup/apc.webp",
+      "bytes": 6960,
+      "sha256": "022a66fb4306ed2de938a5e1d4cece65c0af54fe635634c7018f593fa41f123c"
+    },
+    {
+      "path": "docs/commercial/power-backup-originals/eaton.original",
+      "bytes": 625316,
+      "sha256": "851331c89d914d03a6916a8a4093a0e54f4537b0b4cb2e0adca42018d111872e"
+    },
+    {
+      "path": "public/images/power-backup/eaton.webp",
+      "bytes": 36538,
+      "sha256": "928df5ecd988cf0e2283696ca9344fd9c1912a6f51c97c5f6fd7b1e6536ca0ad"
+    },
+    {
+      "path": "public/images/solar-engineering/victron.webp",
+      "bytes": 29134,
+      "sha256": "c8f43c86869d4f62f616c8c7590cd3ff3c3cbdb297f7b3f50e6a84d0f1fcc05d"
+    },
+    {
+      "path": "public/images/solar-engineering/ritar.webp",
+      "bytes": 34784,
+      "sha256": "cd3ce329188b48e6bfcf09aafc6de3085bc65cf4b27d115163a51b8fa19342d8"
+    },
+    {
+      "path": "public/images/luxury-concepts/cctv-960.webp",
+      "bytes": 64658,
+      "sha256": "8a914e24e7ee98254a9d99858ae0d4708ffeb612a9a64a991666eec824fe384a"
+    },
+    {
+      "path": "public/images/solar-engineering/off-grid-cctv.webp",
+      "bytes": 182712,
+      "sha256": "da5361691e00bf86a50861cc67b3fa653836aa0486d24f77a7cf3b790593eda7"
+    },
+    {
+      "path": "public/images/home/network-practical.webp",
+      "bytes": 139932,
+      "sha256": "fb1aff04f74add8057ab89d3432b0fddc3d47251ca3c5109adb0e22ba39408e9"
+    },
+    {
+      "path": "public/images/electrical-contracting/industrial-hero.webp",
+      "bytes": 168442,
+      "sha256": "2332dc812b442e2fb61f6e9ce2016a3f107f3f7e16857bd7276bc7e6647a7e97"
+    }
+  ]
+}

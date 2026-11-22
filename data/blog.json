@@ -478,5 +478,65 @@
     "source": "https://www.victronenergy.com/media/pg/Energy_Storage_System/en/",
     "reviewed": "2026-11-21",
     "published": true
+  },
+  {
+    "slug": "ups-backup-assessment-tanzania",
+    "service": "power-backup",
+    "image": "/images/power-backup/workplace-960.webp",
+    "alt": {
+      "en": "A workplace power and network room with a facilities assessment",
+      "sw": "Chumba cha umeme na mtandao cha ofisi kinachokaguliwa"
+    },
+    "category": {
+      "en": "POWER BACKUP",
+      "sw": "UMEME WA AKIBA"
+    },
+    "title": {
+      "en": "Before buying a UPS: what needs to stay on?",
+      "sw": "Kabla ya kununua UPS: vifaa vipi viendelee kufanya kazi?"
+    },
+    "summary": {
+      "en": "A practical starting point for Tanzanian offices, security systems and facilities: loads, time and the right continuity approach.",
+      "sw": "Mwanzo wa vitendo kwa ofisi, mifumo ya usalama na majengo Tanzania: vifaa, muda na mfumo wa backup unaofaa."
+    },
+    "sections": [
+      {
+        "title": {
+          "en": "1. List the complete working chain.",
+          "sw": "1. Orodhesha mfumo mzima wa kazi."
+        },
+        "text": {
+          "en": "For CCTV, include recording disks, PoE switches and the router alongside cameras. For an office, identify computers, business phones, servers and storage that matter most. Bring measured watts or equipment labels. VA is capacity, not a promise of hours.",
+          "sw": "Kwa CCTV, jumuisha diski za kurekodi, swichi za PoE na router pamoja na kamera. Ofisini, tambua kompyuta, simu, seva na storage zilizo muhimu. Andaa watts zilizopimwa au lebo za vifaa. VA ni uwezo, si ahadi ya saa za backup."
+        }
+      },
+      {
+        "title": {
+          "en": "2. Decide what interruption is acceptable.",
+          "sw": "2. Bainisha kukatika kunakovumiliwa."
+        },
+        "text": {
+          "en": "Time to save work is different from continuous recording or a critical server duty. Line-interactive, online UPS and inverter/chargers have different operating behaviour. A generator or ATS does not automatically bridge its own starting and transfer interval. Choose the complete approach before adding batteries.",
+          "sw": "Muda wa kuhifadhi kazi ni tofauti na kurekodi mfululizo au kazi muhimu za seva. Line-interactive, online UPS na inverter/charger zina tabia tofauti. Jenereta au ATS yenyewe haiondoi muda wa kuwasha na transfer. Chagua mpangilio mzima kabla ya kuongeza betri."
+        }
+      },
+      {
+        "title": {
+          "en": "3. Bring the existing system into the conversation.",
+          "sw": "3. Zungumzia pia mfumo uliopo."
+        },
+        "text": {
+          "en": "Send the exact UPS, battery and generator models, desired duration, location and whether you want supply, installation or maintenance. For remote security, add night loads, recording and connectivity. Battery compatibility and health need assessment; mixing unknown batteries is not a shortcut. Ask BM for a defined scope, commissioning and care.",
+          "sw": "Tuma modeli halisi za UPS, betri na jenereta, muda unaohitaji, eneo na kama unataka vifaa, ufungaji au matengenezo. Kwa usalama wa mbali, ongeza matumizi ya usiku, kurekodi na mtandao. Uoanifu na hali ya betri vinahitaji tathmini; kuchanganya betri zisizojulikana si njia ya mkato. Omba BM iainishe wigo, majaribio na huduma ya baadaye."
+        }
+      }
+    ],
+    "cta": {
+      "en": "Tell BM which equipment matters, your location and required backup time. Request a site assessment or an itemised quotation.",
+      "sw": "Ieleze BM vifaa muhimu, eneo na muda wa backup unaohitaji. Omba tathmini ya eneo au nukuu yenye maelezo."
+    },
+    "source": "https://www.eaton.com/us/en-us/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/types-of-ups-systems.html",
+    "reviewed": "2026-11-22",
+    "published": true
   }
 ]
