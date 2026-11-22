@@ -1,29 +1,33 @@
-# Focused navigation corrections — 22 November 2026
+# Final focused navigation corrections — 22 November 2026
 
-The previous hosted candidate remains preserved. This revision does not redesign the navigation or alter publication, authentication, database, provider or deployment configuration.
+No redesign, new routes/products or integration. Existing Production and the previous protected Preview are preserved; nothing in this revision has been pushed or deployed.
 
 ## Corrections
 
-- Only the shared mega-menu feature photograph uses Next Image `unoptimized`. Existing local WebPs are served directly, retaining dimensions, alt text, lazy loading and responsive CSS. Global optimization and the official logo remain unchanged. Original file sizes are 36,898, 168,442 and 64,658 bytes.
-- The mobile toggle is icon-only in EN/SW with accessible labels, native details state, a 44 px minimum target and a legible opening icon. Back, Close and quotation behavior are preserved.
-- No products, routes, catalogue records, packages, schema or services were added.
+- Only the shared mega-menu photograph uses Next Image `unoptimized`. Existing local WebPs are served directly; width/height, alt text, lazy loading and responsive CSS remain. Global optimization and official logo behavior are unchanged. Original sizes: 36,898 / 168,442 / 64,658 bytes.
+- Mobile is icon-only in EN/SW, retaining accessible labels and native details expanded/collapsed state. A 44 px minimum target and legible opening icon preserve touch usability. Back, Close and quotation access remain.
+- A real post-idle connection failure revealed a narrower reliability bug: pg can throw an uncoded `Connection terminated due to connection timeout`, with a `Connection terminated unexpectedly` cause. The old code-only classifier let it escape and return HTTP 500. The new bounded classifier handles only known transport codes and these exact observed messages, including wrapped causes. Authentication, permission, database-identity and unrelated SQL failures remain hard failures. No raw driver message is logged; no automatic query/write retry was added.
+- Fallback continues to omit all service-dependent destinations, preserving a visible notice and independent Services, Equipment, Company, Contact and quotation access. Startup identity guards stay outside this boundary and are unchanged.
 
-## Verified locally
+## Final local verification
 
-- Complete guarded production-mode build and TypeScript passed against the restricted synthetic database; 276 automated tests passed. Targeted ESLint passed.
-- Actual Next development application: 12 EN/SW layouts (1920, 1440, 820, 390, 375, 320 px), all five groups, accessibility, all three directly served photographs, native no-JavaScript navigation and reduced motion passed. Eight no-JavaScript/reduced-motion combinations passed. These are real Next application checks, not a static visual harness.
-- Six additional long mobile menu cases passed, including sticky Back, Close and quotation access in Kiswahili.
-- 84 menu link/anchor cases and 142 EN/SW manufacturer model routes passed with correct single breadcrumbs. Existing-service checks encountered a 30-second client read timeout on PA; the remaining read-only checks completed with a finite 45-second client deadline. No application/database budget changed.
-- EN/SW contact and survey context checks passed with zero submissions. No fixture cleanup is required because no records were created.
+- Final guarded production-mode build and TypeScript passed; 278 automated tests passed; targeted ESLint passed. An earlier final-build attempt stopped correctly at the read-only identity preflight and remains recorded.
+- The corrected standard production-mode local server subsequently passed guarded startup, first reads and eight bounded requests with at most three concurrent requests (maximum 3,534 ms in that sample).
+- Actual production-mode Next application: 12 EN/SW layouts at 1920, 1440, 820, 390, 375 and 320 px; all five groups, direct loading of all three menu photos, keyboard/touch/focus behavior and automated navigation accessibility passed. Eight native no-JavaScript/reduced-motion combinations passed.
+- Six production-mode long mobile menu cases passed, including Kiswahili sticky Back, Close and quotation reachability. Desktop/mobile recordings and screenshots come from this actual app, not a static harness.
+- 84 menu link/anchor cases and 142 EN/SW model routes passed in the actual development app with correct single breadcrumbs. Existing-service smoke checks completed across both languages after one PA client read exceeded 30 seconds; remaining reads used a finite 45-second test-client deadline. Database/application budgets did not change.
+- Four EN/SW contact and survey context cases passed, with zero submissions. No records were created or cleanup required.
 
-## Reliability limits must remain explicit
+## Reliability limits
 
-An actual ETIMEDOUT on the navigation publication query returned HTTP 200 with a visible bilingual notice and independent Services, Equipment, Company, Contact and quotation access. Service-dependent header links were omitted. No write or automatic query retry occurred. Later bounded reads, including groups of three concurrent requests, passed.
+An actual publication-query ETIMEDOUT produced HTTP 200 with safe fallback. A later uncoded pg timeout produced HTTP 500, was traced to the navigation boundary, and is covered by the focused correction and regression tests above. Authentication/permission and unknown failures still throw; subsequent requests may recover without cached invented publication status.
 
-The guarded build and standalone compiled instrumentation succeeded, but several normal local production-server starts failed their enforced database startup check. Non-disclosing local driver diagnostics observed connection and identity-query timeouts. One sample resolved DNS in 5 ms, established TCP in 348 ms and TLS in 721 ms, then took 10,076 ms to finish connection/authentication and timed out the identity query after 10,002 ms. This is separate from the old hosted test-driver ECONNRESET and cannot be honestly declared fixed or attributed to DNS alone.
+Earlier local production starts failed the enforced database guard. Non-disclosing timings captured connection/authentication and identity-query timeouts, including a sample where DNS/TCP/TLS completed promptly before later stages stalled. Direct identity checks and the compiled instrumentation hook also succeeded independently. The latest complete build and standard production-server checks passed, but this does not establish a permanent transport fix.
 
-The full browser matrix therefore ran in guarded Next development mode, not a successful standard production server. No startup guard, connection budget, database setting or credential was changed. Diagnostic preloads and runners live outside the source/runtime archive. The final quiet-window evidence and any existing-hosted-Preview control are in the external review output, not claimed here as a permanent reliability fix.
+An independent control against the unchanged existing hosted Preview found Node fetch timing out before connection while Chrome returned HTTP 200. That establishes a test-driver/transport component for that control; it does not explain every prior reset or erase the separate reproduced navigation defect.
 
-## Boundary
+Final quiet-window results and detailed external evidence are recorded outside this runtime archive. Hosted acceptance must repeat guarded startup, first/post-idle requests and bounded concurrency. Actual Neon suspension is not assumed. No database/compute/network/credential setting, schema, provider or timeout was changed. Diagnostic preloads are not included in the source/runtime package.
 
-The focused visual fixes are ready for owner review and a separately authorized corrected protected Preview. Production remains NO-GO until hosted acceptance confirms successful guarded startup, direct image loading, post-idle behavior and functional regressions. Any Preview must stop on a guard/build failure without retrying or bypassing it. No push, merge, deployment or promotion is authorized by this local preparation.
+## Approval boundary
+
+The local corrections are ready for a separately authorized protected Preview, with the above transport uncertainty explicitly retained. Production remains on HOLD pending hosted acceptance and separate release approval. Any build/startup/identity failure must stop the attempt; do not retry deployment or bypass guards. No push, merge, deployment or promotion is authorized by this preparation.

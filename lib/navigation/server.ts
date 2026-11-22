@@ -2,7 +2,7 @@ import { cache } from "react";
 import { prisma } from "@/lib/prisma";
 import { destinations } from "./registry";
 import { resolveNavigation } from "./resolve";
-const transientCodes=new Set(['P1001','P1002','P1008','P1017','ECONNRESET','ETIMEDOUT']);
+import { isPublicationTransportFailure } from "./publication-failure";
 /** Publication errors never resurrect service links. Identity guards remain outside this boundary. */
 export const navigationSnapshot = cache(async () => {
   try {
@@ -10,9 +10,8 @@ export const navigationSnapshot = cache(async () => {
     const unpublished=new Set(rows.map(r=>r.slug));
     return {unpublished,groups:resolveNavigation(unpublished),degraded:false};
   } catch(error) {
-    const code=error&&typeof error==='object'&&'code' in error?String(error.code):'';
-    if(!transientCodes.has(code))throw error;
-    console.warn('[navigation] Publication read unavailable; all service-dependent destinations omitted.',{code});
+    if(!isPublicationTransportFailure(error))throw error;
+    console.warn('[navigation] Publication read unavailable; all service-dependent destinations omitted.',{category:'transport'});
     const unpublished=new Set(destinations.flatMap(d=>d.serviceSlugs));
     return {unpublished,groups:resolveNavigation(unpublished),degraded:true};
   }
