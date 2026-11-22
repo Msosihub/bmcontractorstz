@@ -1,3 +1,4 @@
+import { Breadcrumbs, ContextualNavigation } from "@/components/navigation/Breadcrumbs";
 import { RecordImage } from "@/components/premium/RecordImage";
 import { specificationEntries } from "@/lib/product-specifications.mjs";
 import { Header } from "@/components/site/Header";
@@ -88,6 +89,7 @@ export default async function Page({
     <>
       <Header lang={lang} />
       <main id="main" className="premium-main">
+        <Breadcrumbs id="equipment" lang={lang}/>
         <section className="catalogue-intro section">
           <p className="eyebrow">
             {sw ? "VIFAA / REJAREJA NA JUMLA" : "EQUIPMENT / RETAIL & TRADE"}
@@ -97,6 +99,7 @@ export default async function Page({
               ? "Chagua kwa mahitaji.\nThibitisha kwa vipimo."
               : "Specified with care.\nSelected for your site."}
           </h1>
+          <ContextualNavigation ids={['catalogue-hikvision','catalogue-zkteco','catalogue-centurion']} lang={lang}/>
           <p className="lead">
             {sw
               ? "Modeli na vipimo vina maana vinapolingana na matumizi yako. Ulizia upatikanaji, dhamana na bei kabla ya kuagiza."

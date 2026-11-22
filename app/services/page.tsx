@@ -1,3 +1,4 @@
+import { Breadcrumbs } from "@/components/navigation/Breadcrumbs";
 import Image from "next/image";
 import { TrustBelt } from "@/components/premium/TrustBelt";
 import { Header } from "@/components/site/Header";
@@ -22,6 +23,7 @@ export default async function Page({
     <>
       <Header lang={lang} />
       <main id="main" className="premium-main">
+        <Breadcrumbs id="services" lang={lang}/>
         <section className="service-hero">
           <div>
             <p className="eyebrow">

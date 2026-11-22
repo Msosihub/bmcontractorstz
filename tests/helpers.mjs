@@ -5,6 +5,7 @@ import path from "node:path";
 let index = 0;
 export async function bundle(file, extra = {}) {
  const mocks = {
+  "@/components/navigation/Breadcrumbs": "export function Breadcrumbs(){return null};export function ContextualNavigation(){return null}",
   "@/lib/prisma": "export const prisma = globalThis.__bmTest.prisma;",
   "next/headers": "export async function cookies(){ return {get(){return globalThis.__bmTest.token ? {value:globalThis.__bmTest.token}:undefined},set(){},delete(){}}; }",
   "next/cache": "export function revalidatePath(){}",

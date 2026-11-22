@@ -1,3 +1,4 @@
+import { Breadcrumbs } from "@/components/navigation/Breadcrumbs";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
@@ -54,18 +55,7 @@ export default async function Page({ params, searchParams }: Props) {
             __html: JSON.stringify(json).replace(/</g, "\\u003c"),
           }}
         />
-        <nav
-          className="ga-section ga-breadcrumb"
-          aria-label={sw ? "Njia ya ukurasa" : "Breadcrumb"}
-        >
-          <a href={`/services/gate-motors?lang=${lang}`}>
-            {sw ? "Milango ya kiotomatiki" : "Gate automation"}
-          </a>
-          <span>/</span>
-          <a href={`/catalogue/centurion?lang=${lang}`}>CENTURION</a>
-          <span>/</span>
-          {p.name}
-        </nav>
+        <Breadcrumbs id="catalogue-centurion" lang={lang} leaf={{title:p.name,href:`/catalogue/centurion/${slug}`}}/>
         <section className="ga-section ga-detail">
           <Gallery p={p} lang={lang} />
           <div>

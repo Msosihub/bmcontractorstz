@@ -1,0 +1,1238 @@
+{
+  "registrySHA256": "9a74d462124a248927e3a1bc6dfebafa0ce8f0f25c3121c59a7a55644960cacf",
+  "destinations": [
+    {
+      "id": "home",
+      "title": {
+        "en": "Home",
+        "sw": "Mwanzo"
+      },
+      "href": "/",
+      "status": "published",
+      "serviceSlugs": [],
+      "equipmentCategories": [],
+      "visibility": "public",
+      "relatedServices": []
+    },
+    {
+      "id": "services",
+      "title": {
+        "en": "Services",
+        "sw": "Huduma"
+      },
+      "href": "/services",
+      "parentId": "home",
+      "status": "published",
+      "serviceSlugs": [],
+      "equipmentCategories": [],
+      "visibility": "public",
+      "relatedServices": []
+    },
+    {
+      "id": "equipment",
+      "title": {
+        "en": "Equipment",
+        "sw": "Vifaa"
+      },
+      "href": "/products",
+      "parentId": "home",
+      "status": "published",
+      "serviceSlugs": [],
+      "equipmentCategories": [],
+      "visibility": "public",
+      "relatedServices": []
+    },
+    {
+      "id": "about",
+      "title": {
+        "en": "About BM",
+        "sw": "Kuhusu BM"
+      },
+      "href": "/about",
+      "parentId": "home",
+      "status": "published",
+      "serviceSlugs": [],
+      "equipmentCategories": [],
+      "visibility": "public",
+      "relatedServices": []
+    },
+    {
+      "id": "projects",
+      "title": {
+        "en": "Projects & installations",
+        "sw": "Miradi na mifumo"
+      },
+      "href": "/projects",
+      "parentId": "home",
+      "status": "published",
+      "serviceSlugs": [],
+      "equipmentCategories": [],
+      "visibility": "public",
+      "relatedServices": []
+    },
+    {
+      "id": "journal",
+      "title": {
+        "en": "Articles & guides",
+        "sw": "Makala na miongozo"
+      },
+      "href": "/blog",
+      "parentId": "home",
+      "status": "published",
+      "serviceSlugs": [],
+      "equipmentCategories": [],
+      "visibility": "public",
+      "relatedServices": []
+    },
+    {
+      "id": "support",
+      "title": {
+        "en": "Technical support",
+        "sw": "Msaada wa kiufundi"
+      },
+      "href": "/support",
+      "parentId": "home",
+      "status": "published",
+      "serviceSlugs": [],
+      "equipmentCategories": [],
+      "visibility": "public",
+      "relatedServices": []
+    },
+    {
+      "id": "contact",
+      "title": {
+        "en": "Offices & contact",
+        "sw": "Ofisi na mawasiliano"
+      },
+      "href": "/contact",
+      "parentId": "home",
+      "status": "published",
+      "serviceSlugs": [],
+      "equipmentCategories": [],
+      "visibility": "public",
+      "relatedServices": []
+    },
+    {
+      "id": "quotation",
+      "title": {
+        "en": "Request a quotation",
+        "sw": "Omba nukuu"
+      },
+      "href": "/contact?subject=Project%20quotation",
+      "parentId": "home",
+      "status": "published",
+      "serviceSlugs": [],
+      "equipmentCategories": [],
+      "visibility": "public",
+      "relatedServices": []
+    },
+    {
+      "id": "survey",
+      "title": {
+        "en": "Request a site survey",
+        "sw": "Omba ukaguzi wa eneo"
+      },
+      "href": "/request-site-survey",
+      "parentId": "home",
+      "status": "published",
+      "serviceSlugs": [],
+      "equipmentCategories": [],
+      "visibility": "public",
+      "relatedServices": []
+    },
+    {
+      "id": "cctv",
+      "title": {
+        "en": "CCTV surveillance",
+        "sw": "Kamera za CCTV"
+      },
+      "href": "/services/cctv",
+      "parentId": "services",
+      "status": "published",
+      "serviceSlugs": [
+        "cctv"
+      ],
+      "equipmentCategories": [
+        "cctv",
+        "recorders",
+        "poe"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "electric-fence",
+        "gate-motors",
+        "networking"
+      ]
+    },
+    {
+      "id": "electric-fence",
+      "title": {
+        "en": "Electric fencing",
+        "sw": "Uzio wa umeme"
+      },
+      "href": "/services/electric-fence",
+      "parentId": "services",
+      "status": "published",
+      "serviceSlugs": [
+        "electric-fence"
+      ],
+      "equipmentCategories": [
+        "energizers",
+        "fence-components"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "cctv",
+        "gate-motors",
+        "maintenance-support"
+      ]
+    },
+    {
+      "id": "gate-motors",
+      "title": {
+        "en": "Gate automation",
+        "sw": "Mageti ya kiotomatiki"
+      },
+      "href": "/services/gate-motors",
+      "parentId": "services",
+      "status": "published",
+      "serviceSlugs": [
+        "gate-motors"
+      ],
+      "equipmentCategories": [
+        "gate-motors",
+        "automation"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "electric-fence",
+        "video-intercom",
+        "access-control"
+      ]
+    },
+    {
+      "id": "access-control",
+      "title": {
+        "en": "Access & attendance",
+        "sw": "Udhibiti wa kuingia na mahudhurio"
+      },
+      "href": "/services/access-control",
+      "parentId": "services",
+      "status": "published",
+      "serviceSlugs": [
+        "access-control"
+      ],
+      "equipmentCategories": [
+        "access-control",
+        "attendance",
+        "smart-locks"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "video-intercom",
+        "networking",
+        "power-backup"
+      ]
+    },
+    {
+      "id": "fire-alarm-systems",
+      "title": {
+        "en": "Fire detection & alarms",
+        "sw": "Utambuzi wa moto na alarm"
+      },
+      "href": "/services/fire-alarm-systems",
+      "parentId": "services",
+      "status": "published",
+      "serviceSlugs": [
+        "fire-alarm-systems"
+      ],
+      "equipmentCategories": [
+        "fire-detection",
+        "alarms"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "electrical-contracting",
+        "access-control",
+        "maintenance-support"
+      ]
+    },
+    {
+      "id": "video-intercom",
+      "title": {
+        "en": "Video intercom",
+        "sw": "Intercom za video"
+      },
+      "href": "/services/video-intercom",
+      "parentId": "services",
+      "status": "published",
+      "serviceSlugs": [
+        "video-intercom"
+      ],
+      "equipmentCategories": [
+        "intercom"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "gate-motors",
+        "access-control",
+        "networking"
+      ]
+    },
+    {
+      "id": "electrical-contracting",
+      "title": {
+        "en": "Electrical engineering",
+        "sw": "Uhandisi wa umeme"
+      },
+      "href": "/services/electrical-contracting",
+      "parentId": "services",
+      "status": "published",
+      "serviceSlugs": [
+        "electrical-contracting"
+      ],
+      "equipmentCategories": [
+        "switchgear",
+        "distribution",
+        "cabling"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "generators",
+        "power-backup",
+        "solar-panel-systems"
+      ]
+    },
+    {
+      "id": "generators",
+      "title": {
+        "en": "Generator engineering",
+        "sw": "Uhandisi wa jenereta"
+      },
+      "href": "/services/generators",
+      "parentId": "services",
+      "status": "published",
+      "serviceSlugs": [
+        "generators"
+      ],
+      "equipmentCategories": [
+        "generators",
+        "controllers",
+        "ats-amf"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "electrical-contracting",
+        "power-backup",
+        "maintenance-support"
+      ]
+    },
+    {
+      "id": "solar-panel-systems",
+      "title": {
+        "en": "Solar engineering",
+        "sw": "Uhandisi wa sola"
+      },
+      "href": "/services/solar-panel-systems",
+      "parentId": "services",
+      "status": "published",
+      "serviceSlugs": [
+        "solar-panel-systems"
+      ],
+      "equipmentCategories": [
+        "pv",
+        "inverters",
+        "batteries",
+        "pumping"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "electrical-contracting",
+        "power-backup",
+        "solar-street-lights"
+      ]
+    },
+    {
+      "id": "power-backup",
+      "title": {
+        "en": "Power Backup & Critical Power",
+        "sw": "Umeme wa akiba na mifumo muhimu"
+      },
+      "href": "/services/power-backup",
+      "parentId": "services",
+      "status": "published",
+      "serviceSlugs": [
+        "power-backup"
+      ],
+      "equipmentCategories": [
+        "ups",
+        "batteries",
+        "inverters",
+        "protected-distribution"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "generators",
+        "electrical-contracting",
+        "networking"
+      ]
+    },
+    {
+      "id": "solar-street-lights",
+      "title": {
+        "en": "Solar street lighting",
+        "sw": "Taa za barabarani za sola"
+      },
+      "href": "/services/solar-street-lights",
+      "parentId": "services",
+      "status": "published",
+      "serviceSlugs": [
+        "solar-street-lights"
+      ],
+      "equipmentCategories": [
+        "solar-lighting"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "solar-panel-systems",
+        "electrical-contracting",
+        "maintenance-support"
+      ]
+    },
+    {
+      "id": "networking",
+      "title": {
+        "en": "Networks & structured cabling",
+        "sw": "Mitandao na ufungaji wa nyaya"
+      },
+      "href": "/services/networking",
+      "parentId": "services",
+      "status": "published",
+      "serviceSlugs": [
+        "networking"
+      ],
+      "equipmentCategories": [
+        "networking",
+        "fibre",
+        "racks"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "telephone-systems",
+        "cctv",
+        "power-backup"
+      ]
+    },
+    {
+      "id": "telephone-systems",
+      "title": {
+        "en": "Business telephony & IP-PBX",
+        "sw": "Simu za biashara na IP-PBX"
+      },
+      "href": "/services/telephone-systems",
+      "parentId": "services",
+      "status": "published",
+      "serviceSlugs": [
+        "telephone-systems"
+      ],
+      "equipmentCategories": [
+        "ip-pbx",
+        "telephones"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "networking",
+        "power-backup",
+        "video-intercom"
+      ]
+    },
+    {
+      "id": "pa-sound-systems",
+      "title": {
+        "en": "PA & Sound Systems",
+        "sw": "PA na mifumo ya sauti"
+      },
+      "href": "/services/pa-sound-systems",
+      "parentId": "services",
+      "status": "published",
+      "serviceSlugs": [
+        "pa-sound-systems"
+      ],
+      "equipmentCategories": [
+        "amplifiers",
+        "speakers"
+      ],
+      "visibility": "public",
+      "relatedServices": []
+    },
+    {
+      "id": "air-conditioners",
+      "title": {
+        "en": "Air conditioning & HVAC",
+        "sw": "Viyoyozi na HVAC"
+      },
+      "href": "/services/air-conditioners",
+      "parentId": "services",
+      "status": "published",
+      "serviceSlugs": [
+        "air-conditioners"
+      ],
+      "equipmentCategories": [
+        "air-conditioning"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "electrical-contracting",
+        "maintenance-support",
+        "institutional-procurement"
+      ]
+    },
+    {
+      "id": "maintenance-support",
+      "title": {
+        "en": "Maintenance & technical support",
+        "sw": "Matengenezo na msaada wa kiufundi"
+      },
+      "href": "/services/maintenance-support",
+      "parentId": "services",
+      "status": "published",
+      "serviceSlugs": [
+        "maintenance-support"
+      ],
+      "equipmentCategories": [
+        "assessment",
+        "spares"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "cctv",
+        "gate-motors",
+        "generators"
+      ]
+    },
+    {
+      "id": "institutional-procurement",
+      "title": {
+        "en": "Institutional procurement",
+        "sw": "Ugavi kwa taasisi"
+      },
+      "href": "/services/institutional-procurement",
+      "parentId": "services",
+      "status": "published",
+      "serviceSlugs": [
+        "institutional-procurement"
+      ],
+      "equipmentCategories": [
+        "equipment",
+        "materials"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "electrical-contracting",
+        "generators",
+        "networking"
+      ]
+    },
+    {
+      "id": "hikvision",
+      "title": {
+        "en": "Hikvision building security",
+        "sw": "Ulinzi wa majengo wa Hikvision"
+      },
+      "href": "/services/hikvision",
+      "parentId": "services",
+      "status": "published",
+      "serviceSlugs": [
+        "hikvision"
+      ],
+      "equipmentCategories": [
+        "cctv",
+        "access-control",
+        "intercom",
+        "alarms"
+      ],
+      "visibility": "public",
+      "relatedServices": []
+    },
+    {
+      "id": "electrical-commercial",
+      "title": {
+        "en": "Commercial electrical contracting",
+        "sw": "Ukandarasi wa umeme wa biashara"
+      },
+      "href": "/services/electrical-contracting#commercial",
+      "parentId": "electrical-contracting",
+      "status": "published",
+      "serviceSlugs": [
+        "electrical-contracting"
+      ],
+      "equipmentCategories": [
+        "switchgear",
+        "distribution",
+        "cabling"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "generators",
+        "power-backup",
+        "solar-panel-systems"
+      ]
+    },
+    {
+      "id": "electrical-industrial",
+      "title": {
+        "en": "Industrial electrical systems",
+        "sw": "Mifumo ya umeme viwandani"
+      },
+      "href": "/services/electrical-contracting#industrial",
+      "parentId": "electrical-contracting",
+      "status": "published",
+      "serviceSlugs": [
+        "electrical-contracting"
+      ],
+      "equipmentCategories": [
+        "switchgear",
+        "distribution",
+        "cabling"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "generators",
+        "power-backup",
+        "solar-panel-systems"
+      ]
+    },
+    {
+      "id": "electrical-panels",
+      "title": {
+        "en": "Switchgear & distribution",
+        "sw": "Switchgear na usambazaji"
+      },
+      "href": "/services/electrical-contracting#panels",
+      "parentId": "electrical-contracting",
+      "status": "published",
+      "serviceSlugs": [
+        "electrical-contracting"
+      ],
+      "equipmentCategories": [
+        "switchgear",
+        "distribution",
+        "cabling"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "generators",
+        "power-backup",
+        "solar-panel-systems"
+      ]
+    },
+    {
+      "id": "electrical-infrastructure",
+      "title": {
+        "en": "Power infrastructure",
+        "sw": "Miundombinu ya umeme"
+      },
+      "href": "/services/electrical-contracting#infrastructure",
+      "parentId": "electrical-contracting",
+      "status": "published",
+      "serviceSlugs": [
+        "electrical-contracting"
+      ],
+      "equipmentCategories": [
+        "switchgear",
+        "distribution",
+        "cabling"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "generators",
+        "power-backup",
+        "solar-panel-systems"
+      ]
+    },
+    {
+      "id": "electrical-maintenance",
+      "title": {
+        "en": "Electrical maintenance",
+        "sw": "Matengenezo ya umeme"
+      },
+      "href": "/services/electrical-contracting#reliability",
+      "parentId": "electrical-contracting",
+      "status": "published",
+      "serviceSlugs": [
+        "electrical-contracting"
+      ],
+      "equipmentCategories": [
+        "switchgear",
+        "distribution",
+        "cabling"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "generators",
+        "power-backup",
+        "solar-panel-systems"
+      ]
+    },
+    {
+      "id": "backup-security",
+      "title": {
+        "en": "Keep CCTV working through outages",
+        "sw": "Endeleza CCTV umeme unapokatika"
+      },
+      "href": "/services/power-backup#security",
+      "parentId": "power-backup",
+      "status": "published",
+      "serviceSlugs": [
+        "power-backup"
+      ],
+      "equipmentCategories": [
+        "ups",
+        "batteries",
+        "inverters",
+        "protected-distribution"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "generators",
+        "electrical-contracting",
+        "networking"
+      ]
+    },
+    {
+      "id": "backup-office",
+      "title": {
+        "en": "Protect offices & server rooms",
+        "sw": "Linda umeme wa ofisi na seva"
+      },
+      "href": "/services/power-backup#office",
+      "parentId": "power-backup",
+      "status": "published",
+      "serviceSlugs": [
+        "power-backup"
+      ],
+      "equipmentCategories": [
+        "ups",
+        "batteries",
+        "inverters",
+        "protected-distribution"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "generators",
+        "electrical-contracting",
+        "networking"
+      ]
+    },
+    {
+      "id": "backup-remote",
+      "title": {
+        "en": "Power a remote security site",
+        "sw": "Umeme wa ulinzi maeneo ya mbali"
+      },
+      "href": "/services/power-backup#off-grid",
+      "parentId": "power-backup",
+      "status": "published",
+      "serviceSlugs": [
+        "power-backup"
+      ],
+      "equipmentCategories": [
+        "ups",
+        "batteries",
+        "inverters",
+        "protected-distribution"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "generators",
+        "electrical-contracting",
+        "networking"
+      ]
+    },
+    {
+      "id": "catalogue-hikvision",
+      "title": {
+        "en": "Hikvision",
+        "sw": "Hikvision"
+      },
+      "href": "/catalogue/hikvision",
+      "parentId": "equipment",
+      "status": "published",
+      "serviceSlugs": [
+        "hikvision"
+      ],
+      "equipmentCategories": [
+        "cctv",
+        "access-control",
+        "intercom",
+        "alarms"
+      ],
+      "visibility": "public",
+      "relatedServices": []
+    },
+    {
+      "id": "catalogue-zkteco",
+      "title": {
+        "en": "ZKTeco",
+        "sw": "ZKTeco"
+      },
+      "href": "/catalogue/zkteco",
+      "parentId": "equipment",
+      "status": "published",
+      "serviceSlugs": [
+        "access-control"
+      ],
+      "equipmentCategories": [
+        "access-control",
+        "attendance",
+        "smart-locks"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "video-intercom",
+        "networking",
+        "power-backup"
+      ]
+    },
+    {
+      "id": "catalogue-centurion",
+      "title": {
+        "en": "CENTURION",
+        "sw": "CENTURION"
+      },
+      "href": "/catalogue/centurion",
+      "parentId": "equipment",
+      "status": "published",
+      "serviceSlugs": [
+        "gate-motors"
+      ],
+      "equipmentCategories": [
+        "gate-motors",
+        "automation"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "electric-fence",
+        "video-intercom",
+        "access-control"
+      ]
+    },
+    {
+      "id": "fence-equipment",
+      "title": {
+        "en": "Electric fence components",
+        "sw": "Vifaa vya uzio wa umeme"
+      },
+      "href": "/services/electric-fence#ef-catalogue-title",
+      "parentId": "equipment",
+      "status": "published",
+      "serviceSlugs": [
+        "electric-fence"
+      ],
+      "equipmentCategories": [
+        "fencing"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "cctv",
+        "gate-motors",
+        "maintenance-support"
+      ]
+    },
+    {
+      "id": "generator-equipment",
+      "title": {
+        "en": "Generators & controls",
+        "sw": "Jenereta na vidhibiti"
+      },
+      "href": "/services/generators#equipment",
+      "parentId": "equipment",
+      "status": "published",
+      "serviceSlugs": [
+        "generators"
+      ],
+      "equipmentCategories": [
+        "generators"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "electrical-contracting",
+        "power-backup",
+        "maintenance-support"
+      ]
+    },
+    {
+      "id": "solar-equipment",
+      "title": {
+        "en": "Solar equipment & storage",
+        "sw": "Vifaa vya sola na betri"
+      },
+      "href": "/services/solar-panel-systems#equipment",
+      "parentId": "equipment",
+      "status": "published",
+      "serviceSlugs": [
+        "solar-panel-systems"
+      ],
+      "equipmentCategories": [
+        "solar"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "electrical-contracting",
+        "power-backup",
+        "solar-street-lights"
+      ]
+    },
+    {
+      "id": "ups-equipment",
+      "title": {
+        "en": "UPS, inverters & batteries",
+        "sw": "UPS, inverter na betri"
+      },
+      "href": "/services/power-backup#equipment",
+      "parentId": "equipment",
+      "status": "published",
+      "serviceSlugs": [
+        "power-backup"
+      ],
+      "equipmentCategories": [
+        "backup"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "generators",
+        "electrical-contracting",
+        "networking"
+      ]
+    },
+    {
+      "id": "panel-equipment",
+      "title": {
+        "en": "Panels & switchgear",
+        "sw": "Paneli na switchgear"
+      },
+      "href": "/services/electrical-contracting#panels",
+      "parentId": "equipment",
+      "status": "published",
+      "serviceSlugs": [
+        "electrical-contracting"
+      ],
+      "equipmentCategories": [
+        "electrical"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "generators",
+        "power-backup",
+        "solar-panel-systems"
+      ]
+    },
+    {
+      "id": "fibre",
+      "title": {
+        "en": "Fibre infrastructure",
+        "sw": "Miundombinu ya fibre"
+      },
+      "href": "/services/networking",
+      "parentId": "networking",
+      "status": "published",
+      "serviceSlugs": [
+        "networking"
+      ],
+      "equipmentCategories": [
+        "networking"
+      ],
+      "visibility": "public",
+      "relatedServices": [
+        "telephone-systems",
+        "cctv",
+        "power-backup"
+      ]
+    },
+    {
+      "id": "future-unified-records",
+      "title": {
+        "en": "Unified product records",
+        "sw": "Rekodi moja kwa kila bidhaa"
+      },
+      "parentId": "equipment",
+      "status": "planned",
+      "serviceSlugs": [],
+      "equipmentCategories": [],
+      "visibility": "roadmap",
+      "relatedServices": []
+    },
+    {
+      "id": "future-catalogue-filters",
+      "title": {
+        "en": "Unified category & manufacturer filters",
+        "sw": "Vichujio vya aina na watengenezaji"
+      },
+      "parentId": "equipment",
+      "status": "planned",
+      "serviceSlugs": [],
+      "equipmentCategories": [],
+      "visibility": "roadmap",
+      "relatedServices": []
+    }
+  ],
+  "groups": [
+    {
+      "id": "services",
+      "title": {
+        "en": "Services",
+        "sw": "Huduma"
+      },
+      "sections": [
+        {
+          "id": "security",
+          "title": {
+            "en": "Security, safety & automation",
+            "sw": "Ulinzi, usalama na otomatiki"
+          },
+          "destinations": [
+            "cctv",
+            "electric-fence",
+            "gate-motors",
+            "access-control",
+            "fire-alarm-systems",
+            "video-intercom"
+          ]
+        },
+        {
+          "id": "electrical",
+          "title": {
+            "en": "Electrical engineering",
+            "sw": "Uhandisi wa umeme"
+          },
+          "destinations": [
+            "electrical-commercial",
+            "electrical-industrial",
+            "electrical-panels",
+            "electrical-infrastructure",
+            "electrical-maintenance"
+          ]
+        },
+        {
+          "id": "energy",
+          "title": {
+            "en": "Energy & critical power",
+            "sw": "Nishati na umeme muhimu"
+          },
+          "destinations": [
+            "generators",
+            "solar-panel-systems",
+            "power-backup",
+            "solar-street-lights"
+          ]
+        },
+        {
+          "id": "ict",
+          "title": {
+            "en": "ICT & communications",
+            "sw": "ICT na mawasiliano"
+          },
+          "destinations": [
+            "networking",
+            "fibre",
+            "telephone-systems",
+            "pa-sound-systems"
+          ]
+        },
+        {
+          "id": "facilities",
+          "title": {
+            "en": "Facilities & support",
+            "sw": "Majengo na huduma endelevu"
+          },
+          "destinations": [
+            "air-conditioners",
+            "maintenance-support",
+            "institutional-procurement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "solutions",
+      "title": {
+        "en": "Solutions",
+        "sw": "Suluhisho"
+      },
+      "sections": [
+        {
+          "id": "protect",
+          "title": {
+            "en": "Protect your premises",
+            "sw": "Linda eneo lako"
+          },
+          "destinations": [
+            "cctv",
+            "access-control"
+          ]
+        },
+        {
+          "id": "continuity",
+          "title": {
+            "en": "Keep operations moving",
+            "sw": "Endeleza shughuli"
+          },
+          "destinations": [
+            "backup-security",
+            "backup-office",
+            "backup-remote"
+          ]
+        },
+        {
+          "id": "connect",
+          "title": {
+            "en": "Connect & equip",
+            "sw": "Unganisha na wezesha"
+          },
+          "destinations": [
+            "networking",
+            "electrical-industrial",
+            "institutional-procurement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "equipment",
+      "title": {
+        "en": "Equipment",
+        "sw": "Vifaa"
+      },
+      "sections": [
+        {
+          "id": "brands",
+          "title": {
+            "en": "Explore by manufacturer",
+            "sw": "Angalia kwa mtengenezaji"
+          },
+          "destinations": [
+            "catalogue-hikvision",
+            "catalogue-zkteco",
+            "catalogue-centurion"
+          ]
+        },
+        {
+          "id": "security-equipment",
+          "title": {
+            "en": "Security & automation",
+            "sw": "Ulinzi na otomatiki"
+          },
+          "destinations": [
+            "catalogue-hikvision",
+            "fence-equipment",
+            "catalogue-centurion",
+            "catalogue-zkteco"
+          ]
+        },
+        {
+          "id": "power-equipment",
+          "title": {
+            "en": "Electrical & energy",
+            "sw": "Umeme na nishati"
+          },
+          "destinations": [
+            "panel-equipment",
+            "generator-equipment",
+            "solar-equipment",
+            "ups-equipment"
+          ]
+        },
+        {
+          "id": "connected-equipment",
+          "title": {
+            "en": "Communication equipment",
+            "sw": "Vifaa vya mawasiliano"
+          },
+          "destinations": [
+            "networking",
+            "telephone-systems",
+            "pa-sound-systems"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "industries",
+      "title": {
+        "en": "Industries",
+        "sw": "Sekta"
+      },
+      "sections": [
+        {
+          "id": "places",
+          "title": {
+            "en": "Places to live & welcome",
+            "sw": "Makazi na ukarimu"
+          },
+          "destinations": [
+            "cctv",
+            "hikvision",
+            "access-control"
+          ]
+        },
+        {
+          "id": "operations",
+          "title": {
+            "en": "Workplaces & essential operations",
+            "sw": "Sehemu za kazi na huduma muhimu"
+          },
+          "destinations": [
+            "power-backup",
+            "networking",
+            "electrical-industrial"
+          ]
+        },
+        {
+          "id": "sites",
+          "title": {
+            "en": "Land, projects & procurement",
+            "sw": "Maeneo, miradi na ugavi"
+          },
+          "destinations": [
+            "solar-panel-systems",
+            "institutional-procurement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "company",
+      "title": {
+        "en": "Company",
+        "sw": "Kampuni"
+      },
+      "sections": [
+        {
+          "id": "bm",
+          "title": {
+            "en": "About BM Contractors",
+            "sw": "Kuhusu BM Contractors"
+          },
+          "destinations": [
+            "about",
+            "projects",
+            "journal"
+          ]
+        },
+        {
+          "id": "help",
+          "title": {
+            "en": "Work with us",
+            "sw": "Wasiliana nasi"
+          },
+          "destinations": [
+            "maintenance-support",
+            "support",
+            "contact",
+            "survey"
+          ]
+        }
+      ]
+    }
+  ]
+}
