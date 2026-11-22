@@ -1,0 +1,174 @@
+{
+  "equipment": [
+    {
+      "id": "apc",
+      "brand": "APC by Schneider Electric",
+      "model": "Easy UPS On-Line SRV2KI-E",
+      "image": "/images/power-backup/apc.webp",
+      "source": "https://www.se.com/sg/en/product/SRV2KI-E/",
+      "category": [
+        "ONLINE UPS",
+        "ONLINE UPS"
+      ],
+      "intro": [
+        "A compact online reference for selected office and IT loads.",
+        "Rejea ya online UPS kwa vifaa vilivyochaguliwa vya ofisi na IT."
+      ],
+      "facts": [
+        [
+          "2000 VA / 1800 W, 230 V, tower; four IEC C13 outlets on this reference.",
+          "2000 VA / 1800 W, 230 V, tower; modeli hii ina soketi nne za IEC C13."
+        ],
+        [
+          "Confirm the -E suffix. It differs from the discontinued 1600 W SRV2KI. Battery time depends on the load; no fixed runtime is promised.",
+          "Hakiki suffix -E. Ni tofauti na SRV2KI ya 1600 W iliyositishwa. Muda wa betri hutegemea mzigo; hakuna saa zinazohakikishwa."
+        ],
+        [
+          "Operating mode, input supply and the required accessories are specified in the quotation.",
+          "Hali ya uendeshaji, chanzo cha umeme na vifaa vya ziada huainishwa kwenye nukuu."
+        ]
+      ]
+    },
+    {
+      "id": "eaton",
+      "brand": "Eaton",
+      "model": "9SX2000I",
+      "image": "/images/power-backup/eaton.webp",
+      "source": "https://www.eaton.com/in/en-us/skuPage.9SX2000I.html",
+      "category": [
+        "ONLINE / EXTENDED RUNTIME",
+        "ONLINE / BETRI ZA ZIADA"
+      ],
+      "intro": [
+        "Online double-conversion for appropriate network and server loads.",
+        "Online double-conversion kwa mizigo inayofaa ya mtandao na seva."
+      ],
+      "facts": [
+        [
+          "2000 VA / 1800 W, 230 V reference with eight IEC C13 outputs; manufacturer photograph is representative.",
+          "Rejea ya 2000 VA / 1800 W, 230 V yenye soketi nane za IEC C13; picha ni rejea ya mtengenezaji."
+        ],
+        [
+          "Compatible external battery modules and network-management cards are specified separately; do not assume they are included.",
+          "Moduli za betri zinazooana na kadi za network-management huainishwa kando; usidhani zimejumuishwa."
+        ],
+        [
+          "Check load, battery condition, runtime curves and planned maintenance access.",
+          "Hakiki mzigo, hali ya betri, jedwali la runtime na nafasi ya matengenezo."
+        ]
+      ]
+    },
+    {
+      "id": "victron",
+      "brand": "Victron Energy",
+      "model": "MultiPlus-II",
+      "image": "/images/solar-engineering/victron.webp",
+      "source": "https://www.victronenergy.com/inverters-chargers/multiplus-ii",
+      "category": [
+        "INVERTER / CHARGER",
+        "INVERTER / CHARGER"
+      ],
+      "intro": [
+        "Battery-backed essential circuits and assessed generator coordination.",
+        "Saketi muhimu zenye backup ya betri na uratibu wa jenereta uliotathminiwa."
+      ],
+      "facts": [
+        [
+          "An inverter, charger and transfer device; it is not the same topology as an online double-conversion UPS.",
+          "Inverter, charger na kifaa cha transfer; muundo wake ni tofauti na online double-conversion UPS."
+        ],
+        [
+          "Match the exact variant, battery/BMS, AC-source quality and settings. UPS behaviour must be checked with the intended loads.",
+          "Oanisha toleo halisi, betri/BMS, ubora wa AC na mipangilio. Tabia ya UPS ihakikiwe kwa vifaa vitakavyotumika."
+        ]
+      ]
+    },
+    {
+      "id": "ritar",
+      "brand": "Ritar",
+      "model": "DG series / DG12-200 reference",
+      "image": "/images/solar-engineering/ritar.webp",
+      "source": "https://www.ritarpower.cn/products/dg-series-lead-acid-batteries/",
+      "category": [
+        "BATTERY ASSESSMENT",
+        "TATHMINI YA BETRI"
+      ],
+      "intro": [
+        "A deep-cycle gel family reference for a properly matched battery design.",
+        "Rejea ya betri za gel deep-cycle kwa usanifu wa betri unaolingana."
+      ],
+      "facts": [
+        [
+          "DG12-200 is a nominal 12 V / 200 Ah reference; the image shows the DG family, not a complete UPS battery bank.",
+          "DG12-200 ni rejea ya nominal 12 V / 200 Ah; picha inaonyesha familia ya DG, si banki kamili ya UPS."
+        ],
+        [
+          "Confirm DC string voltage, approved battery type, charging, protection, ventilation and replacement scope. Do not mix unmatched or aged/new batteries.",
+          "Hakiki voltage ya string ya DC, aina iliyoidhinishwa, kuchaji, kinga, hewa na wigo wa kubadilisha. Usichanganye betri zisizolingana au mpya na zilizochakaa."
+        ]
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": [
+        "How many hours will my backup run?",
+        "Backup yangu itadumu kwa saa ngapi?"
+      ],
+      "a": [
+        "Start with measured watts, operating hours and essential loads. Usable battery energy, temperature, age, discharge limits and conversion losses shape runtime. VA/kW is a power rating, not a number of hours. We assess the load before quoting autonomy.",
+        "Anza na watts zilizopimwa, saa za matumizi na vifaa muhimu. Nishati ya betri inayoweza kutumika, joto, uchakavu, mipaka ya kutoa nishati na upotevu huathiri muda. VA/kW ni uwezo wa umeme, si idadi ya saa. Tunatathmini mzigo kabla ya kuainisha muda wa backup."
+      ]
+    },
+    {
+      "q": [
+        "Can I add a bigger battery to the UPS I already own?",
+        "Naweza kuongeza betri kubwa kwenye UPS niliyonayo?"
+      ],
+      "a": [
+        "Only after checking the exact model and its approved external-battery arrangements. Battery voltage, chemistry, charger capability, connectors, protection and safe enclosure matter. Some small UPS units do not support extended batteries. Send the label first.",
+        "Baada ya kuhakiki modeli na mpangilio wake ulioidhinishwa wa betri za nje. Voltage, aina ya betri, uwezo wa charger, viunganishi, kinga na kabati salama ni muhimu. Baadhi ya UPS ndogo hazitumii betri za ziada. Anza kwa kutuma lebo."
+      ]
+    },
+    {
+      "q": [
+        "Is an ATS enough to protect my servers?",
+        "ATS pekee inatosha kulinda seva?"
+      ],
+      "a": [
+        "An ATS selects a power source; it does not itself store energy or remove the generator-start/transfer interval. Suitable UPS support and a complete continuity design may be needed for sensitive equipment. Confirm the load’s permitted interruption.",
+        "ATS huchagua chanzo cha umeme; yenyewe haihifadhi nishati wala kuondoa muda wa kuwasha jenereta na transfer. Vifaa nyeti vinaweza kuhitaji UPS inayofaa na usanifu kamili wa mwendelezo. Bainisha kukatika kunakoweza kuvumiliwa."
+      ]
+    },
+    {
+      "q": [
+        "Can you assess a 16- or 32-camera off-grid site?",
+        "Mnaweza kutathmini eneo la off-grid lenye kamera 16 au 32?"
+      ],
+      "a": [
+        "Yes: include the recorder, disks, PoE switches, communications and access/security equipment as well as cameras. Assess night IR/PTZ loads, continuous recording, 4G connectivity, low-sun periods and usable autonomy. Camera count alone does not determine the power system.",
+        "Ndiyo: jumuisha recorder, diski, swichi za PoE, mawasiliano na vifaa vya kuingia/usalama pamoja na kamera. Tathmini IR/PTZ usiku, kurekodi mfululizo, 4G, siku zenye jua kidogo na muda wa matumizi bila kuchaji. Idadi ya kamera pekee haitoi ukubwa wa mfumo."
+      ]
+    },
+    {
+      "q": [
+        "Do hospitals and industrial loads need a different assessment?",
+        "Hospitali na viwanda vinahitaji tathmini tofauti?"
+      ],
+      "a": [
+        "Yes. Define the critical circuits, permitted interruption, starting currents, isolation, redundancy/bypass requirements and relevant facility/manufacturer rules. Medical no-break and life-safety loads need their own approved continuity design; a generic UPS quotation is not that design.",
+        "Ndiyo. Bainisha saketi muhimu, kukatika kunakovumiliwa, current za kuanzisha, utenganishaji, redundancy/bypass na masharti ya taasisi/mtengenezaji. Vifaa vya kitabibu visivyovumilia kukatika na mifumo ya usalama wa maisha vinahitaji usanifu wake ulioidhinishwa; nukuu ya UPS ya jumla si usanifu huo."
+      ]
+    },
+    {
+      "q": [
+        "Does every large inverter need a transformer?",
+        "Kila inverter kubwa inahitaji transfoma?"
+      ],
+      "a": [
+        "No. Transformer integration depends on equipment compatibility, distribution voltage, distances, losses, isolation and the site network. A transformer changes voltage; it does not increase energy. Assess the complete protected distribution and utility interface.",
+        "Hapana. Ujumuishaji wa transfoma hutegemea uoanifu, voltage ya usambazaji, umbali, upotevu, utenganishaji na mtandao wa eneo. Transfoma hubadili voltage; haiongezi nishati. Tathmini usambazaji mzima wenye kinga na muunganisho wa shirika la umeme."
+      ]
+    }
+  ]
+}
