@@ -1,3 +1,4 @@
+import { Breadcrumbs } from "@/components/navigation/Breadcrumbs";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/site/Header";
@@ -73,18 +74,7 @@ export default async function Page({ params, searchParams }: Props) {
             }}
           />
         )}
-        <nav
-          className="ac-section rc-breadcrumb"
-          aria-label={sw ? "Njia ya ukurasa" : "Breadcrumb"}
-        >
-          <a href={`/services/hikvision?lang=${lang}`}>
-            {sw ? "Ulinzi wa majengo" : "Building security"}
-          </a>
-          <span aria-hidden="true">/</span>
-          <a href={`${path}?lang=${lang}&category=${product.category}`}>
-            {category[lang]}
-          </a>
-        </nav>
+        <Breadcrumbs id="catalogue-hikvision" lang={lang} leaf={{title:product.name,href:`/catalogue/hikvision/${slug}`}}/>
         <section
           className={`ac-section ${photo ? "rc-detail-hero" : "hv-detail-text"}`}
         >

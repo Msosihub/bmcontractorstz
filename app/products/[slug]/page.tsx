@@ -1,3 +1,4 @@
+import { Breadcrumbs } from "@/components/navigation/Breadcrumbs";
 import { RecordImage } from "@/components/premium/RecordImage";
 import { EnquiryLink } from "@/components/premium/Frame";
 import { pageMetadata } from "@/lib/seo";
@@ -83,17 +84,10 @@ export default async function ProductDetailPage({
     <>
       <Header lang={lang} />
       <main id="main" className="premium-main">
+        <Breadcrumbs id="equipment" lang={lang} leaf={{title:product.name,href:"/products/"+product.slug}}/>
         <section className="product-detail section">
           <div>
-            <p className="eyebrow">
-              <a href={"/products?lang=" + lang}>
-                {sw ? "VIFAA" : "EQUIPMENT"}
-              </a>{" "}
-              /{" "}
-              {sw
-                ? product.category?.nameSw || product.category?.nameEn
-                : product.category?.nameEn}
-            </p>
+            <p className="eyebrow">{sw?product.category?.nameSw||product.category?.nameEn:product.category?.nameEn}</p>
             <RecordImage kind="product" record={product} lang={lang} />
             <h1>{product.name}</h1>
             <p className="lead">{product.brand}</p>

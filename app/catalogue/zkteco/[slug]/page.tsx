@@ -1,3 +1,4 @@
+import { Breadcrumbs } from "@/components/navigation/Breadcrumbs";
 import Image from "next/image";
 import { ReferenceCard } from "@/components/catalogue/ReferenceCard";
 import { notFound } from "next/navigation";
@@ -47,29 +48,6 @@ export default async function Page({ params, searchParams }: Props) {
           image: p.images.map((i) => "https://www.bmcontractorstz.com" + i.src),
           url: languageUrl(base + "/" + slug, lang),
         },
-        {
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: sw ? "Udhibiti wa milango" : "Access control",
-              item: languageUrl("/services/access-control", lang),
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "ZKTeco",
-              item: languageUrl(base, lang),
-            },
-            {
-              "@type": "ListItem",
-              position: 3,
-              name: p.name,
-              item: languageUrl(base + "/" + slug, lang),
-            },
-          ],
-        },
       ],
     };
   return (
@@ -82,18 +60,7 @@ export default async function Page({ params, searchParams }: Props) {
             __html: JSON.stringify(json).replace(/</g, "\\u003c"),
           }}
         />
-        <nav
-          className="ac-section rc-breadcrumb"
-          aria-label={sw ? "Njia ya ukurasa" : "Breadcrumb"}
-        >
-          <a href={`/services/access-control?lang=${lang}`}>
-            {sw ? "Udhibiti wa milango" : "Access control"}
-          </a>
-          <span>/</span>
-          <a href={`${base}?lang=${lang}`}>ZKTeco</a>
-          <span>/</span>
-          <span>{p.name}</span>
-        </nav>
+        <Breadcrumbs id="catalogue-zkteco" lang={lang} leaf={{title:p.name,href:`/catalogue/zkteco/${slug}`}}/>
         <section className="ac-section rc-detail-hero">
           <div className="rc-detail-art">
             <Image
