@@ -17,6 +17,9 @@ import { ExperienceMotion } from "./ExperienceMotion";
 import { HeroLight } from "./HeroLight";
 import { ManufacturerBelts } from "./ManufacturerBelts";
 import "./experience.css";
+import "./living.css";
+import { ServiceSignal } from "./ServiceSignal";
+import { LivingMotion } from "./LivingMotion";
 
 const chapters = [
   {
@@ -120,6 +123,7 @@ export default function Homepage({ lang }: { lang: Language }) {
       <Header lang={lang} />
       <main id="main" className="bm-experience">
         <ExperienceMotion />
+        <LivingMotion />
         <section
           className="bm-hero"
           aria-labelledby="bm-hero-title"
@@ -213,6 +217,7 @@ export default function Homepage({ lang }: { lang: Language }) {
         <section
           id="services"
           className="bm-service-intro bm-wrap"
+          data-living="services"
           data-bm-reveal
         >
           <div>
@@ -239,11 +244,14 @@ export default function Homepage({ lang }: { lang: Language }) {
             }
           >
             {chapters.map((chapter, index) => {
-              const Icon = chapter.icon;
               return (
-                <a key={chapter.id} href={`#${chapter.id}`}>
+                <a
+                  key={chapter.id}
+                  href={`#${chapter.id}`}
+                  data-service={chapter.id}
+                >
                   <span className="bm-service-tile-top" aria-hidden="true">
-                    <Icon size={25} strokeWidth={1.35} />
+                    <ServiceSignal kind={chapter.id} />
                     <span>0{index + 1}</span>
                   </span>
                   <span className="bm-service-tile-title">

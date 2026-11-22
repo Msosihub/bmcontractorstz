@@ -19,3 +19,7 @@
 
 /* Keep the icon-only mobile toggle comfortable to tap. Native details exposes its state. */
 .mn-mobile-toggle{min-width:44px;justify-content:center}.mn-open-icon{font-size:22px;line-height:1}
+
+/* Confident desktop labels; original proportions and mobile typography retained. */
+.mn-desktop .mn-group > summary{font-weight:600}
+@media(min-width:1101px){.mn-desktop .mn-panel::before{content:"";position:absolute;left:0;right:0;top:-12px;height:12px}.mn-desktop{align-self:stretch}.mn-desktop>.mn-group{display:flex;align-items:center}.mn-desktop>.mn-group>summary{height:100%}}

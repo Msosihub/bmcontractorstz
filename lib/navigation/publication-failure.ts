@@ -3,6 +3,8 @@ const fatalCodes = new Set(['P1000', 'P1010', '28000', '28P01', '42501', '3D000'
 const pgTransportMessages = new Set([
   'Connection terminated due to connection timeout',
   'Connection terminated unexpectedly',
+  // pg-pool/index.js: bounded pending-client acquisition timeout, observed locally.
+  'timeout exceeded when trying to connect',
 ]);
 
 /** Only observed transport failures may degrade public navigation. Never log driver messages. */

@@ -5,7 +5,7 @@ import { Footer } from "@/components/site/Footer";
 import { EnquiryForm } from "@/components/site/EnquiryForm";
 import { EnquiryMessage } from "@/components/site/EnquiryMessage";
 import { SubmitButton } from "@/components/ui/SubmitButton";
-import { Photo } from "./Frame";
+import { TanzaniaConnected } from "./TanzaniaConnected";
 import type { Language } from "@/lib/i18n/config";
 import type { EnquiryState } from "@/lib/enquiries/validation";
 export function PremiumEnquiry({
@@ -51,6 +51,16 @@ export function PremiumEnquiry({
                   ? "Una swali la vifaa, mradi au ugavi wa jumla? Tuma maelezo yatakayosaidia kuandaa jibu linalofaa."
                   : "Equipment, installation or trade supply? Share the details that will help us prepare a useful response."}
             </p>
+            <a className="enquiry-form-jump" href="#bm-enquiry-form">
+              {survey
+                ? sw
+                  ? "Eleza eneo la tathmini"
+                  : "Tell us about your site"
+                : sw
+                  ? "Andika mahitaji yako"
+                  : "Write your project brief"}{" "}
+              ↓
+            </a>
             <div className="direct-details">
               <p>
                 {sw
@@ -68,14 +78,9 @@ export function PremiumEnquiry({
                 </a>
               )}
             </div>
-            <p className="enquiry-coverage">
-              {sw
-                ? "Ofisi za Moshi na Arusha. Mafundi kwa tathmini na kazi zilizopangwa Dar es Salaam na Dodoma. Taja eneo la mradi wako."
-                : "Offices in Moshi and Arusha. Technicians for scheduled surveys and projects in Dar es Salaam and Dodoma. Tell us where your project is located."}
-            </p>
-            <Photo asset="engineering" lang={lang} />
+            <TanzaniaConnected lang={lang} survey={survey} />
           </aside>
-          <div className="enquiry-sheet">
+          <div className="enquiry-sheet" id="bm-enquiry-form">
             <p className="eyebrow">
               {survey
                 ? sw
