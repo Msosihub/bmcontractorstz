@@ -10,6 +10,7 @@ export function PremiumArticle({
   label,
   children,
   enquiry = true,
+  heroMedia,
 }: {
   lang: Language;
   title: string;
@@ -17,16 +18,22 @@ export function PremiumArticle({
   label?: string;
   children?: ReactNode;
   enquiry?: boolean;
+  heroMedia?: ReactNode;
 }) {
   return (
     <>
       <Header lang={lang} />
       <main id="main" className="premium-main">
         <article className="section editorial-article">
-          <header>
-            <p className="eyebrow">{label || "BM CONTRACTORS"}</p>
-            <h1>{title}</h1>
-            {intro && <p className="lead">{intro}</p>}
+          <header
+            className={heroMedia ? "editorial-header--service" : undefined}
+          >
+            <div>
+              <p className="eyebrow">{label || "BM CONTRACTORS"}</p>
+              <h1>{title}</h1>
+              {intro && <p className="lead">{intro}</p>}
+            </div>
+            {heroMedia && <div>{heroMedia}</div>}
           </header>
           <div className="article-body">{children}</div>
           {enquiry && <EnquiryLink lang={lang} subject={title} />}

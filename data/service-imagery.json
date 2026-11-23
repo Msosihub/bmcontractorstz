@@ -48,5 +48,25 @@
     "asset": "hvac",
     "en": "Wall-mounted split air conditioner in an office",
     "sw": "Kiyoyozi cha ukutani ndani ya ofisi"
+  },
+  "fire-alarm-systems": {
+    "asset": "electrical",
+    "en": "Building electrical infrastructure",
+    "sw": "Miundombinu ya umeme ya jengo"
+  },
+  "video-intercom": {
+    "asset": "access",
+    "en": "A card reader at a building entrance",
+    "sw": "Kisoma kadi kwenye mlango wa jengo"
+  },
+  "solar-street-lights": {
+    "asset": "solar",
+    "en": "Solar panels collecting daylight",
+    "sw": "Paneli za sola zinazopokea mwanga wa jua"
+  },
+  "maintenance-support": {
+    "asset": "engineering",
+    "en": "Engineering equipment and assessment setting",
+    "sw": "Vifaa na mazingira ya tathmini ya uhandisi"
   }
 }

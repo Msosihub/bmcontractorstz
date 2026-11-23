@@ -30,13 +30,8 @@ export default async function Page({
         className="people-photo"
         alt={
           sw
-            ? "Watu wa kubuni wakijadili mpango wa eneo; picha ya AI"
-            : "Fictional technical professionals discussing a site plan; AI illustration"
-        }
-        caption={
-          sw
-            ? "Picha ya mfano ya AI · Watu hawa si wafanyakazi wala wateja halisi wa BM"
-            : "AI illustration · These are fictional people, not BM employees or clients"
+            ? "Watu wa kubuni wakijadili mpango wa eneo"
+            : "Fictional technical professionals discussing a site plan"
         }
         sizes="(max-width:760px) 100vw, 75vw"
       />

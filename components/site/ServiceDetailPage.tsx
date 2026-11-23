@@ -1,3 +1,4 @@
+import { EngineeringMotion } from "@/components/premium/EngineeringMotion";
 import { RecordImage } from "@/components/premium/RecordImage";
 import { Photo } from "@/components/premium/Frame";
 import { approvedRecordMedia } from "@/lib/approved-record-media";
@@ -91,18 +92,23 @@ export async function ServiceDetailPage({
       lang={lang}
       title={title}
       intro={description}
+      heroMedia={
+        <>
+          {record && approvedRecordMedia("service", record) ? (
+            <RecordImage kind="service" record={record} lang={lang} />
+          ) : visual ? (
+            <Photo
+              asset={visual.asset}
+              lang={lang}
+              alt={visual[lang]}
+              className="article-service-photo"
+            />
+          ) : null}
+          <EngineeringMotion slug={slug} lang={lang} />
+        </>
+      }
       label={sw ? "HUDUMA / BM CONTRACTORS" : "SERVICES / BM CONTRACTORS"}
     >
-      {record && approvedRecordMedia("service", record) ? (
-        <RecordImage kind="service" record={record} lang={lang} />
-      ) : visual ? (
-        <Photo
-          asset={visual.asset}
-          lang={lang}
-          alt={visual[lang]}
-          className="article-service-photo"
-        />
-      ) : null}
       {sw &&
         !(service.titleSw && service.descriptionSw && service.contentSw) && (
           <TranslationNotice />

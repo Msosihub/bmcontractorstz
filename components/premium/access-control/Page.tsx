@@ -688,11 +688,7 @@ export function AccessPage({
             </a>
           </nav>
         </section>
-        <p className="ac-section ac-image-note">
-          {sw
-            ? "Picha za mazingira na watu zimetengenezwa kwa AI kuelezea matumizi, si miradi au wafanyakazi halisi wa BM. Picha za bidhaa ni za mtengenezaji."
-            : "Workplace and hotel scenes are AI-created application visuals, not BM projects or staff. Equipment photographs are manufacturer references."}
-        </p>
+
         <RelatedGuides lang={lang} service="access-control" />
       </main>
       <Footer lang={lang} imageNotice={false} />

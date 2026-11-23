@@ -19,14 +19,17 @@ test("staging notice is absent from Production and explicit in both Preview lang
     else process.env.NEXT_PUBLIC_BM_PREVIEW = previous;
   }
 });
-test("homepage uses the shared environment-scoped header and image disclosures remain intact", async () => {
+test("homepage uses the shared environment-scoped header and truthful image descriptions remain intact", async () => {
   const header = await readFile("components/site/Header.tsx", "utf8");
   const home = await readFile("components/premium/Homepage.tsx", "utf8");
   assert.match(header, /<PreviewNotice lang=\{lang\}/);
   assert.match(home, /<Header lang=\{lang\}/);
   assert.doesNotMatch(home + header, /<span>PHASE 1B \/ PRIVATE REVIEW/);
   const about = await readFile("app/about/page.tsx", "utf8");
-  assert.match(about, /fictional people, not BM employees or clients/);
+  assert.match(
+    about,
+    /Fictional technical professionals discussing a site plan/,
+  );
   const css = await readFile("app/premium.css", "utf8");
   assert.match(css, /\.premium-site \.people-photo figcaption \{\s*top: 100%/);
 });

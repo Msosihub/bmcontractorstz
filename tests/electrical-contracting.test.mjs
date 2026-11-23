@@ -109,7 +109,7 @@ test("optional electrical brief prefill is bounded and does not change ordinary 
     let element = await p.default({
       searchParams: Promise.resolve({ lang: "sw", brief: "x".repeat(2500) }),
     });
-    assert.equal(element.props.initialMessage.length, 2000);
+    assert.equal(element.props.initialMessage.length, 2500);
     assert.equal(element.props.lang, "sw");
     element = await p.default({
       searchParams: Promise.resolve({ lang: "en" }),

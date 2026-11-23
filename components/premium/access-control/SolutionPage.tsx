@@ -395,11 +395,6 @@ function LegacySolutionPage({
             <a href={links.call}>{sw ? "Piga simu" : "Call BM"} ↗</a>
           </div>
         </section>
-        <p className="ac-section ac-image-note">
-          {sw
-            ? "Picha ya mazingira ni mfano uliotengenezwa kwa AI, si mradi halisi wa BM. Picha za bidhaa ni za mtengenezaji."
-            : "The environment scene is an AI-created application visual, not a BM project. Equipment photographs are manufacturer references."}
-        </p>
       </main>
       <Footer lang={lang} imageNotice={false} />
     </>

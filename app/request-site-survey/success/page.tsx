@@ -1,4 +1,5 @@
 import { PremiumSuccess } from "@/components/premium/Success";
+import { confirmedEnquiryReceipt } from "@/lib/enquiries/receipt";
 export default async function Page({
   searchParams,
 }: {
@@ -9,7 +10,7 @@ export default async function Page({
     <PremiumSuccess
       lang={p.lang === "sw" ? "sw" : "en"}
       survey
-      id={p.id?.slice(0, 100)}
+      id={await confirmedEnquiryReceipt("survey")}
     />
   );
 }

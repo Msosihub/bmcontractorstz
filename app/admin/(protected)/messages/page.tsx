@@ -1,4 +1,4 @@
-import {AdminActionForm} from "@/components/admin/AdminActionForm";
+import { AdminActionForm } from "@/components/admin/AdminActionForm";
 import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Messages Page
@@ -45,11 +45,18 @@ function statusClass(status: string) {
 
 const statuses = ["NEW", "CONTACTED", "CLOSED"];
 
-export default async function AdminMessagesPage() {
+export default async function AdminMessagesPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ status?: string }>;
+}) {
   await requireAdminPage();
+  const filter = (await searchParams).status;
+  const status = statuses.includes(filter || "") ? filter : undefined;
   const messages = await prisma.contactMessage.findMany({
+    where: status ? { status } : undefined,
     orderBy: {
-      createdAt: "desc",
+      createdAt: status === "NEW" ? "asc" : "desc",
     },
     take: 50,
   });
@@ -73,6 +80,21 @@ export default async function AdminMessagesPage() {
       title="Contact Messages"
       subtitle="View and manage customer inquiries submitted through the contact page."
     >
+      <nav aria-label="Enquiry status" className="mb-6 flex flex-wrap gap-3">
+        <a className="rounded-lg bg-white/10 px-4 py-3" href="/admin/messages">
+          All received
+        </a>
+        <a
+          className="rounded-lg bg-amber-100 px-4 py-3 text-slate-950"
+          href="/admin/messages?status=NEW"
+        >
+          Needs review ({newCount})
+        </a>
+        <p className="w-full text-sm text-slate-300">
+          Saved requests remain here even if an SMS alert fails. Review NEW
+          requests daily, then update their follow-up status.
+        </p>
+      </nav>
       <div className="grid gap-4 sm:grid-cols-3">
         <AdminStatCard
           label="Total Messages"
@@ -159,7 +181,10 @@ export default async function AdminMessagesPage() {
 
                   <div className="mt-4 flex flex-wrap gap-2">
                     {statuses.map((status) => (
-                      <AdminActionForm key={status} action={updateContactMessageStatus}>
+                      <AdminActionForm
+                        key={status}
+                        action={updateContactMessageStatus}
+                      >
                         {/* Hidden values tell the server action which message to update. */}
                         <input
                           type="hidden"

@@ -68,12 +68,12 @@ export default async function AdminPage() {
       title: "Site Surveys",
       description:
         "View customer site survey requests from the public website.",
-      href: "/admin/site-surveys",
+      href: "/admin/site-surveys?status=NEW",
     },
     {
       title: "Messages",
       description: "View contact messages and customer inquiries.",
-      href: "/admin/messages",
+      href: "/admin/messages?status=NEW",
     },
     {
       title: "Products",
@@ -111,7 +111,10 @@ export default async function AdminPage() {
   ];
 
   return (
-    <AdminShell title="Admin Dashboard" subtitle="Manage website content and enquiries.">
+    <AdminShell
+      title="Admin Dashboard"
+      subtitle="Manage website content and enquiries."
+    >
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
         <AdminStatCard
           label="Site Surveys"

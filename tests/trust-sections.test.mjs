@@ -24,10 +24,13 @@ test("two bilingual belts disclose context and offer native pause controls with 
         assert.match(html, new RegExp("/services/gate-motors\\?lang=" + lang));
         assert.doesNotMatch(html, /<img/);
       } else {
-        assert.match(html, /AI/);
+        assert.doesNotMatch(
+          html,
+          /AI illustration|Picha za mfano za AI|Not actual BM/,
+        );
         assert.match(
           html,
-          /not client or project records|si rekodi za wateja au miradi/,
+          /scope is confirmed after assessment|Wigo wa kazi hukubaliwa/,
         );
       }
       assert.doesNotMatch(
@@ -71,7 +74,10 @@ test("working approach explains four practical stages in both languages without 
     const html = renderToStaticMarkup(work.WorkingApproach({ lang }));
     assert.equal((html.match(/<li>/g) || []).length, 4);
     assert.match(html, /electrical-1440.webp/);
-    assert.match(html, /AI/);
+    assert.doesNotMatch(
+      html,
+      /AI illustration|Picha za mfano za AI|Not actual BM/,
+    );
     assert.match(html, new RegExp("/request-site-survey\\?lang=" + lang));
     assert.doesNotMatch(
       html,
@@ -96,7 +102,6 @@ test("motion CSS supplies opposite directions, hover/focus/persistent pause, key
   assert.match(source, /<ManufacturerBelts lang=\{lang\}/);
   assert.match(source, /className="bm-chapter-nav"/);
   const directory = await readFile("app/services/page.tsx", "utf8");
-  for (const kind of ["systems", "sectors"])
-    assert.ok(directory.includes('kind="' + kind + '"'));
-
+  assert.ok(directory.includes('kind="sectors"'));
+  assert.ok(directory.includes('className="sd-divisions"'));
 });
