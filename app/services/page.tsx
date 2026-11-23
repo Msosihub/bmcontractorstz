@@ -161,12 +161,28 @@ export default async function Page({
                 aria-labelledby={d.id + "-title"}
               >
                 <div className="sd-chapter-image">
-                  <Image
-                    src={image.src}
-                    alt={image[lang]}
-                    fill
-                    sizes="(max-width:850px) 100vw, 42vw"
-                  />
+                  {image.src === "/images/solar-engineering/campus-1600.webp" ? (
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcSet="/images/solar-engineering/services-campus-384.webp 384w, /images/solar-engineering/services-campus-640.webp 640w, /images/solar-engineering/services-campus-960.webp 960w, /images/solar-engineering/services-campus-1280.webp 1280w"
+                        sizes="(max-width:850px) calc(100vw - 40px), (max-width:1400px) 40vw, 560px"
+                      />
+                      <Image
+                        src="/images/solar-engineering/services-campus-640.webp"
+                        alt={image[lang]}
+                        fill
+                        unoptimized
+                      />
+                    </picture>
+                  ) : (
+                    <Image
+                      src={image.src}
+                      alt={image[lang]}
+                      fill
+                      sizes="(max-width:850px) 100vw, 42vw"
+                    />
+                  )}
                   <span aria-hidden="true">0{i + 1}</span>
                 </div>
                 <div className="sd-chapter-copy">
