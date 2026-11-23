@@ -20,8 +20,8 @@ export default function ReliableLocalImage(props: ImageProps) {
   }
   return (
     <picture>
-      <source type="image/webp" srcSet={scene.srcSet} sizes={props.sizes || "100vw"} />
-      <Image {...imageProps} alt={props.alt} src={scene.fallback} unoptimized loading={preload || priority ? "eager" : props.loading} />
+      <source width={scene.width} height={scene.height} type="image/webp" srcSet={scene.srcSet} sizes={props.sizes || "100vw"} />
+      <Image {...imageProps} alt={props.alt} src={scene.fallback} width={props.fill ? undefined : scene.width} height={props.fill ? undefined : scene.height} unoptimized loading={preload || priority ? "eager" : props.loading} />
     </picture>
   );
 }

@@ -23,6 +23,7 @@ test('unrelated catalogues, remote content, uploads and unreviewed scenes retain
 test('responsive scenes reference real static files with ordered widths and preserved original fallback', async () => {
   for (const src of ['/images/hikvision/building.webp', '/images/hikvision/reception.webp']) {
     const scene = responsiveLocalScene(src);
+    assert(scene.width > 0 && scene.height > 0);
     assert(scene.srcSet.includes(src + ' '));
     let previous = 0;
     for (const entry of scene.srcSet.split(', ')) {
