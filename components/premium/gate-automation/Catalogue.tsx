@@ -1,9 +1,8 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
+import Image from "@/components/media/ReliableLocalImage";
 import type { Language } from "@/lib/i18n/config";
 import { categoryNames, type CatalogueProduct } from "@/lib/catalogue/types";
-const D3_IMAGE = "/assets/gate-automation/products/d3.webp";
 
 export function ProductCard({
   p,
@@ -21,7 +20,6 @@ export function ProductCard({
       >
         <Image
           src={p.images[0].src}
-          unoptimized={p.images[0].src === D3_IMAGE}
           alt={p.images[0].alt}
           width={716}
           height={540}
@@ -203,7 +201,6 @@ export function Gallery({ p, lang }: { p: CatalogueProduct; lang: Language }) {
     <div className="ga-gallery">
       <Image
         src={p.images[active].src}
-        unoptimized={p.images[active].src === D3_IMAGE}
         alt={p.images[active].alt}
         width={1000}
         height={750}
@@ -224,7 +221,6 @@ export function Gallery({ p, lang }: { p: CatalogueProduct; lang: Language }) {
               alt=""
               width={90}
               height={70}
-              unoptimized={im.src === D3_IMAGE}
             />
           </button>
         ))}

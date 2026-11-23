@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
+import Image from "@/components/media/ReliableLocalImage";
 import type { Language } from "@/lib/i18n/config";
 import { gateLinks } from "./links";
 const data = {

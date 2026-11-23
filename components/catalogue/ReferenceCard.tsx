@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/media/ReliableLocalImage";
 import type { Language } from "@/lib/i18n/config";
 import type { ReferenceProduct } from "@/lib/catalogue/reference-types";
 import { referenceStatus } from "@/lib/catalogue/reference-types";

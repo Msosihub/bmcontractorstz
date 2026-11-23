@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/media/ReliableLocalImage";
 import type { Language } from "@/lib/i18n/config";
 import { blogArticles } from "@/lib/blog";
 import "./blog.css";
