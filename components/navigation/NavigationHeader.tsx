@@ -32,8 +32,37 @@ export function NavigationHeader({lang,groups,quotation,degraded=false}:{lang:La
     const pointer=(e:PointerEvent)=>{if(!header.contains(e.target as Node))close();};
     const focus=(e:FocusEvent)=>{if(!desktop.contains(e.target as Node)&&!mobile.open)primary().forEach(d=>d.open=false);};
     const media=matchMedia('(min-width:1101px)');let desktopMode=media.matches;const resize=()=>{if(media.matches!==desktopMode){close();desktopMode=media.matches;}else if(mobile.open)header.style.setProperty('--mn-top',Math.max(0,header.getBoundingClientRect().bottom)+'px');};
+    // Pointer intent augments native details; keyboard/click/no-JS behavior stays native.
+    const hoverMedia=matchMedia('(min-width:1101px) and (hover:hover) and (pointer:fine)');
+    let openTimer: ReturnType<typeof setTimeout> | undefined, closeTimer: ReturnType<typeof setTimeout> | undefined;
+    const clearIntent=()=>{clearTimeout(openTimer);clearTimeout(closeTimer);};
+    const over=(e:PointerEvent)=>{
+      if(!hoverMedia.matches||e.pointerType!=="mouse")return;
+      const target=e.target as Element;
+      if(target.closest('.mn-panel')){clearIntent();return;}
+      const summary=target.closest<HTMLElement>('.mn-desktop .mn-group > summary');
+      if(!summary)return;
+      const group=summary.parentElement as HTMLDetailsElement;
+      clearIntent(); if(group.open)return;
+      openTimer=setTimeout(()=>{primary().forEach(d=>d.open=d===group);},primary().some(d=>d.open)?85:140);
+    };
+    const out=(e:PointerEvent)=>{
+      const summary=(e.target as Element).closest('.mn-desktop .mn-group > summary');
+      if(summary&&(!e.relatedTarget||!summary.contains(e.relatedTarget as Node)))clearTimeout(openTimer);
+    };
+    const leave=(e:PointerEvent)=>{
+      if(!hoverMedia.matches||e.pointerType!=="mouse")return;
+      const next=e.relatedTarget as Node|null;
+      if(next&&desktop.contains(next))return;
+      clearIntent();
+      closeTimer=setTimeout(()=>{if(!desktop.contains(document.activeElement))primary().forEach(d=>d.open=false);},240);
+    };
+    const enter=()=>clearTimeout(closeTimer);
+    const cancelKey=()=>clearIntent();
+    desktop.addEventListener('pointerover',over);desktop.addEventListener('pointerout',out);desktop.addEventListener('pointerleave',leave);desktop.addEventListener('pointerenter',enter);
+    document.addEventListener('keydown',cancelKey);document.addEventListener('pointerdown',cancelKey);
     header.addEventListener('toggle',toggle,true);document.addEventListener('keydown',key);document.addEventListener('pointerdown',pointer);document.addEventListener('focusin',focus);window.addEventListener('resize',resize);
-    return ()=>{restore();header.removeEventListener('toggle',toggle,true);document.removeEventListener('keydown',key);document.removeEventListener('pointerdown',pointer);document.removeEventListener('focusin',focus);window.removeEventListener('resize',resize);delete header.dataset.enhanced;};
+    return ()=>{clearIntent();desktop.removeEventListener('pointerover',over);desktop.removeEventListener('pointerout',out);desktop.removeEventListener('pointerleave',leave);desktop.removeEventListener('pointerenter',enter);document.removeEventListener('keydown',cancelKey);document.removeEventListener('pointerdown',cancelKey);restore();header.removeEventListener('toggle',toggle,true);document.removeEventListener('keydown',key);document.removeEventListener('pointerdown',pointer);document.removeEventListener('focusin',focus);window.removeEventListener('resize',resize);delete header.dataset.enhanced;};
   },[path,search]);
   const link=(d:ResolvedItem)=><a key={d.id+JSON.stringify(d.title)} href={href(d)} aria-current={!d.href?.includes('#')&&path===d.href?.split('?')[0]?"page":undefined}><span>{d.title[lang]}</span>{d.description&&<small>{d.description[lang]}</small>}<span className="mn-link-arrow" aria-hidden="true">↗</span></a>;
   const panel=(g:ResolvedGroup,mobile=false)=><div className={`mn-panel mn-panel-${g.id}`}>

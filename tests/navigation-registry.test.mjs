@@ -20,3 +20,19 @@ test('menu photos use direct local WebPs while the logo retains normal optimizat
 test('observed uncoded pg connection termination degrades safely in both languages without hiding permission or unknown failures',async()=>{for(const lang of ['en','sw']){try{globalThis.__navFailure=new Error('Connection terminated due to connection timeout',{cause:new Error('Connection terminated unexpectedly')});globalThis.__navReadCount=0;const html=renderToStaticMarkup(await header.Header({lang}));assert.equal(globalThis.__navReadCount,1);for(const path of ['/services','/products','/about','/contact'])assert(html.includes('href="'+path+'?lang='+lang));assert(html.includes('mn-availability')&&html.includes('subject=Project'));assert(!html.includes('href="/services/cctv?')&&!html.includes('href="/catalogue/hikvision?'));globalThis.__navFailure=new Error('Connection terminated due to connection timeout',{cause:Object.assign(new Error('Synthetic permission error'),{code:'42501'})});await assert.rejects(()=>header.Header({lang}),/Connection terminated/);globalThis.__navFailure=new Error('Synthetic unknown failure');await assert.rejects(()=>header.Header({lang}),/Synthetic unknown/);}finally{delete globalThis.__navFailure;}}});
 const transport=await bundle('lib/navigation/publication-failure.ts');
 test('transport classification is bounded and does not suppress authentication, permission, database identity or unrelated errors',()=>{assert(transport.isPublicationTransportFailure(new Error('Connection terminated unexpectedly')));assert(transport.isPublicationTransportFailure({cause:{code:'ETIMEDOUT'}}));for(const code of ['28P01','28000','P1000','P1010','42501','3D000'])assert(!transport.isPublicationTransportFailure({code:'P1008',cause:{code}}));assert(!transport.isPublicationTransportFailure(new Error('Preview database identity or privileges rejected.')));assert(!transport.isPublicationTransportFailure({code:'42601',message:'Synthetic SQL error'}));const cyclic={};cyclic.cause=cyclic;assert(!transport.isPublicationTransportFailure(cyclic));});
+
+
+test('observed pg-pool acquisition timeout preserves independent navigation and fails closed for service links',async()=>{
+ globalThis.__navFailure=new Error('timeout exceeded when trying to connect');globalThis.__navReadCount=0;
+ try {
+  const html=renderToStaticMarkup(await header.Header({lang:'sw'}));
+  assert.equal(globalThis.__navReadCount,1);
+  for(const href of ['/services?lang=sw','/products?lang=sw','/contact?lang=sw'])assert(html.includes('href="'+href+'"'));
+  assert(!html.includes('href="/services/cctv?'));assert(!html.includes('href="/catalogue/hikvision?'));
+  assert(!transport.isPublicationTransportFailure({message:'timeout exceeded when trying to connect',cause:{code:'28P01'}}));
+  assert(!transport.isPublicationTransportFailure({message:'timeout exceeded when trying to connect',cause:{code:'42501'}}));
+  assert(!transport.isPublicationTransportFailure(new Error('timeout exceeded when trying to connect to an unknown system')));
+  delete globalThis.__navFailure;
+  assert(renderToStaticMarkup(await header.Header({lang:'sw'})).includes('href="/services/cctv?lang=sw"'));
+ }finally{delete globalThis.__navFailure;}
+});

@@ -13,7 +13,7 @@ export async function bundle(file, extra = {}) {
   "next/link": "import React from 'react'; export default function Link({children,...props}){return React.createElement('a',props,children)}",
   ...extra,
  };
- const result = await build({entryPoints:[file],bundle:true,write:false,platform:"node",format:"esm",jsx:"automatic",external:["react","react/*","react-dom","react-dom/*"],plugins:[{name:"test-boundaries",setup(build){
+ const result = await build({entryPoints:[file],bundle:true,write:false,loader:{".css":"empty"},platform:"node",format:"esm",jsx:"automatic",external:["react","react/*","react-dom","react-dom/*"],plugins:[{name:"test-boundaries",setup(build){
   build.onResolve({filter:/.*/},args=>Object.hasOwn(mocks,args.path)?{path:args.path,namespace:"mock"}:undefined);
   build.onLoad({filter:/.*/,namespace:"mock"},args=>({contents:mocks[args.path],loader:"js"}));
  }}]});
