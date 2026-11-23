@@ -44,3 +44,23 @@ test('confirmed power equipment failures use one small-image policy without incl
   }
   for (const src of ['/images/generator-engineering/engineering-hero.webp', '/images/solar-engineering/campus-1600.webp', '/images/power-backup/workplace-1600.webp']) assert.equal(directProductImage(src), false);
 });
+
+test('Solar hero reuses existing campus renditions and preserves the actual native upper resolution', async () => {
+  const src = '/images/solar-engineering/campus-1600.webp';
+  const scene = responsiveLocalScene(src);
+  assert.equal(scene.width, 1536);
+  assert.equal(scene.height, 1024);
+  assert.equal(scene.fallback, '/images/solar-engineering/services-campus-640.webp');
+  const widths = [];
+  for (const entry of scene.srcSet.split(', ')) {
+    const [file, descriptor] = entry.split(' ');
+    widths.push(parseInt(descriptor));
+    assert((await stat('public' + file)).size > 0);
+    assert(!file.includes('_next'));
+    if (parseInt(descriptor) < 1536) assert(file.startsWith('/images/solar-engineering/services-campus-'));
+  }
+  assert.deepEqual(widths, [384, 640, 960, 1280, 1536]);
+  assert(scene.srcSet.endsWith(src + ' 1536w'));
+  // Campus is a responsive scene, never incorrectly classified as a small product.
+  assert.equal(directProductImage(src), false);
+});
