@@ -9,7 +9,8 @@ Baseline: released main `b0e18e06d125187502dd25e7f5da45f90b380c8a`, Production d
 - Success requires a recent server-verified kind-specific receipt, never just the success URL. Clear next steps; survey receipt is not a booking.
 - Existing authenticated NEW enquiry queues now directly discoverable, oldest first. No durable notification-delivery claim or outbox migration.
 - Five image-led divisions using shared publication snapshot. Recognized transient errors omit service-dependent links and division anchors while independent equipment/contact/survey destinations remain available. Identity/auth/permission errors propagate.
-- Shared lightweight SVG/CSS conceptual motion for ten previously unanimated service heroes plus directory. Existing strong diagrams, homepage ribbons, navigation registry and catalogues retained. Static/reduced-motion/data-saving fallback, offscreen/hidden handler and accessible independent pause.
+- Shared lightweight SVG/CSS conceptual motion for eight previously unanimated service heroes plus directory. Existing strong diagrams, homepage ribbons, navigation registry and catalogues retained. Static/reduced-motion/data-saving fallback, offscreen/hidden handler and accessible independent pause.
+- Owner refinement: remove the added CCTV and Networking motion strips. Reuse the unchanged Champagne Current renderer behind Contact and Request Site Survey, softened for text readability with opaque form cards. Static/reduced-motion, lifecycle guards and Alt+P are retained. Twelve additional real-Chrome cases cover EN/SW desktop/mobile ribbons, form progression, removed motion and static fallbacks.
 - Repetitive visible AI-caption cleanup. Existing provenance, truthful alt text, official logo and manufacturer assets retained.
 
 ## Evidence

@@ -1,4 +1,3 @@
-import { EngineeringMotion } from "../EngineeringMotion";
 import Image from "next/image";
 import { CustomerBelt } from "./CustomerBelt";
 import type { BeltCustomer } from "@/lib/customer-belt-policy";
@@ -81,7 +80,6 @@ export function CctvCommercialPage({
                 />
               </figure>
             )}
-            <EngineeringMotion slug="cctv" lang={lang} />
           </div>
         </section>
         <nav

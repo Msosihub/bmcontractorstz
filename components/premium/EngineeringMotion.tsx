@@ -25,11 +25,6 @@ export const heroTreatments: Record<
     en: "See. Speak. Welcome.",
     sw: "Ona. Zungumza. Karibisha.",
   },
-  networking: {
-    family: "network",
-    en: "Every connection has a purpose",
-    sw: "Kila muunganisho una kazi yake",
-  },
   "telephone-systems": {
     family: "communication",
     en: "Keep the conversation connected",

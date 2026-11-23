@@ -2,6 +2,7 @@ import { siteConfig } from "@/data/site";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { EnquiryJourney } from "@/components/site/EnquiryJourney";
+import { HeroLight } from "./HeroLight";
 import { TanzaniaConnected } from "./TanzaniaConnected";
 import type { Language } from "@/lib/i18n/config";
 import type { EnquiryState } from "@/lib/enquiries/validation";
@@ -27,6 +28,9 @@ export function PremiumEnquiry({
     <>
       <Header lang={lang} />
       <main id="main" className="premium-main enquiry-experience">
+        <div className="enquiry-ribbon-background">
+          <HeroLight lang={lang} />
+        </div>
         <section className="enquiry-layout journey-layout section">
           <aside className="journey-intro">
             <p className="eyebrow">
