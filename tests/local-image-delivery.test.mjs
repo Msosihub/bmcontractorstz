@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile, readdir, stat } from 'node:fs/promises';
-import { directProductImage, responsiveLocalScene } from '../lib/local-image-policy.mjs';
+import { directProductImage, responsiveLocalScene, powerEquipmentImages } from '../lib/local-image-policy.mjs';
 
 test('all reviewed manufacturer product assets use bounded static delivery and stay small', async () => {
   for (const dir of ['assets/gate-automation/products', 'images/hikvision']) {
@@ -34,4 +34,13 @@ test('responsive scenes reference real static files with ordered widths and pres
     }
     assert(scene.srcSet.includes(scene.fallback + ' 640w'));
   }
+});
+
+test('confirmed power equipment failures use one small-image policy without including power scene photography', async () => {
+  assert.equal(powerEquipmentImages.length, 14);
+  for (const src of powerEquipmentImages) {
+    assert(directProductImage(src));
+    assert((await stat('public' + src)).size < 80000);
+  }
+  for (const src of ['/images/generator-engineering/engineering-hero.webp', '/images/solar-engineering/campus-1600.webp', '/images/power-backup/workplace-1600.webp']) assert.equal(directProductImage(src), false);
 });
