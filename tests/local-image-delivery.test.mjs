@@ -15,7 +15,7 @@ test('all reviewed manufacturer product assets use bounded static delivery and s
   }
 });
 test('unrelated catalogues, remote content, uploads and unreviewed scenes retain their original policy', () => {
-  for (const src of ['/images/hikvision/courtyard.webp', '/assets/zkteco/f18.webp', '/uploads/photo.webp', 'https://example.com/images/hikvision/ds-test.webp', '/assets/gate-automation/products/../../private.webp']) {
+  for (const src of ['/images/hikvision/unreviewed-scene.webp', '/assets/zkteco/f18.webp', '/uploads/photo.webp', 'https://example.com/images/hikvision/ds-test.webp', '/assets/gate-automation/products/../../private.webp']) {
     assert.equal(directProductImage(src), false);
     assert.equal(responsiveLocalScene(src), null);
   }
@@ -99,4 +99,14 @@ test('all known newly covered product callers use the common image policy withou
 test('ZKTeco model priority artwork has a native matching preload for no-JavaScript streaming', async () => {
   const page = await readFile('app/catalogue/zkteco/[slug]/page.tsx','utf8');
   assert(page.includes('<link rel="preload" as="image" href={p.images[0].src} fetchPriority="high" />'));
+});
+
+test('courtyard uses existing responsive architecture at native resolution without product-policy expansion', async () => {
+  const src='/images/hikvision/courtyard.webp',scene=responsiveLocalScene(src);
+  assert.equal(directProductImage(src),false);
+  assert.equal(scene.width,1200);assert.equal(scene.height,800);
+  assert.equal(scene.fallback,'/images/hikvision/courtyard-640.webp');
+  assert.deepEqual(scene.srcSet.split(', ').map(x=>parseInt(x.split(' ')[1])),[384,640,960,1200]);
+  assert(scene.srcSet.endsWith(src+' 1200w'));
+  for(const entry of scene.srcSet.split(', ')){const [file]=entry.split(' ');assert((await stat('public'+file)).size>0);assert(!file.includes('_next'));}
 });
