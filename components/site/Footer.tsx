@@ -95,8 +95,8 @@ export function Footer({
       <p className="disclosure">
         {imageNotice
           ? sw
-            ? "Picha zilizoainishwa kuwa za AI ni mifano ya kueleza huduma. Hazionyeshi miradi, wafanyakazi au wateja wa BM. Modeli, bei, upatikanaji na mahitaji ya kiufundi huthibitishwa kwenye nukuu ya bei."
-            : "Images labelled AI illustrate services; they do not show actual BM projects, employees or clients. Models, prices, availability and technical requirements are confirmed in the quotation."
+            ? "Modeli, bei, upatikanaji na mahitaji ya kiufundi huthibitishwa kwenye nukuu ya bei."
+            : "Models, prices, availability and technical requirements are confirmed in the quotation."
           : sw
             ? "Modeli, bei, upatikanaji na mahitaji ya kiufundi huthibitishwa kwenye makadirio."
             : "Models, prices, availability and technical requirements are confirmed in your quotation."}

@@ -58,11 +58,7 @@ export function WorkingApproach({ lang }: { lang: Language }) {
         asset="electrical"
         lang={lang}
         className="working-photo"
-        alt={
-          sw
-            ? "Mfano wa AI wa mazingira ya mfumo wa umeme; si kazi halisi ya BM"
-            : "AI illustration of electrical system equipment; not a BM installation"
-        }
+        alt={sw ? "Vifaa vya mfumo wa umeme" : "Electrical system equipment"}
         sizes="(max-width:760px) 100vw, 65vw"
       />
       <ol>

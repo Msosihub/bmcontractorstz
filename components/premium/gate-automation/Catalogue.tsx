@@ -1,8 +1,9 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
+import Image from "@/components/media/ReliableLocalImage";
 import type { Language } from "@/lib/i18n/config";
 import { categoryNames, type CatalogueProduct } from "@/lib/catalogue/types";
+
 export function ProductCard({
   p,
   lang,
@@ -215,7 +216,12 @@ export function Gallery({ p, lang }: { p: CatalogueProduct; lang: Language }) {
             aria-label={`${lang === "sw" ? "Picha" : "Photo"} ${i + 1}`}
             onClick={() => setActive(i)}
           >
-            <Image src={im.src} alt="" width={90} height={70} />
+            <Image
+              src={im.src}
+              alt=""
+              width={90}
+              height={70}
+            />
           </button>
         ))}
       </div>

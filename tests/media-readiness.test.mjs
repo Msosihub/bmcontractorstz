@@ -73,11 +73,11 @@ test("published records need exact record/media/rights approval; arbitrary URLs 
     null,
   );
 });
-test("directory imagery covers ten distinct services with bilingual alt and local optimized renditions", async () => {
+test("directory imagery covers core and secondary services with bilingual alt and local optimized renditions", async () => {
   const mapping = JSON.parse(
     await readFile("data/service-imagery.json", "utf8"),
   );
-  assert.equal(Object.keys(mapping).length, 10);
+  assert.equal(Object.keys(mapping).length, 14);
   for (const v of Object.values(mapping)) {
     assert.ok(v.en.length > 15 && v.sw.length > 15);
     for (const width of [640, 960, 1440])
@@ -85,7 +85,7 @@ test("directory imagery covers ten distinct services with bilingual alt and loca
   }
 });
 const about = await bundle("app/about/page.tsx", mocks);
-test("About discloses fictional people in English and Kiswahili, with no invented staff identities", async () => {
+test("About uses truthful descriptive alt without repetitive overlays or invented staff identities", async () => {
   for (const lang of ["en", "sw"]) {
     const html = renderToStaticMarkup(
       await about.default({ searchParams: Promise.resolve({ lang }) }),
@@ -94,8 +94,8 @@ test("About discloses fictional people in English and Kiswahili, with no invente
     assert.match(
       html,
       lang === "sw"
-        ? /si wafanyakazi wala wateja halisi wa BM/
-        : /fictional people, not BM employees or clients/,
+        ? /Watu wa kubuni wakijadili mpango/
+        : /Fictional technical professionals discussing a site plan/,
     );
     assert.match(html, /sizes=/);
   }

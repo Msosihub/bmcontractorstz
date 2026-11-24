@@ -1,9 +1,11 @@
 "use server";
 import { reportPreviewDatabaseFailure } from "@/lib/database-diagnostics.mjs";
+import { setEnquiryReceipt } from "@/lib/enquiries/receipt";
 import { redirect } from "next/navigation";
 import { notifyBmOffice } from "@/lib/africasTalking";
 import {
   parseEnquiry,
+  enquiryDraft,
   EnquiryValidationError,
   type EnquiryState,
 } from "@/lib/enquiries/validation";
@@ -16,6 +18,7 @@ export async function createContactMessage(
   try {
     const input = parseEnquiry(form, "contact");
     const result = await persistEnquiry("contact", input);
+    await setEnquiryReceipt("contact", result.id);
     if (result.isNew) {
       // At most one attempt per accepted submission. Failure does not undo a saved enquiry.
       await notifyBmOffice("BM WEBSITE MESSAGE\nRef: " + result.id).catch(
@@ -29,6 +32,7 @@ export async function createContactMessage(
     )
       reportPreviewDatabaseFailure(error, "contact");
     return {
+      draft: enquiryDraft(form),
       error:
         error instanceof EnquiryValidationError
           ? "invalid"

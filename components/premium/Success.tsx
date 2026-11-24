@@ -1,7 +1,9 @@
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
-import { Photo } from "./Frame";
+import { ClearEnquiryDraft } from "@/components/site/ClearEnquiryDraft";
+import { siteConfig } from "@/data/site";
 import type { Language } from "@/lib/i18n/config";
+import "@/components/site/enquiry-journey.css";
 export function PremiumSuccess({
   lang,
   survey = false,
@@ -11,40 +13,68 @@ export function PremiumSuccess({
   survey?: boolean;
   id?: string;
 }) {
-  const sw = lang === "sw";
+  const sw = lang === "sw",
+    t = (en: string, ki: string) => (sw ? ki : en);
   return (
     <>
       <Header lang={lang} />
-      <main className="premium-main" id="main">
-        <section className="service-hero">
-          <div>
-            <p className="eyebrow">
-              {sw ? "OMBI LIMEHIFADHIWA" : "ENQUIRY RECEIVED"}
+      <main className="premium-main enquiry-experience" id="main">
+        <section className="receipt-panel section">
+          {id && <ClearEnquiryDraft survey={survey} id={id} />}
+          <div className="receipt-mark" aria-hidden="true">
+            {id ? "✓" : "↗"}
+          </div>
+          <p className="eyebrow">
+            {id
+              ? t("SAFELY RECEIVED", "OMBI LIMEHIFADHIWA")
+              : t("YOUR NEXT STEP", "HATUA INAYOFUATA")}
+          </p>
+          <h1>
+            {id
+              ? t(
+                  "Thank you.\nWe have your brief.",
+                  "Asante.\nTumepokea ombi lako.",
+                )
+              : t(
+                  "Let’s make sure\nyour brief reaches us.",
+                  "Tuhakikishe\nombi lako limetufikia.",
+                )}
+          </h1>
+          <p className="lead">
+            {id
+              ? survey
+                ? t(
+                    "Your survey request is saved for review. Our team will contact you to discuss the site and agree a suitable assessment time. A visit has not yet been booked.",
+                    "Ombi lako la tathmini limehifadhiwa kwa ajili ya kupitia. Timu itawasiliana nawe kuhusu eneo na kukubaliana muda unaofaa. Ziara haijapangwa bado.",
+                  )
+                : t(
+                    "Your enquiry is saved. Our team will review the requirements and contact you about the next step.",
+                    "Ombi lako limehifadhiwa. Timu itapitia mahitaji yako na kuwasiliana nawe kuhusu hatua inayofuata.",
+                  )
+              : t(
+                  "There is no recent confirmed receipt in this browser. If you are unsure whether a request was saved, contact us before sending it again.",
+                  "Hakuna risiti ya hivi karibuni iliyothibitishwa kwenye kivinjari hiki. Kama huna uhakika ombi limehifadhiwa, wasiliana nasi kabla ya kulituma tena.",
+                )}
+          </p>
+          {id && (
+            <p className="receipt-reference">
+              {t("Request reference", "Rejea ya ombi")}
+              <strong>{id}</strong>
             </p>
-            <h1>
-              {sw
-                ? "Asante kwa\nkuwasiliana nasi."
-                : "Thank you.\nWe have your brief."}
-            </h1>
-            <p className="lead">
-              {survey
-                ? sw
-                  ? "Ombi lako la ukaguzi limepokelewa. Timu itapitia mahitaji na kuwasiliana nawe kuhusu hatua inayofuata."
-                  : "Your site survey request has been received. Our team will review the requirements and contact you about the next step."
-                : sw
-                  ? "Ujumbe wako umehifadhiwa. Timu itapitia taarifa ulizotuma na kuwasiliana nawe."
-                  : "Your message has been saved. Our team will review the details and contact you."}
-            </p>
-            {id && (
-              <p className="scope-note">
-                {sw ? "Rejea ya ombi" : "Request reference"}: {id}
-              </p>
-            )}
+          )}
+          <div className="receipt-links">
             <a className="button dark" href={"/services?lang=" + lang}>
-              {sw ? "Endelea kufahamu huduma" : "Continue exploring"} ↗
+              {t("Explore services", "Angalia huduma")} ↗
+            </a>
+            <a className="button" href={"/products?lang=" + lang}>
+              {t("Explore equipment", "Angalia vifaa")} ↗
             </a>
           </div>
-          <Photo asset="engineering" lang={lang} />
+          <p className="receipt-contact">
+            {t("Prefer to talk?", "Ungependa kuzungumza?")}{" "}
+            <a href={"tel:" + siteConfig.sales.raw}>{siteConfig.sales.label}</a>{" "}
+            · <a href="/whatsapp">WhatsApp</a>
+          </p>
         </section>
       </main>
       <Footer lang={lang} />

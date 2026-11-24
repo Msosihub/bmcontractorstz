@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/media/ReliableLocalImage";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";

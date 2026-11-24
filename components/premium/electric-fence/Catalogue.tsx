@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
-import Image from "next/image";
+import Image from "@/components/media/ReliableLocalImage";
 import type { Language } from "@/lib/i18n/config";
 import copy from "@/data/electric-fence-commercial.json";
 import references from "@/data/electric-fence-equipment-references.json";

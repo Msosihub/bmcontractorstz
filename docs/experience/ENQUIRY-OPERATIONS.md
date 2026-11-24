@@ -1,0 +1,15 @@
+# Enquiry operations and measurement — local candidate
+
+One reusable three-stage framework progressively enhances the existing Contact and Site Survey actions. A Contact needs usable phone OR email; a survey still requires telephone, name and site location. Residential customers need no company registration or business email. Technical models/ratings remain optional.
+
+Existing ContactMessage / SiteSurveyRequest / EnquirySubmission models, transaction locks, deduplication, rate limiting, expiry cleanup and startup guards remain. Purpose and optional Contact equipment/site context are mapped into the existing message field, using canonical staff labels so language switching does not alter deduplication solely through translated labels. Customer-entered message text remains intact. Survey equipment/context retains its existing columns. Composed messages retain the 3,000-character server bound.
+
+A short-lived HttpOnly receipt pointer is set only after persistence. Success routes verify the kind-specific recent pointer against EnquirySubmission and select only recordId, never personal customer data. No new credentials or schema. Absent, invalid, expired or temporarily unverifiable receipts show a neutral contact-before-resubmitting message. Known transport errors alone may degrade this receipt check; permission/identity errors propagate.
+
+The optional draft stays in sessionStorage for this tab, expires after 30 minutes, excludes action tokens/honeypots and is removed after a verified save. Before-hydration edits take precedence over restoration. No personal fields are added to URLs, event payloads or diagnostic logs. Failed server responses return only bounded allowlisted fields to the same browser, including the no-JavaScript form.
+
+Notifications: persistence precedes the existing at-most-once office alert attempt. notifyBmOffice already aggregates rejected deliveries and logs a sanitized warning; it does not implement a durable outbox or prove final handset delivery. Failure does not delete the enquiry. The new authenticated Needs review filters show oldest NEW requests first and the dashboard links directly to these queues. Staff should review both queues daily even when SMS appears healthy, then mark CONTACTED/QUOTED/COMPLETED/CLOSED as appropriate. No new provider or alert credentials.
+
+No active approved analytics provider was found. Privacy-safe bm:enquiry-funnel DOM hooks expose only version, kind, event and stage; no network transmission or tracker is installed. Receipt refreshes are deduplicated locally without sending their references to analytics. These hooks do not establish measured conversion improvement. Retain the released baseline/tree for comparison; activating durable funnel collection needs a separately approved analytics/consent arrangement.
+
+A durable notification outbox, retry worker and per-recipient provider-delivery history would require a separate schema/operational milestone if the owner chooses guaranteed follow-up automation. They are not required or executed in this local milestone. No infrastructure, schema or Production changes are proposed for this candidate.

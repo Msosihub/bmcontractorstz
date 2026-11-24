@@ -1,5 +1,6 @@
 "use client";
 
+import { useEnquiryDraftValue } from "./EnquiryForm";
 import { useLayoutEffect, useRef } from "react";
 
 /** Keep native editing and no-JavaScript defaults across initial hydration. */
@@ -10,7 +11,7 @@ export function EnquiryMessage({
   initialValue?: string;
   required?: boolean;
 }) {
-  const value = initialValue.slice(0, 2000);
+  const value = useEnquiryDraftValue("message", initialValue).slice(0, 3000);
   const field = useRef<HTMLTextAreaElement>(null);
 
   useLayoutEffect(() => {

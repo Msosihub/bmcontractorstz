@@ -68,7 +68,11 @@ test("bilingual service rendering exposes assessment, maintenance and usable FAQ
       );
       assert.match(html, /\/products\?lang=/);
       assert.match(html, /service=/);
-      assert.match(html, lang === "sw" ? /Si mradi wa BM/ : /Not a BM project/);
+      assert.doesNotMatch(
+        html,
+        /Si mradi wa BM|Not a BM project|AI illustration/,
+      );
+      assert.match(html, /alt="[^"]+"/);
     }
 });
 const article = await bundle("app/support/[slug]/page.tsx", shell);

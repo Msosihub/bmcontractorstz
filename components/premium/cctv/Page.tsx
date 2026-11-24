@@ -62,23 +62,25 @@ export function CctvCommercialPage({
             </div>
             <p className="cctv-territory">{t.territory}</p>
           </div>
-          {record && approvedRecordMedia("service", record) ? (
-            <RecordImage kind="service" record={record} lang={lang} />
-          ) : (
-            <figure className="cctv-hero-image">
-              <Image
-                src="/assets/cctv-1440.webp"
-                alt={
-                  sw
-                    ? "Picha ya mfano ya kamera kwenye mlango; si mradi wa BM"
-                    : "Illustrative entrance camera; not a BM installation"
-                }
-                fill
-                priority
-                sizes="(max-width:760px) 100vw, 52vw"
-              />
-            </figure>
-          )}
+          <div className="service-motion-media">
+            {record && approvedRecordMedia("service", record) ? (
+              <RecordImage kind="service" record={record} lang={lang} />
+            ) : (
+              <figure className="cctv-hero-image">
+                <Image
+                  src="/assets/cctv-1440.webp"
+                  alt={
+                    sw
+                      ? "Kamera kwenye mlango wa jengo"
+                      : "Camera at a building entrance"
+                  }
+                  fill
+                  priority
+                  sizes="(max-width:760px) 100vw, 52vw"
+                />
+              </figure>
+            )}
+          </div>
         </section>
         <nav
           className="cctv-jump"
@@ -142,16 +144,11 @@ export function CctvCommercialPage({
                   sizes="(max-width:760px) 100vw, 42vw"
                   alt={
                     sw
-                      ? "Mfano wa AI wa watu wakijadili mpango wa eneo; si wafanyakazi au wateja halisi wa BM"
-                      : "AI illustration of people discussing a site plan; not actual BM staff or clients"
+                      ? "Watu wakijadili mpango wa eneo"
+                      : "People reviewing a site plan"
                   }
                 />
               </div>
-              <figcaption>
-                {sw
-                  ? "Mfano wa ushauri · Si wafanyakazi wa BM"
-                  : "Illustrative consultation · Not BM staff"}
-              </figcaption>
             </figure>
           </div>
           <div className="cctv-option-grid">
@@ -176,8 +173,8 @@ export function CctvCommercialPage({
               src="/assets/cctv-commercial/hotel-1440.webp"
               alt={
                 sw
-                  ? "Mfano wa AI wa mapokezi ya lodge yenye kamera ndogo; si eneo la mteja wa BM"
-                  : "AI illustration of discreet CCTV at a lodge reception; not a BM client site"
+                  ? "Mapokezi ya lodge yenye kamera ndogo"
+                  : "Discreet camera at a lodge reception"
               }
               fill
               sizes="(max-width:760px) 100vw, 58vw"
@@ -302,7 +299,7 @@ export function CctvCommercialPage({
             <a href={links.call}>{t.call} · +255 760 111 880</a>
           </div>
         </section>
-        <p className="cctv-media-note">{t.mediaNote}</p>
+
         <nav className="cctv-section cctv-related" aria-label={t.related}>
           <h2>{t.related}</h2>
           <div>

@@ -1,9 +1,11 @@
 "use server";
 import { reportPreviewDatabaseFailure } from "@/lib/database-diagnostics.mjs";
+import { setEnquiryReceipt } from "@/lib/enquiries/receipt";
 import { redirect } from "next/navigation";
 import { notifyBmOffice } from "@/lib/africasTalking";
 import {
   parseEnquiry,
+  enquiryDraft,
   EnquiryValidationError,
   type EnquiryState,
 } from "@/lib/enquiries/validation";
@@ -18,6 +20,7 @@ export async function createSiteSurveyRequest(
     const input = parseEnquiry(form, "survey");
     const result = await persistEnquiry("survey", input);
     id = result.id;
+    await setEnquiryReceipt("survey", result.id);
     if (result.isNew)
       await notifyBmOffice("BM SITE SURVEY REQUEST\nRef: " + id).catch(
         () => {},
@@ -29,6 +32,7 @@ export async function createSiteSurveyRequest(
     )
       reportPreviewDatabaseFailure(error, "survey");
     return {
+      draft: enquiryDraft(form),
       error:
         error instanceof EnquiryValidationError
           ? "invalid"
@@ -37,10 +41,5 @@ export async function createSiteSurveyRequest(
             : "unavailable",
     };
   }
-  redirect(
-    "/request-site-survey/success?lang=" +
-      lang +
-      "&id=" +
-      encodeURIComponent(id),
-  );
+  redirect("/request-site-survey/success?lang=" + lang);
 }

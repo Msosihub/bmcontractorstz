@@ -1,4 +1,4 @@
-import {AdminActionForm} from "@/components/admin/AdminActionForm";
+import { AdminActionForm } from "@/components/admin/AdminActionForm";
 import { requireAdminPage } from "@/lib/auth/admin-auth";
 /**
  * Admin Site Surveys Page
@@ -52,11 +52,18 @@ function statusClass(status: string) {
 
 const statuses = ["NEW", "CONTACTED", "QUOTED", "COMPLETED", "CANCELLED"];
 
-export default async function AdminSiteSurveysPage() {
+export default async function AdminSiteSurveysPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ status?: string }>;
+}) {
   await requireAdminPage();
+  const filter = (await searchParams).status;
+  const status = statuses.includes(filter || "") ? filter : undefined;
   const requests = await prisma.siteSurveyRequest.findMany({
+    where: status ? { status } : undefined,
     orderBy: {
-      createdAt: "desc",
+      createdAt: status === "NEW" ? "asc" : "desc",
     },
     take: 50,
   });
@@ -80,6 +87,24 @@ export default async function AdminSiteSurveysPage() {
       title="Site Survey Requests"
       subtitle="View and manage customer site survey requests submitted from bmcontractorstz.com."
     >
+      <nav aria-label="Enquiry status" className="mb-6 flex flex-wrap gap-3">
+        <a
+          className="rounded-lg bg-white/10 px-4 py-3"
+          href="/admin/site-surveys"
+        >
+          All received
+        </a>
+        <a
+          className="rounded-lg bg-amber-100 px-4 py-3 text-slate-950"
+          href="/admin/site-surveys?status=NEW"
+        >
+          Needs review ({newCount})
+        </a>
+        <p className="w-full text-sm text-slate-300">
+          Saved requests remain here even if an SMS alert fails. Review NEW
+          requests daily, then update their follow-up status.
+        </p>
+      </nav>
       <div className="grid gap-4 sm:grid-cols-3">
         <AdminStatCard
           label="Total Requests"
@@ -209,7 +234,10 @@ export default async function AdminSiteSurveysPage() {
 
                   <div className="mt-4 flex flex-wrap gap-2">
                     {statuses.map((status) => (
-                      <AdminActionForm key={status} action={updateSiteSurveyStatus}>
+                      <AdminActionForm
+                        key={status}
+                        action={updateSiteSurveyStatus}
+                      >
                         {/* Hidden values tell the server action which record to update. */}
                         <input
                           type="hidden"

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Language } from "@/lib/i18n/config";
+import imagery from "@/data/service-imagery.json";
 import services from "@/data/premium-services.json";
 export function Photo({
   asset,
@@ -22,20 +23,16 @@ export function Photo({
         src={"/assets/" + asset + "-1440.webp"}
         alt={
           alt ||
+          Object.values(imagery).find((x) => x.asset === asset)?.[lang] ||
           (lang === "sw"
-            ? "Picha ya mfano iliyozalishwa kwa AI; si mradi wa BM"
-            : "AI-generated service illustration; not a BM installation")
+            ? "Mazingira ya jengo na vifaa vya uhandisi"
+            : "A building and engineering equipment setting")
         }
         fill
         sizes={sizes}
         style={{ objectFit: "cover" }}
       />
-      <figcaption>
-        {caption ||
-          (lang === "sw"
-            ? "Picha ya mfano ya AI · Si mradi wa BM"
-            : "AI illustration · Not a BM project")}
-      </figcaption>
+      {caption && <figcaption>{caption}</figcaption>}
     </figure>
   );
 }

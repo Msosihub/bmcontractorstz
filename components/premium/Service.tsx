@@ -1,3 +1,4 @@
+import { EngineeringMotion } from "./EngineeringMotion";
 import { approvedRecordMedia } from "@/lib/approved-record-media";
 import { RecordImage } from "./RecordImage";
 import relations from "@/data/service-relations.json";
@@ -25,7 +26,7 @@ export function PremiumService({
     <>
       <Header lang={lang} />
       <main className="premium-main" id="main">
-        <section className="service-hero">
+        <section className="service-hero generic-service-hero">
           <div>
             <p className="eyebrow">
               <a href={"/services?lang=" + lang}>
@@ -57,11 +58,14 @@ export function PremiumService({
               </a>
             )}
           </div>
-          {record && approvedRecordMedia("service", record) ? (
-            <RecordImage kind="service" record={record} lang={lang} />
-          ) : (
-            <Photo asset={s.asset} lang={lang} />
-          )}
+          <div>
+            {record && approvedRecordMedia("service", record) ? (
+              <RecordImage kind="service" record={record} lang={lang} />
+            ) : (
+              <Photo asset={s.asset} lang={lang} />
+            )}
+            <EngineeringMotion slug={slug} lang={lang} />
+          </div>
         </section>
         <section className="section technical">
           <div>
