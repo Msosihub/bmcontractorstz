@@ -95,3 +95,8 @@ test('all known newly covered product callers use the common image policy withou
   const config = await readFile('next.config.ts','utf8');
   assert(!/unoptimized\s*:\s*true/.test(config));
 });
+
+test('ZKTeco model priority artwork has a native matching preload for no-JavaScript streaming', async () => {
+  const page = await readFile('app/catalogue/zkteco/[slug]/page.tsx','utf8');
+  assert(page.includes('<link rel="preload" as="image" href={p.images[0].src} fetchPriority="high" />'));
+});

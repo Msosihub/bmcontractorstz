@@ -63,6 +63,7 @@ export default async function Page({ params, searchParams }: Props) {
         <Breadcrumbs id="catalogue-zkteco" lang={lang} leaf={{title:p.name,href:`/catalogue/zkteco/${slug}`}}/>
         <section className="ac-section rc-detail-hero">
           <div className="rc-detail-art">
+            <link rel="preload" as="image" href={p.images[0].src} fetchPriority="high" />
             <Image
               src={p.images[0].src}
               width={640}
