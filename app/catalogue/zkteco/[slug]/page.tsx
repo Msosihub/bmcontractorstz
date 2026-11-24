@@ -1,5 +1,5 @@
 import { Breadcrumbs } from "@/components/navigation/Breadcrumbs";
-import Image from "next/image";
+import Image from "@/components/media/ReliableLocalImage";
 import { ReferenceCard } from "@/components/catalogue/ReferenceCard";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/site/Header";

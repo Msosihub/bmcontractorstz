@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile, readdir, stat } from 'node:fs/promises';
-import { directProductImage, responsiveLocalScene, powerEquipmentImages } from '../lib/local-image-policy.mjs';
+import { directProductImage, responsiveLocalScene, powerEquipmentImages, zktecoProductImages, fenceProductImages } from '../lib/local-image-policy.mjs';
 
 test('all reviewed manufacturer product assets use bounded static delivery and stay small', async () => {
   for (const dir of ['assets/gate-automation/products', 'images/hikvision']) {
@@ -63,4 +63,35 @@ test('Solar hero reuses existing campus renditions and preserves the actual nati
   assert(scene.srcSet.endsWith(src + ' 1536w'));
   // Campus is a responsive scene, never incorrectly classified as a small product.
   assert.equal(directProductImage(src), false);
+});
+
+// Compare policies with authoritative reference records, not duplicated model expectations.
+test('all forty ZKTeco reference images and eight fence originals have bounded static coverage', async () => {
+  const zk = JSON.parse(await readFile('lib/catalogue/zkteco/products.json', 'utf8'));
+  const fence = JSON.parse(await readFile('data/electric-fence-equipment-references.json', 'utf8')).models;
+  assert.deepEqual(new Set(zktecoProductImages), new Set(zk.flatMap(p => p.images.map(i => i.src))));
+  assert.deepEqual(new Set(fenceProductImages), new Set(fence.map(p => p.imagePath)));
+  assert.equal(zktecoProductImages.length, 40);
+  assert.equal(fenceProductImages.length, 8);
+  for (const src of [...zktecoProductImages, ...fenceProductImages]) {
+    assert(directProductImage(src), src);
+    assert.equal(responsiveLocalScene(src), null);
+    assert((await stat('public' + src)).size < 80000, 'Review mobile payload: ' + src);
+  }
+  for (const src of fenceProductImages) {
+    const small = src.replace('-640.webp', '-320.webp');
+    assert(directProductImage(small));
+    assert((await stat('public' + small)).size > 0);
+  }
+  for (const src of ['/images/access-control/workplace-1440.webp', '/images/access-control/biotime-dashboard.webp', '/images/access-control/unreviewed.webp', '/assets/electric-fence-products/unreviewed-640.webp']) assert.equal(directProductImage(src), false);
+});
+
+test('all known newly covered product callers use the common image policy without a global bypass', async () => {
+  for (const file of ['components/catalogue/ReferenceCard.tsx','app/catalogue/zkteco/[slug]/page.tsx','components/premium/access-control/Page.tsx','components/premium/electric-fence/Catalogue.tsx']) {
+    const source = await readFile(file,'utf8');
+    assert(source.includes('from "@/components/media/ReliableLocalImage"'), file);
+    assert(!source.includes('from "next/image"'), file);
+  }
+  const config = await readFile('next.config.ts','utf8');
+  assert(!/unoptimized\s*:\s*true/.test(config));
 });
