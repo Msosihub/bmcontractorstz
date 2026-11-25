@@ -538,5 +538,65 @@
     "source": "https://www.eaton.com/us/en-us/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/types-of-ups-systems.html",
     "reviewed": "2026-11-22",
     "published": true
+  },
+  {
+    "slug": "planning-office-fibre-network-tanzania",
+    "service": "networking",
+    "image": "/images/networking/rack-detail.webp",
+    "alt": {
+      "en": "Organised copper and fibre connections in a data cabinet",
+      "sw": "Miunganisho ya nyaya na fibre iliyopangwa ndani ya data cabinet"
+    },
+    "category": {
+      "en": "NETWORKING & FIBRE",
+      "sw": "MITANDAO NA FIBRE"
+    },
+    "title": {
+      "en": "Planning your workplace network? Start with the building.",
+      "sw": "Unapanga mtandao wa kazi? Anza na jengo."
+    },
+    "summary": {
+      "en": "A short guide for Tanzanian offices, schools and hotels: routes, users, fibre links and the right information for a useful quotation.",
+      "sw": "Mwongozo mfupi kwa ofisi, shule na hoteli Tanzania: njia za nyaya, watumiaji, fibre na taarifa za kupata makadirio yanayofaa."
+    },
+    "sections": [
+      {
+        "title": {
+          "en": "1. Map the work, not just the Wi-Fi.",
+          "sw": "1. Chora mahitaji ya kazi, si Wi-Fi pekee."
+        },
+        "text": {
+          "en": "List desks, meeting rooms, reception, cameras, printers and separate buildings. Mark distances and usable cable routes. Include the number of users during busy periods. This helps decide where wired connections, access points and fibre backbones belong.",
+          "sw": "Orodhesha meza za kazi, vyumba vya mikutano, mapokezi, kamera, printa na majengo tofauti. Onyesha umbali na njia zinazoweza kupitisha nyaya. Jumuisha idadi ya watumiaji wakati wa msongamano. Hii husaidia kupanga nyaya, AP na mtandao mkuu wa fibre."
+        }
+      },
+      {
+        "title": {
+          "en": "2. Give each device the right job.",
+          "sw": "2. Kila kifaa kipewe kazi inayofaa."
+        },
+        "text": {
+          "en": "A router handles the gateway and routing policy. A switch connects local equipment; managed models can support configured segmentation. An access point provides wireless access. Fibre carries data between suitable endpoints, not electrical power. Match PoE requirements before connecting cameras or APs.",
+          "sw": "Router hushughulikia gateway na mpango wa routing. Swichi huunganisha vifaa; modeli managed zinaweza kusaidia kutenganisha mitandao kwa usanidi sahihi. AP hutoa Wi-Fi. Fibre hubeba data kati ya ncha zinazofaa, si umeme. Hakiki mahitaji ya PoE kabla ya kuunganisha kamera au AP."
+        }
+      },
+      {
+        "title": {
+          "en": "3. Ask how the work will be tested and handed over.",
+          "sw": "3. Uliza namna kazi itakavyopimwa na kukabidhiwa."
+        },
+        "text": {
+          "en": "Agree outlet labels, cabinet layout, link tests, coverage checks, configuration records and responsibility for access. Specify any formal certification or optical testing separately. Keep passwords out of enquiry forms; arrange secure handover with the authorised owner.",
+          "sw": "Kubalianeni lebo za data outlets, mpangilio wa cabinet, vipimo vya viungo, coverage, rekodi za usanidi na usimamizi wa akaunti. Ainisha kando cable certification au vipimo maalumu vya fibre vinavyohitajika. Usiweke password kwenye fomu; panga makabidhiano salama na mwenye mamlaka."
+        }
+      }
+    ],
+    "cta": {
+      "en": "Tell BM your site, buildings, users and existing equipment. Request equipment, a complete installation or an assessment of the network you already use.",
+      "sw": "Tuambie eneo, majengo, watumiaji na vifaa vilivyopo. Omba vifaa, ufungaji kamili au tathmini ya mtandao unaoutumia."
+    },
+    "source": "https://mikrotik.com/product/rb5009ug_s_in",
+    "reviewed": "2026-11-25",
+    "published": true
   }
 ]

@@ -1,0 +1,80 @@
+{
+  "newProductReferences": 6,
+  "artworkAltered": false,
+  "optimisation": "Size/format only; no generated or retouched manufacturer artwork",
+  "publicationClearance": "Owner confirmation required for MikroTik / TP-Link manufacturer image publication; no publication authorised in this task",
+  "rows": [
+    {
+      "id": "rb5009",
+      "source": "https://mikrotik.com/product/rb5009ug_s_in",
+      "imageSource": "https://cdn.mikrotik.com/web-assets/rb_images/2065_hi_res.png",
+      "original": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/outputs/networking-fibre-20261125/research/originals/rb5009.png",
+      "sha256": "79b227438784f8aa5dc864db88c1006200fb8cd7294749cb6c87f6b7b2663894",
+      "rights": "Manufacturer copyright retained; local review reference. Owner/supplier marketing clearance to be confirmed before publication.",
+      "modelIdentity": "mikrotik-rb5009ug-s-in",
+      "output": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/mikrotik-rb5009ug-s-in.webp",
+      "bytes": 29422,
+      "outputSHA256": "131085001e000f37ab013ba140116c005ef85dfc08ac898d3ccc1c9c2d4582f9"
+    },
+    {
+      "id": "hex",
+      "source": "https://mikrotik.com/product/hex_2024",
+      "imageSource": "https://cdn.mikrotik.com/web-assets/rb_images/2408_hi_res.png",
+      "original": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/outputs/networking-fibre-20261125/research/originals/hex.png",
+      "sha256": "e043446ad5c84fba4f2900de24fa6d7b2e44f0b83f716627387eb257bbeee1d0",
+      "rights": "Manufacturer copyright retained; local review reference. Owner/supplier marketing clearance to be confirmed before publication.",
+      "modelIdentity": "mikrotik-hex-e50ug",
+      "output": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/mikrotik-hex-e50ug.webp",
+      "bytes": 33046,
+      "outputSHA256": "286a14bd4fe521a2a460481eb2266dc3ab2c76df579c911426d53f10114df929"
+    },
+    {
+      "id": "eap610",
+      "source": "https://www.omadanetworks.com/us/business-networking/omada-wifi-ceiling-mount/eap650/v1.20/",
+      "imageSource": "https://static.tp-link.com/upload/image-line/EAP650_UN_1.0_large_20230821091756x.png",
+      "original": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/outputs/networking-fibre-20261125/research/originals/eap610.png",
+      "sha256": "af11ca3633692131aa93cc5d8cab5488ef5eacd70c4596fef7b21e0e0ab231f9",
+      "rights": "Manufacturer copyright retained; local review reference. Owner/supplier marketing clearance to be confirmed before publication.",
+      "modelIdentity": "EAP650 — original social image on EAP610 page identified as EAP650; not relabelled as EAP610. Catalogue uses actual EAP650 identity.",
+      "output": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/omada-eap650.webp",
+      "bytes": 9598,
+      "outputSHA256": "adf272d5f23b5552663c398f3a0bf549d11ea54392d6072777bca6794fa58553"
+    },
+    {
+      "id": "eap225-outdoor",
+      "source": "https://www.omadanetworks.com/en/business-networking/omada-wifi-outdoor/eap225-outdoor/",
+      "imageSource": "https://static.tp-link.com/upload/image-line/EAP225-Outdoor_UN_3.2_Overview_01_large_20251029071341t.jpg",
+      "original": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/outputs/networking-fibre-20261125/research/originals/eap225-outdoor.jpg",
+      "sha256": "8d15ef7e28ef6a800f266d72126fc9c2311b580c9e1adc18881c118a59742771",
+      "rights": "Manufacturer copyright retained; local review reference. Owner/supplier marketing clearance to be confirmed before publication.",
+      "modelIdentity": "omada-eap225-outdoor",
+      "output": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/omada-eap225-outdoor.webp",
+      "bytes": 1720,
+      "outputSHA256": "55ef301931f92ce1211a8639e4d925dae24424b0c96d890e80d6864e4b749484"
+    },
+    {
+      "id": "sg2210mp",
+      "source": "https://www.omadanetworks.com/us/business-networking/omada-switch-access/sg2210mp/",
+      "imageSource": "https://static.tp-link.com/upload/image-line/SG2210MP_UN_5.26_overview_01_large_20260416054638p.jpg",
+      "original": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/outputs/networking-fibre-20261125/research/originals/sg2210mp.jpg",
+      "sha256": "95b50175e26d35d966b2fc0dda1038113dad478e3f48e2ff36c873928343e9e2",
+      "rights": "Manufacturer copyright retained; local review reference. Owner/supplier marketing clearance to be confirmed before publication.",
+      "modelIdentity": "omada-sg2210mp",
+      "output": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/omada-sg2210mp.webp",
+      "bytes": 6290,
+      "outputSHA256": "59aeb2584b616495b0a824422d85d571710a92094d6b5b3bd4b1fff56dd2b3a5"
+    },
+    {
+      "id": "sg1024d",
+      "source": "https://www.tp-link.com/en/business-networking/unmanaged-switch/tl-sg1024d/",
+      "imageSource": "https://static.tp-link.com/upload/image-line/TL-SG1024D(UN)11.0-package_large_20230831095701h.png",
+      "original": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/outputs/networking-fibre-20261125/research/originals/sg1024d.png",
+      "sha256": "d1f9d16d1ef673a3b48a5ca65aaf0ccd56f95b576d142b130282c77eecd4e73c",
+      "rights": "Manufacturer copyright retained; local review reference. Owner/supplier marketing clearance to be confirmed before publication.",
+      "modelIdentity": "tp-link-tl-sg1024d",
+      "output": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/tp-link-tl-sg1024d.webp",
+      "bytes": 15770,
+      "outputSHA256": "7fdd44957aeadb96e123d865063445780c38a28ec819bef0162a54e2173aff0a"
+    }
+  ]
+}

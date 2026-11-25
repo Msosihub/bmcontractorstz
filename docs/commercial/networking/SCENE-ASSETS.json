@@ -1,0 +1,182 @@
+{
+  "method": "built-in image_gen; Sharp size-only WebP optimisation",
+  "images": [
+    {
+      "name": "workplace",
+      "original": "/Users/imacslim2015/.codex/generated_images/01a1427a-b2c4-7363-8dae-fe16c077ef1a/exec-4a7df430-c2f9-4461-b703-71b9f80971d8.png",
+      "provenance": "Original AI illustration; not BM project, client or staff evidence"
+    },
+    {
+      "name": "rack-detail",
+      "original": "/Users/imacslim2015/.codex/generated_images/01a1427a-b2c4-7363-8dae-fe16c077ef1a/exec-f9e1cf55-bcef-400a-b257-94a669e331c2.png",
+      "provenance": "Original AI illustration; not BM project, client or staff evidence"
+    },
+    {
+      "name": "fibre-work",
+      "original": "/Users/imacslim2015/.codex/generated_images/01a1427a-b2c4-7363-8dae-fe16c077ef1a/exec-a505d9fc-94af-4230-af60-e86d8f3c37da.png",
+      "provenance": "Original AI illustration; not BM project, client or staff evidence"
+    },
+    {
+      "name": "hotel-wifi",
+      "original": "/Users/imacslim2015/.codex/generated_images/01a1427a-b2c4-7363-8dae-fe16c077ef1a/exec-b0790687-e63f-47f6-bccc-0af50f25e7be.png",
+      "provenance": "Original AI illustration; not BM project, client or staff evidence"
+    },
+    {
+      "name": "connected-campus",
+      "original": "/Users/imacslim2015/.codex/generated_images/01a1427a-b2c4-7363-8dae-fe16c077ef1a/exec-c6326ac1-4a6c-4c6a-817b-6c614e422917.png",
+      "provenance": "Original AI illustration; not BM project, client or staff evidence"
+    }
+  ],
+  "rows": [
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/workplace-384.webp",
+      "width": 384,
+      "bytes": 11062,
+      "sha256": "40fe6d9b1cb6e01319e4d57ba7293d860de5d699045c729023703766abc86116"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/workplace-640.webp",
+      "width": 640,
+      "bytes": 25912,
+      "sha256": "0609d7ba0acae1a13befae0eafd9e4bfb1aa4cd365b53fc89e6806bb2cbdfae1"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/workplace-960.webp",
+      "width": 960,
+      "bytes": 50954,
+      "sha256": "06dd0a4b92c92e2f296cedd9648bb1062365cbdf6e26e029d00d24ceae0e80ee"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/workplace-1280.webp",
+      "width": 1280,
+      "bytes": 80080,
+      "sha256": "57a13c3bd7477292d66cd8535026b1ba70cb9f905a904834c3f14ad6567ac849"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/workplace.webp",
+      "width": 1672,
+      "bytes": 117976,
+      "sha256": "94a530350f72420d5790d0776188adf7e6f3ccffd39101bbc458f59f26d1104d"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/rack-detail-384.webp",
+      "width": 384,
+      "bytes": 18004,
+      "sha256": "80ebfa383fb7973106e58a374d801b5b025d256db0caca956a3ca0c3336392b5"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/rack-detail-640.webp",
+      "width": 640,
+      "bytes": 38508,
+      "sha256": "59bed029b035159fcfe4be1e85c0519a72ceef5a978a5907ed62e07d73c30095"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/rack-detail-960.webp",
+      "width": 960,
+      "bytes": 70444,
+      "sha256": "0e008c40540147e0ac1362fdaaa6f8c3e9c06135dcbf9b7db76dd26e3ded0da1"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/rack-detail-1280.webp",
+      "width": 1280,
+      "bytes": 107852,
+      "sha256": "b2d473a2894070711d33a0ab164eb93f7f181598f962243a6bf95b91fe545061"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/rack-detail.webp",
+      "width": 1536,
+      "bytes": 144878,
+      "sha256": "b79c64d3a425e1e54df6993357b210dded52f05d5c49ef6005680259b20cdcc3"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/fibre-work-384.webp",
+      "width": 384,
+      "bytes": 16800,
+      "sha256": "b726e46eb6bff9ee5410573695141bb20aa73dde971bfe8a476d4c7630a4f6e5"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/fibre-work-640.webp",
+      "width": 640,
+      "bytes": 33884,
+      "sha256": "ce1422842a118be1efc7f0917f514127581968bdf44a82a2ee15abb10f7fa300"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/fibre-work-960.webp",
+      "width": 960,
+      "bytes": 59660,
+      "sha256": "44522b802ed9dfd304b702e68d0ddcea9066a134fe5974d094d66c5d773c02eb"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/fibre-work-1280.webp",
+      "width": 1280,
+      "bytes": 87532,
+      "sha256": "31318058cb285454c6d282b8e86dea68b2af89770ef9f7fca2dfb7e738a07712"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/fibre-work.webp",
+      "width": 1536,
+      "bytes": 112870,
+      "sha256": "fa19b6a391fe1d4ce71ef03bb45a641da939cd6294992e425ceaf676ad212e6c"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/hotel-wifi-384.webp",
+      "width": 384,
+      "bytes": 14820,
+      "sha256": "f1fd717d99ae474fa1dbe43328b15f644d37280c0b5bf32e09da4aebace80504"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/hotel-wifi-640.webp",
+      "width": 640,
+      "bytes": 34324,
+      "sha256": "7b7370ada523ebbdae1dbdd44ef63965b9805eac21aaa34c66a6db847213b146"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/hotel-wifi-960.webp",
+      "width": 960,
+      "bytes": 66538,
+      "sha256": "950c3c4f72d1e3e0a49923ace714f667cabe233c569b17d3358345ae07da104b"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/hotel-wifi-1280.webp",
+      "width": 1280,
+      "bytes": 106224,
+      "sha256": "12e54b5b5caddfd8d24c21cab4cc234dc9744b076c6cc89257e2a4da2aabd9dc"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/hotel-wifi.webp",
+      "width": 1536,
+      "bytes": 140460,
+      "sha256": "4d9ac70c96be40a7899eb66018cd9c78b749611bda98665fe1833bc425eeb433"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/connected-campus-384.webp",
+      "width": 384,
+      "bytes": 27452,
+      "sha256": "4a493495a5261d23202b33e3dde4d9ee72fd7f048e8516f9b161e4c51fa6329e"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/connected-campus-640.webp",
+      "width": 640,
+      "bytes": 69314,
+      "sha256": "4e2a26372f63c5164dc2c1008c506969d300cb0540f701766d44a95b8bc003b3"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/connected-campus-960.webp",
+      "width": 960,
+      "bytes": 142844,
+      "sha256": "7606efb789739144ec3277ef95e64176e3ed9ba88abf8886129d582f1322a55e"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/connected-campus-1280.webp",
+      "width": 1280,
+      "bytes": 227432,
+      "sha256": "204e69f08c019562a62c579aee4b8b930e0908def411770cddb30f031d18bff1"
+    },
+    {
+      "file": "/Users/imacslim2015/Documents/Codex/2026-10-16/google-drive-plugin-google-drive-openai/work/networking-fibre-20261125/public/images/networking/connected-campus.webp",
+      "width": 1536,
+      "bytes": 305294,
+      "sha256": "4da48d03d933c504873376ed34c96eb46ce76777414fb27e61559231d414d6a7"
+    }
+  ]
+}

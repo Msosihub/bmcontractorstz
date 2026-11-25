@@ -1,0 +1,440 @@
+[
+  {
+    "slug": "mikrotik-rb5009ug-s-in",
+    "name": "RB5009UG+S+IN",
+    "brand": "MikroTik",
+    "category": "routers",
+    "generation": "RB5009UG+S+IN",
+    "classification": "current",
+    "images": [
+      {
+        "src": "/images/networking/mikrotik-rb5009ug-s-in.webp",
+        "alt": "MikroTik RB5009UG+S+IN — manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "A compact wired gateway for an assessed office, institution or multi-building network.",
+      "sw": "Gateway ya nyaya kwa mtandao wa ofisi, taasisi au majengo kadhaa baada ya tathmini."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Ethernet",
+          "sw": "Ethernet"
+        },
+        "value": {
+          "en": "7 × Gigabit + 1 × 2.5G",
+          "sw": "7 × Gigabit + 1 × 2.5G"
+        }
+      },
+      {
+        "label": {
+          "en": "Fibre uplink",
+          "sw": "Uplink ya fibre"
+        },
+        "value": {
+          "en": "1 × 10G SFP+ cage; module selected separately",
+          "sw": "Nafasi 1 ya 10G SFP+; moduli huchaguliwa kando"
+        }
+      },
+      {
+        "label": {
+          "en": "Software",
+          "sw": "Programu"
+        },
+        "value": {
+          "en": "RouterOS v7, licence level 5",
+          "sw": "RouterOS v7, leseni level 5"
+        }
+      }
+    ],
+    "variants": [
+      "RB5009UG+S+IN"
+    ],
+    "source": "https://mikrotik.com/product/rb5009ug_s_in",
+    "documents": [
+      {
+        "label": {
+          "en": "Official manufacturer information",
+          "sw": "Taarifa rasmi za mtengenezaji"
+        },
+        "url": "https://mikrotik.com/product/rb5009ug_s_in"
+      }
+    ],
+    "related": [
+      "omada-sg2210mp",
+      "omada-eap650"
+    ],
+    "price": null,
+    "availability": "Quotation only; no stock claim",
+    "compatibility": {
+      "en": "Wired router, not a Wi-Fi access point. This UG variant has PoE input, not PoE output for access points. Match SFP+ modules and power arrangements. Exact hardware revision, power supply, modules and configuration are confirmed in the quotation. Device link rates are not a guaranteed internet speed.",
+      "sw": "Hii ni router ya nyaya; haina Wi-Fi. Toleo hili lina PoE-in, si PoE-out kwa AP. SFP+ inahitaji moduli inayofaa. Toleo la kifaa, umeme wake, moduli na usanidi huthibitishwa kwenye nukuu. Kasi ya port si ahadi ya kasi ya intaneti."
+    }
+  },
+  {
+    "slug": "mikrotik-hex-e50ug",
+    "name": "hEX refresh · E50UG",
+    "brand": "MikroTik",
+    "category": "routers",
+    "generation": "E50UG",
+    "classification": "current",
+    "images": [
+      {
+        "src": "/images/networking/mikrotik-hex-e50ug.webp",
+        "alt": "MikroTik hEX refresh · E50UG — manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "Practical wired routing for smaller offices, shops and a clearly scoped network.",
+      "sw": "Router ya nyaya kwa ofisi ndogo, maduka na mtandao wenye mahitaji yaliyobainishwa."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Ethernet",
+          "sw": "Ethernet"
+        },
+        "value": {
+          "en": "5 × Gigabit Ethernet ports",
+          "sw": "Port 5 za Gigabit Ethernet"
+        }
+      },
+      {
+        "label": {
+          "en": "Platform",
+          "sw": "Mfumo"
+        },
+        "value": {
+          "en": "RouterOS v7; 512 MB RAM",
+          "sw": "RouterOS v7; RAM 512 MB"
+        }
+      },
+      {
+        "label": {
+          "en": "Power role",
+          "sw": "Umeme"
+        },
+        "value": {
+          "en": "DC / passive PoE-in; no PoE-out",
+          "sw": "DC / passive PoE-in; haina PoE-out"
+        }
+      }
+    ],
+    "variants": [
+      "E50UG"
+    ],
+    "source": "https://mikrotik.com/product/hex_2024",
+    "documents": [
+      {
+        "label": {
+          "en": "Official manufacturer information",
+          "sw": "Taarifa rasmi za mtengenezaji"
+        },
+        "url": "https://mikrotik.com/product/hex_2024"
+      }
+    ],
+    "related": [
+      "tp-link-tl-sg1024d",
+      "omada-eap650"
+    ],
+    "price": null,
+    "availability": "Quotation only; no stock claim",
+    "compatibility": {
+      "en": "Wired routing only: no built-in Wi-Fi or access-point PoE output. Match the passive PoE input requirements; do not assume interchangeable power supplies. Exact hardware revision, power supply, modules and configuration are confirmed in the quotation. Device link rates are not a guaranteed internet speed.",
+      "sw": "Router ya nyaya yenye passive PoE-in. Haina Wi-Fi wala PoE-out ya kuwasha AP. Hakiki chanzo chake cha umeme. Toleo la kifaa, umeme wake, moduli na usanidi huthibitishwa kwenye nukuu. Kasi ya port si ahadi ya kasi ya intaneti."
+    }
+  },
+  {
+    "slug": "omada-eap650",
+    "name": "EAP650",
+    "brand": "TP-Link Omada",
+    "category": "access-points",
+    "generation": "EAP650; hardware revision confirmed in quotation",
+    "classification": "current",
+    "images": [
+      {
+        "src": "/images/networking/omada-eap650.webp",
+        "alt": "TP-Link Omada EAP650 — manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "Ceiling-mount Wi-Fi 6 for planned office, school and hospitality coverage.",
+      "sw": "Wi-Fi 6 ya kufungwa darini kwa ofisi, shule na hoteli zenye mpango wa coverage."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Wireless class",
+          "sw": "Daraja la wireless"
+        },
+        "value": {
+          "en": "AX3000, dual-band Wi-Fi 6",
+          "sw": "AX3000, Wi-Fi 6 ya bendi mbili"
+        }
+      },
+      {
+        "label": {
+          "en": "Network port",
+          "sw": "Port ya mtandao"
+        },
+        "value": {
+          "en": "1 × Gigabit Ethernet",
+          "sw": "Port 1 ya Gigabit Ethernet"
+        }
+      },
+      {
+        "label": {
+          "en": "Installation",
+          "sw": "Ufungaji"
+        },
+        "value": {
+          "en": "Ceiling/wall mount; power matched to revision",
+          "sw": "Darini/ukutani; umeme ulingane na toleo"
+        }
+      }
+    ],
+    "variants": [
+      "EAP650 V1 manufacturer reference"
+    ],
+    "source": "https://www.omadanetworks.com/us/business-networking/omada-wifi-ceiling-mount/eap650/",
+    "documents": [
+      {
+        "label": {
+          "en": "Official manufacturer information",
+          "sw": "Taarifa rasmi za mtengenezaji"
+        },
+        "url": "https://www.omadanetworks.com/us/business-networking/omada-wifi-ceiling-mount/eap650/"
+      }
+    ],
+    "related": [
+      "omada-sg2210mp",
+      "omada-eap225-outdoor"
+    ],
+    "price": null,
+    "availability": "Quotation only; no stock claim",
+    "compatibility": {
+      "en": "Requires a suitable wired uplink and power supply. Controller, roaming and mesh features depend on the selected revision, firmware and complete deployment. Radio rate is not user throughput. Exact hardware revision, power supply, modules and configuration are confirmed in the quotation. Device link rates are not a guaranteed internet speed.",
+      "sw": "AP hii inahitaji uplink na umeme unaofaa. Vipengele vya controller na roaming hutegemea matoleo na usanidi wa mfumo. Toleo la kifaa, umeme wake, moduli na usanidi huthibitishwa kwenye nukuu. Kasi ya port si ahadi ya kasi ya intaneti."
+    }
+  },
+  {
+    "slug": "omada-eap225-outdoor",
+    "name": "EAP225-Outdoor",
+    "brand": "TP-Link Omada",
+    "category": "access-points",
+    "generation": "EAP225-Outdoor; revision confirmed at quotation",
+    "classification": "current",
+    "images": [
+      {
+        "src": "/images/networking/omada-eap225-outdoor.webp",
+        "alt": "TP-Link Omada EAP225-Outdoor — manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "Outdoor Wi-Fi coverage for assessed courtyards, compounds and hospitality areas.",
+      "sw": "Wi-Fi ya nje kwa viwanja, maeneo yenye majengo na sehemu za hoteli baada ya tathmini."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Wireless class",
+          "sw": "Daraja la wireless"
+        },
+        "value": {
+          "en": "AC1200, dual-band Wi-Fi 5",
+          "sw": "AC1200, Wi-Fi 5 ya bendi mbili"
+        }
+      },
+      {
+        "label": {
+          "en": "Network port",
+          "sw": "Port ya mtandao"
+        },
+        "value": {
+          "en": "1 × Gigabit Ethernet",
+          "sw": "Port 1 ya Gigabit Ethernet"
+        }
+      },
+      {
+        "label": {
+          "en": "Intended location",
+          "sw": "Mahali pa matumizi"
+        },
+        "value": {
+          "en": "Indoor/outdoor; installation and protection assessed",
+          "sw": "Ndani/nje; ufungaji na kinga hupangwa kwa eneo"
+        }
+      }
+    ],
+    "variants": [
+      "EAP225-Outdoor; revision confirmed at quotation"
+    ],
+    "source": "https://www.omadanetworks.com/en/business-networking/omada-wifi-outdoor/eap225-outdoor/",
+    "documents": [
+      {
+        "label": {
+          "en": "Official manufacturer information",
+          "sw": "Taarifa rasmi za mtengenezaji"
+        },
+        "url": "https://www.omadanetworks.com/en/business-networking/omada-wifi-outdoor/eap225-outdoor/"
+      }
+    ],
+    "related": [
+      "omada-eap650",
+      "omada-sg2210mp"
+    ],
+    "price": null,
+    "availability": "Quotation only; no stock claim",
+    "compatibility": {
+      "en": "An outdoor AP is not automatically a building-to-building backhaul. Survey obstruction, weather exposure, earthing/surge protection, uplink and model-specific power requirements. Exact hardware revision, power supply, modules and configuration are confirmed in the quotation. Device link rates are not a guaranteed internet speed.",
+      "sw": "AP ya nje si mbadala wa fibre kwa kila kiungo cha majengo. Mahali, hali ya hewa, kinga na umeme hupangwa kulingana na toleo. Toleo la kifaa, umeme wake, moduli na usanidi huthibitishwa kwenye nukuu. Kasi ya port si ahadi ya kasi ya intaneti."
+    }
+  },
+  {
+    "slug": "omada-sg2210mp",
+    "name": "SG2210MP",
+    "brand": "TP-Link Omada",
+    "category": "switches",
+    "generation": "SG2210MP V5.26 manufacturer reference",
+    "classification": "current",
+    "images": [
+      {
+        "src": "/images/networking/omada-sg2210mp.webp",
+        "alt": "TP-Link Omada SG2210MP — manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "Managed PoE+ switching for compatible IP cameras and access points, with fibre-uplink options.",
+      "sw": "Swichi managed ya PoE+ kwa kamera za IP na AP zinazooana, yenye chaguo la uplink ya fibre."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Copper ports",
+          "sw": "Port za nyaya"
+        },
+        "value": {
+          "en": "8 × Gigabit PoE+",
+          "sw": "8 × Gigabit PoE+"
+        }
+      },
+      {
+        "label": {
+          "en": "Uplinks",
+          "sw": "Uplink"
+        },
+        "value": {
+          "en": "2 × Gigabit SFP slots",
+          "sw": "Nafasi 2 za Gigabit SFP"
+        }
+      },
+      {
+        "label": {
+          "en": "PoE reference",
+          "sw": "Rejea ya PoE"
+        },
+        "value": {
+          "en": "150 W total budget; 802.3af/at",
+          "sw": "Bajeti ya jumla 150 W; 802.3af/at"
+        }
+      }
+    ],
+    "variants": [
+      "SG2210MP V5.26 manufacturer reference"
+    ],
+    "source": "https://www.omadanetworks.com/us/business-networking/omada-switch-access/sg2210mp/",
+    "documents": [
+      {
+        "label": {
+          "en": "Official manufacturer information",
+          "sw": "Taarifa rasmi za mtengenezaji"
+        },
+        "url": "https://www.omadanetworks.com/us/business-networking/omada-switch-access/sg2210mp/"
+      }
+    ],
+    "related": [
+      "omada-eap650",
+      "mikrotik-rb5009ug-s-in"
+    ],
+    "price": null,
+    "availability": "Quotation only; no stock claim",
+    "compatibility": {
+      "en": "Calculate combined PoE demand and startup margin rather than counting ports alone. SFP modules and any controller are selected separately; VLAN/ACL features require correct configuration. Exact hardware revision, power supply, modules and configuration are confirmed in the quotation. Device link rates are not a guaranteed internet speed.",
+      "sw": "Jumla ya matumizi ya PoE ya kamera na AP lazima iwe ndani ya bajeti ya kifaa. Moduli za SFP na controller huchaguliwa kando kulingana na mradi. Toleo la kifaa, umeme wake, moduli na usanidi huthibitishwa kwenye nukuu. Kasi ya port si ahadi ya kasi ya intaneti."
+    }
+  },
+  {
+    "slug": "tp-link-tl-sg1024d",
+    "name": "TL-SG1024D",
+    "brand": "TP-Link",
+    "category": "switches",
+    "generation": "TL-SG1024D UN V11 manufacturer reference",
+    "classification": "current",
+    "images": [
+      {
+        "src": "/images/networking/tp-link-tl-sg1024d.webp",
+        "alt": "TP-Link TL-SG1024D — manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "Straightforward Gigabit port expansion where managed segmentation and PoE are not required.",
+      "sw": "Kuongeza port za Gigabit pale usimamizi wa VLAN na PoE visipohitajika."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Network ports",
+          "sw": "Port za mtandao"
+        },
+        "value": {
+          "en": "24 × Gigabit Ethernet",
+          "sw": "Port 24 za Gigabit Ethernet"
+        }
+      },
+      {
+        "label": {
+          "en": "Management",
+          "sw": "Usimamizi"
+        },
+        "value": {
+          "en": "Unmanaged switching",
+          "sw": "Swichi unmanaged"
+        }
+      },
+      {
+        "label": {
+          "en": "Mounting",
+          "sw": "Kufunga"
+        },
+        "value": {
+          "en": "Desktop / rackmount",
+          "sw": "Mezani / ndani ya rack"
+        }
+      }
+    ],
+    "variants": [
+      "TL-SG1024D UN V11 manufacturer reference"
+    ],
+    "source": "https://www.tp-link.com/en/business-networking/unmanaged-switch/tl-sg1024d/",
+    "documents": [
+      {
+        "label": {
+          "en": "Official manufacturer information",
+          "sw": "Taarifa rasmi za mtengenezaji"
+        },
+        "url": "https://www.tp-link.com/en/business-networking/unmanaged-switch/tl-sg1024d/"
+      }
+    ],
+    "related": [
+      "mikrotik-hex-e50ug",
+      "omada-sg2210mp"
+    ],
+    "price": null,
+    "availability": "Quotation only; no stock claim",
+    "compatibility": {
+      "en": "This is an unmanaged, non-PoE switch. It is not a substitute for managed VLAN control or a PoE supply. Choose the model around the actual topology and power requirements. Exact hardware revision, power supply, modules and configuration are confirmed in the quotation. Device link rates are not a guaranteed internet speed.",
+      "sw": "Hii ni swichi unmanaged isiyo na PoE. Kwa VLAN au kuwasha AP/kamera kupitia nyaya, chagua kifaa kingine kinachofaa. Toleo la kifaa, umeme wake, moduli na usanidi huthibitishwa kwenye nukuu. Kasi ya port si ahadi ya kasi ya intaneti."
+    }
+  }
+]
