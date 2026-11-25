@@ -75,6 +75,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   add("/catalogue/zkteco", true);
   for (const product of zktecoProducts)
     add("/catalogue/zkteco/" + product.slug, true);
+  const networkingService = services.find((service) => service.slug === "networking");
+  if (!networkingService || networkingService.isPublished) {
+    const { networkingProducts, networkingFamilies, networkingFamilyPath } = await import("@/lib/catalogue/networking");
+    add("/catalogue/networking", true);
+    for (const family of networkingFamilies) add(networkingFamilyPath(family.slug), true);
+    for (const product of networkingProducts) add("/catalogue/networking/" + product.slug, true);
+  }
   const { hikvisionProducts } = await import("@/lib/catalogue/hikvision");
   add("/services/hikvision", true);
   add("/catalogue/hikvision", true);

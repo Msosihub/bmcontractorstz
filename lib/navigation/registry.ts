@@ -619,6 +619,26 @@ const routeDestinations: Omit<Destination,"relatedServices">[] = [
     "visibility": "public"
   },
   {
+    "id": "catalogue-networking",
+    "title": {
+      "en": "Networking equipment",
+      "sw": "Vifaa vya mitandao"
+    },
+    "href": "/catalogue/networking",
+    "parentId": "equipment",
+    "status": "published",
+    "serviceSlugs": [
+      "networking"
+    ],
+    "equipmentCategories": [
+      "networking",
+      "routers",
+      "access-points",
+      "switches"
+    ],
+    "visibility": "public"
+  },
+  {
     "id": "catalogue-hikvision",
     "title": {
       "en": "Hikvision",
@@ -1128,7 +1148,7 @@ export const navigationGroups: NavGroup[] = [
         },
         "items": [
           {
-            "destination": "networking",
+            "destination": "catalogue-networking",
             "title": {
               "en": "Networking & fibre",
               "sw": "Mitandao na fibre"

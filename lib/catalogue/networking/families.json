@@ -1,0 +1,338 @@
+[
+  {
+    "slug": "data-cabinets",
+    "title": {
+      "en": "Data cabinets & racks",
+      "sw": "Data cabinet na rack"
+    },
+    "image": "cabinet-family",
+    "alt": {
+      "en": "Generic wall-mounted and floor-standing cabinet options in a technical showroom",
+      "sw": "Mfano wa cabinet ya ukutani na rack ya kusimama kwenye chumba cha vifaa"
+    },
+    "intro": {
+      "en": "Make room for the equipment—and the work around it. Choose mounting, usable depth and ventilation before choosing a height.",
+      "sw": "Panga nafasi ya vifaa na nafasi ya kuvifanyia kazi. Chagua sehemu ya kufunga, kina cha matumizi na uingizaji hewa kabla ya kuchagua urefu."
+    },
+    "options": {
+      "en": "Size enquiries: 4U, 6U, 9U, 12U, 15U, 18U, 22U, 27U, 32U, 37U and 42U. Supply, mounting format and dimensions must be confirmed for each quotation.",
+      "sw": "Chaguo za kuombea bei: 4U, 6U, 9U, 12U, 15U, 18U, 22U, 27U, 32U, 37U na 42U. Upatikanaji, aina ya ufungaji na vipimo huthibitishwa kwenye kila makadirio."
+    },
+    "points": [
+      {
+        "en": "Wall-mounted: assess the wall, cabinet weight, cable entry and safe access. A small patching point has different needs from a server rack.",
+        "sw": "Ya ukutani: hakiki uimara wa ukuta, uzito, njia ya nyaya na nafasi ya kufikia vifaa. Sehemu ndogo ya patching ina mahitaji tofauti na rack ya seva."
+      },
+      {
+        "en": "Floor-standing: plan floor space, equipment weight, service access and future expansion. Do not select a 42U enclosure by height alone.",
+        "sw": "Ya kusimama: panga nafasi sakafuni, uzito wa vifaa, nafasi ya matengenezo na upanuzi. Usichague rack ya 42U kwa urefu pekee."
+      },
+      {
+        "en": "Confirm mounting width and usable equipment depth against actual switches, UPS, servers and bend clearance. External depth is not usable mounting depth.",
+        "sw": "Linganisha upana wa kufungia na kina kinachotumika na swichi, UPS, seva na nafasi ya kupinda nyaya. Kina cha nje si sawa na kina cha kufungia vifaa."
+      },
+      {
+        "en": "Specify door and ventilation needs, shelves, cable organisers, fans and PDU separately. Their inclusion, load ratings and electrical arrangements are quotation-specific.",
+        "sw": "Ainisha milango, uingizaji hewa, shelf, cable organiser, feni na PDU kando. Vifaa vinavyojumuishwa, uwezo wa kubeba na mpangilio wa umeme huthibitishwa kwenye makadirio."
+      }
+    ],
+    "check": {
+      "en": "Send your equipment list, mounting preference, available space and photos of the installation area. We will confirm U height, width, usable depth, load and accessories.",
+      "sw": "Tuma orodha ya vifaa, aina ya ufungaji unayopendelea, nafasi iliyopo na picha za eneo. Tutahakiki urefu wa U, upana, kina cha matumizi, uzito na vifaa vya ziada."
+    },
+    "faq": [
+      [
+        {
+          "en": "Is 6U or 9U enough?",
+          "sw": "6U au 9U inatosha?"
+        },
+        {
+          "en": "Count rack-mounted equipment, patch panels and organisers, then allow working clearance and expansion. Equipment depth, load and heat can rule out a cabinet even when the U count fits.",
+          "sw": "Hesabu vifaa vya kufungwa, patch panel na organiser, kisha acha nafasi ya kazi na upanuzi. Kina, uzito na joto vinaweza kufanya cabinet isifae hata kama U zinatosha."
+        }
+      ],
+      [
+        {
+          "en": "Are fans, shelves and a PDU included?",
+          "sw": "Feni, shelf na PDU zinajumuishwa?"
+        },
+        {
+          "en": "Only if listed in the agreed quotation. Confirm each accessory and its fit; the family photograph is not a promise of an included kit.",
+          "sw": "Ni pale tu vinapoainishwa kwenye makadirio yaliyokubaliwa. Hakiki kila kifaa na uoanifu wake; picha ya kundi si ahadi ya seti kamili."
+        }
+      ]
+    ],
+    "related": ["cat6-cabling", "fibre-accessories"],
+    "models": ["omada-sg2210mp", "mikrotik-rb5009ug-s-in"],
+    "pointTitles": [
+      {
+        "en": "Wall-mounted cabinets",
+        "sw": "Cabinet za ukutani"
+      },
+      {
+        "en": "Floor-standing racks",
+        "sw": "Rack za kusimama"
+      },
+      {
+        "en": "Width and usable depth",
+        "sw": "Upana na kina cha matumizi"
+      },
+      {
+        "en": "Doors, ventilation and accessories",
+        "sw": "Milango, hewa na vifaa vya ziada"
+      }
+    ]
+  },
+  {
+    "slug": "cat6-cabling",
+    "title": {
+      "en": "CAT6 cabling & terminations",
+      "sw": "Nyaya za CAT6 na termination"
+    },
+    "image": "copper-materials",
+    "alt": {
+      "en": "Generic grey and black cable coils, a blue patch lead, faceplate and patch panel",
+      "sw": "Mfano wa koili za nyaya za kijivu na nyeusi, patch cord ya bluu, faceplate na patch panel"
+    },
+    "intro": {
+      "en": "From the cabinet to the desk, camera or access point. Specify the cable, its route and the complete termination system together.",
+      "sw": "Kutoka cabinet hadi dawati, kamera au access point. Ainisha nyaya, njia yake na vifaa vyote vya termination kama mfumo mmoja."
+    },
+    "options": {
+      "en": "Indoor CAT6 · outdoor CAT6 · patch cords · keystones · faceplates · RJ45 connectors · patch panels · cable management.",
+      "sw": "CAT6 za ndani · CAT6 za nje · patch cord · keystone · faceplate · connector za RJ45 · patch panel · vifaa vya kupanga nyaya."
+    },
+    "points": [
+      {
+        "en": "BM handles grey and black CAT6; blue is also a familiar cable colour. Colour alone does not prove conductor material, shielding, jacket type or outdoor suitability.",
+        "sw": "BM hushughulikia CAT6 za kijivu na nyeusi; bluu pia ni rangi inayotumika. Rangi pekee haithibitishi aina ya conductor, shielding, jacket au kufaa kwa matumizi ya nje."
+      },
+      {
+        "en": "Indoor/outdoor: assess UV, moisture, route, containment and building-entry requirements. Ask for the exact cable datasheet rather than assuming a black jacket is outdoor rated.",
+        "sw": "Ndani/nje: tathmini jua, unyevu, njia, containment na mahitaji ya kuingia jengoni. Omba datasheet ya nyaya halisi badala ya kudhani jacket nyeusi inafaa nje."
+      },
+      {
+        "en": "Pure-copper and shielded/unshielded enquiries need verified manufacturer specifications. Confirm conductor construction, compatible jacks/plugs and any bonding requirements before ordering.",
+        "sw": "Maombi ya pure copper na shielded/unshielded yanahitaji vipimo vilivyothibitishwa vya mtengenezaji. Hakiki conductor, jack/plug zinazofaa na mahitaji ya bonding kabla ya kuagiza."
+      },
+      {
+        "en": "Agree outlet counts, route lengths, patching, labels and the test scope. PoE needs a complete assessment of switch power, cable, connectors and device demand.",
+        "sw": "Kubalianeni idadi ya outlet, urefu wa njia, patching, lebo na vipimo vya kufanya. PoE inahitaji tathmini ya umeme wa swichi, nyaya, connector na mahitaji ya kifaa."
+      }
+    ],
+    "check": {
+      "en": "Send indoor/outdoor routes, outlet counts, estimated lengths, device/PoE needs and any required cable specification. No conductor or jacket grade is assumed.",
+      "sw": "Tuma njia za ndani/nje, idadi ya outlet, makadirio ya urefu, vifaa/mahitaji ya PoE na vipimo vya nyaya vinavyotakiwa. Aina ya conductor au jacket haidhaniwi."
+    },
+    "faq": [
+      [
+        {
+          "en": "Does black CAT6 mean outdoor or pure copper?",
+          "sw": "CAT6 nyeusi ni ya nje au pure copper?"
+        },
+        {
+          "en": "No. Check the exact manufacturer specification for conductor and environmental rating; colour is an identification choice.",
+          "sw": "Hapana. Hakiki vipimo vya mtengenezaji kuhusu conductor na matumizi yanayoruhusiwa; rangi ni chaguo la utambulisho."
+        }
+      ],
+      [
+        {
+          "en": "Can you quote a complete outlet installation?",
+          "sw": "Mnaweza kutoa bei ya outlet yenye ufungaji kamili?"
+        },
+        {
+          "en": "Yes—request cable routes, outlets, terminations, patching, cabinet work and agreed testing in one scope, rather than cable alone.",
+          "sw": "Ndiyo—omba njia za nyaya, outlet, termination, patching, kazi ya cabinet na vipimo vilivyokubaliwa katika wigo mmoja, badala ya nyaya pekee."
+        }
+      ]
+    ],
+    "related": ["data-cabinets", "fibre-cables"],
+    "models": ["tp-link-tl-sg1024d", "omada-sg2210mp"],
+    "pointTitles": [
+      {
+        "en": "Colour is not a specification",
+        "sw": "Rangi si kipimo cha ubora"
+      },
+      {
+        "en": "Indoor versus outdoor",
+        "sw": "Nyaya za ndani na za nje"
+      },
+      {
+        "en": "Conductor and shielding",
+        "sw": "Conductor na shielding"
+      },
+      {
+        "en": "Complete outlets and PoE",
+        "sw": "Outlet kamili na PoE"
+      }
+    ]
+  },
+  {
+    "slug": "fibre-cables",
+    "title": {
+      "en": "Fibre optic cables",
+      "sw": "Nyaya za fibre optic"
+    },
+    "image": "fibre-work",
+    "alt": {
+      "en": "Generic fibre preparation and splicing workbench with protected termination materials",
+      "sw": "Mfano wa meza ya kuandaa na kuunganisha fibre yenye vifaa vya kulinda termination"
+    },
+    "intro": {
+      "en": "Plan the route before the roll. Building-to-building and campus links need the right fibre, construction and protected termination at both ends.",
+      "sw": "Panga njia kabla ya kuagiza koili. Viungo kati ya majengo na kampasi vinahitaji fibre inayofaa, muundo sahihi wa nyaya na termination iliyolindwa pande zote."
+    },
+    "options": {
+      "en": "Indoor/outdoor application · single-mode/multimode · required core count · installation construction · route length or roll requirement. All exact specifications are confirmed against the BOQ.",
+      "sw": "Matumizi ya ndani/nje · single-mode/multimode · idadi ya core · muundo wa nyaya kulingana na ufungaji · urefu wa njia au koili. Vipimo halisi huthibitishwa kwa BOQ."
+    },
+    "points": [
+      {
+        "en": "Assess ducts, aerial or other proposed routes, exposure, pull conditions and building entry. Construction, protection and local installation constraints determine the cable choice.",
+        "sw": "Tathmini duct, njia za juu au njia nyingine, mazingira, uvutaji na kuingia jengoni. Muundo, kinga na hali za ufungaji ndizo huongoza uchaguzi."
+      },
+      {
+        "en": "Specify single-mode or multimode around the link design and supported optics. Core count must cover the actual links and agreed spare capacity; more cores do not automatically make a faster link.",
+        "sw": "Ainisha single-mode au multimode kulingana na kiungo na optics zinazokubaliwa. Idadi ya core izingatie viungo na akiba iliyokubaliwa; core nyingi si lazima ziongeze kasi."
+      },
+      {
+        "en": "Match transceiver speed, fibre type, wavelength, distance and optical budget at both ends. A fibre link still needs appropriate powered equipment; fibre does not carry PoE.",
+        "sw": "Linganisha kasi ya transceiver, aina ya fibre, wavelength, umbali na optical budget pande zote. Kiungo bado kinahitaji vifaa vyenye umeme; fibre haipitishi PoE."
+      },
+      {
+        "en": "Quote route length with agreed installation allowance, splicing, enclosures, patch cords and loss/continuity tests. Specialist OTDR reports are scoped explicitly, not assumed.",
+        "sw": "Omba urefu wa njia wenye akiba ya ufungaji iliyokubaliwa, splicing, box, patch cord na vipimo vya loss/continuity. Ripoti maalumu za OTDR huainishwa wazi, hazidhaniwi."
+      }
+    ],
+    "check": {
+      "en": "Send a route sketch, building distances, indoor/outdoor sections, existing fibre/optics and required links or core count. Ask for materials only or complete link delivery.",
+      "sw": "Tuma mchoro wa njia, umbali wa majengo, sehemu za ndani/nje, fibre/optics zilizopo na viungo au core zinazotakiwa. Omba vifaa pekee au utekelezaji wa kiungo kamili."
+    },
+    "faq": [
+      [
+        {
+          "en": "Can I order only by length and colour?",
+          "sw": "Naweza kuagiza kwa urefu na rangi pekee?"
+        },
+        {
+          "en": "No. Confirm fibre type, core count, construction and environmental/installation requirements. The exact cable must match the designed link.",
+          "sw": "Hapana. Hakiki aina ya fibre, idadi ya core, muundo na mazingira/ufungaji. Nyaya halisi lazima zilingane na mpango wa kiungo."
+        }
+      ],
+      [
+        {
+          "en": "Will fibre also power cameras at another building?",
+          "sw": "Fibre itapeleka pia umeme kwa kamera jengo jingine?"
+        },
+        {
+          "en": "No. Plan power, local switching/PoE and protection at the remote end separately from the optical data link.",
+          "sw": "Hapana. Panga umeme, swichi/PoE na kinga upande wa pili kando na kiungo cha data cha fibre."
+        }
+      ]
+    ],
+    "related": ["fibre-accessories", "data-cabinets"],
+    "models": ["mikrotik-rb5009ug-s-in", "omada-sg2210mp"],
+    "pointTitles": [
+      {
+        "en": "Route and protection",
+        "sw": "Njia na kinga"
+      },
+      {
+        "en": "Fibre type and core count",
+        "sw": "Aina ya fibre na idadi ya core"
+      },
+      {
+        "en": "Optics and endpoint power",
+        "sw": "Optics na umeme kila mwisho"
+      },
+      {
+        "en": "Length, termination and testing",
+        "sw": "Urefu, termination na vipimo"
+      }
+    ]
+  },
+  {
+    "slug": "fibre-accessories",
+    "title": {
+      "en": "Fibre patch cords & accessories",
+      "sw": "Patch cord na vifaa vya fibre"
+    },
+    "image": "fibre-materials",
+    "alt": {
+      "en": "Generic fibre patch cords, distribution box, splice tray and capped transceiver, shown as separate options",
+      "sw": "Mfano wa patch cord za fibre, distribution box, splice tray na transceiver yenye kifuniko, kama chaguo tofauti"
+    },
+    "intro": {
+      "en": "Match every end. Connector shape, polish, fibre type and optical equipment must agree—not just the colour of the cable.",
+      "sw": "Linganisha kila ncha. Umbo la connector, polish, aina ya fibre na vifaa vya optics lazima vioane—si rangi ya nyaya pekee."
+    },
+    "options": {
+      "en": "LC–LC · SC–SC · LC–SC · UPC/APC · simplex/duplex · pigtails · adapters/couplers · ODF/distribution boxes · splice trays/closures · SFP modules · media converters · patch panels and cable management.",
+      "sw": "LC–LC · SC–SC · LC–SC · UPC/APC · simplex/duplex · pigtail · adapter/coupler · ODF/distribution box · splice tray/closure · moduli za SFP · media converter · patch panel na cable management."
+    },
+    "points": [
+      {
+        "en": "LC and SC describe connector families; UPC and APC describe end-face polish. Do not directly mate UPC to APC. Record the connector and polish needed at each end.",
+        "sw": "LC na SC ni aina za connector; UPC na APC ni aina za polish ya ncha. Usiunganishe UPC moja kwa moja na APC. Andika aina ya connector na polish inayotakiwa kila upande."
+      },
+      {
+        "en": "Choose LC–LC, SC–SC or LC–SC to suit the actual ports, with matching fibre type, simplex/duplex arrangement and length. A mixed-connector cord does not itself convert optical standards.",
+        "sw": "Chagua LC–LC, SC–SC au LC–SC kulingana na port halisi, aina ya fibre, simplex/duplex na urefu. Patch cord yenye connector tofauti haibadilishi yenyewe viwango vya optics."
+      },
+      {
+        "en": "Pigtails, couplers, splice trays, closures and ODF/fibre distribution boxes need the correct port capacity, connector types and installation protection. If your BOQ says ADP, confirm the exact panel/box intended.",
+        "sw": "Pigtail, coupler, splice tray, closure na ODF/distribution box zinahitaji uwezo sahihi wa port, connector na kinga ya ufungaji. BOQ ikiandika ADP, hakiki panel/box inayomaanishwa."
+      },
+      {
+        "en": "SFP/SFP+ modules and media converters require host support, speed, fibre type, wavelength and optical-budget checks. Two SFP slots on different devices do not prove compatibility.",
+        "sw": "Moduli za SFP/SFP+ na media converter zinahitaji hakiki ya host, kasi, aina ya fibre, wavelength na optical budget. Slot za SFP kwenye vifaa viwili hazithibitishi uoanifu."
+      }
+    ],
+    "check": {
+      "en": "Send clear photos or exact labels of both ports, fibre type, connector/polish at each end, length, simplex/duplex and quantities. Never look into a fibre port to identify it.",
+      "sw": "Tuma picha au lebo halisi za port zote mbili, aina ya fibre, connector/polish kila mwisho, urefu, simplex/duplex na idadi. Usiangalie ndani ya port ya fibre ili kuitambua."
+    },
+    "faq": [
+      [
+        {
+          "en": "Can an LC–SC cord connect any two optical devices?",
+          "sw": "LC–SC inaweza kuunganisha vifaa vyovyote vya optics?"
+        },
+        {
+          "en": "No. Physical ends are only one part of compatibility. Confirm polish, fibre type, optical standards, wavelength and the supported transmit/receive arrangement.",
+          "sw": "Hapana. Ncha ni sehemu moja tu ya uoanifu. Hakiki polish, aina ya fibre, viwango vya optics, wavelength na mpangilio wa kutuma/kupokea unaokubaliwa."
+        }
+      ],
+      [
+        {
+          "en": "Can you quote a full fibre termination kit?",
+          "sw": "Mnaweza kuandaa makadirio ya vifaa vyote vya termination?"
+        },
+        {
+          "en": "Yes, against an assessed link or BOQ. List patching, pigtails, distribution, splicing and optics explicitly; no universal kit or included accessories are assumed.",
+          "sw": "Ndiyo, kwa kiungo kilichotathminiwa au BOQ. Orodhesha patching, pigtail, distribution, splicing na optics wazi; hakuna seti au vifaa vinavyodhaniwa kujumuishwa."
+        }
+      ]
+    ],
+    "related": ["fibre-cables", "data-cabinets"],
+    "models": ["mikrotik-rb5009ug-s-in", "omada-sg2210mp"],
+    "pointTitles": [
+      {
+        "en": "LC / SC and UPC / APC",
+        "sw": "LC / SC na UPC / APC"
+      },
+      {
+        "en": "Ends, length and fibre type",
+        "sw": "Ncha, urefu na aina ya fibre"
+      },
+      {
+        "en": "Distribution and splicing",
+        "sw": "Distribution na splicing"
+      },
+      {
+        "en": "SFPs and media converters",
+        "sw": "SFP na media converter"
+      }
+    ]
+  }
+]
