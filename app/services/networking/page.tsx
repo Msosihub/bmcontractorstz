@@ -776,10 +776,10 @@ export default async function Page({ searchParams }: Props) {
                   t("Access points", "Access point"),
                 ],
                 [catalogue("switches"), t("Switches", "Swichi")],
-                ["#cabinets", t("Data cabinets", "Data cabinet")],
-                ["#cabinets", t("Patch panels", "Patch panel")],
-                ["#cabling", t("CAT6 indoor / outdoor", "CAT6 za ndani / nje")],
-                ["#fibre", t("Fibre & accessories", "Fibre na vifaa vyake")],
+                [`/catalogue/networking/families/data-cabinets?lang=${lang}`, t("Data cabinets", "Data cabinet")],
+                [`/catalogue/networking/families/cat6-cabling?lang=${lang}`, t("Patch panels", "Patch panel")],
+                [`/catalogue/networking/families/cat6-cabling?lang=${lang}`, t("CAT6 indoor / outdoor", "CAT6 za ndani / nje")],
+                [`/catalogue/networking/families/fibre-accessories?lang=${lang}`, t("Fibre & accessories", "Fibre na vifaa vyake")],
                 [
                   networkingLinks(
                     lang,

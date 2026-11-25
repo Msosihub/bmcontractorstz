@@ -51,3 +51,9 @@ export function networkingLinks(
     call: "tel:+255760111880",
   };
 }
+
+// Category content, not SKU/inventory records. Stable IDs for future central Shop mapping.
+export { default as networkingFamilies } from "./families.json";
+export { default as networkingApplications } from "./applications.json";
+export const networkingFamilyPath = (slug: string) =>
+  `${networkingCataloguePath}/families/${slug}`;

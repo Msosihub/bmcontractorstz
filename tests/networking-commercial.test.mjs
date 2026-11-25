@@ -84,7 +84,9 @@ test("quotation context round-trips bilingual text, product identity and editabl
     new URL("../lib/catalogue/networking/index.ts", import.meta.url),
     "utf8",
   );
-  const body = source.slice(source.indexOf("export function networkingLinks"));
+  const body = source
+    .slice(source.indexOf("export function networkingLinks"))
+    .split("// Category content")[0];
   const code = (await transform(body, { loader: "ts", format: "esm" })).code;
   const { networkingLinks } = await import(
     "data:text/javascript;base64," + Buffer.from(code).toString("base64")
@@ -153,6 +155,7 @@ test("service withdrawal and identity failures block all new networking views se
     "app/services/networking/page.tsx",
     "app/catalogue/networking/page.tsx",
     "app/catalogue/networking/[slug]/page.tsx",
+    "app/catalogue/networking/families/[slug]/page.tsx",
   ];
   for (const file of routes) {
     const page = await bundle(file, mocks);

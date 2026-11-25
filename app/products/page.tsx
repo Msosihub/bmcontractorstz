@@ -99,7 +99,7 @@ export default async function Page({
               ? "Chagua kwa mahitaji.\nThibitisha kwa vipimo."
               : "Specified with care.\nSelected for your site."}
           </h1>
-          <ContextualNavigation ids={['catalogue-hikvision','catalogue-zkteco','catalogue-centurion']} lang={lang}/>
+          <ContextualNavigation ids={["catalogue-networking",'catalogue-hikvision','catalogue-zkteco','catalogue-centurion']} lang={lang}/>
           <p className="lead">
             {sw
               ? "Modeli na vipimo vina maana vinapolingana na matumizi yako. Ulizia upatikanaji, dhamana na bei kabla ya kuagiza."

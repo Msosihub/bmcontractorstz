@@ -1,0 +1,90 @@
+[
+  {
+    "slug": "office-internet",
+    "title": {
+      "en": "Office internet distribution",
+      "sw": "Kusambaza intaneti ofisini"
+    },
+    "summary": {
+      "en": "A MikroTik gateway, correctly selected switches and planned outlets keep the internet connection separate from local distribution. Router selection depends on actual bandwidth, rules and users—not port count alone.",
+      "sw": "Gateway ya MikroTik, swichi zinazofaa na outlet zilizopangwa hutenganisha intaneti inayoingia na usambazaji wa ndani. Chagua router kwa bandwidth, kanuni na watumiaji halisi—si idadi ya port pekee."
+    },
+    "models": [
+      "mikrotik-hex-e50ug",
+      "mikrotik-rb5009ug-s-in",
+      "tp-link-tl-sg1024d"
+    ]
+  },
+  {
+    "slug": "multi-building",
+    "title": {
+      "en": "Multi-building business networks",
+      "sw": "Mtandao wa biashara wenye majengo kadhaa"
+    },
+    "summary": {
+      "en": "Assess fibre between buildings, compatible optics and local power. RB5009's 10G SFP+ cage and SG2210MP's Gigabit SFP slots are different interfaces; a common supported link must be designed, not assumed.",
+      "sw": "Tathmini fibre kati ya majengo, optics zinazooana na umeme kila jengo. Cage ya 10G SFP+ ya RB5009 na slot za Gigabit SFP za SG2210MP ni tofauti; kiungo kinachokubaliwa na vyote hupangwa, hakidhaniwi."
+    },
+    "models": ["mikrotik-rb5009ug-s-in", "omada-sg2210mp"]
+  },
+  {
+    "slug": "hotel-wifi",
+    "title": {
+      "en": "Guest Wi-Fi for hotels & lodges",
+      "sw": "Wi-Fi ya wageni hotelini na lodgeni"
+    },
+    "summary": {
+      "en": "Plan EAP650 coverage around rooms, floors, walls and real occupancy. Specify uplinks, AP power and any controller/guest-network requirements. Coverage, roaming and capacity are assessed, not guaranteed by one AP model.",
+      "sw": "Panga coverage ya EAP650 kwa vyumba, ghorofa, kuta na idadi ya wageni. Ainisha uplink, umeme wa AP na mahitaji ya controller/mtandao wa wageni. Coverage, roaming na uwezo hutathminiwa, si kuhakikishwa na modeli moja."
+    },
+    "models": ["omada-eap650", "omada-sg2210mp"]
+  },
+  {
+    "slug": "outdoor-wireless",
+    "title": {
+      "en": "Outdoor wireless access",
+      "sw": "Wi-Fi kwa maeneo ya nje"
+    },
+    "summary": {
+      "en": "EAP225-Outdoor is an outdoor access-point reference. Assess mounting, cable protection, power and usable coverage. It is not automatically a dedicated long-distance point-to-point bridge.",
+      "sw": "EAP225-Outdoor ni rejea ya access point ya nje. Tathmini sehemu ya kufunga, kinga ya nyaya, umeme na coverage inayotumika. Si moja kwa moja kifaa maalumu cha kiungo cha mbali cha point-to-point."
+    },
+    "models": ["omada-eap225-outdoor", "omada-sg2210mp"]
+  },
+  {
+    "slug": "cctv-backbone",
+    "title": {
+      "en": "CCTV network backbones",
+      "sw": "Mtandao mkuu wa IP CCTV"
+    },
+    "summary": {
+      "en": "Match camera power, total PoE budget, uplinks, recorder traffic and protected power. SG2210MP is a PoE+ reference; the unmanaged TL-SG1024D does not power cameras. Fibre links need separately powered remote equipment.",
+      "sw": "Linganisha umeme wa kamera, jumla ya PoE, uplink, traffic ya recorder na umeme wa akiba. SG2210MP ni rejea ya PoE+; TL-SG1024D unmanaged haitoi umeme kwa kamera. Mwisho wa fibre unahitaji vifaa vyenye umeme wake."
+    },
+    "models": ["omada-sg2210mp", "mikrotik-rb5009ug-s-in"]
+  },
+  {
+    "slug": "segmentation",
+    "title": {
+      "en": "Business network segmentation",
+      "sw": "Kutenganisha mitandao ya biashara"
+    },
+    "summary": {
+      "en": "Separate staff, guest and security traffic with a designed routing, firewall and managed-switch configuration. Device support and configuration must be checked end to end. An unmanaged switch is not a VLAN-management substitute.",
+      "sw": "Tenganisha traffic ya wafanyakazi, wageni na ulinzi kwa routing, firewall na usanidi wa managed switch. Hakiki uwezo na usanidi wa kila kifaa. Unmanaged switch si mbadala wa usimamizi wa VLAN."
+    },
+    "models": ["mikrotik-rb5009ug-s-in", "omada-sg2210mp"]
+  },
+  {
+    "slug": "managed-wireless",
+    "title": {
+      "en": "Managed wireless infrastructure",
+      "sw": "Miundombinu ya Wi-Fi inayosimamiwa"
+    },
+    "summary": {
+      "en": "Confirm exact EAP/switch hardware revisions, firmware and supported Omada controller version. Controller licensing/hosting and power are separately specified where required. Omada does not manage MikroTik RouterOS or the unmanaged TL-SG1024D.",
+      "sw": "Hakiki revision halisi ya EAP/swichi, firmware na toleo la Omada controller linalokubaliwa. Leseni/hosting ya controller na umeme huainishwa kando inapohitajika. Omada haisimamii MikroTik RouterOS au TL-SG1024D unmanaged."
+    },
+    "models": ["omada-eap650", "omada-eap225-outdoor", "omada-sg2210mp"]
+  }
+]

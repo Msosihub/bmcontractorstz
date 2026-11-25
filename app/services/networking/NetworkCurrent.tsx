@@ -12,11 +12,7 @@ export function NetworkCurrent({ lang }: { lang: Language }) {
     const preference = matchMedia("(prefers-reduced-motion: reduce)");
     let inView = false;
     const update = () => {
-      const running =
-        inView &&
-        !document.hidden &&
-        !preference.matches &&
-        node.dataset.paused !== "true";
+      const running = inView && !document.hidden && !preference.matches;
       node.dataset.motion = running ? "running" : "static";
       node.dataset.reason = document.hidden
         ? "hidden"
@@ -24,9 +20,7 @@ export function NetworkCurrent({ lang }: { lang: Language }) {
           ? "offscreen"
           : preference.matches
             ? "reduced"
-            : node.dataset.paused === "true"
-              ? "manual"
-              : "visible";
+            : "visible";
     };
     node.dataset.enhanced = "true";
     const observer =
@@ -41,31 +35,11 @@ export function NetworkCurrent({ lang }: { lang: Language }) {
           );
     observer?.observe(node);
     if (!observer) inView = true;
-    const toggle = () => {
-      const paused = node.dataset.paused !== "true";
-      node.dataset.paused = String(paused);
-      const button = node.querySelector("button");
-      button?.setAttribute("aria-pressed", String(paused));
-      button?.setAttribute(
-        "aria-label",
-        paused
-          ? sw
-            ? "Endeleza mwendo wa mchoro"
-            : "Resume network illustration"
-          : sw
-            ? "Sitisha mwendo wa mchoro"
-            : "Pause network illustration",
-      );
-      update();
-    };
-    const button = node.querySelector("button");
-    button?.addEventListener("click", toggle);
     document.addEventListener("visibilitychange", update);
     preference.addEventListener("change", update);
     update();
     return () => {
       observer?.disconnect();
-      button?.removeEventListener("click", toggle);
       document.removeEventListener("visibilitychange", update);
       preference.removeEventListener("change", update);
       delete node.dataset.enhanced;
@@ -73,12 +47,7 @@ export function NetworkCurrent({ lang }: { lang: Language }) {
     };
   }, [sw]);
   return (
-    <div
-      ref={root}
-      className="nf-current"
-      data-motion="static"
-      data-paused="false"
-    >
+    <div ref={root} className="nf-current" data-motion="static">
       <svg
         className="nf-lightfield"
         viewBox="0 0 900 650"
@@ -123,20 +92,6 @@ export function NetworkCurrent({ lang }: { lang: Language }) {
         <span>
           {sw ? "MIUNDOMBINU INAYOUNGANISHA" : "THE CONNECTION BEHIND IT ALL"}
         </span>
-        <button
-          type="button"
-          aria-label={
-            sw ? "Sitisha mwendo wa mchoro" : "Pause network illustration"
-          }
-          aria-pressed="false"
-        >
-          <span className="nf-pause-symbol" aria-hidden="true">
-            Ⅱ
-          </span>
-          <span className="nf-play-symbol" aria-hidden="true">
-            ▷
-          </span>
-        </button>
       </div>
       <svg
         className="nf-current-desktop"

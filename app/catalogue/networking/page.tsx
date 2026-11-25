@@ -1,3 +1,4 @@
+import { FamilyDiscovery, ApplicationDiscovery } from "./Discovery";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
@@ -71,7 +72,9 @@ export default async function Page({ searchParams }: Props) {
             </a>
           </div>
         </header>
+        <FamilyDiscovery lang={lang} />
         <section
+          id="models"
           className="nf-wrap nf-section"
           aria-label={
             sw
@@ -109,6 +112,7 @@ export default async function Page({ searchParams }: Props) {
             </a>
           </div>
         </section>
+        <ApplicationDiscovery lang={lang} />
       </main>
       <Footer lang={lang} />
     </>
