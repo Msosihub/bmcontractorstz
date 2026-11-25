@@ -1,6 +1,6 @@
 .nf-main {
   --nf-ink: #233e3c;
-  --nf-muted: #596b64;
+  --nf-muted: #51645c;
   --nf-paper: #f6f3ea;
   --nf-bronze: #ad8857;
   background: var(--nf-paper);
@@ -617,7 +617,7 @@
   font:
     italic 38px Georgia,
     serif;
-  color: #839982;
+  color: #627b62;
 }
 .nf-steps h3 {
   font-size: 24px;
@@ -695,10 +695,10 @@
   padding: 24px;
 }
 .nf-equipment .rc-card-copy .eyebrow {
-  font-size: 8px;
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.13em;
-  color: #6b7e6e;
+  color: #536a59;
 }
 .nf-equipment .rc-card-copy h3 {
   font-family: Arial, sans-serif;
