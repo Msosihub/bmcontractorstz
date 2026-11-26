@@ -25,5 +25,35 @@
     "source": "OpenAI built-in image generation, 26 November 2026",
     "usage": "Original illustrative editorial scene. Not BM staff, customer evidence, branded hardware or completed project.",
     "originalSHA256": "5eff9dbf8e3c67de13ca946bbc8fb2c9647000898be9b5795253f0faf7e3a2b3"
+  },
+  {
+    "id": "hotel-portrait",
+    "src": "/images/telephony/hotel-portrait.webp",
+    "width": 1086,
+    "height": 1448,
+    "source": "Built-in image edit, 26 November 2026. High-detail portrait adaptation of the existing illustrative scene for tall desktop/Retina panels.",
+    "usage": "Illustrative scene only; not BM staff, customer project or exact branded hardware.",
+    "originalSHA256": "4345dfc16bb8f8db551c13f1affc369b9d7796b88d69624a48aafdb79c4bac39",
+    "referenceOriginalSHA256": "49ceb63dcf9663781d99769e1a3e32e93cc25bc6c8754f26d93b6ea95377ee59"
+  },
+  {
+    "id": "office-portrait",
+    "src": "/images/telephony/office-portrait.webp",
+    "width": 1086,
+    "height": 1448,
+    "source": "Built-in image edit, 26 November 2026. High-detail portrait adaptation of the existing illustrative scene for tall desktop/Retina panels.",
+    "usage": "Illustrative scene only; not BM staff, customer project or exact branded hardware.",
+    "originalSHA256": "d4644edae475affe4b1f2abbf8e31b536cf837eab9c944aa95eb76e0ba05ce50",
+    "referenceOriginalSHA256": "ff7b00c4d22495ad00db2aca7a0441a5858f2326f0eeac90eaf918190ce24b05"
+  },
+  {
+    "id": "maintenance-portrait",
+    "src": "/images/telephony/maintenance-portrait.webp",
+    "width": 1086,
+    "height": 1448,
+    "source": "Built-in image edit, 26 November 2026. High-detail portrait adaptation of the existing illustrative scene for tall desktop/Retina panels.",
+    "usage": "Illustrative scene only; not BM staff, customer project or exact branded hardware.",
+    "originalSHA256": "00e213dd7553dc00925dfb59898b63ed12e6c1976205cdaac5caef98477c67e6",
+    "referenceOriginalSHA256": "5eff9dbf8e3c67de13ca946bbc8fb2c9647000898be9b5795253f0faf7e3a2b3"
   }
 ]

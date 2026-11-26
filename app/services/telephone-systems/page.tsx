@@ -225,9 +225,9 @@ export default async function Page({ searchParams }: Props) {
           <div className="tp-wrap tp-split">
             <div className="tp-editorial-photo">
               <Image
-                src="/images/telephony/guest-room.webp"
-                width={1672}
-                height={941}
+                src="/images/telephony/hotel-portrait.webp"
+                width={1086}
+                height={1448}
                 sizes="(max-width:760px) 100vw, 48vw"
                 alt={t(
                   "Guest-room telephone beside a bed in a contemporary lodge room",
@@ -354,9 +354,9 @@ export default async function Page({ searchParams }: Props) {
             </div>
             <div className="tp-office-visual">
               <Image
-                src="/images/networking/workplace.webp"
-                width={1672}
-                height={941}
+                src="/images/telephony/office-portrait.webp"
+                width={1086}
+                height={1448}
                 sizes="(max-width:760px) 100vw, 48vw"
                 alt={t(
                   "A modern workplace with a neatly arranged communications rack",
@@ -436,9 +436,9 @@ export default async function Page({ searchParams }: Props) {
           <div className="tp-wrap tp-split">
             <div className="tp-editorial-photo">
               <Image
-                src="/images/telephony/maintenance.webp"
-                width={1672}
-                height={941}
+                src="/images/telephony/maintenance-portrait.webp"
+                width={1086}
+                height={1448}
                 sizes="(max-width:760px) 100vw, 48vw"
                 alt={t(
                   "Technician checking telephone distribution wiring beside communications equipment",
