@@ -1,0 +1,70 @@
+{
+  "assets": [
+    {
+      "id": "yeastar-p550",
+      "source": "https://www.yeastar.com/wp-content/uploads/2022/08/p550.png",
+      "image": "/images/telephony/yeastar-p550.webp",
+      "width": 518,
+      "height": 148,
+      "bytes": 14786,
+      "sha256": "d66d82a1717c4439a4427f533caac9b65692f9fd125de19802fac1b184805cdc",
+      "productionApproved": true,
+      "permissionEvidence": "Owner explicitly confirmed all supplier official images permitted for BM commercial marketing use, 26 November 2026; no dealership claim."
+    },
+    {
+      "id": "yeastar-ta400",
+      "source": "https://www.yeastar.com/wp-content/uploads/2020/12/ta400-image.png",
+      "image": "/images/telephony/yeastar-ta400.webp",
+      "width": 390,
+      "height": 131,
+      "bytes": 7416,
+      "sha256": "e8d901bfbd7f514043c6f15a8bf5a01f1c6af22c5af03140f0eb5ac1c16d4092",
+      "productionApproved": true,
+      "permissionEvidence": "Owner explicitly confirmed all supplier official images permitted for BM commercial marketing use, 26 November 2026; no dealership claim."
+    },
+    {
+      "id": "yeastar-ta410",
+      "source": "https://www.yeastar.com/wp-content/uploads/2020/12/ta410-image.png",
+      "image": "/images/telephony/yeastar-ta410.webp",
+      "width": 390,
+      "height": 131,
+      "bytes": 6382,
+      "sha256": "16b095e6c485e9548b1db24460fe27daf5d6f0da08675b820d15b385016ea811",
+      "productionApproved": true,
+      "permissionEvidence": "Owner explicitly confirmed all supplier official images permitted for BM commercial marketing use, 26 November 2026; no dealership claim."
+    },
+    {
+      "id": "grandstream-grp2602",
+      "source": "https://www.grandstream.com/hubfs/Product%20Images/GRP/grp2602_front_web.png",
+      "image": "/images/telephony/grandstream-grp2602.webp",
+      "width": 750,
+      "height": 750,
+      "bytes": 37594,
+      "sha256": "c0ce14eb0971606b75ba1476370f855c74698b87959c8017a700ffac66d6e976",
+      "productionApproved": true,
+      "permissionEvidence": "Owner explicitly confirmed all supplier official images permitted for BM commercial marketing use, 26 November 2026; no dealership claim."
+    },
+    {
+      "id": "grandstream-ghp610",
+      "source": "https://www.grandstream.com/hubfs/Product%20Images/GHP610_GHP611/web%20images/GHP610_611.png",
+      "image": "/images/telephony/grandstream-ghp610.webp",
+      "width": 500,
+      "height": 500,
+      "bytes": 15846,
+      "sha256": "ec86920b4ba8db9cf8733f488f8942793aa1d44b6fafe3092233f303d860fed2",
+      "productionApproved": true,
+      "permissionEvidence": "Owner explicitly confirmed all supplier official images permitted for BM commercial marketing use, 26 November 2026; no dealership claim."
+    },
+    {
+      "id": "yealink-sip-t31p",
+      "source": "https://www.yealink.com/website-service/attachment/product/image/20220413/202204130217126152817ec9f47ea84ae0e802f71726b.png",
+      "image": "/images/telephony/yealink-sip-t31p.webp",
+      "width": 257,
+      "height": 271,
+      "bytes": 3352,
+      "sha256": "a2f7ab0501ae112c9f38635e5f9a030529d104e2b591a9047a306722f7ec25f9",
+      "productionApproved": true,
+      "permissionEvidence": "Owner explicitly confirmed all supplier official images permitted for BM commercial marketing use, 26 November 2026; no dealership claim."
+    }
+  ]
+}

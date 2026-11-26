@@ -598,5 +598,65 @@
     "source": "https://mikrotik.com/product/rb5009ug_s_in",
     "reviewed": "2026-11-25",
     "published": true
+  },
+  {
+    "slug": "hotel-analogue-phone-upgrade",
+    "service": "telephone-systems",
+    "image": "/images/telephony/guest-room.webp",
+    "alt": {
+      "en": "Guest-room telephone in an illustrative hotel room",
+      "sw": "Simu ya mgeni katika mfano wa chumba cha hoteli"
+    },
+    "category": {
+      "en": "HOTEL TELEPHONY",
+      "sw": "SIMU ZA HOTELI"
+    },
+    "title": {
+      "en": "Must a hotel replace its analogue phones?",
+      "sw": "Lazima hoteli ibadili simu zake za analogue?"
+    },
+    "summary": {
+      "en": "Often the sensible upgrade starts with a cable audit, room list and call plan—not replacing every handset.",
+      "sw": "Maboresho yenye maana huanza kwa kupima nyaya, kuorodhesha vyumba na kupanga simu—si kubadili kila handset."
+    },
+    "sections": [
+      {
+        "title": {
+          "en": "Check what is still useful.",
+          "sw": "Kagua kinachoweza kuendelea kutumika."
+        },
+        "text": {
+          "en": "A dead room extension might be a handset cord, damaged copper pair, distribution connection or PBX port. Count rooms, test the wiring and record the actual fault before deciding on replacement. Working analogue phones may stay if their condition and signalling suit the proposed design.",
+          "sw": "Extension ya chumba inaweza kukwama kwa sababu ya cord, jozi ya nyaya, kiunganishi cha distribution au port ya PBX. Hesabu vyumba, pima nyaya na andika tatizo halisi kabla ya kuamua kubadili. Simu za analogue zinaweza kubaki ikiwa hali na signalling vinafaa kwa usanifu unaopendekezwa."
+        }
+      },
+      {
+        "title": {
+          "en": "Keep FXS and FXO separate.",
+          "sw": "Tofautisha FXS na FXO."
+        },
+        "text": {
+          "en": "An FXS interface serves an ordinary analogue handset. FXO takes a suitable analogue outside line. A hybrid design can combine tested room phones, suitable gateways, an IP reception handset and a supported PBX—but capacity and firmware compatibility need checking. Do not plug an ordinary analogue phone into an Ethernet switch.",
+          "sw": "FXS huhudumia simu ya kawaida ya analogue. FXO hupokea laini ya analogue kutoka nje. Usanifu wa hybrid unaweza kuchanganya simu za vyumbani zilizopimwa, gateway zinazofaa, simu ya IP mapokezini na PBX inayoungwa mkono—lakini uwezo na firmware lazima vikaguliwe. Usiunganishe simu ya analogue kwenye swichi ya Ethernet."
+        }
+      },
+      {
+        "title": {
+          "en": "Agree the guest experience before equipment.",
+          "sw": "Kubalianeni huduma kwa mgeni kabla ya vifaa."
+        },
+        "text": {
+          "en": "Map rooms, reception, housekeeping and outside-call permissions. Ask how transfers, power loss, configuration recovery and handover will be tested. PMS, wake-up, billing and room-status features require the exact supported platform, interface and licensing. Identify provider subscriptions and call charges separately from installation.",
+          "sw": "Panga namba za vyumba, mapokezi, housekeeping na ruhusa za kupiga nje. Uliza namna uhamishaji, kukatika umeme, kurejesha usanidi na makabidhiano vitakavyopimwa. PMS, wake-up, billing na room-status vinahitaji platform, interface na leseni zinazofaa. Tenganisha gharama za mtoa laini na matumizi ya simu na gharama za ufungaji."
+        }
+      }
+    ],
+    "cta": {
+      "en": "Tell BM your location, room count, current PBX and the problem you want to solve. Request a hotel telephone audit before replacing the whole system.",
+      "sw": "Tuambie eneo, idadi ya vyumba, PBX iliyopo na tatizo unalotaka kutatua. Omba ukaguzi wa simu za hoteli kabla ya kubadili mfumo mzima."
+    },
+    "source": "https://www.yeastar.com/solution/analog-extensions-ip-pbx/",
+    "reviewed": "2026-11-26",
+    "published": true
   }
 ]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "reception",
+    "src": "/images/telephony/reception.webp",
+    "width": 1672,
+    "height": 941,
+    "source": "OpenAI built-in image generation, 26 November 2026",
+    "usage": "Original illustrative editorial scene. Not BM staff, customer evidence, branded hardware or completed project.",
+    "originalSHA256": "76f33d16f6f825e2265bba0b31cb98c1b9585f97bad0dc8bc7f24fecca6014d6"
+  },
+  {
+    "id": "guest-room",
+    "src": "/images/telephony/guest-room.webp",
+    "width": 1672,
+    "height": 941,
+    "source": "OpenAI built-in image generation, 26 November 2026",
+    "usage": "Original illustrative editorial scene. Not BM staff, customer evidence, branded hardware or completed project.",
+    "originalSHA256": "49ceb63dcf9663781d99769e1a3e32e93cc25bc6c8754f26d93b6ea95377ee59"
+  },
+  {
+    "id": "maintenance",
+    "src": "/images/telephony/maintenance.webp",
+    "width": 1672,
+    "height": 941,
+    "source": "OpenAI built-in image generation, 26 November 2026",
+    "usage": "Original illustrative editorial scene. Not BM staff, customer evidence, branded hardware or completed project.",
+    "originalSHA256": "5eff9dbf8e3c67de13ca946bbc8fb2c9647000898be9b5795253f0faf7e3a2b3"
+  }
+]
