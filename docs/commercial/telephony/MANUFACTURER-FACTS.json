@@ -1,0 +1,100 @@
+[
+  {
+    "id": "yeastar-p550",
+    "name": "Yeastar P550",
+    "category": "IP-PBX appliance",
+    "officialSource": "https://www.yeastar.com/p-series-ip-pbx/",
+    "verifiedFacts": [
+      "50 users; up to 25 concurrent calls.",
+      "Supports SIP trunks; analogue interfaces depend on fitted modules."
+    ],
+    "caveats": [
+      "Do not describe optional maximum FXS/FXO module capacities as included ports.",
+      "Linkus, remote access, hotel/PMS and advanced functions require exact edition, firmware, modules and subscription review."
+    ],
+    "priceStatus": "Request Current Price",
+    "stockVerified": false
+  },
+  {
+    "id": "yeastar-ta400",
+    "name": "Yeastar TA400",
+    "category": "FXS gateway",
+    "officialSource": "https://www.yeastar.com/fxs-voip-gateways/",
+    "verifiedFacts": [
+      "Four FXS ports for suitable analogue telephones or fax endpoints.",
+      "Connects supported analogue endpoints to a designed IP-PBX installation."
+    ],
+    "caveats": [
+      "FXS is the handset-facing interface, not the PSTN-line-facing interface.",
+      "Assess wiring condition, port capacity, power and supported provisioning."
+    ],
+    "priceStatus": "Request Current Price",
+    "stockVerified": false
+  },
+  {
+    "id": "yeastar-ta410",
+    "name": "Yeastar TA410",
+    "category": "FXO gateway",
+    "officialSource": "https://www.yeastar.com/fxo-voip-gateways/",
+    "verifiedFacts": [
+      "Four FXO ports for analogue external lines."
+    ],
+    "caveats": [
+      "Ordinary analogue room phones must not be connected as FXS handsets to FXO ports.",
+      "Confirm carrier line signalling and regional configuration; do not imply mobile/SIP trunk service included."
+    ],
+    "priceStatus": "Request Current Price",
+    "stockVerified": false
+  },
+  {
+    "id": "yealink-sip-t31p",
+    "name": "Yealink SIP-T31P",
+    "category": "Office IP phone",
+    "officialSource": "https://www.yealink.com/en/product-detail/ip-phone-t31p",
+    "verifiedFacts": [
+      "Two-line desk IP phone with built-in PoE.",
+      "T3 specification lists two 10/100 Ethernet ports; Gigabit belongs to T31G."
+    ],
+    "caveats": [
+      "Yealink is separate from Yeastar.",
+      "External AC adapter is optional; confirm included power accessories and PBX provisioning/firmware."
+    ],
+    "priceStatus": "Request Current Price",
+    "stockVerified": false
+  },
+  {
+    "id": "grandstream-grp2602",
+    "name": "Grandstream GRP2602P",
+    "category": "Office IP phone",
+    "officialSource": "https://www.grandstream.com/products/ip-voice-telephony/carrier-grade-ip-phones/grp-series-essential-ip-phones",
+    "verifiedFacts": [
+      "PoE-enabled variant of GRP2602 office phone.",
+      "Two-line SIP handset; GDMS management supported."
+    ],
+    "caveats": [
+      "Official image is GRP2602 family image, not proof of exact suffix or inventory.",
+      "Current family page lists four SIP accounts, older documentation differs; avoid account-count promise unless hardware/firmware pinned.",
+      "Do not confuse P PoE model with W Wi-Fi or G Gigabit variant."
+    ],
+    "priceStatus": "Request Current Price",
+    "stockVerified": false
+  },
+  {
+    "id": "grandstream-ghp610",
+    "name": "Grandstream GHP610",
+    "category": "Hotel IP phone",
+    "officialSource": "https://www.grandstream.com/products/ip-voice-telephony/hotel-phones",
+    "verifiedFacts": [
+      "Two SIP accounts/two lines.",
+      "GHP610 wired version has a 100Mbps network port with PoE.",
+      "Guest-room speed-dial labelling and wall/desk installation are supported by series."
+    ],
+    "caveats": [
+      "Official image shows GHP610/GHP611 family, not an installed customer system.",
+      "Wi-Fi is the W variant; PoE listed for GHP610/GHP611 non-W variants.",
+      "Hotel PMS functions belong to compatible PBX/software integration, not standalone handset promise."
+    ],
+    "priceStatus": "Request Current Price",
+    "stockVerified": false
+  }
+]

@@ -619,6 +619,27 @@ const routeDestinations: Omit<Destination,"relatedServices">[] = [
     "visibility": "public"
   },
   {
+    "id": "catalogue-telephony",
+    "title": {
+      "en": "Telephone & PBX equipment",
+      "sw": "Vifaa vya simu na PBX"
+    },
+    "href": "/catalogue/telephony",
+    "parentId": "equipment",
+    "status": "published",
+    "serviceSlugs": [
+      "telephone-systems"
+    ],
+    "equipmentCategories": [
+      "telephony",
+      "pbx",
+      "gateways",
+      "office-phones",
+      "hotel-phones"
+    ],
+    "visibility": "public"
+  },
+  {
     "id": "catalogue-networking",
     "title": {
       "en": "Networking equipment",
@@ -1155,10 +1176,10 @@ export const navigationGroups: NavGroup[] = [
             }
           },
           {
-            "destination": "telephone-systems",
+            "destination": "catalogue-telephony",
             "title": {
-              "en": "Office telephones",
-              "sw": "Simu za ofisi"
+              "en": "Telephones & PBX",
+              "sw": "Simu na PBX"
             }
           },
           {

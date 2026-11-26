@@ -1,0 +1,422 @@
+[
+  {
+    "slug": "yeastar-p550",
+    "name": "P550",
+    "brand": "Yeastar",
+    "category": "pbx",
+    "generation": "Manufacturer reference",
+    "classification": "current",
+    "images": [
+      {
+        "src": "/images/telephony/yeastar-p550.webp",
+        "alt": "Yeastar P550 official manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "An on-premises P-Series PBX for a designed office or hotel telephone system.",
+      "sw": "PBX ya P-Series inayofungwa eneo la mteja kwa mfumo wa simu wa ofisi au hoteli."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Platform",
+          "sw": "Platform"
+        },
+        "value": {
+          "en": "P-Series Appliance Edition",
+          "sw": "P-Series Appliance Edition"
+        }
+      },
+      {
+        "label": {
+          "en": "Capacity reference",
+          "sw": "Rejea ya uwezo"
+        },
+        "value": {
+          "en": "50 users / up to 25 concurrent calls",
+          "sw": "Watumiaji 50 / hadi simu 25 zinazoendelea kwa pamoja"
+        }
+      },
+      {
+        "label": {
+          "en": "Outside lines",
+          "sw": "Laini za nje"
+        },
+        "value": {
+          "en": "SIP trunks; analogue interfaces depend on fitted modules",
+          "sw": "SIP trunk; interface za analogue hutegemea module zilizowekwa"
+        }
+      }
+    ],
+    "variants": [
+      "Exact revision, firmware, power accessories and licensing confirmed in quotation"
+    ],
+    "source": "https://www.yeastar.com/p-series-ip-pbx/",
+    "documents": [
+      {
+        "label": {
+          "en": "Official manufacturer information",
+          "sw": "Taarifa rasmi za mtengenezaji"
+        },
+        "url": "https://www.yeastar.com/p-series-ip-pbx/"
+      }
+    ],
+    "related": ["yeastar-ta400", "yealink-sip-t31p", "grandstream-ghp610"],
+    "price": null,
+    "availability": "Quotation only; no stock claim",
+    "compatibility": {
+      "en": "User and concurrent-call maxima are not included trunks or analogue ports. Verify fitted modules, PBX edition, firmware, licence/subscription and endpoint provisioning. Linkus and hotel/PMS capabilities require the applicable supported configuration; no universal interoperability is promised.",
+      "sw": "Upeo wa watumiaji na simu za pamoja si idadi ya trunk au port za analogue zilizojumuishwa. Hakiki module, edition, firmware, leseni/subscription na provisioning. Linkus na PMS za hoteli hutegemea usanidi unaoungwa mkono; compatibility ya kila kifaa haiahidiwi."
+    }
+  },
+  {
+    "slug": "yeastar-ta400",
+    "name": "TA400 · FXS",
+    "brand": "Yeastar",
+    "category": "gateways",
+    "generation": "Manufacturer reference",
+    "classification": "current",
+    "images": [
+      {
+        "src": "/images/telephony/yeastar-ta400.webp",
+        "alt": "Yeastar TA400 · FXS official manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "Connect suitable analogue room or office handsets through four FXS ports to a planned IP-PBX installation.",
+      "sw": "Unganisha simu za analogue za vyumbani au ofisini kupitia port nne za FXS kwenye mfumo wa IP-PBX uliopangwa."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Interface",
+          "sw": "Interface"
+        },
+        "value": {
+          "en": "4 FXS ports",
+          "sw": "Port 4 za FXS"
+        }
+      },
+      {
+        "label": {
+          "en": "Connects",
+          "sw": "Huunganisha"
+        },
+        "value": {
+          "en": "Suitable analogue handsets / fax endpoints",
+          "sw": "Simu za analogue / fax zinazofaa"
+        }
+      },
+      {
+        "label": {
+          "en": "Typical use",
+          "sw": "Matumizi"
+        },
+        "value": {
+          "en": "Retaining tested analogue room extensions",
+          "sw": "Kuendelea na extension za analogue za vyumbani zilizopimwa"
+        }
+      }
+    ],
+    "variants": [
+      "Exact revision, firmware, power accessories and licensing confirmed in quotation"
+    ],
+    "source": "https://www.yeastar.com/fxs-voip-gateways/",
+    "documents": [
+      {
+        "label": {
+          "en": "Official manufacturer information",
+          "sw": "Taarifa rasmi za mtengenezaji"
+        },
+        "url": "https://www.yeastar.com/fxs-voip-gateways/"
+      }
+    ],
+    "related": ["yeastar-p550"],
+    "price": null,
+    "availability": "Quotation only; no stock claim",
+    "compatibility": {
+      "en": "FXS is handset-facing. It is not an FXO gateway for incoming analogue provider lines. Assess cable condition, signalling, PBX interoperability, port count, provisioning and power. No line service or PBX licence is implied.",
+      "sw": "FXS ni upande wa simu za analogue. Si gateway ya FXO ya laini za mtoa huduma. Tathmini nyaya, signalling, compatibility ya PBX, port, provisioning na umeme. Huduma ya laini au leseni ya PBX haidhaniwi kujumuishwa."
+    }
+  },
+  {
+    "slug": "yeastar-ta410",
+    "name": "TA410 · FXO",
+    "brand": "Yeastar",
+    "category": "gateways",
+    "generation": "Manufacturer reference",
+    "classification": "current",
+    "images": [
+      {
+        "src": "/images/telephony/yeastar-ta410.webp",
+        "alt": "Yeastar TA410 · FXO official manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "Bring suitable analogue outside lines into an IP-PBX design through four FXO ports.",
+      "sw": "Unganisha laini zinazofaa za analogue kutoka nje kwenye usanifu wa IP-PBX kupitia port nne za FXO."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Interface",
+          "sw": "Interface"
+        },
+        "value": {
+          "en": "4 FXO ports",
+          "sw": "Port 4 za FXO"
+        }
+      },
+      {
+        "label": {
+          "en": "Connects",
+          "sw": "Huunganisha"
+        },
+        "value": {
+          "en": "Analogue outside / PSTN lines",
+          "sw": "Laini za analogue / PSTN kutoka nje"
+        }
+      },
+      {
+        "label": {
+          "en": "Purpose",
+          "sw": "Kazi"
+        },
+        "value": {
+          "en": "External line gateway, not a room-handset adapter",
+          "sw": "Gateway ya laini za nje, si adapta ya simu ya chumbani"
+        }
+      }
+    ],
+    "variants": [
+      "Exact revision, firmware, power accessories and licensing confirmed in quotation"
+    ],
+    "source": "https://www.yeastar.com/fxo-voip-gateways/",
+    "documents": [
+      {
+        "label": {
+          "en": "Official manufacturer information",
+          "sw": "Taarifa rasmi za mtengenezaji"
+        },
+        "url": "https://www.yeastar.com/fxo-voip-gateways/"
+      }
+    ],
+    "related": ["yeastar-p550"],
+    "price": null,
+    "availability": "Quotation only; no stock claim",
+    "compatibility": {
+      "en": "Do not connect ordinary analogue handsets as FXS extensions to FXO ports. Confirm provider line signalling and regional settings, PBX interoperability, power and the actual number of available outside lines. Mobile or SIP trunk service is not included by implication.",
+      "sw": "Usiunganishe simu za kawaida kama extension za FXS kwenye port za FXO. Hakiki signalling ya mtoa huduma, mipangilio ya eneo, PBX, umeme na idadi halisi ya laini. Huduma ya mobile au SIP trunk haidhaniwi kujumuishwa."
+    }
+  },
+  {
+    "slug": "yealink-sip-t31p",
+    "name": "SIP-T31P",
+    "brand": "Yealink",
+    "category": "office",
+    "generation": "Manufacturer reference",
+    "classification": "current",
+    "images": [
+      {
+        "src": "/images/telephony/yealink-sip-t31p.webp",
+        "alt": "Yealink SIP-T31P official manufacturer product photograph"
+      }
+    ],
+    "summary": {
+      "en": "A practical two-line SIP desk phone with built-in PoE for appropriately configured office extensions.",
+      "sw": "Simu ya mezani ya SIP yenye laini mbili na PoE kwa extension za ofisi zilizosanidiwa ipasavyo."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Network",
+          "sw": "Mtandao"
+        },
+        "value": {
+          "en": "Dual 10/100 Ethernet ports",
+          "sw": "Port mbili za Ethernet 10/100"
+        }
+      },
+      {
+        "label": {
+          "en": "Power",
+          "sw": "Umeme"
+        },
+        "value": {
+          "en": "Built-in PoE; external adapter optional",
+          "sw": "PoE imejengwa ndani; adapta ya nje ni chaguo"
+        }
+      },
+      {
+        "label": {
+          "en": "Role",
+          "sw": "Kazi"
+        },
+        "value": {
+          "en": "Office SIP endpoint",
+          "sw": "Simu ya SIP ya ofisini"
+        }
+      }
+    ],
+    "variants": [
+      "Exact revision, firmware, power accessories and licensing confirmed in quotation"
+    ],
+    "source": "https://www.yealink.com/en/product-detail/ip-phone-t31p",
+    "documents": [
+      {
+        "label": {
+          "en": "Official manufacturer information",
+          "sw": "Taarifa rasmi za mtengenezaji"
+        },
+        "url": "https://www.yealink.com/en/product-detail/ip-phone-t31p"
+      }
+    ],
+    "related": ["yeastar-p550"],
+    "price": null,
+    "availability": "Quotation only; no stock claim",
+    "compatibility": {
+      "en": "Yealink is separate from Yeastar. T31P is not the Gigabit T31G. Verify the PBX supported-device list, exact firmware and provisioning template. Confirm whether an external adapter is needed or supplied; PoE needs a suitable powered switch/injector.",
+      "sw": "Yealink na Yeastar ni watengenezaji tofauti. T31P si T31G ya Gigabit. Hakiki orodha ya PBX, firmware na provisioning template. Thibitisha hitaji na kujumuishwa kwa adapta; PoE inahitaji swichi/injector inayofaa."
+    }
+  },
+  {
+    "slug": "grandstream-grp2602",
+    "name": "GRP2602P",
+    "brand": "Grandstream",
+    "category": "office",
+    "generation": "Manufacturer reference",
+    "classification": "current",
+    "images": [
+      {
+        "src": "/images/telephony/grandstream-grp2602.webp",
+        "alt": "Grandstream GRP2602P official family reference photograph"
+      }
+    ],
+    "summary": {
+      "en": "A PoE-capable GRP2602-series desk phone reference for reception, departments and office extensions.",
+      "sw": "Rejea ya simu ya mezani ya GRP2602 yenye PoE kwa mapokezi, idara na extension za ofisi."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Reference variant",
+          "sw": "Toleo la rejea"
+        },
+        "value": {
+          "en": "GRP2602P · PoE",
+          "sw": "GRP2602P · PoE"
+        }
+      },
+      {
+        "label": {
+          "en": "Management",
+          "sw": "Usimamizi"
+        },
+        "value": {
+          "en": "GDMS supported; configure for the selected PBX",
+          "sw": "GDMS inaungwa mkono; sanidi kwa PBX iliyochaguliwa"
+        }
+      },
+      {
+        "label": {
+          "en": "Image identity",
+          "sw": "Utambulisho wa picha"
+        },
+        "value": {
+          "en": "Official GRP2602 family photograph",
+          "sw": "Picha rasmi ya familia ya GRP2602"
+        }
+      }
+    ],
+    "variants": [
+      "Exact revision, firmware, power accessories and licensing confirmed in quotation"
+    ],
+    "source": "https://www.grandstream.com/products/ip-voice-telephony/carrier-grade-ip-phones/grp-series-essential-ip-phones",
+    "documents": [
+      {
+        "label": {
+          "en": "Official manufacturer information",
+          "sw": "Taarifa rasmi za mtengenezaji"
+        },
+        "url": "https://www.grandstream.com/products/ip-voice-telephony/carrier-grade-ip-phones/grp-series-essential-ip-phones"
+      }
+    ],
+    "related": ["yeastar-p550"],
+    "price": null,
+    "availability": "Quotation only; no stock claim",
+    "compatibility": {
+      "en": "The P suffix identifies the PoE variant; do not infer Wi-Fi or Gigabit from this family image. Confirm exact revision, SIP account capacity, firmware and power accessories before ordering. The manufacturer page and older documents differ on account counts, so no account-count promise is made here.",
+      "sw": "Herufi P hutambulisha toleo la PoE; usidhani Wi-Fi au Gigabit kutokana na picha ya familia. Hakiki revision, uwezo wa akaunti za SIP, firmware na adapta kabla ya kuagiza. Ukurasa wa sasa na nyaraka za zamani hutofautiana kuhusu akaunti, hivyo idadi yake haiahidiwi hapa."
+    }
+  },
+  {
+    "slug": "grandstream-ghp610",
+    "name": "GHP610",
+    "brand": "Grandstream",
+    "category": "hotel",
+    "generation": "Manufacturer reference",
+    "classification": "current",
+    "images": [
+      {
+        "src": "/images/telephony/grandstream-ghp610.webp",
+        "alt": "Grandstream GHP610 official family reference photograph"
+      }
+    ],
+    "summary": {
+      "en": "A compact wired hotel IP phone for guest-room extensions on an appropriately designed PBX system.",
+      "sw": "Simu ndogo ya IP ya hoteli yenye muunganisho wa waya kwa extension za vyumba kwenye PBX iliyopangwa."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Connection",
+          "sw": "Muunganisho"
+        },
+        "value": {
+          "en": "100 Mbps Ethernet / PoE on non-W GHP610",
+          "sw": "Ethernet 100 Mbps / PoE kwa GHP610 isiyo W"
+        }
+      },
+      {
+        "label": {
+          "en": "Role",
+          "sw": "Kazi"
+        },
+        "value": {
+          "en": "Guest-room SIP telephone",
+          "sw": "Simu ya SIP ya chumba cha mgeni"
+        }
+      },
+      {
+        "label": {
+          "en": "Image identity",
+          "sw": "Utambulisho wa picha"
+        },
+        "value": {
+          "en": "Official GHP610/GHP611 family photograph",
+          "sw": "Picha rasmi ya familia ya GHP610/GHP611"
+        }
+      }
+    ],
+    "variants": [
+      "Exact revision, firmware, power accessories and licensing confirmed in quotation"
+    ],
+    "source": "https://www.grandstream.com/products/ip-voice-telephony/hotel-phones",
+    "documents": [
+      {
+        "label": {
+          "en": "Official manufacturer information",
+          "sw": "Taarifa rasmi za mtengenezaji"
+        },
+        "url": "https://www.grandstream.com/products/ip-voice-telephony/hotel-phones"
+      }
+    ],
+    "related": ["yeastar-p550"],
+    "price": null,
+    "availability": "Quotation only; no stock claim",
+    "compatibility": {
+      "en": "Wi-Fi belongs to W variants, not this wired reference. Verify the exact model, power method and PBX/firmware compatibility. The official family photograph is not proof of stock or exact colour. Wake-up, room status, call billing and PMS functions depend on the compatible PBX/software, integration and licence—not the handset alone.",
+      "sw": "Wi-Fi ni ya matoleo ya W, si rejea hii ya waya. Hakiki modeli, umeme na compatibility ya PBX/firmware. Picha rasmi ya familia haithibitishi stock au rangi. Wake-up, room status, billing na PMS hutegemea PBX/programu, integration na leseni—si simu pekee."
+    }
+  }
+]

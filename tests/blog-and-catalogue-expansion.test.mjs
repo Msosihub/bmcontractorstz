@@ -64,6 +64,7 @@ test("journal exposes reviewed published articles only, with bilingual copy, loc
         "electrical-contracting",
         "generators",
         "solar-panel-systems",
+        "telephone-systems",
         "power-backup",
         "networking",
       ].includes(a.service),
