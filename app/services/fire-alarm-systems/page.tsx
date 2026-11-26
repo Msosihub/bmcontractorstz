@@ -17,7 +17,7 @@ import {
 } from "@/data/fire-safety";
 import { fireProducts, fireCataloguePath } from "@/lib/catalogue/fire-safety";
 import { SystemCircuit } from "./SystemCircuit";
-import { SafetyPulse } from "./SafetyPulse";
+import { FireHeroImage } from "./FireHeroImage";
 import "@/components/premium/access-control/access.css";
 import "./fire-safety.css";
 type Props = { searchParams: Promise<{ lang?: string }> };
@@ -33,7 +33,7 @@ export async function generateMetadata({ searchParams }: Props) {
     ...m,
     openGraph: {
       ...m.openGraph,
-      images: ["/images/fire-safety/safety-architecture.webp"],
+      images: ["/images/fire-safety/protected-building-v2.webp"],
     },
   };
 }
@@ -118,19 +118,13 @@ export default async function Page({ searchParams }: Props) {
           }}
         />
         <section className="fs-hero" aria-labelledby="fs-title">
-          <Image
-            src="/images/fire-safety/safety-architecture.webp"
+          <FireHeroImage
             alt={t(
-              "A modern institutional building, entrance and staff at dusk",
-              "Jengo la kisasa la taasisi, lango na wafanyakazi jioni",
+              "An occupied commercial entrance with a fire alarm panel, manual call point, sounder and ceiling smoke detector",
+              "Lango la jengo la biashara lenye watu, paneli ya tahadhari ya moto, kitufe cha alarm, king’ora na kitambuzi cha moshi darini",
             )}
-            fill
-            sizes="(max-width:760px) 1560px, 100vw"
-            preload
-            className="fs-hero-image"
           />
           <div className="fs-hero-shade" />
-          <SafetyPulse sw={sw} />
           <div className="fs-wrap fs-hero-copy">
             <Breadcrumbs id="fire-alarm-systems" lang={lang} />
             <p className="fs-eyebrow">

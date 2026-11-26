@@ -231,6 +231,45 @@
       "promptRecord": "docs/commercial/fire-safety/READINESS-IMAGE-PROMPTS.json",
       "original": "docs/commercial/fire-safety/originals/readiness-demonstration.png",
       "imageNote": "Original editorial demonstration. Not actual BM staff, event, client, qualification or training accreditation. Observers behind a clear boundary; no live emergency."
+    },
+    {
+      "name": "protected-building-v2",
+      "kind": "original-generated-editorial-scene",
+      "width": 1672,
+      "height": 941,
+      "widths": [
+        384,
+        640,
+        960,
+        1280,
+        1672
+      ],
+      "sha256": "0c3a205104432bd74f4d554c1b561e556641e3bc2e1b00a981588283ee6a9dd3",
+      "localFile": "public/images/fire-safety/protected-building-v2.webp",
+      "generator": "Built-in image_gen.imagegen",
+      "notEvidenceOfCompletedProjects": true,
+      "promptRecord": "docs/commercial/fire-safety/HERO-REFINEMENT-PROMPTS.json",
+      "original": "docs/commercial/fire-safety/originals/protected-building-v2.png",
+      "imageNote": "Editorial architectural scene. Plausible installed fire equipment, not an installation drawing, BM project claim, manufacturer model claim or compliance certification."
+    },
+    {
+      "name": "protected-building-mobile-v2",
+      "kind": "original-generated-editorial-scene",
+      "width": 1024,
+      "height": 1536,
+      "widths": [
+        384,
+        640,
+        960,
+        1024
+      ],
+      "sha256": "c7acc40fcc9cd6e6cc9d4c8aa3914ff4ff6d16e192bd7c960aa5f3dcecb93dd0",
+      "localFile": "public/images/fire-safety/protected-building-mobile-v2.webp",
+      "generator": "Built-in image_gen.imagegen",
+      "notEvidenceOfCompletedProjects": true,
+      "promptRecord": "docs/commercial/fire-safety/HERO-REFINEMENT-PROMPTS.json",
+      "original": "docs/commercial/fire-safety/originals/protected-building-mobile-v2.png",
+      "imageNote": "Editorial architectural scene. Plausible installed fire equipment, not an installation drawing, BM project claim, manufacturer model claim or compliance certification."
     }
   ],
   "existingSceneReuse": [
