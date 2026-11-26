@@ -26,3 +26,12 @@ Branch `codex/commercial-fire-safety-01` starts at published Networking merge `d
 
 ## Next approval
 Recommend one protected Preview only after owner local review and a fresh hash/target/security preflight. Existing project `prj_RHNQnlM5RmscyTmfXfyyWOKTwVVJ`, team `erangs-projects`; explicit Preview, Authentication on, branch tracking off, auto Production domains off, restricted synthetic identity, notifications/providers suppressed. No export of protected secrets, no automatic retry, no merge or promotion.
+
+## Owner-requested readiness update — 26 November 2026
+Added the bilingual Fire Safety Training & Readiness section after maintenance: four concise awareness topics, a controlled-demonstration editorial photograph, and contextual readiness-session enquiry. Facilitator qualifications and any formal certification remain subject to verification; no BM accreditation claim was added. All previous content, six products, SEO and public routes remain.
+
+The five existing in-page links now have animated underline/arrow feedback on hover and keyboard focus, with an inset visible focus ring and reduced-motion alternatives. No new JavaScript dependency or persistent animation was introduced.
+
+The optional transparent powder-discharge video was considered but not included: a professional responsive still preserves realistic staging and reliable cross-browser/no-JavaScript delivery without alpha-video downloads or an artificial repeating spray. Existing Safety Pulse behavior is retained. Original generated artwork and both exact prompts are preserved in READINESS-IMAGE-PROMPTS.json and originals/readiness-demonstration.png. The scene is not presented as an actual BM event, staff record or certification.
+
+The original bd635f6 archive remains historical. This source update requires its own new commit and verified archive before any future deployment approval. See the separate outputs/fire-safety-readiness-20261126 report for the latest candidate and tests.

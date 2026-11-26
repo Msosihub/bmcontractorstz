@@ -1240,3 +1240,149 @@
 .fs-delivery li > span {
   color: #61553e;
 }
+
+/* Small native link feedback: no JavaScript, layout shift or perpetual motion. */
+.fs-anchor-nav a {
+  position: relative;
+  transition: color 0.22s ease;
+}
+.fs-anchor-nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 14px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #9c7643;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.24s ease;
+}
+.fs-anchor-nav a span {
+  display: inline-block;
+  transition:
+    transform 0.24s ease,
+    color 0.24s ease;
+}
+.fs-anchor-nav a:is(:hover, :focus-visible) {
+  color: #365d54;
+}
+.fs-anchor-nav a:is(:hover, :focus-visible)::after {
+  transform: scaleX(1);
+}
+.fs-anchor-nav a:is(:hover, :focus-visible) span {
+  transform: translate(3px, 3px);
+  color: #76562e;
+}
+.fs-training {
+  background: #eae0cf;
+}
+.fs-training-layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 85px;
+  align-items: center;
+}
+.fs-main .fs-training-lead {
+  color: #34574c;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+.fs-training-topics {
+  list-style: none;
+  margin: 0 0 22px;
+  padding: 0;
+}
+.fs-training-topics li {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+  border-top: 1px solid #bfb5a3;
+  padding: 16px 0;
+}
+.fs-training-topics li > span {
+  font-size: 10px;
+  color: #6a573c;
+  padding-top: 3px;
+}
+.fs-training-topics strong {
+  font-size: 13px;
+  font-weight: 600;
+}
+.fs-main .fs-training-topics p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 6px 0 0;
+}
+.fs-main .fs-training-scope {
+  font-size: 12px;
+  color: #5d6055;
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+.fs-training-photo {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.fs-training-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .fs-training-layout {
+    gap: 35px;
+  }
+  .fs-training-layout {
+    grid-template-columns: 1fr;
+  }
+  .fs-training-photo {
+    order: -1;
+  }
+  .fs-training-photo img {
+    height: auto;
+  }
+}
+@media (max-width: 760px) {
+  .fs-training-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .fs-training-photo {
+    order: -1;
+  }
+  .fs-training-photo img {
+    height: auto;
+    aspect-ratio: 1.5;
+    object-fit: cover;
+  }
+  .fs-training h2 {
+    font-size: 36px;
+  }
+  .fs-main .fs-training-lead {
+    font-size: 16px;
+  }
+  .fs-training-topics li {
+    gap: 13px;
+    padding-block: 14px;
+  }
+  .fs-anchor-nav a::after {
+    bottom: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fs-anchor-nav a,
+  .fs-anchor-nav a span,
+  .fs-anchor-nav a::after {
+    transition: none;
+  }
+  .fs-anchor-nav a:is(:hover, :focus-visible) span {
+    transform: none;
+  }
+}
+
+.fs-anchor-nav a:focus-visible {
+  outline-offset: -3px;
+}

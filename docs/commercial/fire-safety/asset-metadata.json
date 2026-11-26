@@ -147,5 +147,19 @@
       1200
     ],
     "sha256": "32d2b12311a95f51793003557c8684a1361a2d4e7821a5ae16438061b4a4bb44"
+  },
+  {
+    "name": "readiness-demonstration",
+    "kind": "original-generated-editorial-scene",
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      384,
+      640,
+      960,
+      1280,
+      1536
+    ],
+    "sha256": "d907c027582da74006ce9d863275869ed80665050653a4adfae7f108e842eade"
   }
 ]

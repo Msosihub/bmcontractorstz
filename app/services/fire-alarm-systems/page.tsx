@@ -785,6 +785,107 @@ export default async function Page({ searchParams }: Props) {
           </ol>
         </section>
         <section
+          id="training"
+          className="fs-training fs-section"
+          aria-labelledby="fs-training-title"
+        >
+          <div className="fs-wrap fs-training-layout">
+            <div className="fs-training-copy">
+              <p className="fs-eyebrow">
+                {t(
+                  "PEOPLE MAKE THE PLAN WORK",
+                  "WATU HUUFANYA MPANGO UFANYE KAZI",
+                )}
+              </p>
+              <h2 id="fs-training-title">
+                {t(
+                  "Fire Safety Training & Readiness",
+                  "Mafunzo na Utayari wa Usalama wa Moto",
+                )}
+              </h2>
+              <p className="fs-training-lead">
+                {t(
+                  "Be prepared. Respond safely. Protect lives and property.",
+                  "Jiandae. Chukua hatua salama. Linda maisha na mali.",
+                )}
+              </p>
+              <ul className="fs-training-topics">
+                {[
+                  [
+                    t("Know your extinguisher", "Fahamu kizima moto chako"),
+                    t(
+                      "Basic awareness, safe handling and the limits of first-response equipment.",
+                      "Uelewa wa msingi, matumizi salama na mipaka ya vifaa vya hatua za awali.",
+                    ),
+                  ],
+                  [
+                    t("Choose for the risk", "Chagua kulingana na hatari"),
+                    t(
+                      "Understand powder, CO₂ and other agents—and where each is appropriate.",
+                      "Fahamu poda, CO₂ na aina nyingine, pamoja na matumizi yanayofaa kwa kila aina.",
+                    ),
+                  ],
+                  [
+                    t("Be ready to evacuate", "Jiandae kutoka salama"),
+                    t(
+                      "Evacuation awareness for schools, boarding facilities, hotels, offices and businesses.",
+                      "Uelewa wa kuondoka salama kwa shule, mabweni, hoteli, ofisi na biashara.",
+                    ),
+                  ],
+                  [
+                    t("Keep readiness visible", "Dumisha utayari"),
+                    t(
+                      "Equipment inspection awareness, clear responsibilities and emergency preparedness.",
+                      "Uelewa wa ukaguzi wa vifaa, majukumu yaliyo wazi na maandalizi ya dharura.",
+                    ),
+                  ],
+                ].map(([title, text], i) => (
+                  <li key={title}>
+                    <span aria-hidden="true">0{i + 1}</span>
+                    <div>
+                      <strong>{title}</strong>
+                      <p>{text}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+              <p className="fs-training-scope">
+                {t(
+                  "Session scope and facilitator qualifications are confirmed before booking. Any formal certification requires separate verification.",
+                  "Maudhui ya kikao na sifa za mwezeshaji huthibitishwa kabla ya kupanga mafunzo. Utoaji wa cheti rasmi unahitaji uhakiki tofauti.",
+                )}
+              </p>
+              <a
+                className="fs-link"
+                href={
+                  fireLinks(
+                    lang,
+                    t(
+                      "Fire safety awareness and emergency readiness session",
+                      "Mafunzo ya uelewa wa usalama wa moto na utayari wa dharura",
+                    ),
+                  ).quote
+                }
+              >
+                {t("Discuss a readiness session", "Jadili mafunzo ya utayari")}{" "}
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <div className="fs-training-photo">
+              <Image
+                src="/images/fire-safety/readiness-demonstration.webp"
+                alt={t(
+                  "A controlled outdoor extinguisher demonstration with adult observers behind a clear boundary",
+                  "Onyesho linalosimamiwa la kizima moto nje, watu wazima wakitazama nyuma ya mpaka wa usalama",
+                )}
+                width={1536}
+                height={1024}
+                sizes="(max-width:760px) 90vw, (max-width:1100px) 850px, 57vw"
+              />
+            </div>
+          </div>
+        </section>
+        <section
           className="fs-wrap fs-section fs-legal"
           aria-labelledby="fs-legal-title"
         >

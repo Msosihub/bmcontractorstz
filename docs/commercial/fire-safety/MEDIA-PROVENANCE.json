@@ -211,6 +211,26 @@
       "sourceImage": "https://www.naffco.com/media/catalog/product/c/o/co2-inside_1_1.jpg",
       "permission": "Owner confirmation 26 November 2026: supplier official images permitted for sales and marketing.",
       "identityBasis": "Exact model named on manufacturer product page; HF-C104 image via CERCASUL model page. NAFFCO photos are range illustrations, not exact capacity/inventory claims."
+    },
+    {
+      "name": "readiness-demonstration",
+      "kind": "original-generated-editorial-scene",
+      "width": 1536,
+      "height": 1024,
+      "widths": [
+        384,
+        640,
+        960,
+        1280,
+        1536
+      ],
+      "sha256": "d907c027582da74006ce9d863275869ed80665050653a4adfae7f108e842eade",
+      "localFile": "/images/fire-safety/readiness-demonstration.webp",
+      "generator": "Built-in image_gen.imagegen",
+      "notEvidenceOfCompletedProjects": true,
+      "promptRecord": "docs/commercial/fire-safety/READINESS-IMAGE-PROMPTS.json",
+      "original": "docs/commercial/fire-safety/originals/readiness-demonstration.png",
+      "imageNote": "Original editorial demonstration. Not actual BM staff, event, client, qualification or training accreditation. Observers behind a clear boundary; no live emergency."
     }
   ],
   "existingSceneReuse": [
