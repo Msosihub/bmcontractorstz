@@ -1,0 +1,412 @@
+[
+  {
+    "slug": "hikvision-hf-c104",
+    "name": "HF-C104",
+    "brand": "Hikvision",
+    "category": "conventional",
+    "generation": "Manufacturer reference / exact revision to confirm",
+    "images": [
+      {
+        "src": "/images/fire-safety/hf-c104.webp",
+        "alt": "Hikvision HF-C104 manufacturer equipment photograph"
+      }
+    ],
+    "summary": {
+      "en": "Conventional fire-alarm panel reference for a zoned building system. Confirm the exact regional model and revision before specifying detectors and sounders.",
+      "sw": "Rejea ya paneli ya conventional kwa mfumo wa jengo wenye kanda. Hakiki modeli na toleo la eneo kabla ya kuchagua vitambuzi na ving’ora."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "System",
+          "sw": "Mfumo"
+        },
+        "value": {
+          "en": "Conventional / zoned",
+          "sw": "Conventional / kanda"
+        }
+      },
+      {
+        "label": {
+          "en": "Brochure family",
+          "sw": "Familia ya brosha"
+        },
+        "value": {
+          "en": "HF-C104(8); confirm exact supplied variant",
+          "sw": "HF-C104(8); hakiki toleo litakalotolewa"
+        }
+      }
+    ],
+    "variants": [],
+    "source": "https://www.hikvision.com/content/dam/hikvision/en/brochures-download/product-catalog/25H2-Hikvision-Distribution-Brochure-for-Hot-Selling-Products.pdf",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer information",
+          "sw": "Taarifa za mtengenezaji"
+        },
+        "url": "https://www.hikvision.com/content/dam/hikvision/en/brochures-download/product-catalog/25H2-Hikvision-Distribution-Brochure-for-Hot-Selling-Products.pdf"
+      }
+    ],
+    "related": [
+      "asenware-aw-fp300"
+    ],
+    "price": null,
+    "availability": "Confirm revision, sourcing and lead time in quotation",
+    "classification": "current",
+    "compatibility": {
+      "en": "Do not infer the zone count or approved device list from the brochure family notation. Obtain the exact HF-C104 regional manual, power requirements, zone loading and end-of-line/sounder instructions. This is not an ASENWARE addressable panel.",
+      "sw": "Usihitimishe idadi ya kanda au orodha ya vifaa kwa maandishi ya familia ya brosha. Pata mwongozo wa HF-C104 husika, mahitaji ya umeme, mzigo wa kanda na maelekezo ya mwisho wa laini/ving’ora. Si paneli ya addressable ya ASENWARE."
+    }
+  },
+  {
+    "slug": "asenware-aw-fp300",
+    "name": "AW-FP300",
+    "brand": "ASENWARE",
+    "category": "addressable",
+    "generation": "Manufacturer reference / exact revision to confirm",
+    "images": [
+      {
+        "src": "/images/fire-safety/aw-fp300.webp",
+        "alt": "ASENWARE AW-FP300 manufacturer equipment photograph"
+      }
+    ],
+    "summary": {
+      "en": "An addressable control-panel reference for identifying compatible devices and managing the designed alarm response.",
+      "sw": "Rejea ya paneli ya addressable ya kutambua vifaa vinavyooana na kuendesha hatua za alarm zilizopangwa."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Detection loop",
+          "sw": "Loop ya utambuzi"
+        },
+        "value": {
+          "en": "1 loop; up to 324 addresses, subject to design/manual limits",
+          "sw": "Loop 1; hadi anwani 324 kulingana na usanifu/mwongozo"
+        }
+      },
+      {
+        "label": {
+          "en": "Zone indication",
+          "sw": "Viashiria vya kanda"
+        },
+        "value": {
+          "en": "32 zones",
+          "sw": "Kanda 32"
+        }
+      },
+      {
+        "label": {
+          "en": "Display",
+          "sw": "Skrini"
+        },
+        "value": {
+          "en": "4.3-inch colour LCD",
+          "sw": "LCD ya rangi ya inchi 4.3"
+        }
+      }
+    ],
+    "variants": [],
+    "source": "https://www.asenware.com/products/detail-LPCB-Addressable-fire-alarm-system-32-zone-control-panel-AW-FP300-410.html",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer information",
+          "sw": "Taarifa za mtengenezaji"
+        },
+        "url": "https://www.asenware.com/products/detail-LPCB-Addressable-fire-alarm-system-32-zone-control-panel-AW-FP300-410.html"
+      }
+    ],
+    "related": [
+      "asenware-aw-d301",
+      "asenware-aw-d302",
+      "asenware-aw-d305"
+    ],
+    "price": null,
+    "availability": "Confirm revision, sourcing and lead time in quotation",
+    "classification": "current",
+    "compatibility": {
+      "en": "ASENWARE protocol. Check the complete approved device list, isolators, current loading, cable topology and battery calculations for the exact revision. Address capacity is not a promise that every proposed configuration is supported.",
+      "sw": "Protocol ya ASENWARE. Hakiki orodha ya vifaa, isolator, mkondo, mpangilio wa nyaya na hesabu za betri kwa toleo husika. Idadi ya anwani si ahadi kuwa kila mpangilio unawezekana."
+    }
+  },
+  {
+    "slug": "asenware-aw-d301",
+    "name": "AW-D301",
+    "brand": "ASENWARE",
+    "category": "detection",
+    "generation": "Manufacturer reference / exact revision to confirm",
+    "images": [
+      {
+        "src": "/images/fire-safety/aw-d301.webp",
+        "alt": "ASENWARE AW-D301 manufacturer equipment photograph"
+      }
+    ],
+    "summary": {
+      "en": "Addressable photoelectric smoke detection for suitable indoor conditions, with an individual device address in a compatible AW-FP300 system.",
+      "sw": "Kitambuzi cha moshi cha photoelectric addressable kwa mazingira yanayofaa ya ndani, chenye anwani yake katika mfumo unaooana wa AW-FP300."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Detection",
+          "sw": "Utambuzi"
+        },
+        "value": {
+          "en": "Photoelectric smoke detector",
+          "sw": "Moshi kwa teknolojia ya photoelectric"
+        }
+      },
+      {
+        "label": {
+          "en": "Panel family",
+          "sw": "Familia ya paneli"
+        },
+        "value": {
+          "en": "AW-FP300; ASENWARE protocol",
+          "sw": "AW-FP300; protocol ya ASENWARE"
+        }
+      },
+      {
+        "label": {
+          "en": "Loop supply",
+          "sw": "Umeme wa loop"
+        },
+        "value": {
+          "en": "24 V nominal; 18–28 V DC",
+          "sw": "24 V kawaida; 18–28 V DC"
+        }
+      }
+    ],
+    "variants": [],
+    "source": "https://www.asenware.com/products/detail-LPCB-Approved-Addressable-Fire-Alarm-Smoke-Detector-AW-D301-411.html",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer information",
+          "sw": "Taarifa za mtengenezaji"
+        },
+        "url": "https://www.asenware.com/products/detail-LPCB-Approved-Addressable-Fire-Alarm-Smoke-Detector-AW-D301-411.html"
+      }
+    ],
+    "related": [
+      "asenware-aw-fp300",
+      "asenware-aw-d302",
+      "asenware-aw-d305"
+    ],
+    "price": null,
+    "availability": "Confirm revision, sourcing and lead time in quotation",
+    "classification": "current",
+    "compatibility": {
+      "en": "Not for routine dust, steam, oil mist or persistent normal smoke. Assess the room and manufacturer environmental limits; choose another appropriate detection approach where needed. Do not mix panel protocols.",
+      "sw": "Si kwa vumbi, mvuke, ukungu wa mafuta au moshi wa kawaida unaoendelea. Tathmini chumba na mipaka ya mazingira ya mtengenezaji; chagua njia nyingine inayofaa inapohitajika. Usichanganye protocol za paneli."
+    }
+  },
+  {
+    "slug": "asenware-aw-d302",
+    "name": "AW-D302",
+    "brand": "ASENWARE",
+    "category": "detection",
+    "generation": "Manufacturer reference / exact revision to confirm",
+    "images": [
+      {
+        "src": "/images/fire-safety/aw-d302.webp",
+        "alt": "ASENWARE AW-D302 manufacturer equipment photograph"
+      }
+    ],
+    "summary": {
+      "en": "Addressable heat detector for a compatible AW-FP300 system. Suitability is determined by the fire strategy and environmental conditions.",
+      "sw": "Kitambuzi cha joto cha addressable kwa mfumo unaooana wa AW-FP300. Ufaafu hutegemea mpango wa ulinzi na mazingira."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Heat class",
+          "sw": "Daraja la joto"
+        },
+        "value": {
+          "en": "A2 (manufacturer classification)",
+          "sw": "A2 (daraja la mtengenezaji)"
+        }
+      },
+      {
+        "label": {
+          "en": "Panel family",
+          "sw": "Familia ya paneli"
+        },
+        "value": {
+          "en": "AW-FP300; ASENWARE protocol",
+          "sw": "AW-FP300; protocol ya ASENWARE"
+        }
+      },
+      {
+        "label": {
+          "en": "Loop supply",
+          "sw": "Umeme wa loop"
+        },
+        "value": {
+          "en": "24 V nominal; 18–28 V DC",
+          "sw": "24 V kawaida; 18–28 V DC"
+        }
+      }
+    ],
+    "variants": [],
+    "source": "https://www.asenware.com/products/detail-LPCB-Addressable-Fire-Alarm-Heat-Detector-AW-D302-412.html",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer information",
+          "sw": "Taarifa za mtengenezaji"
+        },
+        "url": "https://www.asenware.com/products/detail-LPCB-Addressable-Fire-Alarm-Heat-Detector-AW-D302-412.html"
+      }
+    ],
+    "related": [
+      "asenware-aw-fp300",
+      "asenware-aw-d301",
+      "asenware-aw-d305"
+    ],
+    "price": null,
+    "availability": "Confirm revision, sourcing and lead time in quotation",
+    "classification": "current",
+    "compatibility": {
+      "en": "Heat detection is not an automatic substitute for smoke detection in sleeping accommodation. Confirm the exact detector response, environment, placement and approved design.",
+      "sw": "Kitambuzi cha joto si mbadala wa moja kwa moja wa kitambuzi cha moshi katika maeneo ya kulala. Hakiki mwitikio wa kifaa, mazingira, mahali pa kufunga na usanifu ulioidhinishwa."
+    }
+  },
+  {
+    "slug": "asenware-aw-d305",
+    "name": "AW-D305",
+    "brand": "ASENWARE",
+    "category": "notification",
+    "generation": "Manufacturer reference / exact revision to confirm",
+    "images": [
+      {
+        "src": "/images/fire-safety/aw-d305.webp",
+        "alt": "ASENWARE AW-D305 manufacturer equipment photograph"
+      }
+    ],
+    "summary": {
+      "en": "An addressable manual call point lets a person raise the fire alarm through the compatible building system.",
+      "sw": "Kitufe cha addressable humwezesha mtu kuanzisha tahadhari ya moto kupitia mfumo unaooana wa jengo."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Function",
+          "sw": "Kazi"
+        },
+        "value": {
+          "en": "Manual fire-alarm initiation",
+          "sw": "Kuanzisha tahadhari ya moto kwa mkono"
+        }
+      },
+      {
+        "label": {
+          "en": "System",
+          "sw": "Mfumo"
+        },
+        "value": {
+          "en": "ASENWARE addressable family",
+          "sw": "Familia ya ASENWARE addressable"
+        }
+      }
+    ],
+    "variants": [],
+    "source": "https://www.asenware.com/products/detail-LPCB-Addressable-Manual-Call-Point-AW-D305-413.html",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer information",
+          "sw": "Taarifa za mtengenezaji"
+        },
+        "url": "https://www.asenware.com/products/detail-LPCB-Addressable-Manual-Call-Point-AW-D305-413.html"
+      }
+    ],
+    "related": [
+      "asenware-aw-fp300",
+      "asenware-aw-d301",
+      "asenware-aw-d302"
+    ],
+    "price": null,
+    "availability": "Confirm revision, sourcing and lead time in quotation",
+    "classification": "current",
+    "compatibility": {
+      "en": "Confirm the AW-FP300 device list and exact revision, reset/testing procedure, cable requirements, mounting and accessibility. This is an initiating device, not a sounder or extinguisher.",
+      "sw": "Hakiki orodha ya AW-FP300 na toleo husika, utaratibu wa kurejesha/kujaribu, nyaya, ufungaji na ufikivu. Hiki huanzisha tahadhari; si king’ora wala kizima moto."
+    }
+  },
+  {
+    "slug": "asenware-aw-d306",
+    "name": "AW-D306",
+    "brand": "ASENWARE",
+    "category": "notification",
+    "generation": "Manufacturer reference / exact revision to confirm",
+    "images": [
+      {
+        "src": "/images/fire-safety/aw-d306.webp",
+        "alt": "ASENWARE AW-D306 manufacturer equipment photograph"
+      }
+    ],
+    "summary": {
+      "en": "An addressable sounder/beacon reference for audible and visual notification, designed as part of a compatible alarm system.",
+      "sw": "Rejea ya king’ora/taa ya addressable kwa tahadhari ya sauti na mwanga, kama sehemu ya mfumo unaooana."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "Notification",
+          "sw": "Tahadhari"
+        },
+        "value": {
+          "en": "Sounder and visual beacon",
+          "sw": "King’ora na taa"
+        }
+      },
+      {
+        "label": {
+          "en": "Power arrangement",
+          "sw": "Mpango wa umeme"
+        },
+        "value": {
+          "en": "Addressable loop plus separate 24 V supply",
+          "sw": "Loop ya addressable pamoja na umeme tofauti wa 24 V"
+        }
+      },
+      {
+        "label": {
+          "en": "Enclosure",
+          "sw": "Kinga ya kifaa"
+        },
+        "value": {
+          "en": "IP21C; confirm installation environment",
+          "sw": "IP21C; hakiki mazingira ya kufunga"
+        }
+      }
+    ],
+    "variants": [],
+    "source": "https://www.asenware.com/products/detail-LPCB-Addressable-Fire-Alarm-Strobe-Sounder-Beacon-AW-D306-for-fire-alarm-system-414.html",
+    "documents": [
+      {
+        "label": {
+          "en": "Manufacturer information",
+          "sw": "Taarifa za mtengenezaji"
+        },
+        "url": "https://www.asenware.com/products/detail-LPCB-Addressable-Fire-Alarm-Strobe-Sounder-Beacon-AW-D306-for-fire-alarm-system-414.html"
+      }
+    ],
+    "related": [
+      "asenware-aw-fp300",
+      "asenware-aw-d301",
+      "asenware-aw-d302"
+    ],
+    "price": null,
+    "availability": "Confirm revision, sourcing and lead time in quotation",
+    "classification": "current",
+    "compatibility": {
+      "en": "Confirm panel compatibility, separate supply supervision, sound/visual coverage and current/battery loading. Do not assume loop-only operation or outdoor suitability.",
+      "sw": "Hakiki uoanifu wa paneli, ufuatiliaji wa umeme tofauti, eneo la sauti/mwanga na mzigo wa betri. Usidhani inatumia loop pekee au inafaa nje."
+    }
+  }
+]

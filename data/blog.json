@@ -598,5 +598,75 @@
     "source": "https://mikrotik.com/product/rb5009ug_s_in",
     "reviewed": "2026-11-25",
     "published": true
+  },
+  {
+    "slug": "fire-safety-for-schools-and-businesses",
+    "service": "fire-alarm-systems",
+    "image": "/images/fire-safety/boarding-assessment.webp",
+    "alt": {
+      "en": "School staff reviewing a dormitory safety plan",
+      "sw": "Wahudumu wa shule wakipitia mpango wa usalama wa bweni"
+    },
+    "category": {
+      "en": "FIRE SAFETY",
+      "sw": "USALAMA WA MOTO"
+    },
+    "title": {
+      "en": "Before buying fire-safety equipment, start with the building.",
+      "sw": "Kabla ya kununua vifaa vya moto, anza na jengo."
+    },
+    "summary": {
+      "en": "A practical starting checklist for Tanzanian boarding schools, hotels and workplaces: detection, extinguishers, escape and maintenance.",
+      "sw": "Mambo ya kuanza nayo kwa shule za bweni, hoteli na ofisi Tanzania: utambuzi, vizima moto, njia za kutoka na matengenezo."
+    },
+    "sections": [
+      {
+        "title": {
+          "en": "1. Map people, rooms and escape routes.",
+          "sw": "1. Tambua watu, vyumba na njia za kutokea."
+        },
+        "text": {
+          "en": "Note how the building is used, its floors and areas, and who sleeps or needs assistance there. A school plan should include dormitories, classrooms, laboratories, kitchens, libraries and electrical rooms. Review night staffing, alarm audibility, clear exits, emergency lighting and drills. This identifies assessment questions; it is not evidence that a particular school is deficient.",
+          "sw": "Andika matumizi ya jengo, ghorofa na ukubwa, pamoja na wanaolala au kuhitaji msaada humo. Mpango wa shule ujumuishe mabweni, madarasa, maabara, majiko, maktaba na vyumba vya umeme. Pitia wahudumu wa usiku, usikikaji wa alarm, njia wazi, taa za dharura na mazoezi. Haya ni maswali ya tathmini, si ushahidi kuwa shule fulani ina upungufu."
+        }
+      },
+      {
+        "title": {
+          "en": "2. Choose the system before the devices.",
+          "sw": "2. Chagua mfumo kabla ya vifaa."
+        },
+        "text": {
+          "en": "Conventional systems normally identify an alarm zone. Addressable systems can identify a compatible individual device. Neither is automatically right for every building. Check manufacturer protocol, device limits, power and battery calculations, circuit supervision and the planned response. Smoke, heat, standalone, wireless and supplementary camera detection have different roles. A camera feature does not replace a required engineered fire alarm.",
+          "sw": "Conventional kwa kawaida huonyesha kanda ya alarm. Addressable inaweza kutambua kifaa kimoja kinachooana. Hakuna aina inayofaa kila jengo. Hakiki protocol, mipaka ya vifaa, hesabu za umeme/betri, ufuatiliaji wa nyaya na mpango wa hatua. Vitambuzi vya moshi, joto, alarm zinazojitegemea, zisizo na nyaya na kamera saidizi zina kazi tofauti. Kipengele cha kamera si mbadala wa mfumo unaohitajika wa tahadhari ya moto."
+        }
+      },
+      {
+        "title": {
+          "en": "3. Match the extinguisher to the risk—not just the weight.",
+          "sw": "3. Linganisha kizima moto na hatari—si uzito pekee."
+        },
+        "text": {
+          "en": "ABC powder and CO₂ have different strengths and limitations. Powder leaves residue; CO₂ can present oxygen-displacement and reignition risks. Kitchens may need suitable wet-chemical protection. Ask about the marked rating, placement, mounting and authorized servicing. GN 533/2015 Regulation 244 lists occupancy-dependent quantities and capacities, including 9 kg dry chemical and 5 kg CO₂ for listed occupancies. Do not assume a 6 kg option is a compliant substitute. Confirm requirements with the competent authority for the actual building.",
+          "sw": "Poda ya ABC na CO₂ zina faida na mipaka tofauti. Poda huacha mabaki; CO₂ inaweza kupunguza oksijeni na moto unaweza kuwaka tena. Jikoni kunaweza kuhitaji wet chemical inayofaa. Uliza kuhusu uwezo ulioandikwa, mahali, mabano na huduma zenye ruhusa. Kanuni 244 ya GN 533/2015 inataja idadi na uwezo kwa matumizi ya jengo, yakiwemo poda kilo 9 na CO₂ kilo 5 kwa makundi yaliyotajwa. Usidhani kilo 6 ni mbadala unaotimiza masharti. Hakiki mahitaji ya jengo na mamlaka husika."
+        }
+      },
+      {
+        "title": {
+          "en": "4. Keep useful records and arrange competent maintenance.",
+          "sw": "4. Hifadhi rekodi na panga matengenezo yenye utaalamu."
+        },
+        "text": {
+          "en": "Bring existing drawings, panel models, service tags and fault records to the assessment. Regulation 244(7) includes approximately 30-day extinguisher inspections and maintenance no more than one year apart, with earlier attention where indicated. Recharge after use. Alarm testing must be coordinated with staff and any monitoring provider. Government inspection/certification is separate from installation records. Regulated servicing and pressure testing require verified authorization and competence. Current rules and local authority directions must be checked.",
+          "sw": "Leta michoro, modeli za paneli, lebo za huduma na rekodi za hitilafu. Kanuni 244(7) inajumuisha ukaguzi wa vizima moto takribani kila siku 30 na matengenezo yasiyozidi mwaka mmoja, au mapema inapohitajika. Jaza tena baada ya matumizi. Majaribio ya alarm yakubaliwe na wahudumu na mtoa ufuatiliaji. Ukaguzi/cheti cha Serikali ni tofauti na rekodi za ufungaji. Huduma zinazodhibitiwa na upimaji wa shinikizo zinahitaji ruhusa na uwezo uliothibitishwa. Hakiki kanuni za sasa na maelekezo ya mamlaka."
+        }
+      }
+    ],
+    "cta": {
+      "en": "Share the building use, location, floors, existing system and required scope with BM. Request equipment-only prices or a site assessment; regulated work is confirmed against the applicable authorization.",
+      "sw": "Ieleze BM matumizi ya jengo, mahali, ghorofa, mfumo uliopo na hitaji. Omba bei ya vifaa pekee au tathmini; kazi zinazodhibitiwa zihakiwe kwa ruhusa husika."
+    },
+    "source": "https://polis.parliament.go.tz/uploads/bills/1459254298-GN%20533%20THE%20FIRE%20AND%20RESCUE%20FORCE%20%28FIRE%20PRECAUTIONS%20IN%20BUILDINGS%29%20REGULATIONS_2015.pdf",
+    "reviewed": "2026-11-26",
+    "published": true
   }
 ]

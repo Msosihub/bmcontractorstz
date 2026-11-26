@@ -5,6 +5,7 @@ import { isPreview } from "../lib/preview-safety.mjs";
 import { verifyDatabaseEnvironment } from "../lib/production-database.mjs";
 await validateRuntimeArchive(process.cwd());
 assertEquipmentMediaPublication(process.env, JSON.parse(await readFile("data/electric-fence-product-images.json", "utf8")));
+assertEquipmentMediaPublication(process.env, JSON.parse(await readFile("data/fire-safety-equipment-images.json", "utf8")));
 if (isPreview()) {
   if ((await readdir(".")).some((name) => name.startsWith(".env")))
     throw Error("Preview build must not contain environment files.");

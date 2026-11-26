@@ -1,0 +1,222 @@
+{
+  "reviewed": "2026-11-26",
+  "assets": [
+    {
+      "name": "safety-architecture",
+      "kind": "original-generated-editorial-scene",
+      "width": 1672,
+      "height": 941,
+      "widths": [
+        384,
+        640,
+        960,
+        1280,
+        1672
+      ],
+      "sha256": "ebb7ae35d641079bd155740a41110c4723dd3f7e7cd0d3cecf6f0a908b2e8942",
+      "localFile": "public/images/fire-safety/safety-architecture.webp",
+      "generator": "Built-in image_gen.imagegen",
+      "notEvidenceOfCompletedProjects": true,
+      "promptSummary": "Premium Tanzanian institutional entrance at blue hour; adult staff; realistic detector, panel and call point; dark left space; no fire, smoke, branding or emergency.",
+      "original": "docs/commercial/fire-safety/originals/safety-architecture.png"
+    },
+    {
+      "name": "boarding-assessment",
+      "kind": "original-generated-editorial-scene",
+      "width": 1672,
+      "height": 941,
+      "widths": [
+        384,
+        640,
+        960,
+        1280,
+        1672
+      ],
+      "sha256": "072e4225298d857954ac3c044b82e569b4a98eaa35557013d572b1cd7f8c27a6",
+      "localFile": "public/images/fire-safety/boarding-assessment.webp",
+      "generator": "Built-in image_gen.imagegen",
+      "notEvidenceOfCompletedProjects": true,
+      "promptSummary": "Warm architectural boarding dormitory; adult wardens reviewing floor plan; clear aisle and exits; no children, logos or actual BM-project claim.",
+      "original": "docs/commercial/fire-safety/originals/boarding-assessment.png"
+    },
+    {
+      "name": "maintenance",
+      "kind": "original-generated-editorial-scene",
+      "width": 1086,
+      "height": 1448,
+      "widths": [
+        384,
+        640,
+        960,
+        1086
+      ],
+      "sha256": "6bfcb1edb32e8ed9a08548d29ec84851f602e88bd681a5f582bc0bb4a8d032ee",
+      "localFile": "public/images/fire-safety/maintenance.webp",
+      "generator": "Built-in image_gen.imagegen",
+      "notEvidenceOfCompletedProjects": true,
+      "promptSummary": "Portrait adult Tanzanian technician reviewing fire panel, zone chart and test equipment; charcoal unbranded shirt and teal wall; no actual staff/project claim.",
+      "original": "docs/commercial/fire-safety/originals/maintenance.png"
+    },
+    {
+      "name": "healthcare",
+      "kind": "original-generated-editorial-scene",
+      "width": 1536,
+      "height": 1024,
+      "widths": [
+        384,
+        640,
+        960,
+        1280,
+        1536
+      ],
+      "sha256": "e228b04db420d7e085bdf4f7ce03eed3ed7bbe8001ee25e979beb395e12c5f85",
+      "localFile": "public/images/fire-safety/healthcare.webp",
+      "generator": "Built-in image_gen.imagegen",
+      "notEvidenceOfCompletedProjects": true,
+      "promptSummary": "Modern Tanzanian clinic corridor; two adult healthcare staff reviewing floor plan; clear exits, realistic ceiling detector, warm ivory/mineral teal; no emergency or company claims.",
+      "original": "docs/commercial/fire-safety/originals/healthcare.png"
+    },
+    {
+      "name": "kitchen",
+      "kind": "original-generated-editorial-scene",
+      "width": 1536,
+      "height": 1024,
+      "widths": [
+        384,
+        640,
+        960,
+        1280,
+        1536
+      ],
+      "sha256": "bbd1f9e75190adb80c339a6fa95f193ff0e56b96e1d580d29482551fbc210c0b",
+      "localFile": "public/images/fire-safety/kitchen.webp",
+      "generator": "Built-in image_gen.imagegen",
+      "notEvidenceOfCompletedProjects": true,
+      "promptSummary": "Modern Tanzanian hotel commercial kitchen; adult chef and facilities manager; realistic heat detector and blanket cabinet; safe clear aisle, no fire/smoke/brand/project claim.",
+      "original": "docs/commercial/fire-safety/originals/kitchen.png"
+    },
+    {
+      "name": "aw-fp300",
+      "kind": "manufacturer-product-reference",
+      "width": 634,
+      "height": 894,
+      "widths": [
+        634
+      ],
+      "sha256": "9529b0b1d5566668d3ac40b8be47e00a1f2ff71363e1da17941313fa83133940",
+      "localFile": "public/images/fire-safety/aw-fp300.webp",
+      "sourceImage": "https://alarmasparafuego.com/wp-content/uploads/2024/08/ASENWARE-COMPANY-INTRODUCTION.pdf#page=60",
+      "permission": "Owner confirmation 26 November 2026: supplier official images permitted for sales and marketing.",
+      "identityBasis": "Exact model named on manufacturer product page; HF-C104 image via CERCASUL model page. NAFFCO photos are range illustrations, not exact capacity/inventory claims.",
+      "imageNote": "Original embedded manufacturer brochure photo, unmodified, with optional printer pictured; included accessories are not promised."
+    },
+    {
+      "name": "aw-d301",
+      "kind": "manufacturer-product-reference",
+      "width": 220,
+      "height": 250,
+      "widths": [
+        220
+      ],
+      "sha256": "04793ae30123b4b3e36feb04f508c5239634a25f418bb4ad624e27caf7931f78",
+      "localFile": "public/images/fire-safety/aw-d301.webp",
+      "sourceImage": "https://www.asenware.com/u_file/product/18_05_15/a421721ea3.jpg",
+      "permission": "Owner confirmation 26 November 2026: supplier official images permitted for sales and marketing.",
+      "identityBasis": "Exact model named on manufacturer product page; HF-C104 image via CERCASUL model page. NAFFCO photos are range illustrations, not exact capacity/inventory claims.",
+      "imageNote": "Official source native220x250. Display capped at220px; no AI enlargement or redrawing. Higher-resolution manufacturer artwork remains desirable."
+    },
+    {
+      "name": "aw-d302",
+      "kind": "manufacturer-product-reference",
+      "width": 220,
+      "height": 250,
+      "widths": [
+        220
+      ],
+      "sha256": "d6420a1f2657f686300c282abe849706570d3cc824d5ceab06eff82ad77acea3",
+      "localFile": "public/images/fire-safety/aw-d302.webp",
+      "sourceImage": "https://www.asenware.com/u_file/product/18_05_15/dda21d7dd2.jpg",
+      "permission": "Owner confirmation 26 November 2026: supplier official images permitted for sales and marketing.",
+      "identityBasis": "Exact model named on manufacturer product page; HF-C104 image via CERCASUL model page. NAFFCO photos are range illustrations, not exact capacity/inventory claims.",
+      "imageNote": "Official source native220x250. Display capped at220px; no AI enlargement or redrawing. Higher-resolution manufacturer artwork remains desirable."
+    },
+    {
+      "name": "aw-d305",
+      "kind": "manufacturer-product-reference",
+      "width": 220,
+      "height": 250,
+      "widths": [
+        220
+      ],
+      "sha256": "3d4952d6c9bbbfb53e7f71c3e0869b0878bbdfb5eb7bf41fb4c99f49c6c2c523",
+      "localFile": "public/images/fire-safety/aw-d305.webp",
+      "sourceImage": "https://www.asenware.com/u_file/product/18_05_15/e4e0cfe858.jpg",
+      "permission": "Owner confirmation 26 November 2026: supplier official images permitted for sales and marketing.",
+      "identityBasis": "Exact model named on manufacturer product page; HF-C104 image via CERCASUL model page. NAFFCO photos are range illustrations, not exact capacity/inventory claims.",
+      "imageNote": "Official source native220x250. Display capped at220px; no AI enlargement or redrawing. Higher-resolution manufacturer artwork remains desirable."
+    },
+    {
+      "name": "aw-d306",
+      "kind": "manufacturer-product-reference",
+      "width": 220,
+      "height": 250,
+      "widths": [
+        220
+      ],
+      "sha256": "7d96f99b5f6ebb7b230f70aab580e09a35b19cbee158d854d5b3850f6eefe60b",
+      "localFile": "public/images/fire-safety/aw-d306.webp",
+      "sourceImage": "https://www.asenware.com/u_file/product/18_05_15/219a3a7401.jpg",
+      "permission": "Owner confirmation 26 November 2026: supplier official images permitted for sales and marketing.",
+      "identityBasis": "Exact model named on manufacturer product page; HF-C104 image via CERCASUL model page. NAFFCO photos are range illustrations, not exact capacity/inventory claims.",
+      "imageNote": "Official source native220x250. Display capped at220px; no AI enlargement or redrawing. Higher-resolution manufacturer artwork remains desirable."
+    },
+    {
+      "name": "hf-c104",
+      "kind": "manufacturer-product-reference",
+      "width": 1600,
+      "height": 1600,
+      "widths": [
+        1200
+      ],
+      "sha256": "f5a50769fe65b574573a2fdce118225b8a4b6fe3b129a85b36ca2731058dc26a",
+      "localFile": "public/images/fire-safety/hf-c104.webp",
+      "sourceImage": "https://www.cercasul.com/img/hf-c104.jpg",
+      "permission": "Owner confirmation 26 November 2026: supplier official images permitted for sales and marketing.",
+      "identityBasis": "Exact model named on manufacturer product page; HF-C104 image via CERCASUL model page. NAFFCO photos are range illustrations, not exact capacity/inventory claims."
+    },
+    {
+      "name": "abc-powder",
+      "kind": "manufacturer-product-reference",
+      "width": 1920,
+      "height": 1200,
+      "widths": [
+        1200
+      ],
+      "sha256": "c17cd55686e99bb80e70f347313d1d44a7190b089d91d09ac290d734375f5216",
+      "localFile": "public/images/fire-safety/abc-powder.webp",
+      "sourceImage": "https://www.naffco.com/media/catalog/product/p/o/portable-dcp-kitemark-approved-_abc-dry-powder-_-inside.jpg",
+      "permission": "Owner confirmation 26 November 2026: supplier official images permitted for sales and marketing.",
+      "identityBasis": "Exact model named on manufacturer product page; HF-C104 image via CERCASUL model page. NAFFCO photos are range illustrations, not exact capacity/inventory claims."
+    },
+    {
+      "name": "co2",
+      "kind": "manufacturer-product-reference",
+      "width": 1920,
+      "height": 1200,
+      "widths": [
+        1200
+      ],
+      "sha256": "32d2b12311a95f51793003557c8684a1361a2d4e7821a5ae16438061b4a4bb44",
+      "localFile": "public/images/fire-safety/co2.webp",
+      "sourceImage": "https://www.naffco.com/media/catalog/product/c/o/co2-inside_1_1.jpg",
+      "permission": "Owner confirmation 26 November 2026: supplier official images permitted for sales and marketing.",
+      "identityBasis": "Exact model named on manufacturer product page; HF-C104 image via CERCASUL model page. NAFFCO photos are range illustrations, not exact capacity/inventory claims."
+    }
+  ],
+  "existingSceneReuse": [
+    "/images/networking/hotel-wifi.webp",
+    "/images/networking/workplace.webp",
+    "/assets/cctv-applications/warehouse-1440.webp"
+  ],
+  "technicalProcessing": "Sharp resize/compression only, no upscaling or generative alteration of manufacturer equipment. Original generated PNGs retained."
+}

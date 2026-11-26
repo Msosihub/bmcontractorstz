@@ -1,0 +1,151 @@
+[
+  {
+    "name": "safety-architecture",
+    "kind": "original-generated-editorial-scene",
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      384,
+      640,
+      960,
+      1280,
+      1672
+    ],
+    "sha256": "ebb7ae35d641079bd155740a41110c4723dd3f7e7cd0d3cecf6f0a908b2e8942"
+  },
+  {
+    "name": "boarding-assessment",
+    "kind": "original-generated-editorial-scene",
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      384,
+      640,
+      960,
+      1280,
+      1672
+    ],
+    "sha256": "072e4225298d857954ac3c044b82e569b4a98eaa35557013d572b1cd7f8c27a6"
+  },
+  {
+    "name": "maintenance",
+    "kind": "original-generated-editorial-scene",
+    "width": 1086,
+    "height": 1448,
+    "widths": [
+      384,
+      640,
+      960,
+      1086
+    ],
+    "sha256": "6bfcb1edb32e8ed9a08548d29ec84851f602e88bd681a5f582bc0bb4a8d032ee"
+  },
+  {
+    "name": "healthcare",
+    "kind": "original-generated-editorial-scene",
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      384,
+      640,
+      960,
+      1280,
+      1536
+    ],
+    "sha256": "e228b04db420d7e085bdf4f7ce03eed3ed7bbe8001ee25e979beb395e12c5f85"
+  },
+  {
+    "name": "kitchen",
+    "kind": "original-generated-editorial-scene",
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      384,
+      640,
+      960,
+      1280,
+      1536
+    ],
+    "sha256": "bbd1f9e75190adb80c339a6fa95f193ff0e56b96e1d580d29482551fbc210c0b"
+  },
+  {
+    "name": "aw-fp300",
+    "kind": "manufacturer-product-reference",
+    "width": 634,
+    "height": 894,
+    "widths": [
+      634
+    ],
+    "sha256": "9529b0b1d5566668d3ac40b8be47e00a1f2ff71363e1da17941313fa83133940"
+  },
+  {
+    "name": "aw-d301",
+    "kind": "manufacturer-product-reference",
+    "width": 220,
+    "height": 250,
+    "widths": [
+      220
+    ],
+    "sha256": "04793ae30123b4b3e36feb04f508c5239634a25f418bb4ad624e27caf7931f78"
+  },
+  {
+    "name": "aw-d302",
+    "kind": "manufacturer-product-reference",
+    "width": 220,
+    "height": 250,
+    "widths": [
+      220
+    ],
+    "sha256": "d6420a1f2657f686300c282abe849706570d3cc824d5ceab06eff82ad77acea3"
+  },
+  {
+    "name": "aw-d305",
+    "kind": "manufacturer-product-reference",
+    "width": 220,
+    "height": 250,
+    "widths": [
+      220
+    ],
+    "sha256": "3d4952d6c9bbbfb53e7f71c3e0869b0878bbdfb5eb7bf41fb4c99f49c6c2c523"
+  },
+  {
+    "name": "aw-d306",
+    "kind": "manufacturer-product-reference",
+    "width": 220,
+    "height": 250,
+    "widths": [
+      220
+    ],
+    "sha256": "7d96f99b5f6ebb7b230f70aab580e09a35b19cbee158d854d5b3850f6eefe60b"
+  },
+  {
+    "name": "hf-c104",
+    "kind": "manufacturer-product-reference",
+    "width": 1600,
+    "height": 1600,
+    "widths": [
+      1200
+    ],
+    "sha256": "f5a50769fe65b574573a2fdce118225b8a4b6fe3b129a85b36ca2731058dc26a"
+  },
+  {
+    "name": "abc-powder",
+    "kind": "manufacturer-product-reference",
+    "width": 1920,
+    "height": 1200,
+    "widths": [
+      1200
+    ],
+    "sha256": "c17cd55686e99bb80e70f347313d1d44a7190b089d91d09ac290d734375f5216"
+  },
+  {
+    "name": "co2",
+    "kind": "manufacturer-product-reference",
+    "width": 1920,
+    "height": 1200,
+    "widths": [
+      1200
+    ],
+    "sha256": "32d2b12311a95f51793003557c8684a1361a2d4e7821a5ae16438061b4a4bb44"
+  }
+]
