@@ -2,6 +2,23 @@ import relations from "@/data/service-relations.json";
 import type { Destination, NavGroup } from "./types";
 /** Navigation relationships only. Database publication remains authoritative. */
 const routeDestinations: Omit<Destination,"relatedServices">[] = [
+{
+  "id": "catalogue-fire-safety",
+  "title": {
+    "en": "Fire safety equipment",
+    "sw": "Vifaa vya usalama wa moto"
+  },
+  "href": "/catalogue/fire-safety",
+  "parentId": "equipment",
+  "status": "published",
+  "serviceSlugs": [
+    "fire-alarm-systems"
+  ],
+  "equipmentCategories": [
+    "fire-safety"
+  ],
+  "visibility": "public"
+},
   {
     "id": "home",
     "title": {
@@ -1137,7 +1154,8 @@ export const navigationGroups: NavGroup[] = [
               "en": "Access control devices",
               "sw": "Vifaa vya udhibiti wa kuingia"
             }
-          }
+          },
+          {"destination":"catalogue-fire-safety"}
         ]
       },
       {

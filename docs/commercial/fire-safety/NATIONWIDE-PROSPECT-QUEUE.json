@@ -1,0 +1,622 @@
+[
+  {
+    "region": "Kilimanjaro",
+    "priority": "First wave",
+    "verifiedStarterRecords": 4,
+    "status": "Initial sources collected; further discovery pending",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Arusha",
+    "priority": "First wave",
+    "verifiedStarterRecords": 4,
+    "status": "Initial sources collected; further discovery pending",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Manyara",
+    "priority": "First wave",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Tanga",
+    "priority": "First wave",
+    "verifiedStarterRecords": 1,
+    "status": "Initial sources collected; further discovery pending",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Dar es Salaam",
+    "priority": "First wave",
+    "verifiedStarterRecords": 2,
+    "status": "Initial sources collected; further discovery pending",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Dodoma",
+    "priority": "First wave",
+    "verifiedStarterRecords": 1,
+    "status": "Initial sources collected; further discovery pending",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Mwanza",
+    "priority": "First wave",
+    "verifiedStarterRecords": 1,
+    "status": "Initial sources collected; further discovery pending",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Mbeya",
+    "priority": "First wave",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Morogoro",
+    "priority": "First wave",
+    "verifiedStarterRecords": 1,
+    "status": "Initial sources collected; further discovery pending",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Singida",
+    "priority": "First wave",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Shinyanga",
+    "priority": "First wave",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Geita",
+    "priority": "Nationwide follow-up",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Iringa",
+    "priority": "Nationwide follow-up",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Kagera",
+    "priority": "Nationwide follow-up",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Katavi",
+    "priority": "Nationwide follow-up",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Kigoma",
+    "priority": "Nationwide follow-up",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Lindi",
+    "priority": "Nationwide follow-up",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Mara",
+    "priority": "Nationwide follow-up",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Mtwara",
+    "priority": "Nationwide follow-up",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Njombe",
+    "priority": "Nationwide follow-up",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Pwani",
+    "priority": "Nationwide follow-up",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Rukwa",
+    "priority": "Nationwide follow-up",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Ruvuma",
+    "priority": "Nationwide follow-up",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Simiyu",
+    "priority": "Nationwide follow-up",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Songwe",
+    "priority": "Nationwide follow-up",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Tabora",
+    "priority": "Nationwide follow-up",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Mainland requirements; confirm with competent authority"
+  },
+  {
+    "region": "Kaskazini Pemba",
+    "priority": "Nationwide follow-up",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Confirm Zanzibar requirements separately"
+  },
+  {
+    "region": "Kaskazini Unguja",
+    "priority": "Nationwide follow-up",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Confirm Zanzibar requirements separately"
+  },
+  {
+    "region": "Kusini Pemba",
+    "priority": "Nationwide follow-up",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Confirm Zanzibar requirements separately"
+  },
+  {
+    "region": "Kusini Unguja",
+    "priority": "Nationwide follow-up",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Confirm Zanzibar requirements separately"
+  },
+  {
+    "region": "Mjini Magharibi",
+    "priority": "Nationwide follow-up",
+    "verifiedStarterRecords": 0,
+    "status": "Pending source verification",
+    "categories": [
+      "private boarding secondary",
+      "private boarding primary",
+      "day and boarding",
+      "seminaries/religious boarding",
+      "international boarding",
+      "colleges/universities/hostels",
+      "government boarding via public procurement",
+      "hotels/lodges",
+      "hospitals",
+      "factories/warehouses",
+      "offices/institutions/commercial"
+    ],
+    "legalFramework": "Confirm Zanzibar requirements separately"
+  }
+]
