@@ -18,6 +18,7 @@ import {
 import { fireProducts, fireCataloguePath } from "@/lib/catalogue/fire-safety";
 import { SystemCircuit } from "./SystemCircuit";
 import { FireHeroImage } from "./FireHeroImage";
+import { SafetyPulse } from "./SafetyPulse";
 import "@/components/premium/access-control/access.css";
 import "./fire-safety.css";
 type Props = { searchParams: Promise<{ lang?: string }> };
@@ -125,6 +126,7 @@ export default async function Page({ searchParams }: Props) {
             )}
           />
           <div className="fs-hero-shade" />
+          <SafetyPulse sw={sw} />
           <div className="fs-wrap fs-hero-copy">
             <Breadcrumbs id="fire-alarm-systems" lang={lang} />
             <p className="fs-eyebrow">
