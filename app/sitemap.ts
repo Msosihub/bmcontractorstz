@@ -88,6 +88,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     for (const family of networkingFamilies) add(networkingFamilyPath(family.slug), true);
     for (const product of networkingProducts) add("/catalogue/networking/" + product.slug, true);
   }
+  const climateService = services.find(service => service.slug === "air-conditioners");
+  if (!climateService || climateService.isPublished) {
+    const { climateProducts } = await import("@/lib/catalogue/air-conditioning");
+    add("/catalogue/air-conditioning", true);
+    for (const product of climateProducts) add("/catalogue/air-conditioning/" + product.slug, true);
+  }
   const fireService = services.find(service => service.slug === "fire-alarm-systems");
   if (!fireService || fireService.isPublished) {
     const { fireProducts } = await import("@/lib/catalogue/fire-safety");
@@ -110,7 +116,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   add("/blog", true);
   for (const article of blogArticles) {
     const linkedService = services.find(service => service.slug === article.service);
-    if (article.service === "fire-alarm-systems" && linkedService && !linkedService.isPublished) continue;
+    if (["fire-alarm-systems", "air-conditioners"].includes(article.service) && linkedService && !linkedService.isPublished) continue;
     add("/blog/" + article.slug, true);
   }
   const articleSlugs = new Set(articles.map((a) => a.slug));

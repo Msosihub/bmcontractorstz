@@ -68,6 +68,7 @@ test("journal exposes reviewed published articles only, with bilingual copy, loc
         "power-backup",
         "networking",
         "fire-alarm-systems",
+        "air-conditioners",
       ].includes(a.service),
     );
     assert(!/localhost|api\/media/.test(JSON.stringify(a)));

@@ -14,6 +14,7 @@ export function ReferenceCatalogue({
   initialCategory,
   searchExample,
   comparisonShortcut = false,
+  quoteLinks,
 }: {
   products: ReferenceProduct[];
   lang: Language;
@@ -22,6 +23,7 @@ export function ReferenceCatalogue({
   initialCategory?: string;
   searchExample?: Localized;
   comparisonShortcut?: boolean;
+  quoteLinks?: Record<string,string>;
 }) {
   const sw = lang === "sw",
     [query, setQuery] = useState(""),
@@ -114,7 +116,7 @@ export function ReferenceCatalogue({
       <div className="rc-grid">
         {filtered.map((p) => (
           <div key={p.slug}>
-            <ReferenceCard p={p} lang={lang} namespace={namespace} />
+            <ReferenceCard p={p} lang={lang} namespace={namespace} quoteHref={quoteLinks?.[p.slug]} />
             <label className="rc-check">
               <input
                 type="checkbox"
