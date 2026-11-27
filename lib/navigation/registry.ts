@@ -2,6 +2,7 @@ import relations from "@/data/service-relations.json";
 import type { Destination, NavGroup } from "./types";
 /** Navigation relationships only. Database publication remains authoritative. */
 const routeDestinations: Omit<Destination,"relatedServices">[] = [
+ {id:"schools",title:{en:"Schools & boarding schools",sw:"Shule na mabweni"},href:"/industries/schools",parentId:"services",status:"published",serviceSlugs:[],equipmentCategories:[],visibility:"public"},
 {"id": "catalogue-air-conditioning", "title": {"en": "Air conditioning equipment", "sw": "Vifaa vya viyoyozi"}, "href": "/catalogue/air-conditioning", "parentId": "equipment", "status": "published", "serviceSlugs": ["air-conditioners"], "equipmentCategories": ["air-conditioning"], "visibility": "public"},
 {
   "id": "catalogue-fire-safety",
@@ -1247,10 +1248,10 @@ export const navigationGroups: NavGroup[] = [
             }
           },
           {
-            "destination": "access-control",
+            "destination": "schools",
             "title": {
-              "en": "Schools & universities",
-              "sw": "Shule na vyuo"
+              "en": "Schools & boarding schools",
+              "sw": "Shule na mabweni"
             }
           }
         ]

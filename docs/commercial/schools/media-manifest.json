@@ -1,0 +1,72 @@
+{
+  "type": "original generated conceptual architectural scenes",
+  "method": "built-in image_gen",
+  "notCustomerProjectEvidence": true,
+  "files": [
+    {
+      "path": "public/images/schools/hero-384.webp",
+      "bytes": 32822,
+      "sha256": "0c6457ddf66e5103f979499a0c5bc17b45ba2a452c1f450e8dc52cd73be9e137"
+    },
+    {
+      "path": "public/images/schools/hero-640.webp",
+      "bytes": 84904,
+      "sha256": "0af892bb5d43259e2bec89565da059b3f0c72fb532c278b1e5e43059e6c0fee7"
+    },
+    {
+      "path": "public/images/schools/hero-960.webp",
+      "bytes": 171358,
+      "sha256": "4a883d42bd03f5cf25819ac0570f3eede952307a0e5813de370daf3f8c1d9573"
+    },
+    {
+      "path": "public/images/schools/hero-1280.webp",
+      "bytes": 277206,
+      "sha256": "dee2f5df11681fbe4a882b00bfbef5436745767614653e7ebf44b69794307c6d"
+    },
+    {
+      "path": "public/images/schools/hero.webp",
+      "bytes": 376660,
+      "sha256": "63d610366cf3611d382fbb552e4170e497519909f424b6a6fe7d321d03668df9"
+    },
+    {
+      "path": "public/images/schools/hero-mobile-384.webp",
+      "bytes": 59234,
+      "sha256": "e850157ad9fcda20c2260af092ea5562de63b2fef8d24be146dd41c3672dc001"
+    },
+    {
+      "path": "public/images/schools/hero-mobile-640.webp",
+      "bytes": 132182,
+      "sha256": "3b3e89289ce1fa6cf74110e60f9bc5e27f2228f7cdf59c65b138c9b37c733a74"
+    },
+    {
+      "path": "public/images/schools/hero-mobile.webp",
+      "bytes": 150116,
+      "sha256": "f1bf2172a0bc47293ea59398988782e903a5a74b772e2ef9945fd009d8697dcc"
+    },
+    {
+      "path": "public/images/schools/boarding-384.webp",
+      "bytes": 25974,
+      "sha256": "d2403db98102fc42630da560c73f4cd2745bebc90b5b8e6fca3d3f4110915108"
+    },
+    {
+      "path": "public/images/schools/boarding-640.webp",
+      "bytes": 65238,
+      "sha256": "e7fcb86ef6b5d9997b6cf3dadf44ad6e0d2fe8e151291e1011ca54fb2f62d1d9"
+    },
+    {
+      "path": "public/images/schools/boarding-960.webp",
+      "bytes": 131940,
+      "sha256": "e5e6d908eb5b82a17c46cf4dab8c3dc0a59e2aa874e302856bfaa69df07f3aa5"
+    },
+    {
+      "path": "public/images/schools/boarding-1280.webp",
+      "bytes": 209240,
+      "sha256": "885817331c182821a4e73b08bbb41b8fb537b61a3f1f3e9e1d93616fb88fea68"
+    },
+    {
+      "path": "public/images/schools/boarding.webp",
+      "bytes": 282544,
+      "sha256": "8fdcf502a43b04d814e05298fe3c56806ae4b73cc3d2db975bfce75f53be1994"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "method": "built-in image_gen",
+  "prompts": [
+    [
+      "campus",
+      "Use case: photorealistic-natural. Asset: premium engineering website wide hero photograph, landscape 3:2. A believable well-maintained private secondary boarding school campus in northern Tanzania, not a university resort. Modern two-storey cream classroom blocks with covered shaded verandas, warm stone details, red clay roofs, mature tropical trees and neat pathways, distant soft green hills. View from entrance forecourt across campus, tasteful realistic wall-mounted small CCTV on the entrance building, proportionate and neatly wired. A few distant Tanzanian adult school staff walk naturally carrying folders, no close-up children. Beautiful late-afternoon architectural editorial photography, restrained ivory, mineral green and warm bronze sunlight. Balanced perspective, right side features classroom building and adults; quiet darker foliage on left leaves headline room. No visible school name, text, branding or uniform logos. No imaginary light beams, no glowing technology, no disaster, no huge camera, no fake customer project. Exquisite natural photographic detail, straight credible architecture, 35mm lens."
+    ],
+    [
+      "boarding",
+      "Use case: photorealistic-natural. Asset: premium engineering website editorial photograph landscape 3:2. A bright, impeccably maintained Tanzanian boarding-school covered dormitory corridor opening onto a green courtyard, no sleeping students or views into beds. Credible small red manual fire alarm call point mounted on wall at accessible height near the exit, ordinary white wall sounder higher on same wall, small red fire extinguisher securely wall-mounted low with practical clearance; an overhead green exit pictogram at the open doorway. Two Tanzanian adult school facility staff in smart ordinary clothing reviewing a clipboard in middle distance, not posed as BM employees, no logos. Warm daylight, cream textured masonry, polished terrazzo, deep green accents. Architectural editorial photography, realistic equipment scale, clean safe unobstructed escape route, welcoming dignified atmosphere. No smoke/fire effects, no school name, no certification markings, no readable text besides simple exit pictogram, no giant equipment. High detail, refined photographic realism."
+    ]
+  ]
+}
