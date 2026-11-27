@@ -276,10 +276,10 @@ export default async function Page({ searchParams }: Props) {
           <div className="hv-wrap hv-editorial">
             <div className="hv-editorial-photo">
               <Image
-                src="/images/air-conditioning/commercial.webp"
-                width={1672}
-                height={941}
-                sizes="(max-width:760px) 89vw, 48vw"
+                src="/images/air-conditioning/commercial-portrait-v2.webp"
+                width={1086}
+                height={1448}
+                sizes="(max-width:760px) 89vw, (max-width:1000px) 45vw, (min-width:1484px) 638px, 43vw"
                 alt={t(
                   "Modern meeting space with a ceiling cassette and a separate ventilation grille",
                   "Chumba cha mikutano chenye cassette ya darini na grili tofauti ya uingizaji hewa",
@@ -431,10 +431,10 @@ export default async function Page({ searchParams }: Props) {
           <div className="hv-wrap hv-editorial">
             <div className="hv-editorial-photo">
               <Image
-                src="/images/air-conditioning/maintenance.webp"
-                width={1672}
-                height={941}
-                sizes="(max-width:760px) 89vw, 48vw"
+                src="/images/air-conditioning/maintenance-portrait-v2.webp"
+                width={1086}
+                height={1448}
+                sizes="(max-width:760px) 89vw, (max-width:1000px) 45vw, (min-width:1484px) 638px, 43vw"
                 alt={t(
                   "Technician inspecting an isolated wall-mounted AC filter from a stable stepladder",
                   "Fundi akikagua filter ya AC iliyotengwa na umeme kwa kutumia ngazi imara",

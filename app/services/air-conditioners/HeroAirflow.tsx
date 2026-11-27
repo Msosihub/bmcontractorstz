@@ -2,7 +2,7 @@
 
 import { useEffect, useId, useRef } from "react";
 
-/** A brief breeze from the pictured AC; no simulated performance or air-quality claim. */
+/** Continuous visible airflow; still photograph for reduced motion or no JavaScript. */
 export function HeroAirflow() {
   const ref = useRef<HTMLDivElement>(null);
   const gradient = useId().replace(/:/g, "");
@@ -12,26 +12,9 @@ export function HeroAirflow() {
     if (!el) return;
     const reduced = matchMedia("(prefers-reduced-motion: reduce)");
     let visible = false;
-    let finished = false;
-    let elapsed = 0;
-    let started = 0;
-    let timer: ReturnType<typeof setTimeout> | undefined;
-
     const sync = () => {
-      const running = visible && !document.hidden && !reduced.matches && !finished;
-      if (running && timer === undefined) {
-        started = performance.now();
-        timer = setTimeout(() => {
-          finished = true;
-          timer = undefined;
-          el.dataset.airflow = "finished";
-        }, Math.max(0, 4600 - elapsed));
-      } else if (!running && timer !== undefined) {
-        elapsed += performance.now() - started;
-        clearTimeout(timer);
-        timer = undefined;
-      }
-      el.dataset.airflow = finished ? "finished" : running ? "running" : "paused";
+      const running = visible && !document.hidden && !reduced.matches;
+      el.dataset.airflow = running ? "running" : "paused";
     };
 
     const observer = new IntersectionObserver(([entry]) => {
@@ -46,7 +29,6 @@ export function HeroAirflow() {
       observer.disconnect();
       document.removeEventListener("visibilitychange", sync);
       reduced.removeEventListener("change", sync);
-      if (timer !== undefined) clearTimeout(timer);
     };
   }, []);
 

@@ -75,6 +75,88 @@
       ],
       "generatorOutputId": "exec-078ec25d-c670-4725-b9ed-1e2681716e32.png",
       "projectAsset": "/images/air-conditioning/multiroom.webp"
+    },
+    {
+      "name": "commercial-portrait-v2",
+      "kind": "original AI architectural illustration; never a BM project or staff claim",
+      "width": 1086,
+      "height": 1448,
+      "widths": [
+        384,
+        640,
+        960,
+        1086
+      ],
+      "generatorOutputId": "exec-6529021d-bd0d-4058-afce-299b3b1a0dc7.png",
+      "projectAsset": "/images/air-conditioning/commercial-portrait-v2.webp",
+      "reason": "Owner-requested sharp portrait composition for tall editorial panels; native renditions, no enlarged landscape crop",
+      "assets": [
+        {
+          "path": "/images/air-conditioning/commercial-portrait-v2-384.webp",
+          "width": 384,
+          "bytes": 60410,
+          "sha256": "ac5118d5ab13ddab74bb5158628104f6b1fb374c23b14211eee24eb8b44a0fb5"
+        },
+        {
+          "path": "/images/air-conditioning/commercial-portrait-v2-640.webp",
+          "width": 640,
+          "bytes": 175808,
+          "sha256": "5825e7ff31fa132bdd0ec8bd2c7d82674fa4da1a118f3ffc5f2c7c680bd6d3e9"
+        },
+        {
+          "path": "/images/air-conditioning/commercial-portrait-v2-960.webp",
+          "width": 960,
+          "bytes": 390220,
+          "sha256": "26c152b468d21b21d279506f32475b31627f7dcd343c2ce3b0d92162e0bb50b5"
+        },
+        {
+          "path": "/images/air-conditioning/commercial-portrait-v2.webp",
+          "width": 1086,
+          "bytes": 474348,
+          "sha256": "e828be1d0edf3dcdd527b895ae8f060835a132c837534a550f67cb6d65570cec"
+        }
+      ]
+    },
+    {
+      "name": "maintenance-portrait-v2",
+      "kind": "original AI architectural illustration; never a BM project or staff claim",
+      "width": 1086,
+      "height": 1448,
+      "widths": [
+        384,
+        640,
+        960,
+        1086
+      ],
+      "generatorOutputId": "exec-818e10c3-a801-4167-a379-7f49a0016ffa.png",
+      "projectAsset": "/images/air-conditioning/maintenance-portrait-v2.webp",
+      "reason": "Owner-requested sharp portrait composition for tall editorial panels; native renditions, no enlarged landscape crop",
+      "assets": [
+        {
+          "path": "/images/air-conditioning/maintenance-portrait-v2-384.webp",
+          "width": 384,
+          "bytes": 53360,
+          "sha256": "d173c3dba018490271603c1e35f93d17f60c1485f56951f2596bd2d7f5b117fb"
+        },
+        {
+          "path": "/images/air-conditioning/maintenance-portrait-v2-640.webp",
+          "width": 640,
+          "bytes": 120962,
+          "sha256": "f7c7e6f02c3efe4ba2ffd1f5eaa01494aad2a5f7bc7f3e27c3c07a737d0410b0"
+        },
+        {
+          "path": "/images/air-conditioning/maintenance-portrait-v2-960.webp",
+          "width": 960,
+          "bytes": 229664,
+          "sha256": "b859cabacd393ee2e73013f3f7a0d2c52586dabd83ff6057f4b874476973d582"
+        },
+        {
+          "path": "/images/air-conditioning/maintenance-portrait-v2.webp",
+          "width": 1086,
+          "bytes": 282150,
+          "sha256": "8043ccc8316ae5a0ef0107d25ad469cd8b600bb6993a1faa8d61175ba849ba91"
+        }
+      ]
     }
   ]
 }

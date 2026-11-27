@@ -1,5 +1,7 @@
 # AC hero airflow refinement — 27 November 2026
 
+Historical bounded-motion checkpoint. Superseded by the owner-requested continuous loop and portrait image correction in CONTINUOUS-AIRFLOW-AND-CLARITY.md. Retain as evidence; do not reinstate the timer.
+
 Owner requested an air/wind-like hero enhancement after approving one Preview of the original AC commit `1ff06d60066a35c291c337da30cc300bd4b4fd1e`. This focused source correction creates a new candidate; the original commit and reproducible archive remain retained. Do not deploy a different hash under the old exact-commit approval.
 
 ## Change

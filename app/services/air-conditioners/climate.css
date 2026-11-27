@@ -167,8 +167,6 @@
   pointer-events: none;
   overflow: hidden;
   opacity: 0;
-  animation: hv-air-arrival 4.6s linear both;
-  animation-play-state: paused;
 }
 .hv-hero-air svg {
   width: 100%;
@@ -186,26 +184,21 @@
   opacity: 0.48;
   stroke-dasharray: 0.24 0.76;
   stroke-dashoffset: 1;
-  animation: hv-cooling-breeze 4.6s cubic-bezier(0.25, 0.45, 0.5, 1) both;
+  animation: hv-cooling-breeze 6s linear infinite;
   animation-play-state: paused;
 }
-.hv-air-stream-1 { stroke-dasharray: 0.31 0.69; opacity: 0.38; }
-.hv-air-stream-2 { stroke-dasharray: 0.2 0.8; opacity: 0.42; }
-.hv-air-stream-3 { stroke-dasharray: 0.28 0.72; opacity: 0.3; }
-.hv-hero-air[data-airflow="running"],
+.hv-air-stream-1 { stroke-dasharray: 0.31 0.69; opacity: 0.38; animation-duration: 6.6s; animation-delay: -1.8s; }
+.hv-air-stream-2 { stroke-dasharray: 0.2 0.8; opacity: 0.42; animation-duration: 5.6s; animation-delay: -3.2s; }
+.hv-air-stream-3 { stroke-dasharray: 0.28 0.72; opacity: 0.3; animation-duration: 7s; animation-delay: -4.8s; }
+.hv-hero-air[data-airflow="running"] {
+  opacity: 1;
+}
 .hv-hero-air[data-airflow="running"] .hv-air-stream {
   animation-play-state: running;
 }
-.hv-hero-air[data-airflow="finished"] {
-  visibility: hidden;
-}
-@keyframes hv-air-arrival {
-  0%, 100% { opacity: 0; }
-  18%, 72% { opacity: 1; }
-}
 @keyframes hv-cooling-breeze {
-  from { stroke-dashoffset: 0.45; }
-  to { stroke-dashoffset: -1.35; }
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
 }
 @media (max-width: 760px) {
   .hv-air-desktop { display: none; }
@@ -491,6 +484,9 @@
   inset: 0;
   object-position: 55% center;
 }
+.hv-commercial .hv-editorial-photo img {
+  object-position: center 25%;
+}
 .hv-editorial-photo > span {
   position: absolute;
   left: 28px;
@@ -589,7 +585,7 @@
   min-height: 650px;
 }
 .hv-care .hv-editorial-photo img {
-  object-position: 48% center;
+  object-position: 48% 25%;
 }
 .hv-tech-list {
   border-top: 1px solid #b9c8b6;
@@ -976,6 +972,10 @@
   .hv-editorial-photo img {
     position: absolute;
     object-position: 54% center;
+  }
+  .hv-commercial .hv-editorial-photo img,
+  .hv-care .hv-editorial-photo img {
+    object-position: center top;
   }
   .hv-editorial-photo > span {
     left: 15px;
