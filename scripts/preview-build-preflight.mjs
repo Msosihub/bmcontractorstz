@@ -7,6 +7,7 @@ await validateRuntimeArchive(process.cwd());
 assertEquipmentMediaPublication(process.env, JSON.parse(await readFile("data/electric-fence-product-images.json", "utf8")));
 assertEquipmentMediaPublication(process.env, JSON.parse(await readFile("data/telephony-equipment-images.json", "utf8")));
 assertEquipmentMediaPublication(process.env, JSON.parse(await readFile("data/fire-safety-equipment-images.json", "utf8")));
+assertEquipmentMediaPublication(process.env, JSON.parse(await readFile("data/air-conditioning-equipment-images.json", "utf8")));
 if (isPreview()) {
   if ((await readdir(".")).some((name) => name.startsWith(".env")))
     throw Error("Preview build must not contain environment files.");

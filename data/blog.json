@@ -728,5 +728,74 @@
     "source": "https://polis.parliament.go.tz/uploads/bills/1459254298-GN%20533%20THE%20FIRE%20AND%20RESCUE%20FORCE%20%28FIRE%20PRECAUTIONS%20IN%20BUILDINGS%29%20REGULATIONS_2015.pdf",
     "reviewed": "2026-11-26",
     "published": true
+  },
+  {
+    "slug": "multi-split-ac-for-tanzanian-buildings",
+    "service": "air-conditioners",
+    "image": "/images/air-conditioning/multiroom.webp",
+    "alt": {
+      "en": "Four-room multi-split system concept",
+      "sw": "Mfano wa mfumo wa multi-split kwa vyumba vinne"
+    },
+    "category": {
+      "en": "AIR CONDITIONING",
+      "sw": "VIYOYOZI"
+    },
+    "title": {
+      "en": "Four rooms. One outdoor AC unit? Start with the right questions.",
+      "sw": "Vyumba vinne. AC moja ya nje? Anza na maswali sahihi."
+    },
+    "summary": {
+      "en": "A short guide for Tanzanian homes, apartments and hotels: distinguish single-split, multi-split and VRF before requesting an installation quotation.",
+      "sw": "Mwongozo mfupi kwa nyumba, apartment na hoteli Tanzania: tofautisha single-split, multi-split na VRF kabla ya kuomba makadirio."
+    },
+    "sections": [
+      {
+        "title": {
+          "en": "1. How are the rooms really used?",
+          "sw": "1. Vyumba hutumika vipi?"
+        },
+        "text": {
+          "en": "Record room sizes, sun-facing windows, occupancy, equipment heat and operating hours. A guestroom, a kitchen-adjacent lounge and a meeting room have different loads. Floor area alone does not select the correct capacity. Tell BM which rooms need cooling at the same time.",
+          "sw": "Andika vipimo, madirisha yanayopigwa jua, idadi ya watu, vifaa vinavyotoa joto na saa za matumizi. Chumba cha mgeni, sebule karibu na jiko na chumba cha mikutano vina mahitaji tofauti. Ukubwa wa sakafu pekee hautoshi. Eleza vyumba vinavyohitaji kupoa kwa wakati mmoja."
+        }
+      },
+      {
+        "title": {
+          "en": "2. One room, several rooms or a whole building?",
+          "sw": "2. Chumba kimoja, vyumba kadhaa au jengo?"
+        },
+        "text": {
+          "en": "Single-split pairs one indoor unit with one outdoor unit. Multi-split connects approved indoor combinations to one outdoor system. VRF is a separate multi-zone architecture for suitable larger projects. Four indoor units in an illustration do not mean every condenser can support them; check the exact manufacturer combination tables.",
+          "sw": "Single-split ina kifaa kimoja ndani na kimoja nje. Multi-split huunganisha vifaa vya ndani vilivyoruhusiwa na mfumo mmoja wa nje. VRF ni usanifu tofauti wa maeneo mengi kwa miradi inayofaa. Vifaa vinne kwenye mchoro havimaanishi kila condenser itavihudumia; hakiki jedwali la uoanifu la mtengenezaji."
+        }
+      },
+      {
+        "title": {
+          "en": "3. Where will the installation go?",
+          "sw": "3. Ufungaji utapitia wapi?"
+        },
+        "text": {
+          "en": "Consider outdoor airflow, noise at neighbouring rooms, supports, pipe lengths, drainage, electrical protection and maintenance access. Plan service routes before ceilings and finishes are closed. A multi-split design may reduce outdoor clutter, but its shared outdoor unit and service arrangements also deserve consideration.",
+          "sw": "Zingatia mzunguko wa hewa nje, kelele kwa vyumba vya karibu, viunzi, urefu wa mabomba, maji, ulinzi wa umeme na ufikivu wa matengenezo. Panga njia kabla ya kufunga dari na finishing. Multi-split inaweza kupunguza vifaa nje, lakini kifaa cha nje kinachotumiwa pamoja na mpango wa huduma navyo vitathminiwe."
+        }
+      },
+      {
+        "title": {
+          "en": "4. What should the quotation confirm?",
+          "sw": "4. Makadirio yathibitishe nini?"
+        },
+        "text": {
+          "en": "Ask for the exact indoor/outdoor models, assessed capacity, electrical requirements, pipework, insulation, drainage, mounting, controls, commissioning and exclusions. Request current prices and sourcing for Gree, Hisense or LG references; availability and warranty are not assumed. For larger VRF, ventilation or heat-recovery projects, agree the specialist design and commissioning requirements first.",
+          "sw": "Omba modeli halisi za ndani/nje, uwezo uliotathminiwa, umeme, mabomba, insulation, njia ya maji, viunzi, vidhibiti, majaribio na kazi zisizojumuishwa. Omba bei ya sasa na upatikanaji wa rejea za Gree, Hisense au LG; stock na dhamana havidhaniwi. Kwa VRF, uingizaji hewa au heat recovery, kubaliana usanifu na commissioning mapema."
+        }
+      }
+    ],
+    "cta": {
+      "en": "Plan the rooms with BM Contractors",
+      "sw": "Panga vyumba pamoja na BM Contractors"
+    },
+    "published": true,
+    "source": "https://global.gree.com/upload/files/2022/4/2022_Europe_Residential_Air_Conditioner_Catal.pdf"
   }
 ]

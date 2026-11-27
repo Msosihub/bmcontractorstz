@@ -1,0 +1,100 @@
+{
+  "assets": [
+    {
+      "id": "gree-pular",
+      "source": "https://global.gree.com/upload/images/2021/5/952a374b1929f2b2.jpg",
+      "page": "https://global.gree.com/contents/169/429.html",
+      "image": "/images/air-conditioning/gree-pular.webp",
+      "width": 496,
+      "height": 496,
+      "bytes": 2708,
+      "sha256": "735c72889c8f1d2014d412d02d14f9af34c48f3b6dbdb26c3922cb8043c33177",
+      "productionApproved": true,
+      "permissionEvidence": "Owner explicitly authorized Gree, Hisense and LG manufacturer imagery for BM commercial website use, 27 November 2026. No dealer appointment or local inventory is implied."
+    },
+    {
+      "id": "gree-u-match",
+      "source": "https://global.gree.com/upload/images/2021/5/67782ff9d404a7d2.png",
+      "page": "https://global.gree.com/contents/177/256.html",
+      "image": "/images/air-conditioning/gree-u-match.webp",
+      "width": 496,
+      "height": 496,
+      "bytes": 12020,
+      "sha256": "3ea55c7a570c7703e7aa925fcbcb76b750260a86a1c32d4f8ca74e3f97ed1a8b",
+      "productionApproved": true,
+      "permissionEvidence": "Owner explicitly authorized Gree, Hisense and LG manufacturer imagery for BM commercial website use, 27 November 2026. No dealer appointment or local inventory is implied."
+    },
+    {
+      "id": "gree-gmv6",
+      "source": "https://global.gree.com/upload/images/2021/5/857fc512a1c45529.png",
+      "page": "https://global.gree.com/contents/176/271.html",
+      "image": "/images/air-conditioning/gree-gmv6.webp",
+      "width": 496,
+      "height": 496,
+      "bytes": 16050,
+      "sha256": "2d1b0187c01658dc565a009bfaadd726ab80019e7347876f8c5d85fabe73410f",
+      "productionApproved": true,
+      "permissionEvidence": "Owner explicitly authorized Gree, Hisense and LG manufacturer imagery for BM commercial website use, 27 November 2026. No dealer appointment or local inventory is implied."
+    },
+    {
+      "id": "hisense-u8",
+      "source": "https://www.hisensehvac.com/upload/images/20268/2026871428226572027.png",
+      "page": "https://www.hisensehvac.com/details/index.aspx?nodeid=1224",
+      "image": "/images/air-conditioning/hisense-u8.webp",
+      "width": 1200,
+      "height": 678,
+      "bytes": 19666,
+      "sha256": "877a8b82d0501b64eae5b1a76537fafd8db40f60bea35a8b46ebac816cb25d85",
+      "productionApproved": true,
+      "permissionEvidence": "Owner explicitly authorized Gree, Hisense and LG manufacturer imagery for BM commercial website use, 27 November 2026. No dealer appointment or local inventory is implied."
+    },
+    {
+      "id": "hisense-freematch",
+      "source": "https://www.hisensehvac.com/upload/images/20238/20238161144102845062.png",
+      "page": "https://www.hisensehvac.com/details/index.aspx?nodeid=530",
+      "image": "/images/air-conditioning/hisense-freematch.webp",
+      "width": 710,
+      "height": 400,
+      "bytes": 18882,
+      "sha256": "f2b0c78ff982794eedaea5d319c79f2ea25b285db2762a325adc5be407a7a84e",
+      "productionApproved": true,
+      "permissionEvidence": "Owner explicitly authorized Gree, Hisense and LG manufacturer imagery for BM commercial website use, 27 November 2026. No dealer appointment or local inventory is implied."
+    },
+    {
+      "id": "hisense-s5",
+      "source": "https://www.hisensehvac.com/upload/images/20253/20253271445461746015.png",
+      "page": "https://www.hisensehvac.com/details/index.aspx?nodeid=880",
+      "image": "/images/air-conditioning/hisense-s5.webp",
+      "width": 710,
+      "height": 383,
+      "bytes": 33394,
+      "sha256": "c831514e3e79087d2838e74a8fff6a2764ae5edde7b4711810749b44962f8b85",
+      "productionApproved": true,
+      "permissionEvidence": "Owner explicitly authorized Gree, Hisense and LG manufacturer imagery for BM commercial website use, 27 November 2026. No dealer appointment or local inventory is implied."
+    },
+    {
+      "id": "lg-multi-split",
+      "source": "https://www.lg.com/africa/images/business/multi-split/lg-hvac-multi-split-kv-d.jpg",
+      "page": "https://www.lg.com/africa/business/multi-split",
+      "image": "/images/air-conditioning/lg-multi-split.webp",
+      "width": 1200,
+      "height": 600,
+      "bytes": 71996,
+      "sha256": "8c888c25abfc9465b4caa470531370fcf9430a1d1ccccae31ec71be0e23c9e99",
+      "productionApproved": true,
+      "permissionEvidence": "Owner explicitly authorized Gree, Hisense and LG manufacturer imagery for BM commercial website use, 27 November 2026. No dealer appointment or local inventory is implied."
+    },
+    {
+      "id": "lg-multi-v-s",
+      "source": "https://www.lg.com/eastafrica/images/business/multi-v-s/HA-AS-Multi-V-S-03-Desktop.jpg",
+      "page": "https://www.lg.com/eastafrica/business/multi-v-s",
+      "image": "/images/air-conditioning/lg-multi-v-s.webp",
+      "width": 1200,
+      "height": 525,
+      "bytes": 155932,
+      "sha256": "0111e588f69a58562b6d0aed93a3f71eb9f762bf20bf508494b280d1eb6a56b0",
+      "productionApproved": true,
+      "permissionEvidence": "Owner explicitly authorized Gree, Hisense and LG manufacturer imagery for BM commercial website use, 27 November 2026. No dealer appointment or local inventory is implied."
+    }
+  ]
+}

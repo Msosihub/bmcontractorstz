@@ -2,6 +2,7 @@ import relations from "@/data/service-relations.json";
 import type { Destination, NavGroup } from "./types";
 /** Navigation relationships only. Database publication remains authoritative. */
 const routeDestinations: Omit<Destination,"relatedServices">[] = [
+{"id": "catalogue-air-conditioning", "title": {"en": "Air conditioning equipment", "sw": "Vifaa vya viyoyozi"}, "href": "/catalogue/air-conditioning", "parentId": "equipment", "status": "published", "serviceSlugs": ["air-conditioners"], "equipmentCategories": ["air-conditioning"], "visibility": "public"},
 {
   "id": "catalogue-fire-safety",
   "title": {
@@ -1176,7 +1177,8 @@ export const navigationGroups: NavGroup[] = [
           },
           {
             "destination": "ups-equipment"
-          }
+          },
+          {"destination":"catalogue-air-conditioning"}
         ]
       },
       {

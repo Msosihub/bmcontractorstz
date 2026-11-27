@@ -2,6 +2,7 @@ import Image from "@/components/media/ReliableLocalImage";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
+import { climateLinks } from "@/lib/catalogue/air-conditioning/links";
 import { getBlogArticle } from "@/lib/blog";
 import { pageMetadata, languageUrl, SITE_URL } from "@/lib/seo";
 import { solutionLinks } from "@/components/catalogue/links";
@@ -15,6 +16,7 @@ export async function generateMetadata({ params, searchParams }: Props) {
   const article = getBlogArticle((await params).slug),
     lang: Language = (await searchParams).lang === "sw" ? "sw" : "en";
   if (!article) return { robots: { index: false, follow: false } };
+  if (article.service === "air-conditioners") { const {getServiceRecord} = await import("@/lib/services"); const record = await getServiceRecord("air-conditioners"); if (record && !record.isPublished) return {robots:{index:false,follow:false}}; }
   const m = pageMetadata("/blog/" + article.slug, lang, [
     article.title[lang],
     article.summary[lang],
@@ -28,10 +30,11 @@ export async function generateMetadata({ params, searchParams }: Props) {
 export default async function Page({ params, searchParams }: Props) {
   const a = getBlogArticle((await params).slug);
   if (!a) notFound();
+  if (a.service === "air-conditioners") { const {getServiceRecord} = await import("@/lib/services"); const record = await getServiceRecord("air-conditioners"); if (record && !record.isPublished) notFound(); }
   const lang: Language = (await searchParams).lang === "sw" ? "sw" : "en",
     sw = lang === "sw",
     url = languageUrl("/blog/" + a.slug, lang),
-    links = solutionLinks(lang, a.title[lang]);
+    links = a.service === "air-conditioners" ? climateLinks(lang, a.title[lang]) : solutionLinks(lang, a.title[lang]);
   const structured = {
     "@context": "https://schema.org",
     "@graph": [
@@ -135,9 +138,11 @@ export default async function Page({ params, searchParams }: Props) {
               </a>
               {" · "}
               <a
-                href={a.service === "power-backup" ? `/services/power-backup?lang=${lang}#equipment` : a.service === "solar-panel-systems" ? `/services/solar-panel-systems?lang=${lang}#equipment` : a.service === "generators" ? `/services/generators?lang=${lang}#equipment` : `/catalogue/${a.service === "hikvision" ? "hikvision" : "zkteco"}?lang=${lang}`}
+                href={a.service === "air-conditioners" ? `/catalogue/air-conditioning?lang=${lang}` : a.service === "power-backup" ? `/services/power-backup?lang=${lang}#equipment` : a.service === "solar-panel-systems" ? `/services/solar-panel-systems?lang=${lang}#equipment` : a.service === "generators" ? `/services/generators?lang=${lang}#equipment` : `/catalogue/${a.service === "hikvision" ? "hikvision" : "zkteco"}?lang=${lang}`}
               >
-                {a.service === "power-backup"
+                {a.service === "air-conditioners"
+                  ? sw ? "Vifaa vya viyoyozi" : "Air conditioning equipment"
+                  : a.service === "power-backup"
                   ? sw ? "Vifaa vya UPS na backup" : "UPS & backup equipment"
                   : a.service === "solar-panel-systems"
                   ? sw ? "Vifaa vya sola na mifumo mseto" : "Solar & hybrid equipment"

@@ -7,10 +7,12 @@ export function ReferenceCard({
   p,
   lang,
   namespace,
+  quoteHref,
 }: {
   p: ReferenceProduct;
   lang: Language;
   namespace: string;
+  quoteHref?: string;
 }) {
   const sw = lang === "sw";
   const photo = p.images[0];
@@ -37,7 +39,7 @@ export function ReferenceCard({
         <a
           className="ac-textlink"
           href={
-            solutionLinks(
+            quoteHref ?? solutionLinks(
               lang,
               p.brand +
                 " " +

@@ -1,0 +1,80 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-11-27",
+  "images": [
+    {
+      "name": "hero-mobile",
+      "kind": "original AI architectural illustration; never a BM project claim",
+      "width": 1024,
+      "height": 1536,
+      "widths": [
+        384,
+        640,
+        960,
+        1024
+      ],
+      "generatorOutputId": "exec-32030f3b-d353-4f7e-a66e-f460c2e459bd.png",
+      "projectAsset": "/images/air-conditioning/hero-mobile.webp"
+    },
+    {
+      "name": "hero",
+      "kind": "original AI architectural illustration; never a BM project claim",
+      "width": 1672,
+      "height": 941,
+      "widths": [
+        384,
+        640,
+        960,
+        1280,
+        1672
+      ],
+      "generatorOutputId": "exec-ca54bdbe-a70d-49bd-a320-b842b387b24c.png",
+      "projectAsset": "/images/air-conditioning/hero.webp"
+    },
+    {
+      "name": "commercial",
+      "kind": "original AI architectural illustration; never a BM project claim",
+      "width": 1672,
+      "height": 941,
+      "widths": [
+        384,
+        640,
+        960,
+        1280,
+        1672
+      ],
+      "generatorOutputId": "exec-f1698929-1b22-480d-a676-5eee8474f390.png",
+      "projectAsset": "/images/air-conditioning/commercial.webp"
+    },
+    {
+      "name": "maintenance",
+      "kind": "original AI architectural illustration; never a BM project claim",
+      "width": 1672,
+      "height": 941,
+      "widths": [
+        384,
+        640,
+        960,
+        1280,
+        1672
+      ],
+      "generatorOutputId": "exec-23782315-07c7-470b-999b-7cc19e631aa6.png",
+      "projectAsset": "/images/air-conditioning/maintenance.webp"
+    },
+    {
+      "name": "multiroom",
+      "kind": "original AI architectural illustration; never a BM project claim",
+      "width": 1672,
+      "height": 941,
+      "widths": [
+        384,
+        640,
+        960,
+        1280,
+        1672
+      ],
+      "generatorOutputId": "exec-078ec25d-c670-4725-b9ed-1e2681716e32.png",
+      "projectAsset": "/images/air-conditioning/multiroom.webp"
+    }
+  ]
+}

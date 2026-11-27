@@ -1,0 +1,522 @@
+[
+  {
+    "slug": "gree-pular",
+    "name": "Pular",
+    "brand": "Gree",
+    "category": "wall-mounted",
+    "categories": [],
+    "generation": "Manufacturer family reference; regional model to be confirmed",
+    "classification": "current",
+    "images": [
+      {
+        "src": "/images/air-conditioning/gree-pular.webp",
+        "alt": "Gree Pular manufacturer family reference"
+      }
+    ],
+    "summary": {
+      "en": "Wall-mounted comfort cooling for individual rooms. Select the exact regional Pular model and capacity for the assessed load.",
+      "sw": "AC ya ukutani kwa chumba kimoja. Chagua modeli ya Pular ya soko husika na uwezo unaolingana na joto la chumba."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "System family",
+          "sw": "Familia ya mfumo"
+        },
+        "value": {
+          "en": "Wall-mounted split family",
+          "sw": "Familia ya split za ukutani"
+        }
+      },
+      {
+        "label": {
+          "en": "Selection",
+          "sw": "Uchaguzi"
+        },
+        "value": {
+          "en": "Exact capacity, electrical supply and indoor/outdoor combination by assessment",
+          "sw": "Uwezo, umeme na mchanganyiko wa vifaa vya ndani/nje kwa tathmini"
+        }
+      },
+      {
+        "label": {
+          "en": "Supply status",
+          "sw": "Upatikanaji"
+        },
+        "value": {
+          "en": "Request current regional model and price; not a stock record",
+          "sw": "Omba modeli ya soko husika na bei ya sasa; si rekodi ya stock"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Confirm the regional model, matching indoor/outdoor units, refrigerant, power supply, pipe limits, controls and installation accessories before ordering. This family reference is not a complete installation specification.",
+      "sw": "Hakiki modeli ya soko husika, vifaa vya ndani/nje vinavyoendana, refrigerant, umeme, urefu wa mabomba, vidhibiti na vifaa vya ufungaji kabla ya kuagiza. Rejea hii si maelekezo kamili ya ufungaji."
+    },
+    "variants": [
+      "Gree",
+      "Wall-mounted split family",
+      "homes hotels offices Tanzania Moshi Arusha"
+    ],
+    "source": "https://global.gree.com/contents/169/429.html",
+    "documents": [],
+    "related": ["gree-u-match", "gree-gmv6", "hisense-u8"],
+    "price": null,
+    "availability": "Confirm with BM; no inventory or lead-time promise"
+  },
+  {
+    "slug": "gree-u-match",
+    "name": "U-Match Inverter Series",
+    "brand": "Gree",
+    "category": "ducted",
+    "categories": ["cassette", "inverter"],
+    "generation": "Manufacturer family reference; regional model to be confirmed",
+    "classification": "current",
+    "images": [
+      {
+        "src": "/images/air-conditioning/gree-u-match.webp",
+        "alt": "Gree U-Match Inverter Series manufacturer family reference"
+      }
+    ],
+    "summary": {
+      "en": "An inverter light-commercial family to assess for cassette or concealed-duct applications, with the matching indoor configuration verified.",
+      "sw": "Familia ya inverter ya matumizi ya kibiashara; tathmini cassette au duct iliyofichwa na uhakiki kifaa cha ndani kinachooana."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "System family",
+          "sw": "Familia ya mfumo"
+        },
+        "value": {
+          "en": "Light-commercial inverter",
+          "sw": "Inverter ya matumizi ya kibiashara"
+        }
+      },
+      {
+        "label": {
+          "en": "Selection",
+          "sw": "Uchaguzi"
+        },
+        "value": {
+          "en": "Exact capacity, electrical supply and indoor/outdoor combination by assessment",
+          "sw": "Uwezo, umeme na mchanganyiko wa vifaa vya ndani/nje kwa tathmini"
+        }
+      },
+      {
+        "label": {
+          "en": "Supply status",
+          "sw": "Upatikanaji"
+        },
+        "value": {
+          "en": "Request current regional model and price; not a stock record",
+          "sw": "Omba modeli ya soko husika na bei ya sasa; si rekodi ya stock"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Confirm the regional model, matching indoor/outdoor units, refrigerant, power supply, pipe limits, controls and installation accessories before ordering. This family reference is not a complete installation specification.",
+      "sw": "Hakiki modeli ya soko husika, vifaa vya ndani/nje vinavyoendana, refrigerant, umeme, urefu wa mabomba, vidhibiti na vifaa vya ufungaji kabla ya kuagiza. Rejea hii si maelekezo kamili ya ufungaji."
+    },
+    "variants": [
+      "Gree",
+      "Light-commercial inverter",
+      "homes hotels offices Tanzania Moshi Arusha"
+    ],
+    "source": "https://global.gree.com/contents/177/256.html",
+    "documents": [],
+    "related": ["gree-pular", "gree-gmv6"],
+    "price": null,
+    "availability": "Confirm with BM; no inventory or lead-time promise"
+  },
+  {
+    "slug": "gree-gmv6",
+    "name": "GMV6",
+    "brand": "Gree",
+    "category": "vrf",
+    "categories": ["inverter"],
+    "generation": "Manufacturer family reference; regional model to be confirmed",
+    "classification": "current",
+    "images": [
+      {
+        "src": "/images/air-conditioning/gree-gmv6.webp",
+        "alt": "Gree GMV6 manufacturer family reference"
+      }
+    ],
+    "summary": {
+      "en": "Commercial multi-zone VRF for a designed building system. Indoor units, controls and distribution are specified together.",
+      "sw": "VRF ya maeneo mengi ya jengo. Vifaa vya ndani, vidhibiti na usambazaji hupangwa pamoja."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "System family",
+          "sw": "Familia ya mfumo"
+        },
+        "value": {
+          "en": "Multi VRF system",
+          "sw": "Mfumo wa Multi VRF"
+        }
+      },
+      {
+        "label": {
+          "en": "Selection",
+          "sw": "Uchaguzi"
+        },
+        "value": {
+          "en": "Exact capacity, electrical supply and indoor/outdoor combination by assessment",
+          "sw": "Uwezo, umeme na mchanganyiko wa vifaa vya ndani/nje kwa tathmini"
+        }
+      },
+      {
+        "label": {
+          "en": "Supply status",
+          "sw": "Upatikanaji"
+        },
+        "value": {
+          "en": "Request current regional model and price; not a stock record",
+          "sw": "Omba modeli ya soko husika na bei ya sasa; si rekodi ya stock"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Confirm the regional model, matching indoor/outdoor units, refrigerant, power supply, pipe limits, controls and installation accessories before ordering. This family reference is not a complete installation specification.",
+      "sw": "Hakiki modeli ya soko husika, vifaa vya ndani/nje vinavyoendana, refrigerant, umeme, urefu wa mabomba, vidhibiti na vifaa vya ufungaji kabla ya kuagiza. Rejea hii si maelekezo kamili ya ufungaji."
+    },
+    "variants": [
+      "Gree",
+      "Multi VRF system",
+      "homes hotels offices Tanzania Moshi Arusha"
+    ],
+    "source": "https://global.gree.com/contents/176/271.html",
+    "documents": [],
+    "related": ["gree-pular", "gree-u-match", "hisense-s5"],
+    "price": null,
+    "availability": "Confirm with BM; no inventory or lead-time promise"
+  },
+  {
+    "slug": "hisense-u8",
+    "name": "U8 Air Master Series",
+    "brand": "Hisense",
+    "category": "wall-mounted",
+    "categories": ["inverter"],
+    "generation": "Manufacturer family reference; regional model to be confirmed",
+    "classification": "current",
+    "images": [
+      {
+        "src": "/images/air-conditioning/hisense-u8.webp",
+        "alt": "Hisense U8 Air Master Series manufacturer family reference"
+      }
+    ],
+    "summary": {
+      "en": "A residential wall-mounted inverter family with manufacturer-described airflow and sensing features. Exact options depend on the selected version.",
+      "sw": "Familia ya inverter ya ukutani yenye vipengele vya mtiririko wa hewa na vihisi kulingana na toleo linalochaguliwa."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "System family",
+          "sw": "Familia ya mfumo"
+        },
+        "value": {
+          "en": "Single-zone DC inverter",
+          "sw": "Inverter ya eneo moja"
+        }
+      },
+      {
+        "label": {
+          "en": "Selection",
+          "sw": "Uchaguzi"
+        },
+        "value": {
+          "en": "Exact capacity, electrical supply and indoor/outdoor combination by assessment",
+          "sw": "Uwezo, umeme na mchanganyiko wa vifaa vya ndani/nje kwa tathmini"
+        }
+      },
+      {
+        "label": {
+          "en": "Supply status",
+          "sw": "Upatikanaji"
+        },
+        "value": {
+          "en": "Request current regional model and price; not a stock record",
+          "sw": "Omba modeli ya soko husika na bei ya sasa; si rekodi ya stock"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Confirm the regional model, matching indoor/outdoor units, refrigerant, power supply, pipe limits, controls and installation accessories before ordering. This family reference is not a complete installation specification.",
+      "sw": "Hakiki modeli ya soko husika, vifaa vya ndani/nje vinavyoendana, refrigerant, umeme, urefu wa mabomba, vidhibiti na vifaa vya ufungaji kabla ya kuagiza. Rejea hii si maelekezo kamili ya ufungaji."
+    },
+    "variants": [
+      "Hisense",
+      "Single-zone DC inverter",
+      "homes hotels offices Tanzania Moshi Arusha"
+    ],
+    "source": "https://www.hisensehvac.com/details/index.aspx?nodeid=1224",
+    "documents": [],
+    "related": ["gree-pular", "hisense-freematch", "hisense-s5"],
+    "price": null,
+    "availability": "Confirm with BM; no inventory or lead-time promise"
+  },
+  {
+    "slug": "hisense-freematch",
+    "name": "Freematch",
+    "brand": "Hisense",
+    "category": "multi-split",
+    "categories": ["inverter"],
+    "generation": "Manufacturer family reference; regional model to be confirmed",
+    "classification": "current",
+    "images": [
+      {
+        "src": "/images/air-conditioning/hisense-freematch.webp",
+        "alt": "Hisense Freematch manufacturer family reference"
+      }
+    ],
+    "summary": {
+      "en": "A multi-zone family connecting compatible indoor units to one outdoor unit. Room count and combinations are model-dependent.",
+      "sw": "Familia ya multi-zone inayounganisha vifaa vya ndani vinavyoendana na kifaa kimoja cha nje. Idadi ya vyumba hutegemea modeli."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "System family",
+          "sw": "Familia ya mfumo"
+        },
+        "value": {
+          "en": "Multi-zone split family",
+          "sw": "Familia ya split za maeneo mengi"
+        }
+      },
+      {
+        "label": {
+          "en": "Selection",
+          "sw": "Uchaguzi"
+        },
+        "value": {
+          "en": "Exact capacity, electrical supply and indoor/outdoor combination by assessment",
+          "sw": "Uwezo, umeme na mchanganyiko wa vifaa vya ndani/nje kwa tathmini"
+        }
+      },
+      {
+        "label": {
+          "en": "Supply status",
+          "sw": "Upatikanaji"
+        },
+        "value": {
+          "en": "Request current regional model and price; not a stock record",
+          "sw": "Omba modeli ya soko husika na bei ya sasa; si rekodi ya stock"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Confirm the regional model, matching indoor/outdoor units, refrigerant, power supply, pipe limits, controls and installation accessories before ordering. This family reference is not a complete installation specification.",
+      "sw": "Hakiki modeli ya soko husika, vifaa vya ndani/nje vinavyoendana, refrigerant, umeme, urefu wa mabomba, vidhibiti na vifaa vya ufungaji kabla ya kuagiza. Rejea hii si maelekezo kamili ya ufungaji."
+    },
+    "variants": [
+      "Hisense",
+      "Multi-zone split family",
+      "homes hotels offices Tanzania Moshi Arusha"
+    ],
+    "source": "https://www.hisensehvac.com/details/index.aspx?nodeid=530",
+    "documents": [],
+    "related": ["hisense-u8", "hisense-s5", "lg-multi-split"],
+    "price": null,
+    "availability": "Confirm with BM; no inventory or lead-time promise"
+  },
+  {
+    "slug": "hisense-s5",
+    "name": "Hi-FLEXi S5 Series",
+    "brand": "Hisense",
+    "category": "vrf",
+    "categories": ["inverter"],
+    "generation": "Manufacturer family reference; regional model to be confirmed",
+    "classification": "current",
+    "images": [
+      {
+        "src": "/images/air-conditioning/hisense-s5.webp",
+        "alt": "Hisense Hi-FLEXi S5 Series manufacturer family reference"
+      }
+    ],
+    "summary": {
+      "en": "A commercial VRF family for larger zoning requirements. Assess the regional line-up, indoor units and centralized controls as one design.",
+      "sw": "Familia ya VRF kwa mahitaji ya maeneo mengi. Tathmini toleo la soko husika, vifaa vya ndani na vidhibiti vya pamoja kama mfumo mmoja."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "System family",
+          "sw": "Familia ya mfumo"
+        },
+        "value": {
+          "en": "Top-discharge commercial VRF",
+          "sw": "VRF ya kibiashara yenye hewa ya kutoka juu"
+        }
+      },
+      {
+        "label": {
+          "en": "Selection",
+          "sw": "Uchaguzi"
+        },
+        "value": {
+          "en": "Exact capacity, electrical supply and indoor/outdoor combination by assessment",
+          "sw": "Uwezo, umeme na mchanganyiko wa vifaa vya ndani/nje kwa tathmini"
+        }
+      },
+      {
+        "label": {
+          "en": "Supply status",
+          "sw": "Upatikanaji"
+        },
+        "value": {
+          "en": "Request current regional model and price; not a stock record",
+          "sw": "Omba modeli ya soko husika na bei ya sasa; si rekodi ya stock"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Hi-FLEXi S5 is not the same product as Hi-FLEXi S heat recovery. Do not assume simultaneous heating/cooling, hot-water integration or compatibility across those families. Confirm the exact regional outdoor model, indoor combinations and supported controllers.",
+      "sw": "Hi-FLEXi S5 si sawa na Hi-FLEXi S heat recovery. Usidhani uwezo wa kupoza/kupasha kwa pamoja, maji moto au uoanifu kati ya familia hizo. Hakiki modeli ya nje, vifaa vya ndani na vidhibiti vinavyoruhusiwa."
+    },
+    "variants": [
+      "Hisense",
+      "Top-discharge commercial VRF",
+      "homes hotels offices Tanzania Moshi Arusha"
+    ],
+    "source": "https://www.hisensehvac.com/details/index.aspx?nodeid=880",
+    "documents": [],
+    "related": ["gree-gmv6", "hisense-u8", "hisense-freematch"],
+    "price": null,
+    "availability": "Confirm with BM; no inventory or lead-time promise"
+  },
+  {
+    "slug": "lg-multi-split",
+    "name": "Multi Split",
+    "brand": "LG",
+    "category": "multi-split",
+    "categories": ["inverter"],
+    "generation": "Manufacturer family reference; regional model to be confirmed",
+    "classification": "current",
+    "images": [
+      {
+        "src": "/images/air-conditioning/lg-multi-split.webp",
+        "alt": "LG Multi Split manufacturer family reference"
+      }
+    ],
+    "summary": {
+      "en": "One compatible outdoor system with independently controlled indoor zones. The manufacturer illustration shows a system concept, not a supplied package.",
+      "sw": "Mfumo mmoja wa nje wenye vifaa vya ndani vinavyodhibitiwa kivyake. Picha ya mtengenezaji inaonyesha dhana ya mfumo, si kifurushi cha vifaa."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "System family",
+          "sw": "Familia ya mfumo"
+        },
+        "value": {
+          "en": "Multi-split family",
+          "sw": "Familia ya multi-split"
+        }
+      },
+      {
+        "label": {
+          "en": "Selection",
+          "sw": "Uchaguzi"
+        },
+        "value": {
+          "en": "Exact capacity, electrical supply and indoor/outdoor combination by assessment",
+          "sw": "Uwezo, umeme na mchanganyiko wa vifaa vya ndani/nje kwa tathmini"
+        }
+      },
+      {
+        "label": {
+          "en": "Supply status",
+          "sw": "Upatikanaji"
+        },
+        "value": {
+          "en": "Request current regional model and price; not a stock record",
+          "sw": "Omba modeli ya soko husika na bei ya sasa; si rekodi ya stock"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Confirm the regional model, matching indoor/outdoor units, refrigerant, power supply, pipe limits, controls and installation accessories before ordering. This family reference is not a complete installation specification.",
+      "sw": "Hakiki modeli ya soko husika, vifaa vya ndani/nje vinavyoendana, refrigerant, umeme, urefu wa mabomba, vidhibiti na vifaa vya ufungaji kabla ya kuagiza. Rejea hii si maelekezo kamili ya ufungaji."
+    },
+    "variants": [
+      "LG",
+      "Multi-split family",
+      "homes hotels offices Tanzania Moshi Arusha"
+    ],
+    "source": "https://www.lg.com/africa/business/multi-split",
+    "documents": [],
+    "related": ["hisense-freematch", "lg-multi-v-s"],
+    "price": null,
+    "availability": "Confirm with BM; no inventory or lead-time promise"
+  },
+  {
+    "slug": "lg-multi-v-s",
+    "name": "MULTI V S",
+    "brand": "LG",
+    "category": "vrf",
+    "categories": ["inverter"],
+    "generation": "Manufacturer family reference; regional model to be confirmed",
+    "classification": "current",
+    "images": [
+      {
+        "src": "/images/air-conditioning/lg-multi-v-s.webp",
+        "alt": "LG MULTI V S manufacturer family reference"
+      }
+    ],
+    "summary": {
+      "en": "Compact commercial/residential VRF to assess for multiple zones, with compatible indoor units and control options.",
+      "sw": "VRF ya maeneo mengi ya nyumba au biashara, pamoja na vifaa vya ndani na vidhibiti vinavyoendana."
+    },
+    "specs": [
+      {
+        "label": {
+          "en": "System family",
+          "sw": "Familia ya mfumo"
+        },
+        "value": {
+          "en": "Compact VRF family",
+          "sw": "Familia ya VRF yenye umbo dogo"
+        }
+      },
+      {
+        "label": {
+          "en": "Selection",
+          "sw": "Uchaguzi"
+        },
+        "value": {
+          "en": "Exact capacity, electrical supply and indoor/outdoor combination by assessment",
+          "sw": "Uwezo, umeme na mchanganyiko wa vifaa vya ndani/nje kwa tathmini"
+        }
+      },
+      {
+        "label": {
+          "en": "Supply status",
+          "sw": "Upatikanaji"
+        },
+        "value": {
+          "en": "Request current regional model and price; not a stock record",
+          "sw": "Omba modeli ya soko husika na bei ya sasa; si rekodi ya stock"
+        }
+      }
+    ],
+    "compatibility": {
+      "en": "Verify the exact regional MULTI V S line-up and indoor-unit combination. The referenced LG page identifies PWFMDD200 as a required Wi-Fi modem for its described ThinQ control; do not assume it is included or appropriate to every regional model. This is not interchangeable with LG Multi Split.",
+      "sw": "Hakiki toleo la MULTI V S la soko husika na vifaa vya ndani vinavyooana. Ukurasa wa LG unaainisha modem ya Wi-Fi PWFMDD200 kwa ThinQ iliyoelezwa; usidhani imejumuishwa au inafaa kila modeli. Mfumo huu si sawa na LG Multi Split."
+    },
+    "variants": [
+      "LG",
+      "Compact VRF family",
+      "homes hotels offices Tanzania Moshi Arusha"
+    ],
+    "source": "https://www.lg.com/eastafrica/business/multi-v-s",
+    "documents": [],
+    "related": ["gree-gmv6", "hisense-s5", "lg-multi-split"],
+    "price": null,
+    "availability": "Confirm with BM; no inventory or lead-time promise"
+  }
+]

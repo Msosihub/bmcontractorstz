@@ -1,0 +1,10 @@
+# Existing AC audit and implementation scope
+27 November 2026.
+
+The existing canonical route is `/services/air-conditioners`, a thin wrapper around `ServiceDetailPage` and the secondary-service/technical-content data. It already covers assessment, drainage, electrical integration and maintenance, but has no dedicated multi-room demonstration or AC reference catalogue. Navigation already identifies AC/HVAC as a principal service. Preserve that URL, the shared Header/Footer, language query architecture, publication authority and validated intake fields.
+
+Baseline: released main `3a7a7d000e04229b701336e8a5a7cb4f47d55657`, tree `bd50f714bbb83131727665ad578ef6f4d136a748`, live Production `dpl_ATDGdUCnnTKVvYx5TStmAjjZyw7c`. The accepted public report was reviewed, GitHub connector resolved current main to that exact commit, and Vercel connector reported the same latest deployment. Local AC branch `codex/commercial-air-conditioning-01` was created from that baseline. The independent Ladders worktree and its source modifications are not part of this candidate.
+
+Implementation: original architectural hero with native mobile art direction, single-split/multi-split/VRF distinction, four-zone native interactive demonstration, six audience applications, nine equipment enquiry/discovery categories, eight genuine manufacturer-family references, installation/maintenance/repair pathways, seven advanced-technology disclosures, five practical FAQs and one original bilingual journal guide. More specialized technology is framed as project feasibility work; no unverified BM stock, accreditation or delivery qualification is added.
+
+The shared catalogue gains optional serialized quotation URLs; all existing callers retain their prior fallback. AC uses the existing catalogue/product architecture and no new database. New AC routes and article respect the parent service's publication state. Existing route destinations, service implementations, schema, lockfile, authentication, database identity/privilege guards, notification providers and Production configuration are preserved. No deployment, push or PR is authorized.
