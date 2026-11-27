@@ -20,6 +20,7 @@ import {
 } from "@/data/climate";
 import { MultiRoom } from "./MultiRoom";
 import { ClimateHeroImage } from "./HeroImage";
+import { HeroAirflow } from "./HeroAirflow";
 import "./climate.css";
 type Props = { searchParams: Promise<{ lang?: string }> };
 const path = "/services/air-conditioners";
@@ -99,6 +100,7 @@ export default async function Page({ searchParams }: Props) {
             )}
           />
           <div className="hv-hero-shade" />
+          <HeroAirflow />
           <div className="hv-wrap hv-hero-copy">
             <p className="hv-kicker">
               {t(

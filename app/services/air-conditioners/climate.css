@@ -160,6 +160,63 @@
 .hv-hero-copy {
   padding-block: 80px;
 }
+.hv-hero-air {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: 0;
+  animation: hv-air-arrival 4.6s linear both;
+  animation-play-state: paused;
+}
+.hv-hero-air svg {
+  width: 100%;
+  height: 100%;
+}
+.hv-air-mobile {
+  display: none;
+}
+.hv-air-haze {
+  stroke-width: 26;
+  opacity: 0.025;
+}
+.hv-air-stream {
+  stroke-width: 1.6;
+  opacity: 0.48;
+  stroke-dasharray: 0.24 0.76;
+  stroke-dashoffset: 1;
+  animation: hv-cooling-breeze 4.6s cubic-bezier(0.25, 0.45, 0.5, 1) both;
+  animation-play-state: paused;
+}
+.hv-air-stream-1 { stroke-dasharray: 0.31 0.69; opacity: 0.38; }
+.hv-air-stream-2 { stroke-dasharray: 0.2 0.8; opacity: 0.42; }
+.hv-air-stream-3 { stroke-dasharray: 0.28 0.72; opacity: 0.3; }
+.hv-hero-air[data-airflow="running"],
+.hv-hero-air[data-airflow="running"] .hv-air-stream {
+  animation-play-state: running;
+}
+.hv-hero-air[data-airflow="finished"] {
+  visibility: hidden;
+}
+@keyframes hv-air-arrival {
+  0%, 100% { opacity: 0; }
+  18%, 72% { opacity: 1; }
+}
+@keyframes hv-cooling-breeze {
+  from { stroke-dashoffset: 0.45; }
+  to { stroke-dashoffset: -1.35; }
+}
+@media (max-width: 760px) {
+  .hv-air-desktop { display: none; }
+  .hv-air-mobile { display: block; }
+  .hv-air-stream { stroke-width: 1; opacity: 0.4; }
+  .hv-air-haze { stroke-width: 14; opacity: 0.02; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hv-hero-air { display: none; animation: none; }
+  .hv-hero-air .hv-air-stream { animation: none; }
+}
 .hv-hero h1 {
   font-size: clamp(3.3rem, 6.8vw, 7.2rem);
   line-height: 0.99;
