@@ -130,7 +130,7 @@ test("new native scene variants exist and use the bounded local image policy", a
   const { responsiveLocalScene } = await import(
     "../lib/local-image-policy.mjs"
   );
-  for (const p of ["hero", "boarding", "hero-mobile"]) {
+  for (const p of ["hero", "boarding", "hero-mobile", "campus-overview-v2"]) {
     const x = responsiveLocalScene("/images/schools/" + p + ".webp");
     assert(x);
     for (const rendition of x.srcSet.split(", ")) {

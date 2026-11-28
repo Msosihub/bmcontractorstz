@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
-/** Bounded 4.6s path sequence. Native controls and all system meanings work without JavaScript. */
+import Image from "@/components/media/ReliableLocalImage";
+/** Photographic campus exploration; native controls work without JS. A bounded highlight stops offscreen/hidden. */
 export function CampusFlow({ sw }: { sw: boolean }) {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -64,38 +65,33 @@ export function CampusFlow({ sw }: { sw: boolean }) {
             </label>
           </span>
         ))}
-        <div className="sc-campus-drawing">
-          <svg
-            viewBox="0 0 640 340"
-            role="img"
-            aria-label={
-              sw
-                ? "Mchoro wa mifumo huru katika geti, madarasa na bweni"
-                : "Independent systems serving the gate, classrooms and boarding block"
-            }
-          >
-            <g fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M30 295H610M70 295V188H182V295M212 295V110H420V295M456 295V164H590V295" />
-              <path d="M54 188L126 147L196 188M196 110L316 57L436 110M442 164L523 123L604 164" />
-              <path d="M98 295V241H151V295M286 295V224H344V295M499 295V240H548V295" />
-              {[235, 285, 335, 385].map((x) => (
-                <path key={x} d={`M${x} 145h17v27h-17z`} />
-              ))}
-              <path d="M477 191h23v24h-23zM546 191h23v24h-23zM34 258H70M182 258H212M420 258H456" />
-            </g>
-            <g fill="none" strokeWidth="3" className="sc-signal">
-              <path className="sc-path sc-arrival" d="M34 319V204H126V179" />
-              <path className="sc-path sc-learning" d="M316 319V197H385V174" />
-              <path
-                className="sc-path sc-boarding"
-                d="M610 319H567V224H523V190"
-              />
-            </g>
-          </svg>
-          <div className="sc-zone-labels">
-            <span>{sw ? "Geti" : "Gate"}</span>
-            <span>{sw ? "Madarasa" : "Classrooms"}</span>
-            <span>{sw ? "Bweni" : "Boarding"}</span>
+        <div className="sc-campus-photo">
+          <div className="sc-campus-scene">
+            <Image
+              src="/images/schools/campus-overview-v2.webp"
+              width={1536}
+              height={1024}
+              sizes="(max-width:760px) 89vw, 43vw"
+              alt={
+                sw
+                  ? "Mandhari ya shule yenye lango, majengo ya madarasa na jengo la bweni"
+                  : "School campus with an entrance, classroom buildings and a boarding wing"
+              }
+            />
+            <div className="sc-campus-pins" aria-hidden="true">
+              <span className="sc-pin sc-pin-arrival">
+                <b>01</b>
+                <span>{sw ? "Geti" : "Entrance"}</span>
+              </span>
+              <span className="sc-pin sc-pin-learning">
+                <b>02</b>
+                <span>{sw ? "Madarasa" : "Classrooms"}</span>
+              </span>
+              <span className="sc-pin sc-pin-boarding">
+                <b>03</b>
+                <span>{sw ? "Bweni" : "Boarding"}</span>
+              </span>
+            </div>
           </div>
           <div className="sc-state sc-state-arrival">
             <strong>
@@ -133,8 +129,8 @@ export function CampusFlow({ sw }: { sw: boolean }) {
       </fieldset>
       <p className="sc-fine">
         {sw
-          ? "Mchoro wa mpangilio. Miunganisho na utangamano huthibitishwa kwa kila mfumo."
-          : "Planning diagram. Interfaces and compatibility are verified system by system."}
+          ? "Kila mfumo hutathminiwa kivyake. Miunganisho huthibitishwa wakati wa usanifu."
+          : "Each system is assessed separately. Interfaces are confirmed during design."}
       </p>
     </div>
   );

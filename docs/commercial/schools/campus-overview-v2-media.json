@@ -1,0 +1,31 @@
+{
+  "method": "built-in image_gen",
+  "use": "Original conceptual campus overview; no named customer/project claim",
+  "files": [
+    {
+      "path": "public/images/schools/campus-overview-v2-384.webp",
+      "bytes": 39418,
+      "sha256": "731bcbf5cc80b8a24413f520c7cf91b4fa3a34cbc2bcf6940cea748fee73463c"
+    },
+    {
+      "path": "public/images/schools/campus-overview-v2-640.webp",
+      "bytes": 109116,
+      "sha256": "872624212fc81c4136478008a31cf6ad216cd0a7e908364553b957597a944b6f"
+    },
+    {
+      "path": "public/images/schools/campus-overview-v2-960.webp",
+      "bytes": 234224,
+      "sha256": "f4e6a3d5dc72bc5e6abbea9229929e0c00dd05a2d11b470cd49bd2bc72e5c4fc"
+    },
+    {
+      "path": "public/images/schools/campus-overview-v2-1280.webp",
+      "bytes": 396556,
+      "sha256": "261a6363135e35b0699887401e50635f61a905485168e9675208c083c8cae631"
+    },
+    {
+      "path": "public/images/schools/campus-overview-v2.webp",
+      "bytes": 559428,
+      "sha256": "9f7e1a2b4d4336600ddb967cb185c9fc5eb47f72c4b3b67549cd3449b234e753"
+    }
+  ]
+}
