@@ -1,3 +1,4 @@
+import { SchoolSolutionsLink } from "@/components/premium/SchoolSolutionsLink";
 import { notFound } from "next/navigation";
 import Image from "@/components/media/ReliableLocalImage";
 import { Header } from "@/components/site/Header";
@@ -1053,7 +1054,7 @@ export default async function Page({ searchParams }: Props) {
           </div>
         </section>
       </main>
-      <Footer lang={lang} />
+      <SchoolSolutionsLink lang={lang}/><Footer lang={lang} />
     </>
   );
 }

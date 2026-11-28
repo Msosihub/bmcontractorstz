@@ -1,3 +1,4 @@
+import { SchoolSolutionsLink } from "@/components/premium/SchoolSolutionsLink";
 import Image from "next/image";
 import { CustomerBelt } from "./CustomerBelt";
 import type { BeltCustomer } from "@/lib/customer-belt-policy";
@@ -311,7 +312,7 @@ export function CctvCommercialPage({
           </div>
         </nav>
       </main>
-      <Footer lang={lang} />
+      <SchoolSolutionsLink lang={lang}/><Footer lang={lang} />
       <nav
         className="cctv-mobile-actions"
         aria-label={sw ? "Wasiliana kuhusu CCTV" : "CCTV enquiry actions"}

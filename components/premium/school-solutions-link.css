@@ -1,0 +1,43 @@
+.bm-schools-related {
+  width: min(1320px, 89%);
+  margin: 30px auto 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  border-top: 1px solid #bac9ba;
+  padding-top: 26px;
+  color: #263e3a;
+  font-family: Arial, sans-serif;
+}
+.bm-schools-related strong {
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.bm-schools-related p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin: 10px 0;
+}
+.bm-schools-related a {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+.bm-schools-related a:focus-visible {
+  outline: 3px solid #287e85;
+  outline-offset: 5px;
+}
+@media (max-width: 760px) {
+  .bm-schools-related {
+    display: block;
+  }
+  .bm-schools-related a {
+    margin-top: 15px;
+  }
+}

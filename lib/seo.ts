@@ -1,3 +1,4 @@
+import { schoolsMeta } from "@/lib/industries/schools";
 import secondaryServices from "@/data/secondary-services.json";
 import premiumServices from "@/data/premium-services.json";
 import { isPreview } from "./preview-safety.mjs";
@@ -9,6 +10,7 @@ export const publicPages: Record<
   string,
   { en: [string, string]; sw: [string, string] }
 > = {
+  "/industries/schools": schoolsMeta,
   "/": {
     en: [
       "CCTV, Electric Fence & Security Systems",
